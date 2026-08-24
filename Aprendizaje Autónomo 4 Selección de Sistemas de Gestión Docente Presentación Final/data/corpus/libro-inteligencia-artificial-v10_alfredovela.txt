@@ -1,0 +1,639 @@
+VERSIÓN 10
+
+EL LIBRO
+DE LA INTELIGENCIA
+ARTIFICIAL
+INCLUYE MÁS DE 200 HERRAMIENTAS
+de interés
+
+Realizado por: Ángeles Vallejo y Alfredo Vela
+
+INTRODUCCIÓN A
+LA INTELIGENCIA
+ARTIFICIAL
+
+huggingface.co
+
+platform.openai.com/examples
+
+platform.openai.com/examples
+
+theresanaiforthat.com
+
+Herramientas más visitadas de IA (2023)
+
+CHATS
+CONVERSACIONALES
+CON INTELIGENCIA
+ARTIFICIAL
+
+chat.openai.com
+
+copy.ai
+
+ChatGPT tiene una app para dispositivos móviles
+
+¿ChatGPT te está haciendo utilizar menos Google?
+
+ChatGPT 4 dispone de una tienda de plugins
+
+ChatGPT 4 ya incorpora una tienda de GPTs
+
+gptstore.ai (tienda de GPTs de ChatGPT)
+
+bard.google.com/chat
+
+copilot.microsoft.com
+
+Copilot tiene una app para dispositivos móviles
+
+Copilot también está integrado en el navegador Edge
+
+Microsoft Copilot Studio
+
+Microsoft Copilot Pro
+
+perplexity.ai
+
+¿Qué herramienta les parece mejor a los usuarios?
+
+gpt4all.io - puedes instalar esta IA para trabajar en local (gratis)
+
+Pregunta sobre el plagio y ChatGPT (o similar)
+
+plag.es - detector de plagio e IA
+
+Algunas publicaciones científicas ponen normas sobre el uso de la IA
+La pantalla es de la Revista de Educación a Distancia (RED) - revistas.um.es/red/information/authors
+
+HERRAMIENTAS DE IA
+PARA GENERAR
+IMÁGENES
+
+leonardo.ai
+
+leonardo.ai
+
+leonardo.ai (lienzo en tiempo real)
+
+Ejemplos de imágenes generadas con Leonardo
+
+Imágenes creadas por Ángeles Vallejo y Alfredo Vela
+
+bing.com/images/create
+
+bing.com/images/create
+
+bing.com/images/create
+
+bing.com/images/create
+
+Ejemplos de imágenes generadas con Bing
+Imágenes creadas por Ángeles Vallejo y Alfredo Vela
+
+copilot.microsoft.com
+
+designer.microsoft.com
+
+designer.microsoft.com
+
+canva.com
+
+canva.com
+
+DALL - E
+
+Ejemplos de imágenes generadas con DALL - E
+Imágenes creadas por Ángeles Vallejo y Alfredo Vela
+
+Imagen generada por DALL E
+
+Imagen generada por DALL E
+
+firefly.adobe.com
+
+firefly.adobe.com
+
+Ejemplos de imágenes generadas con Firefly
+Imágenes creadas por Ángeles Vallejo y Alfredo Vela
+
+Adobe Express también tiene IA generativa
+
+midjourney.com
+
+Microsoft Designer
+
+Microsoft Designer
+
+Ideogram
+
+runwayml.com
+
+runwayml.com
+
+creator.nightcafe.studio
+
+creator.nightcafe.studio
+
+app.simplified.com tambien permite crear imágenes
+
+playground.com
+
+lumalabs.ai/genie - para crear objetos en 3D
+
+krea.ai
+
+designify.com
+
+lexica.art
+
+dreamstudio.ai
+
+piktochart.com permite crear infografías con IA
+
+¿Qué herramienta les parece mejor a los usuarios?
+
+OTRAS HERRAMIENTAS
+DE INTELIGENCIA
+ARTIFICIAL
+
+projectsophia.microsoft.com
+El Proyecto Sophia de Microsoft es un "canvas" para la investigación empresarial impulsado por IA en el que se puede realizar cualquier pregunta sobre cualquier ámbito empresarial de una organización.
+
+multimodal-vid.github.io
+MM-Vid está diseñado para abordar los desafíos que plantean los videos de formato largo y las tareas complejas como la descripción de audio y la comprensión multimodal de alto nivel.
+
+app.suno.ai
+
+consensus.app
+
+app.heygen.com
+
+app.fliki.ai
+
+Capcut incluye opciones de IA
+
+lumiere-video.github.io
+
+gamma.app (presentación a partir de una frase)
+
+dev.codedesign.ai
+
+play.ht
+
+app.predis.ai
+
+github.com
+
+ChatGPT es capaz de generar código
+
+Google Bard es capaz de generar código
+
+Copilot es capaz de generar código
+
+DOCUMENTOS
+DE INTERÉS
+En este apartado iremos incluyentos
+algunos textos y documentos de
+interés sobre Inteligencia artificial.
+
+DIRECTRICES ÉTICAS SOBRE EL USO DE LA
+INTELIGENCIA ARTIFICIAL (IA) Y LOS DATOS EN LA
+EDUCACIÓN Y FORMACIÓN PARA LOS
+EDUCADORES
+¿Sabías que la IA en la educación ya no es una realidad
+lejana? De hecho ya la utilizamos, por ejemplo para
+aprender idiomas o para realizar tareas diferenciadas
+en la docencia y la formación personalizadas. Como
+puedes ver, la IA tiene un gran potencial en la
+educación, pero sus efectos no se han analizado de
+manera exhaustiva y su uso podría plantear
+consideraciones de orden ético.
+Estas directrices presentan ejemplos concretos y casos
+de uso genéricos, fundamentan las consideraciones y
+los requisitos de carácter ético y ponen de relieve las
+competencias emergentes y los términos o las técnicas
+clave en el campo de la educación.
+Puedes utilizar las directrices con los alumnos en el aula,
+animar a los profesores a que las utilicen y a los padres
+a que las consulten, y hacer correr la voz de que la IA en
+la educación es ya una realidad.
+Fuente: https://learning-corner.learning.europa.eu/learning-materials/use-artificial-intelligence-ai-and-data-teaching-and-learning_es
+
+DIRECTRICES PARA PROFESORES Y EDUCADORES
+SOBRE LA LUCHA CONTRA LA DESINFORMACIÓN Y
+LA PROMOCIÓN DE LA ALFABETIZACIÓN DIGITAL A
+TRAVÉS DE LA EDUCACIÓN Y LA FORMACIÓN
+¿Necesitas asesoramiento sobre cómo utilizar las
+tecnologías digitales de manera crítica y responsable y
+orientación sobre el modo de evaluar las competencias
+de los alumnos en el ámbito de la alfabetización digital?
+Estas directrices ofrecen una guía práctica a profesores
+y educadores, con consejos prácticos, planes de
+actividades, percepciones sobre determinados temas y
+notas de precaución fundadas en lo que realmente
+funciona en materia de alfabetización digital y
+educación y formación. Su finalidad es ayudar a
+comprender la manera de conseguir la alfabetización
+digital y proporcionar conocimientos útiles sobre la
+dinámica y las manifestaciones de la desinformación.
+
+Fuente:https://learning-corner.learning.europa.eu/learning-materials/tackling-disinformation-and-promoting-digital-literacy_es
+
+CHATGPT E INTELIGENCIA ARTIFICIAL EN LA
+EDUCACIÓN SUPERIOR : GUÍA DE INICIO RÁPIDO
+
+Esta Guía de inicio rápido presenta a ChatGPT, una
+herramienta de Inteligencia Artificial (IA) que ha arrasado en
+todo el mundo, alcanzando los 100 millones de usuarios sólo
+dos meses después de su lanzamiento.
+La Guía de inicio rápido ofrece una visión general del
+funcionamiento de ChatGPT y explica cómo puede utilizarse
+en la educación superior. La guía plantea algunos de los
+principales retos e implicaciones éticas de la IA en la
+educación superior y ofrece medidas prácticas que las
+instituciones de educación superior pueden adoptar
+Esta Guía de inicio rápido se publicó en abril de 2023. La
+Inteligencia Artificial (IA) es un campo en rápido desarrollo.
+Esta guía se basa en GPT-3.5, la última versión gratuita
+de ChatGPT disponible en el momento de redactar
+este documento. Además de los cambios dinámicos
+en la tecnología, las implicaciones éticas de ChatGPT y otras
+formas de IA también avanzan rápidamente. Se recomienda
+a los lectores que consulten constantemente fuentes fiables
+para conocer las últimas noticias y actualizaciones.
+Fuente: https://unesdoc.unesco.org/ark:/48223/pf0000385146_spa
+
+¿LAS
+HERRAMIENTAS DE
+IA COMETEN
+ERRORES?
+Una historia real
+
+¿LAS
+HERRAMIENTAS DE
+IA PUEDEN
+VACILARNOS Y
+MENTIR?
+Una historia real
+
+GLOSARIO DE
+TÉRMINOS
+
+GLOSARIO DE TÉRMINOS SOBRE INTELIGENCIA ARTIFICIAL
+Inteligencia Artificial
+La Inteligencia Artificial (IA) se refiere a la simulación de la inteligencia humana en máquinas que están programadas
+para pensar y actuar como humanos. Estas máquinas inteligentes pueden ser entrenadas para realizar diversas tareas
+procesando grandes cantidades de datos y aprendiendo de ellos. Los sistemas de IA pueden clasificarse en dos categorías
+principales: estrechos o generales. Los sistemas de IA estrechos están diseñados para realizar tareas específicas, mientras
+que los sistemas de IA generales están diseñados para realizar cualquier tarea intelectual que un ser humano pueda. El
+objetivo final de la investigación en IA es crear sistemas que puedan comprender, pensar y actuar de manera inteligente,
+de manera que sean indistinguibles de un ser humano.
+Aprendizaje por refuerzo
+Un tipo de aprendizaje automático en el que un agente aprende a través de la prueba y error interactuando con su
+entorno y recibiendo recompensas o castigos por sus acciones.
+Ajuste de hiperparámetros
+El proceso de ajustar los parámetros de un modelo de aprendizaje automático que se establecen antes del
+entrenamiento, con el fin de mejorar su rendimiento.
+Anotación de imágenes
+El proceso de etiquetar o anotar imágenes con información relevante, como clases de objetos o cuadros delimitadores.
+Aprendizaje automático
+Un método de entrenamiento de algoritmos utilizando grandes cantidades de datos y permitiendo que el algoritmo
+aprenda y mejore por sí mismo sin programación explícita.
+Fuente : AIFINDY
+
+GLOSARIO DE TÉRMINOS SOBRE INTELIGENCIA ARTIFICIAL
+Aprendizaje por refuerzo a partir de la retroalimentación humana
+Una técnica de aprendizaje automático en la que un sistema de inteligencia artificial (IA) aprende a partir de la
+retroalimentación o recompensas proporcionadas por un usuario o entrenador humano.
+Agrupamiento
+El proceso de agrupar puntos de datos juntos en función de la similitud o las características comunes.
+Afinamiento
+Una técnica de aprendizaje automático que implica ajustar los hiperparámetros o parámetros de un modelo
+preentrenado en un nuevo conjunto de datos para optimizar su rendimiento para una tarea específica. El afinamiento se
+utiliza comúnmente cuando se dispone de un modelo preentrenado para una tarea relacionada, pero los datos
+disponibles para la nueva tarea son limitados o la tarea objetivo es ligeramente diferente de la tarea original.
+Aprendizaje en conjunto
+Una técnica de aprendizaje automático en la que se entrenan y combinan múltiples modelos para hacer predicciones,
+con el objetivo de mejorar el rendimiento general del modelo.
+Aproximación de función
+El uso de una función para aproximar la función de valor o la política en un problema de aprendizaje por refuerzo,
+cuando los espacios de estado o acción son demasiado grandes para representarse explícitamente.
+Árbol de decisiones
+Una estructura de árbol similar a un diagrama de flujo utilizado para tomar decisiones basadas en una serie de divisiones
+binarias.
+Fuente : AIFINDY
+
+GLOSARIO DE TÉRMINOS SOBRE INTELIGENCIA ARTIFICIAL
+Autocodificador variacional
+Un tipo de modelo generativo que consiste en una red codificadora que mapea los datos de entrada a una
+representación latente y una red decodificadora que mapea la representación latente de nuevo al espacio de datos
+original.
+Aprendizaje por diferencia temporal
+Un algoritmo de aprendizaje por refuerzo que utiliza el error de diferencia temporal, la diferencia entre las recompensas
+futuras estimadas y las recompensas reales, para actualizar la función de valor de acción.
+Algoritmos genéticos
+Un algoritmo de búsqueda que utiliza principios de la evolución natural, como la reproducción, la mutación y la
+selección, para encontrar soluciones a problemas.
+Aprendizaje profundo
+Un subcampo del aprendizaje automático que implica el entrenamiento de redes neuronales multicapa para aprender y
+tomar decisiones por sí mismas.
+Autoencoder
+Un tipo de red neuronal utilizado para la reducción de dimensionalidad y el aprendizaje de características, que consta de
+un codificador y un decodificador que aprenden a comprimir y reconstruir datos, respectivamente.
+Bagging
+Una técnica de conjunto de aprendizaje automático en la que se entrenan múltiples modelos en diferentes subconjuntos
+aleatorios de los datos de entrenamiento y se combinan para hacer predicciones, con el objetivo de reducir la varianza y
+mejorar la generalización del modelo.
+
+Fuente : AIFINDY
+
+GLOSARIO DE TÉRMINOS SOBRE INTELIGENCIA ARTIFICIAL
+Big data
+Conjuntos grandes de datos que pueden ser analizados y utilizados para obtener información y tomar decisiones
+informadas.
+Boosting
+Una técnica de conjunto de aprendizaje automático en la que los modelos débiles se combinan para formar un modelo
+fuerte, con el objetivo de mejorar la precisión general de la predicción.
+Clasificación de imágenes
+El proceso de asignar una imagen a una o más categorías o clases predefinidas.
+Clasificador de Bayes ingenuo
+Un algoritmo de aprendizaje automático utilizado para tareas de clasificación basadas en el teorema de Bayes de
+probabilidad.
+Colorización de imagen
+El proceso de agregar colores a una imagen en escala de grises.
+Computación evolutiva
+Un conjunto de algoritmos que utilizan principios de la evolución natural, como la reproducción, la mutación y la
+selección, para encontrar soluciones a problemas.
+Compromiso exploración-explotación
+La tensión en el aprendizaje por refuerzo entre explorar nuevas acciones y explotar las acciones conocidas y buenas, para
+equilibrar los objetivos de aprendizaje y de maximización de recompensas del agente.
+Fuente : AIFINDY
+
+GLOSARIO DE TÉRMINOS SOBRE INTELIGENCIA ARTIFICIAL
+ChatGPT
+Un chatbot de OpenAI construido sobre su modelo de lenguaje grande GPT3.5, entrenado con datos públicos.
+Clasificación
+El proceso de categorizar datos en clases o grupos predefinidos.
+Computación cognitiva
+El desarrollo de sistemas informáticos que pueden realizar tareas que normalmente requieren inteligencia similar a la
+humana, como el aprendizaje y la resolución de problemas.
+Detección de objetos
+El proceso de identificar y localizar objetos en una imagen o video.
+Espacio de acción
+El conjunto de todas las posibles acciones que un agente puede tomar en un problema de aprendizaje por refuerzo.
+Entrenamiento
+El entrenamiento se refiere al proceso de aprendizaje a partir de datos para mejorar el rendimiento de un modelo o
+sistema. El entrenamiento es una parte fundamental del aprendizaje automático y implica alimentar a un modelo con un
+conjunto de datos y ajustar sus parámetros o pesos para optimizar su rendimiento para una tarea específica.
+Estandarización
+El proceso de transformar los valores de una característica o un conjunto de datos para tener una media cero y una
+varianza unitaria.
+
+Fuente : AIFINDY
+
+GLOSARIO DE TÉRMINOS SOBRE INTELIGENCIA ARTIFICIAL
+Espacio de estado
+El conjunto de todos los estados posibles en un problema de aprendizaje por refuerzo.
+Evaluación del modelo
+El proceso de medir el rendimiento de un modelo de aprendizaje automático en una tarea específica, utilizando métricas
+como precisión, precisión y recuperación.
+Episodio
+La secuencia de estados, acciones y recompensas que un agente experimenta en un problema de aprendizaje por
+refuerzo antes de llegar a un estado terminal.
+Función de recompensa
+La función que define la recompensa o el castigo que un agente recibe por sus acciones en un problema de aprendizaje
+por refuerzo.
+Función de valor óptimo
+La función de valor que corresponde a la política óptima en un problema de aprendizaje por refuerzo.
+Factor de descuento
+El factor por el cual se descuentan las recompensas futuras en el algoritmo de aprendizaje por refuerzo, para equilibrar el
+compromiso entre las recompensas a corto y largo plazo.
+GAN
+Un tipo de modelo generativo que consta de dos redes neuronales que compiten, un generador y un discriminador, que
+aprenden a generar y reconocer datos sintéticos, respectivamente.
+Fuente : AIFINDY
+
+GLOSARIO DE TÉRMINOS SOBRE INTELIGENCIA ARTIFICIAL
+GPT
+Un modelo de lenguaje grande desarrollado por OpenAI que utiliza la arquitectura de transformador y el aprendizaje
+auto-supervisado para generar texto similar al humano.
+Generación de imágenes
+El proceso de crear nuevas imágenes sintéticas utilizando técnicas de inteligencia artificial.
+Heurísticas
+Un método de resolución de problemas que implica encontrar una solución a través de ensayo y error y aprendizaje a
+partir de experiencias pasadas.
+Inferencia
+El proceso de deducir conclusiones a partir de premisas utilizando el razonamiento lógico.
+Iteración de valor
+Un algoritmo de aprendizaje por refuerzo que implica mejorar iterativamente la función de valor hasta que converge a la
+función de valor óptima.
+Iteración de política
+Un algoritmo de aprendizaje por refuerzo que implica alternar entre evaluar la política actual y mejorarla en función de la
+función de valor aprendida.
+Implementación del modelo
+El proceso de hacer un modelo de aprendizaje automático disponible para su uso en entornos de producción, como
+implementarlo en un servidor web o integrarlo en una aplicación.
+Fuente : AIFINDY
+
+GLOSARIO DE TÉRMINOS SOBRE INTELIGENCIA ARTIFICIAL
+Inpainting
+El proceso de reparar o rellenar partes dañadas o faltantes de una imagen.
+Ingeniería de características
+El proceso de seleccionar y crear características informativas y relevantes a partir de datos en bruto para su uso en un
+modelo de aprendizaje automático.
+K-means
+Un algoritmo de aprendizaje no supervisado utilizado para agrupar puntos de datos en un número predefinido de
+clústeres.
+Lógica difusa
+Una forma de lógica matemática que permite la incertidumbre y la imprecisión en la entrada y salida de un sistema.
+Mejora de imagen
+El proceso de mejorar la calidad visual de una imagen, como aumentar su contraste o eliminar el ruido.
+Modelo generativo
+Un modelo de aprendizaje automático que aprende la distribución subyacente de los datos y puede generar muestras
+nuevas y sintéticas de ella.
+Minería de datos
+El proceso de extraer patrones y conocimientos útiles de grandes conjuntos de datos.
+
+Fuente : AIFINDY
+
+GLOSARIO DE TÉRMINOS SOBRE INTELIGENCIA ARTIFICIAL
+Modelo de lenguaje
+Un modelo estadístico utilizado en inteligencia artificial para predecir la probabilidad de una secuencia de palabras o
+tokens en un idioma. Los modelos de lenguaje se utilizan comúnmente en tareas de procesamiento del lenguaje natural
+para generar texto coherente y apropiado.
+Modelo de lenguaje grande
+Un modelo estadístico grande en inteligencia artificial que se entrena en un conjunto de datos muy grande de texto y
+utiliza técnicas de aprendizaje automático para aprender los patrones y la estructura del lenguaje. Los modelos de
+lenguaje grandes se utilizan comúnmente para tareas como la generación de lenguaje, la traducción automática y la
+clasificación de texto, y son capaces de generar texto similar al humano con un alto grado de coherencia y fluidez.
+Máquina de vectores de soporte
+Un algoritmo de aprendizaje automático utilizado para tareas de clasificación y regresión.
+Modelo de texto a imagen
+Un sistema de aprendizaje automático que genera imágenes basadas en descripciones de lenguaje natural.
+Modelo
+Un modelo es una representación de un problema o un sistema que se puede utilizar para hacer predicciones, decisiones
+o aprender patrones en los datos. Los modelos son una parte fundamental del aprendizaje automático y se utilizan para
+realizar diversas tareas, como clasificación, regresión, agrupamiento o reducción de dimensionalidad. Los modelos
+pueden entrenarse en un conjunto de datos utilizando varios algoritmos de aprendizaje automático, como aprendizaje
+supervisado, aprendizaje no supervisado o aprendizaje por refuerzo, para aprender las relaciones y patrones en los datos
+y hacer predicciones o decisiones basadas en ellos.
+
+Fuente : AIFINDY
+
+GLOSARIO DE TÉRMINOS SOBRE INTELIGENCIA ARTIFICIAL
+Método de Monte Carlo
+Un algoritmo de aprendizaje por refuerzo que utiliza el muestreo aleatorio para estimar la función de valor o la política
+óptima.
+Máquina tragaperras de brazos múltiples
+Un problema de aprendizaje por refuerzo en el que un agente debe elegir entre un conjunto de acciones, cada una con
+una distribución de recompensa desconocida, y aprender cuáles son las más gratificantes a través de la prueba y error.
+Normalización
+El proceso de escalar los valores de una característica o un conjunto de datos a un rango común, como [0, 1] o [-1, 1].
+Ontología
+Un sistema que representa las relaciones y categorías dentro de un dominio particular de conocimiento.
+Proceso de recompensa de Markov
+Un proceso de decisión de Markov que solo tiene un componente de recompensa, sin ninguna toma de decisiones
+involucrada.
+Planificación
+El proceso de determinar un curso de acción para lograr un objetivo específico.
+Preprocesamiento
+El proceso de preparar los datos para su uso en un modelo de aprendizaje automático, que incluye la limpieza,
+transformación y escalado de los datos.
+
+Fuente : AIFINDY
+
+GLOSARIO DE TÉRMINOS SOBRE INTELIGENCIA ARTIFICIAL
+Política óptima
+La política que maximiza la recompensa acumulada esperada en un problema de aprendizaje por refuerzo.
+Procesamiento del lenguaje natural
+La capacidad de una computadora para entender, interpretar y generar lenguaje humano.
+Proceso de decisión de Markov
+Un marco matemático utilizado en el aprendizaje por refuerzo para modelar el proceso de toma de decisiones de un
+agente en un entorno secuencial e incierto.
+Programación dinámica
+Un método para resolver problemas de optimización dividiéndolos en subproblemas más pequeños y almacenando las
+soluciones a estos subproblemas en una tabla o matriz.
+Preprocesamiento de imágenes
+El proceso de preparar las imágenes para su uso.
+Propiedad de Markov
+La propiedad de un estado en un proceso de decisión de Markov que dice que el futuro es independiente del pasado,
+dada la situación actual.
+Q-learning
+Un algoritmo de aprendizaje por refuerzo que aprende una función de valor de acción, también conocida como función
+Q, que estima las recompensas futuras esperadas para cada acción en un estado dado.
+Reconocimiento de patrones
+La capacidad de identificar patrones o regularidades en los datos.
+
+Fuente : AIFINDY
+
+GLOSARIO DE TÉRMINOS SOBRE INTELIGENCIA ARTIFICIAL
+Razonamiento
+El proceso de llegar a conclusiones basadas en evidencia y argumentos lógicos.
+Red neuronal recurrente
+Un tipo de red neuronal diseñada específicamente para procesar datos secuenciales, utilizando conexiones de
+retroalimentación para permitir que la red recuerde y utilice información pasada.
+Reducción de dimensionalidad
+El proceso de reducir el número de características o dimensiones en un conjunto de datos mientras se preserva tanta
+información como sea posible.
+Reconocimiento facial
+El proceso de identificar y verificar individuos en función de sus rasgos faciales.
+Red generativa adversarial
+Un tipo de red neuronal que consta de dos redes neuronales que compiten, un generador y un discriminador, que
+aprenden a generar y reconocer datos sintéticos, respectivamente.
+Restauración de imagen
+El proceso de reparar o restaurar una imagen degradada o dañada.
+Recuperación de imagen
+El proceso de buscar y recuperar imágenes de una gran base de datos en función de su contenido visual.
+Representación del conocimiento
+La forma en que se codifica y almacena el conocimiento en un sistema informático.
+Fuente : AIFINDY
+
+GLOSARIO DE TÉRMINOS SOBRE INTELIGENCIA ARTIFICIAL
+Red neuronal
+Un tipo de algoritmo de aprendizaje automático modelado según la estructura y función del cerebro humano, que
+consiste en capas de "neuronas" interconectadas que pueden procesar y transmitir información.
+Regresión
+Una técnica de aprendizaje automático utilizada para predecir un valor numérico continuo en función de un conjunto de
+características de entrada.
+Robótica
+El estudio y la aplicación de robots y automatización.
+Red neuronal artificial
+Un tipo de algoritmo de aprendizaje automático modelado sobre la estructura y función del cerebro humano, que
+consiste en capas de "neuronas" interconectadas que pueden procesar y transmitir información.
+Red neuronal convolucional
+Un tipo de red neuronal diseñada específicamente para tareas de reconocimiento de imágenes y video, utilizando capas
+convolucionales para aprender y reconocer patrones en los datos.
+Sueño profundo
+Una técnica de generación de imágenes desarrollada por Google que utiliza una red neuronal convolucional para generar
+imágenes oníricas amplificando las características de la red.
+Subajuste
+Una condición en la que un modelo de aprendizaje automático funciona mal tanto en los datos de entrenamiento como
+en los nuevos y no vistos, debido a que es demasiado simple e incapaz de capturar los patrones subyacentes en los datos.
+Fuente : AIFINDY
+
+GLOSARIO DE TÉRMINOS SOBRE INTELIGENCIA ARTIFICIAL
+Sistema experto
+Un programa informático que utiliza técnicas de inteligencia artificial para imitar las habilidades de toma de decisiones
+de un experto humano en un campo específico.
+Selección de características
+El proceso de elegir un subconjunto de las características más relevantes de un conjunto más grande de características
+para su uso en un modelo de aprendizaje automático.
+Subtítulo de imagen
+El proceso de generar una descripción en lenguaje natural de una imagen.
+Segmentación de imagen
+El proceso de dividir una imagen en múltiples regiones o segmentos, cada uno representando un objeto o fondo
+diferente.
+Selección del modelo
+El proceso de elegir el mejor modelo entre un conjunto de modelos candidatos para una tarea determinada.
+Stable Diffusion
+La Stable Diffusion es un modelo de texto a imagen basado en el aprendizaje profundo que puede generar imágenes
+altamente detalladas basadas en descripciones de texto.
+Sobreajuste
+Una condición en la que un modelo de aprendizaje automático funciona bien en los datos de entrenamiento pero mal en
+datos nuevos y no vistos, debido a que es demasiado complejo y se ajusta al ruido en los datos de entrenamiento.
+Fuente : AIFINDY
+
+GLOSARIO DE TÉRMINOS SOBRE INTELIGENCIA ARTIFICIAL
+Súper-resolución
+El proceso de aumentar la resolución de una imagen o video rellenando los detalles faltantes.
+SARSA
+Un algoritmo de aprendizaje por refuerzo que aprende una función de valor de acción utilizando la recompensa
+esperada y el valor de la siguiente acción, en lugar de la recompensa final como en Q-learning.
+Traducción de imagen a imagen
+El proceso de convertir una imagen de un dominio a otro, como traducir una fotografía a una pintura o un boceto.
+Transición de estado
+El movimiento del agente de un estado a otro estado en un problema de aprendizaje por refuerzo, basado en una acción
+y las probabilidades de transición del entorno.
+Transferencia de estilo
+El proceso de transferir el estilo de una imagen a otra imagen, manteniendo el contenido de la segunda imagen.
+Trayectoria
+La secuencia de estados y acciones que sigue un agente en un problema de aprendizaje por refuerzo.
+
+Fuente : AIFINDY
+
+GLOSARIO DE TÉRMINOS SOBRE INTELIGENCIA ARTIFICIAL
+Transferencia de aprendizaje
+Una técnica de aprendizaje automático en la que se ajusta o adapta un modelo entrenado en una tarea para una tarea
+relacionada.
+Validación cruzada
+Una técnica de evaluación de modelos en la que los datos de entrenamiento se dividen en múltiples pliegues, y el
+modelo se entrena y evalúa en cada pliegue para obtener una estimación de su rendimiento de generalización.
+Visión por computadora
+La capacidad de una computadora para interpretar y comprender datos visuales del mundo, como imágenes y video.
+Web semántica
+Una extensión de la World Wide Web que permite a las máquinas comprender el significado de los datos en la web.
+
+Fuente : AIFINDY
+
+Podemos ayudarte en:
+Formación en Competencias Digitales para Empresa (presencial/online)
+conferencias/TALLERES/SEMINARIOS
+Creación de contenidos digitales PARA ELEARNING Y MARKETING
+Consultoría marketing digital y redes sociales
+Orientación laboral
+Organización eventos digitales
+CONSULTORÍA Y DESARROLLO DE MARCA PERSONAL
+Puedes contactar con nosotros en alfredovela@REVISTAFORMACION.COM y en EL 625569162
+
+

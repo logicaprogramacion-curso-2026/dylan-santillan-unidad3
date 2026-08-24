@@ -1,0 +1,51 @@
+respuesta,nota
+"Una variable es un espacio con nombre en la memoria donde se almacena un valor que puede cambiar durante la ejecución del programa. Los tipos de datos básicos son entero, real (float/double), carácter, booleano y cadena. Declarar una variable reserva la posición necesaria, permite al compilador saber el tipo y facilita el manejo del algoritmo, los casos borde y la reutilización del código.",10.0
+"Variable: nombre que representa una posición de memoria que contiene un dato. Tipos básicos: int, float, char, bool. Declarar sirve para que el compilador reserve espacio y podamos usarla en cálculos y decisiones. Además ayuda a organizar el algoritmo y a controlar errores.",10.0
+"Una variable es un contenedor identificado que almacena datos en memoria. Los tipos básicos incluyen entero, decimal, carácter y lógico. Al declararla se asigna un espacio y se indica el tipo, lo que permite usarla en operaciones, optimizar tiempo de ejecución y evitar errores de tipo.",10.0
+"Variable = nombre + espacio en RAM que guarda un valor. Tipos: int, double, char, bool, string. Declarar una variable indica al compilador cuánto espacio necesita y de qué tipo es, facilitando la lectura del código, la depuración y la reutilización del mismo.",10.0
+"Una variable es una ubicación etiquetada en la memoria que contiene un dato mutable. Los tipos básicos son entero, punto flotante, carácter, booleano y cadena. Declararla reserva memoria, permite al algoritmo usarla, manejar casos límite y mejorar la claridad del código.",10.0
+"Variable: posición nombrada en la memoria que almacena un valor que puede cambiar. Tipos básicos: int, float, char, bool, string. Declarar indica al compilador el tipo y el tamaño, ayuda a organizar el algoritmo, a controlar errores y a reutilizar la variable.",10.0
+"Una variable es un nombre que referencia una zona de memoria donde se guarda un dato. Los tipos básicos son entero, real, carácter, booleano y cadena. Declararla sirve para reservar espacio, definir el tipo y permitir su uso en cálculos, pruebas y manejo de casos borde.",10.0
+"Variable = espacio con nombre en la memoria que contiene un dato. Tipos básicos: entero, flotante, carácter, lógico y cadena. Declarar una variable reserva memoria, define su tipo, facilita la estructura del algoritmo y permite el control de errores y la reutilización.",10.0
+"Una variable es una zona de memoria identificada por un nombre donde se almacena un valor que puede variar. Los tipos básicos incluyen int, float, char, bool y string. Declararla asigna el espacio necesario y el tipo, lo que ayuda al compilador, al control de errores y a la claridad del código.",10.0
+"Variable: ubicación nombrada en la RAM que almacena un dato mutable. Tipos básicos: entero, decimal, carácter, booleano y cadena. Declarar una variable permite reservar memoria, indicar el tipo, estructurar el algoritmo y facilitar pruebas y depuración.",10.0
+"Una variable es una etiqueta para una posición de memoria que contiene un dato. Los tipos básicos son int, double, char y bool. Declararla sirve para que el compilador reserve espacio y el programa pueda usarla en operaciones y decisiones.",8.0
+Variable es un nombre que apunta a un espacio en memoria donde se guarda un valor. Los tipos básicos son entero y flotante. Declarar sirve para reservar ese espacio y poder usarlo después en el código.,8.0
+"Una variable es un sitio en la memoria con un nombre, donde guardamos datos como números o caracteres. Los tipos básicos son int, float, char y bool. Declararla permite al programa usarla y evita errores de tipo.",8.0
+"Variable: nombre que representa una posición de memoria donde se almacena un dato, como int o float. Declarar la variable reserva espacio y permite su uso en cálculos y decisiones del algoritmo.",8.0
+"Una variable es una ubicación en memoria identificada por un nombre que contiene un dato. Los tipos básicos son entero, real y carácter. Declararla sirve para reservar espacio y permitir su uso en el programa.",8.0
+"Variable es un nombre que indica una zona de memoria donde se guarda un valor, por ejemplo int o float. Declarar la variable permite al compilador saber su tipo y reservar el espacio necesario.",8.0
+"Una variable es un contenedor de datos en memoria con un nombre. Los tipos básicos son int, double, char y bool. Declararla asigna memoria y permite usarla en operaciones y en el control del flujo.",8.0
+Variable: espacio nombrado en la memoria que almacena un dato como entero o carácter. Declarar la variable indica al compilador el tipo y reserva la memoria necesaria para su uso.,8.0
+"Una variable es una zona de memoria con un identificador donde guardamos valores. Los tipos básicos incluyen entero, decimal, carácter y booleano. Declararla sirve para reservar espacio y definir su tipo para su uso posterior.",8.0
+"Variable es una posición de memoria con nombre que contiene un valor. Los tipos básicos son int, float, char y bool. Declarar una variable permite al programa almacenar y manipular datos.",8.0
+Una variable es un espacio de memoria con nombre que almacena datos que pueden cambiar. Los tipos básicos son int y char. Declararla sirve para reservar memoria y usarla en cálculos simples.,6.0
+"Variable: lugar en memoria con un nombre donde guardamos un número o letra. Los tipos básicos son entero y carácter. Declararla permite al programa usar ese valor, aunque no menciona casos borde ni control de errores.",6.0
+"Una variable es un espacio nombrado en la memoria que contiene un dato, como un número entero o un carácter. Los tipos básicos son int y char. Declararla sirve para reservar espacio y poder usarla en el algoritmo.",6.0
+"Variable es una posición de memoria con nombre donde guardamos datos, por ejemplo int o float. Declarar la variable indica al compilador que reserve espacio, pero no explica mucho más.",6.0
+"Una variable es un contenedor en memoria con nombre que almacena valores. Los tipos básicos son entero, real y carácter. Declararla sirve para asignar memoria y usarla en el programa, aunque falta detalle sobre reutilización.",6.0
+Variable: espacio con nombre en RAM que guarda un dato como número o letra. Los tipos básicos son int y bool. Declarar sirve para reservar espacio y poder usarla en operaciones simples.,6.0
+"Una variable es una zona de memoria con un identificador donde se guarda un dato, como entero o carácter. Los tipos básicos son int, float y char. Declararla permite al programa almacenar valores.",6.0
+"Variable es un nombre que representa una posición de memoria donde se guarda un dato, por ejemplo entero o booleano. Declararla sirve para que el programa tenga un lugar donde colocar valores.",6.0
+"Una variable es un espacio en la memoria con un nombre que contiene un valor que puede cambiar. Los tipos básicos son entero, flotante, carácter y booleano. Declararla permite al programa usar ese espacio, aunque no menciona pruebas ni manejo de errores.",6.0
+"Variable: zona de memoria etiquetada donde se almacena un dato. Tipos básicos: int, float, char. Declarar la variable sirve para reservar espacio y usarla en cálculos simples.",6.0
+"Una variable es un contenedor en memoria que tiene un nombre y guarda un valor. Los tipos básicos son entero y carácter. Declararla permite al programa guardar y leer datos, aunque la explicación es muy breve.",4.0
+"Variable es un lugar en la memoria con nombre donde se guarda un número. Sólo menciona int como tipo y dice que sirve para guardar datos, sin explicar más.",4.0
+"Una variable es un espacio en RAM con nombre para almacenar datos. Sólo dice que el tipo es entero y que sirve para guardar información, sin más detalle.",4.0
+"Variable: nombre que indica una posición de memoria donde se guarda un número. No menciona tipos ni la utilidad de declararla más allá de ""guardar"".",4.0
+"Una variable es un sitio en la memoria donde se almacena un dato. Sólo menciona que sirve para guardar valores, sin especificar tipos ni otras funciones.",4.0
+"Variable es un espacio con nombre en la memoria. Sólo dice que sirve para guardar datos y menciona int como tipo, sin explicar más.",4.0
+"Una variable es un contenedor de datos en la memoria. Sólo habla de tipo entero y dice que sirve para guardar datos, sin más explicación.",4.0
+"Variable: lugar en la memoria donde se guarda algo. Sólo menciona que sirve para almacenar valores, sin detallar tipos ni propósito de la declaración.",4.0
+"Una variable es una posición de memoria con nombre. Solo dice que sirve para guardar números y que el tipo es entero, sin más información.",4.0
+"Variable es un nombre para una zona de memoria. Solo indica que sirve para guardar datos, sin explicar tipos ni por qué declararla.",4.0
+"Una variable es un espacio en la memoria. Sólo dice que sirve para guardar datos y menciona int, sin explicar nada más.",2.0
+"Variable: sitio de memoria. Sólo dice que sirve para guardar cosas, sin más detalle.",2.0
+Una variable es un nombre. No explica nada más sobre memoria ni tipos.,2.0
+Variable es un concepto. No da información sobre tipos ni su utilidad.,2.0
+Una variable es algo que se usa en programación. No describe su función ni tipos de datos.,2.0
+Variable es una cosa que almacena datos. No menciona tipos ni por qué declararla.,2.0
+Una variable es un espacio. No da detalles sobre tipos básicos ni propósito de la declaración.,2.0
+Variable: lugar en la memoria. No explica tipos ni utilidad.,2.0
+Una variable es una etiqueta para un dato. No menciona tipos ni para qué sirve declararla.,2.0
+Variable es un nombre para un dato. No explica nada más.,2.0

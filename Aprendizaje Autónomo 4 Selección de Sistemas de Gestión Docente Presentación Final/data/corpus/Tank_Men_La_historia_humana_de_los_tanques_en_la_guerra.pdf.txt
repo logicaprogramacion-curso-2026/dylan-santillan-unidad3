@@ -1,0 +1,1362 @@
+TANK MEN
+La historia humana de los tanques en la guerra
+
+Robert Kershaw
+
+EDICIONES PLATEA
+
+A mi esposa Lynn y a mis tres hijos
+Christian, Alexander y Michael
+
+Índice de Contenidos
+Personajes ............................................................................................... 11
+Introducción .......................................................................................... 21
+Desierto Iraquí, 28 de febrero de 1991
+
+Capítulos:
+1. Génesis ............................................................................................... 25
+El Tanque «Madre»
+La Visión a través de la Mascarilla de Cota de Malla
+La Ergonomía de la Tripulación y el Tanque contra Tanque
+2. Nuevos Tanquistas ......................................................................... 51
+Nuevas Máquinas
+Nuevos Hombres
+3. Preparándose para la Guerra ...................................................... 77
+La Guerra de los Diseñadores
+Guerra de Maniobra contra Guerra a Caballo
+Guerra
+4. Una Guerra Diferente .................................................................... 103
+Bautismo de Fuego
+Lanzas contra Tanques
+El Oeste no sería un Paseo
+5. Blitzkrieg en Francia ..................................................................... 129
+Una Guerra de Parada y Arranque
+Choque de Blindados
+¿Dónde están los Británicos? Persecución y Retirada
+
+8
+
+TANK MEN
+
+6. Combate de Carros en Francia................................................... 155
+La Llegada
+Cruzando la Línea de Partida
+La Batalla y su Resultado Final
+7. Estira y Afloja en el Desierto ...................................................... 171
+Zorro Muerto en Campo Raso
+La Guerra Pendular
+8. Batalla de Tanques en el Desierto............................................. 199
+Diana y Partida
+Encontrando y Fijando al Enemigo
+Avance para el Contacto
+Carro contra Carro
+Ruptura del Contacto. Los Heridos
+9. El Crisol Ruso .................................................................................. 233
+Invasión
+El Fracaso de la Blitzkrieg
+Crisol de Experiencia. Máquinas y Hombres
+10. Retorno al Desierto ....................................................................... 259
+Nuevos Hombres
+Nuevas Máquinas
+Nuevo Terreno. Los Americanos
+11. Combate de Carros en el Frente Oriental .............................. 293
+El Área de Reunión. La Espera
+Movimiento Operacional
+Avance para el Contacto
+Combate de Encuentro
+Secuelas
+12. Masa contra Tecnología ............................................................... 331
+Preparando la Masa
+Masa contra Tecnología
+Creencias y Preocupaciones
+Sorpresas Tecnológicas. Los «Funnies»
+
+ROBERT KERSHAW
+
+13. Combate de Carros en Normandía .......................................... 373
+De la Irrealidad a la Invencibilidad
+De la Cautela al Miedo
+Del Miedo al Trauma en Combate
+14. Tanquistas ........................................................................................ 421
+La Conjunción de Hombres y Máquinas
+Los Tanquistas en la Victoria y en la Derrota
+Requiem
+Proscriptum: Los Veteranos Hoy .................................................... 463
+Agradecimientos ................................................................................... 469
+Fuentes .................................................................................................... 471
+Agradecimientos Fotos ....................................................................... 479
+
+9
+
+10
+
+TANK MEN
+
+PERSONAJES
+ALIADOS
+Británicos y de la Commonwealth
+Eric Allsup. Mayor1, 8º Royal Tank Regiment2 (RTR). Nacido en 1918. Combatió en el desierto y en Italia y percibió un creciente profesionalismo que
+se exasperaba con la anterior filosofía del «azotador de burros» de la caballería. «Tienes que ser bueno para sobrevivir».
+Peter Balfour. Teniente de los Scots Guards [Guardias Escoceses].
+Ejemplificó el creciente profesionalismo entre los tanquistas en Normandía
+para sobrevivir y terminar la guerra lo antes posible. Le desagradaban las
+SS y fue gravemente herido poco antes del final de la guerra.
+James Carson. Teniente de los Welsh Guards [Guardias Galeses]. Tenía un
+cariñoso respeto por su tripulación, quien le enseñó todo y descubrió que
+la torreta del tanque era un «nivelador social». Le desagradaban los alemanes, particularmente las SS, que ejecutaron a uno de sus tripulantes, y combatió en Normandía, noroeste de Europa y, finalmente, Alemania.
+Jack Clegg. Cabo, 1er regimiento Fife and Forfar Yeomanry. Jack Clegg no
+tenía porqué haber ido a la guerra, ya que tenía un destino seguro como
+instructor de artillería en el Reino Unido. Decidió servir en ultramar y
+1 Grado que, en el ejército español actual, equivaldría al de comandante (n. del e.).
+2 Real Regimiento de Carros. A pesar de su denominación como Regiment nació como un
+cuerpo, el Tank Corps (TC), en la I GM, y comprendía los diversos batallones de carros que se
+fueron creando durante la misma. En los años 20 se redenominó Royal Tank Corps (RTC) y,
+poco antes del inicio de la II GM, pasó a llamarse Royal Tank Regiment (RTR). Seguía compuesto de diversos batallones de carros pero estos pasaron a denominarse, a su vez, Regiments, a
+pesar de consevar el tamaño de batallones (n. del e.).
+
+12
+
+TANK MEN
+
+llegó a tiempo para la campaña del noroeste de Europa. Murió tres meses
+antes del final de la guerra.
+Bill Close. De soldado a Comandante de Escuadrón, 3er RTR. Nacido en
+1914. Se alistó en 1933 y combatió en Calais, Grecia, el Desierto y Norte
+de África, Normandía y noroeste de Europa. Fue ascendido a oficial y
+terminó la guerra como comandante de escuadrón. Su notable experiencia
+abarca el marco cronológico de este libro.
+Robert Crisp. Capitán, 3er RTR. Capitán recién ascendido, había probado jugar al cricket en Sudáfrica. Sirvió en Grecia, donde se formó opiniones escépticas sobre el rendimiento técnico de los carros británicos. «Los
+estrategas querían que el tanque se pareciera todo lo posible a un caballo»,
+declaró.
+Keith Douglas. Teniente, regimiento Nottinghamshire Sherwood Rangers
+Yeomanry. Nacido en 1920. Fue uno de los mejores soldados-poetas que
+emergieron de la Segunda Guerra Mundial. Su libro Alamein to Zem-Zem
+[«De El Alamein a Zem-Zem»] ofrece un evocador cuadro de la Guerra
+del Desierto después de El Alamein. Murió pocos días después de desembarcar tras el Día D.
+Stephen Dyson. Soldado. 107 regimiento del Royal Armoured Corps3 (RAC).
+Gemelo, se unió a un regimiento de carros Churchill con su hermano
+Tom y combatió desde Normandía hasta Alemania. Su hermano sobrevivió.
+Henry de la Falaise. Teniente. 7/12 de Lanceros. Su experiencia con un
+coche blindado de retaguardia tipificó el caos y la confusión que caracterizó a la retirada británica hacia Dunkerque a lo largo de carreteras totalmente dominadas por la Luftwaffe en 1940.
+A.F. Flatow. Mayor. 45 RTR. Comandante de escuadrón/comandante
+adjunto del regimiento. Oficial del Territorial Army4 (TA) cuyo regimien3 Real Cuerpo Acorazado. Cuerpo de nueva creación del cual pasaron a depender las unidades de caballería mecanizada y el RTR, poco antes del comienzo de la II GM (n. del e.).
+4 Ejército Territorial. Ejército formado por voluntarios no profesionales creado en 1908. El
+término «Territorial» significaba que sus unidades no estaban obligadas a combatir fuera de su
+territorio, aunque al estallar la Primera Guerra Mundial muchos de sus batallones se ofrecieron
+voluntarios para combatir en Francia (n. del t.).
+
+ROBERT KERSHAW
+
+13
+
+to sufrió tales bajas en El Alamein que quedó destruido.
+Bert Foord. Diseñador de tanques. Nacido en 1912. La perspectiva
+única de Bert Foord en el diseño de carros británicos desde su período de aprendizaje en la década de 1930 hasta su participación en el
+programa del Sherman Firefly pone de manifiesto lo artesanal del
+enfoque británico en el diseño de carros durante la Segunda Guerra
+Mundial. Comparó el proceso a una «carrera lenta», en contraste con
+la producción en masa estadounidense.
+Ian Hamilton. Teniente. 22 de Dragones. Nacido en 1922. Hamilton
+fue comandante de una compañía de carros barreminas que desembarcó en Normandía y combatió a lo largo del noroeste de Europa
+hasta Alemania. Perdió a su última tripulación dos días antes del final
+de la guerra.
+Stuart Hamilton. Teniente. 8º RTR. Combatió en las campañas del
+Desierto e italiana y describió vívidamente las fases de deterioro que
+llevan a la fatiga de combate.
+Patrick Hennessey. Soldado/cabo. 13/18 de Húsares Reales. Sirvió
+en los primeros carros anfibios Duplex Drive (DD) que desembarcaron el Día D y, posteriormente, combatió a lo largo del noroeste de
+Europa con carros Sherman hasta Alemania.
+Stuart Hills. Teniente. Regimiento Nottinghamshire Sherwood Rangers
+Yeomanry. Nacido en 1924. Ex alumno de Tonbridge y amigo de Keith
+Douglas. Desembarcó el Día D con carros DD y fue uno de los pocos comandantes de tropas que sobrevivieron a una guerra en la que
+treinta y cinco de sus oficiales murieron.
+Cyril Joly. Teniente/mayor. 3er RTR. Comandante adjunto de escuadrón y posteriormente General de Brigada. Llegó a Egipto en 1940
+y después escribió un impresionante relato literario de sus experiencias.
+David Ling. Capitán/mayor. 44 RTR. Comandande de escuadrón.
+Nacido en 1915. Se alistó con conocimientos de ingeniería, habiendo
+sido aprendiz con coches Rover antes de la guerra. Su hermano, que
+
+14
+
+TANK MEN
+
+servía en la RAF, murió el día de Nochebuena de 1940. Fue licenciado
+con una pensión completa por minusvalía en 1943 e ingresó en un Monasterio Benedictino en 1964.
+John Mallard. Teniente/capitán. 44 RTR. Nacido en 1918. Oficial del
+TA de preguerra que sirvió a lo largo de la campaña del Desierto y que
+presenció de primera mano el amargo proceso de integrar al TA en el
+ejército regular.
+Bernard Montgomery. General, posteriormente Mariscal de Campo.
+Comandante del Octavo Ejército después de agosto de 1942 y arquitecto de la decisiva victoria en El Alamein en noviembre de 1942. Su complaciente creencia de que el Sherman con el cañón de 75 milímetros
+«bastaría» tras su introducción, condenó a los carristas británicos a enfrentarse a los panzer en Normandía y el noroeste de Europa con carros
+inferiores.
+Richard O’Connor. Teniente General. Mandó la Fuerza del Desierto
+Occidental durante la victoriosa ofensiva del desierto de Wavell en 1940.
+Fue capturado por las fuerzas de Rommel a comienzos de 1941.
+Bert Rendell. Sargento. 1er RTR. Nacido en 1912. Era un viejo soldado regular que se alistó en 1934 y estaba en Egipto cuando estalló la
+guerra. Franco y directo, fue un soldado efectivo y un superviviente nato.
+Peter Roach. Operador de Radio. 1er RTR. Nacido en 1913. Pasó dos
+años en la marina mercante antes de alistarse en el ejército. Era lo bastante viejo como para desarrollar una actitud irreverente hacia la vida
+militar. «Como civiles, cogíamos del ejército lo que necesitábamos e ignorábamos las tonterías», decía.
+Paul Rollins. Soldado. 40 RTR. Nacido en 1919. Se alistó en 1938 y
+combatió en la campaña del Desierto y en Italia. Tenía una baja opinión
+de la actuación norteamericana en Kasserine.
+Jack Rollinson. Conductor de carro. 3er RTR. Nacido en 1919. Había
+sido conductor de ponis en la mina a cielo abierto de Worksop,
+Nottinghamshire y obtuvo el título de conductor de grúas. Escapó de la
+
+ROBERT KERSHAW
+
+15
+
+cola del paro cuando fue reclutado en 1940 y combatió en Calais. Sospechaba
+que el ejército tenía una baja opinión de los conductores.
+Michael Trasenster. Teniente. 4/7 de Dragones de la Guardia Real. Nacido
+en 1923. Desembarcó el Día D con carros DD y fue uno de los pocos comandantes de carro originales en Normandía que completaron la campaña del
+noroeste de Europa y acabaron la guerra en Alemania. Percibió el firme deterioro que llevaba a la fatiga de combate. Se dio cuenta de que las deficiencias
+del Sherman podían ser superadas si se empleaban el ingenio y la astucia.
+Peter Vaux. Teniente. 4º RTR y oficial de estado mayor (inteligencia). Combatió en Arras en 1940 y fue gravemente herido en el desierto.
+Jack Wardrop. 5º RTR. Nacido en 1919. Un «soldado de soldados» que tenía
+mucho interés en actividades al aire libre, en explorar y en nadar junto con una
+pasión por todas las cosas mecánicas. Su padre fue ingeniero. Se alistó en 1937
+y ascendió de soldado a sargento y luego fue degradado a soldado de nuevo.
+Fue altamente respetado como un soldado motivado y profesional. Murió en
+acción durante los últimos días de la guerra.
+Peter Watson. Cabo. 2º RTR. Nacido en 1918. Se alistó en 1939, empezando
+como conductor/operador de radio y graduándose, más tarde, como comandante de carros. Sirvió en Francia en 1940, después en Egipto en 1941 y,
+posteriormente, en Extremo Oriente. Era un poco escéptico con respecto a
+los oficiales. Después de la guerra, trabajó en el gobierno local.
+Archibald Wavell. General. Comandante en jefe del Oriente Medio en El
+Cairo durante la victoriosa ofensiva contra el Ejército Italiano en 1940. Mandó
+las menos exitosas Operaciones Brevity y Battleaxe hasta que fue relevado de su
+mando en el desierto y enviado a la India.
+Andrew Wilson. Teniente. 141 regimiento del RAC. Comandante de un escuadrón de carros lanzallamas Churchill «Crocodile». No comprendía porqué
+los alemanes ejecutaban a los tripulantes de carros lanzallamas hechos prisioneros en Normandía. Combatió en el noroeste de Europa hasta Alemania.
+Allan Wollaston. Sargento/sargento mayor. 3er RTR. Nacido en 1917.
+Wollaston procedía de una larga dinastía de soldados que sirvieron en el ejército regular. Virtualmente, todos los miembros masculinos de su familia estaban en el ejército. Experimentó dos evacuaciones antes de llegar al Desierto Occidental, en Dunkerque y en Grecia.
+
+16
+
+TANK MEN
+
+Nor teamericanos
+Belton Cooper. Capitán, Oficial de Armamento de la 3ª División Acorazada Norteamericana. Cooper experimentó de primera mano la incapacidad de las dotaciones de los Sherman para enfrentarse a los más pesados
+panzer alemanes en Normandía y Alemania. Su experiencia en la recuperación de tanques constituye una auditoría de las consecuencias humanas
+y técnicas de la decisión aliada de oponer la producción en masa de tipos
+inferiores de tanques frente a la superior calidad alemana.
+J. Ted Hartman. Conductor de carro de la 11 División Acorazada Norteamericana. Llegó a Europa como conductor de carro novato a tiempo
+para la Batalla de las Ardenas y combatió hasta Alemania, ascendiendo
+finalmente a comandante de carro.
+
+Rusos
+Vladimir Alexeev. Teniente. Comandante de un carro T-34 en el 5º Ejército de Carros de la Guardia. Combatió en las batallas de Stalingrado y
+Kursk y participó en el asalto final sobre Alemania. Era un miembro convencido del Partido Comunista, que se sustentaba en su filosofía de que
+«solamente se vive una vez».
+Anatoly Kozlov. Teniente. 5º Ejército de Carros de la Guardia. Nacido en
+1922. Combatió en las batallas de Stalingrado y Kursk y tomó parte en el
+avance sobre Alemania. Apreció el grado hasta el cual el miedo a los Comisarios influyó en la vinculación emocional que sentían los tripulantes de
+carros en el frente y el impacto decisivo de los vehículos del programa de
+Préstamo y Arriendo en la movilidad del ejército de carros soviético.
+
+POTENCIAS DEL EJE
+Alemanes
+Ludwig Bauer. Teniente. 33 Regimiento Panzer. Nacido en 1920. Sirvió
+en el mismo regimiento durante un notable período que va desde la invasión de Rusia hasta Kursk y desde Normandía y el noroeste de Europa
+hasta Alemania. Utilizó sus proverbiales nueve vidas al ser alcanzado en
+nueve ocasiones, perdiendo amigos cada vez, la última, irónicamente, por
+
+ROBERT KERSHAW
+
+17
+
+fuego amigo. Sufrió graves quemaduras y fue condecorado con la Cruz
+de Caballero.
+Hans Becker. Sargento. 12 División Panzer. Cambió su uniforme de conductor por el negro de los panzer antes de la ocupación de Checoslovaquia. Combatió en Polonia y fue capturado en Rusia.
+Winrich Behr. 3er Batallón de Reconocimiento. Un confiado comandante de panzer que afirmaba que «los carros británicos no son buenos contra
+nuestros panzer».
+Otto Carius. Teniente. 502 Batallón Pesado Panzer. Nacido en 1922. Ascendió desde tripulante de un 38t checoslovaco a comandante de una compañía de Tiger y, posteriormente, de una unidad de Jagdtiger, sirviendo en
+Rusia y en el noroeste de Europa. Altamente experimentado y poseedor
+de la Cruz de Caballero, tenía una baja opinión de la capacidad de los
+carros norteamericanos y le amargó perder la guerra.
+Karl Drescher. Suboficial. 116 Batallón de Reconocimiento. Experimentó el cinismo que afligió a las tropas panzer que intentaban vanamente
+parar el avance aliado mientras los civiles alrededor insistían en rendirse.
+Hermann Eckardt. Sargento. 8º Regimiento Panzer. Nacido en 1920.
+Una notable experiencia. Combatió toda la campaña del Desierto con el
+Afrika Korps, escapó de Túnez en 1943 y sirvió el resto de la guerra en un
+batallón de Sturmgeschütz (cañones de asalto) durante las retiradas desde
+Rusia, a través de Polonia y, finalmente, Alemania. Fue condecorado con
+la Cruz de Caballero y herido defendiendo el último obstáculo fluvial antes de Berlín.
+Karl Fuchs. Sargento. 7ª División Panzer. Nacido en 1917. Su experiencia única de artillero a comandante de un carro ligero checo 38t es típica
+del fervor idealista de los primeros días del arma panzer. Murió a las afueras de Moscú en 1941 antes de la desilusión de la derrota.
+Heinz Guderian. General. Comandante de ejército panzer e Inspector
+General de las Tropas Panzer. Nacido en 1888. Guderian fue el «padre»
+del arma panzer y probó sus capacidades como comandante de cuerpo y
+de ejército durante las campañas francesa y rusa de 1940-1941. Fue relevado del mando después de la primera contraofensiva de invierno rusa pero
+
+18
+
+TANK MEN
+
+fue reincorporado como Inspector General de las Tropas Panzer en
+1943.
+Kurt Hoehne. Teniente Doctor. Comandante de Artillería Antiaérea
+de 88 milímetros de la Luftwaffe. Estudió medicina tropical en la Universidad de Tübingen, logrando el doctorado, y fue luego reclutado
+por la Luftwaffe. Se presentó voluntario para los paracaidistas y cambió su puesto como doctor en el Afrika Korps para ser comandante de
+cañones antiaéreos de 88 milímetros.
+Hans von Luck. Teniente/Coronel. 7ª y 21 Divisiones Panzer. Nacido en 1911. Procedía de una familia de militares prusianos pero detestaba la instrucción. Se sintió decepcionado al ser enviado a una unidad
+motorizada, pues prefería la caballería, aunque disfrutaba de los coches rápidos. Su opinión de los británicos era que «nos comprendíamos mutuamente». Combatió en Polonia, Francia y Rusia. Su euforia
+inicial fue atemperándose y dando paso a un sereno juicio. En
+Normandía, era ya claramente consciente de la escala de la superioridad material aliada.
+Kurt Meyer. Soldado/Oberführer 5. 1ª y 12 Divisiones Panzer SS. Un
+nazi convencido que combatió en Polonia, Francia, Rusia y Normandía,
+siendo finalmente nombrado comandante de la División Hitlerjugend
+(Juventudes Hitlerianas) en Normandía. Fue acusado de crímenes de
+guerra por la masacre de Malmedy durante la batalla de las Ardenas.
+Erwin Rommel. Teniente General, posteriormente Mariscal de Campo. Nombrado comandante del Afrika Korps tras distinguirse como
+comandante de la 7ª División Panzer, una de las primeras unidades en
+alcanzar la costa del Canal de la Mancha durante la campaña de 1940.
+Joachim Schorm. Teniente. 5º Regimiento Panzer. Un comandante
+de compañía panzer que estuvo en acción dentro de su panzer durante
+veinticuatro horas seguidas.
+Wilhelm Wessel. Teniente. Artista bélico. Produjo un libro de fascinantes acuarelas que reflejaban la vida diaria en el Afrika Korps.
+
+5 Rango de las SS equivalente, aproximadamente, al de teniente coronel o general de brigada (n. del e.).
+
+ROBERT KERSHAW
+
+19
+
+Italianos
+Coglitore. Teniente. 12º Regimiento Bersaglieri, fue testigo de «hasta qué
+punto el cuerpo humano puede ser mutilado» en combate.
+Paolo Colacicchi. 10º Ejército italiano, experimentó la primera ofensiva
+del desierto de Wavell.
+
+20
+
+TANK MEN
+
+INTRODUCCIÓN
+Desierto Iraquí, 28 de Febrero de 1991
+Mi primera visión de un tanque estallando me dejó atónito. Era febrero de
+1991: la Primera Guerra del Golfo.
+El campo de batalla nos pertenecía y, tal y como había leído en muchas
+narraciones de la Segunda Guerra Mundial, «reventábamos»
+sistemáticamente los tanques iraquíes abandonados para dejarlos totalmente inservibles. El fogonazo y el humo de la explosión y después el
+retumbante «crump» precedían a la onda expansiva. Una torreta saltaba del
+casco para mantenerse por un momento sobre un extremo, con el sobresaliente tubo del cañón sosteniéndola como si fuera un gigantesco saltador6, antes de derrumbarse. Las llamas se proyectaban rugientes a veinticinco metros de altura como si se tratara de un lanzacohetes invertido. Un
+momento después, la torreta volteada también se incendiaba entre silbidos y crepitar cuando el propelente de los proyectiles apilados en su interior vomitaba fuego. Proyectiles aulladores volaban en todas direcciones y
+el aire por encima y alrededor se llenaba de silbante y veloz chatarra. Durante veinte minutos nos quedábamos clavados en tierra.
+Esto era la guerra en el desierto. Había leído sobre ella durante mis
+tediosos años de servicio en Alemania, pero nunca creí que fuera a experimentarla.
+Durante toda la primera Guerra del Golfo mantuve un diario de operaciones. Resultaba una verdadera disciplina que iluminaría investigaciones
+históricas posteriores. Leyendo los diarios de otras personas me daba cuenta
+de la esencia de verdad que había en ellos. Mis experiencias no se parecían
+en nada a las que describía el soldado poeta Keith Douglas en Alamein to
+Zem Zem, en las que cada uno de sus días podría muy bien haber sido el
+6 Bastón saltador, «pogo stick» en el original. Juguete que consiste en un bastón con un
+muelle en un extremo que se utiliza para dar saltos (n. del t.).
+
+22
+
+TANK MEN
+
+último. Nunca fue así en el Golfo en 1991, pero a partir de entonces descubrí que podía reconocer retazos de autenticidad en los relatos de primera mano, diarios y entrevistas que leía de otras campañas.
+Con sus asombrosos contrastes de color y de atmósfera se diría que el
+vasto y remoto desierto, de algún modo, anula el impacto de la guerra.
+Como observó un veterano italiano de la Segunda Guerra Mundial, no
+hay casas y pocos testigos civiles. Y, aún así, la capa de civilización sigue
+siendo peligrosamente fina. Los tanques de los ingenieros americanos que
+iban por delante de nosotros emplearon sus bulldozers para enterrar en
+sus trincheras a los servidores de piezas antitanque iraquíes, lo que fue
+descrito en nuestros países como una conducta desproporcionada y repugnante para los telespectadores de los canales veinticuatro horas. Del
+mismo modo, en 1941 el comandante de un tanque británico fue amonestado por su indignada tripulación cuando ordenó dar marcha atrás para
+sepultar en sus trincheras a unos artilleros antitanque del Afrika Korps.
+Pero, habiendo experimentado ya el horror visceral del impacto de un
+antitanque, no quiso dejar nada al azar.
+El disparar a tripulaciones de carros que escapaban de tanques destruidos ocurrió muy raramente durante la Guerra del Golfo. La abrumadora
+superioridad de alcance llevaba a darse cuenta de que martillear las torretas
+con fuego de ametralladora –como si se repicase en una puerta– suponía
+una invitación suficiente para que las irremediablemente superadas tripulaciones de carros iraquíes los evacuasen antes de que llegase el proyectil
+mortal. Pero no todas las acuciadas tripulaciones de carros podían permitirse ser caballerosas en enfrentamientos de gran movilidad. Durante la
+campaña en África del Norte las tripulaciones británicas y de los panzer
+ametrallaban a los supervivientes de forma rutinaria, pues resultaba arriesgado permitir a adversarios técnicamente competentes vivir para combatir otro día. Cualquier cosa que prolongase el conflicto retrasaría la vuelta
+a casa. El comportamiento civilizado puede ser corrompido muy rápidamente. Como nos explicó un comandante del desierto durante la Guerra
+del Golfo, existe una muy fina línea divisoria entre, simplemente, retirar a
+los caídos artículos de valor militar, tales como binoculares, y robar a los
+muertos.
+El espectáculo de la guerra es mencionado con frecuencia en este libro.
+El escenario panorámico del desierto, con el polvo de masivas columnas
+blindadas en marcha reduciendo el sol al esbozo de una difusa luna, produce imágenes indelebles. Las negras y humeantes carcasas de tanques,
+oxidadas como si llevasen allí cientos de años en lugar de horas, tenían el
+aspecto de fotografías de los campos de batalla del desierto de la Segunda
+Guerra Mundial. Enormes columnas de humo contrastaban vivamente
+
+ROBERT KERSHAW
+
+23
+
+con un cielo azul cobalto, produciendo una vista cinematográfica, solo
+malograda por la chatarra retorcida y por los lastimosos cuerpos
+desperdigados por el camino.
+Resulta excepcionalmente difícil reproducir el hedor de la guerra pero
+la mayoría de relatos de veteranos aluden a él en algún momento. El olor
+es físico en su acritud y provoca una sensación de podredumbre que acaba
+por deprimir. Sesenta años después de desembarcar el día D, mi padre me
+confesó que todavía sentía náuseas cuando percibía el olor del diesel, pues
+había estado flotando entre cadáveres que eran arrastrados por el mar
+hasta la playa. Desde la Guerra del Golfo he tenido un problema con el
+olor de la carne podrida, un hedor molesto y empalagoso que parece que
+nunca he conseguido arrancar de mis uniformes del desierto.
+Para el 28 de febrero de 1991 estábamos 320 kilómetros en el interior
+de Irak, en el borde de una humeante bolsa de blindados iraquíes destruidos. Después de cuatro intensos días el cielo era de un gris apagado con
+una bruma grasienta a nivel del suelo. Resultaba un alivio el que uno pudiera mesurar el futuro. Volé en un helicóptero con el teniente general
+Franks, comandante del VII Cuerpo estadounidense, para un último reconocimiento de fin de guerra, y aterrizamos entre un grupo de carros Abrams
+en el desierto de color pardo sucio. El cielo, manchado por el humo de
+pozos de petróleo ardiendo, tenía una tonalidad marciana, de un naranja
+como de otro mundo.
+Tanquista experimentado, el general se acercó para conversar con las
+tripulaciones. Estaban tiznados de carbón de sus trajes NBQ, los cuales
+estaban comenzando a deshacerse debido al calor. Los rostros estaban
+cubiertos de mugre debido al combate en las torretas, y las líneas de arrugas y las patas de gallo alrededor de los ojos se acentuaban. El general
+quedó extrañamente afectado por su conversación con los tanquistas. Había
+envejecido visiblemente durante los cuatro días pasados dirigiendo los
+combates, pugnando entre preservar vidas y aplastar unidades blindadas
+iraquíes. Mi diario me recordó el incidente: «…charla con los tripulantes
+de carros dejó al general algo afectado emocionalmente». Toda la escena
+era punzante, con el marco de fondo del humo negro que ascendía
+lánguidamente de un vehículo que ardía en segundo plano.
+Las tripulaciones de tanques no son diferentes a las de aviones en lo
+que se refiere a que ambos roles están relacionados con el impacto de la
+máquina sobre el ser humano. Por otro lado, los aviadores pasan, en cuestión de minutos, de la tumbona al combate embrutecedor, para después
+volver a dormir en sus lechos. Los tanquistas viven con las privaciones
+físicas y la tensión mental del combate inminente. La tecnología tiene un
+papel vital, como también lo tienen la velocidad de reacción y la cohesión
+
+24
+
+TANK MEN
+
+de la tripulación, en lo que respecta a las perspectivas de supervivencia de
+ambos. Las personas de este libro aguantaron dentro de una caja de metal
+cerrada, asfixiante y ruidosa, temiendo ser alcanzados y quemados vivos
+por un enemigo al que no podían ver. Dominado por consideraciones
+mecánicas, su medio terrestre hace de estos soldados un grupo diferente
+al resto.
+Son los tanquistas.
+
+7
+ESTIRA Y AFLOJA
+EN EL DESIERTO
+«ZORRO MUERTO EN CAMPO RASO»
+En el momento de la declaración de guerra de Mussolini del 10 de junio de
+1940, el tanquista británico Sam Bradshaw estaba contemplando el nuevo
+teatro de operaciones. Las tropas británicas todavía estaban siendo
+ametralladas y bombardeadas por la Luftwaffe mientras escapaban a través
+del canal de la Mancha, pero no podía haber nada más alejado de aquel
+paisaje europeo: «Era yermo, era simplemente ilimitado», dijo, «no había
+nada que ver en absoluto; solo distancia»261. Ante él se extendía la inmensidad del Desierto Occidental, lo que hoy sería Libia.
+La unidad de Bradshaw, el 6º Royal Tank Regiment, había formado parte
+de la «Fuerza Móvil», una improvisada unidad blindada concentrada en
+Mersa Matruh a finales de los años treinta, 300 km al oeste de Alejandría.
+Su misión era vigilar la gran guarnición italiana de Cirenaica, a unos 160
+km más al oeste; era un gesto de disuasión en una época de tensiones
+internacionales. Sarcásticamente llamada «Fuerza Inmóvil», fue creciendo
+lentamente a medida que la tensión en Europa iba en aumento; tras la
+crisis de Munich de 1938 sería rebautizada como División Móvil Egipto.
+Su dinámico primer jefe, el general de división Percy Hobart, había puesto
+en marcha un agresivo plan de entrenamiento para convertir su fuerza en
+la más formidable unidad del Norte de África. «La división mejor entrenada que nunca haya visto», dijo el general O’Connor poco antes de llevarla
+a la batalla. Pero, juzgada con arreglo a los estándares europeos, era una
+fuerza mucho menos temible, que no salía bien librada de la comparación
+con las letales divisiones panzer alemanas que justo acababan de ser lanzadas contra el oeste.
+«Tendría que haber estado en el desierto aquellos días para ver hasta
+qué punto estábamos mal equipados», comentaba Bradshaw. «Me refiero a
+261 Entrevista a Bradshaw, The Desert Rats, Marian Milne 3BM TV production.
+
+172
+
+TANK MEN
+
+que el primer tanque en que entré en acción había sido construido en
+1926». Su unidad no tardaría en entrar en batalla, por lo que tendría que
+luchar con lo que hubiera disponible. La capitulación francesa del 22 de
+junio había dejado disponibles para operar contra Egipto la totalidad de
+las 250.000 tropas italianas en el Norte de África. Prácticamente no se
+habían recuperado tanques británicos de Francia en 1940, por lo que tan
+solo quedaban 200 carros ligeros y cincuenta «carros de infantería» más
+pesados para defender las islas británicas. Alemania podría aprovechar las
+lecciones extraídas de su campaña mejorando sus cañones y el espesor de
+sus blindajes, pero los británicos no dispondrían de semejante lujo. La
+acuciante necesidad de cubrir las carencias de la defensa nacional empleando
+las líneas de producción existentes impedía la introducción de mejores
+diseños. Bradshaw hacía bien en sentir nerviosismo ante el inminente choque en el desierto occidental. «No sabría decirle si mi tanque había salido
+del Imperial War Museum», comentó cáustico, «pero como ya sabe, los vehículos, los tanques británicos, no estaban entre los mejores». Se mostraba
+aún menos optimista con respecto a su calidad técnica: «Las cadenas se
+rompían, los motores se averiaban, el aceite insuficiente, los cañones eran
+escopetas de feria. En realidad, [nuestros carros] eran basura».
+Mientras la amenaza de invasión seguía cerniéndose sobre las islas británicas durante el período más decisivo de la batalla de Inglaterra, los italianos lanzaron el 13 de septiembre una ofensiva de cinco divisiones.
+Se oponían a ellos únicamente diez mil tropas británicas, las cuales
+tuvieron que retirarse hacia el este, hacia Egipto. Fue así como comenzó
+una guerra de estira y afloja durante la cual el Eje y los aliados experimentaron de forma consecutiva la euforia de la ofensiva seguida de la desesperación de la retirada seis veces antes de que se decidiera definitivamente
+quién dominaba el Norte de África.
+Paoplo Colacicchi, del 10º Ejército Italiano, tampoco tenía mucha confianza, pese a la aparentemente aplastante superioridad numérica de su
+ejército. «Sin duda en 1940 no estábamos preparados para ir a la guerra»,
+afirmaría, «fue una maniobra puramente política de Mussolini, quien pensaba que Hitler estaba ganando demasiado y demasiado rápido y que, si no
+hacía algún gesto, o tomaba alguna iniciativa, no podría sentarse en la mesa
+de la conferencia de paz»262. En el momento de la declaración de guerra
+Italia tenía 1500 carros, pero la mayoría de éstos no estaban en el desierto
+occidental y eran inferiores a la mayor parte de los ya a su vez anticuados
+blindados británicos. El 10º Ejército italiano contaba con unas 200
+«tanquetas» L3, pequeños vehículos armados solo con ametralladoras.
+262 Colacicchi, entrevista en The World at War, Thames TV.
+
+ROBERT KERSHAW
+
+173
+
+Habían dado un mal resultado contra los carros rusos durante la Guerra
+Civil Española, por lo que sus tripulaciones no confiaban en ellos. Los
+vehículos más pesados eran los carros medios M11/39 y M13/40, con
+piezas de 37 mm y 47 mm, respectivamente, los cuales eran operados por
+tripulaciones poco acostumbradas a actuar conjuntamente en el seno de
+grandes formaciones.
+Las campañas del desierto fueron combatidas sobre un terreno que
+recordaba al de la Luna. Tanques y vehículos podían avanzar rápidamente
+sobre arena firme y sobre grava. Gran parte de la zona de operaciones es
+completamente llana; en realidad era como un tablero de juego en el que
+podían experimentarse conceptos operacionales de guerra acorazada en
+condiciones virtualmente de laboratorio. «Fue solo en el desierto», afirmó
+el comandante alemán Erwin Rommel, «donde los principios de la guerra
+acorazada, tal y como eran impartidos en teoría antes de la guerra, pudieron ser plenamente aplicados y desarrollados extensamente»263. Predominaba un terreno ondulante similar a la estepa, salpicado de dunas bajas y
+de elevaciones. Los mapas no mostraban, prácticamente, ningún accidente del terreno.
+Walter McIntyre, artillero en una unidad anticarro, recordó la soledad
+del desierto occidental, haciendo referencia a «la soledad, porque no había
+nada cerca de ti, día y noche y el día siguiente». Era tan solo «un continuo… como estar en prisión, pero sin muros»264. Los vehículos transitaban por amplios caminos, llamados «trighs» o «pistas», los cuales llevaban
+a los pocos y escasamente poblados asentamientos y pozas de agua. Aunque la zona costera era una zona de vivaqueo frecuentemente usada debido a su mejor suministro de agua, estaba cercada por una zona de dunas
+de arenas o de marismas salinas. Había una carretera asfaltada, la Via Balbia,
+construida por los italianos, con su característica línea de postes del telégrafo, que comunicaba entre sí las localidades de la costa libia.
+Sería la ausencia de accidentes de terreno reconocibles y el poco hospitalario entorno la causa de la naturaleza de «estira y afloja» de ofensivas y
+contraofensivas. El vacío del desierto reducía la capacidad de un ejército
+de sostener un prolongado avance durante largas distancias. Las dunas de
+arena bloqueaban el acceso de los vehículos al sur, y había pocas cadenas
+montañosas que canalizasen el movimiento.
+Por encima de todo esto brillaba el sol, con su «duro y brillante calor
+golpeando la tierra, duramente, de lleno», según el tanquista Peter Roach.
+Las temperaturas en aquel lugar eran inimaginables para la mayoría de
+263 Citado por F. W. Mellenthin, Panzer Battles, p. 53.
+264 Entrevista a Walter McIntyre, The Desert Rats.
+
+174
+
+TANK MEN
+
+europeos. Durante los meses más cálidos de junio, julio y agosto el calor
+del mediodía podía alcanzar los 60º C y desplomarse a los -15ºC por la
+noche. Raramente llovía, y solo en invierno. Durante todo el año, aproximadamente cada cuatro semanas había tormentas de arena, llamadas
+«ghiblis», que reducían la visibilidad a tres metros y paralizaban por completo las operaciones. Como concluyó Peter Roach, «un hombre estaba
+allí fuera de lugar, y así era como nos sentíamos»265.
+Los soldados italianos, provenientes de un clima mediterráneo y con
+experiencia en el servicio colonial, estaban hasta cierto punto mejor aclimatados que la mayoría. Tras barrer las retaguardias británicas, seis de las
+catorce divisiones italianas y una pequeña agrupación blindada avanzaron
+hasta Sidi Barrani, a unos 100 km de la frontera libia, para, a continuación,
+detenerse allí de forma inexplicable. Tanques y vehículos a motor sufrían
+frecuentes averías, mientras que la infantería, que formaba la mayor parte
+de la fuerza, se agotaba marchando por aquel paisaje lunar. «Al mirar hacia
+atrás ahora», recuerda Paolo Colacicchi, «parece algo extraordinario cómo
+avanzamos sobre Egipto en aquellas enormes columnas, no demasiado
+protegidos pues no teníamos muchos carros, para que luego cada una de
+ellas se estableciera en una especie de campamento fortificado»266. El mariscal de campo Rodolfo Graziani, escaso de combustible y de munición
+de artillería, se había visto obligado a emprender la ofensiva sin estar preparado. Tras recibir exagerados informes sobre la llegada de refuerzos
+británicos, optó por asegurar su línea de avance mediante una cadena de
+fortificaciones preparadas.
+Algunos refuerzos británicos, entre los que se incluían cincuenta carros pesados Matilda Mark II, habían llegado en junio de 1940. Dichos
+refuerzos supusieron un aumento de su capacidad de combate acorazado.
+La prudencia italiana había llevado al teniente general O’Connor, al mando de la Western Desert Force [Fuerza del Desierto Occidental] con puesto
+de mando en Mersa Matruh, y al general Wawell, comandante en jefe en el
+Cairo, a planear varias contraofensivas. Una serie de acciones menores
+ocurridas durante la retirada hacia Egipto habían revelado cuán inferiores
+eran los vehículos blindados de combate italianos en relación a sus equivalentes británicos. El teniente David Belchem, quien había participado en
+1938 en un programa de intercambio con una unidad acorazada italiana,
+estaba «asombrado por la vetustez e inutilidad del equipo con el que las
+unidades italianas se suponía que se preparaban para ir a la guerra».
+264 Entrevista a Walter McIntyre, The Desert Rats.
+265 Roach, The 0815 to War, p. 42.
+
+ROBERT KERSHAW
+
+175
+
+Los cañones italianos de 37 mm del carro medio M11/39 eran solo
+efectivos contra los A10 y A13 británicos disparando a bocajarro. Los
+cañones de 40 mm de los Cruiser y Matilda podían penetrar su blindaje
+frontal desde distancias normales de combate. Los italianos no contaban
+con nada que pudiera penetrar los 65-78 mm de espesor del blindaje de los
+carros pesados de infantería Matilda. Prácticamente todos los tanques británicos tenían radio, lo que no ocurría con sus adversarios italianos. Como
+resultado de ello, los comandantes de carro italianos tenían que detenerse
+y reunirse con sus subordinados si la situación cambiaba, lo cual era impracticable en medio del frenético ritmo del combate acorazado. «Mussolini
+envió a la acción hombres absolutamente mal equipados, sin haber sido
+entrenados en operaciones móviles, y con frecuencia carentes de mandos
+competentes», afirmaba el teniente Belchem. «¿Cómo podía alguien esperar que salieran victoriosos?»267.
+Después de meses de preparativos secretos tras el alto italiano de septiembre, O’Connor atacó al amanecer del 9 de diciembre. Aunque su oponente seguía teniendo una enorme superioridad numérica, 80.000 italianos contra 30.000 británicos, el balance de unidades acorazadas se había
+invertido. Ahora, 275 tanques británicos se enfrentaban a unos 120 muy
+inferiores carros italianos. Tras una sigilosa marcha de aproximación, el
+asalto británico inicial contra el campamento de Nibeiwa consiguió una
+completa sorpresa. Como recuerda Alf Davies, del 1er Royal Tank Regiment:
+Llegamos a un lugar determinado hacia las cinco en punto de la
+mañana, justo antes de que se hiciera de día; esperábamos encontrarnos con tanques o con infantería italianos. Pero en lugar de eso
+vimos unos trescientos hombres, todos con velas: estaban escuchando misa. Bien, ya sabe, no hay ley, por lo que simplemente
+abrimos fuego con las ametralladoras: barrimos las velas, y todo lo
+demás.268
+Raramente se ha alcanzado una sorpresa tan completa. El debate ético
+acerca de masacrar a enemigos indefensos y sorprendidos en una acción
+rápida suele venir a posteriori. Davies aclaró sus dudas. «¿Porqué hice aquello? Pues como sabe tienes que obedecer órdenes, dijeron: abran fuego, y
+tu tienes que obedecer las órdenes». Muchos de los tanquistas italianos
+resultaron muertos antes incluso de poder alcanzar sus vehículos. El gene266 Entrevista a Colacicchi, The World at War.
+267 Citado en Iron Hulls Iron Hearts, Ian W. Walker, p. 42.
+268 Entrevista a Davies, The Desert Rats.
+
+176
+
+TANK MEN
+
+ral Maletti, comandante del campamento, fue abatido cuando salía de su
+refugio. Todos los blindados italianos situados en primera línea habían
+sido destruidos o capturados antes de que hubieran transcurridos cinco
+horas desde este primer enfrentamiento. Los servidores de las piezas de
+artillería italianas lucharon hasta la muerte, disparando sus obuses de 100
+mm a bocajarro contra los Matilda, pero sin conseguir nada excepto bloquear las torretas de uno o dos de ellos.
+La ofensiva de O’Connor solo contaba inicialmente con suministros
+para cuatro días de operaciones, pero mantuvieron el ritmo de avance gracias al botín capturado a medida que una fortificación tras otra iba cayendo. Los vehículos italianos capturados fueron devueltos al servicio, aprovechándose sus depósitos de combustible y de agua. «Decidimos que si
+estaban tan separados entre sí, no podrían apoyarse mutuamente», subrayaba O’Connor, «por lo que hicimos dar un rodeo a nuestras tropas para
+atacarles por la retaguardia, por el lado por el que les llegaban sus raciones»269. Hacia finales de diciembre, Sidi Barrani, Sollum y Fuerte Capuzzo
+habían caído. En enero de 1941 capitularon Bardia, Tobruk y Derna.
+Descorazonado por sus fracasos, el mariscal Graziani decidió abandonar la Cirenaica y llevar a sus columnas en retirada hacia Tripolitania, la
+mitad occidental de Libia. Los británicos tomaron la audaz decisión de
+enviar a elementos de la 7ª División [acorazada] a través del desierto para
+cortar el paso al sur de Benghazi a las columnas italianas que marchaban
+por la Vía Balbia. Este episodio simbolizaba la diferencia entre las operaciones acorazadas en Europa, con sus bosques, carreteras, líneas de ríos y
+centros de población, y las del nuevo paisaje «oceánico» del desierto. «Cada
+vez más», escribió el corresponsal de guerra británico Alan Moorehead,
+«comencé a ver que la guerra del desierto se asemejaba a la guerra en el
+mar». No había posiciones estáticas; los hombres se guiaban con brújulas,
+mientras que unidades combinadas de carros y cañones «hacían grandes
+barridas a través del desierto, como un escuadrón de buques en el mar
+desvaneciéndose más allá del horizonte». No había ninguna línea de frente
+y «uno no ocupa el desierto, del mismo modo que uno no puede ocupar la
+mar». Todo era cuestión de maniobrar en las regiones que ofrecían mejores perspectivas de destruir al enemigo. El 4 de febrero, el general Creagh
+envió a una columna volante de infantería, piezas anticarro y autos blindados, pero sin tanques, para establecer una posición de bloqueo sobre la
+Vía Balbia. «Cazábamos hombres, no territorio», comentaba Moorehead,
+«como un buque de guerra da caza a otro buque de guerra, sin que importe en absoluto el mar sobre el que se combate la acción»270.
+269 Entrevista a O’Connor, The World at War.
+270 Moorehead, African Trilogy, citado en Freedom’s Battle – The War on Land, p. 78-79.
+
+ROBERT KERSHAW
+
+177
+
+La Combe Force alcanzó la costa cerca de Sidi Saleh a la mañana siguiente, bloqueando la carretera con 2000 hombres. La 4ª Brigada Acorazada,
+con tan solo veinte Cruiser y treinta y seis carros ligeros, les seguía lo más
+rápidamente que podía para darles apoyo.
+El carro Cruiser del artillero «Topper» Brown, del 2º RTR, saltaba y
+brincaba incontroladamente mientras avanzaba por la extensión del desierto a velocidades de entre 40 km y 50 km por hora. Brown había estado
+«en el vacío» –jerga coloquial para denominar el desierto– desde el estallido de la guerra, en septiembre. «Mis sentimientos eran de completa indiferencia. Simplemente estaba completamente harto, completamente sucio y
+completamente mal alimentado». Podía dormir algo durante la noche, pero
+el sueño era interrumpido constantemente por escaramuzas con rezagados italianos, además de por las lluvias torrenciales, por lo que «estaba
+empapado, incluso llevando mi capote»271. Llegaron a Beda Fomm a última hora de la tarde del 5 de febrero. El objetivo era un cuadro de desértica
+desolación, descrito por el sargento Ken Chadwick como «completamente llano y arenoso con algún matorral aquí y allí, y muchas latas de gasolina
+de cuatro galones [14 litros] mecidas por el viento»272. El único accidente
+del terreno era una pequeña colina llamada the ‘Pimple’ [el grano/la espinilla], con una cresta y una tumba sobre ella hacia el norte. Iba a ser el lugar
+de una carnicería.
+Dejando atrás retaguardias durante su avance, la columna italiana, que
+llevaba la mayor parte de sus blindados a la cola, quedó sorprendida y
+desanimada cuando se topó con una fuerza británica bloqueando la carretera. De inmediato el 10º Regimiento de Bersaglieri, que iba en vanguardia, lanzó a ciegas una serie de poco coordinados asaltos frontales. Al
+mirar hacia abajo, hacia la carretera Benghazi-Tripoli, James Palmer, del 2º
+RTR, no pudo creer lo que estaba viendo. «El ejército de Graziani al completo se retiraba desde Benghazi», relataría después, «estaba completamente
+a nuestra merced».
+El comandante de Brown, alférez Plough, dijo de pronto: «¡Allí están,
+giren el carro!». El tanque estaba con el casco por debajo del nivel de una
+pequeña elevación. Comenzaba a clarear. El cabo «Barney» Barnes hizo
+avanzar el carro cuesta arriba, proveyendo al artillero de un campo de tiro.
+«Conseguí ponerme en el asiento de mi artillero y lo siguiente que vi al
+mirar por el visor de tiro era un M13 a unas treinta yardas [27,4 metros]
+avanzando directo contra nosotros». Estaba a muy corta distancia de tiro.
+271 Relato de Brown, citado en Desert Rats at War, Fortry, p. 68-70.
+272 Chadwick, Tank Magazine, Volumen 48. Marzo 1941, p. 206.
+
+178
+
+TANK MEN
+
+Sin pensar apreté el gatillo del [cañón de] dos libras, pero como no
+veía nuestra trazadora pensé «Oh, Dios mío, he errado el tiro». Iba
+a disparar de nuevo y entonces uno de sus tripulantes salió por la
+parte superior, por lo que le disparé. La luz del día brilló entonces a
+través del agujero que le había hecho con nuestro primer proyectil;
+¡eso me tranquilizó! Estábamos tan cerca que la trazadora no había
+tenido tiempo de encenderse.
+Sesenta tanques medios italianos M13/40, apoyados por toda la artillería disponible, habían sido destacados de la Brigada Bambini para abrir
+brecha en el cerrojo británico. Asimismo, unidades blindadas británicas de
+refuerzo se habían unido a la refriega en la pequeña colina, en «el grano»,
+donde el Escuadrón A de «Topper» Brown, del 2º RTR, estaba desbaratando los asaltos italianos. Un total de unos veintidós carros Cruiser y cuarenta y cinco ligeros, bien apostados con el casco oculto bajo el nivel del
+suelo, estaba bloqueando el avance de las columnas italianas. El teniente
+Cyril Joly describió una acción similar273, en la que atrajeron a los tanques
+italianos a una trampa, a una posición desde la que tenían que disparar con
+el sol dándoles en los ojos. Al contrario que en Francia, las maniobras
+llevadas a cabo en Salisbury Plain en las que se entrenaba con agresivas
+«tácticas de guerra naval» sí que dieron resultado en el desierto. No obstante, la puntería británica seguía siendo mala. Joly había escuchado, en
+conversaciones por radio con sus jefes de sección, que había habido cierto
+número de tiros errados. Los tanques italianos fabricados por Fiat tenían
+un buen motor diesel V8, pero sus chasis estaban mal construidos y no
+estaban remachados como los de sus equivalentes británicos. En consecuencia, podían ser destrozados por sus disparos. Incluso los impactos de
+balas de ametralladora pesada podían acribillar a las tripulaciones de modelos más antiguos con los diminutos fragmentos de metal que saltaban
+del fino blindaje. Ryan, informó Joly,
+Hizo blanco en un tanque enemigo mientras giraba en la cuesta,
+dándole de lleno en el motor, destrozando sus depósitos de combustible y provocando un incendio que se extendió con rapidez.
+Mezcladas con llamas, grandes nubes de humo negro se expandían
+por el desierto, ocultándome por completo al enemigo. Entonces la
+munición estalló con un sordo bramido, lanzando por los aires una
+masa de restos.
+273 Joly, Take These Men, p. 6 y 37.
+
+ROBERT KERSHAW
+
+179
+
+Sea lo que sea que esté pasando en ese mismo momento, el espectáculo
+de violenta destrucción desviará la atención de los atacantes más próximos, quienes pasan a ser conmovidos observadores. La pesadilla de todo
+tanquista es un «caldero», o incendio, al ser alcanzado. El M13 es un carro
+pequeño y a su tripulación de tres hombres le resultaba difícil salir de su
+estrecho interior. «Un momento después», continúa Joly,
+Vimos horrorizados una figura de rostro ennegrecido y ropa envuelta en llamas tambalearse por entre el humo. Avanzó a
+trompicones unas pocas yardas, para después caer y en un frenesí
+agónico rodar desesperado sobre la dura arena en un intento desesperado por apagar las llamas. Pero fue en vano. Gradualmente, sus
+brazos y piernas fueron moviéndose cada vez más lentamente, hasta que, finalmente, con una última convulsión, yació inmóvil.
+Joly escuchó por la radio constantes referencias a tiros errados o a
+impactos sin aparente efecto. Cuando un proyectil antiblindaje no hacía
+explotar un carro, los artilleros con frecuencia le disparaban una y otra vez
+para asegurar su destrucción, aún cuando el daño causado por el primer
+impacto ya había sido definitivo.
+«Aquí «Como Dos». Le hemos dado a un tanque tres veces, pero no
+arde. ¡Hola! Un momento. Ahí va la tripulación: están saltando del
+carro. Les dejaré en paz; no está bien disparar a un pájaro parado.
+De todos modos anotamos uno. Cambio y cierro».
+En esta fase inicial de la guerra había una comprensible simpatía por
+un tripulante enemigo que estaba pasando por las circunstancias que todos temían.
+La batalla de «Topper» Brown en Beda Fomm fue interminable. «Prácticamente no dejamos de disparar durante toda la mañana», dijo, «contra
+enormes cantidades de infantería o de tanques». Probablemente dejó fuera de combate veinte carros en un mismo día. Continuaba, «cuando regresamos después de oscurecer nos sentíamos francamente aliviados. Me dolía
+el ojo derecho por la tensión de tener que mirar por la mira telescópica
+durante 13 horas sin apenas un momento de descanso»274.
+274 Forty, Ibíd., p. 69-70.
+
+180
+
+TANK MEN
+
+El 7 de febrero los italianos comenzaron a rendirse en masa. Diez divisiones habían sido destruidas. Fueron capturados 130.000 prisioneros, 180
+carros medios, 120 ligeros, y 845 cañones275. «Zorro muerto en campo
+raso», fue el mensaje enviado sin codificar por el general O’Connor a Wawell,
+mofándose claramente de Mussolini al emplear una clásica expresión de
+caza británica. «La guerra había comenzado», declaró el soldado italiano
+Enrico Emanuelli, «y la llamaban «limpia», porque no destruimos edificios, ni matamos mujeres ni niños y, al menos durante un tiempo, no tuvimos los medios o la disposición mental necesarios para la guerra»276.
+Al precio de 624 británicos e indios muertos y heridos277, se había conquistado una zona del tamaño de Inglaterra y Francia entre Egipto, al este,
+y El Agheila, al oeste, en la frontera con la Tripolitania. Las rendiciones en
+masa provocaron humorísticos comentarios por radio acerca del número
+de prisioneros que estaban siendo enviados hacia retaguardia. «Hasta donde puedo ver», decía uno, «hay veinte acres de oficiales y un centenar de
+acres de hombres». Cuidar de todo este número de prisioneros de guerra
+en un ambiente desértico, desprovisto de agua y refugio, resultaba un gran
+desafío, especialmente para los tanquistas. Como señalaba Sam Bradshaw
+del 6º Royal Tank Regiment, «una de las cosas más difíciles y embarazosas
+para nosotros era que hicimos tantísimos prisioneros, miles y miles, a los
+que, siendo hombres del arma blindada, no podíamos controlar». Observaba irónicamente que «no puedes llevar prisioneros dentro de un tanque,
+no hay espacio». Solo unos pocos pueden ir montados sobre el motor, en
+la parte trasera. Escucharon a uno de sus jefes de escuadrón llamar por la
+radio: «¡Por Dios, envíen a la infantería, estamos rodeados de prisioneros!»278.
+La victoria, llegada en un momento particularmente tenebroso de la
+guerra para los británicos, había sido dulce. El 16 de diciembre de 1940
+Churchill envió un cable a Wawell afirmando que «el ejército del Nilo había prestado gloriosos servicios al Imperio y a nuestra causa…». James
+Palmer, quien vio de cerca la destrucción de Beda Fomm, reconocía que
+«nuestras bajas habían sido mínimas, pero creo que aquella carnicería dejará para siempre una cicatriz indeleble en las mentes de todos aquellos
+tanquistas»279. El día después de la acción fueron enviados a la carretera
+para recuperar tanques italianos reparables entre el dulzón hedor de carne
+quemada. Resultaba asombroso hasta qué punto los cascos de color rojo
+275 Palmer, The War Years, Purnell, p. 67.
+276 Images of War 1939-45, Purnell, p. 101.
+277 Cifras en The Second World War, J. Keegan, p. 148 y Freedom’s Battle, p. 87.
+278 Entrevista a Bradshaw, Ibíd.
+279 Palmer, The War Years, p. 68.
+
+ROBERT KERSHAW
+
+181
+
+óxido de tanques quemados, plenamente operacionales apenas horas antes, podían parecer restos cubiertos de herrumbre de cien años atrás. Vieron que, de no haber sido por la fortuna de la guerra, podrían haber sido
+ellos los que estaban allí. «Los hombres pendían con medio cuerpo fuera
+de los carros con sus piernas ennegrecidas, las cuales se les caían cuando
+sacábamos los cuerpos. Había en el interior de los tanques montones de
+una sustancia pegajosa y negra; esos bultos habían sido hombres».
+Era mejor cuando la furiosa combustión de municiones y de combustible había carbonizado los cuerpos totalmente. Ver cadáveres a medio carbonizar acentuaba el horror. «Era una visión que nunca olvidaré» dijo, «y
+se que mi alma estará maldita para siempre por haber participado en todo
+aquello». Veinticinco kilómetros de tanques, cañones y vehículos abandonados alfombraban la carretera de Beda Fomm. Bandadas de árabes merodeaban por entre la chatarra. Esos árabes, según recordó el sargento Ken
+Chadwick, «estuvieron durante toda la batalla; a algunas de las tropas les
+vendían huevos, y cuando la acción finalizó la tribu comenzó a recuperar
+chatarra de los restos de vehículos». Los italianos cavaron tumbas junto a
+la carretera y Palmer observó que «caían lágrimas de los rostros de muchos; ambos bandos murmuraban que sentían lo que había ocurrido». Pero
+había ocurrido. Ofrecer cigarrillos a los supervivientes servía de poco para
+atenuar el sentimiento de culpa. La conclusión a la que llegó Palmer no era
+muy diferente a la de Wellington al examinar el resultado de Waterloo,
+poco más de 125 años atrás:
+Había sido una victoria para nosotros; pero si eso era una victoria,
+no quería volver a ver ninguna nunca más. La atrocidad y el derramamiento de sangre de la guerra me habían dejado atónito. Había
+experimentado la más grande degradación que puede sufrir un ser
+humano.
+Cinco días después, el general Erwin Rommel aterrizaba en Tripoli.
+
+LA GUERRA PENDULAR
+«Saltamos y nos abrazamos como locos», dijo el Leutnant [alférez] Ralph
+Ringler, asignado al 104º Panzer Grenadier Regiment, «¡íbamos a África!». Antes
+de la Segunda Guerra Mundial ningún soldado alemán imaginaba la posibilidad de participar en ninguna guerra futura fuera de Europa. Incluso un
+año después de haber sido destacados allí, seguía siendo motivo de maravilla en los pabellones de los cuarteles. «Nos convertimos en una casta sepa-
+
+182
+
+TANK MEN
+
+rada en los cuarteles: «los africanos»», declaraba Ringer. «Nuestros jóvenes camaradas nos envidiaban; a los más veteranos les divertía nuestro
+entusiasmo, pero eso no nos molestaba. Nuestro cielo estaba lleno de
+violines280 y en África nos esperaba la gran aventura»281. Al igual que sus
+homólogos británicos, la mayoría de soldados alemanes nunca habían estado en el extranjero. Ahora, después de dos años de guerra, los soldados
+alemanes se dedicaban a hacer una especie de pseudo turismo. Las tripulaciones de carros se relajaban en las calles de Nápoles antes de partir para
+Libia282.
+Los soldados británicos también aprovechaban al máximo su viaje hacia África, que en realidad, no dejaba de ser un crucero. Jake Wardrop,
+siempre el pragmático soldado, empleó su habitual habilidad organizativa
+para hurtar regularmente helado y cerveza al personal del barco. «El tiempo era magnífico, y mi bronceado mejoraba día a día», declaraba al cruzar
+el Ecuador camino de Oriente Medio. «Me sentaba en cubierta, leía un
+montón y también me bañaba en la pequeña piscina que habíamos fabricado. ¡Menuda vida!»283.
+El viaje era peligroso, y era necesario dar un largo rodeo por el cabo de
+Buena Esperanza para evitar el acecho de los U-boot284.
+Las tropas del Eje también compartían el peligro de, tal vez, no sobrevivir a lo que igualmente era un exótico viaje. El 5º Regimiento Panzer
+perdió trece carros medios y pesados durante un ataque aéreo al puerto de
+Nápoles antes incluso de que los primeros panzer llegasen a África. El
+Leutnant [alférez] Karl Susenberger, de camino a incorporarse a la 21ª División Panzer, voló en una impresionante formación de treinta y cinco
+aviones de transporte Ju-52 que fue atacada por la RAF cuando se aproximaba a la costa africana en una impresionante tormenta de balas trazadoras.
+«Nuestros cazas y servidores de ametralladoras aceptaron el combate pero,
+pese a ello, los Tommies derribaron tres Ju-52». Cada avión transportaba
+como pasajeros a dieciocho soldados destinados al Afrika Korps. «Esos
+aviones iban llenos de camaradas que nunca llegarían a África» declaró
+Susenberger285.
+«Sabíamos que los alemanes habían llegado a Tripoli y que habían traído tanques», dijo Sam Bradshaw del 6º Royal Tank Regiment. «Pero no sabíamos en qué cantidad y no sabíamos cómo era su equipo, pues nunca
+280 Expresión alemana que suele decirse cuando la vida es fácil y agradable (n. del t.).
+281 Ringler, entrada de diario, 20 Julio 1942.
+282 Forty, Afrika Korps at War, p. 29.
+283 Wardrop, Tanks Across the Desert, p. 29.
+284 Submarinos alemanes.
+285 Forty, p. 28.
+
+ROBERT KERSHAW
+
+183
+
+habíamos luchado contra los alemanes». Algunos de los soldados de las
+unidades británicas de reemplazo llegadas recientemente ya lo habían hecho. «Una mañana me levanté, miramos a nuestro alrededor, cuando vino
+hacia nosotros un avión», recordó el tanquista Alf Davies, del 1er RTR.
+«El corazón se nos vino abajo cuando vimos una grande y sucia cruz negra pintada en el avión. Oh, vienen los alemanes»286 pensó. Rommel no iba
+a enfrentarse a tropas veteranas y victoriosas; esas tropas habían sido enviadas como refuerzos a Grecia y a los Balcanes. Las divisiones 2ª Acorazada y 9ª australiana habían venido a reemplazar a la 7ª Acorazada. Ninguna de las dos estaba preparada para la batalla, y ambas estaban escasas de
+equipo.
+Según Bradshaw, la impresión que los tanquistas británicos tenían de
+los alemanes era que «sabíamos lo suficiente como para pensar que debían
+ser bastante buenos». Después de la caída de Francia el arma panzer alemana estaba eufórica. Había jugado un papel fundamental para eliminar
+una superpotencia europea y había castigado con dureza a otra, dejándola
+aislada en las islas británicas. Su reputación les precedía. El 5º Regimiento
+Panzer procedía de la 3ª División Panzer que había combatido por toda
+Francia y durante la retirada británica hacia Dunkerque. El nuevo comandante, el Generalleutnant [general de división] Erwin Rommel, había estado
+al mando de la 7ª División Panzer, una de las divisiones de vanguardia que
+habían alcanzado la costa del canal mucho antes de lo que la Wehrmacht
+esperaba.
+Ambos bandos tenían altas expectativas con respecto a la eficiencia
+alemana. No obstante, lo cierto es que las nuevas tropas alemanas que
+estaban llegando a África apenas estaban preparadas para la guerra en el
+desierto. El Feldwebel [sargento] Hermann Eckardt, del 8º Regimiento
+Panzer, afirmó que tan solo se les concedieron ocho días para aclimatarse
+y orientarse. Bradshaw escuchó, «historias de que el Afrika Korps había
+recibido entrenamiento especial para la guerra del desierto en gigantescos
+invernaderos». Se habría sentido más tranquilo de haber sabido la verdad.
+Se había creado en Berlín un estado mayor especial para guerra tropical, el Sonderstab Tropen, compuesto por oficiales que habían combatido en
+las colonias alemanas durante la Primera Guerra Mundial, pero éste no
+comenzó a trabajar en Libia hasta que las primeras tropas comenzaron a
+llegar allí. Los trabajos preliminares tuvieron que limitarse a exámenes
+286 Entrevistas a Bradshaw y Davies, The Desert Rats.
+
+184
+
+TANK MEN
+
+médicos, distribución de ropa para el trópico y entrenamiento de combate
+en campo abierto. Solo hubo tiempo para esto y para pintar los vehículos
+de colores de desierto, suministros de agua especializados, higiene y otros
+preparativos particulares para aquel teatro de operaciones. En el desierto
+los alemanes harían combatir a los carros en cooperación con las piezas
+anticarro. La infantería operaría separadamente como una fuerza motorizada. Cada una de las divisiones del Afrika Korps, la 15ª Panzer y 5ª Ligera
+(pronto renombrada como 21ª Panzer), tenían asignado solo un regimiento de infantería motorizada (en lugar de los dos habituales).
+«Vimos algunos vehículos moverse en el horizonte; eran autos blindados de ocho ruedas» recordaba Sam Bradshaw. «Los italianos nunca habían tenido autos blindados de ocho ruedas, por lo que debían ser alemanes; esa fue la primera vez que vimos a los alemanes». Los británicos no
+estaban preparados, pues todavía no se habían recuperado completamente de su enfrentamiento con los italianos. Tan solo tenían los viejos carros
+que se habían quedado atrás reparándose en el Cairo. El cabo Peter Watson,
+del 2º Royal Tank Regiment, se quejó de que «solo teníamos nuestros viejos
+tanques supervivientes, reparados pero todavía ineficientes, mal armados,
+mal protegidos y completamente desgastados»287. El sargento Ken
+Chadwick estaba de acuerdo con su opinión, pues el 2º RTR fue reequipado
+con A9, A10 y A13, «los cuales tenían la reputación de estar en muy malas
+condiciones».
+Rommel intuía la debilidad de las fuerzas británicas que se le oponían;
+un reconocimiento confirmó que, después de haber combatido con los
+italianos, seguían estando esparcidas en una larga y dispersa columna, y en
+una situación muy precaria.
+Hacia el 31 de marzo, sin esperar la llegada de la 15ª División Panzer,
+aún en tránsito, Rommel estaba atacando Mersa el Brega. Aunque solo
+consiguió penetrar en un frente muy estrecho, el grupo de apoyo de la 2ª
+División acorazada británica comenzó a retirarse; a partir de ese momento, la campaña estuvo perdida. En dos semanas el Afrika Korps recuperó
+de un zarpazo lo que Wawell había tardado dos meses en tomar, excepto
+Tobruk, que quedó bajo asedio. Benghazi cayó el 3 de abril, y tres días más
+tarde los generales Neame y O’Connor, los arquitectos de la victoria de
+Wawell, fueron capturados en la carretera por una patrulla motociclista
+alemana288. El 13 de abril la ofensiva alcanzó Sollum y Capuzzo.
+«Rommel era todo un aventurero», recordó Friedrich Hauber, quien
+formaba parte de su estado mayor. «No era el tipo de general que se sen287 Watson, BTM.
+288 Entrevista a O’Connor, The World at War.
+
+ROBERT KERSHAW
+
+185
+
+taba a escribir en su escritorio; todo lo contrario, él quería estar con sus
+hombres y decir «hombres, aquí estoy, seguidme»»289. Rommel insistió en
+que su recién llegado regimiento panzer hiciera lo mismo que habían hecho los británicos a los italianos: sobrepasar focos de resistencia e ir por el
+desierto. Esto no era un logro menor para hombres que no tenían la menor idea de las condiciones peculiares de las operaciones en Libia, las cuales contrastaban totalmente con la forma en que habían operado en Europa apenas unos meses atrás. El 5º Regimiento Panzer avanzó directo a
+través del desierto hacia Mechili y Derna, mientras fuerzas menores avanzaban a lo largo de la costa vía Msus. Winrich Behr, a la vanguardia del
+avance alemán con el Aufklärungsabteilung 3 [3er Batallón de Reconocimiento] hizo lo que se le ordenó. «Sabíamos que Rommel había jugado un
+importante papel en la campaña francesa, y que allí se abrió camino superando todos los obstáculos» tan exitosamente que «su división fue llamada
+la división fantasma»290.
+Otto Henning, del mismo destacamento de reconocimiento que encabezaba el avance de los panzer a través del desierto, afirmó que «nosotros,
+jóvenes soldados, sentíamos un enorme respecto por Rommel». A veces,
+no obstante, el coste en hombres y máquinas era descorazonadoramente
+alto, consecuencia de su inexperiencia en el desierto. Hermann Eckardt
+veía con escepticismo a los oficiales demasiado fervorosos e idealistas,
+encendidos por el éxito de Francia291. Demasiado «concienciados por la
+victoria», tomaban riesgos innecesarios, urgiéndoles constantemente
+«Vorwärts!» ¡Adelante!. La insistencia de Rommel en repetir ataques fallidos, pese a las terribles bajas, contra las fortificaciones de construcción
+italiana ahora defendidas por los británicos de Tobruk, revelaba un lado
+negativo de su personalidad.
+El impacto de este avance por el desierto en los tanques del inexperto
+5º Regimiento Panzer fue igualmente serio. Su compañía de talleres informó de la pérdida de 83 de los 155 carros que participaron, en su mayor
+parte por las averías causadas por avanzar a gran velocidad por terreno
+áspero y desconocido con el fin de mantener el ritmo de la ofensiva. «Recorrer a través del desierto una distancia media de 700 km tuvo importantes consecuencias para los panzer» decía el informe. Motores bloqueados
+por tierra y arena, amortiguadores, muelles y cadenas incapaces de soportar tanto castigo292. Al igual que los británicos, el Afrika Korps estaba co289 Citado por G. Knopp, Der Wustenkrieg, p. 129.
+290 Knopp, p. 122.
+291 Eckardt, entrevista del autor, 11 Julio 2006.
+292 Jentz, p. 159-160.
+
+186
+
+TANK MEN
+
+menzando a sufrir los efectos de una serie de problemas mecánicos causados por el desierto. Máquinas y hombres estaban sintiendo la presión.
+Las observaciones británicas que siguieron a la campaña francesa fueron escasas, pero unánimes en lo que respecta a la necesidad de emplear
+tácticas agresivas contra los blindados alemanes. El informe posterior a la
+campaña del Comité Bartholomew afirmó que «debe infundirse en todos
+los rangos un espíritu agresivo a la hora de enfrentarse con los tanques».
+Además, las unidades anticarro de las divisiones debían ser reforzadas.
+«Ahora que los alemanes pueden obtener detalles exactos de la capacidad
+de penetración de nuestras armas actuales debemos asumir que
+incrementarán de forma consecuente la protección de sus blindados»293.
+Los nuevos Panzer III ya estaban llegando al Norte de África con blindaje
+suplementario añadido, y todos montaban el nuevo cañón de 50 mm. El
+Informe Bartholomew concluía: «Debemos, por tanto, acelerar la producción de las piezas anticarro de 6 libras [de 57 mm de calibre]». Este nuevo
+teatro de guerra iba a ser para ambos bandos un campo de pruebas para el
+desarrollo de nuevos diseños de carros.
+«Llegamos a África inmensamente mejor equipados que los ingleses»,
+declaraba Winrich Behr, oficial del Aufklärungabteilung 3. «Los tanques ingleses no servían de nada contra nuestros panzer. Además, no estaban
+preparados en absoluto para enfrentarse al poder de nuestros 88 mm
+antiaéreos»294. Ambos bandos habían llevado equipos diseñados para la
+guerra en Europa, pero, como escribió Alan Moorehead, «el desierto impuso siempre su ritmo, señaló las direcciones y trazó el diseño»295. El desierto tenía sus demandas particulares, como descubrirían los alemanes
+durante su primer ímpetu ofensivo a través de tan poco hospitalario terreno. Los vehículos británicos ya estaban «reventados» por la campaña de
+Wawell cuando llegó el Afrika Korps. Muchos carros británicos pertenecientes al 5º RTR gastaron lubricante a razón de un galón [4,5 litros] por
+milla [1,6 km] durante la subsiguiente retirada296. En general, las tripulaciones británicas no tenían palabras de elogio hacia sus vehículos. El capitán
+Robert Crisp recordó los sesenta y pico carros que el 3er RTR se había
+llevado a Grecia, de los cuales solo media docena habían sido destruidos
+por el enemigo; el resto había tenido que ser abandonado. Crisp acababa
+de ser nombrado capitán, y había sido jugador de test cricket297 por
+293 Bartholomew Committee Final Report, (sin fecha) probablemente 1940, Parte 2, Sección 4. Defence Against Tanks. (b)-(d).
+294 Knopp, p. 134.
+295 Moorehead, Freedom’s Battle: The War on Land, p. 79.
+296 Citado por Wardrop, Tanks Across the Desert, p. 14 y 32.
+297 Variante del cricket de más larga duración. Un partido de test cricket puede llegar a
+durar un máximo de cinco días, con tres sesiones diarias de dos horas cada una (n. del t.).
+
+ROBERT KERSHAW
+
+187
+
+Sudáfrica. Su escepticismo con respecto a la validez técnica de los carros
+británicos, opinión que era tenida en cuenta debido a su reputación como
+jugador de cricket, atrajo la atención de la prensa cuando finalmente expresó con franqueza sus puntos de vista. Los tanques abandonados «no
+les servían de nada al enemigo; ningún otro ejército se habría planteado
+usarlos», declaró298. Tales afirmaciones solo pueden ser comprendidas si
+se examinan las características primarias de todos los carros de combate
+(potencia de fuego, movilidad y protección), en el contexto del desierto.
+En la primavera de 1941 circulaban rumores entre las tripulaciones
+británicas que se preparaban para la acción de que «Honeys y Crusaders
+no tienen nada que hacer contra los Panzer III y IV en un combate en
+igualdad de condiciones». El conductor de carro Jack Rollinson, quien
+tenía experiencia de primera mano con tanques británicos A9, A10 y A13,
+tenía muy mal concepto de todos ellos. «Podían dejar fuera de combate a
+un alemán, pero el problema era que nunca podías acercarte lo suficiente
+sin antes llevarte una soberana paliza». La puntería parecía ser el principal
+problema. «Cuando dejábamos fuera de combate a un panzer», recordaba
+Rollinson, «normalmente era más cuestión de suerte que de buen juicio»299.
+Con una pieza de 50 mm que disparaba un proyectil que duplicaba el peso
+de los proyectiles británicos, los carros medios y pesados alemanes disparaban granadas antiblindaje y de alto explosivo más grandes y a mayor
+distancia.
+La filosofía británica de destruir los blindados enemigos desde distancias cortas, desde unos 450 metros, hizo que el ejército británico tardase
+en anticipar la necesidad de un cañón de carro de mayor calibre. La consecuencia fue que en 1941 seis modelos de Cruiser y tres de tanques de infantería estaban armados con un cañón obsoleto. Dado que convertirlos en
+chatarra hubiera supuesto un tremendo despilfarro de escasos recursos, la
+producción de estos modelos continuó hasta 1943. Su calibre era demasiado pequeño para disparar un proyectil de alto explosivo eficaz. Hermann
+Eckardt, artillero de carro en el 8º Regimiento Panzer, guardaba enorme
+respeto por el blindaje del Matilda, pero consideraba que «el dos libras era
+una mierda, ¡gracias a Dios!»300.
+Con la llegada en mayo de 1942 del carro estadounidense M3 Grant,
+los tanques aliados pudieron por fin disparar un proyectil de alto explosivo de 75 mm, lo que les permitía emular éxitos previos de los carros alemanes: podían eliminar cañones anticarro enemigos a larga distancia. Era
+298 Crisp, Brazen Chariots, p. 15 y 41.
+299 Rollinson, BTM, p. 4.
+300 Eckardt, entrevista del autor, 11 Julio 2006.
+
+188
+
+TANK MEN
+
+difícil mandar un carro de seis tripulantes, con una construcción a lo «Heath
+Robinson»301: una torreta con un cañón de tanque de 37 mm y un cañón
+de 75 mm insertado en el casco, lo cual requería de dos órdenes de disparo
+diferentes. El sargento Fred Dale del 3er RTR, recordó: «La única cosa
+mala era la altura. Era difícil esconderlo detrás de una altura sin mostrar la
+torreta. De todas maneras, las tripulaciones estaban entusiasmadas de poder disparar un proyectil de gran peso contra los tanques alemanes»302. Un
+sargento de mantenimiento americano dijo «parecía una condenada catedral avanzando por la carretera»303.
+El desarrollo del cañón anticarro británico de 6 libras [57mm] por el
+que abogaba el Informe Bartholomew avanzó entre interrupciones siguiendo un proceso de desarrollo frustrantemente lento. Dicho proceso, iniciado en 1938, no daría frutos hasta 1942, cuando la carrera armamentista de
+piezas de artillería tomó impulso. Los alemanes comenzaban ahora a entregar a sus unidades Panzer III con el cañón mejorado de 50 mm de tubo
+largo y blindaje adicional, además del Panzer IV con un cañón anticarro
+de tubo largo. En el bando británico no hubo una integración digna de
+tener en cuenta entre diseño de cañones y tanques de tamaño adecuado
+para llevarlos, mientras que, por el contrario, los panzer alemanes podían
+asumir incrementos significativos de potencia de fuego sin tener que hacer cambios radicales ni en suspensiones ni en torretas.
+Aún más decisivo era el hecho de que no había nada que igualase al
+cañón antiaéreo alemán Krupp de 88 mm cuando se empleaba contra
+objetivos terrestres. Incluso los 78 mm de coraza del carro pesado británico Matilda no le protegían contra él. Robert Crisp, quien comandaba un
+tanque M3 Stuart Honey, sabía que, dado el alcance de 3000 yardas [2743
+metros] del cañón antiaéreo, estarían bajo su alcance durante 1800 yardas
+[1646 metros] antes de poder ni tan siquiera disparar desde el alcance
+máximo de 1200 yardas [1097 metros] de su cañón de 37 mm. «Mil ochocientas yardas, en tales circunstancias, es una larga distancia». Todas las
+tripulaciones británicas temían al 88 mm.
+Pese a la entrada en servicio del carro Grant, descrito como «súper»
+por el conductor de carros Jack Wardrop, los alemanes, a quienes su aparición causó una gran sorpresa, estaban todavía convencidos de la natural
+superioridad de sus panzer y sus cañones durante su ofensiva hacia El
+Alamein de junio de 1942. El Grant, de hecho, anunciaba el comienzo del
+301 Dibujante e ilustrador de cómics británico famoso por sus diseños de máquinas absurdas
+e innecesariamente complejas. Algo así como el Dr. Franz de Copenhagen del TBO (n. del t.).
+302 Citado en Taming the Panzers. Delaforce, p. 97.
+303 Roll Again Second Armoured, Perkins y Rogers, p. 87.
+
+ROBERT KERSHAW
+
+189
+
+final del dominio alemán en la lucha anticarro en el desierto. Los tanques
+británicos podían ahora eliminarles desde larga distancia con proyectiles
+de alto explosivo.
+La movilidad no era tan solo una cuestión de velocidad; era también
+una cuestión de fiabilidad. Ambos bandos operaban en condiciones
+desérticas extremas. Al comienzo de la campaña los filtros alemanes «húmedos», empapados en aceite, daban mal resultado en comparación con
+los filtros secos británicos. Los motores eran constantemente mejorados;
+tanques de nuevo tipo con mejores plantas motrices entraban continuamente en servicio. Las tripulaciones británicas se quejaban constantemente de la fiabilidad, dado que ellos mismos tenían que realizar por la noche
+la mayor parte del mantenimiento técnico y reparaciones. Por el contrario,
+las compañías de mantenimiento especializadas alemanas daban servicio
+técnico a sus vehículos como si se tratase de aviones. Los tanquistas comparaban su destino con la vida en la Royal Air Force [Real Fuerza Aérea].
+Como explicó el conductor Jack Rollinson,
+Ellos [los pilotos de la RAF] combatían, volvían a base, comían
+caliente, dormían en sábanas limpias mientras algún otro mantenía
+y reparaba sus máquinas. Por el contrario, una tripulación de carro
+conducía y combatía todo el día, para después por la tarde y con
+frecuencia hasta avanzada la noche, tener que mantener y reparar su
+vehículo y luego repostarlo, antes de poder pensar en comer algo y
+dormir.304
+Los carros americanos eran admirados y preferidos por todas las tripulaciones británicas. El M3 Stuart, denominado afectuosamente «the
+Honey305», «era un pequeño gran tanque, rápido y fiable», recordaba Jack
+Wardrop306. El capitán Crisp recordó que «los conductores respingaron
+asombrados» cuando vieron la planta motriz: «Un motor de aeroplano
+encajado en un tanque, con cilindros en estrella y un ventilador que parecía una hélice»307. El mayor Cyril Joly pensó que su único defecto de importancia era su escaso radio de acción. «Tenía un depósito de gasolina
+suficiente para recorrer tan solo 45 millas [72,4 km] en condiciones de
+combate»308. Repostar frecuentemente podía ser peligroso, pues ponía en
+304 Rollinson, BTM.
+305 «Cariño» (o «dulzura»). Se dice que el mote le fue dado por un conductor que dijo de
+este vehículo que «She’s a Honey», «ella es un cariño» (n. del t.).
+306 Wardrop, p. 24.
+307 Crisp, pp. 16 y 17.
+308 Joly, p. 22.
+
+190
+
+TANK MEN
+
+peligro a las tripulaciones durante la batalla. Pero Crisp estaba encantado
+de que pudiera alcanzar las 40 millas por hora [64,4 km/h]: «Eso resultaba
+reconfortante, visto el hecho de que los Panzer III y IV alemanes solo
+podían alcanzar, aproximadamente, unas veinte [32,2 km/h]».
+Había demasiados tipos de carros británicos, lo cual suponía un impedimento a la movilidad. Los tipos británicos incluían carros ligeros como
+el Mark VI, la gama de Cruisers A9, A10 y A13, tanques pesados de infantería y medios como el Valentine. Además, había diferentes fabricantes
+para los Vickers ligeros, Crusaders, Valentines y Matildas , además de los
+modelos americanos, el M3 Stuart, Grant y más tarde los tanques Sherman.
+Hubo más pérdidas por las averías y problemas con el suministro de recambios que por la acción del enemigo.
+Por lo general, los carros medios y pesados alemanes tenían 30 mm de
+protección frontal y 8-10 mm de blindaje lateral, lo cual no era mucho más
+grosor que el de los tanques medios italianos posteriores; aun así estaban
+mejor construidos y mejor armados. Pese a las quejas de las tripulaciones
+británicas, su protección acorazada era similar, cuando no superior. Algunos de los tipos de Cruiser estaban poco protegidos, pero su blindaje mejoró a medida que nuevos y mejores carros aliados eran entregados al frente,
+proceso que culminó con la entrada en servicio del Grant, con sus 50 mm
+de protección frontal y con los 76 mm de blindaje del Sherman309. Durante esta fase de la campaña, las tripulaciones aliadas tenían, por lo general,
+una protección superior.
+Técnicamente, los panzer eran superiores inicialmente, pero fueron
+perdiendo ventaja a medida que la campaña fue progresando. En batallas
+de carro contra carro, el resultado final era, con frecuencia, un sangriento
+empate. La superioridad alemana venía de su capacidad de aprovechar las
+sinergias del potencial combativo de sus unidades de armas combinadas.
+La excelencia técnica en el empleo de la radio y en movilidad era complementada por la mejor calidad y pericia en combate de los mandos alemanes310. Los carros ligeros, medios y pesados alemanes podían todos alcanzar los 40 km/h de forma que patrullaban por el desierto a velocidades
+uniformes; eso les facilitaba poder concentrar en puntos concretos su potencia de fuego. Los tanques ligeros y medios británicos se desplazaban a
+velocidades variables que iban de los 60 km/h a los 25 km/h y aún menos311; por lo tanto, en batalla no interactuaban tácticamente tan bien como
+los alemanes. El Feldwebel [sargento] Hermann Eckardt, del 8º Regimiento
+309 Cifras en Tank versus Tank, K. Macksey, y Armour in Battle Series: Part 5. North
+Africa, 1941-2.
+310 Jentz, p. 182.
+311 Joly, p. 150
+
+ROBERT KERSHAW
+
+191
+
+Panzer, afirmó que «los ingleses siempre se dispersaban, mientras que
+nuestra unidad era empleada en masse»312. De algún modo, los alemanes
+siempre conseguían hacer que todos sus blindados trabajasen estrechamente unidos, mientras que los británicos estaban siempre dispersos en
+pequeños grupos a todo lo largo del campo de batalla.
+Pese a su relativa inexperiencia en el desierto, los recién llegados regimientos panzer del Afrika Korps comprendieron de inmediato la importancia de la combinación carro/anticarro. Mayor alcance y mejor capacidad de penetración de los cañones anticarro alemanes al comienzo de la
+campaña del desierto eran las causas de la superioridad que las tripulaciones británicas atribuían a los panzer. Un informe del Afrika Korps revelaba
+que la combinación de carro y cañón anticarro era responsable de la mayor parte de destrucciones de vehículos enemigos en el desierto. Las cifras
+de la 21ª División Panzer explicaban una historia similar. George Witheridge,
+jefe de escuadrón y antiguo instructor de tiro del 3er RTR, explicó lo que
+se ocultaba detrás de las bajas sufridas:
+Psicológicamente, los miembros de las tripulaciones pensaban que
+debían enfrentarse primero al tanque enemigo; un objetivo más grande
+y en apariencia más peligroso. Esto iba en su contra, pues el cañón
+anticarro terrestre era más efectivo; éste, al no ser visto, se cobró un
+pesado tributo de los blindados británicos.313
+Unos cañones superiores y empleados de forma más eficiente, en un
+grupo de combate, por parte de unidades mejor estandarizadas y con un
+equipo de características complementarias entre sí, confieren una automática superioridad. Comparar los números de carros de uno y otro bando
+para predecir quién iba a ganar no tenía ningún sentido, y lo único que
+hacía era aumentar la decepción de las tripulaciones británicas las cuales
+sufrían un revés tras otro pese a contar con más carros.
+Los panzer alemanes tenían una apariencia diferente a la de sus adversarios ingleses. Durante el desfile inicial por Tripoli, los panzer parecían
+robustos y decididos; su uniformidad transmitía una amenazadora letalidad,
+como los caballeros teutónicos de la película rusa Alexander Nevsky, que
+había sido proyectada en los cines antes de la guerra. Incluso con las modificaciones y pese a ir cubiertos de efectos personales, los panzer tenían
+todos sus elementos almacenados de forma ordenada. Todo tenía una función precisa: rodamientos y cadenas de repuesto iban fijados al frontal de
+312 Eckardt, entrevista del autor, 11 Julio 2006.
+313 Delaforce, p. 98-99.
+
+192
+
+TANK MEN
+
+los tanques para dotarles de protección adicional: algo así como una especie de blindaje espaciado. Los vehículos italianos tenían buenos motores,
+pero parecían creaciones de Heath Robinson, burdamente atornilladas y
+montadas. Las tripulaciones de los panzer llamaban a las tanquetas italianas «cajas de pasteles».
+Los tanques ingleses reflejaban el carácter de sus tripulaciones. El almacenaje de cada cosa parecía caótico: cada tripulación británica tenía ideas
+propias sobre cuál era la mejor forma de fijar y colocar sus efectos personales. Los alemanes solo tenían tres tipos de carro, y sus cañones
+autopropulsados con frecuencia empleaban los mismos chasis. Esto daba
+una impresión de uniforme efectividad. Por el contrario, los nueve o diez
+tipos de tanques británicos, de los que, ocasionalmente, había varios en un
+mismo regimiento, reflejaban el pragmatismo británico. Hacían lo que
+podían con lo que tenían.
+Las variaciones en el uniforme reflejaban la impresión de que las tripulaciones británicas de tanques eran más flexibles que sus equivalentes panzer
+a la hora de adaptarse a los usos del desierto. Las tripulaciones del Afrika
+Korps vestían elegantes y gruesas guerreras y camisas totalmente inadecuadas para el calor del desierto, lo cual provocó una inevitable carrera por
+hurtar uniformes italianos, más livianos y prácticos. Los tripulantes de
+carros británicos también apreciaban mucho la ropa italiana, en particular
+camisas y pantalones. La informalidad del uniforme británico del desierto
+acentuaba la actitud amateur de sus soldados, alistados mientras durase la
+guerra y, por tanto, solo interesados en hacer que acabase lo antes posible.
+Nadie se ponía los grotescos salacots imperiales que se les entregaron.
+Peter Roach recuerda que los pantalones largos, llamados «pantalones
+disentería»314, de enormes pliegues volteados que cubrían la rodilla cuando
+se les dejaba caer, eran objeto de cierta hilaridad. Como siempre, el reservado soldado británico produjo su propia versión, más parecida a variantes vacacionales contemporáneas, que mejoraban el aspecto pero no la
+uniformidad. Numerosas tiras cómicas del ilustrador Jon resaltaron la naturaleza caótica del uniforme inglés del desierto. Los soldados del Afrika
+Korps siempre daban la impresión de vestir siguiendo estrictamente las
+normas, y aunque al cabo del tiempo acabaron por adoptar pantalón corto
+y camisa, aun así, su uniforme seguía pareciendo más reglamentario.
+Noticiarios y documentales contemporáneos hechos sesenta años después de la guerra del desierto con frecuencia dan una visión idealizada de
+la guerra como de una lucha caballerosa entre dos bandos: una «guerra de
+caballeros». Esto es básicamente cierto, pero no de forma absoluta. Las
+314 Roach, p. 26.
+
+ROBERT KERSHAW
+
+193
+
+narraciones de los soldados parecen diferir en tono de las descripciones
+más literarias y ocasionalmente más diplomáticas de relatos y entrevistas
+de los oficiales. No había el odio que distinguía al frente ruso, pero las
+relaciones entre los protagonistas de los tanques del desierto que intentaban matarse entre sí tampoco pueden ser calificadas exactamente como de
+cordiales.
+Alan Wollaston, un sargento de veinticuatro años de edad, era un regular que se había enrolado a finales de los años treinta. Conocía al enemigo
+tras haber experimentado y sobrevivido a dos evacuaciones navales catastróficas en Dunkerque y en Grecia. Su juicio acerca del Afrika Korps es que
+eran «muy buenos» y «muy tenaces». Cuando se le preguntó si odiaba al
+enemigo, respondió «no», y que sus sentimientos en general eran «en realidad muy neutros». Los miembros de la división panzer del Afrika Korps
+que se enfrentaba a ellos, eran «muy respetados como combatientes», en
+su opinión; «de hecho, creo que estábamos igualados». El sargento Bert
+Rendell, un regular del 1er Royal Tank Regiment, veía las cosas de forma
+diferente tras haber perdido a varios amigos personales. Su tripulación
+prefirió seguir combatiendo después de abandonar su destrozado tanque
+antes que resignarse a ser hecha prisionera. «Te despojaban de todo lo que
+llevabas encima para obtener información», se quejaba. Otro de los tripulantes de Rendell, abandonado y deambulando por el campo de batalla, se
+escondió en un hoyo temeroso de que «si le encontraban y no había nadie
+por allí, simplemente le darían un bayonetazo». Rendell era de la misma
+opinión: «Todos lo sabíamos. No se molestaban en hacer prisioneros».
+Sam Bradshaw, del 6º RTR, se hizo eco del punto de vista mayoritario
+al describir la guerra del desierto como «una guerra sin odio. Éramos
+soldados profesionales haciendo un trabajo duro, por lo que llegamos a
+sentir un mutuo respecto los unos por los otros».
+El soldado del Afrika Korps Rolf Volker expresa de forma inequívoca
+lo que pensaba de los ingleses, lo cual era «exactamente lo mismo que ellos
+pensaban de nosotros; les teníamos un absoluto respeto»315.
+No resulta sorprendente que la infantería tuviera una actitud más
+ambivalente y que se complaciera en atacar a vulnerables tripulaciones de
+carros que poco antes les amenazaban desde su invulnerable posición.
+Una vez que la fortuna se giraba, se cobraban su tributo. Las tripulaciones
+de carros tenían una actitud similar hacia los servidores de los anticarro.
+Algunos «ases» de los panzer le daban más importancia a destruir cañones
+que a destruir otros carros, debido a que los primeros infringían muerte y
+heridas furtivamente. Las tripulaciones sentían más empatía hacia los te315 Entrevistas a Bradshaw y Volker, The Desert Rats.
+
+194
+
+TANK MEN
+
+mores de las tripulaciones de tanques adversarios a los que habían dejado
+fuera de combate, porque se podían identificar más fácilmente con su
+apurada situación. En cierta ocasión, el mayor David Ling, yendo en el
+primer carro de un escuadrón que había sufrido graves pérdidas a manos
+de cañones anticarro camuflados, alcanzó el límite de lo que podía tolerar.
+Tras soportar veintisiete impactos en su propio Matilda, ordenó a su sección pasar por encima de sus adversarios. Dos cañones fueron aplastados
+y sus tripulaciones se tiraron boca abajo en sus trincheras. «Ordené a cada
+carro dar marcha atrás y recorrer la trinchera con una cadena en su interior. Siempre recordaré a mi cargador diciendo «¡tú, maldito bastardo…
+señor!». Al cabo del tiempo tales acciones te atormentan»316.
+Una característica de numerosos relatos de veteranos es su reticencia a
+admitir o a hablar del aspecto primordial del combate. El entrevistador de
+Jack Rollinson, David Barret, confirmó que «raramente, por no decir nunca, he escuchado a nadie detallar los actos de violencia que acompañaban
+a sus aventuras». Muchos soldados son reservados y reticentes en relación
+a esas experiencias profundamente personales. «Siempre ocultaba todos
+esos detalles con expresiones eufemísticas tales como «hubo un buen jaleo»» y ahí se acababa todo317. Como dijo Bert Rendell, del 1er Royal Tank
+Regiment, «la guerra no es una cosa fácil de experimentar ni de explicar; a
+veces no es digna de la raza humana»318.
+El sorprendente giro del segundo tirón del estira y afloja del desierto
+de la primavera de 1941 solo fue posible debido a los centenares de kilómetros de indefendible terreno llano que separaban a un objetivo de otro.
+Irritado por las espectaculares ganancias de Rommel, el general Wawell,
+comandante en jefe en el Cairo, contraatacó lanzando el 15 de mayo la
+«Operación Brevity», pero fracasó ante el paso de Halfaya con graves pérdidas para los británicos. Después de recibir refuerzos, Wawell lanzó la
+«Operación Battleaxe» el 15 de junio, con una suma total de casi 400 carros. Las superiores tácticas alemanas, basadas en el empleo coordinado
+de piezas anticarro, dieron como resultado la destrucción de 220 carros,
+de los cuales ochenta y siete fueron pérdidas totales, contra tan solo veinte
+panzer destruidos319. Wawell fue destinado a la India y reemplazado por
+Claude Auchinleck. El general Cunningham fue puesto al mando del nuevo 8º Ejército del desierto.
+Tras una fracasada incursión de Rommel, Cunningham desencadenó la
+«Operación Crusader» el 18 de noviembre con 750 tanques, 280 de los
+316 Ling, BTM Documentos, 40 páginas sin marcar.
+317 Rollinson, BTM.
+318 Rendell, BTM.
+319 Cifras en Macksey y Armour in Battle, Ibíd.
+
+ROBERT KERSHAW
+
+195
+
+cuales eran carros estadounidenses Stuart recién llegados, y el apoyo de
+600 piezas de artillería. Rommel coordinó con rapidez los recursos de sus
+dos divisiones panzer y los de sus aliados italianos para acumular fuerzas
+con las que lanzar golpes concentrados contra las dispersas brigadas blindadas británicas, en una serie de sangrientas batallas. Dos brigadas blindadas británicas se vieron reducidas a 50 carros, de los 350 con que contaban
+apenas cuatro días antes. El general Cunningham quería ordenar la retirada, pero fue reemplazado por el general Neil Ritchie. Rommel hizo una
+«incursión a las alambradas» de la frontera egipcia para cortar la línea de
+retirada británica, lo que causó un momentáneo pánico en el Cairo, pero
+se excedió en el intento. Desgastado hasta el punto de tener tan solo cuarenta carros alemanes y treinta italianos en condiciones de combatir, tuvo
+que retirarse una vez más hacia el oeste, de vuelta al punto de partida
+inicial de su campaña. Había perdido 195 panzer.
+Otro cambio espectacular tuvo lugar una vez más el 21 de enero de
+1942, cuando Rommel lanzó una contraofensiva con el apoyo de los largamente esperados modelos mejorados de panzer. En cuestión de dos semanas la línea fue forzada a retroceder 650 km hacia el este, hasta la línea
+fortificada de Gazala, que cubría Tobruk, donde permanecería durante
+cuatro meses de estancamiento. Ambos bandos acumularon fuerzas para
+la siguiente fase; dicha acumulación reunía a finales de mayo 637 carros
+del Eje contra 994 aliados. El Eje seguía teniendo ventaja en aviones
+(1497 contra 939 aliados), pero los aliados estaban ahora recibiendo el M3
+Grant, un tipo de carro estadounidense mucho mejor.
+Una vez más, Rommel lanzó su ofensiva primero, el 26 de mayo, impidiendo a Ritchie lanzar su propio ataque y flanqueando el extremo sur de
+la línea aliada defendida por los franceses libres en Bir Hakeim320. Durante
+unos pocos y críticos días, Rommel quedó paralizado contra los campos
+de minas aliados de la zona conocida como «El caldero», pero consiguió
+abrirse camino y lanzarse en tromba sobre Tobruk, que cayó el 21 de junio. Rommel obtuvo el premio del bastón de Feldmarschall [mariscal de
+campo] mientras que un frustrado Auchinleck destituía a Ritchie y asumía
+el mando personalmente. Los aliados retrocedieron hasta Mersa Matruh
+para después continuar retirándose hasta El Alamein. Fue un desastre. No
+menos de 138 carros británicos se habían perdido antes del mediodía del
+13 de junio. Al final de la ofensiva, el total inicial británico había descendi320 Pocos de los cuales eran, realmente, franceses. Había unidades integradas por tropas
+procedentes de diferentes partes del imperio colonial francés y también muchos extranjeros
+enrolados en la 13ª Semi-Brigada de la Legión Extranjera, entre ellos cerca de 1000 españoles
+veteranos del ejército republicano. La exitosa batalla defensiva librada por estas unidades impuso un considerable y costoso retraso al avance de las unidades germanoitalianas (n. del e.).
+
+196
+
+TANK MEN
+
+do de 850 carros a setenta, enfrentándose a 150 del Eje.
+«Simplemente deambulábamos de un lado a otro como un montón de
+idiotas», admitía el conductor de carro Jake Wardrop, al comentar sobre
+las derrotas de Gazala. «Las unidades simplemente se limitaban a
+machacarse hasta convertirse en un montón de pequeños fragmentos, lo
+que no nos llevaba a ninguna parte»321. Este era también el punto de vista
+de Churchill. Alexander reemplazó al general Auchinleck mientras que el
+teniente general Bernard Montgomery era designado nuevo comandante
+del 8º Ejército. Llegaron masivamente refuerzos británicos al Cairo. El
+mayor A.F. Flatow del 45º Royal Tank Regiment era un voluntario del T.A.
+quien se había alistado en su unidad de tiempo parcial cuando ésta se
+formó en 1937. La guerra, tal y como la veía, no iba muy bien. Cuando
+pasaron junto a un campo de prisioneros cerca de Suez, «los prisioneros
+silbaron y abuchearon nuestro tren, además de hacer otras acciones tales
+como pasarse el dedo por el gaznate y haciendo como si escaparan». Multitudes de egipcios se mofaban del personal militar femenino cuando abordaba un tren. También recordaba a la población local comprando banderas y banderolas para «dar la bienvenida a los hunos cuando entrasen en la
+ciudad».
+El estira y afloja del desierto había alcanzado de nuevo su otro extremo, ahora que los alemanes habían alcanzado la mayor penetración nunca
+lograda en Egipto. Rommel decidió atacar desde sus precarias posiciones
+avanzadas antes de que los efectivos aliados aumentasen demasiado. «Estábamos completamente exhaustos», recordó Rolf Volker, del Afrika Korps.
+No habíamos tenido ningún descanso durante semanas. No teníamos tiempo de pensar. Cuando nos detuvimos durante un día, nos
+quedamos dormidos sentados en los vehículos. A partir de la semana del 26 de mayo, cuando las cosas se pusieron en marcha, no
+podíamos dormir más de tres o cuatro horas por noche. Cada noche estábamos completamente exhaustos. Solo teníamos un pensamiento: ¡Vamos al Cairo! ¡Vamos a Alejandría! ¡Allí es donde realmente queremos llegar!322
+Fueron enviados al asalto el 30 de agosto.
+Los heridos eran llevados a hospitales en o alrededor de Alejandría y el
+Cairo. Las enfermeras egipcias que trabajaban en la unidad de quemados
+321 Wardrop, p. 49.
+322 Entrevista a Volker, The Desert Rats.
+
+ROBERT KERSHAW
+
+197
+
+del 9ª Hospital General escocés recuerdan el hedor de carne quemada que
+invadía el pabellón los días de calor. No había forma adecuada de lavar a
+esos pacientes. Les servía de siniestro recordatorio, si es que necesitaban
+alguno, de lo que estaba ocurriendo en el frente.
+
+

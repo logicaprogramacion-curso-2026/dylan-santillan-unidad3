@@ -1,0 +1,2196 @@
+Teoría
+Sobre
+Motores Cohete
+De propelente
+Sólido
+
+Por Richard Nakka
+Traducción Sebastián Garófalo
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+Índice
+Índice __________________________________________________________________ 2
+Nota del traductor ________________________________________________________ 3
+Introducción_____________________________________________________________ 4
+Asunciones básicas _______________________________________________________ 6
+El "grano" propelente_____________________________________________________ 7
+Combustión del propelente ________________________________________________ 13
+Teoría sobre toberas _____________________________________________________ 18
+Empuje de un motor cohete y coeficiente de empuje ____________________________ 25
+Impulso Total ___________________________________________________________ 28
+Velocidad Característica __________________________________________________ 30
+Impulso especifico _______________________________________________________ 31
+Presión de cámara _______________________________________________________ 32
+Flujo bifásico ___________________________________________________________ 34
+Correcciones para motores cohete reales _____________________________________ 39
+Condiciones de cámara _______________________________________________________ 39
+Correcciones de Tobera _______________________________________________________ 40
+Correcciones para el Impulso Especifico _________________________________________ 41
+
+GUIPEP _______________________________________________________________ 42
+Introducción ________________________________________________________________ 42
+Asunciones de Análisis ________________________________________________________ 43
+Utilizando GUIPEP __________________________________________________________ 43
+Salida del GUIPEP ___________________________________________________________ 44
+Comparación de Ecuaciones de Rendimiento con GUIPEP__________________________ 51
+Limitaciones de GUIPEP ______________________________________________________ 51
+
+2
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+Nota del traductor
+El siguiente documento es una traducción de la sección “Teoría” de la página Web de
+Coheteria Experimental Amateur de Richard Nakka ( www.nakka-rocketry.net ).
+Todo el material aquí presentado es de autoría de Richard Nakka, a no ser que se
+especifique lo contrario.
+Toda la información en este documento es presentada solo con fines informativos.
+Ni el autor ni el traductor asumen responsabilidad alguna del uso o mal uso que se le pueda
+dar a la información aquí brindada.
+Las siglas abreviadas han sido mantenidas igual que en la versión en ingles.
+Los gráficos han sido dejados en ingles.
+Desde muy pequeño siempre quise crear mis propios cohetes, la falta de información
+técnica, o mi capacidad de comprender y aplicar la poca información disponible hicieron
+que mis experiencias no fuesen demasiado fructíferas.
+Hasta que un día gracias a Internet, pude encontrar el sitio Web de Richard Nakka, desde
+ese momento pude dejar de “jugar al científico loco” y tener las firmes bases de la teoría de
+mi lado.
+Fue entonces cuando decidí retomar mis investigaciones, y junto con dos amigos
+comenzamos la construcción de un motor cohete Clase G de PVC utilizando como
+propelente KN-Sorbitol.
+Mis amigos al no manejar el ingles con la fluidez necesaria como para comprender bien los
+conocimientos aquí expuestos, abandonaron el intento rápidamente, y fue entonces cuando
+decidí hacer esta traducción.
+Sinceramente espero que esta traducción sirva para ayudar a muchos hispano hablantes a lo
+largo del mundo, y que puedan disfrutar y aplicar los conocimientos aquí brindados tanto, o
+más, que yo.
+Sebastián Garófalo
+kharfax@yahoo.com
+
+3
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+Introducción
+La meta primaria de las páginas de Teoría de los motores cohetes con propelente sólido es
+presentar las bases teóricas para el funcionamiento de un motor cohete de este tipo.
+Se enfatizara en la teoría como se aplica en los motores amateur pequeños (relativamente
+hablando), que son típicamente de menor rendimiento y eficiencia que sus contrapartes
+profesionales. En cierta forma, los métodos de los "libros sobre el tema" deben ser
+modificados para tener estos factores en cuenta.
+La meta secundaria es presentar las herramientas necesarias que pueden ser usadas en el
+diseño de motores cohete amateur.
+Intentare seguir un orden lógico en esta presentación, con un tema derivando en otro tema.
+Comenzando con las asunciones básicas que deben hacerse para "simplificar" la altamente
+compleja naturaleza del funcionamiento de un motor cohete. Entonces se discutirá el
+propelente principalmente en ciertos aspectos que tienen aplicación directa con la teoría de
+los motores cohete. Por ejemplo, se considera que los propelentes consisten de un
+combustible y un oxidante sin importar las formulaciones especificas. La forma en que se le
+da forma al propelente tiene una influencia importante y directa en el rendimiento del
+motor.
+Como la operación fundamental de un motor cohete requiere que el propelente sea
+quemado, el tema siguiente trata sobre el proceso de combustión. En otras palabras, la
+conversión del propelente en gases a alta temperatura y partículas condensadas (humo).
+Esta combustión debe ocurrir de tal manera que permita obtener los requerimientos
+operativos necesarios - un cierto perfil de empuje sobre un cierto tiempo de combustión,
+mientras se opera dentro de ciertos limites físicos como la temperatura y la presión de la
+cámara de combustión. De este modo, la velocidad de quemado, la temperatura de la
+combustión y los productos de esta juegan un rol crucial estableciendo el rendimiento del
+motor cohete.
+Sin temor a equivocarme, el componente mas critico de un motor cohete es la tobera. ¿Qué
+hace exactamente la tobera? ¿Y como? ¿Cuál es el significado del perfil convergente y
+divergente? Estas preguntas serán contestadas en la sección sobre Teoría de toberas.
+La expulsión de los productos de escape a través de la tobera a alta velocidad produce el
+empuje, el "poder" de un motor cohete. El empuje puede ser medido a través de métodos
+simples, pero, ¿Cómo se predice que empuje teórico tendrá un motor? Las secciones
+siguientes discutirán la manera de calcular el empuje, así como el Impulso Total y el
+Impulso Especifico. Los últimos dos parámetros son la clave para medir el "poder
+propulsivo" de un cohete, y la importancia de un propelente especifico.
+
+4
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+Cualquiera que tenga idea sobre motores cohete sabrá que operan bajo una alta presión.
+Esta es la presión de cámara, producida por la combustión del propelente, que fuerza los
+gases a través de la tobera.
+Controlar esta presión es la clave para una operación y diseño de un motor cohete de una
+manera satisfactoria y segura. ¿Qué parámetros determinan la presión, que pueden ser
+observados realmente como una "explosión controlada" dentro de la cámara de
+combustión?
+El tema final tratado en la teoría de los motores cohete son las correcciones que deben ser
+consideradas para unir las predicciones teóricas con los verdaderos resultados obtenidos por
+un motor cohete. Estas correcciones son resultado directo del primer tema que trataremos,
+que es, las simplificaciones que hacen posible el análisis teórico.
+Los últimos dos temas cubiertos tratan sobre ciertas herramientas de software que facilitan
+el procedimiento más laborioso y difícil en el análisis de la operación de un motor cohete,
+el proceso de combustión. Este software existe en varias formas, como PROPEP, también
+llamado GUIPEP, NEWPEP, PEP que son esencialmente el mismo programa, así como el
+CET. PEP significa Propellent Evaluation Program (Programa de evaluación de
+propelentes) y CET (Chemical Equilibrium with Transport propierties (Equilibrio químico
+con propiedades de transporte). El significado de los resultados obtenidos con este
+programa serán explicados. Así también, se describirá brevemente la utilización de estos
+programas.
+Estos programas tienen ciertos fallos que no serian de importancia para los motores cohete
+profesionales y propelentes utilizados a gran escala, pero pueden tener un cierto impacto en
+el rendimiento predicho para los propelentes amateur. Este tema es tratado en la sección
+final de estas páginas de Teoría de motores cohete con propelente sólido.
+
+5
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+Asunciones básicas
+Los varios procesos químicos y físicos que ocurren en un motor cohete durante su
+operación son altamente complejos. Estos procesos incluyen las complejas reacciones
+químicas que ocurren durante la combustión; la forma en que se consume el propelente
+durante la combustión; el comportamiento del flujo de los gases de escape a medida que se
+forman en la superficie en combustión, viaja a través de la cámara y sale a través de la
+tobera; la interacción entre los gases de escape y las partículas condensadas (humo).
+El análisis teórico de un motor cohete de propelente sólido necesita ciertas
+simplificaciones, esto es, asumir un motor cohete ideal. Un motor cohete ideal asume lo
+siguiente:
+•
+•
+•
+•
+•
+
+•
+•
+•
+•
+•
+
+La combustión del propelente es completa y no varia de lo asumido por la ecuación de
+combustión.
+Los productos de la combustión obedecen la ley de los gases perfectos.
+No existe fricción que impida el flujo de los productos de escape.
+La combustión y el flujo en el motor y la tobera son adiabaticos, esto significa, que no
+existe una perdida de calor a los alrededores.
+A no ser que se especifique lo contrario, existen condiciones de estado constante
+durante la operación del motor. Esto significa que las condiciones y procesos que
+ocurren no cambian con el tiempo (para unas condiciones geométricas dadas) durante la
+combustión.
+La expansión de los productos de escape ocurre de una forma uniforme sin
+discontinuidades o choques.
+El flujo a través de la tobera es unidimensional y no rotacional.
+La velocidad, presión y densidad del flujo es uniforme a lo largo de cualquier sección
+normal al eje de la tobera.
+El equilibrio químico es establecido en la cámara de combustión y no varia en su flujo a
+través de la tobera. Esto se conoce como condiciones de "equilibro congelado".
+La combustión del propelente siempre progresa normal (perpendicular) a la superficie
+en combustión, y ocurre de manera uniforme a lo largo de toda el área superficial
+expuesta a la combustión.
+
+Cualquier otra asunción que pueda llegar a ser requerida será aclarada cuando sea necesaria
+en los análisis posteriores.
+Aunque parezca que deben realizarse una gran cantidad de simplificaciones, son todas
+razonables y se puede esperar que reflejen la verdadera conducta de un motor cohete con
+bastante exactitud.
+
+6
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+El "grano" propelente
+El propelente utilizado en los motores cohete amateur experimentales puede ser una
+composición simple, siendo la combinación de dos constituyentes principales - combustible
+y oxidante. Tal es el caso de los propelentes con bases de "azúcar". Los propelentes
+experimentales compuestos, por otro lado, pueden tener una composición un poco más
+compleja y contener oxidantes de varios tipos, polímeros unificadores, y hasta metales
+como el aluminio o el magnesio. Agentes de secado, estabilizadores de fase, y solventes
+pueden ser otros de los aditivos incluidos en pequeños porcentajes.
+Para muchos propelentes, los aditivos controlan la velocidad de quemado, acelerando o
+ralentizando la taza. Puede ser agregado un opacador para absorber el calor que de otra
+forma seria transmitido a través del grano traslucido resultando en una combustión
+impredecible.
+Sin importar su composición, todos los propelentes son procesados en una forma
+geométrica similar, llamada grano propelente. Como regla, los granos propelentes son de
+forma cilíndrica para encajar perfectamente dentro del motor cohete con el fin de
+maximizar la eficiencia volumétrica. El grano puede consistir de un solo segmento
+cilíndrico (Figura 1), o puede consistir de varios segmentos. Generalmente, un núcleo
+central se extendiese a través de todo el grano, para acrecentar el área de superficie del
+propelente expuesta a la combustión inicialmente.
+
+El núcleo puede tener una amplia variedad de formas como ser circular, estrella, cruz,
+hueso etc. de cualquier manera, para los motores amateur, la forma más comúnmente usada
+es la circular. La forma del núcleo tiene una profunda influencia en la forma del perfil
+empuje-tiempo, como se muestra en la figura 2.
+
+7
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+¿Cómo influencia la forma del núcleo en la curva empuje-tiempo? El empuje (y presión de
+cámara) que el motor genera es proporcional al área en combustión en cualquier instante
+particular del tiempo. A esto se lo conoce como Area en combustión instantánea. La
+superficie en combustión en cualquier punto sigue la dirección normal (perpendicular) a la
+superficie en ese punto, siendo el resultado una relación entre la superficie en combustión y
+la distancia quemada que depende casi exclusivamente de la forma inicial del grano y los
+comportamientos restrictos (inhibidos). Este importante concepto es ilustrado en la figura 3,
+donde las líneas de contorno representan la forma del núcleo en momentos sucesivos
+durante la combustión. Se puede notar que la forma de la curva empuje-tiempo cambia, con
+las líneas verticales correspondientes a los mismos instantes sucesivos durante el paso del
+tiempo. Como puede verse, el grano estrella provee una combustión casi neutral, porque el
+área de superficie se mantiene prácticamente constante a lo largo de la combustión.
+Generalmente es deseada una combustión neutral porque provee una mayor eficiencia en la
+creación del impulso total, al operar más eficientemente la tobera con una presión de
+cámara constante.
+
+8
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+Es importante reconocer que el área de combustión de un grano propelente es un
+parámetro clave en determinar el rendimiento de un motor cohete. La función primaria
+de un grano propelente es producir los productos de la combustión a una relación de flujo
+prescrita definida por:
+Mg = Ab ρp r
+Donde ρp es la densidad de la masa del propelente, Ab es el área de combustión, y r es la
+velocidad de quemado del propelente. Una discusión completa sobre la velocidad de
+quemado puede encontrarse en el capitulo sobre velocidad de quemado de un Propelente. El
+área total de combustión consiste de todas las superficies del propelente que están
+expuestas a la combustión (y que no están inhibidas de alguna manera). El área de
+combustión del propelente depende de:
+•
+•
+
+La geometría del grano como se describió mas arriba.
+Uso de inhibidores.
+
+Un inhibidor es un material o recubrimiento que es lo suficientemente resistente al calor
+como para que cualquier superficie cubierta por el inhibidor no entre en combustión
+durante la duración de operación del motor. Los inhibidores en los cohetes experimentales
+amateur típicamente son papel o cartón, o un recubrimiento de poliester o resina epoxy.
+Para el diseño de un motor, estaremos interesados en el área de combustión máxima porque
+esta es el área que define la máxima presión de cámara que el motor experimentara. La
+presión máxima de cámara es utilizada para dimensionar las paredes del motor.
+Para un grano completamente irrestricto (ej. Motores A-100, B-200, C-400), todas las
+superficies están expuestas a los gases calientes y por lo tanto la combustión procede de
+todas las superficies comenzando en la ignición. Para un grano "BATES" (Figura 4), que es
+un grano con múltiples segmentos, hueco y cilíndrico pegado a las paredes o con la
+superficie exterior inhibida, la superficie en combustión inicial es el área del núcleo y los
+extremos del segmento. El motor Kappa utiliza este tipo de configuración de grano, con un
+total de cuatro segmentos.
+
+9
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+La configuración de grano Bates es frecuentemente empleada en los motores amateur,
+porque este tipo de grano puede ser hecho para tener una combustión casi neutral, con la
+elección de una relación L0/D y D/d0 adecuada. Una discusión más completa sobre el área
+de combustión y su relación con la geometría del grano, así como su influencia en la
+presión de cámara, es dada en el capitulo "Carta de diseño de motores cohetes - Presión de
+cámara".
+Una propiedad física importante del grano propelente es la densidad de masa, que es
+utilizada en los cálculos de rendimiento. Si un propelente esta compuesto de dos
+constituyentes, un oxidante y un combustible, la densidad ideal esta dada por
+
+1
+
+ρp =
+
+f0
+
+ρ0
+
++
+
+ff
+
+ρf
+
+Donde el símbolo ρ (rho) designa la densidad, f es la fracción de masa y los subíndices 0 y
+f se refieren al oxidante y el combustible respectivamente. Si un propelente esta compuesto
+de más de dos constituyentes, entonces la densidad ideal esta dada por (donde a, b, c
+denotan los constituyentes individuales):
+
+ρp =
+
+1
+fa
+
+ρa
+
++
+
+fb
+
+ρb
+
++
+
+fc
+
+ρc
+
++ ...
+
+En la tabla 1 se da la densidad de algunos oxidantes y combustibles, así como un ejemplo
+de los cálculos. La densidad real puede ser obtenida pesando precisamente un grano para
+determinar su masa, y midiendo su volumen, con la densidad expresada como
+
+ρp =
+
+m grano
+
+ν grano
+
+ν grano =
+
+π
+
+(D − d )L
+4
+2
+
+2
+
+10
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+Para un grano hueco cilíndrico, donde
+• D = Diámetro externo
+• D = Diámetro interno (núcleo)
+• L = Largo del grano
+La densidad real generalmente un porcentaje poco menor que la densidad ideal (típicamente
+un 94% - 97%), pudiendo haber pequeños vacíos en el grano, y depende de la técnica de
+fabricación. El mejor método para obtener el volumen es por el principio de Arquímedes,
+en el cual se debe sumergir el grano en un líquido adecuado y medir el volumen
+desplazado.
+La Fracción de carga volumétrica es definida como la fracción del volumen del grano con
+el Volumen de cámara disponible, y se relaciona con la eficiencia volumétrica del motor,
+así como es una medida de la eficiencia de rendimiento:
+
+V1 =
+
+Vp
+Va
+
+=
+
+It
+
+I sp .ρ p .Va
+
+Donde Vp es el volumen del grano, Va es el volumen de cámara disponible, It es el impulso
+total (entregable), y Isp es el impulso especifico del propelente.
+La Fracción de tejido es la relación del espesor del tejido del propelente con el radio
+exterior del grano, y esta dada por:
+
+Wf =
+
+D − d 2.r.t b
+=
+D
+D
+
+Donde tb es el tiempo de combustión del motor. Claramente, para maximizar la duración de
+la combustión, es necesario maximizar la fracción de tejido (ej. El grosor). El "precio" de
+maximizar el espesor de tejido es la reducción del diámetro del núcleo del grano. Esto debe
+ser cuidadosamente considerado, como explicaremos.
+La relación del área entrada a garganta es dada por el área seccionada transversalmente
+del canal de flujo con el área seccionada transversalmente de la garganta de la tobera:
+
+Ap
+At
+
+=
+
+π .D 2 (1 − V1 )
+4A t
+
+Donde Ap es el área de flujo (canal) del grano y At es el área seccionada transversalmente
+de la garganta. La velocidad del gas a lo largo del canal de flujo esta influenciada
+significantemente por la magnitud de la relación de entrada a garganta. La obstrucción de
+flujo ocurre cuando la relación es 1.0, con la velocidad de flujo a través de la entrada igual a
+
+11
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+la velocidad de flujo a través de la garganta de la tobera (sonica). Una combustión erosiva
+grave ocurrirá bajo esta condición, y es generalmente evitada en el diseño. El punto critico
+de la relación entrada a garganta, depende de la relación de flujo de masa en una ubicación
+determinada. En realidad, una relación de 1.0 (o menor) puede ser utilizada en el extremo
+delantero del grano donde la relación de flujo de masa es mínima. La relación del área de
+entrada a garganta es usada frecuentemente como índice por la cual se establece la
+tendencia de combustión erosiva. Para aquellos propelentes en los que no ha sido
+establecida, se sugiere una relación de 2.0 a 3.0 (dependiente de la relación L/D).
+La relación largo diámetro es la relación que existe entre el largo total del grano con el
+diámetro exterior del grano. Este parámetro es muy importante en el diseño del motor,
+porque valores mayores de L/D tienden en resultar en efectos de combustión erosiva
+mayores (incluyendo combustión erosiva negativa). Valores altos de L/D tienden a generar
+diferenciales de flujo de masa altos a lo largo del grano, y tendrían mejor aplicación en
+núcleos escalonados (mayores al acercarse a la tobera).
+
+12
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+Combustión del propelente
+Un motor cohete opera bajo el principio de convertir energía calórica, de las reacciones
+químicas, en energía cinética. En otras palabras, el calor liberado por la combustión del
+propelente provee la energía calórica; la alta velocidad de los productos de escape saliendo
+del motor ganan energía cinética. Por esto es que el escape experimenta un gran descenso
+de temperatura al fluir a través de la tobera (como se mostrara a continuación), un
+requerimiento de la ley de la termodinámica llamada "conservación de la energía".
+La combustión es simplemente una reacción química exotérmica. Para que este proceso
+comience se necesita una fuente de calor externa (ignitor) que provea la energía necesaria a
+un nivel umbral. Esta combustión esta representada por una ecuación química. Por ejemplo,
+para un propelente 65/35 O/C KN/Sucrosa, la ecuación de la combustión esta dada por
+(reactivos -> productos):
+
+C12H22O11 + 6,29 KNO3 -> 3,80 CO2 + 5,21 CO + 7,79 H2O + 3,07 H2 + 3,14 N2 +
+3 K2CO3 + 0,27 KOH
+Con los compuestos simbolizados de esta manera:
+Sucrosa
+Nitrato de potasio
+Dióxido de carbono
+Monoxido de carbono
+Vapor
+Hidrogeno
+Nitrógeno
+Carbonato de Potasio
+Hidróxido de potasio
+
+Sólido
+Sólido
+Gas
+Gas
+Gas
+Gas
+Gas
+Liquido
+Liquido
+
+C12H22O11
+KNO3
+CO2
+CO
+H2O
+H2
+N2
+K2CO3
+KOH
+
+Se forman pequeñas cantidades de otros compuestos, como KH, y CH4, pero pueden ser
+ignorados sin consecuencias.
+La derivación de la ecuación de combustión completa es potencialmente el paso más
+complejo en el análisis de un motor cohete. El propelente es quemado, a una presión
+constante (asumida), y forma un conjunto de productos moleculares que se encuentran en
+equilibrio químico y termal unos con otros. El primer paso es asumir que productos podrían
+ser producidos. Para propelentes que solo contengan carbono, oxigeno, hidrogeno y
+nitrógeno (C, O, H & N) existen (al menos) doce productos probables - carbono, dióxido de
+carbono, monoxido de carbono, hidrogeno, vapor, oxigeno, nitrógeno, oxido nítrico así
+como productos disociados H, O, N y OH. Si el propelente contiene productos metálicos
+como potasio (K), sodio (Na), o aluminio (Al), o contiene cloro (Cl), resultara en productos
+
+13
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+de la combustión condensados (sólidos o líquidos), como el carbonato de potasio, (o
+equivalentes del sodio), oxido de aluminio o clorido de potasio.
+Una vez que se ha llegado a un conjunto posible de productos, el siguiente paso es
+determinar el número de moles (o fracciones) que resultaran. Los números de moles son los
+coeficientes en la ecuación química. Para el ejemplo anterior, los números de moles son
+3.67, 5.19, 7.91, 3.09, 3.14 y 3.14 para CO2, CO, H2O, H2, N2 y K2CO3, respectivamente,
+para la combustión de los reactivos, siendo estos 1 mol de sucrosa y 6,29 moles de KNO3.
+La determinación del número de moles se realiza resolviendo un conjunto de ecuaciones
+relacionando los reactivos y productos con las condiciones de:
+•
+•
+•
+
+Balance de masas
+Condiciones de equilibrio químico
+Balance energético
+
+El balance de masa es directo, y se refiere al principio de conservación de masa. El número
+de moles de cualquier elemento determinado antes de una reacción química debe ser igual
+después de la reacción. En el ejemplo anterior, el número de moles de átomos en los
+reactivos es:
+•
+•
+•
+•
+•
+
+12 átomos de Carbono (C)
+22 átomos de Hidrogeno (H)
+3*6,29 = 29,87 átomos de Oxigeno (O)
+6,29 átomos de potasio (K)
+6,29 átomos de Nitrógeno (N)
+
+Y en los productos:
+•
+•
+•
+•
+
+3,67 + 5,19 + 3,14 = 12 átomos de Carbono (C)
+2 * 7,91 + 2 * 3,09 = 22 átomos de Hidrogeno (H)
+3 * 6,29 = 29,87 átomos de Oxigeno (O)
+2 * 3,14 = 6,29 (redondeado) átomos de potasio (K) y Nitrógeno (N)
+
+Con lo que se cumplen los requerimientos de masa.
+Muchos reactivos, cuando son mezclados en cantidades definidas, reaccionan formando
+productos solamente, esto es conocido como reacción irreversible. Un ejemplo es la
+combustión del propelente (por eso el símbolo "->" en la ecuación). En una reacción
+reversible el proceso puede ir en cualquiera de los dos sentidos. Los reactivos se
+transforman en productos así como los productos se transforman en los reactivos originales.
+Este es el tipo de reacción con la que están relacionadas las condiciones de equilibrio
+químico de los productos de la combustión calientes. Por ejemplo, la reacción
+2H2 + O2 <-> 2H2O
+
+es una acción reversible.
+
+14
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+Pero que es lo que determina la concentración relativa de esos constituyentes (por ejemplo,
+¿La reacción actuara mas a la derecha o a la izquierda en esta ecuación?). Para cada
+ecuación como esta, existe una constante de equilibrio (Kp) asociada que es la que
+determina esto. Esta constante es función de la temperatura a la que ocurre la reacción, y es
+esencialmente independiente de otras condiciones físicas, como la presión. Los valores de
+varias Kp pueden ser encontrados en tablas termodinámicas, por ejemplo las tablas JANAF.
+Para la reacción reversible general:
+
+νa.A + νb.B ⇔ νc.C + νd .D
+La ecuación de equilibrio químico es de la forma:
+
+yC νC yDνD ⎛ P ⎞
+⎜ ⎟⎟
+Kp =
+νA
+νB ⎜
+yA yB ⎝ Po ⎠
+
+νC +νD −νA −νB
+
+Donde y es la fracción molar de equilibrio de los constituyentes A, B, C y D, ν es el
+coeficiente de cada constituyente (2, 1 y 2 en el ejemplo anterior para los componentes H2,
+O2, y H2O).
+El término P/P0 representa la relación de presión a la cual ocurre la reacción, y la presión de
+referencia (estado normal). Debería notase que el equilibrio de los gases de la combustión
+es muy sensible a la temperatura.
+Los productos existentes a una alta temperatura de combustión son muy diferentes de
+aquellos existentes a una temperatura de combustión más baja. A altas temperaturas (sobre
+los 3000 ºK), ocurre la disociación de los productos, porque la energía térmica causa que
+los productos se separen en constituyentes simples y monoatómicos, como
+H2O <-> HO + 1/2 H2
+O2 <-> 2 O
+H2 <-> 2 H
+A temperaturas de combustión inferiores, se forman cantidades sin importancia de estos
+constituyentes (por ejemplo, para la combustión de KN/Sucrosa). La disociación consume
+energía que de otra forma estaría disponible para convertirse en energía cinética del escape,
+y tiende a limitar la temperatura de la combustión.
+Con la asunción de una combustión adiabatica (No hay pérdida de temperatura con el
+alrededor) y mientras la asunción no cambie en energía potencial o cinética, la ley de la
+conservación de la energía nos dice que la entalpia de los reactivos es igual a la entalpia de
+los productos:
+HR = Hp
+
+15
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+Se puede ver la entalpia como el calor involucrado en una reacción química. Puesto de otra
+manera, considere una reacción involucrando n moles de cada reactivo (representados por
+el subíndice i), y n moles de cada producto (subíndice e)
+
+∑ n [h + ∆h ] = ∑ n [h + ∆h ]
+i
+
+R
+
+f
+
+e
+
+i
+
+P
+
+f
+
+e
+
+Esta ecuación nos dice que la suma de la entalpia de formación (hf) mas el cambio de
+entalpia (∆h), multiplicada por el numero de moles (n) de cada componente, es igual tanto
+para los reactivos y los productos. Nótese que ∆h representa el cambio de entalpia desde
+una temperatura de referencia, típicamente 298 ºK (25 ºC). Por esta razón, ∆h es igual a
+cero para los reactivos si la temperatura inicial del propelente se asume que es esta.
+Tanto, ∆h y hf para los reactivos y productos pueden encontrarse en tablas termodinámicas,
+por ejemplo, las tablas JANAF.
+La anterior ecuación es particularmente útil, porque nos entrega los métodos para calcular
+la temperatura de la combustión, a la que se suele llamar Temperatura Adiabatica de Flama
+(AFT). También, de esta ecuación, puede verse que es deseable una mayor temperatura de
+formación de los reactivos (por unidad de masa), que es una menor temperatura de
+formación de los productos, porque resultara en un mayor ∆h disponible para los productos
+(de este modo una mayor AFT). También, la presencia de gases biatómicos (ej. H2, N2) es
+deseada generalmente porque el calor de formación de estos gases es cero.
+Lo anterior describe un completo conjunto de información que será necesaria con el fin de
+determinar el proceso de combustión por completo. Ahora tenemos una serie de parámetros
+desconocidos, y las ecuaciones que nos permitirán encontrarlos. En resumen, los
+parámetros desconocidos son:
+•
+•
+•
+•
+•
+
+El numero de moles (coeficientes) en el balance de masas de la ecuación.
+Las fracciones molares en las ecuaciones de equilibrio químico.
+La temperatura de llama adiabatica.
+Los valores de ∆h, siendo estos función de la temperatura.
+La presión (de cámara) a la que ocurrirá la reacción.
+
+Obviamente esto no será una tarea sencilla. La única forma practica de resolver el problema
+de la combustión, es con una solución por computadora, utilizando un proceso iterativo.
+Esto involucra como primera medida asumir una presión de cámara a la que ocurrirá la
+reacción (Los resultados dependen levemente de la presión). Las iteraciones para resolver
+las ecuaciones comienzan con una temperatura de combustión (AFT) pre-asumida. Estas
+dos asunciones permiten determinar el número de moles y las fracciones molares para estas
+condiciones iniciales. Basados en los valores determinados, se calcula una nueva AFT
+utilizando la ecuación de la energía. Entonces este valor de AFT es utilizado en la próxima
+iteración para calcular el número de moles y la fracción molar y así sucesivamente.
+Eventualmente se llegara a una convergencia y se obtendrá la solución final. En realidad,
+hace varios escribí un programa para analizar la combustión de los propelentes basados en
+
+16
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+KN/Sucrosa, con relaciones O/C variables. Esto no fue tarea fácil, pero funciono
+satisfactoriamente.
+Afortunadamente, ya no es necesario para el interesado en la cohetería amateur el tener que
+escribir tal programa para el análisis de la combustión de un propelente particular, existe
+software disponible que hará el trabajo admirablemente y con gran flexibilidad, como
+PROPEP, GUIPEP o CET que más adelante veremos.
+
+17
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+Teoría sobre toberas
+La función primaria de una tobera es canalizar y acelerar los productos de la combustión
+producidos por el propelente de tal manera que maximize la velocidad del escape a la
+salida, a una velocidad supersónica. La tobera familiar de un cohete, conocida como
+convergente-divergente o Tobera deLaval, cumple con esta característica con una simple
+geometría. En otras palabras, lo hace variando el área seccionada transversalmente (o
+diámetro) de una manera exacta.
+El análisis de la tobera de un cohete involucra el concepto de "Flujo de fluido compresible
+unidimensional constante de un gas ideal". Brevemente, esto significa que:
+•
+•
+
+•
+
+•
+
+El flujo del fluido (gases de escape + partículas condensadas) es constante y no cambia
+a lo largo del tiempo de combustión.
+El flujo unidimensional significa que la dirección del flujo es a lo largo de una línea
+recta. Para una tobera, se asume que el flujo se encuentra a lo largo del eje de simetría.
+
+El flujo es compresible. El concepto de fluido compresible es empleado generalmente
+para gases moviéndose a altas velocidades (generalmente supersónicas), en otro caso el
+concepto de flujo incompresible, es el utilizado para líquidos y gases moviéndose a
+velocidades inferiores a la del sonido. Un fluido comprensible exhibe cambios
+significantes en densidad, un incompresible no lo hace.
+El concepto de gas ideal es una asunción simplificadora, que nos permite usar una
+relación directa entre la presión, densidad y temperatura, que son propiedades que son
+particularmente importantes en el análisis del flujo a través de la tobera.
+
+Las propiedades del fluido, como la velocidad, densidad, presión y temperatura, en un flujo
+de un fluido compresible, están afectadas por
+•
+•
+•
+
+Cambio del área seccionada transversalmente.
+Fricción
+Perdida de calor con los alrededores
+
+La meta del diseño de una tobera de cohete es acelerar los productos de la combustión a la
+velocidad de salida lo mas alta posible. Esto se logra diseñando el perfil geométrico de la
+tobera necesario apuntando a la condición de flujo isentropico. Se considera flujo
+isentropico al que solo depende del área seccionada transversalmente, que necesita ser
+adiabatico (sin perdida de calor) y no tiene rozamiento. Por esto, en una tobera, es necesario
+minimizar los efectos del rozamiento, los disturbios de flujo y las condiciones que puedan
+llevar a perdidas por choques. De esta manera, las propiedades del flujo están cercanas a ser
+isentropicas, y simplemente son afectadas por el cambio del área seccionada
+transversalmente cuando el fluido se mueve a través de la tobera.
+
+18
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+Las áreas seccionadas transversalmente típicas de una tobera que son de interés particular
+son mostradas en la siguiente figura
+
+El análisis de un flujo de fluido compresible involucra cuatro ecuaciones de interés:
+•
+•
+•
+•
+
+Energía
+Continuidad
+Momento
+La ecuación de estado
+
+La ecuación de la energía deriva del principio de conservación de la energía. Para un flujo
+adiabatico entre dos puntos cualesquiera, x1 y x2, esta dada por
+h1 - h2 = 1/2 (v22 - v12) = Cp (T1 - T2)
+
+Donde h representa la entalpia del fluido (que puede ser considerada como la energía
+disponible para la transferencia de calor), v es la velocidad de flujo en una dirección x, Cp
+es la capacidad calórica del fluido, y T es la temperatura del fluido.
+Esta ecuación provee una importante visión de cómo funciona una tobera de cohete.
+Observar los primeros dos términos muestra que el cambio (disminución) en la entalpia es
+igual al cambio (incremento) en la energía cinética. En otras palabras, el calor del fluido
+que esta siendo usado para acelerar el flujo a una mayor velocidad. La capacidad calórica
+puede ser aproximada a ser constante, y es una propiedad determinada por la composición
+de los productos de la combustión.
+Es aparente, entonces, que las propiedades de un fluido (Ej. Temperatura) son función de la
+velocidad del flujo. Para describir el estado de un fluido en cualquier punto a lo largo de su
+flujo, es conveniente considerar el estado de estagnación como estado de referencia. Las
+propiedades de estagnacion pueden considerarse como las propiedades que resultarían si el
+fluido fuese (isentropicamente) desacelerado a velocidad cero (Ej. Flojo estagnante).
+La temperatura de estagnacion, T0, es encontrada en la ecuación de la energía (haciendo
+v2=0), de esta manera
+
+v2
+T0 = T +
+2C p
+
+Ecuación 1
+
+19
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+Para un proceso de flujo isentropico, la siguiente relación importante entre las propiedades
+de estagnacion para temperatura, presión y densidad del fluido mantienen
+
+T0 ⎛ P0 ⎞
+=⎜ ⎟
+T ⎝ P⎠
+
+k −1
+k
+
+⎛ρ ⎞
+= ⎜⎜ 0 ⎟⎟
+⎝ ρ ⎠
+
+k −1
+
+Ecuación 2
+
+Donde k es la importantisima relación de calores específicos, también conocida como
+exponente isentropico, definida como
+
+k≡
+
+Cp
+Cv
+
+=
+
+Cp
+Cp − R
+
+Tanto Cp como R (constante especifica de los gases) son propiedades determinadas por la
+composición de los productos de la combustión, donde R = R´/M, donde R´ es la constante
+universal de los gases, y M es el peso molecular efectivo de los productos de la
+combustión. Si los productos de la combustión contienen un porcentaje apreciable de
+partículas en fase condensada (humo), el valor del peso molecular efectivo, M, debe tenerlo
+en cuenta. Así también, un k apropiado debe ser utilizado teniendo en cuenta el flujo
+bifásico. La determinación de k y M para los productos de la combustión esta detallada en
+Apuntes Técnicos Nº 1.
+La velocidad sonica local, a, y el numero de Mach, M, (definido como la relación de la
+velocidad de flujo con la velocidad sonica local), esta dada por
+
+a = kRT
+
+M=
+
+v
+a
+
+Ecuación 3
+
+De las ecuaciones 1, 2 y 3, la relación entre la temperatura de estagnacion (también llamada
+Temperatura Total) y el numero Mach puede ser escrita como
+
+T0
+k −1 2
+= 1+
+M
+T
+2
+
+Ecuación 4
+
+Se puede demostrar con la primera y segunda ley de la termodinámica, que para cualquier
+proceso isentropico
+
+P
+
+ρ
+
+k
+
+= Constante
+
+Ecuación 5
+
+20
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+De las ecuaciones 4 y 5, y utilizando la ecuación de estado de un gas ideal, P= ρ R T, la
+relación entre la temperatura de estagnacion, la densidad y el numero Mach puede ser
+expresada como
+
+P0 ⎛ k − 1 2 ⎞
+= ⎜1 +
+M ⎟
+P ⎝
+2
+⎠
+
+k
+k −1
+
+ρ 0 ⎛ k −1 2 ⎞
+= ⎜1 +
+M ⎟
+ρ ⎝
+2
+⎠
+
+Ecuación 6
+1
+k −1
+
+Ecuación 7
+
+Las ecuaciones 4, 6 y 7 son particularmente útiles, porque permiten determinar cualquier
+propiedad en un flujo si tan solo se conocen el número de Mach y las propiedades de
+estagnacion.
+Las propiedades de estagnacion (o totales) T0, P0, y ρ0 son simplemente las propiedades que
+están presentes en la cámara de combustión del cohete, puesto que la velocidad del flujo es
+(considerada) cero en este punto. En otras palabras, T0 es la temperatura de combustión del
+propelente (AFT), P0 es la presión de cámara, y ρ0 es la densidad de los productos de la
+combustión bajo las condiciones de la cámara.
+Otra propiedad de estagnacion importante es la entalpia de estagnacion. Es obtenida de la
+ecuación de la energía (con v2=0)
+
+v2
+h0 = h +
+2
+
+Ecuación 8
+
+Físicamente, la entalpia de estagnacion es la entalpia que seria alcanzada si el flujo (en
+algún punto) fuera de alguna manera desacelerado a velocidad cero. Es útil notar que la
+entalpia de estagnacion es constante a través del flujo en la tobera. Esto también es cierto
+para otras propiedades de estagnacion (temperatura, presión, y densidad).
+La segunda de las cuatro ecuaciones de interés relacionada con el flujo de un fluido
+compresible, como se dijo anteriormente, es la ecuación de continuidad (o conservación de
+masa), que es
+
+ρ A v = constante = ρ * A * v *
+
+Ecuación 9
+
+Donde A es el área seccionada transversalmente de la tobera, y v es la velocidad del flujo.
+Esta ecuación simplemente indica que la masa fluyendo a través de la tobera debe ser
+constante. La "estrella" (asterisco) significa la llamada condición critica, donde el numero
+21
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+de Mach es la unidad, M=1 (la velocidad del flujo es igual a la velocidad del sonido). La
+importancia de la condición critica pronto será aparente.
+Tomando las ecuaciones 3, 4, 7 y 9, es posible expresar la relación de área A/A*, en
+términos del numero de Mach del fluido. La relación de área es simplemente el área
+seccionada transversalmente en cualquier punto (x) en la tobera, con el área seccionada
+transversalmente donde existe la condición critica (M=1)
+
+⎛ k −1 2 ⎞
+M ⎟
+⎜1+
+A
+1 ⎜
+2
+⎟
+=
+−
+k
+1
+⎟
+A* M ⎜
+⎜ 1+
+⎟
+2
+⎝
+⎠
+
+k +1
+2 ( k −1)
+
+Ecuación 10
+
+Cuando se realiza un gráfico de A/A* contra el numero de Mach, usando esta ecuación, se
+obtiene un resultado muy interesante.
+Este claramente muestra que un pasaje
+convergente-divergente de una sección con un
+área mínima es requerido para acelerar el flujo
+de una velocidad subsonica a una supersónica.
+El punto critico donde el flujo se encuentra a
+velocidad sonica (M=1 en A/A*=1) se
+encuentra en la garganta de la tobera. Esto
+demuestra la importancia de la tobera teniendo
+una sección divergente, sin ella, el flujo nunca
+alcanzaría una velocidad mayor a la del
+sonido.
+El flujo supersónico es logrado solo a través de la porción divergente de la tobera.
+Como el número Mach puede ser determinado conociendo la relación de área, ahora es
+posible graficar la variación de temperatura, presión y densidad a través de la tobera, con el
+uso de las ecuaciones 4, 6 y 7.
+De las ecuaciones 8 y 9, la velocidad del flujo en la salida de la tobera puede expresarse
+como
+
+22
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+k −1
+⎡
+⎤
+k
+⎛
+⎞
+P
+⎛ R´ ⎞⎛ k ⎞ ⎢ ⎜ e ⎟ ⎥
+Ve = 2T0 ⎜ ⎟⎜
+⎟ ⎢1 − ⎜ ⎟ ⎥
+P
+⎝ M ⎠⎝ k − 1 ⎠
+⎢⎣ ⎝ 0 ⎠ ⎥⎦
+
+Ecuación 12
+
+Esta ecuación es una de las más útiles, porque permite calcular la velocidad de salida en
+tobera. Resumiendo, es necesario conocer
+•
+•
+•
+•
+•
+
+K, la relación efectiva entre los calores específicos de los productos de escape, obtenida
+del análisis de la combustión. Para la condición de flujo bifásico, el valor debe
+modificarse, como se explicara mas adelante.
+R´ es la constante universal de los gases (R´=8.3143 N-m/mol-K)
+M es el peso molecular efectivo de los productos de escape, obtenido del análisis de la
+combustión, y debe tener en cuenta la presencia de partículas en fase condensada.
+T0 es la temperatura de combustión del propelente, también obtenida del análisis de la
+combustión
+Pe y P0 son la presión de salida de tobera y la presión de cámara, respectivamente.
+
+Para la mayoría de los cohetes amateur, Pe puede ser tomada como la presión atmosférica
+ambiental: Pe = Pa = 1 atmósfera. P0 puede ser la presión de cámara medida, por diseño o
+calculada.
+Un mejor entendimiento de la conducta de una tobera puede ser obtenido observando
+detenidamente esta ecuación. Puede verse que
+•
+•
+•
+•
+
+La velocidad máxima de escape es obtenida cuando se escapa al vacío (Pe=0). Esto es la
+llamada relación de presión infinita, P0/Pe.
+Incrementando la presión de cámara no se incrementa significantemente la velocidad de
+escape. Si k=1,2, entonces podemos ver que duplicando P0 de 35 atm. (515 psia) a 70
+atm. (1030 psia) incrementa la velocidad de escape en solo un 7%.
+Una temperatura de combustión mas alta y un peso molecular efectivo más bajo son
+significativa e igualmente benéficos, siendo proporcional e inversamente proporcional a
+la potencia de la raíz cuadrada, respectivamente.
+Aunque no es obvio observando esta ecuación, el efecto de cambiar el valor de k no es
+demasiado significativo. Un cambio de k=1,1 a k=1,2 resulta en una perdida de un 7%.
+
+La relación entre el área de garganta, A*, y cualquier decremento del área en la tobera, Ax,
+en la que la presión Px prevalece puede ser convenientemente expresada como función de la
+relación de presión, Px/Po, y k. Tomando que en la garganta M es la unidad, y usando las
+ecuaciones 2, 3, 4, 7 y 12, nos lleva a
+
+23
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+A * ⎛ k +1⎞
+=⎜
+⎟
+Ax ⎝ 2 ⎠
+
+1
+k −1
+
+⎛ Px ⎞
+⎜⎜ ⎟⎟
+⎝ P0 ⎠
+
+1
+k
+
+k −1
+⎡
+⎤
+⎛ k + 1 ⎞ ⎢ ⎛⎜ Px ⎞⎟ k ⎥
+⎜
+⎟ ⎢1 − ⎜ ⎟ ⎥
+P
+−
+k
+1
+⎝
+⎠
+⎢⎣ ⎝ 0 ⎠ ⎥⎦
+
+Ecuación 13
+
+Esta es otra importante y útil ecuación. Esta permite calcular el área de salida, Ae, de
+manera que la presión de salida, Pe, es igual a la presión ambiente, Pa (típicamente 1 atm.),
+simplemente sustituyendo Pa por Px.
+
+A * ⎛ k +1⎞
+=⎜
+⎟
+Ae ⎝ 2 ⎠
+
+1
+k −1
+
+⎛ Pe ⎞
+⎜⎜ ⎟⎟
+⎝ P0 ⎠
+
+1
+k
+
+k −1
+⎤
+⎡
+k
+⎛
+⎞
+P
++
+k
+1
+⎛
+⎞⎢ ⎜ e ⎟ ⎥
+⎜
+⎟ 1− ⎜ ⎟
+⎝ k − 1 ⎠ ⎢ ⎝ P0 ⎠ ⎥
+⎥⎦
+⎢⎣
+
+Ecuación 14
+
+Esto se conoce como la condición de diseño de tobera donde luego se demostrara que se
+logra una condición de empuje máximo. Para este diseño, la relación de área Ae/A* es
+conocida como la tan importante Relación de expansión optima.
+
+24
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+Empuje de un motor cohete y coeficiente de empuje
+El empuje que genera un motor cohete es una clave fundamental en su rendimiento. Sin
+duda, este es el parámetro que mas debe tener en cuenta cualquier diseñador de motores
+cohete amateur. El empuje, que es la fuerza que el motor genera, es lo que propulsa al
+cohete hacia (y mas allá) del cielo.
+El empuje es generado por la masa expelida (el escape) fluyendo a través de la tobera a una
+alta velocidad. La expresión para el empuje esta dada por
+
+F = ∫ P dA = m Ve + (Pe − Pa )A e
+
+Ecuación 1
+
+Donde el término de la izquierda en la ecuación representa la integral de las fuerzas de
+presión (resultante) actuando en la cámara y la tobera, proyectada en un plano normal al eje
+de simetría de la tobera, como se muestra en la siguiente figura
+
+La presión interna es más alta dentro de la cámara y decrece constantemente en la tobera
+hacia la salida. La presión externa (atmosférica) es uniforme sobre las superficies
+exteriores.
+En el primer termino del lado derecho de la ecuación, m es la taza de flujo de masa de los
+productos de escape y ve es la velocidad de escape. El segundo termino del lado derecho de
+la ecuación es el llamado empuje de presión, que es igual a cero para una tobera con una
+relación de expansión optima (Pe = Pa), Ae es el área de salida de la tobera.
+Considerando la continuidad (conservación de masa) en la garganta de la tobera, la
+ecuación 1 puede ser reescrita como
+
+F = ρ* A* v* Ve + (Pe - Pa)Ae
+
+Ecuación 2
+
+Esta expresión ahora puede ser modificada usando algunas de las ecuaciones que fueron
+presentadas en el capitulo anterior sobre toberas, que son
+•
+•
+•
+
+Relación de densidad de fluido (con M=1 en la garganta), ρ0 / ρ
+(Ecuación 7)
+Velocidad de flujo critica (en garganta), v*
+(Ecuación 3, con v*=a)
+(Ecuación 12)
+Velocidad de salida en tobera, ve
+25
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+• Ecuación de estado para un gas ideal, P= ρ R T
+Entonces tenemos
+
+F = A * P0
+
+2k ⎛ 2 ⎞
+⎜
+⎟
+k −1 ⎝ k +1 ⎠
+2
+
+k +1
+k −1
+
+k −1
+⎡
+⎤
+k
+⎛
+⎞
+P
+ê
+⎢1 − ⎜ ⎟ ⎥ + (P − P )A
+e
+a
+e
+⎢ ⎜ P0 ⎟ ⎥
+⎝
+⎠
+⎢⎣
+⎥⎦
+
+Ecuación 3
+
+Esta ecuación nos muestra que, si el termino de presión de empuje es cero, el empuje es
+directamente proporcional al área de garganta, A*, y es casi directamente
+proporcional a la presión de cámara, P0.
+Esto es particularmente interesante. Esto significa que si el tamaño de la garganta es
+duplicado, el empuje será duplicado (si se mantiene la presión de cámara). Lo mismo para
+la presión de cámara, si es duplicada, el empuje es casi duplicado. En realidad, las cosas no
+son tan simples, porque el área de garganta y la presión de cámara se encuentran unidas,
+como se explicara luego. Esto significa que duplicar el tamaño de la garganta implicaría
+cambios significativos en el diseño, como el incremento de la superficie de combustión.
+Igualmente si la presión es la acrecentada, las paredes del motor deberán ser más fuertes.
+El empuje también es proporcional a
+•
+•
+•
+
+Empuje de presión (termino aditivo, puede ser positivo o negativo)
+Relación de calores específicos, k. La sensitividad de k es bastante baja. Por ejemplo la
+diferencia en el empuje calculado con k=1,4, comparada con k=1,0, tiene un
+decremento del 14% (para una relación de presión P0/Pe = 68).
+Relación de presión a lo largo de la tobera, Pe/P0, como se muestra en el grafico:
+Este grafico muestra la relación
+de empuje, F/Fmax, contra la
+relación de presión (o expansión)
+donde Fmax es el empuje que
+puede ser obtenido de una
+relación de expansión infinita
+(expandiéndose en el vacío,
+Pe=0). En el grafico, el empuje
+indicado, F, excluye el termino
+de presión de empuje. El empuje
+total producido esta dado por
+Ftotal = F + (Pe - Pa) Ae.
+
+La relación de presión de la tobera esta determinada solamente por la relación de área,
+A*/Ae, tal como en la ecuación 14 del capitulo sobre toberas. ¿Qué nos indica este grafico?
+
+26
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+•
+
+•
+
+Si la relación de presión (y la relación de expansión) es 1, entonces F = 0. El único
+empuje producido por tal tobera es el empuje de presión, o Ftotal = (Pe-Pa) Ae. Tal tobera,
+por supuesto, no tendría sección divergente, como A*/Ae=1, y seria una tobera muy mal
+diseñada.
+La subida de la curva es muy escalonada inicialmente, entonces comienza a aplanarse
+mas allá de P0 / Pe = 5. Esto es significativo, porque indica que aun hasta una tobera
+provista con una mínima expansión seria significantemente benéfica. Con una relación
+de presión de 5, el empuje resultante es alrededor de un 60% del máximo teórico. De la
+ecuación 14, puede verse que la relación de expansión de área requerida es solo Ae / A*
+=1,38 (para k=1,2), lo que se traduce en una relación salida a garganta de tobera menor
+que 2.
+
+El grado al cual el empuje es amplificado por la tobera esta cuantificado por el Coeficiente
+de empuje, Cf, y es definido en término de la presión de cámara y área de garganta
+
+F = Cf A* P0
+
+Ecuación 4
+
+El Coeficiente de Empuje determina la amplificación del empuje debida a la expansión del
+gas en la tobera comparado con el empuje que seria producido si la presión de cámara
+actuara solo sobre el área de la garganta. La ecuación 4 es útil, porque permite obtener el
+valor experimental de Cf de valores medidos de presión de cámara, diámetro de garganta y
+empuje. El valor ideal de Cf es calculado desde las ecuaciones 3 y 4, y quedaría de la forma
+que se muestra en la ecuación 5.
+
+Cf =
+
+2k ⎛ 2 ⎞
+⎟
+⎜
+k −1 ⎝ k +1 ⎠
+2
+
+k +1
+k −1
+
+k −1
+⎡
+⎤
+k
+⎛
+⎞
+P
+⎢1 − ⎜ e ⎟ ⎥
+⎢ ⎜⎝ P0 ⎟⎠ ⎥
+⎢⎣
+⎥⎦
+
+Ecuación 5
+
+Un motor de KN/Sucrosa equipado con una tobera bien diseñada entregara un Cf de
+alrededor de 1,5 bajo condiciones estáticas. El Cf ideal para este mismo motor seria de
+1,65. Una gran parte de la perdida se debe a ineficiencias del flujo bifásico.
+Como nota final, debería ser recordado que las ecuaciones de empuje y Cf (Ecuaciones 3 y
+5) requieren que k sea corregido para el flujo bifásico.
+
+27
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+Impulso Total
+Aunque el empuje es una clave importante para la caracterización de la capacidad de
+elevación de un motor cohete, este no provee una indicación de que tan alto será propulsado
+el cohete. Para esto, uno necesita medir la salida total en términos de capacidad de
+propulsión. La clave esencial para esto es el impulso total del motor cohete, que incorpora
+el elemento esencial del tiempo, o la duración del empuje.
+El impulso total es definido como la integral del empuje sobre la duración operativa del
+motor.
+tb
+
+I t = ∫ F dt
+0
+
+Ecuación 1
+
+Y es representada por el área bajo la curva empuje-tiempo
+Las unidades son las de fuerza multiplicadas por el tiempo, generalmente libras-segundo
+
+(lb-s) o Newton-segundo (N-s).
+Es importante tener en cuenta que el impulso total solo nos dice parte de la historia con
+respecto a la capacidad propulsora de un cohete. Por ejemplo, un motor que entrega un
+impulso total de 200 Lb-s puede proveer de un empuje promedio de 100 lb. por 2 segundos
+(100 lb. x 2 s = 200 lb-s), o puede entregar un empuje de 25 lb. por 8 segundos (25 lb. x 8 s
+= 200 lb-s), como se muestra en la figura 2. Ambos entregan el mismo impulso total, que
+generalmente se abrevia como It.
+
+28
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+La altitud lograda diferirá, con este efecto siendo mas significante a medida que la relación
+empuje/masa decrece. La diferencia mas pronunciada será en la aceleración del cohete,
+porque la aceleración inicial del cohete esta dada por
+
+a = F/m - g
+
+Ecuación 2
+
+Donde F es el empuje, m es la masa del cohete al momento del despegue y g la aceleración
+de la gravedad. Con una aceleración más baja, mas tiempo le llevara al cohete lograr una
+velocidad en la cual las aletas le provean una estabilidad efectiva. Y en un caso extremo, si
+el empuje es menor que el peso al momento del despegue, el cohete ni siquiera dejara la
+plataforma de despegue, sin importar el impulso total del motor.
+
+29
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+Velocidad Característica
+La velocidad característica, también llamada c-estrella o simplemente c*, es una figura de
+merito termodinámico para un propelente determinado y puede ser considerada como
+indicativo de la eficiencia de combustión. La expresión para c* ideal es dada en la ecuación
+3, y puede verse que solo es función de los productos de la combustión (k, M, T0).
+
+c* =
+
+R´/M T0
+⎛ 2 ⎞
+k⎜
+⎟
+k
+1
++
+⎝
+⎠
+
+k +1
+k −1
+
+Ecuación 3
+
+El valor utilizado para k debe tener en cuenta la mezcla de gases con partículas en fase
+condensada.
+El Impulso Especifico ata relacionado con c* como vemos a continuación:
+
+Isp = c* Cf / g
+
+Ecuación 4
+
+Donde c* estima la influencia de la combustión y Cf (coeficiente de empuje) estima la
+influencia de la tobera. Así también, c* puede considerarse análogo al impulso especifico
+con Cf=1.
+La c* entregada puede ser obtenida de la curva presión-tiempo del motor cohete, siendo
+dada por la integral por el tiempo de la presión sobre la combustión, multiplicada por la
+relación de área de garganta a masa propelente, de esta manera
+
+A t tb
+c* =
+P(t)dt
+∫
+mp 0
+
+Ecuación 5
+
+Para los motores de KN/Sucrosa, la c* entregada se encuentra cercana al valor calculado,
+indicando una alta eficiencia de combustión.
+
+30
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+Impulso especifico
+El Impulso Especifico que el propelente es capaz de producir (sea teórico o real) es la
+clave del potencial de rendimiento. En su forma básica, el Impulso Especifico es
+considerado como el empuje producido por unidad de masa (ej. Lb. o Kg.) del propelente
+sobre el tiempo de combustión de 1 segundo. Como tal, las unidades del impulso especifico
+serian lb-s/lb o N-s/Kg. En el conjunto de unidades formales, puede considerarse que lb se
+simplificaría, dando la unidad más convencional de segundos. Para el ultimo conjunto de
+unidades, la división de el Impulso Especifico en N-s/Kg por la aceleración de la gravedad,
+g (9,806 m/s) resulta en dar segundos.
+El impulso específico entregado producido por un motor, por ejemplo de medidas de una
+prueba estática, es obtenido de la expresión
+
+Isp = It / Wp
+
+Ecuación 6
+
+Donde Wp es el peso del propelente (lb o Kg x g).
+El impulso específico entregado depende de:
+•
+•
+•
+•
+•
+•
+•
+
+Taza de flujo de masa, de este modo del tamaño del motor
+Energía de combustión disponible del propelente
+Eficiencia de la tobera
+Condiciones de presión ambiental
+Perdida de calor en el motor
+Perdidas por flujo bifásico
+Eficiencia de la combustión
+
+Estos factores serán tratados en el capitulo de "Correcciones para motores cohete reales"
+El Impulso Especifico Ideal del propelente de un cohete es calculado usando la ecuación
+12 del capitulo sobre toberas, que expresa la velocidad de escape, Ve, en términos de las
+propiedades de flujo y la relación de presión. Como Ve=c* Cf, el Isp ideal puede ser
+determinado con
+k −1
+⎡
+⎤
+1
+⎛ R´ ⎞⎛ k ⎞ ⎢ ⎛⎜ Pe ⎞⎟ k ⎥
+Isp =
+2T0 ⎜ ⎟⎜
+⎟ 1− ⎜ ⎟
+g
+⎝ M ⎠⎝ k − 1 ⎠ ⎢ ⎝ P0 ⎠ ⎥
+⎢⎣
+⎥⎦
+
+Ecuación 7
+
+Donde k, M, T0, Pe y P0 son como se definieron en el capitulo sobre toberas.
+Esta ecuación es utilizada para calcular el Impulso Especifico Ideal para los propelentes
+KN/Azucares.
+
+31
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+Presión de cámara
+La presión de cámara que genera un motor cohete es de crucial importancia para la
+operación exitosa de un motor cohete. No solo la presión de cámara influencia fuertemente
+la taza de combustión del propelente, la eficiencia termodinámica y el empuje, sino que la
+presión de cámara carga estructuralmente las paredes del motor a un punto crítico.
+Comprender la naturaleza de la generación de la presión de cámara y predecirla
+precisamente, es una de las claves para un satisfactorio diseño del motor cohete.
+¿Qué es lo que causa que se cree presión dentro de la cámara del motor cohete? ¿Qué
+determina la magnitud de esta presión? Intuitivamente, la presión generada es resultado de
+la combustión del propelente, por lo que los gases producidos intentan escapar a través de
+la tobera. Si la tobera es lo suficientemente pequeña, los gases no pueden escapar lo
+suficientemente rápido y la acumulación de gases en la cámara resulta en la presurización.
+Realmente, la explicación intuitiva es correcta. De cualquier forma, un importante factor
+que determina la magnitud de la presión de cámara no es tan intuitivo - es el concepto de
+flujo obstruido. Este concepto nos provee de los medios necesarios para calcular la presión
+de cámara, y es valido tanto para el modo de operación estática como el modo transitorio,
+como se discutirá a continuación.
+Observando el grafico de la presión de cámara sobre la duración de operación de un motor
+cohete (figura 1), puede verse que hay tres fases importantes de operación distintas.
+
+La curva de presión del motor cohete exhibe una conducta de estado constante y transitorio.
+Las fases transitorias son cuando la presión varia sustancialmente con el tiempo - durante la
+ignición y fase de encendido, y completando (o casi completando) el consumo del
+propelente, cuando la presión cae al nivel ambiental. La variación de la presión de cámara
+durante la fase de combustión en estado constante esta dada principalmente por la variación
+de la geometría del grano propelente (Area superficial de combustión) con su variación de
+taza de combustión asociada. Otros factores que pueden jugar un rol, como ser, la erosión
+de la garganta de la tobera, y el aumento de la taza de combustión erosiva.
+
+32
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+Primero que nada, serán consideradas las fases de presión de ignición y estado constante.
+La fase de ignición es hipotéticamente muy breve, aunque en la realidad, la ignición del
+grano propelente por completo no ocurre instantáneamente. La duración real de la fase de
+ignición es fuertemente dependiente de la efectividad del sistema ignitor utilizado.
+La fase de estado constante claramente domina el rendimiento del motor, y por lo tanto,
+constituye la Condición de diseño.
+Para determinar el crecimiento de la presión de ignición, y el nivel de presión en estado
+constante, se debe tener en cuenta que la taza de generación de productos de la combustión
+es igual a la taza de consumo del grano propelente, que esta dada por:
+
+Mg = Ab ρp r
+
+Ecuación 1
+
+Donde ρp es la densidad del propelente, Ab es el área de combustión del grano propelente, y
+r es la taza de combustión del propelente (taza de regresión de superficie).
+Es importante destacar que los productos de la combustión pueden consistir tanto de
+materia en estado gaseoso como en fase condensada. La fase condensada, que se manifiesta
+como humo, pueden ser partículas sólidas o liquidas. Solo los productos gaseosos
+contribuyen a la creación de presión. La fase condensada, de cualquier manera, contribuye
+con el empuje (rendimiento general) del motor cohete, dada su masa y velocidad, como se
+muestra en la ecuación 1 del capitulo sobre teoría de empuje.
+
+33
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+Flujo bifásico
+La mayoría de los propelentes sólidos de cohetes producen productos de la combustión que
+son una mezcla de gases y partículas en fase condensada (liquidas o sólidas) esto es
+evidente como humo visible en la pluma de escape. Estos propelentes conteniendo metales,
+como aluminio o magnesio, generan óxidos de los metales como productos de la
+combustión en fase condensada. Los compuestos oxidantes metálicos, como el nitrato de
+potasio (KN) o perclorato de potasio (KP), generan productos en fase condensada de un
+peso molecular particularmente alto, lo que es bastante indeseable.
+Los propelentes KN-Azúcar producen una densa nube de humo de carbonato de potasio. En
+realidad, aproximadamente el 44% de la masa de escape es materia sólida.
+La aparición de sólidos o líquidos en el escape produce una reducción de rendimiento por
+las siguientes razones:
+•
+
+Esta porción de la masa de combustión no puede realizar ningún trabajo de
+expansión y por lo tanto no contribuye a la aceleración del flujo de escape.
+
+•
+
+El mayor peso molecular efectivo de estos productos disminuye la velocidad
+característica (c*).
+
+•
+
+Debido a la inercia térmica, el calor de la fase condensada es parcialmente eyectado
+de la tobera antes de transferir este calor a los gases que la rodean, y por lo tanto no
+es convertido en energía cinética. Esto es conocido como retraso térmico.
+
+•
+
+Similarmente dada la relativamente gran masa de las partículas (comparadas a los
+gases), estas no pueden acelerarse tan rápidamente como los gases que las rodean,
+especialmente en la porción de la tobera donde la aceleración de flujo es
+extremadamente alta (región de garganta). La aceleración de las partículas depende
+del arrastre por fricción en el flujo de gases, que necesita una velocidad diferencial.
+El resultado neto es que las partículas en fase condensada salen de la tobera a una
+velocidad menor que los gases. Esto es conocido como retraso de velocidad de
+partículas.
+
+En términos de los parámetros de rendimiento de los cohetes, la presencia de productos en
+fase condensada se reflejan como una Velocidad Característica reducida, debido al alto
+peso molecular de la mezcla gas/partículas.
+El coeficiente de empuje ideal, Cf, por otro lado, se acrecienta al incrementar la fracción de
+partículas, como consecuencia de un valor de k reducido. Igualmente, el Cf entregado sufre
+significativamente, dado el retraso térmico y el retraso de velocidad. Esto es probablemente
+la mayor causa de pedida de eficiencia en un motor con una fracción significativa de
+partículas en el escape. Esto es especialmente cierto en una tobera con poca expansión (por
+ejemplo, porción divergente de menor tamaño). La aparente importancia de tener una buena
+porción divergente de la tobera es clara examinando la figura 3, que muestra la variación
+del Coeficiente de Empuje ideal para el flujo a través de la tobera del motor Kappa. La
+
+34
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+tobera esta diseñada con una casi ideal relación de expansión de Ae/At = 11.4, que otorga
+un Coeficiente de Empuje ideal de 1.69. Aunque, si la tobera hubiese sido truncada en la
+garganta (línea punteada roja), el coeficiente seria solamente 0,62. La divergencia por lo
+tanto multiplica el empuje ideal por un factor de 2.73. Por supuesto, los valores
+“entregados” probablemente son menos pronunciados que los valores ideales. El
+Coeficiente de Empuje entregado para este motor es aproximadamente 1.5. Es desconocido
+cual seria el Coeficiente de Empuje entregado para una tobera truncada, porque esta
+configuración no ha sido probada.
+
+Figura 3 – Cf ideal para el flujo bifásico a través de la tobera Kappa.
+Otro factor que es importante con respecto a las perdidas del flujo bifásico es el contorno de
+la tobera, especialmente en la región de la garganta. La figura 4 ilustra la aceleración de
+flujo para la tobera Kappa. La aceleración en la región de la garganta (línea punteada roja)
+es extremadamente alta, especialmente justo después, donde es su máximo. La mayoría del
+retraso de partículas, que es una fuerte función de aceleración, ocurre en esta región, por
+eso la importancia del diseño de una tobera con un contorno bien redondeado en la
+garganta, sin ningún cambio brusco en el área seccionada transversalmente.
+
+Figura 4 – Aceleración de gas/partículas para el flujo bifásico de la tobera Kappa.
+El tamaño del motor cohete así como el de las partículas en estado condensado juegan un
+importante rol con respecto a la influencia de los efectos del flujo bifásico. Esto es ilustrado
+en la figura 5, que muestra la fracción de la Velocidad Característica perdida con respecto
+a:
+
+35
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+•
+•
+
+Tamaño del motor (Empuje).
+Tamaño de las partículas.
+
+Nótese que la fracción de masa de las partículas en el escape para este estudio fue X = 0,25.
+Para los propelentes estándar KN-Azúcar es X = 0,44.
+
+Figura 5 – Influencia del tamaño de motor y de partículas en c*
+Ref. Dynamics of Two-Phase Flow in Rocket Nozzles, ARS Journal, Dec.1962
+Por ejemplo, para un motor de 100 lb. de empuje, el motor sufre una perdida del 6% en la
+Velocidad Característica si el tamaño de partícula promedio es de 1,5 micrones, como es
+mostrado por la línea punteada roja.
+Es claro desde con este dibujo que para motores experimentales amateur, que típicamente
+son de 1000 lb. de empuje o menos, que las perdidas por flujo bifásico pueden ser
+significativas, pero probablemente pueden ser desestimadas para grandes motores
+“profesionales”.
+¿Como es el flujo bifásico tomado en cuenta con respecto a los cálculos de rendimiento del
+motor? Me he hecho a mi mismo esta misma pregunta cuando comencé a investigar el
+propelente KN-Azúcar desde un aspecto de rendimiento teórica, en 1983 cuando comencé a
+trabajar en mi tesis “Diseño y Prueba de Motores Cohete de Propelente Sólido”. Todas las
+ecuaciones en Sutton y otros libros parecían ignorar la existencia de partículas en el escape,
+pero yo sabia que no podía ignorar esto, ¡no cuando el escape del propelente contenía un
+44% de materia sólida! Luego de mucha consternación, eventualmente logre encontrar un
+par de libros, y en particular, artículos del ARS Jornal, que trataban este tema. Y termine re
+derivando todas las ecuaciones de rendimiento pertinentes desde principios básicos,
+entonces hice las modificaciones necesarias para tener en cuenta la presencia de la fase
+condensada. Una asunción clave requerida era que las partículas fluyen a la misma
+
+36
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+velocidad que el gas (sin retraso de velocidad), entonces las ecuaciones modificadas
+representan el límite superior en rendimiento. Los detalles son demasiado complicados para
+ser presentados aquí, así que solo mostrare el resultado final, que afortunadamente es
+simple. Resulta que, la mezcla de partículas/gas se comporta como un gas con un exponente
+isentrópico modificado, k. Todas las ecuaciones fundamentales se mantienen igual y son
+completamente aplicables al flujo bifásico, solo con las siguientes modificaciones:
+1. Peso Molecular, M, debe tomar en cuenta la presencia de la fase condensada
+calculándose el Peso Molecular efectivo, que es obtenido dividiendo la masa del
+sistema por el numero de moles de gas en el sistema. Por ejemplo, si la masa del
+sistema es de 100 gramos y el numero de moles de gas es 2,3819 entonces:
+
+2. El exponente isentrópico modificado toma dos formas, una para las condiciones en
+donde la velocidad de flujo (o realmente, la aceleración) es baja, y otra para las
+condiciones de flujo con alta aceleración. Donde la aceleración es baja, como en la
+cámara de combustión,
+
+Aquí Cpmix es el calor específico efectivo de la mezcla de sólidos y gases y R´ es la
+constante universal de los gases. El método para calcular Cpmix es provisto en las
+notas técnicas de la pagina Web (Technical Notepad).
+Esta es la forma de k a ser utilizada, por lo tanto, cuando se calcula la presión de
+cámara y Velocidad Característica.
+Donde la velocidad de flujo y aceleración son altas, o sea, en la tobera:
+
+Donde k´ es el exponente isentrópico para la mezcla de solo gases, y = X / (1-X),
+donde X es la fracción de masa de partículas en el escape. Cs es el calor especifico
+para la mezcla sólida (o liquida) en el escape, y Cpgas es el calor especifico para la
+mezcla de gases solamente.
+
+37
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+La derivación de esta forma de exponente isentrópico modificado asume una
+condición de flujo congelado donde se asume que no existe retraso térmico o de
+velocidad, y esta basada en las ecuaciones de momento y energía para un flujo
+isentrópico estable. Detalles adicionales sobre el calculo de este exponente
+isentrópico modificado pueden ser encontrados en la pagina Web “notas técnicas” y
+en el articulo del ARS Journal "Recent Advances in Gas-Particle Nozzle Flows",
+R.F. Hoglund, Mayo 1962.
+Esta es la forma de k a ser utilizada cuando se calcule la Velocidad de Escape,
+Empuje, Coeficiente de Empuje y otros parámetros de flujo en la tobera.
+Para aquellos interesados en un tratamiento mas teórico del flujo bifásico, sugiero la
+revisión de mi tesis Solid Propellant Rocket Motor Design and Testing disponible para
+bajar en formato PDF.
+
+38
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+Correcciones para motores cohete reales
+Los anteriores capítulos trataron la teórica de los motores cohete con propelente sólido
+considerando el análisis de un cohete ideal, que por supuesto, no existe. El cohete ideal
+representa la condición de rendimiento máxima que puede ser obtenida si no existiesen
+factores del mundo real y otras aproximaciones que producen reducciones de rendimiento
+en los motores cohete de propelente sólido reales. Estos son tenidos en cuenta utilizando
+varios factores de corrección en el diseño o análisis de un motor cohete.
+
+Condiciones de cámara
+La eficiencia de combustión y perdidas de calor a través de la pared de la cámara tienden a
+producir una menor presión de cámara que la predicha teóricamente. El propelente sólido,
+igualmente, típicamente tiene una mayor eficiencia de combustión si está bien mezclado y
+el tamaño de las partículas oxidantes es muy pequeño. Una medida de la eficiencia de
+combustión de un propelente puede ser tomada al comparar el valor medido (entregado) de
+la Velocidad Característica (c*) con el valor ideal:
+
+El valor entregado de c* puede ser obtenido de las medidas de presión de los resultados del
+test estático o medido en “pruebas cerradas” de combustión de muestras de propelente.
+
+Para los propelentes basados en azúcar bien preparados, la eficiencia de combustión ha sido
+medida entre un 98 y 99 %. En cierto grado, la eficiencia de combustión es función del
+tamaño de motor. Los motores con cámaras de combustión mayores proveen mayor tiempo
+para que ocurran las reacciones químicas antes de la expulsión por la tobera.
+La perdida de calor a través (o hacia) las paredes de la cámara también dependen del
+tamaño del motor, así como del material y el grosor de la pared. Por ejemplo, un motor de
+mayor tamaño con una fina pared de acero tendría mucha menos perdida de calor que un
+pequeño motor con una relativamente gruesa pared de aluminio. Igualmente, el efecto
+perjudicial es probablemente insignificante para ambos casos.
+La presión de cámara tiene un efecto pronunciado sobre el impulso específico del
+propelente, particularmente a un régimen de baja presión, como se muestra en la figura a
+continuación:
+
+39
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+Como los motores cohete experimentales amateur típicamente tienen tiempos de
+combustión cortos, una porción significativa del impulso total puede resultar de las fases de
+inicio o despegue de la combustión, cuando la presión de cámara esta muy por debajo de el
+nivel de presión operando en estado estable. Como resultado, el impulso específico total
+entregado sufre. Esta es una razón de porque el impulso especifico entregado puede ser
+menor que el ideal, que esta basado en una presión de estado estable constante (usualmente
+tomada como 1000 PSI). La importancia de la perdida, designada Vp, es altamente
+dependiente del tiempo de combustión del motor y el perfil presión/tiempo, pero puede ser
+un 5% o mayor. Por lo tanto un factor de corrección de presión típico seria Vp = 0,95.
+
+Correcciones de Tobera
+El flujo a través de una tobera real difiere del de una tobera ideal debido a los efectos de la
+fricción, la transferencia de calor (particularmente en la garganta), gases imperfectos y una
+combustión incompleta, flujo no axial, no uniformidad del fluido, y retraso térmico y de
+velocidad.
+Las toberas cónicas son utilizadas casi exclusivamente para los motores amateur, dada la
+relativa simplicidad de fabricación. En teoría de toberas, se asume que el flujo es
+unidimensional (axial). En una tobera cónica, el flujo es bidimensional, con la inclusión de
+la velocidad no axial dependiente de la mitad del ángulo del cono de divergencia, a. El
+factor de corrección para un flujo no axial es dado por:
+| = ½ ( | + cos a)
+Esta perdida generalmente es bastante pequeña, con valores típicos siendo | = 0,99 para un
+medio ángulo de 12º y | = 0,97 para un medio ángulo de 20º.
+El factor de corrección de descarga es utilizado para expresar que tan bien el diseño de la
+tobera permite al caudal de flujo de masa pasar a través de la garganta aproximando al
+caudal teórico, y esta dado por la relación de caudal de flujo de masa entregado con el
+caudal de flujo de masa ideal.
+
+40
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+El parámetro de diseño más importante que determina el factor de descarga es el contorno
+en la región de entrada a la garganta. Un contorno bien redondeado tiende a maximizar el
+caudal de flujo. Para los propelentes que tienen una fracción significativa de partículas en el
+escape, un buen contorno minimiza la aceleración del flujo en la entrada, minimizando la
+perdida de flujo bifásico asociada con el retraso de velocidad de las partículas.
+Ciertos factores tienden a incrementar el caudal de flujo de masa real en comparación con
+el caudal de flujo de masa idealizado. Estos factores incluyen:
+•
+•
+
+Transferencia de calor del fluido a las paredes de la tobera, tendiendo a disminuir la
+temperatura de flujo, incrementando la densidad.
+La relación de calor especifico y otras propiedades de los gases cambian a través de
+la tobera de tal manera que incremental el factor descarga.
+
+Consecuentemente, para un motor cohete que no tiene productos en fase condensada en el
+escape, el factor de corrección de descarga puede estar cercano a la unidad. Sin embargo,
+para un motor cohete que utiliza un propelente con una gran fracción de productos en fase
+condensada (como el KN-Azúcar), las perdidas pueden ser bastante significativas, aun con
+un buen contorno de entrada a la tobera. El valor del factor de corrección de descarga seria
+típicamente Vd = 0,90 para este propelente con una tobera bien diseñada con superficies
+suaves y perdida de calor mínima.
+
+Correcciones para el Impulso Especifico
+El Impulso Especifico Ideal debe ser corregido para obtener el Impulso Especifico
+Entregado de un motor cohete real, aplicando los factores de corrección explicados a
+continuación:
+
+Como ejemplo, el motor cohete Kappa-DX, utilizando un propelente KN/Dextrosa, tiene
+los siguientes factores de corrección:
+Factor de corrección de eficiencia de combustión
+h* = 0.98
+Factor de corrección de presión de cámara
+Vp = 0.95 (estimado)
+Factor de corrección de descarga en tobera
+Vd = 0.91 (estimado)
+Factor de corrección de divergencia de tobera
+| = 0.99
+Como el Impulso Especifico Ideal es Isp = 164 seg. (@1000 psi), el Impulso Especifico
+Entregado esta dado por:
+
+41
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+GUIPEP
+Introducción
+Este capitulo intenta servir como una introducción al programa GUIPEP, que es
+básicamente el programa PROPEP con una interfaz grafica (GUI) agregándole una mayor
+simplicidad de uso al programa. Este altamente útil programa termo químico permite al
+usuario evaluar el rendimiento teórico de un propelente sólido (o liquido). Como tal, es
+particularmente útil para verificar la viabilidad de posibles formulaciones propelentes. Así
+también, permite al usuario determinar rápidamente las relaciones de ingredientes más
+efectivas para lograr el rendimiento deseado, desde una perspectiva teórica.
+GUIPEP es principalmente un revolvedor de equilibrios químicos, o sea, balancea las
+ecuaciones químicas relacionadas con los reactivos y productos del propelente por un
+método como “minimización de energía libre de Gibbs”. Los ingredientes (reactivos)
+definiendo el propelente, son transformados adiabática e irreversiblemente a reacciones
+producto constituyentes en los montos fijados por las relaciones de equilibrio, presión de
+cámara, y balance de masas una temperatura de reacción fijada por la energía disponible de
+la reacción. El conjunto resultante de productos provee las bases para el cálculo de las
+propiedades termodinámicas por las cuales son determinados los parámetros de rendimiento
+mediante un proceso iterativo cambiando las propiedades y composición del producto.
+La entrada es simplemente una lista de los ingredientes del propelente (y la masa de cada
+uno), así como la presión de cámara y la presión de salida en tobera. La salida incluye la
+temperatura de combustión, el exponente isentrópico, el peso molecular de los productos, la
+temperatura y composición del escape, el impulso específico, y la relación de compresión
+ideal.
+Nótese que los parámetros de velocidad de quemado no son evaluados, esto es porque la
+velocidad de combustión es un fenómeno complejo que involucra otros procesos físicos
+además de la combustión, como la transferencia de calor y masa en la llama de la reacción
+y la superficie del propelente ardiendo.
+Otro programa termo químico similar es CET (Chemical Equilibrium with Transport
+Properties, NASA TM4557), pero por lo que tengo entendido, no existe una interfaz grafica
+para este programa. Por lo tanto es complicado de utilizar. Las predicciones son casi
+idénticas a las generadas por GUIPEP, basado en mi limitada experiencia utilizando este
+programa.
+
+42
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+Asunciones de Análisis
+Las asunciones básicas empleadas por este programa son muy similares a las descritas en el
+capitulo de “Asunciones Básicas”
+•
+•
+•
+•
+•
+•
+•
+
+Flujo unidimensional con respecto a las ecuaciones de continuidad, energía y
+momento.
+Velocidad de flujo cero en la entrada a la tobera.
+Combustión completa y adiabática.
+expansión isentrópica en la tobera.
+Mezclado homogéneo de los reactivos y productos.
+Se aplica la ley de los gases ideales.
+Retrasos térmico y de velocidad nulos para los productos de fase condensada.
+
+Utilizando GUIPEP
+GUIPEP es muy fácil de utilizar. Hasta 10 ingredientes del propelente son elegidos de las
+cajas desplegables, y la masa en gramos es ingresada. La masa total no necesita sumar 100
+gramos, pero esta es la forma más conveniente de ingresar los datos, porque de esta manera
+la masa representa los porcentajes de los componentes.
+Para eliminar cualquier ingrediente no deseado se ingresa 0 como su masa.
+Luego se ingresa un titulo para la simulación, de hasta 10 caracteres de largo.
+Las Condiciones de Operación son dejadas en sus valores por defecto generalmente, al
+menos que exista alguna razón en específico para modificarlas:
+Temperatura de los ingredientes = 298 K (25ºC)
+Presión de cámara = 1000 psi
+Que es la presión de referencia a la que se toma el Isp.
+Presión de escape = 14,7 psi
+Que es una atmósfera, la condición de expansión ideal al nivel del mar
+En cuanto a las opciones, ninguna necesita ser seleccionada para una evaluación básica del
+propelente. Sin embargo, si esta siendo estudiado el diseño de la tobera, seleccione la caja
+“Boost Velocities and Nozzle Design”.
+El paso final es correr el programa presionando “Run” y entonces “Single Run”. Entonces
+una ventana DOS aparecerá para permitir la ejecución el programa, que es iniciada
+presionando la tecla Enter. Entonces aparecerá el Notepad, en el que se mostrara la salida
+resultante.
+A continuación puede verse una captura de la pantalla del GUIPEP con datos de entrada de
+ejemplo.
+
+43
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+Salida del GUIPEP
+La porción inicial de la salida es básicamente un eco de la entrada completa como puede
+apreciarse a continuación
+
+Algunos de los datos de entrada son automáticamente obtenidos del archivo pepcoded.daf,
+que es un archivo de texto que contiene los siguientes datos de los ingredientes:
+•
+•
+•
+•
+
+Nombre
+Formula química
+“Calor de formación” (Que realmente es el delta entalpía de formación), en
+calorías/gramo
+Densidad de masa, en libras/pulgada cúbica
+44
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+Estos datos se reflejan en la entrada anterior, donde D-H es el “delta calor de formación”,
+DENS es la densidad del constituyente, y COMPOSITION es la formula química. La
+densidad ideal del propelente resultante también es dada, y es calculada de acuerdo a la
+siguiente ecuación:
+
+Como es detallado en el capitulo “teoría el grano propelente”.
+Por ejemplo, DENS = 1/(0.65/0.0767 + 0.34/0.0567 + 0.01/0.184) = 0.06884 lb. /in3.
+El número de gramos-átomos de cada elemento presente en los ingredientes es listado.
+Básicamente, esto indica cuantos átomos relativos de cada elemento están presentes en el
+caldero de ingredientes que son combinados para formar los productos de la combustión.
+Aunque esta es información clave para el programa, para el usuario no tiene ningún interés
+en particular. Como referencia, esto es calculado como la relación masa/peso molecular
+para un ingrediente en particular multiplicado por el numero de moles de un elemento
+particular, sumados para cada ingrediente.
+A siguiente porción de la salida presenta las condiciones de la cámara de combustión, como
+puede versa a continuación:
+
+La primera columna indica la temperatura de combustión (en grados Kelvin y F), la presión
+de cámara como fue especificada, la entalpía total de la mezcla (Kcal. /masa del sistema),
+entropía total del sistema (cal/K/masa del sistema), CP/CV, que es la relación de calores
+específicos, GAS (numero de moles de gas en la mezcla), y RT/V (un factor de conversión
+que normalmente no es utilizado).
+Nótese que la masa del sistema en este ejemplo es 100 gramos.
+Los únicos parámetros importantes aquí son:
+•
+
+Temperatura de combustión – también llamada Temperatura de llama adiabática,
+y determinada por el método descrito en el capitulo “teoría de la combustión”.
+
+45
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+Generalmente, cuanto mas alta la temperatura, mayor es el impulso especifico. Dos
+factores del “mundo real” a considerar. Mayores temperaturas requieren materiales
+mas robustos en encapsulado y tobera, aislamiento o coberturas ablativas. Nótese
+que la presión de cámara es la temperatura de estagnación que la tobera “vera” y
+para la que debe estar diseñada. Temperaturas de combustión bajas, como las
+predichas por este programa, pueden no ser auto mantenidas en la realidad. Por
+ejemplo, una formulación con una temperatura de cámara predicha de 1000 K
+probablemente nunca entrara en combustión.
+•
+
+CP/CV – La relación de calores específicos, k, para la mezcla en condiciones de
+cámara de combustión, este es el valor correcto a utilizar al calcular la velocidad
+característica (c*) y la presión de cámara, como se describió en el anterior capitulo.
+El valor de CP/CV es calculado de las siguientes ecuaciones:
+
+Donde
+
+Ecuaciones 2 y 3
+
+Con los detalles de notación y uso de las ecuaciones provistos en la pagina Web
+“Notas técnicas” (Technical Notepad).
+•
+
+GAS – El numero de moles de productos de la combustión gaseosos en la mezcla
+producto (que también puede contener fase condensada). Este valor es utilizado para
+calcular el Peso Molecular efectivo, M, de la mezcla producto, que es dado por
+dividir el numero de moles de gas en la masa del sistema. Para este ejemplo,
+M = 100 / 2,297 = 43,54 g/mol. Este es el valor del peso molecular apropiado para
+utilizar en las ecuaciones dinámicas de gases descritas en los anteriores capítulos.
+
+Las siguientes dos líneas proveen los valores de calor especifico molar de los productos
+gaseosos y de la mezcla, (cal/mol/K), y son provistos solo como referencia.
+La siguiente línea provee los valores para el número de moles de gas (repetido) y el número
+de moles de productos en fase condensada, que pueden ser sólidos o líquidos. Esta es
+información de interés, porque provee la relación (molar) de gas/productos en fase
+condensada.
+Las siguientes líneas de salida tabulan el número de moles de cada producto constituyente
+de la combustión. Los nombres de producto seguidos de un * están en estado liquido,
+mientras que & designa el estado sólido, todos los demás están en estado gaseoso. Estos
+datos permiten al usuario calcular la fracción de masa en fase condensada, que esta dada
+por la masa de todos los fase condensada dividido por la masa del sistema, y donde la masa
+de cualquier constituyente esta dada por el numero de moles multiplicado por el peso
+molecular del constituyente.
+
+46
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+Por ejemplo, fracción de masa en estado condensado = [(0.30541) 138.2 + 0.01242 (71.9)]/
+100 = 0.422
+Muchos de los productos de la combustión están en pequeños montos, y juegan un rol
+despreciable en el proceso completo. Del ejemplo anterior, los únicos productos
+significativos son H2O, K2CO3, CO2, H2, CO, N2 y tal vez KOH y FeO.
+Para un mejor rendimiento, productos de un bajo peso molecular son deseables, de tal
+forma que se minimice el peso molecular efectivo de la mezcla. Productos de bajo peso
+molecular en el ejemplo anterior serian H2O, H, H2, CH4, CO, NH3 y OH.
+La siguiente línea en la porción superior de la salida da el peso molécular de la mezcla (a
+veces denotado como MW), que esta dado por la suma de la fracción de moles, para cada
+constituyente, multiplicada por su peso molecular, como se muestra a continuación:
+
+Este valor de peso molecular debe ser desechado por no tener propósito con respecto al
+rendimiento del cohete.
+La siguiente porción de la salida presenta las condiciones de escape en tobera, como se
+muestra a continuación:
+
+El formato de estos resultados es idéntico al de los resultados de cámara. Los valores
+representan las condiciones en el plano de salida de la tobera.
+
+Vale aclarar los siguientes puntos:
+•
+
+La temperatura de los productos de combustión ha caído significativamente, porque
+la energía térmica ha sido convertida a energía cinética. La temperatura de salida
+puede ser calculada utilizando la ecuación 4 del capitulo “teoría de toberas”.
+
+47
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+Donde
+
+Ecuaciones 5 y 6
+
+Donde T0 es la temperatura de cámara, P0/Pe es la relación de presión cámara/salida,
+Me es el número de mach del flujo a la salida, y k es el CP/CV para condiciones de
+escape. Nótese que el valor dado en la salida es para condiciones de equilibrio
+cambiante lo que es explicado a continuación.
+•
+•
+•
+•
+
+La presión de cámara ha caído a una atmósfera, la condición de diseño.
+Tanto CP/CV y el numero de moles de gas han cambiado levemente, reflejando la
+composición y temperatura cambiante del escape mientras fluye por la tobera.
+Similarmente, los calores específicos y el número de moles de partículas
+condensadas ha cambiado de los de las condiciones de cámara.
+La composición de los productos ha cambiado en una forma interesante. Nótese que
+hay menos constituyentes despreciables. Esto es porque la temperatura es menor y
+ocurre una menor disociación (rotura en moléculas simples) de los compuestos
+mayores. también nótese que los productos líquidos han pasado a estado sólido.
+
+La siguiente porción de la salida presenta el Rendimiento de un motor cohete equipado con
+un propelente y tobera como fueron especificados:
+
+El rendimiento es dado tanto para condiciones de equilibrio cambiantes o estables.
+¿Qué significan esos términos? Equilibrio estable significa que la composición química
+del escape no cambia mientras fluye por la tobera (la composición de los productos es
+establecida en la cámara de combustión). Equilibrio cambiante asume que un equilibrio
+químico instantáneo es establecido mientras el gas se expande a través de la tobera,
+“cambiando” la composición continuamente.
+¿Por qué se proveen ambos resultados? Porque del muy corto tiempo de residencia en la
+tobera, no es seguro si existe el tiempo suficiente para que las reacciones químicas
+realmente ocurran como fue predicho por el modelo de equilibrio cambiante. La geometría
+también juega su rol, toberas mayores otorgan mayor tiempo de residencia.
+¿Qué resultados deben utilizarse? Para motores amateur donde las toberas son muy
+pequeñas con comparación con los grandes cohetes profesionales, yo considero que el
+modelo de flujo estable es más realista. Para la tobera del motor cohete Kappa, he calculado
+que la duración del paso del flujo por la tobera es de 430 microsegundos.
+
+48
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+En la porción de rendimiento de la salida, la primer columna representa el Impulso
+Especifico ideal (IMPULSE), exponente isentrópico (IS EX), temperatura de flujo en la
+garganta (T*) y presión en la garganta (P*), velocidad característica (C*), impulso vacío
+(ISP*), relación de expansión optima (OPT-EX), densidad Isp (D-ISP), caudal de flujo de
+garganta área-a-masa (A*M), y temperatura de plano de salida (EXT-T.
+Lo siguiente es una breve explicación de cada uno de los resultados:
+•
+
+Impulso Especifico Ideal, es la clave para medie el potencial de rendimiento y se
+puede considerar relacionado al empuje producido por unidad de masa del
+propelente (o sea 1 lb. o Kg.) de propelente por el periodo de tiempo de un segundo.
+El Impulso Especifico ideal puede ser determinado de la ecuación 7 del capitulo de
+Impulso y C*.
+
+Donde k es tomado como el promedio de CP/CV para condiciones de cámara y
+escape, y M como el promedio de peso molecular efectivo para condiciones de
+cámara y escape.
+•
+
+El exponente isentrópico es el mismo que k o CP/CV para un gas perfecto tal
+como PVk = constante (P = presión, V = volumen). Como el gas no es perfecto, los
+valores de IS EX y CP/CV no concuerdan.
+
+•
+
+T* y P* son los llamados valores críticos de la temperatura y presión de flujo donde
+la velocidad de flujo es de mach uno, o sea, en la garganta. Estos pueden calcularse
+de las ecuaciones 4 y 6 del capitulo “teoría de Toberas”. Las unidades son Kelvin y
+atmósferas respectivamente.
+
+Y
+•
+
+C* es la velocidad de escape característica, en unidades pies/segundo. Este
+parámetro puede ser considerado ser una figura de merito termodinámico para un
+propelente en particular y esta dada por la ecuación 3 del capitulo “Impulso y C*”.
+
+49
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+•
+•
+
+ISP* es el impulso vacío que seria obtenido por una tobera sonica en un trabajo de
+motor tomando aire, y por lo tanto puede ser ignorado.
+OPT-EX, la relación de expansión Optima (Ae/At) es un importante parámetro en el
+diseño de toberas. Este valor define la relación entre el área de salida y la garganta
+de la tobera, y como tal, los tamaños del diámetro de salida del cono divergente,
+donde
+. Esta relación puede ser determinada de la ecuación 14 del
+capitulo “teoría de Toberas”.
+
+Donde k es el valor de CP/CV para condiciones de escape.
+•
+
+D-ISP, la Densidad del Impulso Especifico, es un parámetro interesante. Esta
+definido como el producto del impulso especifico y la gravedad especifica del
+propelente, o Id = Isp. dp (la gravedad especifica es numéricamente igual a la
+densidad en gramos/cc). Un alto valor de la densidad de Isp seria importante para
+diseños de motor compactos, donde se prioriza el volumen.
+
+•
+
+A*M (“A estrella M”) es la relación del área de garganta de la tobera con el caudal
+de flujo de masa expresado como in2 – seg./lb. Realmente no tengo idea para que es
+utilizado esto.
+
+•
+
+EX – T, es la temperatura del plano de salida de la tobera en Kelvin y puede ser
+determinada mediante la ecuación 5 mostrada anteriormente, o sea
+
+50
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+Comparación de Ecuaciones de Rendimiento con GUIPEP
+La siguiente tabla muestra una interesante comparación entre los resultados presentados por
+GUIPEP y los mismos resultados calculados utilizando las ecuaciones de rendimiento
+presentadas anteriormente, que son consideradas “aproximadas”. Igualmente los resultados
+son muy similares.
+
+Limitaciones de GUIPEP
+En algún grado, la precisión de los resultados es dependiente del archivo JANNAF.DAT
+que contiene información del calor de formación de los elementos utilizada por el
+programa. La lista de elementos esta limitada, y para combinaciones de propelentes
+inusuales, los productos reales de la reacción pueden no estar presentados en la lista. El
+resultado es una falla del programa o resultados incorrectos. Un buen ejemplo es el
+propelente zinc-azufre, para el cual GUIPEP no provee ninguna solución. La razón es que
+el producto principal de la combustión, sulfito de zinc, no esta presente en la lista de
+elementos de reacción.
+Como fue mencionado en la introducción, la velocidad de quemado no es calculada por
+GUIPEP, tampoco se provee ninguna indicación sobre si un propelente se auto iniciara.
+Aunque es obvio que esta clase de información esta más allá del alcance o meta de
+GUIPEP, este hecho debe ser tenido en cuenta al evaluar un propelente. Un buen ejemplo
+son los propelentes basados en nitrato de amonio (AN). Aunque GUIPEP típicamente
+presenta excelentes números de rendimiento, en realidad la velocidad de quemado es
+generalmente tan baja que el propelente se auto extinguirá. También, la adición de metales
+tales como el aluminio tiende a incrementar el rendimiento significativamente para muchos
+propelentes, de acuerdo con GUIPEP. Este usualmente no es el caso en la realidad, donde
+una gran cantidad del metal no es quemado a no ser que la temperatura de reacción del
+propelente sea muy alta y la partícula de metal muy pequeña. Limitaciones físicas también
+pueden rechazar un potencialmente prometedor propelente. La carga de altos sólidos se
+predice mejora el rendimiento, pero en la práctica, generalmente es difícil de lograr debido
+a limitaciones de adhesión.
+Otra limitación, tiene que ver con la predicción del rendimiento de propelentes con un
+significativo porcentaje de partículas en fase condensada en el escape (flujo bifásico). El
+valor de CP/CV y el exponente isentrópico son calculados para una mezcla de partículas-
+
+51
+
+Teoría Sobre Motores Cohete de Propelente Sólido – Richard Nakka
+
+gas, como se muestra en la Ecuación 1 del capitulo de “Flujo bifásico”. Pero, para el flujo a
+través de la tobera, un exponente isentrópico modificado debe ser utilizado, como es dado
+por la Ecuación 2 del mismo capitulo. Para propelentes con una fracción en fase
+condensada mínima (digamos menor al 10%), los efectos son desechables. Pero para un
+propelente como el KN-Azúcar, donde la fracción en fase condensada es muy alta (44%), el
+efecto neto es más significativo. Como ejemplo, el valor de cámara del exponente
+isentrópico como es calculado por la Ecuación 2 es k = 1,04, mientras que el valor dado por
+la Ecuación 1 y GUIPEP es de k = 1,13. La diferencia en el Impulso Especifico Ideal es Isp
+166 seg. versus Isp = 153 seg. respectivamente.
+
+52
+
+

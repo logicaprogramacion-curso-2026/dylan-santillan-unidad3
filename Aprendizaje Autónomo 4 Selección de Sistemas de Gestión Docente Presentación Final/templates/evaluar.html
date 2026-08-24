@@ -1,0 +1,615 @@
+<!-- jinja: ignore -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluar Misión | Estación Espacial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --space-dark: #020010;
+            --panel-bg: rgba(8, 12, 32, 0.82);
+            --panel-border: rgba(124, 138, 255, 0.25);
+            --hud-line: rgba(124, 138, 255, 0.35);
+            --accent: #7c8aff;
+            --accent-bright: #9fb0ff;
+            --input-bg: rgba(12, 16, 40, 0.7);
+            --input-border: rgba(124, 138, 255, 0.18);
+            --input-focus: rgba(124, 138, 255, 0.55);
+            --text-primary: #e4e7ff;
+            --text-secondary: #8088b8;
+            --text-tertiary: #565d8a;
+            --danger: #f87171;
+            --danger-bg: rgba(248, 113, 113, 0.08);
+            --comet-cyan: #00e5ff;
+            --font-display: 'Orbitron', sans-serif;
+            --font-body: 'Space Grotesk', sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--space-dark);
+            color: var(--text-primary);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 25px;
+            position: relative;
+            overflow: hidden;
+            cursor: crosshair;
+        }
+
+        /* Fondo espacial */
+        .space-bg {
+            position: fixed; top: 0; left: 0;
+            width: 100%; height: 100%; z-index: 0; pointer-events: none;
+        }
+
+        .star {
+            position: absolute; background: white; border-radius: 50%;
+            transition: transform 0.1s ease, box-shadow 0.1s ease;
+        }
+
+        /* Orbe de energía */
+        .energy-orb {
+            position: fixed;
+            width: 60px; height: 60px;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 0;
+            transition: all 0.3s ease;
+            filter: blur(15px);
+            opacity: 0.6;
+        }
+
+        .nebula {
+            position: absolute; border-radius: 50%; filter: blur(90px); opacity: 0.07;
+        }
+
+        .nebula-1 {
+            width: 400px; height: 300px; background: #6b3fa0;
+            top: -5%; right: -10%; animation: nebulaDrift 14s infinite ease-in-out;
+        }
+
+        .nebula-2 {
+            width: 350px; height: 280px; background: #1a5fb4;
+            bottom: -8%; left: -8%; animation: nebulaDrift 17s infinite ease-in-out reverse;
+        }
+
+        @keyframes nebulaDrift {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(30px, -20px) scale(1.06); }
+            66% { transform: translate(-20px, 15px) scale(0.94); }
+        }
+
+        /* Overlay láser */
+        .laser-overlay {
+            position: fixed; top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .laser-overlay.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .laser-line {
+            width: 0%;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #00e5ff, #7c8aff, #00e5ff, transparent);
+            box-shadow: 0 0 20px #00e5ff, 0 0 40px #7c8aff;
+            transition: width 1.5s ease;
+            border-radius: 2px;
+        }
+
+        .laser-overlay.active .laser-line {
+            width: 80%;
+        }
+
+        .laser-text {
+            font-family: var(--font-display);
+            color: #9fb0ff;
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-top: 25px;
+            letter-spacing: 4px;
+            opacity: 0;
+            transition: opacity 0.5s ease 1s;
+            text-shadow: 0 0 20px rgba(120, 140, 255, 0.6);
+        }
+
+        .laser-overlay.active .laser-text {
+            opacity: 1;
+        }
+
+        /* ============================================================
+           CONSOLA PRINCIPAL
+           ============================================================ */
+        .console {
+            position: relative; z-index: 1;
+            width: 620px; max-width: 100%;
+            animation: containerEntry 0.6s ease-out;
+        }
+
+        @keyframes containerEntry {
+            from { opacity: 0; transform: translateY(30px) scale(0.96); }
+            to { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
+        .console-frame {
+            position: relative;
+            background: var(--panel-bg);
+            padding: 34px 32px 30px;
+            border-radius: 4px;
+            border: 1px solid var(--panel-border);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 25px 70px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.02);
+        }
+
+        .corner {
+            position: absolute; width: 20px; height: 20px;
+            border: 2px solid var(--comet-cyan); opacity: 0.65;
+        }
+        .corner-tl { top: -1px; left: -1px; border-right: none; border-bottom: none; }
+        .corner-tr { top: -1px; right: -1px; border-left: none; border-bottom: none; }
+        .corner-bl { bottom: -1px; left: -1px; border-right: none; border-top: none; }
+        .corner-br { bottom: -1px; right: -1px; border-left: none; border-top: none; }
+
+        .status-bar {
+            display: flex; align-items: center; justify-content: space-between;
+            font-family: var(--font-mono); font-size: 0.68rem;
+            letter-spacing: 0.5px; color: var(--text-tertiary);
+            margin-bottom: 18px; padding-bottom: 12px;
+            border-bottom: 1px solid var(--hud-line);
+        }
+
+        .status-bar .blink {
+            display: inline-block; width: 6px; height: 6px;
+            border-radius: 50%; background: var(--comet-cyan);
+            box-shadow: 0 0 8px var(--comet-cyan);
+            margin-right: 6px; animation: dotGlow 1.4s infinite;
+        }
+
+        @keyframes dotGlow {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.35; }
+        }
+
+        .header { display: flex; align-items: center; gap: 16px; margin-bottom: 6px; }
+
+        .header-icon {
+            width: 44px; height: 44px; flex-shrink: 0;
+            color: var(--accent-bright);
+            animation: iconFloat 3s infinite ease-in-out;
+        }
+
+        @keyframes iconFloat {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-6px) rotate(5deg); }
+        }
+
+        .header-text h1 {
+            font-family: var(--font-display);
+            font-size: 1.3rem; font-weight: 700; letter-spacing: 1.5px;
+            background: linear-gradient(180deg, #f0f0ff 0%, #b0bfff 100%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        }
+
+        .header-text .subtitle {
+            font-family: var(--font-mono);
+            color: var(--text-secondary); font-size: 0.7rem;
+            letter-spacing: 1px; text-transform: uppercase;
+            margin-top: 6px;
+        }
+
+        .divider {
+            display: flex; align-items: center; gap: 10px;
+            margin: 20px 0 22px;
+        }
+        .divider::before, .divider::after {
+            content: ''; flex: 1; height: 1px;
+            background: linear-gradient(90deg, transparent, var(--hud-line));
+        }
+        .divider::after { background: linear-gradient(90deg, var(--hud-line), transparent); }
+
+        .alert {
+            background: var(--danger-bg);
+            border-left: 2px solid var(--danger);
+            color: #fca5a5;
+            padding: 12px 16px; border-radius: 4px;
+            margin-bottom: 20px;
+            font-family: var(--font-mono); font-size: 0.82rem;
+            display: flex; align-items: center; gap: 10px;
+            animation: alertShake 0.5s ease;
+        }
+
+        .alert svg { width: 16px; height: 16px; flex-shrink: 0; }
+
+        @keyframes alertShake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            75% { transform: translateX(5px); }
+        }
+
+        .form-group { margin-bottom: 18px; position: relative; }
+
+        label {
+            display: flex; align-items: center; gap: 8px;
+            margin-bottom: 8px;
+            font-family: var(--font-mono);
+            color: var(--text-secondary);
+            font-size: 0.7rem; font-weight: 500;
+            letter-spacing: 1px; text-transform: uppercase;
+        }
+
+        label svg { width: 14px; height: 14px; color: var(--text-tertiary); }
+
+        input, select, textarea {
+            width: 100%; padding: 13px 16px;
+            background: var(--input-bg);
+            border: 1px solid var(--input-border);
+            border-radius: 4px; color: var(--text-primary);
+            font-size: 0.93rem; font-family: var(--font-body);
+            transition: all 0.3s ease; outline: none;
+        }
+
+        textarea { height: 160px; resize: vertical; line-height: 1.5; }
+
+        input:hover, select:hover, textarea:hover {
+            border-color: rgba(124, 138, 255, 0.35);
+            background: rgba(18, 24, 55, 0.8);
+        }
+
+        input:focus, select:focus, textarea:focus {
+            border-color: var(--input-focus);
+            background: rgba(18, 26, 60, 0.9);
+            box-shadow: 0 0 0 3px rgba(124, 138, 255, 0.1);
+        }
+
+        select {
+            cursor: pointer; appearance: none; -webkit-appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%238088b8' d='M1.41 0L6 4.58 10.59 0 12 1.41l-6 6-6-6z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat; background-position: right 16px center;
+            padding-right: 40px;
+        }
+
+        select option { background: #0f1430; color: var(--text-primary); }
+
+        textarea::placeholder, input::placeholder {
+            color: #4a5080; font-family: var(--font-body);
+        }
+
+        /* Botón */
+        .btn {
+            width: 100%; padding: 15px;
+            background: linear-gradient(135deg, #6b5ce7 0%, #5a4bd1 100%);
+            border: 1px solid rgba(124, 138, 255, 0.35);
+            border-radius: 4px; color: white;
+            font-family: var(--font-body);
+            font-size: 0.95rem; font-weight: 600; cursor: pointer;
+            transition: all 0.3s ease; letter-spacing: 0.5px;
+            position: relative; overflow: hidden;
+        }
+
+        .btn::before {
+            content: ''; position: absolute; top: -50%; left: -50%;
+            width: 200%; height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, transparent 70%);
+            opacity: 0; transition: opacity 0.3s ease;
+        }
+
+        .btn:hover {
+            background: linear-gradient(135deg, #7c6af7 0%, #6a58e0 100%);
+            border-color: rgba(140, 160, 255, 0.55);
+            box-shadow: 0 10px 30px rgba(100, 80, 220, 0.35), 0 0 50px rgba(124, 138, 255, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .btn:hover::before { opacity: 1; }
+
+        .btn-content {
+            display: flex; align-items: center; justify-content: center; gap: 10px;
+            position: relative; z-index: 1;
+        }
+
+        .btn-content svg { width: 17px; height: 17px; transition: transform 0.3s ease; }
+        .btn:hover .btn-content svg { transform: translateX(3px); }
+
+        .back {
+            display: flex; align-items: center; justify-content: center; gap: 7px;
+            margin-top: 16px;
+            font-family: var(--font-mono);
+            color: var(--text-secondary);
+            text-decoration: none; font-size: 0.78rem; letter-spacing: 0.3px;
+            transition: all 0.3s ease; padding: 8px; border-radius: 4px;
+        }
+
+        .back svg { width: 13px; height: 13px; }
+
+        .back:hover { color: var(--accent-bright); background: rgba(124, 138, 255, 0.05); }
+
+        .char-count {
+            text-align: right; font-family: var(--font-mono);
+            font-size: 0.7rem; color: var(--text-tertiary); margin-top: 5px;
+        }
+
+        @media (max-width: 500px) {
+            .console-frame { padding: 24px 18px; }
+            .header-text h1 { font-size: 1.05rem; }
+            .header-icon { width: 34px; height: 34px; }
+            input, select, textarea { padding: 10px 14px; font-size: 0.88rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Fondo espacial -->
+    <div class="space-bg" id="spaceBg">
+        <div class="nebula nebula-1"></div>
+        <div class="nebula nebula-2"></div>
+    </div>
+
+    <!-- Orbe de energía -->
+    <div class="energy-orb" id="energyOrb"></div>
+
+    <!-- Overlay láser -->
+    <div class="laser-overlay" id="laserOverlay">
+        <div class="laser-line"></div>
+        <div class="laser-text">ESCANEANDO RESPUESTA</div>
+    </div>
+
+    <!-- Consola -->
+    <div class="console">
+        <div class="console-frame">
+            <div class="corner corner-tl"></div>
+            <div class="corner corner-tr"></div>
+            <div class="corner corner-bl"></div>
+            <div class="corner corner-br"></div>
+
+            <div class="status-bar">
+                <div><span class="blink"></span>MÓDULO DE EVALUACIÓN</div>
+                <div id="clock">00:00:00 UTC</div>
+            </div>
+
+            <div class="header">
+                <svg class="header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M4 4h11l5 5v11H4z"/><path d="M15 4v5h5"/><path d="M8 13h8M8 16.5h5"/>
+                </svg>
+                <div class="header-text">
+                    <h1>INICIAR EVALUACIÓN</h1>
+                    <p class="subtitle">Análisis de misión académica</p>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for msg in messages %}
+                        <div class="alert">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 9v4M12 17h.01M10.3 3.9L2.7 17a1.8 1.8 0 0 0 1.6 2.7h15.4a1.8 1.8 0 0 0 1.6-2.7L13.7 3.9a1.8 1.8 0 0 0-3.4 0z"/></svg>
+                            {{ msg }}
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+
+            <form action="/evaluar" method="POST" id="evalForm">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+
+                <div class="form-group">
+                    <label>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="3.4"/><path d="M5 20c0-4 3-6.5 7-6.5s7 2.5 7 6.5"/></svg>
+                        Nombre del tripulante
+                    </label>
+                    <input type="text" name="nombre" id="nombre" placeholder="" required autocomplete="off">
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="0.6" fill="currentColor"/></svg>
+                        Seleccionar misión
+                    </label>
+                    <select name="pregunta" required>
+                        <option value="" disabled selected>— Seleccione una pregunta —</option>
+                        {% for id_p, info in preguntas.items() %}
+                            <option value="{{ id_p }}">[Misión {{ id_p }}] {{ info.pregunta }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.5 8.5 0 1 1-3.8-7.1M21 4l-9.5 9.5-3-3"/></svg>
+                        Respuesta del tripulante
+                    </label>
+                    <textarea name="respuesta" id="respuesta" placeholder="" required maxlength="5000"></textarea>
+                    <div class="char-count"><span id="charCount">0</span> / 5000 caracteres</div>
+                </div>
+
+                <button type="submit" class="btn" id="submitBtn">
+                    <span class="btn-content">
+                        <span>Iniciar evaluación</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                </button>
+            </form>
+
+            <a href="/" class="back">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M19 12H5m0 0l6-6m-6 6l6 6"/></svg>
+                Regresar a la Estación Principal
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // ============================================================
+        // EFECTO MÁQUINA DE ESCRIBIR EN PLACEHOLDERS
+        // ============================================================
+        const placeholderTexts = {
+            nombre: "Ingrese el nombre completo del estudiante...",
+            respuesta: "Escriba la respuesta del examen aquí... Redacte con claridad, incluya conceptos clave y desarrolle sus ideas de forma ordenada. Recuerde que la IA evaluará precisión, contenido y coherencia."
+        };
+
+        function typeWriter(input, text, speed = 40) {
+            let i = 0;
+            input.placeholder = '';
+            function type() {
+                if (i < text.length) {
+                    input.placeholder += text.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                }
+            }
+            type();
+        }
+
+        const nombreInput = document.getElementById('nombre');
+        const respuestaTextarea = document.getElementById('respuesta');
+
+        typeWriter(nombreInput, placeholderTexts.nombre, 35);
+        setTimeout(() => typeWriter(respuestaTextarea, placeholderTexts.respuesta, 20), 1500);
+
+        // ============================================================
+        // ESTRELLAS QUE SIGUEN AL MOUSE
+        // ============================================================
+        const spaceBg = document.getElementById('spaceBg');
+        const stars = [];
+        const starCount = 100;
+
+        for (let i = 0; i < starCount; i++) {
+            const star = document.createElement('div');
+            star.classList.add('star');
+            const size = Math.random() * 2 + 0.5;
+            const x = Math.random() * 100;
+            const y = Math.random() * 100;
+            star.style.cssText = `
+                width: ${size}px; height: ${size}px;
+                left: ${x}%; top: ${y}%;
+                opacity: ${Math.random() * 0.6 + 0.2};
+            `;
+            star.dataset.originalX = x;
+            star.dataset.originalY = y;
+            stars.push(star);
+            spaceBg.appendChild(star);
+        }
+
+        let mouseX = window.innerWidth / 2;
+        let mouseY = window.innerHeight / 2;
+
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+        });
+
+        function animateStars() {
+            stars.forEach(star => {
+                const ox = parseFloat(star.dataset.originalX);
+                const oy = parseFloat(star.dataset.originalY);
+                const dx = (mouseX / window.innerWidth * 100 - ox) * 0.03;
+                const dy = (mouseY / window.innerHeight * 100 - oy) * 0.03;
+                star.style.transform = `translate(${dx}%, ${dy}%)`;
+                star.style.boxShadow = `0 0 ${Math.abs(dx) * 2}px rgba(180, 200, 255, 0.4)`;
+            });
+            requestAnimationFrame(animateStars);
+        }
+        animateStars();
+
+        // ============================================================
+        // ORBE DE ENERGÍA QUE CAMBIA DE COLOR
+        // ============================================================
+        const orb = document.getElementById('energyOrb');
+
+        document.addEventListener('mousemove', (e) => {
+            orb.style.left = (e.clientX - 30) + 'px';
+            orb.style.top = (e.clientY - 30) + 'px';
+        });
+
+        respuestaTextarea.addEventListener('input', () => {
+            const len = respuestaTextarea.value.length;
+            let color, glowColor;
+
+            if (len === 0) {
+                color = 'rgba(120, 138, 255, 0.3)';
+                glowColor = 'rgba(120, 138, 255, 0.4)';
+            } else if (len < 100) {
+                color = 'rgba(74, 222, 128, 0.5)';
+                glowColor = 'rgba(74, 222, 128, 0.6)';
+            } else if (len < 500) {
+                color = 'rgba(0, 229, 255, 0.6)';
+                glowColor = 'rgba(0, 229, 255, 0.7)';
+            } else if (len < 1500) {
+                color = 'rgba(251, 191, 36, 0.7)';
+                glowColor = 'rgba(251, 191, 36, 0.8)';
+            } else {
+                color = 'rgba(192, 132, 252, 0.8)';
+                glowColor = 'rgba(192, 132, 252, 0.9)';
+            }
+
+            orb.style.background = `radial-gradient(circle, ${color}, transparent 70%)`;
+            orb.style.boxShadow = `0 0 40px ${glowColor}, 0 0 80px ${glowColor}`;
+            orb.style.width = (60 + len / 50) + 'px';
+            orb.style.height = (60 + len / 50) + 'px';
+        });
+
+        // ============================================================
+        // RAYO LÁSER AL ENVIAR
+        // ============================================================
+        const form = document.getElementById('evalForm');
+        const laserOverlay = document.getElementById('laserOverlay');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            // Activar overlay láser
+            laserOverlay.classList.add('active');
+
+            // Después del láser, enviar formulario
+            setTimeout(() => {
+                laserOverlay.classList.remove('active');
+                form.submit();
+            }, 2200);
+        });
+
+        // ============================================================
+        // CONTADOR DE CARACTERES
+        // ============================================================
+        const charCount = document.getElementById('charCount');
+        respuestaTextarea.addEventListener('input', () => {
+            const count = respuestaTextarea.value.length;
+            charCount.textContent = count;
+            charCount.style.color = count > 4500 ? '#f87171' : count > 4000 ? '#fbbf24' : '#565d8a';
+        });
+
+        // ============================================================
+        // RELOJ UTC DEL HUD
+        // ============================================================
+        function updateClock() {
+            const now = new Date();
+            const h = String(now.getUTCHours()).padStart(2, '0');
+            const m = String(now.getUTCMinutes()).padStart(2, '0');
+            const s = String(now.getUTCSeconds()).padStart(2, '0');
+            document.getElementById('clock').textContent = `${h}:${m}:${s} UTC`;
+        }
+        updateClock();
+        setInterval(updateClock, 1000);
+    </script>
+
+</body>
+</html>

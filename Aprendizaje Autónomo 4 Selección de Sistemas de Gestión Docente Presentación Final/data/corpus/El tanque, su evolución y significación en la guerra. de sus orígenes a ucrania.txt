@@ -1,0 +1,779 @@
+EL TANQUE, SU EVOLUCIÓN Y
+SIGNIFICACIÓN EN LA GUERRA. DE
+SUS ORÍGENES A UCRANIA
+CARLOS ANDRÉS STANGE POOLEY1
+Resumen: desde su debut en los campos de batalla de la Primera Guerra Mundial
+el tanque ha sido una solución que ha permitido resolver el problema de cómo
+acometer al adversario sin recibir daño. Este ingenio bélico se ha mantenido como
+un factor determinante para los ejércitos modernos, otorgándoles la movilidad,
+potencia de fuego y protección necesarias para la consecución de sus objetivos,
+sobreponiéndose con ello a los costos de su desarrollo y mantención, a la complejidad de la logística asociada y a la gran cantidad de amenazas que deben
+enfrentar. Analizaremos su desarrollo como máquina de combate y la evolución
+de la guerra acorazada, a fin de dilucidar cómo el tanque ha logrado mantener su
+vigencia en la guerra, desde sus orígenes hasta el actual conflicto ruso-ucraniano.
+Palabras claves: tanque, fuerzas blindadas, guerra acorazada.
+Abstract: since its debut on the battlefields of World War I, the tank has been
+a solution that has allowed solving the problem of how to attack the adversary
+without taking damage. This war device has remained a determining factor for
+modern armies, giving them the mobility, firepower and protection necessary to
+achieve their objectives, thereby overcoming the costs of their development and
+maintenance, the complexity of logistics associated with it and the large number of
+threats they must face. We will analyze its development as a combat machine and
+the evolution of armored warfare, in order to elucidate how the tank has managed to
+maintain its validity in war, from its origins to the current Russo-Ukrainian conflict.
+Keywords: tank, armored forces, armored warfare.
+
+INTRODUCCIÓN
+La idea del tanque, como afirma Fuller, es más antigua que el caballo de Troya y se basa en atacar
+al oponente y no ser dañado por este.2 Durante la Edad Media los caballeros eran verdaderos tanques
+
+1
+2
+
+Subteniente de Reserva del Ejército de Chile, Compañía “Capitán José Luis Araneda Carrasco”, Abogado de la Universidad Gabriela Mistral, Magíster en Historia Militar y Pensamiento Estratégico de la Academia de Guerra (ACAGUE), y Magíster en Derecho de la Empresa,
+Universidad Adolfo Ibáñez, socio de Yarur & Stange Abogados. Email: cstange@yarurstange.cl
+FULLER, John. Tanks in the Great War 1914-1918. E.P. Dutton and Company. 1920, p. 1.
+MEMORIAL DEL EJÉRCITO DE CHILE
+
+147
+
+CARLOS ANDRÉS STANGE POOLEY
+
+vivientes, hasta que la introducción de la pólvora entre los s. XIII y XIV permitió perforar fácilmente
+las armaduras, que dejaron de usarse. Este avance hizo surgir los vagones de guerra, que según Estes3
+serían la génesis del tanque, ya sea en la forma de los diseños de Leonardo da Vinci o de los vagones
+de las guerras husitas (1419-36).4 Así, la aparición del tanque en los campos de batalla del s. XX
+obedece a las ideas y actividades de varios hombres y a los avances tecnológicos, siendo finalmente
+los más relevantes el motor a explosión de Daimler y las orugas, que ya usaban los tractores.5
+
+EL ORIGEN DEL TANQUE, LA PRIMERA GUERRA MUNDIAL (1914-18)
+Desde la guerra Franco-Prusiana (1870-71) los avances tecnológicos y el auge de los nacionalismos
+van cambiando la fisonomía de la guerra, surgiendo una carrera armamentista que derivó en la Gran
+Guerra (1914-18). Los ejércitos aumentan de tamaño y, como señala Lockhart,6 la nueva escala de
+la guerra hizo tanto como las nuevas armas para cambiar la conducta del combate. Para inicios de
+la Primera Guerra Mundial las armas en manos de los contendientes, tales como fusiles de cerrojo,
+ametralladoras y obuses modernos, condujeron al surgimiento de las trincheras; a fines el s. XIX Bloch7
+predijo que: “…en la futura guerra los hombres dispuestos para la defensa o incluso el ataque, si no
+lo realizan en seguida, deberán atrincherarse de inmediato". Con la Gran Guerra su vaticinio tomaría
+forma y las soluciones iniciales para superar el estancamiento planteado por las trincheras fueron el
+uso de la artillería, que hizo intransitables los campos de batalla; el empleo de gases, mitigado por
+las máscaras, y los ataques aéreos, pero el avión, aun bisoño, no logró una resolución decisiva. La
+verdad es que se hacía imprescindible una innovación tecnológica y ella vino de la mano del tanque.
+En Inglaterra fue el coronel E. Swinton quien impulsó la inventiva, proponiendo el uso militar
+del tractor de orugas. Este captó la atención del Primer Lord del almirantazgo, Winston Churchill,
+quien financió el proyecto, formándose el Comité de Buque Terrestre (Landship), reflejando la influencia de las ideas navales.8 En 1915 nace “Little Willie” (Figura 1), una caja de metal con cadenas,
+seguido a principios de 1916 por “Big Willie” o “Mother”, que daría origen al Mark I (Figura 2),9
+el primer carro de combate británico producido en serie, cuyo nombre en código sería “tanque”.10
+
+3
+4
+
+ESTES, Kenneth. Super-Heavy Tanks of World War II. Osprey Publishing Ltd. 2014, p. 4.
+TURNBULL, Stephen. The Hussite Wars 1419-36. Osprey Publishing Ltd. 2004, pp. 23-33. El innovador uso de la artillería en vagones de guerra
+por el líder husita Jan Zizka mostró una nueva manera de lidiar con los caballeros, presagiando una revolución en la infantería medieval.
+5 OGORKIEWICZ, Richard. Tanks, 100 Years of Evolution. Osprey Publishing Ltd. 2015, pp. 7-10. En 1911 el capitán austriaco G. Burstyn
+patentó su “Motorgeschutz”, un vehículo de orugas con un cañón en una torre giratoria, pero Austria y Alemania lo desecharon.
+6 LOCKHART, Paul. Firepower, How Weapons Shape Warfare. Basic Books, NY. 2021, p. 84.
+7 BLOCH, Iván. Is War Now Impossible? Grant Richards, London. 1899, p. 11.
+8 FULLER, 1920. op. cit, pp. 18-34. El tanque se definía como un barco terrestre de propulsión propia y armadura a prueba de balas.
+(Muchas de sus partes aún tienen términos navales, tales como casco (chasis), escotilla (puerta), periscopio (ventanilla), y torre).
+9 FLETCHER, David. British Mark I Tank 1916. Osprey Publishing Ltd. 2004, pp. 11-14. Era un vehículo de 28 t, 8 tripulantes, una velocidad
+máxima de 6 km/h y armado solo con ametralladoras o con un cañón de 57 mm, denominados “hembra” o “macho”, respectivamente.
+Le seguirían durante la guerra el Mark II, III, IV y V, que irían mejorando su blindaje y planta motriz.
+10 FORD, Roger. The World´s Greatest Tanks. Brown Packaging Books Ltd. 1997, p. 10. A objeto de preservar en secreto la nueva arma (llamada
+buque terrestre), se escogió el nombre “tanque”. La historia oficial era que se enviarían estanques de agua móviles al Cercano Oriente.
+
+148
+
+MEMORIAL DEL EJÉRCITO DE CHILE
+
+EL TANQUE, SU EVOLUCIÓN Y SIGNIFICACIÓN EN LA GUERRA. DE SUS ORÍGENES A UCRANIA
+
+Figuras 1 y 2. Little Willy y Mark I.
+Fuente: The Tank Museum, Bovington, Reino Unido. (2018). Fotografías propias.
+
+En paralelo los franceses producían sus propios modelos bajo la supervisión del coronel Jean
+Estienne, sin que ambos aliados supieran de los planes del otro. Los modelos Schneider y St. Chamond, armados con cañones de 75mm, serían un fracaso, no así el Renault FT-17 (Figura 3).11 Este
+último nace de la radical idea de Estienne de construir un tanque barato y pequeño que pudiera
+aplastar a los alemanes con masa12 y movilidad. Su configuración es la clásica de los tanques hasta
+hoy, siendo el modelo más usado durante la Primera Guerra Mundial y semilla de muchas fuerzas
+blindadas después de esta, incluyendo a EE.UU. y la U.R.S.S. Para Francia la valía del tanque se
+mostraría durante las ofensivas de Alemania en 1918, cuando más de 200 Renault FT-17 ayudaron
+a detener el avance germano hacia París, en una serie de contrataques en el bosque de Retz en
+apoyo de la infantería.
+
+11 ZALOGA, Steven. French Tanks of World War I. Osprey Publishing Ltd. 2010, p. 24. El Renault FT-17 con 2 tripulantes, 6,4 t y 7,5 km/h,
+iba armado con un cañón de 37 mm y/o una ametralladora.
+12 Montt, Manuel. La guerra, su conducción, política y estratégica. Edita Anepe. 2010, p. 139. El concepto de masa implica la concentración
+de las fuerzas para dar al esfuerzo máxima potencia en la batalla, distribuyéndolas hábilmente en tiempo y espacio.
+MEMORIAL DEL EJÉRCITO DE CHILE
+
+149
+
+CARLOS ANDRÉS STANGE POOLEY
+
+Figura 3: tanque Renault FT-17.
+Fuente: The Tank Museum, Bovington, Reino Unido. (2018). Fotografías propias.
+
+Por su parte, Alemania mostró poco entusiasmo por los tanques, lo que condujo a un desarrollo tardío, y en muy pequeña escala, utilizando principalmente vehículos capturados. 13 La
+fuerza blindada alemana realizó una poco relevante contribución a las operaciones militares
+de su ejército, comparada con el importante aporte a la victoria de sus homólogos británico
+y francés.
+El estreno en combate del tanque no fue un gran éxito para los británicos. Su tímida aparición
+en septiembre de 1916 en la Batalla del Somme produjo una parálisis inicial en los alemanes, pero
+su escaso número, su dispersión entre la infantería, las fallas mecánicas, la falta de entrenamiento
+y de tácticas adecuadas diluyó sus efectos. Para algunos no era más que un arma de apoyo a la
+infantería, para otros debía emplearse como una fuerza independiente, capaz de devolver la movilidad a un frente osificado. Las lecciones dejadas en las batallas siguientes, tales como la correcta
+elección del terreno, la coordinación con la infantería y su empleo en masa, fueron canalizadas
+en el nuevo cuerpo de tanques por el coronel John Fuller,14 quien propuso un ataque sorpresa
+liderado por sus tanques. Este se materializó en noviembre de 1917 en Cambrai, siendo el asalto
+inicial un éxito. Los tanques se movían junto a la infantería aplicando las nuevas tácticas ideadas
+para superar las trincheras, haciendo que el enemigo se retirara despavorido o se rindiera sin
+
+13 ZALOGA, Steven. German Panzer 1914-18. Osprey Publishing Ltd. 2006, pp. 3, 29. Alemania solo produjo 20 tanques modelo A7V (30 t,
+18 tripulantes, armado con un cañón de 57 mm y 6 ametralladoras) versus los más de 8.000 construidos por sus adversarios.
+14 GUDERIAN, Heinz. Panzer Leader. Reading Essentials. 2018, [Kindle Paperwhite versión]. Recuperado de amazon.com. John Fuller, militar
+y teórico inglés, sus tratados sobre la guerra acorazada influyeron mucho en los militares alemanes.
+
+150
+
+MEMORIAL DEL EJÉRCITO DE CHILE
+
+EL TANQUE, SU EVOLUCIÓN Y SIGNIFICACIÓN EN LA GUERRA. DE SUS ORÍGENES A UCRANIA
+
+resistencia.15 Al final, la falta de reservas, la vulnerabilidad de la caballería clásica para explotar
+la ruptura, la resistencia alemana16 y las limitaciones del tanque, con relación a su velocidad y
+fiabilidad, llevaron la batalla a un punto muerto. No obstante, siempre será recordada por ser el
+primer uso en masa de blindados.
+La segunda mayor batalla de tanques de la guerra sería Amiens en agosto de 1918, donde los
+británicos, en un nuevo ataque sorpresa, arrasarían las defensas alemanas con centenares de tanques. Estos últimos pagarían un alto precio a manos de la artillería alemana, su principal enemigo
+durante la guerra,17 demostrando nuevamente sus limitaciones para explotar la ruptura dada su
+baja velocidad. Aun así, el impacto moral del tanque fue devastador, una fuerza imparable que
+llevó a la rendición a miles de enemigos, no por nada el general Ludendorff lo catalogaría como un
+día negro para el ejército alemán. El destino de Alemania y sus aliados estaba sellado, el tanque
+había jugado su rol en la victoria, pero con detractores en altos cargos que no le veían utilidad,
+sumado a sus elevados costos de producción y mantenimiento, su futuro estaba en entredicho.18
+
+PERÍODO ENTRE GUERRAS (1918-39), TEORÍAS Y NUEVOS MODELOS
+Resulta paradójico que Gran Bretaña, que llevó la delantera en el desarrollo del tanque durante la Gran
+Guerra, desmanteló su fuerza acorazada. Este fue el más flagrante ejemplo de ignorancia y negligencia,
+donde la mayoría del cuerpo de oficiales británico renegaba del tanque, incluso algunos lo veían, junto
+con el avión, como accesorios a la infantería y caballería.19 Los franceses serían los principales exponentes de esta doctrina, donde los blindados eran parte de la infantería, primando una visión estratégica
+defensiva. Afortunadamente el potencial del tanque fue visto y analizado por una serie de militares de
+diversas naciones, algunos muy jóvenes, entre los que destacan Charles de Gaulle en Francia; George
+S. Patton en EE.UU.; Basil Liddell Hart y John Fuller en Gran Bretaña; Oswald Lutz y Heinz Guderian20
+en Alemania; Vladimir Triandafillov, Mikhail Tukhachevsky y Georgii Isserson21 en la Unión Soviética.
+
+15 FULLER, 1920. op. cit, pp. 73-80. Los tanques, con un haz macizo de leña sobre ellos y en grupos de 3, atravesaban las alambradas,
+girando el primero a la izquierda y disparando contra las trincheras; los siguientes 2 echaban su fajo sobre estas, las cruzaban y giraban
+a su vez a la izquierda disparando, seguidos por la infantería.
+16 GRANT, Neil. Mauser Military Rifles. Osprey Publishing Ltd. 2015, p. 41. Los alemanes en 1916 usaron la munición Smk, originalmente
+destinada a neutralizar la protección de los francotiradores, en contra del tanque. Con la llegada del tanque británico Mark IV, mejor
+blindado, se introdujo el rifle antitanque Mauser M1918 T-Gewehr de 13 mm.
+17 GUDERIAN, Heinz. Achtung-Panzer. Tempus. 2011, p. 163.
+18 FORD, 1997. op. cit, p. 21. Para 1919 los cuerpos acorazados de Gran Bretaña y Francia enfrentaban la amenaza de desaparecer; EE.UU., por su
+parte, eliminó el suyo en 1920, subordinando sus tanques a la infantería. Los pocos partidarios del tanque no tenían influencia en los altos niveles
+de decisión político-militar, primando los tradicionalistas, que exaltaban las virtudes de la infantería, artillería e incluso de la caballería clásica.
+19 JORGENSEN, Christer y MANN, Chris. Strategy and Tactics, Tank Warfare. Spellmount Ltd, 2001, pp. 19-20. El Cuerpo Real de Tanques
+sobrevivió gracias a militares como John Fuller, que creían en la independencia de esta arma.
+20 OGORKIEWICZ, 2015, op. cit, pp. 64-67. Guderian fue jefe de Estado Mayor del general Lutz (inspector de las tropas motorizadas alemanas), y junto con él jugarían un papel incuestionable en el desarrollo del arma Panzer.
+21 HARRISON, Richard. Architect of Soviet Victory in World War II, The Life and Theories of G.S. Isserson. McFarland & Company, Inc, Publishers, 2010, pp. 93, 185-215. Triandafillov, fallecido en 1931 en un accidente aéreo, Tukhachevsky e Isserson, asesinado y arrestado
+respectivamente en las purgas de Stalin de 1937, están entre los principales arquitectos del arte operacional soviético.
+MEMORIAL DEL EJÉRCITO DE CHILE
+
+151
+
+CARLOS ANDRÉS STANGE POOLEY
+
+Los derrotados en la Gran Guerra aprendieron mejor las lecciones de esta, así alemanes y
+soviéticos concibieron nuevas doctrinas basadas en las fuerzas blindadas. Alemania desarrolló la
+Blitzkrieg, la que buscaba batallas de encuentro, donde la movilidad y rapidez primaba sobre la
+potencia de fuego, salvo en aquellos puntos decisivos para producir la ruptura del frente.22 Una
+gran influencia en los teóricos alemanes como Guderian tuvieron los postulados de Fuller y Hart
+de la década de 1920.23 El primero introdujo el principio de parálisis estratégica, que buscaba,
+mediante un uso masivo de blindados, destruir el cuerpo (soldados) y el cerebro (centros de mando)
+del enemigo, inmovilizándolo. Hart, por su parte, planteó la estrategia de aproximación indirecta,
+donde el punto de ataque debía ser el más débil del enemigo, a fin de que, con un golpe, romper
+su voluntad de lucha.
+Los soviéticos, por su parte, fueron precursores en el desarrollo de la guerra mecanizada en los
+años treinta. Tukhachevsky, Triandafillov y otros desarrollaron el llamado arte operacional, basado en
+la teoría de las operaciones profundas de armas combinadas, que consistía en ataques simultáneos
+de artillería y aviación a las defensas enemigas y, una vez roto el dispositivo adversario, las fuerzas
+mecanizadas debían utilizarse para expandir la brecha y conducir operaciones en la profundidad
+de la retaguardia enemiga. Por su parte, Isserson precisaba que los cuerpos mecanizados eran un
+poderoso factor en las operaciones profundas, dado su poder de fuego y su capacidad de cubrir
+largas distancias.24 Las purgas de Stalin en 1937 interrumpieron la obra de estos pensadores y sus
+seguidores, hasta que los desastrosos resultados de la guerra con Alemania durante 1941 hicieron
+al Ejército Rojo retomar la senda anterior, lo que les permitió poner en práctica sus teorías. Estas
+rendirían sus frutos con una serie de ofensivas que allanarían el camino hasta Berlín y a la victoria,
+destacando la ofensiva Bagration de 1944, que provoca a los alemanes las mayores pérdidas desde
+el inicio de la contienda, superando incluso a la Batalla de Stalingrado.25
+Las vivencias surgidas de la Gran Guerra establecieron los parámetros en el desarrollo de nuevos
+modelos, basándose en tres tipos principales, según su peso: los tanques pesados o de ruptura,
+con su grueso blindaje y poderoso armamento debían abrir una brecha en el frente enemigo;26 los
+medianos o de infantería, que podían enfrentar a otros tanques o actuar con la infantería, y los
+ligeros o de caballería, armados solo con ametralladoras o cañones de bajo calibre, para reconocimiento y penetración del frente. No obstante, todos los tanques desarrollados en este período
+
+22 PARET, Peter. et al. Creadores de la Estrategia Moderna. Traductores y Editor. 1991, pp. 591-592
+23 GUDERIAN, 2018. op. cit, “La creación de la fuerza acorazada alemana”, párrafo. 7. Guderian los considera pioneros de su época y
+principales inspiradores de su pensamiento.
+24 HARRISON, 2010, op. cit, p. 34. Isserson señalaba que la estrategia era el estudio de la guerra, el arte operacional el de la operación
+y la táctica el de la batalla.
+25 LÓPEZ, Jean. et al. Historia Visual de la II Guerra Mundial. Editorial Planeta S.A. 2022, p. 136.
+26 ESTES, 2014, op. cit, pp. 6, 10, 20, 37, 41, 42. De la categoría de súper-pesados (sobre 70 t) la mayoría no pasó de la etapa de prototipos, tales como Char 2C francés, el TOG y Tortoise británicos, el KV-4 soviético, el T-28 de EE.UU., el O-I japonés, y el Maus alemán,
+de 188 t y un cañón de 128 mm, el mayor tanque fabricado en la historia.
+
+152
+
+MEMORIAL DEL EJÉRCITO DE CHILE
+
+EL TANQUE, SU EVOLUCIÓN Y SIGNIFICACIÓN EN LA GUERRA. DE SUS ORÍGENES A UCRANIA
+
+compartían características similares, tales como la torre giratoria en 360 grados, influencia del
+Renault FT-17, y un blindaje de placas de acero remachado, método barato y rápido de construir,
+pero menos resistente y cuyos remaches podían herir o matar a la tripulación con los impactos. A
+finales de los años treinta se reemplazó esta técnica por la soldadura y, en menor medida, por la
+fundición de partes completas, especialmente la torre.
+Los británicos desarrollaron una amplia gama de tanques ligeros, y al inicio de las hostilidades
+en 1939 constituían el grueso de su fuerza. Sus tanques medianos eran rápidos, pero faltos de
+blindaje, y no serían una seria amenaza hasta la aparición del Matilda en 1939, un tanque de infantería, lento, pero que probaría ser un desafío para sus adversarios por su blindaje y poder de fuego.
+Francia, por su parte, solo comenzó a modernizar sus modelos en los años treinta, destacando
+el Somua (Société d´Outillage Mécanique et d´Usinage d´Artillerie) S35, mejor armado y blindado que
+la mayoría de sus contemporáneos, disponía, además, de avanzadas características para su época,
+tales como estanques de combustible sellados, sistema de extinción de incendios automático y
+una torre de acero fundido, que le daba mayor protección. La interferencia política, las reformas
+laborales y la falta de entrenamiento a fines de los años treinta, menoscabó la fuerza acorazada
+francesa, que perdió la carrera armamentista con Alemania.27 Ello, sumado a un pensamiento táctico anclado en el pasado, donde el tanque operaba en forma dispersa y en apoyo a la infantería,
+llevaron a la derrota frente a la Blitzkrieg a la quizás mejor fuerza blindada del mundo al inicio
+de la Segunda Guerra Mundial.28
+La Unión Soviética tenía para 1936 la más numerosa fuerza acorazada del planeta,29 la que fue puesta
+a prueba en la guerra civil española, los enfrentamientos con Japón entre 1938 y 1939, la guerra con
+Finlandia y la invasión a Polonia en 1939, con pobres resultados en el desempeño de sus principales
+modelos. Dentro de su parque acorazado destacan los tanques ligeros T-2630 y el BT,31 este último era
+una extraña amalgama de tecnología soviética-norteamericana, basado en el tanque importado Christie
+e inspirador de algunas características del legendario T-34. En la categoría de los pesados, en 1939 los
+soviéticos producen el KV-1 de 56 t, poseedor de un grueso blindaje, impenetrable para los tanques y
+cañones antitanque de la época, y con un cañón que podía penetrar a cualquier adversario.
+Finalizada la Primera Guerra Mundial Alemania no podía poseer tanques, pero durante los
+años veinte una escuela de blindados se estableció al interior de la U.R.S.S, donde se probaron
+
+27
+28
+29
+30
+
+ZALOGA, Steven. French Tanks of World War II (1). Osprey Publishing Ltd., 2014, pp. 10-11.
+FORTY, George. World War Two Tanks. The Book Package Company Limited. 1996, p. 175.
+LOCKHART, 2021, op. cit, p. 162.
+ZALOGA, Steven. T-26 Light Tank. Osprey Publishing Ltd. 2015, pp. 4-21. El T-26, con 11,2 t, 3 tripulantes y un cañón de 45 mm, se
+fabricó entre 1930 y 1941, llegando a más de 12.000 unidades.
+31 ZALOGA, Steven. BT Fast Tank. Osprey Publishing Ltd. 2016, pp. 21-22. Alcanzaba 52 km/h y 72 km/h sin orugas, ya que su suspensión
+Christie le permitía desplazarse sobre sus ruedas.
+MEMORIAL DEL EJÉRCITO DE CHILE
+
+153
+
+CARLOS ANDRÉS STANGE POOLEY
+
+nuevos prototipos hasta la llegada de Hitler al poder. Este vio el potencial del tanque e inició a
+mediados de los años treinta la producción de los ligeros PzKpfw I,32 armados con ametralladoras,
+y el PzKpfw II con pequeños cañones, que constituirían el grueso de su fuerza blindada para 1939.
+La anexión de Checoslovaquia en 1938 incorporó a los siempre escasos inventarios germanos los
+tanques ligeros PzKpfw 35 (t) y PzKpfw 38 (t).33 La producción de los tanques medianos PzKpfw
+III y IV comenzó en 1937, si bien no estaban disponibles en número suficiente al estallar las
+hostilidades, serían la espina dorsal de las divisiones acorazadas alemanas durante casi toda
+la guerra. Los blindados alemanes de esta época no eran ni tan potentes ni tecnológicamente
+avanzados como más tarde lo serían.
+
+LA SEGUNDA GUERRA MUNDIAL (1939-45), EL APOGEO DEL ARMA
+ACORAZADA
+El inicio de la Segunda Guerra Mundial marcó el zenit de la Blitzkrieg con una suma de veloces
+conquistas. Polonia caería en 27 días; Dinamarca en uno; Noruega en 23; Holanda en 5; Bélgica
+en 18; Francia en 39; Yugoslavia en 12 y Grecia en 21. La fuerza Panzer, que actuaba como punta
+de lanza en cada campaña, estaba integrada principalmente por tanques ligeros, que, comparados
+con sus adversarios, no gozaban de una superioridad tecnológica. Los tanques polacos eran muy
+similares a los tanques ligeros alemanes y los franceses los superaban técnicamente, contando,
+además, ambas naciones con armamento antitanque que fácilmente batía a la mayoría de los Panzer;
+las pérdidas demuestran que el precio fue alto.34
+La clave de las victorias germanas se basó principalmente en la organización y táctica, no en
+una superioridad tecnológica. La utilización del tanque como un arma independiente encuadrado
+en divisiones blindadas, no subordinado a la infantería como los franceses y británicos, junto
+con la aplicación de los postulados de la Blitzkrieg serían una combinación incontrarrestable
+para los adversarios de Alemania. Si cabe destacar que los Panzer contaban con avanzados
+equipos de radio para la comunicación interna y externa, elemento del que muchos de sus
+rivales carecían, siendo esencial para dirigir grandes unidades de tanques y ejecutar tareas
+de gran envergadura. Además, los Panzer medianos tenían una mejor y más eficiente configuración para sus tripulantes, donde la torre era vista como la cabeza del vehículo, albergando
+al comandante, artillero y municionero, lo que les daba a los germanos una ventaja adicional
+al momento de operar el tanque (esto no ocurría en la mayoría de los tanques aliados de la
+
+32 Forma abreviada de Panzerkampfwagen (vehículo blindado de combate, traducción del autor).
+33 ZALOGA, Steven. Panzer 38 (t). Osprey Publishing Ltd. 2014, p. 4. El PzKpfw 38 (t), diseñado para el Shah de Persia por un exiliado
+ruso, equipó un quinto de la fuerza Panzer entre 1939-41.
+34 Fuente: JENTZ, Thomas. Panzer Truppen: The Complete Guide to the Creation & Combat Employment of Germany´s Tank Force 1933-1942.
+Schiffer Publishing Ltd. 1996, pp. 88-141. En Polonia en 1939 el 90% de la fuerza acorazada alemana se componía de tanques ligeros
+y en Francia en 1940 el 79%. Las pérdidas irrecuperables fueron en la primera operación del 7% de la fuerza empleada y en la segunda
+del 23%.
+
+154
+
+MEMORIAL DEL EJÉRCITO DE CHILE
+
+EL TANQUE, SU EVOLUCIÓN Y SIGNIFICACIÓN EN LA GUERRA. DE SUS ORÍGENES A UCRANIA
+
+época, donde en la torre iban el municionero y comandante, que también era artillero, lo que
+mermaba notablemente su función).
+En junio de 1941 Alemania ataca a la Unión Soviética y los Panzer vuelven a cosechar
+victorias espectaculares en los primeros meses, destruyendo a gran parte de las fuerzas soviéticas. El inventario de los Panzer para la invasión era de 1.928 tanques ligeros y 1.404
+medianos.35 Es decir, que el 59% de los Panzer eran inferiores o levemente similares a sus
+oponentes soviéticos T-26 y BT, que componían la mayoría de los 23.000 tanques que los
+enfrentaban.36 La sorpresa la darían los tanques pesados KV-1 y, especialmente, el mediano
+T-34, los que superaban ampliamente a cualquiera de los Panzer.37 Terminada guerra civil
+española soviéticos y alemanes se dieron cuenta que debían mejorar sus tanques, lo que llevó
+a la Unión Soviética a desarrollar el legendario T-34/76 de la mano del ingeniero Mikhail
+Koshkin, convirtiéndose en el más influyente diseño de la guerra. Su gran movilidad, dada
+por anchas orugas y un excelente motor Diesel, el poder de fuego de su cañón de 76,2 mm y
+la protección que otorgaba su blindaje inclinado superaban a cualquier tanque medio de la
+época.38 Los germanos lograron mantener a raya al T-34 gracias a su mejor entrenamiento,
+superioridad táctica y a la detección de las falencias de este, tales como su falta de radios
+y la torre de dos tripulantes, que limitaban su eficacia, ya que el comandante debía operar
+también como artillero.
+La búsqueda de la superioridad tecnológica llevaría a Alemania al desarrollo de blindados
+más pesados y con mayor poder de fuego, tales como el Tigre I (Figura 4) que apareció en
+1942, un gigante de 57 t con un potente cañón de 88 mm que podía aniquilar a sus adversarios a 2.000 metros, siendo a esa distancia invulnerable, lo que causaba un gran impacto
+sicológico y pánico en el enemigo. Sin embargo, su peso limitaba su movilidad, requería de
+constante mantenimiento y su número no se condice con su fama, ya que solo se fabricaron
+1.354.39 Por su parte, el Pantera, con sus 44 t y su excelente cañón de 75 mm, prometía
+para 1943 eliminar la ventaja del T-34. Guderian lo llamaría el niño problema, detectándose
+serios inconvenientes técnicos que contribuyeron a un pobre debut en la Batalla de Kursk,
+que marca el fin de las grandes ofensivas alemanas en el Frente Oriental, pero también el
+declive del T-34/76, el cual requería mejoras que habrían sido postergadas para no afectar su
+producción. Con el tiempo, el Pantera llegó a ser el más efectivo y avanzado tanque mediano
+
+35 JENTZ, 1996, op. cit, p. 186.
+36 ZALOGA, Steven. T-34/76 Medium Tank 1941-45. Osprey Publishing Ltd. 1994, p. 10. El 44% requerían reparaciones, por lo cual muchos
+sufrieron de fallas mecánicas durante la invasión.
+37 JENTZ, 1996, op. cit, pp. 221-253. Solo en 1942 los alemanes mejoraron el poder de fuego de sus tanques.
+38 ZALOGA, 1994, op. cit, p. 6. Para demostrar a Stalin la fiabilidad de su diseño, Mikhail Koshkin condujo uno de sus prototipos en el
+invierno de 1940 desde Járkov, en Ucrania, a Moscú. Posteriormente lo llevó a Finlandia, para hacer pruebas de tiro, y se devolvió a
+Járkov. Esta demostración de conducción invernal le trajo la muerte por neumonía ese mismo año.
+39 FORTY, 1996, op. cit, p. 102.
+MEMORIAL DEL EJÉRCITO DE CHILE
+
+155
+
+CARLOS ANDRÉS STANGE POOLEY
+
+de la guerra, siendo utilizado por varios países e influyendo en generaciones posteriores,
+particularmente en Francia.40
+La brecha tecnológica se vería nuevamente acortada por los soviéticos cuando aparecieron
+en 1944 los modelos T-34/8541 (Figura 5) y el IS-2 o Iósef Stalin-2, en honor al líder soviético.
+
+Figura 4 y 5: Tanque Tigre I y T-34/85.
+Fuente: The Tank Museum, Bovington, Reino Unido. (2018). Fotografía propia.
+
+El T-34/85 con su cañón de 85 mm y una torre mejorada y el IS-2, con su cañón de 122 mm
+permitieron emparejar la situación con los alemanes, batiendo con facilidad al modelo PzKpfw
+IV, pero teniendo dificultades con los Panteras y Tigres, debido a su grueso blindaje y gran
+poder de fuego. Además, para 1944 los alemanes producen el Tigre II (Königstiger), un tanque
+40 ROBINSON, Merlin & SEIGNOR, Thomas, Stephen. Foreign Panthers. Osprey Publishing Ltd., 2023, pp. 4, 35-45.
+41 ZALOGA, 1994. op. cit, p. 42. El T-34/76 en 1943 era superado por tanques alemanes, siendo aún la movilidad y número su mayor ventaja.
+Fue reemplazado en 1944 por el T-34/85 y, junto a este, es el vehículo aliado de mayor producción durante la guerra.
+
+156
+
+MEMORIAL DEL EJÉRCITO DE CHILE
+
+EL TANQUE, SU EVOLUCIÓN Y SIGNIFICACIÓN EN LA GUERRA. DE SUS ORÍGENES A UCRANIA
+
+pesado de 70 t, con un excelente cañón de 88 mm e impenetrable en su blindaje delantero
+por cualquier tanque aliado.42 Para los soviéticos, a partir de 1944, estos tanques fueron la
+espina dorsal de sus costosas victorias,43 y les permitió poner en plena práctica su teoría de
+las operaciones profundas.
+Por su parte, en el norte de África y en Europa occidental el combate fue similar en táctica
+y tecnología al Frente Oriental, pero en pequeña escala. Los alemanes aplicaron la Blitzkrieg con
+éxito en el desierto, hasta la Batalla del Alamein en 1942. Esta marcó el debut del M4 Sherman, un
+tanque medio estadounidense que sería utilizado ampliamente por estos y sus aliados en diversos
+modelos y calibres.44 En el caso de Gran Bretaña la mitad de su inventario estaba compuesto por
+tanques Sherman, incluso tendrían su propia versión, el Firefly, con un excelente cañón sería la
+alternativa al Cromwell, rápido, pero falto de poder de fuego. A fines de 1944 la amenaza de los
+Tigres y Panteras llevó a los británicos a introducir el Comet, que sería su mejor tanque, y a los
+estadounidenses el T26 Pershing a principios de 1945, que vieron poco combate dado su escaso
+número, pero en los últimos meses de guerra los cañones antitanques y los lanzacohetes portátiles
+de la infantería fueron la mayor amenaza para los aliados.
+En lo referente a producción de tanques, Alemania fabricó 26.030 (47.000 sumando cañones de
+asalto, caza-carros, etc.)45; la U.R.S.S. 105.251 (tanques y cañones de asalto), con un promedio de
+2.022 vehículos mensuales entre 1942 y 1943; EE.UU. y Gran Bretaña 88.410 y 29.288 respectivamente.46 Los números estaba en contra de los germanos, y la diferencia en términos cuantitativos
+disiparía la diferencia cualitativa que durante gran parte de la guerra los favorecía en táctica,
+tecnología, motivación y entrenamientos de su fuerza. Finalmente, el resultado de la guerra se
+resolvió desde que Alemania decidió enfrentar a Gran Bretaña, EE.UU. y a la U.R.S.S., debiendo
+combatir en más de un frente, lo que, sumado a la capacidad industrial y enormes recursos de sus
+enemigos, la llevaron a una guerra de desgaste para la cual no estaba preparada.
+
+LA GUERRA FRÍA (1947-91), UNA NECESIDAD IMPERIOSA
+La era atómica y el desarrollo de las armas antitanques llevaron a que muchos afirmaran que
+el tanque estaba obsoleto.47 El mundo de la posguerra se fue polarizando entorno a dos grandes
+
+42 FORTY, 1996, op. cit, p. 105.
+43 LÓPEZ, 2022, op cit, p. 154. La guerra costaría a los soviéticos 96.800 tanques y cañones blindados junto con 310.487 tripulantes.
+44 FORTY, 1996, op. cit, pp. 125-142. Con 49.234 unidades, sería el tanque de mayor producción en E.E.UU., e indudablemente el más
+adaptable, dando origen su chasis a una serie de variantes.
+45 LOCKHART, 2021, op. cit, p. 166. Muchos tanques dieron origen a una multiplicidad de vehículos, tales como caza-carros, carentes de
+torre giratoria poseían cañones de gran poder; artillería autopropulsada, capaz de acompañar a los tanques y proveer fuego indirecto;
+y cañones de asalto, que apoyaban con fuego cercano a la infantería.
+46 FORTY, 1996, op. cit, pp. 9, 66, 108, 157.
+47 OGORKIEWICZ, 2015, op. cit, p. 110.
+MEMORIAL DEL EJÉRCITO DE CHILE
+
+157
+
+CARLOS ANDRÉS STANGE POOLEY
+
+alianzas, la OTAN (Tratado del Atlántico Norte) alrededor de EE.UU., y el Pacto de Varsovia, liderado
+por la U.R.S.S. Para inicios de la década de 1950 el aumento de la tensión entre ambos bloques
+aceleró en la producción de tanques, apareciendo una primera generación de vehículos, básicamente
+evoluciones de modelos de finales de la guerra.
+Los ejércitos de ambas coaliciones se comienzan a adaptar a la era atómica, y el balance nuclear replanteó la doctrina estratégica, que relegaba a un segundo plano las armas convencionales,
+cambiando el foco a la fabricación de tanques. En los setenta los soviéticos se reencuentran con su
+doctrina de las operaciones profundas, al visualizarla como una carta de éxito en una guerra europea.
+La OTAN responde moviendo el eje de su estrategia a métodos de defensa convencionales, basado
+en una lucha de desgaste y, para los años ochenta, adopta la doctrina de la batalla aeroterrestre,
+un cambio basado en la maniobra (influida por los soviéticos que la venían desarrollando desde
+los años treinta), que aplica el poder y movilidad aérea junto con los tanques.48
+En lo que respecta al diseño, la doctrina soviética basada en el ataque conlleva a la fabricación de vehículos rápidos y maniobrables, con gran poder de fuego, en desmedro del blindaje. Los
+británicos, basados en sus experiencias en la guerra, donde siempre estuvieron un paso atrás que
+sus adversarios, dan al poder de fuego y la protección la mayor prioridad. Los estadounidenses,
+por su parte, privilegian la velocidad y movilidad por sobre el poder de fuego.49 Aunque a inicios
+de los cincuenta se mantenían las categorías de ligeros, pesados y medianos, a fines de la década
+estos últimos comienzan a prevalecer, dada su mayor potencia de fuego, blindaje y movilidad,
+surgiendo en llamado “Tanque Estándar” en la U.R.S.S., “Tanque Universal” en Gran Bretaña y
+“Tanque Principal de Batalla” (MBT, sigla en inglés de Main Battle Tank) en la OTAN, abandonándose
+el concepto de tanque mediano.50
+El primer tanque de la posguerra soviético es el mediano T-54/55. Con un excelente blindaje y
+un potente cañón fue exportado a unos 40 países y, con casi 100.000 unidades fabricadas, sigue en
+servicio hoy en día.51 A fines de los cincuenta el líder soviético Nikita Krushchev impulsó el desarrollo
+de los misiles antitanques como una alternativa más económica al tanque. Esto dio paso al T-62 capaz
+de disparar misiles,52 principal modelo de los años sesenta, pero su desempeño en combate resintió
+su reputación. Le siguió el T-64, considerado el más revolucionario de la Guerra Fría. Fue pionero en
+una serie de nuevas tecnologías, tales como un blindaje compuesto, telémetro laser, un cañón de
+anima lisa capaz de disparar misiles guiados, un innovador cargador automático, que reducía a tres
+
+48
+49
+50
+51
+52
+
+158
+
+JORGENSEN y MANN, 2001, op. cit, pp. 133-138.
+JORGENSEN y MANN, 2001, op. cit, pp. 136-137.
+ZALOGA, Steven. Tanks at the Iron Curtain 1946-60. Osprey Publishing Ltd. 2021, p. 38.
+OGORKIEWICZ, 2015, op. cit, pp. 110-112.
+ZALOGA, Steven. Tanks at the Iron Curtain 1960-75 Osprey Publishing Ltd. 2022, pp. 7, 8, 17-19. El proyecto del tanque con misiles
+se detuvo en 1968 con la destitución de Krushchev. EE.UU. tuvo también su versión del tanque lanza misiles con el Sheridan, que fue
+desplegado en Vietnam.
+MEMORIAL DEL EJÉRCITO DE CHILE
+
+EL TANQUE, SU EVOLUCIÓN Y SIGNIFICACIÓN EN LA GUERRA. DE SUS ORÍGENES A UCRANIA
+
+la tripulación, y que, sumado a un motor compacto, lo hacían muy liviano. Su avanzada tecnología
+lo mantuvo en estricto secreto, por lo cual nunca se exportó, lo que significó que casi no participó
+en combate hasta 2014 en el conflicto de Ucrania.53 En paralelo al anterior, se fabricó el T-72, que
+era un T-64 más simple y barato, el que se convirtió en el principal tanque de su generación, usado
+por países del Pacto de Varsovia, Medio Oriente y África, y fabricado fuera de la Unión Soviética en a
+los menos cinco países, tales como Polonia, Checoslovaquia, Yugoslavia, Rumanía, India, entre otros.
+El último tanque soviético fabricado en el marco de la Guerra Fría fue el T-80, coetáneo al M1
+Abrams, Challenger y Leopard 2, era un nuevo desarrollo del T-64, poseedor de un sofisticado control de tiro y un blindaje multicapas, su debilidad radicaba en su problemática planta motriz, una
+turbina a gas54 similar a la del Abrams de EE.UU., con un consumo el doble de un tanque similar.
+El final de la era soviética dejó en evidencia como la burocracia y las rivalidades llevaron a que se
+fabricaran al mismo tiempo tres tanques muy similares (T-64, T-72 y T80), lo que acarreó serios
+problemas de logística y considerables diferencias en los costos de producción.
+Cuatro miembros de la OTAN, Gran Bretaña, EE.UU., Francia y Alemania diseñaron y fabricaron
+tanques. Aun cuando, se trataron de realizar proyectos en conjunto, estos no prosperaron, a diferencia del Pacto de Varsovia que si logró una estandarización de sus modelos.
+En lo que respecta a los británicos, estos se rearman a fines de los cincuenta con el tanque
+Centurión, que también es adoptado por la OTAN. Más pesado que sus contemporáneos, estaba armado con el excelente cañón L7 de 105 mm,55 que fue incorporado a los blindados de varios países.
+La búsqueda del MBT británico derivó en los años sesenta en el Chieftan, que sería el tanque más
+poderoso de la OTAN por una década, pero dificultades económicas hicieron que gran parte de ellos
+fueran exportados. Su reemplazo fue el Challenger 1, que nace tras la cancelación de los pedidos
+iraníes al ser derrocado el Shah, y cuya mayor diferencia con el Chieftan era su blindaje Chobham,
+siendo el primer tanque en tenerlo y lo bizarro de la situación era que Irán recibiría un tanque con
+una protección que el ejército británico no poseía. Chobham es el nombre informal del blindaje
+cerámico desarrollado por los británicos en los años sesenta, compuesto de baldosas de cerámica
+encerradas en una estructura metálica, unidas a una placa de respaldo y varias capas elásticas, el
+que logró vencer la amenaza de las municiones HEAT (alto poder explosivo antitanque), las más
+comunes en esa época.56 Posteriormente, a principios de los noventa, y después de evaluar el Abrams
+de EE.UU, el Leopard 2 alemán y el Leclerc francés, Gran Bretaña se decide por el Challenger 2,
+
+53 ZALOGA, Steven. T-64 Main Battle Tank. Osprey Publishing Ltd. 2015, pp. 43-45.
+54 ZALOGA, Steven. T-80 Standard Tank. Osprey Publishing Ltd., 2008, pp. 7-10. Es básicamente un motor de jet, que, en lugar de usar el
+escape para la propulsión, canaliza la energía en un movimiento rotatorio a través de la transmisión. Se obtiene mucha energía con un
+motor pequeño y liviano.
+55 ZALOGA, op. cit. 2021, pp. 24-26 El análisis por los británicos de un T-54 llevó al desarrollo del exitoso cañón L7 de 105 mm. EE.UU.
+lo usó en sus M60 y Abrams y Alemania en los Leopard 1.
+56 OGORKIEWICZ, 2015, op. cit, pp. 134, 233
+MEMORIAL DEL EJÉRCITO DE CHILE
+
+159
+
+CARLOS ANDRÉS STANGE POOLEY
+
+una versión con mejor armamento, un moderno sistema de control de tiro integrado y un nuevo
+blindaje Chobham, llamado Dorcherster, y que entró en servicio en 1998 en el Ejército británico.
+Por su parte, EE.UU., se vio obligado, tanto por el aumento de la tensión con los soviéticos como
+por la guerra de Corea en 1950, a modernizar rápidamente su inventario y retomar la producción
+de tanques, que había reducido drásticamente.57 Dadas las restricciones presupuestarias, la primera
+opción es mejorar los tanques existentes, así surge el M46 Patton, un Pershing modificado, que
+daría origen a toda una familia de tanques. Esta solución es superada por la demanda de un nuevo
+modelo, que origina en 1951 el M47 Patton, no muy diferente al anterior, salvo por su cañón más
+potente y un telémetro estereoscópico que mejoraba la probabilidad de impacto al primer disparo
+(el primer tanque de EE.UU. en tenerlo), pero fue difícil de usar.58 Después de algunos años EE.UU.
+entregó la mayoría a sus aliados, convirtiéndose en el tanque estándar de la OTAN a principios de
+los sesenta (junto al Centurión británico).
+El siguiente tanque de la serie Patton fue el M48, un nuevo y robusto diseño, que conservó
+algunas características de su antecesor, incluyendo una limitada autonomía de solo 112 km, que
+debió ser mejorada posteriormente. Las innovaciones consistían en la eliminación del servidor
+de la ametralladora frontal, que redujo la tripulación de 5 a 4, una nueva torre hemisférica y
+una silueta más baja, entre otros. Su producción cesó en 1959, entregándose muchos de ellos a
+aliados de la OTAN y pasando algunos en los años sesenta a Israel. El último tanque Patton es el
+M60, una radical modernización del anterior, con una nueva motorización, un más potente cañón
+de 105 mm, derivado del L7 británico, y un blindaje compuesto, que se abandonó dado su alto
+costo.59 Su producción comenzó en 1960 hasta 1987 con más de quince mil unidades entregadas
+a EE.UU. y sus aliados.
+En 1963 EE.UU. y Alemania desarrollan en conjunto un nuevo tanque de batalla (el MBT
+70), con la idea de ahorrar dinero, al compartir los costos. En 1967 se entregaron los primeros
+prototipos, con innovaciones radicales, tales como que sus tres tripulantes iban albergados en la
+torre, lo que reducía la silueta del tanque; su sistema de suspensión le permitía regular su altura
+y su cañón disparaba una nueva munición sin casquillo. Lamentablemente, el proyecto resulta
+ser complejo, sofisticado y costoso, por lo cual en 1971 EE.UU. lo abandona. Este último decide
+embarcarse en un nuevo proyecto, escogiendo la propuesta de Chrysler, cuyo modelo es propulsado
+por una turbina a gas, que le otorgó gran potencia y movilidad, pero a costo de un alto consumo,
+su blindaje Chobham le deba una protección jamás lograda en un tanque estadounidense e iba
+armado con un cañón de 105 mm, que se cambió posteriormente al de 120 mm del Leopard 2.60
+
+57
+58
+59
+60
+
+160
+
+ZALOGA, 2021, op. cit, p. 15.
+OGORKIEWICZ, 2015, op. cit, pp. 121-122.
+ZALOGA, 2022, op. cit, pp. 14-18.
+OGORKIEWICZ, 2015, op. cit, pp. 124-127.
+MEMORIAL DEL EJÉRCITO DE CHILE
+
+EL TANQUE, SU EVOLUCIÓN Y SIGNIFICACIÓN EN LA GUERRA. DE SUS ORÍGENES A UCRANIA
+
+Así nació el tanque M1 Abrams el cual entró en producción en 1980 y se ha mantenido en servicio
+ya por cuatro décadas.
+Alemania, por su lado, vuelve a retomar su sitial en los años sesenta con el Leopard 1, que pasó
+a constituir el vehículo estándar de la OTAN. En 1979 aparece el Leopard 2, derivado del fallido
+proyecto conjunto MBT 70 con los norteamericanos, rápido, mejor blindado y con mayor poder de
+fuego que su predecesor, gracias a su cañón Rheinmetall de 120 mm, fue ampliamente adquirido
+por los países de la OTAN.61 Por último, a fines de los sesenta Francia produce el AMX 30, su primer
+MBT, que se mantuvo en servicio hasta finales de los años noventa.62
+Durante la Guerra Fría no hubo encuentros directos entre la OTAN y el Pacto de Varsovia, pero
+si una serie de guerras colaterales en las que los blindados de ambos bloques se enfrentaron. Entre
+estas, la guerra del Yom Kippur63 implicó un estudio detallado de parte de la OTAN y los soviéticos,
+ya que el uso de misiles causó una profunda impresión, incluso llevó a los estadounidenses a declarar
+nuevamente que el tanque era vulnerable.64 Si bien, al final de este período, el pacto de Varsovia
+a nivel estratégico superaba en dos veces y media veces la cantidad de tanques de la OTAN,65 esta
+última basaba su éxito en la calidad de sus vehículos y la preparación de sus tripulaciones, privilegiando los enfrentamientos a larga distancia, donde la brecha tecnológica jugaría a su favor.
+
+EL TANQUE MODERNO, DEL LETARGO A UN SÚBITO DESPERTAR
+El fin de la Guerra Fría condujo a una disminución considerable del parque de blindados, particularmente en países de la OTAN, donde Alemania de 5.000 tanques redujo su inventario a menos
+de 300, e incluso Bélgica y los Países Bajos los eliminaron. Esto permitió a diversos países adquirir
+este material, entre ellos Chile, que compró Leopard 1 y 2, pasando a tener la más poderosa fuerza
+acorazada en Latinoamérica.66 Al contrario, la Federación Rusa siguió viendo las fuerzas acorazadas
+como un elemento importante, revitalizando su industria de armamentos, enfocada principalmente
+a la exportación, siendo la planta UVZ en Nazhni-Tagil uno de los principales productores de tanques en el mundo. El primer tanque fabricado por Rusia fue el T-90, una evolución del T-72, que
+se ha convertido en el principal modelo de exportación ruso, actualmente en servicio en diversos
+países de la extinta Unión Soviética, en India, que los fabrica, Irak y Argelia entre otros. En los
+
+61 OGORKIEWICZ, 2015, op. cit, p. 145. Se produjeron unos 3.459 Leopard 2 y entraron en uso en 12 países, incluyendo Chile.
+62 FORD, 1997, op. cit, pp. 154-156. Le siguieron los muy similares AMX 32 y AMX 40.
+63 ZALOGA, 2022, op. cit, pp. 38-39. Esta fue la primera vez que se usó la munición antitanque APFSDS (sigla en inglés de Armour Piercing
+Fin-Stabilised Discarding Sabot, que significa proyectil perforador de blindaje estabilizado por aletas con casquillo desechable Sabot)
+por los T-62 sirios. Marcó un giro en el combate tanque vs. tanque de la munición HEAT a la APFSDD.
+64 Ibidem, p. 36. El análisis posterior permitió determinar que su efectividad fue solo de un 3,5%.
+65 JORGENSEN y MANN, 2001, op. cit, p. 140.
+66 OGORKIEWICZ, 2015, op. cit, pp. 194-197.
+MEMORIAL DEL EJÉRCITO DE CHILE
+
+161
+
+CARLOS ANDRÉS STANGE POOLEY
+
+últimos años fue postergado por el desarrollo del T-14 Armata (Figura 6)67 y las modernizaciones
+de los T-72. Rusia ha logrado mantener una flota de tanques considerable, como también Turquía,
+Israel, Egipto, Paquistán, India y EE.UU.
+
+Figura 6: Tanque ruso Armata T-14.
+Fuente: ZALOGA, Steven. T-90 Standard Tank. Osprey Publishing Ltd., 2018, p. 33.
+
+La República de Corea y Japón comenzaron a fabricar tanques más avanzados, con sistemas
+de carga automáticos, a diferencia de los Abrams, Challenger y Leopard. Esta tendencia la han
+mantenido Rusia, China y, desde 1990, Francia con el tanque Leclerc, que también posee un alto
+grado de tecnologización. Por su parte, los Leopard 2, Abrams M1A2 y Challenger 2 han sido
+modernizados constantemente, sobre todo por las experiencias en Irak en combate urbano, donde
+el uso de explosivos y lanzacohetes portátiles complicó a los Abrams y llevó a la implementación del equipo de sobrevivencia urbana de tanque, TUSK.68 En la misma línea, los sistemas de
+protección activa (APS, sigla en inglés de Active Protection System), tanto no letales, como son
+las contramedidas electrónicas, que alteran los sistemas de guía de los misiles, y las letales, que
+atacan físicamente la amenaza del cohete o misil, como es el blindaje reactivo, se han incorporado
+profusamente en los tanques modernos para aumentar su supervivencia en el campo de batalla.
+En décadas recientes, conflictos como los de Siria, Armenia-Azerbaiyán y, particularmente, Ucrania
+entre otros, han abierto una serie de interrogantes sobre si efectivamente la guerra electrónica y cibernética, el uso masivo de drones, la gran cantidad de armas antitanques disponibles a un bajo costo, y la
+67 ZALOGA, 2018. op. cit, pp. 24,25. El Armata es un tanque de última generación, único en su tipo, con un cañón de 125mm automático,
+nuevas municiones, blindaje reactivo, defensas activas, modernos sensores y una potente motorización.
+68 ZALOGA, Steven. M1A2 Abrams Main Battle Tank 1993-2018. Osprey Publishing Ltd. 2019, pp. 24-25. (Tank Urban Survivability Kit)
+Este equipo trae blindaje reactivo a los costados, mayor protección en la parte baja, se modificaron los asientos de la tripulación para
+absorber explosiones, una mejor comunicación con la infantería de apoyo, escudos de protección para las ametralladoras, una torre
+artillada a control remoto y visores térmicos.
+
+162
+
+MEMORIAL DEL EJÉRCITO DE CHILE
+
+EL TANQUE, SU EVOLUCIÓN Y SIGNIFICACIÓN EN LA GUERRA. DE SUS ORÍGENES A UCRANIA
+
+tendencia a operar en centros urbanos, han dejado atrás al tanque, o si su empleo fue el adecuado para
+aprovechar sus ventajas substantivas, ya sea por escenario, tiempo atmosférico o tipo de adversario.69
+En el caso de Ucrania en 2022, el avance ruso dejó un rastro de centenares de vehículos destruidos. De los diversos factores se conjugaron contra los rusos, hay dos poderosas amenazas para
+los tanques que resaltan de inmediato. Una son los misiles antitanques, que, como ya comentamos, desde la guerra del Yom Kippur en 1973 han demostrado su potencial para detenerlos. Los
+misiles Sagger de esa época eran guiados por cable, hoy los Javelins estadounidenses, los NLAWS
+británicos, los Komet rusos y Spike israelíes, son del tipo “dispara y olvida”, y pueden calcular por
+si solos la posición del vehículo, impactando su parte superior, que es la más débil. La segunda
+son los drones, un medio barato, simple y con diversos formatos, que ya no solo permiten ubicar
+por aire en tiempo real las posiciones de las fuerzas acorazadas, sino que también cuentan con la
+capacidad de destruir o inhabilitar a su adversario. Su éxito también va de la mano con el fracaso
+de Rusia para eliminar la capacidad ucraniana y tomar el control del espacio aéreo.70
+Es evidente que los carros rusos han mostrado las mismas debilidades que en la época soviética, y
+que quedaron de manifiesto en guerra tales como las del Yom Kippur y del Golfo en 1991 (tendencia
+a explotar fácilmente, dada la ubicación bajo la torre y sin protección del cargador automático de
+municiones, la falta de blindaje y de medidas efectivas activas y pasivas que lo complementen),71
+pero aparentemente el mayor problema radicaría en fallas del mando y control, la planificación
+logística, esencial para mantener unidades blindadas en movimiento, un pobre entrenamiento y
+una baja moral de sus tropas.72 Los tanques rusos avanzaron y combatieron en forma aislada, sin
+el reconocimiento necesario, con falta de apoyo de infantería73 y de artillería, que les permitiera
+eliminar las amenazas, lo que indicaría que los problemas emanaron más de la forma de empleo que
+del propio material. Los ucranianos, por su parte, prepararon su defensa, aprovechando el terreno,
+para bloquear o encausar las columnas blindadas a zonas de aniquilación en terrenos boscosos y
+urbanos, donde estas perdieron su mayor ventaja, que es la movilidad y rapidez.
+Las peticiones que Ucrania ha hecho del envío de tanques Leopard 2, Challenger 2 y Abrams M1A2 para
+su ejército demuestran que sigue siendo el arma determinante para la ofensiva terrestre, y la única que
+les permitiría ganar la “Iniciativa Estratégica”.74 No existe actualmente nada que reemplace al tanque en
+
+69
+70
+71
+72
+
+Ensayo/Vigencia u obsolescencia del tanque? Disponible en: https://athe/halab.org/vigencia-u obsolescencia-del-tanque/
+The Future of Tank Warfare. The Economist, June 18th 2022, pp. 57-59.
+Ibídem.
+Second Best Army in Ukraine? [en línea]. Disponible en: https: //www.youtube.com/ watch?v= DR4rNAYAdIk&list= RDCMUChlKVVBAzoEVsnbOfpcqw&index=3
+73 Ensayo/Vigencia u obsolescencia del tanque? Disponible en: https://athe/halab.org/vigencia-u obsolescencia-del-tanque. El grupo de
+infantería ruso (BTG-Batallion Tactical Group) solo contaba con 200 combatientes, número insuficiente para apoyar sus tanques que
+quedaron vulnerables a los grupos caza-tanques ucranianos.
+74 ¡Acero Fundido en Ucrania! Disponible en: https://www.youtube.com/watch?v=_8Jfxslef-c&t=521s
+MEMORIAL DEL EJÉRCITO DE CHILE
+
+163
+
+CARLOS ANDRÉS STANGE POOLEY
+
+capacidad ofensiva para penetrar el territorio adversario con movilidad, protección y poder de fuego, siendo
+la única esperanza de Ucrania para recuperar el territorio perdido. No obstante, el desafío para las fuerzas
+militares ucranianas estará en su capacidad de adaptación a este nuevo material, de diferentes países y
+características, su rapidez para asimilar el conocimiento, instrucción y entrenamiento de sus tripulaciones
+y resolver el tremendo reto logístico aparejado, para transformarse en una fuerza eficiente en el combate.75
+
+CONCLUSIONES
+A través de toda su historia el tanque ha sido capaz de superar la mayoría de los obstáculos que ha
+enfrentado, siendo difícil concebir un ejército que, en un campo de batalla moderno, pueda atacar y
+avanzar con el necesario poder de fuego, la debida protección a sus soldados y la movilidad necesaria
+para desbordar a su adversario, sin contar con esta máquina en su arsenal. Además, como se ha visto en
+el tiempo el tanque es pieza fundamental e irremplazable en la ofensiva terrestre, siendo la única arma
+que permite mantener la iniciativa estratégica y operacional, permitiendo tomar el control del territorio
+adversario, destruyendo su poder militar. No por nada la Blitzkrieg alemana, la operación profunda soviética y la batalla aeroterrestre estadounidense tiene al tanque como eje principal de sus postulados.
+Esas capacidades, que hicieron al tanque un arma decisiva desde la Gran Guerra en adelante,
+siguen vigentes hoy en día, al no existir una alternativa que lo supere. La verdad es que no es un
+arma invulnerable y, para su éxito, depende de los mismos principios básicos que acuñó John Fuller al
+planear la ofensiva de Cambrai: la correcta elección del terreno y del tiempo atmosférico, su empleo
+en masa en un sector de frente donde aproveche todo su potencial, la coordinación con las otras
+armas de apoyo, y contar con tripulaciones entrenadas, capacitadas y de alta moral. Incluso en el
+combate urbano, hoy cada vez más común, el tanque ha sabido superar las pruebas, adoptando nuevas
+medidas de protección, pero también combinando tácticas de combate que apoyen su supervivencia.
+Es claro que sigue siendo relevante para los ejércitos modernos y los países que deseen mantener
+fuerzas blindadas eficientes y efectivas deben realizar un salto cualitativo, desarrollando nuevos modelos
+o actualizando permanentemente los existentes, a fin de estar a la altura de los desafíos actuales, junto
+con un elemento humano entrenado y capacitado para cumplir las misiones que se les encomienden.
+
+BIBLIOGRAFÍA
+¡Acero Fundido en Ucrania! [en línea]. Disponible en: https://www.youtube.com/watch?v=_8Jfxslef-c&t=521s
+BLOCH, Iván. Is War Now Impossible? Grant Richards, London, 1899.
+
+75 NEWMAN, Jack. Is it too late to give Ukraine tanks? [en línea]. Disponible en: https://www.dailymail.co.uk/news/article-11678829/
+Ukraine-faces-logistical-nightmare-getting-tanks-delivered-training-crews.html) 2023.
+
+164
+
+MEMORIAL DEL EJÉRCITO DE CHILE
+
+EL TANQUE, SU EVOLUCIÓN Y SIGNIFICACIÓN EN LA GUERRA. DE SUS ORÍGENES A UCRANIA
+
+ESTES, Kenneth. Super-Heavy Tanks of World War II. Osprey Publishing Ltd., 2014.
+Ensayo/Vigencia u obsolescencia del tanque? Disponible en: https://athe/halab.org/vigencia-u
+obsolescencia-del-tanque/
+FLETCHER, David. British Mark I Tank 1916. Osprey Publishing Ltd., 2004.
+FORTY, George. World War Two Tanks. The Book Package Company Limited, 1996.
+FORD, Roger. The World´s Greatest Tanks. Brown Packaging Books Ltd., 1997.
+FULLER, John. Tanks in the Great War 1914-1918. E.P. Dutton and Company, 1920.
+GRANT, Neil. Mauser Military Rifles. Osprey Publishing Ltda., 2015.
+GUDERIAN, Heinz. Achtung-Panzer. Tempus, 2011.
+GUDERIAN, Heinz. Panzer Leader. Reading Essentials, 2018. [Kindle Paperwhite version]. Recuperado de amazon.com.
+HARRISON, Richard. Architect of Soviet Victory in World War II, The Life and Theories of G.S. Isserson.
+McFarland & Company, Inc, Publishers, 2010.
+JENTZ, Thomas. Panzer Truppen: The Complete Guide to the Creation & Combat Employment of
+Germany´s Tank Force 1933-1942. Schiffer Publishing Ltd., 1996.
+JORGENSEN, Christer & MANN, Chris. Strategy and Tactics, Tank Warfare. Spellmount Ltd, 2001.
+LOCKHART, Paul. Firepower, How Weapons Shaped Warfare. Basic Books, NY., 2021.
+LÓPEZ, Jean. et al. Historia Visual de la II Guerra Mundial. Planeta S.A., 2022.
+MONTT, Manuel. La guerra, su conducción, política y estratégica. Edita Anepe. 2010.
+NEWMAN, Jack. Is it too late to give Ukraine tanks? [en línea]. Disponible en: https://www.dailymail.co.uk/
+news/article-11678829/Ukraine-faces-logistical-nightmare-getting-tanks-delivered-training-crews.html
+OGORKIEWICZ, Richard. Tanks, 100 Years of Evolution. Osprey Publishing Ltd., 2015.
+PARET, Peter. et al. Creadores de la Estrategia Moderna. Traductores y Editor, 1991.
+MEMORIAL DEL EJÉRCITO DE CHILE
+
+165
+
+CARLOS ANDRÉS STANGE POOLEY
+
+ROBINSON, Merlin & SEIGNOR, Thomas, Stephen. Foreign Panthers. Osprey Publishing Ltd., 2023.
+Second Best Army in Ukraine? [en línea]. Disponible en: https://www.youtube.com/watch?v=DR4
+rNAYAdIk&list=RDCMUChl-XKVVBAzoEVsnbOfpcqw&index=3
+The death of the tank? [en línea]. Disponible en: https://www.youtube.com/watch?v=oEmWE83P2LA
+The Future of Tank Warfare. The Economist, June 18th 2022.
+TURNBULL, Stephen. The Hussite Wars 1419-36. Osprey Publishing Ltd., 2004.
+ZALOGA, Steven. T-34/76 Medium Tank 1941-45. Osprey Publishing Ltd., 1994.
+ZALOGA, Steven. German Panzer 1914 - 18. Osprey Publishing Ltd., 2006.
+ZALOGA, Steven. T-80 Standard Tank. Osprey Publishing Ltd., 2008.
+ZALOGA, Steven. French Tanks of World War I. Osprey Publishing Ltd., 2010.
+ZALOGA, Steven. French Tanks of World War II (1). Osprey Publishing Ltd., 2014.
+ZALOGA, Steven. Panzer 38 (t). Osprey Publishing Ltd., 2014.
+ZALOGA, Steven. T-26 Light Tank. Osprey Publishing Ltd., 2015.
+ZALOGA, Steven. T-64 Main Battle Tank. Osprey Publishing Ltd. 2015.
+ZALOGA, Steven. BT Fast Tank. Osprey Publishing Ltd., 2016.
+ZALOGA, Steven. T-90 Standard Tank. Osprey Publishing Ltd., 2018.
+ZALOGA, Steven. M1A2 Abrams Main Battle Tank 1993-2018. Osprey Publishing Ltd. 2019.
+ZALOGA, Steven. Tanks at the Iron Curtain 1946-60. Osprey Publishing Ltd., 2021.
+ZALOGA, Steven. Tanks at the Iron Curtain 1960-75. Osprey Publishing Ltd., 2022.
+Why Does Ukraine Want Tanks? [en línea]. Disponible en: https://www.youtube.com/watch?v=sF_
+kbEWSf1M
+166
+
+MEMORIAL DEL EJÉRCITO DE CHILE
+
+

@@ -1,0 +1,27 @@
+# === SEGURIDAD (Lo más importante) ===
+.env
+
+# === ENTORNOS VIRTUALES Y CONFIGURACIÓN LOCAL ===
+.venv/
+.vscode/
+
+# === ARCHIVOS TEMPORALES DE PYTHON ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# === HISTORIALES Y LOGS EN LA RAÍZ ===
+historial_evaluaciones
+historial_evaluaciones*
+
+# === PESOS Y MODELOS DE IA (Evita archivos >100MB en GitHub) ===
+*.pth
+*.pt
+*.pkl
+*.h5
+
+# === ARCHIVOS COMPRIMIDOS O TEMPORALES DE DATASETS ===
+*.zip
+*.tar.gz
+*.rar

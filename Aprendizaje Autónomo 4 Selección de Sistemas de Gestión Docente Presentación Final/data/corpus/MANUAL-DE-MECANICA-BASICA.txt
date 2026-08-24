@@ -1,0 +1,2752 @@
+MANUAL DE MECÁNICA BÁSICA
+
+1
+
+INDICE
+
+ASPECTOS GENERALES DEL VEHÍCULO
+EL VEHÍCULO
+VEHÍCULOS EN ESTUDIO
+ BASTIDOR
+ CHASIS.
+ CARROCERÍA.
+SISTEMAS DEL CHASIS
+
+
+
+
+
+SISTEMA DE FRENOS.
+SISTEMA DE SUSPENSIÓN
+SISTEMA DE DIRECCIÓN
+SISTEMA DE TRANSMISIÓN Y POTENCIA
+ EMBRAGUE
+ TRANSMISIÓN DE VELOCIDADES
+ ÁRBOL DE TRANSMISIÓN
+ DIFERENCIAL
+
+MOTOR DE COMBUSTIÓN INTERNA
+ MOTOR DE CICLO OTTO:(Ignición por chispa)
+ MOTOR DIESEL: (Ignición por compresión)
+
+
+FUNCIONAMIENTO DE LOS SISTEMAS DEL MOTOR DIESEL:
+
+
+
+CICLO DE CUATRO TIEMPOS
+
+
+
+
+
+
+
+
+2
+
+SISTEMAS DE REFRIGERACIÓN
+SISTEMA DE LUBRICACIÓN
+SISTEMA DE ALIMENTACIÓN
+SISTEMA DE ADMISIÓN
+SISTEMA DE ESCAPE
+SISTEMA ELÉCTRICO
+SISTEMA DE ALUMBRADO:
+
+ASPECTOS GENERALES DEL VEHÍCULO
+EL VEHÍCULO
+Se denomina vehículo al complejo mecánico capaz de desplazarse, dotado de ruedas y
+medios de seguridad. Está compuesto por una serie de sistemas y piezas, que funcionan en
+forma coordinada y armónica.
+El automóvil según su propia definición, ha de tener un sistema que proporcione energía de
+desplazamiento (motor) y un sistema que la transmita (sistema de transmisión de potencia)
+a las ruedas.
+También ha de tener cualidades como su estabilidad (suspensión), poder ser dirigido por las
+trayectorias deseadas (dirección) y poder ser detenido cuando sea necesario (frenos).
+
+CLASES DE VEHÍCULOS
+ Vehículos automotores
+ Vehículos por impulsión humana
+ Vehículos de tracción animal
+SEGÚN SU ENERGÍA DE FUNCIONAMIENTO:
+ Vehículos a vapor: Carbón, leña.
+ Vehículos de motores de combustión interna: Gasolina, Diésel, Gas, Híbridos, Alcohol.
+ Vehículos eléctricos: Red eléctrica, batería de acumuladores, energía nuclear.
+
+SEGÚN EL MEDIO DE DESPLAZAMIENTO:
+ Terrestres.
+ Aéreos.
+ Marítimos.
+
+3
+
+SEGÚN SU CONSTRUCCIÓN:
+ Livianos.
+ Pesados.
+ Articulados.
+ Maquinarias.
+SEGÚN SU USO:
+ Transporte de pasajeros.
+ Transporte de carga.
+ Transporte mixto
+ Transporte masivo.
+ Militares.
+ Otros. (bomberos, unidades de rescate, aseo, competencia)
+
+VEHÍCULOS EN ESTUDIO:
+Basaremos nuestro estudio en los vehículos de transporte terrestre automotor de pasajeros
+y carga conformados por bastidor, chasis y carrocería, estudiando los conceptos básicos.
+
+BASTIDOR
+Es la pieza principal en la estructura del vehículo. Puede tener diferentes formas, siendo
+los más comunes el de perfil estampado y el de plataforma.
+Montados sobre el bastidor se encuentran los diferentes elementos que componen los
+sistemas del vehículo.
+
+CHASIS.
+Su estructura se conforma por un BASTIDOR compuesto de largueros de acero
+estampado, tiene como función sostener todos los sistemas y componentes del vehículo,
+así mismo, los pasajeros y la carga.
+
+4
+
+
+
+
+
+
+
+Es el soporte de los órganos mecánicos.
+Puede rodar sin carrocería.
+El chasis puede adaptarse a cualquier carrocería.
+El chasis puede alargarse y cortarse según el cliente.
+Es totalmente duro y rígido.
+
+CARROCERÍA.
+Componente del vehículo destinado a contener pasajeros y carga, esta estructura se instala
+en el chasis o forma parte de él.
+Generalmente se construye de latón acerado, madera, plástico o fibra de vidrio.
+Según su estructura existen 3 sistemas de carrocería:
+Carrocería con chasis auto portante:
+
+
+5
+
+Este diseño de carrocería recibe el nombre de “monocasco” carece de bastidor, estando
+constituido por partes que forman un casco, su estructura requiere de puntas de bastidor
+donde se apoya el motor y se ajusta a la carrocería.
+Carrocería con chasis independiente:
+Las carrocerías independientes están sujetadas al bastidor por medio de grapas en forma de
+U lo cual hace su fácil remoción y cambio de carrocería por otra nueva.
+
+Carrocería con chasis de plataforma:
+Están sujetadas al bastidor por medio de tornillos o soldaduras
+
+6
+
+SISTEMAS DEL CHASIS
+El chasis de un vehículo por lo general lleva asociados los siguientes sistemas de seguridad y control:
+ Sistema de frenos
+ Ruedas, neumáticos y suspensión
+ Sistema de dirección
+ Sistema de transmisión y potencia.
+
+SISTEMA DE FRENOS.
+FUNCIÓN:
+La función del sistema de frenos es disminuir la velocidad del vehículo, llegando incluso a
+detenerlo a voluntad del conductor de manera segura y con el mínimo esfuerzo, aún en caso
+de avería.
+Para la disminución de la velocidad los frenos transforman la energía cinética (movimiento) en
+energía calorífica, al hacer fricción una parte fija del vehículo (zapatas) con otra parte móvil
+(campana)
+Tres son las clases de frenos más comúnmente usados en los vehículos automotores.
+FRENO DE SERVICIO
+Es el freno comúnmente usado para contener o detener la marcha del vehículo. Normalmente
+la fuerza de frenado será aplicada por el conductor sobre un pedal de freno.
+
+7
+
+FRENO DE ESTACIONAMIENTO
+Es el sistema de frenado independiente del
+freno de servicio, que es usado para dejar
+inmovilizado un
+vehículo al estar
+estacionado. Normalmente la fuerza de
+frenado es aplicada por el conductor sobre
+una palanca o bien sobre un pequeño pedal
+predispuesto para este fin.
+
+FRENOS AUXILIARES:
+FRENOS DE MOTOR
+Este sistema suele montarse en motores con árbol de levas en cabeza, el árbol de levas lleva
+un balancín especial que actúa sobre las válvulas de escape dejándolas ligeramente
+abiertas produciendo una contrapresión similar a la de la mariposa del sistema de frenos de
+ahogo.
+
+8
+
+FRENOS DE AHOGO
+En este sistema una válvula de
+mariposa tapa en parte el tubo de
+salida de los gases escape y de
+admisión,
+produciéndose
+una
+contrapresión en este colector con una
+presión aproximada de 2 a 5 bares
+frenando el desplazamiento de los
+pistones.
+
+FRENOS ELÉCTRICOS
+Es un freno continuo o retardador ubicado en el cardán o árbol de transmisión, que usado
+adecuadamente, preserva el freno de servicio, obteniéndose una mayor duración de las
+zapatas del freno.
+
+FRENO RETARDADOR
+El termino retardador es una denominación genérica de frenos hidrodinámicos, básicamente
+es un turbo-acoplador (dos turbinas, una fija y otra rotatoria) de flujo variable, es como un
+embrague que se va dosificando a medida que le restringimos la salida del aceite conecta y
+en el caso puntual como retardador en vehículos pesados se instala a la salida de la
+transmisión de velocidades.
+
+9
+
+CIRCUITOS DE MANDO:
+Los sistemas de mandos son aquellos mecanismos empleados para producir la fuerza que
+desplazará la leva o los pistones, según los siguientes sistemas:
+ Mecánico
+ Hidráulico
+ Neumático
+ Hidroneumático
+SISTEMA MECÁNICO
+En este tipo de sistema de frenado, la fuerza aplicada directamente por el conductor es
+transmitida a los elementos frenantes por medio de guayas o varillas.
+Actualmente es empleado en los frenos de estacionamiento de automóviles
+comúnmente denominado “freno de mano”.
+
+10
+
+SISTEMA HIDRÁULICO
+El funcionamiento de los sistemas de accionamiento hidráulico se basa en los dos principios:
+ Los líquidos son prácticamente incompresibles, la misma presión que se ejecuta en la
+bomba de frenos llega íntegra a los bombines.
+
+
+Cuando a un líquido, totalmente encerrado en un recipiente, se le aplica una presión
+en un punto, esa presión se comunica a toda la masa del líquido con la misma
+intensidad.
+
+El sistema hidráulico permite aumentar, con gran facilidad, la fuerza por lo cual se pisa el pedal
+del freno mediante la relación que existe entre las secciones del pistón que la transmite y el
+pistón que la recibe.
+ELEMENTOS:
+El elemento hidráulico empleado para transmitir la presión a los cilindros de las ruedas se
+llama “líquido de frenos”, este líquido aceitoso prácticamente incomprensible, es sintético sin
+que ataque a la goma de las conducciones, sin embargo, es alterado por el aceite, grasa o
+gasolina. Lleva una serie de antioxidantes y anticorrosivos que favorecen su funcionamiento.
+Los elementos principales que componen el circuito hidráulico son:
+1. Freno de disco.
+2. Bomba de freno.
+3. Freno de tambor.
+4. Freno de mano.
+5. Compensador de frenada.
+6. Circuito de freno.
+SISTEMAS ASISTIDOS O SERVOFRENO
+Es un sistema de frenos hidráulicos al que se le ha proporcionado una ayuda para aliviar el
+esfuerzo del conductor, consiguiendo una mayor fuerza de aplicación. Puede ser Servofreno
+por vacío que es el tipo más usado, o bien del tipo Servofreno por presión de aire, para
+vehículos pesados. (Bomba x motor y líquido a cilindro con aire sale a presión)
+
+SISTEMA NEUMÁTICO
+Este sistema consiste en utilizar, para el accionamiento de los elementos frenantes de las
+ruedas, el aire comprimido generado por el propio motor del vehículo.
+Se emplea habitualmente en vehículos pesados, donde por su gran peso o carga, precisan
+potencias y energías de frenado grandes.
+
+11
+
+PARTES:
+1. COMPRESOR.
+Es accionado por el motor por medio de engranajes internos, comprimiendo el aire a presión
+que es almacenado en los tanques.
+2. TANQUES DE SUMINISTRO.
+Es el encargado de recibir el aire comprimido para luego suministrarlo a los tanques de aire
+primario y secundario.
+3. TANQUES DE AIRE PRIMARIO Y SECUNDARIO.
+Suministra el aire a los sistemas de frenos delanteros o traseros del vehículo automotor.
+4. VÁLVULA DE SEGURIDAD.
+En el propio regulador de presión, hay instalada una válvula de seguridad que en caso de
+avería descarga la presión al exterior.
+5. VÁLVULAS DE DRENAJE.
+Permite evacuar los residuos de condensación (agua) que se encuentran en el fondo de los
+tanques acumuladores.
+
+12
+
+6. SECADOR DE AIRE AUTOMÁTICO.
+Elimina los vapores de agua y aceite contenidos en el aire, dicha separación se efectúa por
+centrifugación; un filtro retiene las partículas sólidas que pudiera haber, los productos de
+decantación se eliminan automáticamente.
+7. GOBERNADOR.
+Su misión es mantener de forma automática un determinado nivel de presión en los
+depósitos, cuando hay sobrepresión se abre una válvula dejando escapar el aire comprimido
+sobrante.
+8. MANÓMETROS DE PRESIÓN.
+Es el encargado de indicar la presión de aire en los depósitos y cuando frena la presión de
+trabajo en las tuberías.
+Las medidas de presión las encontramos en:
+P.S.I.
+(1 P.S.I.) Kg/Cm2. (14.2 P.S.I.) Bar. (14.5 P.S.I.) K/Pa. (0.14 P.S.I.)
+9. VÁLVULA DE CONTROL DE FRENO DE SERVICIO.
+La válvula de freno se servicio es un reductor de doble presión ajustable, permite dosificar
+con precisión las presiones de salida de forma proporcional al recorrido del pedal.
+10. VÁLVULA DE DESCARGA.
+Situada en las bifurcaciones de las canalizaciones tanto de las ruedas traseras como
+delanteras, eliminando automáticamente el aire contenido en los cilindros de las ruedas
+cuando cesa la acción de frenado.
+11. CÁMARA DEL FRENO.
+Recibe una presión neumática que transforma en fuerza mecánica para accionar las zapatas
+del freno por medio de las palancas del freno.
+
+13
+
+12. AJUSTADOR DE HOLGURA (RACHE).
+Los mecanismos de ajustes manuales deben ser utilizados solamente cuando los frenos estén
+fríos y cuando el freno de estacionamiento no esté accionado. Los ajustadores manuales son
+compuestos básicamente por un piñón sin fin y una corona conectada con el cuerpo del eje.
+A medida que las zapatas se desgastan, la aproximación de los patines es realizada
+manualmente por el accionamiento del piñón sin fin.
+13. VÁLVULA RELAY.
+La válvula funciona como una válvula de freno a control remoto que entrega o suelta el aire
+a las cámaras, en respuesta al aire entregado de control desde la válvula de freno de servicio.
+14. VÁLVULA DE CONTROL MANUAL.
+La válvula de control manual más conocida como pivote actúa sobre los frenos del
+semirremolque y es accionada en terrenos especialmente lisos o mojados de acuerdo a la
+necesidad del operador.
+15. VÁLVULA CONTROL DE ESTACIONAMIENTO.
+Es una válvula de empujar-halar, para operar manualmente y está montada en el tablero de
+instrumentos y provee al camión o autobús un control de los frenos de estacionamiento.
+La válvula es sensible a la presión, automáticamente se mueve a la posición de aplicación si
+la presión cae por debajo de 20 a 30 P.S.I
+16. VÁLVULA DEL FRENO DE SEGURIDAD.
+Es una válvula de función doble, la función primaria es servir al lado de la de emergencia como
+válvula de liberación rápida, haciendo que la aplicación del freno de servicio y emergencia
+ocurra simultáneamente.
+17. LÍNEAS DE AIRE PARA EL SEMIRREMOLQUE.
+Las conexiones para el freno del semirremolque se realizan a través de las cabezas de
+acoplamiento, su misión es realizar la unión flexible en las instalaciones del freno de aire
+comprimido entre la unidad tractora y el semirremolque.
+Cabezas de acoplamiento: Las que lleva el tracto-camión son de tipo B, que dejan pasar aire
+al semirremolque, pero van equipadas de unas válvulas automáticas de cierre de aire para
+cuando el tractor y el semirremolque estén desenganchados.
+18. FRENOS ANTIBLOQUEO ABS
+El ABS es un sistema electrónico que comprueba y controla la velocidad de las ruedas durante
+el frenado, el ABS constantemente comprueba la velocidad de las ruedas y controla el frenado
+durante las situaciones de bloqueo de las mismas, mejorando la estabilidad y el control del
+vehículo.
+
+14
+
+MANTENIMIENTO Y PRECAUCIONES DEL SISTEMA DE FRENOS:
+ Purgar diariamente los tanques acumuladores del freno con la válvula manual de drenaje,
+si es que no lleva secador de aire automática.
+ Verificar el correcto enganche de las conexiones del semirremolque al tractor, así mismo
+verificar el correcto funcionamiento del circuito del semirremolque.
+ Utilizar el freno manual del semirremolque sólo en trayectos difíciles.
+ Verificar y limpiar periódicamente los filtros intercalados en las tuberías del freno.
+ Está prohibido modificar el circuito o aparatos de frenado sin autorización escrita del
+fabricante.
+ Si con el motor parado la presión del aire en los circuitos cae rápidamente, la posible fuga
+puede ser por un racor.
+ Reemplazar los elementos de acuerdo con el fabricante, el cartucho del secador de
+aire, este cartucho es contaminante.
+ Si en una bajada abusa del freno de servicio puede aparecer el efecto “fading” que es la
+perdida de la eficacia de los frenos debido al aumento de temperatura en las zapatas.
+ No utilizar el freno de estacionamiento con los frenos calientes, pues al estar calientes los
+tambores puede deformar las campanas.
+
+15
+
+PREVENCIÓN DE AVERÍAS:
+DEFECTO
+Frenos ruidosos al
+empezar a frenar
+Los frenos tardan en
+desbloquearse después
+de dejar de frenar
+Mal funcionamiento del
+freno de estacionamiento
+Desgaste excesivo de los
+frenos del tracto camión.
+Desvío hacia un lado al
+frenar
+
+Los
+manómetros
+no
+marcan presión y no hay
+carga en los tanques.
+
+Los manómetros marcan
+presión excesiva.
+
+16
+
+CAUSA
+Juego excesivo entre zapatas y
+tambor.
+La válvula de descarga rápida en el
+circuito delantero o relay trasero
+obstruida o averiada.
+Fuga de aire por alguna tubería del
+circuito.
+Válvula del semirremolque
+agarrotada o sucia.
+Levas diferentes de las ruedas
+izquierda derecha.
+Holguras diferentes entre las 2
+zapatas y el tambor de una misma
+rueda.
+Compresor averiado. Regulador de
+presión averiado.
+Válvula relay averiada.
+Escape de aire por las tuberías.
+Regulador de presión mal
+graduado.
+
+QUÉ HACER
+Llevar a taller
+Llevar a taller
+
+Corregir.
+Llevar al taller
+Llevar al taller
+
+Llevar al taller.
+Dar golpes
+regulador.
+Verificar fugas
+Graduar.
+
+al
+
+RUEDAS Y NEUMÁTICOS
+FUNCIÓN:
+Las ruedas son los elementos del automóvil que toman contacto con el terreno y por lo tanto,
+el único lazo de unión entre el suelo y el vehículo, cumpliendo una serie de funciones como
+son:
+
+
+
+
+
+
+
+
+
+Sostener el peso del vehículo.
+Convertir el movimiento de giro en movimiento de avance.
+Ofrecer una fuerte resistencia al deslizamiento.
+Dirigir el automóvil para lograr los giros.
+Absorber o amortiguar las irregularidades del terreno.
+Liberar al ambiente el calor producido por los frenos.
+Presentar cierta resistencia al desgaste.
+Han de ser ligeras y fáciles de montar y desmontar.
+
+ELEMENTOS DE LA RUEDA:
+La rueda está conformada por dos elementos:
+ Parte Metálica.
+ Neumático.
+
+PARTE METALICA DE LA RUEDA:
+
+17
+
+CUBO: al que fija directamente la rueda por medio de tornillos que permiten un correcto centrado.
+DISCO: es el elemento con forma anular que sirve como unión entre la llanta y el cubo.
+LLANTA: es la parte sobre la que se ajusta el neumático.
+NEUMÁTICO: es el elemento elástico exterior montado sobre la llanta y una cámara rellena de
+aire comprimido, son el conjunto que forman el neumático y está conformado por los siguientes
+elementos:
+ carcasa: parte estructural flexible y resistente del neumático que aguanta los esfuerzos
+(peso y presión de inflado)
+ cinturón: montado sobre la banda de rodadura y la carcasa, es el encargado que el
+neumático no se deforme.
+ banda de rodamiento: es la zona de contacto entre el suelo y el vehículo y la de mayor
+desgaste del vehículo.
+TIPOS DE NEUMÁTICOS:
+
+Neumático con cámara:
+En este tipo de neumático, la llanta y la cubierta forman un conjunto resistente, mientras que
+la cámara con su válvula, asegura la estanqueidad del aire comprimido en su interior. Este
+sistema actualmente está en desuso.
+Neumático sin cámara (tubeless)
+Este neumático es una novedad en neumáticos sin cámara, se diferencia de la ordinaria por
+no llevar en su interior un forro de protección de caucho elástico e impermeable al aire.
+Los neumáticos sin cámara están compuestos de la llanta, la cubierta (tubeless) y una válvula.
+
+18
+
+CUBIERTAS CONVENCIONALES:
+Este tipo de estructura brinda al neumático dureza y
+estabilidad que le permiten soportar la carga del vehículo.
+La desventaja de este diseño es que proporciona al
+neumático una dureza que no le permite ajustarse
+adecuadamente a la superficie de rodamiento
+ocasionando un menor agarre, menor estabilidad en
+curvas y mayor consumo de combustible.
+
+CUBIERTAS RADIALES:
+En la construcción radial, las cuerdas de las capas del
+cuerpo van de ceja a ceja formando semi óvalos. Son
+ellas las que ejercen la función de soportar la carga.
+Sobre las capas del cuerpo, en el área de la banda de
+rodamiento, son montadas las capas estabilizadoras.
+Sus cuerdas corren en sentido diagonal y son ellas las
+que soportan la carga y mantiene la estabilidad del
+neumático.
+
+NOMENCLATURA DE LOS NEUMÁTICOS:
+Todos los neumáticos deben ser homologados y llevar impresas en sus flancos una serie de
+características, como las que seguidamente se especifican:
+295: Anchura nominal de la llanta.
+80%: Relación altura/ancho del neumático.
+R: Neumático radial, cuando es convencional no figura nada.
+22.5: Diámetro interior de la llanta en pulgadas.
+152/147: Índice de capacidad de carga. M: Símbolo de velocidad máxima.
+TUBELESS: Neumático sin cámara o sello Matić.
+REGROVABLE: Significa que este neumático puede ser regrabado.
+PRESIÓN DE INFLADO: Los neumáticos deben estar siempre inflados, según recomendación por
+el fabricante.
+
+19
+
+ENCAUCHADO:
+Es el proceso que debe hacer un taller especializado, consiste en la aplicación de otra banda
+de rodamiento de material nuevo sobre la carcasa o armazón viejo y su adhesión a través de
+un proceso térmico (vulcanizado)
+TIPOS DE CUBIERTAS SEGÚN LA APLICACIÓN:
+Las cubiertas según su uso, deben presentar características internas y de banda de rodadura
+diferentes.
+Se pueden clasificar en los siguientes tipos:
+
+
+
+
+
+
+Cubiertas para carreteras (lluvia, nieve, hielo).
+Cubiertas lisas. (formula 1).
+Cubiertas fuera de carretera. (maquinarias).
+Cubiertas todo terreno. (trabajos mixtos).
+Cubiertas para aplicaciones agrícolas. (tractores).
+
+PRESIÓN DE INFLADO:
+Todo fabricante determina la presión de inflado que puede soportar la llanta de acuerdo a las
+pruebas a las que fue sometida, esta presión se debe calibrar en frío, la presión de inflado
+aumenta el 4 % cuando la llanta está caliente.
+
+20
+
+DEFECTO
+Desgaste en hombros
+Desgaste en el centro
+Cortes múltiples
+Desgaste lateral de los
+neumáticos delanteros
+Deterioro de la válvula
+
+Separación de la goma
+
+Flanco deteriorados en
+neumáticos gemelos
+
+21
+
+CAUSA
+Inflado insuficiente.
+Exceso de carga
+Exceso de Inflado
+
+CONSEJOS
+Verificar presión
+Verificar carga
+Verificar Presión
+
+Rodaje en suelos pedregosos
+y malas carreteras etc.
+Defecto en convergencia o
+divergencia.
+Arranque por mal montaje o
+por rodaje sin aire.
+
+Adaptar
+presión
+en
+condiciones de rodaje
+Revisar ángulo de las
+ruedas.
+Vigilar la colocación de la
+válvula y atender la
+presión de inflado
+Verificar presión, usar la
+dimensión del
+neumático adecuado
+Ver posibilidad de extraer
+los objetos.
+
+Rodaje a presión insuficiente.
+Neumático mal refrigerado y
+sobre carga
+Piedras u objetos incrustados
+
+INFLADO DEL NEUMÁTICO CON NITRÓGENO:
+El objetivo principal de esta innovación es evitar la presencia de oxígeno dentro del
+neumático, el aire está compuesto por un 78% de nitrógeno frente a un 21% de oxígeno.
+La pérdida de presión en un neumático oscila en torno de 2 P.S.I. por mes, esta pérdida de
+presión es debida a que el oxígeno existente en el interior del neumático se oxida (oxidación)
+por la temperatura que absorbe al rodar.
+
+22
+
+SISTEMA DE SUSPENSIÓN
+Se denomina suspensión al conjunto de elementos elásticos que se interponen entre los
+órganos suspendidos (bastidor) y los no suspendidos (eje de las ruedas), a efectos de absorber
+las reacciones producidas en las ruedas por las irregularidades del terreno, para conseguir, en
+la medida de lo posible, flexibilidad, comodidad, estabilidad y evitar roturas y desgastes.
+
+TIPOS DE SUSPENSIÓN:
+Existen los siguientes tipos de suspensión:
+Mecánica: Compuesta por elementos puramente mecánicos tales como los muelles,
+ballestas, barras de torsión etc., utilizados normalmente en vehículos ligeros.
+Hidráulica: Compuesta por una unidad hidráulica para cada una de las ruedas y fijadas al
+chasis, es utilizada en el “tuning”.
+Óleo neumático: Compuesta por un sistema de nitrógeno, es aproximadamente seis veces
+más suave que la suspensión mecánica, fue desarrollado por Citroën y equipado en sus
+coches.
+Neumática: Compuesta por fuelles o cojines de aire comprimido que colaboran con los
+elementos mecánicos como las emballestas, barras de reacción, barras tensoras, etc.,
+utilizada en los vehículos pesados.
+SUSPENSIÓN MECÁNICA:
+Los elementos de la suspensión deben ser lo suficientemente resistentes, para que a los
+esfuerzos a que son sometidos no les produzca deformaciones permanentes. Altamente
+elásticos para que los elementos no suspendidos no pierdan contacto con la calzada.
+ELEMENTOS: Los elementos básicos en la suspensión son:
+ Ballestas (elementos elásticos)
+ Amortiguadores.
+ Barras estabilizadoras.
+BALLESTAS:
+Las ballestas son elementos fundamentales de toda suspensión de vehículos pesados, recibiendo
+también el nombre “muelles de láminas”.
+Se pueden considerar dos tipos de ballestas, empleadas según sea el tipo de vehículo y la
+carga a transportar.
+
+23
+
+
+
+Convencionales.
+
+Las ballestas convencionales se caracterizan por su alto grado de fricción, que al flexionarse
+contribuyen en gran medida a aumentar la resistencia proporcionando mucha rigidez. Se
+emplean en vehículos que deben transportar grandes cargas por malos terrenos.
+
+
+Parabólicas.
+
+Las ballestas parabólicas se diferencian en que las hojas no tienen un grosor uniforme en toda
+su longitud como sucede en las convencionales. Se emplean en vehículos que transportan
+cargas por autopistas y autovías, resultando más blandas y adecuadas para desarrollar grandes
+velocidades.
+
+24
+
+AMORTIGUADORES:
+Son los elementos encargados de absorber las oscilaciones o vibraciones de los muelles y
+ballestas de la suspensión disminuyendo su amplitud y frecuencia, es decir, los
+amortiguadores son dispositivos que sin impedir el movimiento del muelle lo frenan
+impidiendo que las vibraciones sean transmitidas en su totalidad al vehículo y sus ocupantes.
+
+Delantero
+
+Trasero
+
+BARRA ESTABILIZADORA:
+Tiene la misión de dar la estabilidad al vehículo cuando éste, debido a las irregularidades del
+terreno o las curvas, tiende a perder dicha estabilidad.
+
+25
+
+SUSPENSIÓN NEUMÁTICA:
+La suspensión neumática se está empleando mucho en los grandes camiones por ser muy
+robusta y a la vez suave en su adaptación a las irregularidades del terreno, sustituyendo la
+labor básica de las ballestas, que normalmente no llevan, por la acción de unos fuelles o
+cojines de aire neumáticos).
+Una de las características fundamentales del sistema de suspensión neumática es su
+capacidad de conservar siempre el mismo nivel de la plataforma, independientemente de la
+carga y su situación en el vehículo que la transporta. Cuando la carga aumenta se produce
+una reacción en la válvula de nivel mediante la cual queda establecido un ligero aumento en
+la presión interna de los fuelles neumáticos de modo que estos compensan automáticamente
+el hundimiento que la carga produce, recuperando el nivel del vehículo como si estuviera
+descargado, razón por lo cual el vehículo no se ladea.
+
+MANTENIMIENTO:
+No es fácil que se produzcan averías en la suspensión cuando se realiza un buen
+mantenimiento de la misma.
+
+Engrasar gemelas de las ballestas.
+
+Bielas de reacción y empuje.
+
+Juntas esféricas y apoyos.
+
+Evitar el polvo y la humedad.
+
+Apretar las sujeciones.
+
+Revisar el bastidor y apoyos.
+
+Verificar bujes de amortiguadores.
+
+Observar averías en la cabina.
+
+Comprobar los elementos de la suspensión neumática.
+
+Fugas de aire en los fuelles neumáticos.
+
+Reglaje de las válvulas de nivel.
+
+26
+
+
+
+
+Reglaje de la válvula de altura.
+Control de estado de las tuberías.
+
+PREVENCIÓN DE AVERÍAS:
+DEFECTO
+Suspensión muy blanda
+
+CAUSA
+Muelles cedidos.
+Mal estado de los amortiguadores.
+
+QUE HACER
+Reemplazar.
+Sustituir.
+
+Suspensión muy dura.
+
+Mal estado de los muelles o barras de
+torsión.
+
+Sustitución.
+
+El vehículo cabecea.
+
+Amortiguadores deformados.
+Muelles delanteros deformados.
+
+Sustituir.
+Sustituir.
+
+Muelle averiado.
+Ballesta rota.
+Barra de torsión mal.
+Avería en sistema neumático.
+
+Reponer.
+Cambiar.
+Reponer.
+Reparar.
+
+Cojinetes defectuosos.
+Pivotes y casquillo de la dirección mal.
+Amortiguador deformado.
+Barras o bujes desgastados.
+Brazo de la suspensión defectuoso.
+Articulaciones flojas.
+
+Cambiar.
+Cambiar.
+Cambiar.
+Cambiar.
+Cambiar.
+Cambiar.
+Apretar.
+Verificar presión.
+
+El vehículo se inclina
+hacia adelante.
+
+Ruidos en
+delantera.
+
+la
+
+parte
+
+El vehículo derrapa y
+pierde adherencia.
+
+27
+
+Neumáticos excesivamente inflados.
+
+SISTEMA DE DIRECCIÓN
+El sistema de dirección es el conjunto de mecanismos que tienen la misión de orientar las
+ruedas directrices que, normalmente son las delanteras.
+Al entrar en las curvas y en su desarrollo, el vehículo está sometido y tiende a impulsarlo hacia
+fuera de la curva, esta fuerza se conoce como “fuerza centrífuga” la tendencia del vehículo es a
+seguir en línea recta.
+
+CARACTERÍSTICAS QUE DEBE REUNIR:
+SUAVIDAD: el accionamiento se ha de realizar casi sin esfuerzo, lo cual se conseguirá
+mediante una desmultiplicación o un sistema asistido, así como un buen reglaje y lubricación.
+SEGURIDAD: es uno de los principales factores de seguridad activa, que dependerá de la fiabilidad
+del sistema, la calidad de los materiales empleados y de su correcto funcionamiento.
+PRECISIÓN: el sistema no debe ser ni muy duro ni muy blando, para lo cual no debe haber juego
+entre sus elementos. Las cotas han de ser correctas, el desgastes de los neumáticos simétrico y
+su presión de inflado se debe ajustar a lo indicado por el fabricante.
+
+28
+
+IRREVERSIBILIDAD: el volante ha de transmitir el movimiento a las ruedas, pero estas a pesar de
+las irregularidades del terreno no deben transmitir las oscilaciones al volante.
+ELEMENTOS:
+La orientación deseada de las ruedas se consigue mediante una cadena cinemática, que
+transmite el movimiento de giro del volante a las ruedas.
+Los elementos se clasifican en:
+Volante y árbol de dirección, caja y engranajes de dirección, palanca y barras de dirección (timonería)
+
+VOLANTE Y ÁRBOL DE DIRECCIÓN:
+El volante es el órgano de mando del sistema de la dirección.
+Los detalles de su construcción varían según su fabricante, la circulación en línea recta no
+debe dificultar la visión del tablero.
+
+29
+
+CAJA Y ENGRANAJES DE DIRECCIÓN:
+El engranaje del sistema de dirección es el mecanismo
+cuya función principal es transformar el movimiento de
+giro del volante en movimiento lineal (izquierdaderecha) y con ello orientar las ruedas.
+
+PALANCA Y BARRA DE DIRECCIÓN:
+Estos elementos que transmiten el movimiento obtenido en el engranaje de la dirección,
+reciben el nombre de timonería de la dirección, dependiendo de su disposición en gran
+medida del fabricante.
+DIRECCIÓN ASISTIDA (SERVODIRECCIÓN)
+Para disminuir el esfuerzo del conductor se añade a la dirección una serie de mecanismos de
+asistencia encaminados a reducir el esfuerzo para conseguir el giro de las ruedas, a bajas
+velocidades o estacionamientos, de ahí que se emplee en vehículos pesados o en aquellos
+que lleven neumáticos de gran superficie de rodadura o baja presión.
+Los sistemas más empleados con el motor en marcha, son los de un circuito:
+ Hidráulico
+ Neumático
+DIRECCIÓN ASISTIDA POR CIRCUITO HIDRÁULICO
+El sistema inicia en el depósito del
+aceite hidráulico, la salida se realiza
+por la manguera para ser llevada a la
+bomba, donde el aceite es
+presurizado y llevado por la
+manguera de alta presión a la caja de
+engranajes o botella de dirección,
+donde cumple su objetivo y el aceite
+caliente es retornado por la
+manguera al depósito.
+
+30
+
+BALANCEADO DE LAS RUEDAS:
+Cuando las vibraciones de las ruedas se transmiten al volante de la dirección puede ser por
+falta de equilibrado, su centro de gravedad no coincide con el centro de giro.
+Para el equilibrado de las ruedas se incurre a intercalar entre la llanta y el neumático unas
+pequeñas piezas de plomo (contrapesos) distribuidas por la periferia.
+MANTENIMIENTO:
+Periódicamente se debe comprobar:
+ Nivel del lubricante.
+ Estado de la caja de la dirección (fugas).
+ El depósito del aceite hidráulico.
+ El purgado del sistema en caso de aire.
+ El engrase de las articulaciones.
+ Los guardapolvos.
+ La fijación de pasadores y tuercas de seguridad.
+ Verificar la calibración de las ruedas.
+ Verificar juegos u holguras en las articulaciones.
+ Estados de los neumáticos y desgaste.
+PREVENCIÓN DE AVERÍAS:
+DEFECTO
+
+La dirección es dura
+
+La dirección se endurece
+al girar
+el volante.
+La dirección tiende a
+irse hacia un lado.
+Holgura excesiva en el
+volante de dirección.
+Oscilaciones en el
+puente Delantero.
+31
+
+CAUSA
+Presión baja en los neumáticos. Falta de
+aceite.
+Suspensión en mal estado. Articulación en
+mal estado.
+Falla en el sistema hidráulico. Tensión
+incorrecta de la bomba. Aire en el sistema.
+Filtro sucio o averiado.
+Dirección defectuosa.
+Falta de presión en la bomba.
+Aire en el sistema.
+Presión o desgaste desigual de los
+neumáticos delanteros.
+Suspensión en mal estado. Escape de
+fluido.
+Reglaje del engranaje defectuoso.
+Desgaste de las articulaciones.
+Exceso de presión en las llantas.
+Suspensión en mal estado.
+
+QUE HACER
+Verificar.
+Restituir.
+Reparar.
+Reparar.
+Reparar.
+Reparar.
+Purgar.
+Limpiar.
+Reparar.
+Reparar.
+Purgar.
+Verificar presión
+Reparar.
+Reglar.
+Reparar.
+Verificar presión
+Reparar.
+
+Dirección inestable
+Los neumáticos chillan al
+tomar las curvas.
+
+Ruido al girar el volante
+Bomba ruidosa.
+
+Falta de avance en el pivote.
+Equilibrado defectuoso.
+Presión de inflado bajo.
+Convergencia o divergencia excesiva.
+Elementos hidráulicos defectuoso
+Fallas en la bomba.
+Falta de engrase.
+Holguras en las rotulas.
+Falta de aceite.
+Aire en el sistema.
+
+Reglar.
+Verificar.
+Verificar presión
+Alinear.
+Reparar.
+Reparar.
+Revisar.
+Reparar.
+Añadir
+Purgar.
+
+SISTEMA DE TRANSMISIÓN Y POTENCIA
+Para que el vehículo se desplace es necesaria una cadena cinemática que transmite el giro del
+cigüeñal a las ruedas motrices.
+Este conjunto de elementos se denomina “sistema de transmisión y potencia”.
+Según la relación de transmisión, que varía en función de la carga transportada y el perfil de
+la calzada, el eje secundario de la transmisión de velocidades puede girar a más revoluciones,
+a las mismas o a menos que el cigüeñal.
+Hay que resaltar que al desmultiplicar las revoluciones del cigüeñal se produce un aumento
+de par proporcional.
+Por ejemplo: Si el cigüeñal gira a 1.000 r.p.m. y el árbol de transmisión a 500 r.p.m. se ha
+aumentado el par al doble de su valor inicial.
+Los elementos del sistema de transmisión y potencia son:
+
+
+
+
+
+EMBRAGUE.
+CAJA O TRANSMISIÓN DE VELOCIDADES.
+ÁRBOL DE TRANSMISIÓN.
+DIFERENCIAL.
+
+EMBRAGUE
+La misión del embrague es acoplar o desacoplar el motor (potencia) al sistema de transmisión a
+voluntad del conductor, se sitúa entre el volante y la transmisión de velocidades.
+
+32
+
+Existe gran variedad de embragues, destacándose los siguientes:
+
+
+
+DE FRICCIÓN O DISCO
+HIDRÁULICO
+
+EMBRAGUE DE FRICCIÓN O DISCO:
+Están constituidos por una parte motriz, que transmite el giro a una parte conducida,
+utilizando para tal efecto la adherencia existente entre los dos elementos, y a los que se les
+aplica una determinada presión, que los une fuertemente uno contra el otro.
+EMBRAGUE DE MUELLES
+EMBRAGUE DE DIAFRAGMA
+FUNCIONAMIENTO:
+EMBRAGADO: como en reposo el diafragma es
+cónico hacia la derecha, ejerce presión sobre el
+plato de presión y éste sobre el disco.
+
+33
+
+DESEMBRAGADO: al pisar el pedal del
+embrague, se desliza el collarín hacia el
+interior, invirtiendo la conicidad del
+diafragma, arrastrando al plato de
+presión y separando el disco del volante
+de inercia.
+
+EMBRAGUES DE FRICCIÓN MULTIDISCO:
+Es utilizado cuando el tamaño del volante de inercia es muy grande y el embrague a de
+transmitir un par motor muy elevado.
+Lleva un disco intermedio (de arrastre) que se puede desplazar axialmente y transmite el
+esfuerzo de presión uniformemente sobre ambos discos de embrague.
+
+34
+
+EMBRAGUES HIDRÁULICOS:
+Se trata de un tipo de embrague automático utilizado en cajas de velocidades con cambio
+automático y semiautomático.
+Para el funcionamiento se emplea un fluido, generalmente aceite.
+El embrague hidráulico requiere un aceite especial, debiéndose comprobar periódicamente
+su nivel, ajustándolo según sea el caso.
+SISTEMAS DE MANDOS DE LOS EMBRAGUES
+Los embragues que no son automáticos, es decir aquellos que son accionados mediante un
+pedal situado a los pies del conductor, pueden tener tres (3) sistemas de mandos.
+ MECÁNICO.
+ HIDRÁULICO.
+ NEUMÁTICO.
+SISTEMA DE MANDO MECÁNICO.
+Empleado en la mayoría de los pequeños y medianos vehículos, por su simplicidad y bajo
+costo, consiste en un sistema con cables o varillas que transmite la fuerza ejercida por el pedal
+del embrague al collarín que está montado en el árbol primario de la transmisión de
+velocidades, consiguiéndose el desplazamiento de las patillas o el diafragma para desacoplar
+el disco del embrague.
+FUNCIONAMIENTO:
+En el extremo del pedal de accionamiento (1) se encuentra sujeto un cable (2) por medio del
+cual se puede accionar la palanca de arrastre (3) que pivota sobre el punto (4) presionando
+sobre el collarín de arrastre (5) consiguiendo la inversión de la posición del muelle de
+diafragma con lo que el embrague queda desacoplado tanto tiempo como se mantenga el
+pedal de accionamiento (1) oprimido.
+
+35
+
+SISTEMA DE MANDO HIDRÁULICO:
+Cuando el embrague está alejado del pedal de embrague el esfuerzo a realizar es considerable
+(muelles de presión muy rígidos) en vez de utilizar un mando mecánico, se emplea un sistema
+de mando hidráulico cuya instalación es más fácil de llevar a cualquier punto, no tiene
+pérdidas y el esfuerzo sobre el pedal es mucho menor
+
+SISTEMA DE MANDO NEUMÁTICO:
+En el sistema neumático el proceso de embragado y desembragado es accionado por válvulas,
+en el desembragado el aire a presión fluye a través de la válvula de mando al cilindro de
+acoplamiento, el émbolo actúa con una presión determinada (3,5 a 4 bares) sobre la palanca
+de desembrague.
+
+36
+
+MANTENIMIENTO:
+ Ajustar el recorrido del pedal de acuerdo al fabricante.
+ Engrase de los mandos.
+ No se debe hacer patinar el disco por medio del embrague.
+ Evitar arrancadas bruscas.
+ Mantenerlo desembragado cuando el vehículo está detenido.
+ No apoyar el pie sobre el pedal sin necesidad.
+ Engrasar cables o apoyos del eje de la horquilla.
+PREVENCIÓN DE AVERÍAS:
+DEFECTO
+
+CAUSA
+Demasiado tensionado.
+El pedal no retorna debido a la
+rotura del muelle de retroceso.
+Disco impregnado de aceite
+lubricante.
+Disco gastado.
+Muelle de diafragma roto.
+
+QUE HACER
+Ajustar.
+Cambiar muelle.
+
+Al embragar el
+vehículo da saltos.
+
+Soporte del motor roto o flojo.
+Plato torcido.
+
+Ajustar o cambiar.
+Ajustar o cambiar.
+
+El desembrague es
+incompleto.
+
+Demasiada holgura en el pedal.
+Disco pegado.
+Volante o plato oxidado.
+
+Ajustar.
+Ajustar.
+Desmontar y reparar.
+
+El embrague chillo.
+
+Cojinetes desgastados.
+
+Cambiar.
+
+El embrague trepida.
+
+Plato de fricción desgastado.
+Embrague deformado.
+Rigidez en todo el sistema.
+
+Cambiar plato.
+Cambiar conjunto.
+Lubricar y reparar.
+
+El
+pedal
+del
+embrague falla.
+
+Puntos de soporte rotos.
+Fugas en el sistema.
+
+Reparar.
+Reparar fugas.
+
+El embrague patina
+
+37
+
+Cambiar disco.
+Cambiar disco.
+Cambiar conjunto.
+
+TRANSMISIÓN DE VELOCIDADES
+La misión de la transmisión de velocidades es modificar la relación de transmisión entre el
+motor y las ruedas para adaptar la velocidad de estas a las necesidades de la circulación,
+actuando además como convertidor par, aumentándolo o disminuyéndolo.
+La transmisión de velocidades ubicada generalmente entre el cigüeñal y el árbol de
+transmisión, aumenta o disminuye las revoluciones del motor respecto al árbol de
+transmisión, salvo en la velocidad directa.
+
+ELEMENTOS:
+-EJE PRIMARIO.
+-EJE INTERMEDIARIO.
+-EJE SECUNDARIO.
+-PIÑÓN DE REVERSA (marcha atrás)
+-SINCRONIZADOR
+-PALANCA DE MANDOS.
+
+38
+
+EJE PRIMARIO:
+Por este eje llega a la transmisión de velocidades el giro del motor a través del embrague, su
+extremo exterior es estriado y va engarzado en las estrías del disco conducido del embrague
+y el otro extremo termina en un piñón fijo.
+EJE INTERMEDIARIO:
+En un eje en el que van fijos varios piñones, el primero con toma constante con el piñón del
+eje primario y el último en toma constante con otro piñón, que va loco inversor de giro
+(marcha atrás).
+EJE SECUNDARIO:
+Es el eje a través del cual sale de la caja de velocidades al árbol de transmisión el giro del motor
+(cigüeñal), llegando a la misma a través del eje primario.
+PIÑÓN INVERSO (Marcha atrás):
+Es el piñón de poco diámetro que va en toma constante con el piñón más pequeño del eje
+intermedio y apoyado en su eje corto situado en la carcasa de la caja de velocidades.
+SINCRONIZADOR:
+Realizan la operación progresiva y silenciosa consiguiendo una sincronización entre la
+velocidad de giro del eje intermedio y la velocidad de giro del eje secundario, el desajuste o
+mal estado de los sincronizadores produce lo que se conoce como “rascado” al poner o
+cambiar las velocidades.
+
+39
+
+PALANCA DE MANDOS:
+En las cajas de velocidades de accionamiento manual, se utiliza un sistema de varillaje para
+desplazar los sincronizadores.
+Al accionar la palanca, la varilla correspondiente a la velocidad seleccionada, se desplaza.
+Llevan acopladas unas horquillas que abrazan los sincronizadores que se acoplan a los
+piñones seleccionados.
+
+SISTEMAS DE MANDOS DE LAS VELOCIDADES:
+Además de los descritos, los sistemas de mandos de las velocidades pueden ser:
+ Neumático.
+ Eléctrico.
+SISTEMA DE MANDO NEUMÁTICO:
+Se trata de mando accionado por aire comprimido por medio del cual es posible obtener una
+gama de velocidades con dos etapas, una rápida y otra lenta, consiguiéndose una relación
+total alta.
+La conmutación neumática se realiza al dar a un interruptor de preselección situado en la
+palanca de cambios y pasar ésta por el punto muerto.
+40
+
+SISTEMA DE MANDO ELÉCTRICO:
+Se trata de un sistema de mando para las transmisiones de velocidades utilizadas en vehículos
+pesados con destino al transporte del largo recorrido, desde la palanca de velocidades se
+transmiten las órdenes eléctricas a un módulo electrónico donde son traducidas y convertidas
+en señales de conexión, las cuales activan unas válvulas electromagnéticas que comunican
+aire a presión a los correspondientes cilindros de mando.
+MANTENIMIENTO:
+
+
+
+
+
+
+Control del aceite lubricante de alta velocidad (valvulina).
+Verificar los respiraderos de la caja de velocidades.
+Controlar la marcha uniforme de los dispositivos.
+Utilizar el aceite recomendado por el fabricante.
+Al detectar marchas dificultosas averiguar la causa.
+
+PREVENCION DE AVERÍAS:
+DEFECTO
+Cambio duro, los
+cambios no
+entran o entran
+mal.
+Rigidez en el
+pedal.
+Las velocidades
+entran, pero no
+se mantienen.
+Las velocidades
+no entran o
+rascan.
+
+Dificultad en la
+selección de
+marcha.
+Dificultad o
+imposibilidad de
+meter la reversa.
+
+41
+
+CAUSA
+Conexiones gastadas, rotas o
+desajustadas.
+Mal ajuste en los elementos del
+embrague.
+Falla en el interior de la caja.
+Defectos del pedal.
+
+QUE HACER
+Ajustar o cambiar
+conexiones.
+
+Articulaciones oxidadas,
+obstruidas o defectuosas.
+Horquilla torcida.
+Resortes o elementos de
+fijación defectuosos o rotos.
+Horquilla rota o deformada.
+Algún piñón roto.
+Ejes descentrados.
+Engrase deficiente.
+Sincronizadores dañados.
+Pedal demasiado tensionado.
+Dispositivo de retención flojo.
+
+Comprobar, limpiar o
+cambiar.
+Corregir o cambiar.
+Cambiar elementos
+defectuosos.
+Cambiar horquilla.
+Cambiar.
+Reparar o reponer.
+Añadir aceite.
+Reparar.
+Destensionar.
+Reparar o cambiar
+conexión.
+
+Mecanismo del embrague mal
+ajustado.
+Engranajes averiados.
+
+Ajustar.
+
+Ajustar.
+Desmontar caja.
+Comprobar.
+
+Reparar.
+
+ÁRBOL DE TRANSMISIÓN
+El árbol de transmisión es el elemento encargado de transmitir el movimiento de la
+transmisión de velocidades al grupo cónico diferencial (eje motriz).
+Debe estar perfectamente equilibrado y los esfuerzos de torsión a los que está sometido los
+soporta la elasticidad del material.
+ELEMENTOS:
+ EJES.
+ JUNTAS UNIVERSALES.
+ ACOPLES DESLIZANTES.
+EJES: (cardán)
+Debe ser un eje articulado y extensible para permitir el movimiento axial debido a las
+oscilaciones de la suspensión y la unión con sus apoyos, es elástica para absorber los
+movimientos anteriores, para lo cual se fabrica en acero con alto coeficiente de elasticidad.
+
+JUNTAS UNIVERSALES: (crucetas)
+Empleadas para hacer flexibles las uniones del árbol de transmisión al resto del sistema,
+absorben las deformaciones oscilantes del puente trasero debido a los movimientos de la
+suspensión.
+42
+
+ACOPLES DESLIZANTES:
+El acople deslizante es un cilindro estriado que encaja en otro cilindro estriado interior del
+eje, de tal forma que no puede girar respecto a él, pero se puede deslizar longitudinalmente
+en su interior y permite variar su longitud.
+
+MANTENIMIENTO:
+
+
+
+
+
+43
+
+Mantener engrasadas las crucetas, acoples deslizantes y demás mecanismos.
+Verificar el juego excesivo de crucetas, eje cardánico y unión deslizante.
+Al engrasar verifique que el lubricante salga al otro extremo.
+Verificar el anclaje y tornillería de los mecanismos.
+
+DIFERENCIAL
+El diferencial es el elemento mecánico que permite que la rueda derecha e izquierda de un
+vehículo giren a revoluciones diferentes, según éste se encuentre tomando una curva hacia
+un lado o hacia el otro lado.
+En el tren de potencia de un camión, el motor desarrolla caballaje y transmite la potencia en
+forma de par, la transmisión del tren de potencia multiplica este par y lo transmite al eje
+motriz, el cual multiplica el par una segunda vez.
+
+El par máximo que puede suministrar un motor es muy pequeño para el par mínimo que se
+requiere para arrancar un camión en una pendiente.
+Incluso con las reducciones conseguidas con la transmisión de velocidades no es suficiente.
+Por ello hay que añadir reducciones adicionales entre la transmisión de velocidades y las
+ruedas que son proporcionadas por el diferencial del eje trasero.
+MANTENIMIENTO:
+
+
+
+
+
+44
+
+Se debe comprobar la fijación del árbol de transmisión.
+Verificar la alineación de las crucetas.
+Verificar la holgura de los rodillos centrales.
+Mantener engrasados los sistemas móviles.
+Revisar los niveles de aceite (valvulina).
+
+ACOPLE DEL SEMIRREMOLQUE
+Dentro de la amplia gama de modelos y versiones que existen en el mercado de vehículos
+industriales (camiones) hay dos que por sus características se deben significar.
+
+
+
+Cabezas Tractoras o tracto-camiones.
+Remolcadores o portadores.
+
+En los dos casos el fin es el mismo, aumentar la carga transportada.
+CABEZAS TRACTORAS:
+Es un vehículo de 6X4 de distancia muy corta entre ejes y por medio de un mecanismo llamado
+“Quinta Rueda” se transforma en un vehículo articulado al poder arrastrar un semirremolque.
+La quinta rueda une la cabeza tractora con el semirremolque.
+
+QUINTA RUEDA:
+El mecanismo de quinta rueda consta de una placa ondulada en forma de “omega” atornillada
+y sujeta con unos topes soldados al propio chasis del vehículo, a una distancia dada por el
+fabricante sobre el cual se apoya el semirremolque pudiendo tener diferentes alturas.
+
+45
+
+CLASES DE QUINTA
+RUEDAS FIJA:
+Esta se ubica en el
+bastidor a determinada
+distancia y no se puede
+mover
+tan
+sólo
+soltando los pernos que
+la sujetan.
+
+DESLIZABLE:
+Este tipo de quinta
+rueda posee una
+cremallera para
+ajustarla a diferentes
+distancias
+dependiendo de la
+clase del
+semirremolque, carga
+y terreno.
+
+46
+
+COMPENSADORA:
+Está diseñada para los semirremolques cisternas, esta quinta rueda ayuda a compensar el
+movimiento de los líquidos (se mueve hacia la izquierda y derecha), con esto se evita la fatiga
+del King-pin y que se llegará a soltar el semirremolque.
+NEUMÁTICA:
+Se utiliza para las unidades que trabajan en patio movilizando constantemente los
+semirremolques, la quinta rueda puede subir el semirremolque con una bolsa de aire y evita
+que el operador esté subiendo y bajando las torres del semirremolque.
+HIDRÁULICA:
+Realiza la misma función que la neumática pero la quinta rueda sube con pistones hidráulicos.
+FUNCIONAMIENTO:
+Primeramente, hay que comprobar que la superficie de apoyo del semirremolque esté más
+alta que la superficie del plato de la quinta rueda (2 a 5 cm, es suficiente).
+Después conducir marcha atrás con cuidado hasta que el King pin alcance la posición de
+enganche en la quinta rueda.
+
+MANTENIMIENTO:
+
+
+
+
+
+47
+
+El plato de la quinta rueda debe revisarse con regularidad.
+Controlar periódicamente el apriete de los tornillos.
+Cambiar los soportes de caucho cuando presente demasiada holgura.
+Si surgen averías mientras se conduce, pare inmediatamente el vehículo.
+
+MOTOR DE COMBUSTIÓN INTERNA
+Se denomina motor a la máquina que transforma la energía térmica en energía mecánica,
+mediante l a combustión de una mezcla de aire y carburante que se quema interiormente
+generando un trabajo mecánico.
+
+Los motores de combustión interna se pueden clasificar atendiendo diferentes conceptos:
+
+48
+
+
+
+Por la forma de iniciar la combustión:
+-Motores Otto.
+-Motores Diésel.
+
+
+
+Por su ciclo de trabajo:
+-Motores de 2 tiempos.
+-Motores de 4 tiempos.
+-Motores de 5 tiempos.
+
+
+
+Por el movimiento del pistón:
+-Motores de pistones alternativos, motores de pistón rotativo.
+
+
+
+Por el tipo de combustible:
+-Gasolina, Gas, Gasoil.
+
+
+
+Por el sistema de alimentación:
+-Aspiración natural.
+-Turbo alimentados.
+
+
+
+Por posición de los cilindros:
+-En V.
+-En línea.
+-Opuestos.
+-Radiales.
+
+MOTOR DE CICLO OTTO:(ignición por chispa)
+El nombre proviene del técnico alemán que lo invento Nikolaus August Otto, es el motor
+convencional de gasolina que se emplea en automoción y aeronáutica.
+MOTOR DIESEL: (ignición por compresión)
+Llamado así en honor al ingeniero alemán nacido en Francia Rudolf Diésel, funciona con un
+principio diferente y suele consumir gasóleo. Se emplea en instalaciones generadoras de energía
+eléctrica, en sistemas de propulsión naval, en camiones, autobuses y automóviles, tanto los
+motores Otto como los diésel se fabrican en modelos de dos y cuatro tiempos.
+ELEMENTOS DEL MOTOR:
+Los elementos del motor que forman su constitución pueden dividirse en los siguientes
+órganos más elementales:
+ELEMENTOS FIJOS:
+Son los que componen el armazón y la estructura externa del motor cuya misión es la de
+alojar, sujetar y tapar a otros elementos del conjunto como son:
+
+
+
+
+
+49
+
+La tapa de balancines y su junta.
+La culata y su junta de culata.
+El bloque del motor.
+El Carter y su junta del Carter.
+
+LA TAPA DE BALANCINES:
+Se trata de la pieza fijada en la parte superior de la culata, intercalando una junta de
+estanqueidad, cuya misión es la de tapar los elementos de la distribución situados sobre la
+culata (muelles, válvulas, balancines y árbol de levas)
+LA CULATA:
+La culata situada en la parte superior del bloque del motor y fijada a éste mediante tornillos
+o espárragos, cierra los cilindros formado con esto una cámara donde se desarrolla el ciclo de
+trabajo, llamada cámara de compresión o combustión, alrededor también circula el líquido
+refrigerante a través de unos orificios enfrentados con los del bloque.
+EL BLOQUE DEL MOTOR:
+Es el elemento principal del motor donde se fijan los elementos restantes, cuya forma puede
+ser muy variada, dependiendo del número y la disposición de los cilindros siendo el más
+empleado el de cuatro cilindros en línea.
+
+50
+
+EL CÁRTER:
+Situado en la parte inferior del bloque se encuentra el cárter de aceite, encargado de
+contener el aceite de lubricación del motor, en cuya parte inferior se encuentra el tapón
+de drenaje del aceite.
+ELEMENTOS MÓVILES:
+Son los encargados de transformar la energía química del carburante en energía mecánica
+como son:
+
+
+
+
+
+
+51
+
+LOS PISTONES.
+LAS BIELAS.
+EL CIGÜEÑAL.
+EL VOLANTE DE INERCIA.
+
+SITUACIÓN DE LAS PARTE GENERALES:
+
+LOS PISTONES:
+Es el elemento situado en el interior del cilindro y
+unido a la biela mediante un bulón, recibe la fuerza
+de expansión de los gases provenientes de la
+combustión desplazando a lo largo de las paredes
+del cilindro, cuyo movimiento lineal es alternativo,
+es decir, cambia de sentido, está hecho de un
+material resistente y a la vez ligero para disminuir la
+fuerza de inercia.
+
+LAS BIELAS:
+Es la pieza que une o articula
+el
+pistón
+al
+cigüeñal
+transmitiendo a éste los
+esfuerzos que provienen de
+la combustión de los gases y
+el número es igual a los
+cilindros del motor.
+
+EL CIGÜEÑAL:
+Se trata del eje del motor o
+árbol del motor que recibe el
+movimiento de la biela y
+transforma el movimiento
+lineal alternativo del pistón
+en un movimiento de
+rotación, los motores tienen
+un solo cigüeñal.
+
+52
+
+EL VOLANTE DE INERCIA: (Volante del motor)
+El cigüeñal lleva acoplado en un extremo un disco
+de gran peso que está fijado mediante tornillos y
+fuera del cárter, llamado volante de inercia.
+El volante lleva en su parte exterior una corona
+dentada para que engrane el piñón del motor de
+arranque.
+La función del volante es regular el
+funcionamiento del motor.
+
+EL DAMPER:
+En el extremo opuesto al volante se monta un
+disco anti-vibrador o dámper para absorber o
+compensar las vibraciones y oscilaciones del
+cigüeñal, sobre todo cuando el número de
+cilindros es elevado o el cigüeñal es muy largo.
+
+FUNCIONAMIENTO DE LOS SISTEMAS DEL MOTOR DIÉSEL:
+El motor diésel moderno es un conjunto de mecanismos de precisión que, al trabajar
+sincronizados, transforman la energía química almacenada en el combustible, en trabajo
+mecánico. Los motores diésel pueden ser de 2 y 4 tiempos.
+CICLO DE CUATRO TIEMPOS:
+Para que funcione un motor diésel, es necesaria la repetición de un ciclo que está formado
+por cuatro operaciones que son:
+PRIMER TIEMPO, ADMISIÓN: El pistón desciende del PMS (punto muerto superior) al PMI (punto
+muerto inferior), la válvula de admisión permanece abierta; al bajar el pistón va dejando un vacío
+que será llenado por el aire que entra del exterior por los conductos de admisión.
+
+53
+
+SEGUNDO TIEMPO, COMPRESIÓN: El pistón sube, pasa del PMI al PMS; las válvulas de admisión
+y de escape permanecen cerradas. El aire se comprime y se calienta lo suficiente para encender
+el combustible que se inyecta al final de la compresión.
+
+54
+
+TERCER TIEMPO, EXPANSIÓN O FUERZA: Se inyecta el combustible en forma de spray al interior
+del cilindro, se inflama, se expande y empuja el pistón hacia abajo para producir potencia.
+
+CUARTO TIEMPO, ESCAPE: La válvula de escape se abre y el pistón sube, pasa del PMI al PMS
+para que el pistón desaloje todos los gases quemados producto de la combustión.
+
+55
+
+SISTEMA DE REFRIGERACIÓN
+El sistema de refrigeración es el encargado de mantener la temperatura óptima en todo
+momento y circunstancia de funcionamiento, sin importar si la temperatura ambiental es alta
+o baja.
+El sistema de refrigeración sirve para recoger el calor de las partes críticas y mantener el
+motor a una temperatura conveniente para lograr su máximo rendimiento.
+Los puntos más calientes que se deben enfriar constantemente son:
+La cámara de combustión, la parte alta del cilindro, la cabeza del pistón, las válvulas de
+admisión y de escape y boquilla del inyector. En el interior existen conductos de agua que
+rodean a los puntos críticos, el agua es forzada a circular por las camisas de los cilindros, para
+que recojan el calor. Primero pasa por los conductos del monoblock, cabeza del motor,
+termostato, y las mangueras, para llevarlo al radiador en donde se enfría a una temperatura
+no menor de 71° C ni mayor de 93° C.
+
+SISTEMAS DE REFRIGERACIÓN:
+Según el proceso de refrigeración, actualmente existen dos sistemas de refrigeración:
+ Refrigeración por líquido
+ Refrigeración por aire
+56
+
+SISTEMA DE REFRIGERACIÓN POR LÍQUIDO:
+Es el sistema de utilización generalizada en la actualidad, los motores están provistos de unos
+orificios alrededor de la culata, cámara de compresión y cilindros por donde circula el líquido
+refrigerante.
+
+PRINCIPALES ELEMENTOS:
+
+
+
+
+
+
+
+57
+
+VASO DE EXPANSIÓN
+RADIADOR Y CONDUCTOS.
+VENTILADOR.
+TERMOTASTO.
+BOMBA DE AGUA.
+ELEMENTOS DE CONTROL.
+
+VASO EXPANSOR:
+Es el sistema más utilizado en los motores actuales.
+Con este depósito, el radiador no lleva tapón de
+llenado y se comunica mediante un tubo con un
+pequeño depósito auxiliar llamado "Vaso de
+expansión". El depósito de expansión contiene
+líquido refrigerante y recibe a través del tubo de
+unión con el radiador, los gases procedentes de la
+evaporación, los cuales al contacto con el líquido se
+licúan. Cuando se produce el vacío interno, el líquido
+procedente del depósito de expansión pasa al
+radiador, con lo cual se restablece el circuito sin
+pérdida de líquido en el mismo por condensación.
+
+RADIADOR:
+Es el elemento en el cual se enfría el líquido
+refrigerante, por medio de una corriente de aire,
+que viene del motor, para volver nuevamente al
+mismo debidamente refrigerado.
+Se fabrican con aleación ligera (aluminio y
+cobre) y unos paneles por donde circula el agua
+provistos de aletas con gran conductibilidad
+térmica.
+El radiador se une a la carrocería mediante
+gomas o soportes y al motor mediante
+mangueras de conexión.
+
+VENTILADOR:
+Tiene la misión de activar la corriente de aire
+que pasa a través del radiador durante la
+marcha del vehículo o de producirla cuando el
+vehículo tenga el motor atrás o esté detenido
+con el motor en marcha, para favorecer el
+enfriamiento del agua del radiador.
+El ventilador aspira la corriente de aire a través
+del radiador haciéndola circular alrededor del
+motor, saliendo por debajo del salpicadero.
+
+58
+
+TERMOSTATO:
+Es una válvula metálica con un resorte que
+se encarga de regular el flujo de refrigerante
+o agua al radiador para mantener la
+temperatura óptima del motor del auto; es
+decir, evita que estos líquidos fluyan dentro
+del motor hasta que estos no hayan
+alcanzado
+su
+temperatura
+de
+funcionamiento de acuerdo con las
+especificaciones del fabricante.
+
+BOMBA DE AGUA:
+La bomba de agua es la encargada de
+hacer circular el líquido refrigerante
+dentro del circuito (circulación forzada),
+encontrándose situada en punto bajo del
+mismo para que no trabaje en vacío
+(siempre está en carga o funcionando).
+
+FILTRO DE AGUA:
+Algunos circuitos de refrigeración incorporan un filtro de agua para retrasar el ataque por
+corrosión y la acumulación de elementos calcáreos en el radiador y demás partes del circuito.
+REFRIGERANTE:
+El agua contiene sales calcáreas que obstruyen las canalizaciones del circuito, para evitar todo
+ello se mezcla el agua destilada con anticongelante, denominándose dicha mescla “líquido
+refrigerante” que hace que el agua no se congele hasta los -30 °C y no empiece a hervir
+pasados los 110 °C (dependiendo su concentración).
+
+El líquido refrigerante está compuesto por:
+ Agua destilada.
+ Anticongelante (etilenglicol).
+ Bórax.
+ Antiespumante.
+ Colorante.
+
+59
+
+INSTRUMENTOS DE CONTROL:
+El conductor debe tener conocimiento de la temperatura del líquido refrigerante para evitar
+daños mayores, para ello se dota al motor de un termómetro eléctrico o bien un testigo
+luminoso.
+TERMÓMETRO:
+Indica en cada momento la temperatura del líquido refrigerante basándose en una escala de
+diferentes temperaturas, la señal es mandada electrónicamente por un sensor ubicado en el
+bloque del motor hacia el termómetro.
+Las medidas de temperatura las encontramos en:
+ Grados Centígrados.
+(9/5 * °C) +32
+ Grados F a h r e n h e i t 5/9 (°F – 32)
+
+MANTENIMIENTO:
+
+
+
+
+
+
+
+
+
+
+60
+
+Controlar periódicamente el nivel del líquido refrigerante, el nivel debe estar entre
+mínimo y máximo.
+Controlar regularmente la tensión de las correas.
+Utilizar el líquido refrigerante indicado por el fabricante.
+Verificar que no existan fugas por las conexiones.
+Cambiar el líquido refrigerante como mínimo cada dos años.
+Limpiar el exterior del radiador al menos una vez al año.
+El mantenimiento se debe hacer con el motor en frio.
+Limpiar y ajustar el ventilador.
+Comprobar el funcionamiento del termostato.
+
+PREVENCIÓN DE AVERÍAS:
+DEFECTO
+El motor consume líquido
+refrigerante sin sobre
+calentarse.
+
+CAUSA
+Fuga exterior por:
+-Abrazaderas flojas.
+-Bomba del agua.
+-Porosidad en el bloque o culata.
+-Juntas del circuito.
+
+QUE HACER
+Apretar.
+Llevar al taller.
+Llevar al taller.
+Cambiar juntas.
+
+Líquido refrigerante en el
+aceite.
+
+Fuga interior por:
+-Junta de culatas o camisas.
+-Refrigerador del aceite.
+-Junta de la culata compresor.
+-Porosidad del bloque.
+
+Llevar a taller.
+Llevar a taller
+Llevar a taller.
+Llevar a taller
+
+Recalentamiento
+motor
+
+del
+
+Humo blanco en el
+escape con el motor
+caliente.
+El motor no se caliente lo
+suficiente.
+
+Circuito obstruido.
+Radiador obstruido
+internamente.
+Refrigerador del aceite
+obstruido.
+Termostato no abre.
+Ventilador no funciona.
+Bomba del agua averiada.
+Correas des tensionadas.
+
+Destaponar
+Lavar radiador
+
+Paso de agua a la cámara de
+combustión.
+
+Llevar a taller
+
+Termostato siempre abierto.
+Ventilador térmico
+embragado.
+
+Llevar a taller
+
+Llevar a taller
+Cambiar pieza
+Llevar a taller
+Llevar a taller
+Tensionar
+
+Llevar a taller
+
+REFRIGERACIÓN POR AIRE:
+Como su nombre lo indica, son motores que se enfrían naturalmente, es decir que usan el
+aire del exterior para el enfriar el motor.
+De hecho, es por eso que en las cabezas de los motores se ven unas pequeñas aletas, llamadas
+de enfriamiento, que básicamente incrementan la superficie del motor para que éste entre
+en contacto con el aire, y de esta manera hacer el intercambio de calor con mayor rapidez.
+
+61
+
+Son motores que no poseen un radiador o una bomba de circulación, por este hecho son
+motos que, de alguna manera, son más simples es su construcción y mantenimiento.
+
+62
+
+SISTEMA DE LUBRICACIÓN
+Para reducir al mínimo el desgaste de las piezas móviles del motor que se produce por su
+rozamiento y evitar su agarrotamiento por exceso de calor se recurre al sistema de
+lubricación.
+El sistema de lubricación está constituido por la interposición de una finísima película de
+aceite entre las superficies y oquedades de las piezas en contacto, de ello dependerá la vida
+útil del motor, su rendimiento y funcionamiento.
+SISTEMAS DE LUBRICACIÓN:
+Todos los sistemas han de lubricar una serie de órganos como son:
+
+
+
+
+
+
+
+
+
+Pistones y cilindros.
+Apoyos del cigüeñal y cabezas de bielas.
+Ejes de pistones y pies de bielas.
+Apoyos del árbol de levas.
+Taques y levas.
+Vástagos de válvulas.
+Ejes de balancines.
+Engranajes del sistema de distribución.
+
+LUBRICACIÓN A PRESIÓN:
+Se trata de un sistema de uso generalizado en los motores actuales, el aceite que se encuentra
+depositado en el cárter es impulsado por la acción de una bomba y enviado a presión por las
+canalizaciones de lubricación hacia todas las piezas en movimiento que requieren lubricación
+constante.
+
+63
+
+PARTES DEL SISTEMA DE LUBRICACIÓN:
+1. Carter o depósito
+2. Cedazo o colador
+3. Bomba de aceite
+4. Tuberías
+5. Filtros
+6. Galerías
+7. Rociadores
+8. Refrigerador de aceite (filtro)
+9. Manómetro de presión de aceite
+
+64
+
+RADIADOR DEL ACEITE:
+Tiene la misión de mantener la temperatura del aceite de engrase dentro de unos valores
+aceptables para que se conserve en todo momento sus condiciones de viscosidad y la de
+refrigerar el aceite durante su servicio.
+
+BOMBA DEL ACEITE:
+Manda el aceite del cárter con la presión y
+la cantidad necesaria para mantener y
+asegurar
+una
+perfecta
+lubricación
+directamente.
+Recibe el movimiento del motor con lo
+que mandará más aceite al aumentar las
+revoluciones del motor a través de unas
+tuberías a los puntos precisos.
+
+FILTRO DE ACEITE:
+El aceite contiene impurezas o sustancias sólidas como son las partículas metálicas
+debido al desgaste de las piezas, carbonilla y hollín provenientes de la combustión que
+deben ser eliminadas para que no deterioren las piezas a lubricar y el aceite.
+
+Filtro Monoblock:
+Utilizado comúnmente en los motores
+de explosión, el elemento filtrante y su
+envoltura
+metálica
+forman
+un
+conjunto y se reemplaza todo de una
+sola vez, son de fácil colocación y
+suelen ir roscados a un soporte en la
+tubería principal de circuito del bloque
+del motor.
+
+65
+
+Filtro Centrífugo:
+En algunos motores diésel, los cuales requieren
+un filtrado más perfecto que los de explosión, se
+utilizan “Filtros Centrífugos” en lo que el
+conjunto giratorio (carcasa y rotor) del filtro,
+impulsa las partículas hacia el exterior
+agrupándolas en la pared interior (rotor),
+quedando filtrado el aceite y cayendo
+directamente al cárter.
+
+MANÓMETRO DE PRESIÓN DEL ACEITE:
+Es el aparato encargado de medir en cada momento la presión del aceite en el interior
+del circuito de lubricación, se coloca a la salida de la bomba del aceite.
+Si el manómetro detecta presión en exceso, puede que el aceite esté demasiado frio o
+espeso (denso o viscoso) y si marca baja presión puede que esté demasiado caliente o
+sin viscosidad.
+
+TIPOS DE ACEITE:
+Los aceites pueden ser según su naturaleza de dos tipos:
+ Minerales: (Destilación del petróleo) son los más usados en los vehículos automotores.
+ Sintéticos: (Procesos químicos del petróleo) de mayor duración que los minerales, pero de
+elevado valor.
+
+66
+
+CONDICIONES GENERALES DE LOS ACEITES:
+
+
+
+
+
+
+
+
+
+Permitir un arranque fácil.
+Lubricar y prevenir desgastes.
+Reducir las fricciones.
+Refrigerar los elementos del motor.
+Proteger la corrosión.
+Mantener y conservar el motor limpio.
+Evitar la formación de espuma.
+Amortiguar las piezas móviles.
+
+COMPOSICIÓN DE LOS ACEITES:
+Un aceite lubricante se compone de dos elementos:
+ Aceite base: (base mineral o sintética)
+ Aditivos: (detergentes, anti-azufre, dispersantes, anti desgaste, inhibidor de corrosión,
+anti- herrumbre, antiespumante, mejorador del índice de fluidez).
+VISCOSIDAD:
+Es la resistencia que presenta un aceite al fluir, la viscosidad se mide en grado SAE, esta medida
+es independiente de la calidad y demás características y sólo mide si un aceite es más o menos
+viscoso.
+Una viscosidad demasiado alta da problemas de arranque en frio y reduce la lubricación de
+los segmentos y otras piezas móviles del motor.
+
+67
+
+CLASIFICACIÓN SAE DE LOS ACEITES:
+Existen 10 grados de viscosidad SAE:
+0W 5W 10W 15W 20W 25W
+20 30 40 50 60
+Todos los aceites que llevan la “W” son aceites de invierno, esta cifra de clasificación SAE no
+indica el valor exacto de la viscosidad, pero sí que un aceite es más o menos viscoso que otro,
+un índice 60 es más viscoso que un índice 10.
+ACEITES MULTIGRADOS:
+Actualmente es muy frecuente la utilización de aceites multigrados, debido a las bajas
+temperaturas (invierno), los aceites generalmente se vuelven espesos, en cambio en verano
+los aceites son más fluidos debido al calor.
+Los aceites multigrados presentan dos grados o índices de viscosidad dependiendo de la
+temperatura ambiente y se identifican por llevar dos números SAE (combinación de dos
+grados SAE) y los mono grados por llevar un grado SAE.
+Un aceite SAE 10W40, la “W” indica que el primer número (10) es el grado de viscosidad que
+tendrá el aceite en invierno (muy viscoso) y el segundo número (40) indica el grado de
+viscosidad que tendrá en verano (semiviscoso) es decir, multigrado.
+
+68
+
+NORMAS A.P.I. (Instituto Americano del Petróleo)
+Esta norma clasifica los aceites según las condiciones a las que está sometido un motor,
+describiendo varios grados de severidad en el funcionamiento del mismo.
+La norma A.P.I. se subdivide en dos categorías:
+
+
+
+SERIE “S” para motores a gasolina de ciclo Otto SJ – SL - SM
+SERIE “C” para motores Diésel o industriales CE - CF-4 - CG-4
+
+Las segundas letras J, L, M o las letras E, F-4, G-4 definen la calidad, según aumenta la letra en
+orden alfabético también aumenta la calidad.
+CARACTERÍSTICAS DE UN ACEITE:
+
+
+
+
+
+
+
+
+
+Viscosidad: es la resistencia que opone al fluir por un conducto. Se mide por el índice
+de viscosidad.
+Adherencia: es la capacidad que posee de adherencia a las superficies que impregna.
+Punto de Congelación: es la temperatura a la cual se solidifica.
+Punto de Inflamación: es la temperatura a la cual se inflaman sus gases o vapores.
+Detergencia: es la capacidad para evitar la formación de depósitos carbonosos en las
+ranuras de los motores.
+Estabilidad Química: es la capacidad que tiene para permanecer inalterable con el
+tiempo a la oxidación.
+Grado de Acidez: es el porcentaje de ácidos libres que contiene un aceite para evitar
+corrosiones.
+Cenizas: Es el porcentaje de cenizas de un aceite.
+
+MANTENIMIENTO:
+
+
+
+
+
+
+
+
+69
+
+Mantener el nivel adecuado (entre mínimo – máximo)
+Utilizar el aceite recomendado por el fabricante.
+Cambiar el filtro de aceite.
+Ver si hay pérdidas de aceite.
+Comprobar el manómetro de presión.
+Hacer un análisis del aceite cada 4 cambios.
+Dejar en ralentí unos minutos cuando el motor esté frío.
+
+PREVENCIÓN DE AVERÍAS:
+DEFECTO
+El manómetro no marca
+presión y se enciende los
+Testigos lumínicos.
+
+CAUSA
+Falta de aceite en el motor.
+
+QUE HACER
+Verificar nivel.
+
+Falta presión de aceite.
+Filtro de malla obstruido.
+Bomba de aceite no
+funciona.
+
+Remolcar a taller.
+Verificar filtro.
+Remolcar a taller
+
+LUBRICANTES
+Funciones de los Lubricantes:
+1. Proteger los órganos mecánicos contra el desgaste y la corrosión para garantizar la
+longevidad y la eficacia del motor.
+2. Mantener el conjunto de las piezas en un perfecto estado de limpieza, evacuando las
+impurezas con el cambio del aceite.
+3. Reforzar la impermeabilidad, indispensable para asegurar el buen funcionamiento del
+motor.
+4. Evacuar de manera eficaz el calor, enfriando el motor para evitar la deformación de las
+piezas. Cuando se tratan de temas automovilísticos, es muy raro que no se hable sobre la
+lubricación y, en especial, del mayor o menor rendimiento del aceite del motor. En
+general, surgen comentarios sobre el comportamiento del aceite, las ventajas del
+multigrado, la clasificación de aceites de acuerdo con su viscosidad, nivel de calidad API y
+normas europeas.
+Para aclarar las inquietudes más frecuentes, hemos preparado este texto técnico en forma de
+preguntas y respuestas.
+¿Qué es viscosidad?
+Es un número que mide la mayor o menor resistencia que opone el líquido al fluir en
+condiciones de determinadas temperaturas.
+El agua, por ejemplo, fluye rápidamente y tiene baja viscosidad, la miel en cambio, lo hace
+muy despacio por su altísima viscosidad.
+La determinación de la viscosidad se obtiene con instrumentos graduados de laboratorio. Deben
+evitarse las comparaciones sensitivas o “a dedo”.
+¿Qué es API?
+Son las siglas del American Petrolean Instituto, o Instituto Americano del Petróleo, entidad
+que se encarga de clasificar los aceites por niveles de calidad y, adicionalmente, licencia y
+
+70
+
+Certifica la calidad de los aceites para motor. Los aceites certificados por API pueden ser
+auditados en cualquier momento y en cualquier parte del mundo y si no cumplen con las
+normas, se desertifica al titular de dicha licencia.
+¿Cuántos grados SAE hay?
+Hay diez grados SAE. Seis de ellos incluyen designación W, e indica cual viscosidad fue medida
+a baja temperatura.
+¿Qué son los aceites mono grado y multigrado?
+Mono grados son los que cumplen un solo grado SAE, los multigrados, se formulan para
+más de un grado de clasificación SAE, por ello se pueden utilizar en un rango de
+temperaturas más amplio que los aceites de un solo grado.
+¿Cuáles son ventajas de los aceites multigrados?
+Los aceites multigrados pueden ofrecer ventajas significativas sobre los Mono grados:
+ Arranque más rápido del motor en frío
+ Mejores características para trabajos a bajas temperaturas.
+ Se comportan muy bien a altas temperaturas.
+ Ahorro importante de lubricante.
+ Proporciona ahorro de combustible por su mayor fluidez a temperaturas bajas.
+¿En qué se diferencia un aceite mineral de uno sintético?
+El aceite mineral es el que se obtiene por destilación del petróleo crudo y su posterior
+refinación.
+El aceite sintético se obtiene optimizando las moléculas a través de transformaciones
+químicas (las materias primas también son a base de petróleo crudo).
+¿Con que frecuencia debo cambiar el aceite?
+Los aceites se deben cambiar siguiendo las recomendaciones de los fabricantes de los
+motores teniendo en cuanta el tipo de aceite, la calidad de los filtros y los rangos de trabajo.
+En nuestro medio es racional un cambio cada cinco mil kilómetros.
+¿Se pueden mezclar los de motor de diferentes marcas?
+Si, las normas actuales exigen que cada aceite sea compatible con los demás existentes en el
+mercado. Esto es válido para los aceites minerales y para los sintéticos.
+
+71
+
+¿Cada cuánto debo cambiar el aceite de los engranajes?
+Veinte mil kilómetros o un año de uso es la recomendación, más tiempo es perjudicial para
+los piñones pues este aceite lleva limaduras de desgaste que contaminan el mismo.
+Diagnóstico del desgaste:
+1. Arranque:
+El motor inicia su trabajo con el contacto metal con metal, ya que el lubricante tarda hasta
+30seg en llegar a las partes donde se requiere.
+2. Conducción en Frío:
+Este es el periodo de calentamiento del motor, uno de los más estrictos del desgaste, ya que
+los aditivos convencionales alcanzan su óptimo desempeño cuando el aceite llega a los 70
+centígrados, proceso que demora entre 10 -15 minutos.
+3. Conducción Normal:
+Cuando el aceite alcanza su temperatura óptima protege normalmente hasta que el motor se
+apaga. Una vez que esto sucede, el aceite se enfría y se baja al cárter para iniciar el mismo
+proceso en el próximo encendido.
+Nota: Para motores diésel, los expertos recomiendan el aceite con especificaciones API CH-4/SJ
+multigrado SAE 15W-40. Sin embargo, en el mercado ya se encuentra la última especificación API
+CI- 4/SL SAE 15W-40.
+
+72
+
+SISTEMA DE ALIMENTACIÓN
+En los motores de inyección la forma de la cámara de combustión y a veces la de la cabeza
+del pistón, están diseñadas para favorecer la unión entre el aire y el combustible
+(turbulencia), mejorando la combustión y el rendimiento.
+
+73
+
+Existen dos sistemas básicos de inyección:
+
+Directa: donde el combustible es
+inyectado directamente en la cámara de
+combustión, los inyectores tienen varios
+orificios.
+
+Indirecta: donde el combustible no es
+inyectado directamente en la cámara de
+combustión, los inyectores tienen un
+solo orificio.
+El sistema de alimentación a efectos de
+su estudio, puede dividirse en dos
+circuitos:
+
+Circuito de baja presión: compuesta por los siguientes elementos:
+
+
+
+
+
+
+
+
+Depósito de combustible.
+Pescador.
+Gasómetro.
+Filtros.
+Bomba de alimentación.
+Mangueras.
+Válvulas de drenaje.
+
+Circuito de alta presión: compuesta por los siguientes elementos:
+
+
+
+
+
+74
+
+Bomba de inyección.
+Tubería de alta.
+Toberas.
+Inyectores.
+
+Depósito de combustible:
+Colocado normalmente alejado del
+motor, en un punto bajo fabricado
+generalmente de chapa de acero o
+actualmente de plástico, en el depósito se
+puede medir mediante un flotador
+funcionando por medio de un circuito
+eléctrico.
+
+Bomba de alimentación:
+Es el elemento encargado de extraer el
+combustible del depósito y entregarlo a
+la bomba de inyección.
+
+Según su accionamiento la bomba puede ser:
+Mecánica: el funcionamiento de la bomba mecánica va acoplada al bloque del motor y funciona
+por el movimiento producido por el árbol de levas.
+Eléctrica: para el funcionamiento de la bomba eléctrica se utiliza un electroimán que hace el
+funcionamiento de aspirar el combustible del tanque.
+Filtro de combustible: es el
+encargado de retener las
+partículas que pudiera llevar el
+combustible, generalmente son
+de tamiz de malla fina, ubicados
+a la salida del depósito del
+combustible, a la entrada de la
+bomba de alimentación, estos
+filtros son recambiables.
+
+75
+
+Bomba de inyección: Es el elemento de suministrar el combustible en la cantidad precisa, en
+las condiciones necesarias y en el momento adecuado.
+La bomba inyectora inyecta el combustible a una presión muy alta pero en pequeña cantidad
+y muy bien dosificada ya que para quemar 1 gramo de gasoil se necesitan 32 gramos de aire.
+Las bombas de inyección se clasifican en:
+
+
+
+Lineales.
+Rotativas.
+Bombas Lineales: poco usada
+actualmente, la bomba de
+inyección
+lineal
+está
+compuesta por un cuerpo de
+bomba, dentro del cual se aloja
+un árbol de levas, con una leva
+por cada cilindro de la bomba
+inyectora que gira a la mitad
+de vueltas del cigüeñal, es
+decir
+a
+las
+mismas
+revoluciones del árbol de levas
+de distribución.
+
+Bombas Rotativas: estas bombas
+emplean un único elemento de
+bombeo para comprimir y distribuir el
+combustible debidamente dosificado
+a cada uno de los cilindros del motor,
+llevan como en el caso de las bombas
+lineales un variador de avance a la
+inyección automática y un regulador
+de velocidad que puede ser centrífugo
+o hidráulico.
+
+76
+
+Inyectores: se trata del último
+elemento
+del
+circuito
+de
+alimentación, de mucha precisión,
+cuya misión es la de introducir el
+carburante que recibe de la bomba
+a gran presión, en el interior de las
+cámaras de combustión del motor
+(cilindros).
+
+Bujías Incandescentes:
+Estas bujías que sólo se utilizan con la llave en posición de la puesta en marcha, no tiene
+electrodos (no producen chispa), sino que son tipo lámpara de incandescencia (resistencia).
+Cuando están en funcionamiento las bujías, se enciende una luz testigo en el tablero de
+instrumentos, que hasta que no se apague, no se debe dar encendido al motor, en algunos
+casos las bujías están conectadas en serie, pero tienen el inconveniente que, si se funde el
+filamento de una, las demás tampoco funcionan.
+MANTENIMIENTO:
+
+
+
+Drenar diariamente los filtros separadores de agua.
+Cambiar los elementos filtrantes.
+
+PREVENCIÓN DE AVERÍAS:
+DEFECTO
+El motor no arranca.
+
+El motor no arranca,
+pero funciona el motor
+de arranque.
+
+77
+
+CAUSA
+Filtro de aire tapado.
+Tornillos de la culata flojos.
+Válvulas no asientan.
+Regulador defectuoso.
+Cilindros gastados.
+Bomba
+de
+inyección
+defectuosa.
+Inyectores obstruidos.
+Falta de gasoil.
+Filtros combustibles tapados.
+Aire en el circuito de baja.
+
+QUE HACER
+Limpiar filtro
+Apretar tornillos
+Reparar válvulas
+Reparar regulador
+Reparar cilindros
+Reparar bomba
+Limpiar inyectores
+Taquear
+Limpiar filtros
+Purgar sistema
+
+Alto consumo
+combustible.
+
+Humos negros
+Humos azulados
+
+78
+
+de
+
+Compresión defectuosa.
+Desajuste en los inyectores.
+Fuga de combustible.
+Regulador defectuoso.
+Combustión incompleta.
+Escases de aire.
+Exceso de combustible.
+Aceite en la combustión.
+Desgaste en los cilindros
+
+Revisar bomba
+de
+inyección e inyectores.
+Revisar y reparar.
+Reglaje de la inyección.
+Reparar motor.
+
+SISTEMA DE ADMISIÓN
+En el circuito de admisión existe una serie de filtros para retener las impurezas existentes en
+la atmósfera, para que el aire llegue en debidas condiciones al cilindro.
+Para conseguir una combustión completa del gasoil es necesaria una proporción de aire
+superior a la requerida por el motor de explosión y una mayor compresión.
+Partes del sistema de Admisión:
+
+
+
+
+
+
+
+
+
+79
+
+Filtro de aire.
+Tuberías.
+Turbo.
+Intercooler.
+Crossover.
+Múltiple de admisión.
+Válvulas.
+Indicador de restricción.
+
+Filtros de aire:
+El filtro del aire tiene como función
+retener las impurezas del aire de
+admisión.
+
+Advertencia:
+Por ningún motivo trate de:
+ Limpiar.
+ Sacudir.
+ Sopletear el filtro.
+
+Turbocompresor:
+
+Intercooler:
+
+El sistema consta esencialmente de dos
+ruedas de paletas denominadas
+turbina y turbocompresor que giran
+solidariamente, unidas por un eje en el
+interior de carcasas independientes.
+
+En los motores turboalimentados, el aire
+al salir del turbo compresor, adquiere
+una temperatura alta de hasta 150 °C.
+
+Los gases de escape al salir lo hacen
+con cierta energía, lo cual se aprovecha
+para mover la turbina del colector de
+admisión enviando por compresión
+gran cantidad de aire a los cilindros.
+
+80
+
+La función del Intercooler es la de
+enfriar el aire que sale del turbo antes
+de introducirlo al cilindro, consiguiendo
+que, entre mayor cantidad, para un
+mayor rendimiento.
+
+El eje del turbocompresor alcanza
+velocidades hasta de 120 r.p.m. siendo
+su máxima velocidad en climas fríos,
+esto se debe al poco oxígeno que hay en
+la atmósfera, por esta razón el turbo es
+denominado “el compensador de
+altura”.
+
+Con este sistema se consigue un
+salto térmico mayor, si el aire entra
+al Intercooler con 150 °C sale de él con
+50 °C aproximadamente.
+
+Indicador de restricción:
+La función principal del indicador es determinar la vida útil del filtro del aire de admisión para
+decidir el reemplazo del filtro.
+Cuando su indicador señale 25 in H2O o 635 mm. H2O de restricción al paso del aire debe
+cambiar el filtro.
+Importante:
+Las fugas de aire de admisión ocasionan:
+ Falta de potencia del motor.
+ Alto consumo de combustible.
+ Calentamiento del motor.
+
+81
+
+SISTEMA DE ESCAPE
+Como resultado de la combustión dentro del cilindro del motor se forman una serie de gases
+como son el monóxido de carbono, hidrocarburos sin quemar y óxido nitroso que al salir a la
+atmósfera resultan muy nocivos para la salud, la función principal del sistema de escape es
+asegurar la descontaminación y la reducción de los humos.
+
+Partes del sistema de escape:
+ Válvula de escape.
+ Múltiple de escape y Header
+ Turbo.
+ Exhosto.
+ Silenciador (mofle).
+ Colas de escape.
+A la entrada del colector, los gases de combustión tienen una temperatura de orden de
+900 °C. Este calor presentaría un peligro si fuera evacuado directamente.
+
+82
+
+SISTEMA ELÉCTRICO
+El
+vehículo
+necesita para su correcto funcionamiento y cumplir con
+Establecido reglamentariamente una serie de sistemas eléctricos como son:
+
+lo
+
+BATERIA: (Acumulador de Corriente)
+Cuando el motor está parado necesita tomar energía eléctrica de algún lugar para hacer
+funcionar una serie de elementos eléctricos, principalmente el sistema de encendido, una vez
+arrancado el motor el generador de energía (alternador) se encarga de producir esta energía
+recargando nuevamente la energía gastada de la batería.
+Una batería se caracteriza por su voltaje (6 y 12) y su capacidad expresada en amperios (Amp)
+que representa la intensidad de la corriente que puede proporcionar una batería por una
+unidad de tiempo.
+
+Una batería de capacidad de 80 Amp puede proporcionar una corriente de intensidad 8
+mp durante 10 horas, la capacidad depende del tamaño y número de placas contenidas en el
+acumulador.
+
+ELECTROLITO: (Agua de la Batería)
+Compuesto básicamente de ácido sulfúrico (40%) y agua destilada (60%) que ayudan junto con
+las materias activas a producir reacción química.
+
+83
+
+CONEXIONES:
+Disponemos de dos formas de conectar un grupo de baterías entre sí, dependiendo la
+capacidad de voltaje y amperaje que tenga el vehículo.
+CONEXIÓN EN SERIE:
+
+CONEXIÓN EN PARALELO:
+
+Con este tipo de conexión duplica el
+voltaje total quedando 24 V, se
+reconoce por el puente que hay entre
+los bornes negativo y positivo.
+
+Con este tipo de conexión se duplica el
+amperaje y el voltaje sigue de 12 V, se
+identifica porque están conectados los
+bornes positivo con positivo y negativo
+con negativo.
+
+DESCONEXIÓN DE LAS BATERÍAS:
+Al momento de desconectar las baterías el primer borne que se debe desconectar es el borne
+negativo, la corriente que circula en los automóviles es Corriente Continua (C.C.), por lo tanto,
+la energía sale por el borne negativo y retorna por el positivo.
+ALTERNADOR:
+La misión del alternador es transformar la energía mecánica del motor en energía eléctrica y
+está conformado por los siguientes elementos:
+
+
+
+
+84
+
+Rotor (Inducido).
+Estator (Inductor).
+Puente rectificador.
+Elementos complementarios.
+
+La producción de la corriente eléctrica es similar al dínamo (no se utiliza), diferenciándose en las
+bobinas inducidas permanecen fijas (INDUCIDO), siendo el campo inductor el que se mueve
+(ROTOR).
+
+El alternador al generar la corriente la envía a la batería por el cable positivo (rojo) que es el
+retorno de la corriente del acumulador.
+MOTOR DE ARRANQUE:
+Para iniciar el funcionamiento del motor se dota al vehículo de un motor eléctrico, que recibe
+energía eléctrica de la batería y la transforma en energía mecánica para dar las 50 R.P.M.
+aproximadas que necesita el motor para iniciar su funcionamiento.
+Los elementos principales del motor de arranque son:
+
+
+
+85
+
+CARCAZA O CUERPO:
+En su interior hay masas polares rodeadas de unas bobinas inductoras.
+
+
+
+ROTOR O INDUCIDO: Formado por un eje con unas espiras alrededor de él, las cuales
+están unidas a las delgas que forma el colector que se encuentra en un extremo del eje.
+
+
+
+MECANISMO DE ARRASTRE: Se trata del sistema encargado de transmitir el movimiento del
+motor de arranque a la corona dentada del volante del cigüeñal.
+
+SISTEMA DE ALUMBRADO:
+El sistema de alumbrado tiene la misión de proporcionar una fuente de iluminación para
+poder ver y ser vistos en condiciones de seguridad cuando la iluminación de la vía no es
+suficiente.
+LUCES EXTERIORES:
+ Luz de navegación.
+ Luz de galibo.
+ Luz de corto alcance (baja).
+ Luz de largo alcance (alta).
+ Niebla.
+ Direccionales y emergencia.
+ Freno.
+ Reversa.
+ Matricula (placa).
+ Luz rutilante (licuadora).
+LUCES INTERIORES:
+ Luz de cabina.
+ Luz de cortesía.
+ Luces de instrumentos.
+ Luz de pasillo (Bus).
+COMPLEMENTOS ELÉCTRICOS AUXILIARES:
+Existen una serie de sistemas y elementos que proporcionan una comodidad o exigencia al
+conductor del vehículo, así como una información de alguno de los sistemas o parámetros de
+funcionamiento del vehículo.
+Pueden distinguirse dos tipos de complementos:
+CIRCUITOS Y ACCESORIOS:
+ Limpia brisas y lava parabrisas.
+ Aire acondicionado.
+ Vidrios eléctricos.
+CIRCUITOS DE CONTROL:
+ Velocímetro
+86
+
+
+
+
+
+
+
+
+
+
+
+Odómetro.
+Termómetro.
+Gasómetro.
+Tacómetro.
+Manómetro.
+Amperímetro.
+Voltímetro.
+Tacógrafo.
+Testigos lumínicos y sonoros.
+
+MANTENIMIENTO:
+
+
+
+
+
+
+
+
+
+
+
+
+Mantener limpios los bornes de la batería.
+Comprobar el electrolito de la batería.
+Verificar estado de las conexiones.
+Verificar la tensión de las correas.
+Ajustar el alternador.
+Limpiar e inspeccionar el cableado.
+Inspeccionar el montaje del motor de arranque.
+Limpiar y ajustar los terminales del circuito.
+Reglar las luces de corto y largo alcance.
+Reemplazar las lámparas deterioradas.
+Reparar y limpiar las uniones eléctricas.
+
+PREVENCION DE AVERIAS:
+DEFECTO
+El motor no arranca
+
+El alternador no
+carga
+
+La batería no carga
+
+El motor de
+arranque no gira al
+accionar el
+interruptor.
+No enciende ningún
+bombillo.
+
+87
+
+CAUSA
+
+QUE HACER
+
+Batería descargada.
+Algún vaso del batería mal.
+Bornes en mal estado.
+Correa floja o rota.
+Fusible fundido.
+Escobillas en mal estado.
+Regulador de voltaje dañado.
+Diodos dañados.
+Corto circuito.
+Regulador defectuoso.
+Conexiones flojas.
+Interruptor en mal estado.
+Batería descargada.
+Escobillas flojas.
+Inducido defectuoso.
+Automático dañado.
+Cables cortados o aislados.
+Fusible general fundido.
+Batería averiada.
+Amperímetro dañado.
+
+Cargar batería.
+Cambiar batería
+Lavar y aislar.
+Corregir.
+Cambiar.
+Llevar a taller.
+Llevar a taller.
+Llevar a taller.
+Reparar.
+Reparar.
+Ajustar.
+Llevar a taller.
+Carga o iniciar.
+Llevar a taller.
+Llevar a taller.
+Llevar a taller.
+Reparar (unir).
+Cambiar. Cambiar
+Localizar avería.
+
+

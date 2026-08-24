@@ -1,0 +1,1782 @@
+Cohetería Experimental
+de Richard Nakka
+
+Motores Cohete de PVC
+Con Delay y Carga de Eyección
+Por Chuck Knight
+
+Traducido por Javier Esteban Fernández
+1
+
+Índice
+
+Índice.....................................................................................................................
+
+2
+
+Nota del traductor..................................................................................................
+
+3
+
+Presentación..........................................................................................................
+
+4
+
+Introducción..........................................................................................................
+
+4
+
+Rendimiento y evaluación.....................................................................................
+
+5
+
+Diseño.................................................................................................................... 9
+Herramientas......................................................................................................... 14
+Construcción.......................................................................................................... 22
+Ignitores................................................................................................................. 37
+Montaje.................................................................................................................. 39
+Conclusión y Reconocimientos............................................................................. 40
+Fotos...................................................................................................................... 41
+Anexo.................................................................................................................... 42
+“Copyright” de la traducción................................................................................. 44
+
+2
+
+Nota del traductor
+El siguiente documento es una traducción de la página Web de Cohetería Experimental de
+Richard Nakka, www.nakka-rocketry.net.
+Todo el material aquí presentado es de autoría de Chuck Knight, salvo esta nota y el anexo.
+Por respeto al autor no se cambiaron las unidades ni nombres que usó. Por esto en el anexo
+se aclaran ciertas cuestiones como ser: conversiones de unidades, algunos nombres, etc. Las llamadas están identificadas con asterisco y un número identificador de cada una, por ejemplo (*1).
+Toda la información en este documento es presentada solo con fines informativos. Ni el
+autor ni el traductor asumen responsabilidad acerca del uso, abuso o mal uso que se pueda
+dar a la información expuesta.
+Ø Por convicción personal asumo que el conocimiento es un bien social y, por lo tanto, de dominio público, es decir todos sabemos y todos debemos compartir lo que sabemos. Este compartir,
+lo vivo, no como una obligación sino como un derecho; con el objeto de crear, pulir y magnificar el
+conocimiento. Haciendo que todos seamos transformados en este devenir.
+Cuando comencé con esta actividad me di cuenta del poco material que se encontraba en
+español, la mayoría estaba en inglés. Si quería que esta afición (la cohetería ) creciera debía poner a
+disposición, de la mayoría de mis colegas, estos conocimientos.
+Así empecé a desarrollar distintas planillas y textos; también hice algunas traducciones, en
+su gran mayoría de la página de Nakka. Traté que toda esta información llegara a la mayor cant idad
+de gente posible.
+Este documento es precisamente una traducción, quizá la más extensa que he realizado. Fue
+un arduo trabajo, a causa de mis conocimientos básicos de inglés, pero el objetivo valió el esfuerzo.
+Espero que este trabajo nos ayude a crecer y comunicarnos, a tentarnos en investigar y en
+descubrir, a entusiasmarnos con el compartir.
+Ø También por convicción creo que no podemos crecer solos.
+La cohetería es una tarea para trabajar en grupo, para que si uno está desanimado el resto lo
+apoye, para que todos podamos alegrarnos, crecer juntos y desarrollar algo que en solitario no podríamos, algo más grande y mejor. Por esto les recomiendo que : se asocien a la ACEMA (Asociación de Cohetería Experimental y Modelista de Argentina, www.rocket.com.ar), formen sus grupos
+de trabajo, participen en el foro “Cohetes”, comenten esta actividad entre sus amistades, vivan el
+placer de un hermoso lanzamiento en familia y con amigos.
+Por último tres pedidos:
+•
+•
+•
+
+Trabajen siempre extremando la seguridad; que esta actividad sea fuente de placer y no de malos ratos causados por “accidentes” evitables.
+Si bien la traducción fue hecha de corazón, es posible y hasta inevitable que se
+hayan deslizado algunos errores. Por favor háganmelos saber, escríbanme y entre
+todos mejoremos esto.
+Participemos. Nadie es dueño de la verdad, todos tenemos nuestro granito de arena para aportar. Espero escuchar de sus experimentos y de sus éxitos así como de
+sus fracasos, siempre con el ánimo de aprender. Entre todos hagamos que la cohetería modelista y experimental crezca.
+Un abrazo. Buenos vuelos
+Javier Esteban Fernández
+quimeifc@yahoo.com.ar
+“más rápido, más lejos, más alto”
+3
+
+Presentación
+Chuck Knight de Pennsylvania, EE.UU. ha desarrollado un método simple para hacer motores cohetes de KN-Sorbitol clase “G”, “H” e “I”, utilizando tubería plástica de PVC (Cloruro de
+polivinilo) para la cubierta y no requiriendo ninguna herramienta especial para la construcción. Estos motores tienen incorporado un retraso de tiempo (delay) y una carga de eyección para el despliegue del paracaídas.
+
+Introducción
+Este artículo describe cómo construir motores de cohete económicos de tamaño “G”, “H” e
+“I” usando materiales comunes y herramientas de mano simples. Los materiales para construir los
+motores pueden comprarse en la mayoría de las ferreterías o “home centers”. Las herramientas necesarias para armar estos motores pueden encontrarse en talleres modestamente provistos.
+El material estructural para estos motores es cañería y accesorios de PVC. La cañería de
+PVC es barata, disponible rápidamente, se encuentra en una multitud de tamaños, se trabaja fácilmente y tiene accesorios que pueden encolarse sin herramientas especiales. Hay, sin embargo, inconvenientes para estas ventajas. La cañería de PVC no tiene la fuerza y resistencia de uso del metal
+y además el PVC funde a una temperatura relativamente baja. Como resultado, la actuación de estos
+motores no es lo que podría esperarse si ellos se hicieran de los materiales más tradicionales para
+motores de cohete. El PVC también tiene la desventaja de tener pocos adhesivos que se adhieren
+bien a él. Los diseños y técnicas tuvieron que ser desarrolladas alrededor de estos problema s.
+El propelente es realizado por fundición de Nitrato de potasio (KN) y Sorbitol. Richard Nakka ha realizado una cantidad considerable de trabajo para caracteriza r este y otros propelentes
+basados en azúcares. Para una revisión del propelente basado en Sorbitol refiérase al artículo de
+Richard Nakka, KN-Sorbitol Propellant (Propelentes de KN-Sorbitol).
+Los motores se desarrollaron a través del proceso de ensayo y error, basado en un conocimiento fundamental de la teoría del motor cohete y la información y datos compilados por Richard
+Nakka. Se realizaron muchos experimentos para probar técnicas de fabricación para el PVC así como para determinar las dimensiones del grano y la tobera que proporcionaran la mejor actuación y
+fiabilidad. El motor “G” fue diseñado primero. Los motores “H” e “I” se desprenden de la versión
+“G”, donde el Kn (la proporción de la superficie del área de combustión versus el área de la garganta de la tobera) es el parámetro común.
+Estos motores cohete de PVC pueden integrarse fácilmente en una estructura de cohete. Sin
+embargo, no es la intención de este artículo ir más allá del diseño del motor y adentrarse en la dinámica de vuelo del cohete. Se da por supuesto que aquéllos que desean construir estos motores
+tienen conocimiento del funcionamiento de los cohetes y han experimentando con cohetería de aficionado. Si no es así, sugiero que construyan y lancen unos pocos kits modelistas usando motores
+cohetes comerciales. Con esto adquirirán una valiosa experiencia, necesaria para construir y volar
+con éxito éstos motores. Un poco de experiencia con los kits modelistas es una gran manera de entender los principios de los motores y el vuelo de los cohetes.
+
+4
+
+Rendimiento y evaluación del motor
+A) Características de rendimiento (*1):
+
+Valuación del motor
+Impulso total
+Pico de Empuje
+Empuje medio
+Tiempo de combustión
+Impulso específico
+Cf medio (Isp x g / c *)
+Pico estimado de presión
+
+Motor “G”
+G105
+133 N-s
+30,5 lb
+23,7 lb (105 N)
+1,26 s
+108 s
+1,16
+536 psi
+
+Motor “H”
+H178
+235 N-s
+50,8 lb
+40,0 lb (178 N)
+1,32 s
+108 s
+1,16
+568 psi
+
+Motor “I”
+I440
+563 N-s
+136,0 lb
+99,0 lb (440 N)
+1,28 s
+129 s
+1,39
+652 psi
+
+B) Características físicas:
+
+Peso del motor
+Longitud de motor
+Mayor diámetro exterior
+Propelente
+Peso del propelente
+Tipo de grano
+Segmentos de grano
+Longitud de grano
+Diámetro exterior del grano
+Diámetro del núcleo
+Diámetro de garganta de la tobera
+Proporción de expansión de tobera
+Kn Teórico (Min. – Máx.)
+
+Motor “G”
+11,8 oz
+9,5 in
+1,63 in
+(1-5/8”)
+KN-Sorbitol
+(65/35)
+125 gramos
+Tubular
+1
+7 in
+0,944 in
+0,375 in
+(3/8)”
+0,250 in
+Aprox. 4:1
+192 - 389
+
+Motor “H”
+19,0 oz
+10,5 in
+2,0 in
+
+Motor “I”
+29,5 oz
+18,0 in
+2,0 in
+
+KN-Sorbitol
+(65/35)
+222 gramos
+Tubular
+1
+7,5 in
+1,25 in
+0,5625 in
+(9/16)”
+0,312 in
+Aprox. 4:1
+198 - 349
+
+KN-Sorbitol
+(65/35)
+444 gramos
+Bates
+2
+15 in
+1,25 in
+0,5625 in
+(9/16)”
+0,437 in
+Aprox. 3:1
+202 – 356
+
+Para explicar el rendimiento que se logró, los motores se modelaron usando las más simples
+de las ecuaciones de diseño de motor. Usando un formato de hoja de cálculo, el grano propelente
+era dividido en 10 secciones tal como ocurriría con la combustión del grano. Es decir, de las superficies de los extremos hacia el centro y del núcleo del cilindro hasta la superficie externa. Para cada
+intervalo progresivo: Kn, presión, Cf, empuje, tiempo de combustión e impulso fue ron calculados y
+se trazó un gráfico. Para simplicidad, el aumento del empuje y el “trail off” se ignoraron. De esta
+información, se calculó el impulso total y específico para cada motor.
+Se usó en estos cálculos los datos de velocidad de combustión del propelente compilados
+por Richard Nakka. Para validar que la velocidad de combustión del propelente usado para los motores de PVC era consistente con los datos de Richard, se realizó una prueba de combustión de
+hebra en un propelente preparado de la misma manera que el preparado para todos estos motores.
+Puesto que el equipo no estaba disponible para realizar pruebas de velocidad de combustión a presiones elevadas, lo s datos se tomaron en aire abierto, a presión atmosférica. La prueba de combustión de hebra fue realizada poniendo dos marcas a una distancia medida en una hebra del propelente
+fundido. Un extremo de la hebra fue encendido y un cronómetro fue usado para medir el tiempo de
+combustión entre las dos marcas. Se realizaron dos pruebas mostrando que el propelente quemó
+respectivamente a 0,114 inches/second y 0,112 inches/second (*2). Ésta velocidad de combustión la
+compare favorablemente a las 0,102 inches/second informados por Richard Nakka para la velocidad
+de combustión de KN-Sorbitol en aire abierto. Fue concluido por consiguiente que la velocidad de
+5
+
+combustión sobre presión para el propelente usado en los motores de PVC era comparable a la que
+Richard había determinado para KN-Sorbitol. La densidad de masa del propelente (? ) fue determinada de la dimensión del grano propelente y tomando el peso. Por cálculos fue de 0,00207 slugs/in3 .
+Esto es muy cercano a la dens idad ideal de 0,00206 slugs/in3 (*3).
+Otros valores que se usaron en estos cálculos fueron:
+Proporción de calor específico (k) = 1,042
+Velocidad de descarga característica (c *) = 2999 ft/s
+Los cálculos asumen que los motores de PVC son ideales, sin embargo, los motores de cohete ideales no existen. Para corregir, dadas las condiciones poco ideales bajo la que estos motores
+se realizan, se aplicó un factor de corrección al coeficiente de empuje. El factor de corrección en
+estos cálculos no sólo tiene en cuenta las condiciones de la cámara sino también las anomalías de la
+tobera. Se discuten estos factores de corrección en el artículo de Richard Nakka, Solid Rocket Motor Theory - Conditions for Actual Rocket Motors (Teoría del motor cohete de propelente sólido
+- Condiciones reales para los motores cohete). Para determinar el factor de corrección para éstos
+motores de PVC, el valor de la corrección en el cálculo se ajustó hasta un valor para el empuje inicial y se volvió a calcular hasta que emparejó el valor del ángulo en la curva medida para el empuje
+inicial. Este punto de la combustión inicial es el único tiempo durante el que el Kn real puede emp arejarse al Kn computado con cierta certeza. Se piensa que esto es verdad ya que la curvatura afilada
+del ángulo sugirió que las llamas que se extienden por la superficie de combustión habían alcanzado
+un límite de progresió n y el grano desinhibido aparentaba estar quemando entero. Cuando el factor
+de la corrección estaba fijo en 0,71 había una buena correlación entre los valores y mediciones de:
+empuje inicial, Cf, impulso total y el impulso específico para los motores “G” y “H”. Hubo una
+sorpresa grande, sin embargo, cuando el motor “I” fue probado.
+C) Curvas de rendimiento predichas y medidas:
+
+Rendimiento predicho
+
+Rendimiento medido
+G105 Curva de empuje
+
+6
+
+Rendimiento predicho
+
+Rendimiento medido
+H178 Curva de empuje
+
+Rendimiento predicho
+
+Rendimiento medido
+I440 Curva de empuje
+
+A pesar de la buena correlación entre ciertos valores de estas curvas, hay dos cosas que son
+obvias al compararlas. El empuje de la cresta medida nunca alcanza el valor de cresta predicho para
+el empuje y el tiempo de combustión real es considerablemente más largo que el predicho. La razón
+para estas diferencias no se entiende totalmente. Sin embargo, el tiempo de combustión extendido
+sugeriría disminuciones en la proporción de combustión después de alcanzar un valor del máximo.
+La explicación más probable para esta disminución es una combustión erosiva negativa. Para una
+explicación detallada de este fenómeno, refiérase al artículo Propellant Burn Rate (Velocidad de
+combustión del propelente) escrito por Richard Nakka. A pesar de la cresta más baja que la predicha para el empuje, el impulso total predicho y medido para los motores “G” y “H” muestra una
+buena correlación. Esto es significativo ya que el impulso total o la cantidad total de energía que el
+motor transmite al cohete es el factor principal que determina qué altitud alcanzará el cohete.
+Otra diferencia crítica es que el motor “I” produce un 20 % más de impulso total que el predicho. El motor “I” usa dos de los mismos granos propelentes que se usan en el motor “H”. Para
+mantener el Kn igual manteniendo las presiones iguales en los dos motores, el área de la garganta
+fue duplicada para compensar el doble de la superficie de combustión. Por consiguiente, se esperaría que el impulso total del motor “I” fuera dos veces el del motor “H” tal cual se predijo.
+No está claro por qué el motor “I” habrá reforzado su rendimiento. Sin embargo hay algunos
+7
+
+razonamientos: que la longitud o la ganancia de la proporción L/D del propelente podría ser un factor. Primero, en un grano largo, hay un gradiente de presión a lo largo de la longitud central. Esta
+presión es más grande en el extremo superior del grano y puede ayudar acelerar el proceso de combustión en esa región. Quienquiera que ha ya armado cualquier motor comercial recargable de potencia promedio está familiarizado con el manguito superior de fibra y metal que se usa para sellar y
+fortalecer la cubierta del motor. Segundo, el grano largo permite una combustión más completa del
+propelente y refuerza el impulso del mismo.
+No todos los que construyan estos motores podrán conseguir los mismos resultados anteriores. Las preferencias personales, habilidad y substitución de los materiales tendrán seguramente una
+repercusión en su actuación y fiabilidad.
+
+Motores de PVC “I”, “H” y “G” (de izquierda a derecha)
+
+8
+
+Diseño
+Los motores cohete de PVC pueden descomponerse en 4 secciones principales: la cubierta
+del motor, la tobera, el grano propelente y el cierre del extremo superior. Los párrafos siguientes
+explican el concepto del diseño para cada sección del motor.
+A) La cubierta de l motor:
+La cubierta del motor se hace de tubería para agua de PVC Sch 40 (*4). Las medidas o tamaños de la tubería se expresan en términos de dimensiones del diámetro interior (DI) de la misma.
+
+Tamaño de la tubería
+
+Motor “G”
+1" Sch 40
+
+Motor “H” e “I”
+1-1/4" Sch 40
+
+El DI real de la tubería de PVC puede variar. Por ejemplo, la s tuberías de 1-1/4" usada para
+estos motores tiene un DI real de 1,36".
+Dado que la tubería de PVC va a ser exigida para resistir el calor y la presión asociados con
+la combustión del propelente, sería útil saber la fuerza o presión de rotura de la misma. Para estimar
+lo que esta presión podría valer, se construyó un motor “G” con un solo segmento de 10" de grano
+propelente. El grano largo aseguraría que hubiese bastante presión para causar la falla de la cubierta
+del motor. El empuj e del motor se midió hasta el punto de rotura de la cubierta. De los datos del
+empuje podría calcularse la presión en el momento de la rotura.
+
+Curva de empuje para la fuerza de rotura
+La rotura ocurrió cuando el motor estaba produciendo 76 libras de empuje. El mismo programa de hoja de cálculo que producía la predicción para el empuje de los motores “G”, “H” e “I”
+fue usado para reproducir presiones y empuje para este motor. Para este motor de PVC de 1" al estar produciendo 76 libras de empuje, la presión tendría que ser 1330 psi en el momento de la rotura.
+Este dato puede extenderse para estimar la presión de rotura de la tubería de PVC de 1-1/4".
+La presión de rotura de la tubería para cualquier espesor de pared dado es inversamente proporcional a su DI. Es decir, a mayor DI de la tubería para un espesor de pared fijo, es más débil su presión
+de rotura. Por consiguiente, puede estimarse que la tubería de PVC de 1-1/4" tiene una presión de
+rotura de 978 psi bajo las condiciones de operación de estos motores (*5).
+Sabiendo la fuerza de rotura de la cubierta del motor se puede proporcionar alguna estimación del margen de seguridad.
+
+Margen de seguridad
+
+Motor G
+2,48
+
+Motor H
+1,72
+
+Motor I
+1,50
+9
+
+Sería bueno si el margen para los motores “H” e “I” fueran mejores que los mostrados aquí,
+pero no ha habido nunca una rotura de ninguno de estos motores cuando el diseño proporcionado en
+este artículo se ha seguido fielmente. Se reconoce que cada individuo tiene su propia manera de
+hacer las cosas y a veces puede ser necesario hacer substituciones de materiales. Por consiguiente,
+se recomienda realizar pruebas estáticas en su motor antes de lanzar un cohete. Es mejor tener una
+rotura en la tierra que destruir un cohete en el aire. Una vez que usted logra un diseño fiable, es importante ser consistente en su diseño y proceso de armado. Incluso las variaciones ligeras de un diseño probado pueden ser catastróficas.
+También debe notarse que cuando las tuberías de PVC fallan bajo presión, se rompen en
+muchos pedazos de bordes afilados. Esto hace a estos motores potencialmente peligrosos. También,
+cuando la cubierta se rompe las tensiones se ext ienden a las cubiertas de los extremos (tapas) y estas
+se rompen tanto como la cubierta.
+
+B) La tobera:
+
+La tobera es una boquilla de Laval convergente-divergente puesta dentro de la cubierta del
+motor y retenida en esa posición por una tapa de PVC en la que se taladra un agujero a través del
+extremo para permitir el flujo de gases de descarga. La sección convergente de la tobera forma un
+ángulo de 60º con el eje de la tobera y la sección divergente, un ángulo de 15º con el mismo eje. La
+proporción de expansión de la salida va desde 4:1 para los motores “G” y “H” hasta 3:1 para el motor “I”. Arandelas de acero forman la garganta de la tobera para eliminar la corrosión en esta región.
+
+Tobera
+
+El material usado para modelar estas toberas es concreto. El hormigón puede comprarse como CEMENTO RÁPIDO ó CEMENTO DE ANCLAJE hechos por Laboratorios de Gilsonite Unidos (UGL) bajo la marca de fábrica DRYLOK. Existen otros cementos de secado rápido en el me rcado. Depend iendo de la temperatura del ambiente el CEMENTO RÁPIDO seca en aproximadamente 5 minutos y el CEMENTO DE ANCLAJE toma aproximadamente 10 a 15 minutos. Hay
+otros fabricantes que realizan estos tipos de hormigón. La PIEDRA de DURHAM y la MASILLA
+DURA AL AGUA son otras mezclas y materiales al agua moldeables que podrían usarse.
+
+10
+
+Cemento rápido y cemento de anclaje
+Ninguno de estos materiales de modelar puede resistir la acción erosiva de los gases de la
+descarga. Para estabilizar la corrosión en la tobera, se agregan arandelas de acero en el hormigón, a
+fin de mantener el diámetro de la garganta constante durante la combustión del propele nte. La tabla
+siguiente da el tamaño de arandelas que forman la garganta de la tobera para cada uno de los motores. Se gradúan las arandelas por el tamaño de la tobera con que serán usadas. Puede haber varios
+DI reales diferentes y dimensiones de diámetro externo (DE) para arandelas del mismo tamaño dependiendo de la norma. Las arandelas usadas para estas toberas son arandelas planas de acero Norma americana (USS) que tienen un DI de 1/16" (0,0625 in). En la mayoría de las ferreterías la variedad de arandelas planas de acero son del tipo USS. Si se siguen otras normas, escoja arandelas
+con el DI real tal como se muestra debajo.
+
+Arandela plana de acero USS – Tamaño
+Agujero central real DI
+
+Motor “G”
+3/16"
+0,250 in (1/4")
+
+Motor “H”
+1/4"
+0,312 in (5/16")
+
+Motor “I”
+3/8"
+0,437 in (7/16")
+
+Otro problema con el hormigón es que no adhiere bien al PVC. Esto puede causar una separación diminuta entre el hormigón y la cañería de PVC en la que se puede desarrollar un soplo en la
+tobera por los gases de la descarga. Para mejorar la adherencia del hormigón al PVC, dentro de la
+cañería de PVC, en la región de la tobera, se pinta con barniz o látex / acrílico satinado o mate. La
+pintura se deja secar completamente antes de vaciar el hormigón en la cubierta. La pintura actúa
+como un imprimador que adhiere al PVC y proporciona una superficie en la que el hormigón puede
+adherirse para formar una unión firme entre el PVC y el hormigón.
+C) Grano propelente:
+El propelente es KN-Sorbitol (65/35) qué se funde en un grano autoestable tubular. Un grano autoestable es uno que se vacía por separado de la cubierta del motor y se inserta en el motor
+cuando este se arma. El grano no se une a la cubierta lo que permite a los gases de combustión rodear el grano y aplicar igual presión en todas las direcciones del grano. Para una explicación detallada acerca de por qué esto es importante, refiérase al artículo de Richard Nakka, Case-bonding of
+a High-Modulus Propellant Grain (Cubierta y unión de un grano propelente alta potencia).
+La configuración de grano para los motores “G” y “H” es tubular. El grano para el motor “I”
+es un multisegmento Bates formando un grano que se hace de dos granos “H”. Para aprender más
+sobre estos granos, refiérase al artículo de Richard Nakka, Rocket Motor Design Charts - Chamber Pressure (Proyecto de motor cohete – La presión en la cámara). La superficie externa del grano
+se inhibe, así que sólo quema dentro del núcleo y en las superficies de los extremos. El inhibidor es
+un manguito de papel en el que el propelente se vacía. El manguito permite una protección térmica
+suficiente como para impedir a la superficie externa encenderse.
+11
+
+Peso del propelente
+Número de segmentos
+Longitud del grano
+Diámetro exterior del grano
+Diámetro del núcleo
+Peso para la preparación
+
+Motor “G”
+125 gramos
+1
+7 in
+0,994 in
+0,375 in (3/8")
+150 gramos
+
+Motor “H”
+222 gramos
+1
+7,5 in
+1,25 in
+0,5625 (9/16")
+250 gramos
+
+Motor “I”
+444 gramos
+2
+15 in
+1,25 in
+0,5625 (9/16")
+250 gramos (c/u)
+
+Más propelente de lo que realmente se necesita es mezclado en la preparación de la colada
+del grano. Este propelente extra permite tener en cuenta los posibles derrames y pérdidas. El grano
+también se estaciona un cierto tiempo y entonces se adapta a la longitud requerida, esto es así para
+tener en cuenta la pérdida que el encogimiento agrega.
+El autor no ha usado dextrosa o sacarosa en estos motores, ya que la actuación y fiabilidad
+con estos propelentes no le son conocidas.
+
+NO USE PROPELENTES BASADOS EN SACAROSA EN ESTOS MOTORES
+UNA EXPLOSIÓN PUEDE OCURRIR.
+Richard Nakka
+
+D) El cierre del extremo superior:
+El cierre del extremo superior contiene un grano de retraso y la carga de eyección para la
+expulsión de un paracaídas después que el cohete ha tenido la oportunidad de volar hasta cerca de la
+cota de altitud máxima. El grano de retraso es armado en un pedazo de cañería de agua de PVC de
+1/2" que se comprime alrededor de su centro para formar una restricción. Un grano de retraso de
+base epoxi es colocado dentro del extremo de la cañería y la restricción sostiene y retiene el grano
+de retraso. Un agujero se taladra en el extremo superior del grano de retraso para imponer el tiempo
+de retraso. El espacio sobre el grano de retraso se rellena de una carga de eyección de pólvora negra. La pólvo ra negra se enciende desde el fondo del agujero realizado en el extremo superior del
+grano cuya forma genera un tapón que dirige los gases de la eyección para causar la eyección del
+paracaídas.
+Un corte de una cupla de PVC de 1/2" se encola a la cañería de 1/2" y este conjunto se inserta a través de un agujero taladrado en la tapa de cierre. El cuello actúa como un anillo de captura
+para prevenir al conjunto desprenderse a causa de la presión interna del motor. Silicona de alta temperatura se usa para sellar el espacio entre la tapa de cierre y el conjunto del grano de retraso. El
+mismo conjunto de grano de retraso encajará dentro de una tapa de cierre de 1" o de 1-1/4", para
+que pueda usarse con los tres motores.
+Una arandela separa el conjunto de grano de retraso de la cámara de la combustión. El tamaño de la arandela depende del tamaño de la tapa de cierre. Para la tapa de 1", se usa una arandela
+plana USS de 7/16". Para los de 1-1/4", se usa una arandela de ala ancha de 1/2" x 1-1/2". La arandela sirve para 2 funciones. Primero, protege y ayuda a sellar el conjunto de grano de retraso del
+calor directo y de los gases de la cámara de combustión. Segundo, cuando los granos de retraso basados en epoxi se queman producen una ceniza pesada que tiende a dividirse en hojuelas y esto extingue el grano de retraso. La arandela previene la división en hojuelas de la ceniza y por lo tanto el
+grano de retraso sigue quemando. El cierre del extremo superior junto con el conjunto de retraso, se
+adhieren en la cubierta durante el armado final del motor.
+
+12
+
+Conjunto de cierre del extremo superior
+El grano de retraso es una mezcla de Nitrato de potasio y azúcar impalpable de confitería.
+Epoxi rápido (DEVCON 5-MINUTE) es mezclado con la composición de KN-azúcar como agente
+de unión y pega mento a la cañería de 1/2". La elección del epoxi es muy importante. Si usted es
+incapaz de localizar el epoxi de DEVCON intente otras opciones de adhesivos epoxi. El epoxi para
+sellado y para laminado de madera no puede usarse. La velocidad de quemado a presión elevada de
+algunos de estos epoxis es demasiado rápid a para ser conveniente para un grano de retraso.
+La siguiente es una tabla con el tiempo de retraso redondeado al segundo entero más cercano desde la ignición hasta la eyección para una longitud dada de grano de retraso.
+Longitud del grano de retraso
+1/4"
+3/8"
+1/2"
+
+Tiempo a la ignición
+9 segundos
+11 segundos
+13 segundos
+
+Estos tiempos son solo estimados. Algo de experimentación se necesitará para encontrar retrasos más precisos en su motor en particular. Sin embargo, debe comprenderse que un cohete viaja
+sólo 64 pies verticales durante los últimos 2 segundos de vuelo antes de alcanzar el apogeo y sólo
+16 pies durante el último segundo. Por consiguiente, si la eyección ocurre prematuramente 2 segundos antes del apogeo, el cohete no habrá alcanzando su altitud máxima solo por 64 pies.
+
+13
+
+Herramientas
+Para producir los motores de PVC de una manera consistente se sugiere realizar las siguie ntes herramientas para ayudar en la construcción. Estas herramientas no sólo darán resultados estables, también acelerarán la construcción. Lo que sigue es una lista de estas herramientas.
+1.
+2.
+3.
+4.
+5.
+6.
+
+Centrador.
+Molde de la tobera y guía de la garganta.
+Cortador divergente.
+Soporte de la cubierta y varas de extracción del núcleo.
+Molde para el manguito.
+Caja de almacenamiento del grano propelente.
+
+Además de las herramientas, sería aconsejable adquirir una caja de corte (*6) para cortar la
+cañería de PVC y las secciones cortas de cuplas de PVC. Estos cortes necesitan ser hechos a escuadra de la cañería o la cupla. Hacer los cortes a escuadra, a mano libre, con una sierra u otro tipo de
+serrucho puede ser muy difícil. La caja de corte hará los cortes de la cañería y cuplas de PVC fáciles
+y exactos.
+Para medir el propelente y los ingredientes de la mezcla de retraso, se recomienda obtener
+una balanza con exactitud de 0,1 gramo. Una búsqueda en Internet revelará varias fuentes para balanzas que pueden comprarse por menos de U$S 100.
+1. Centrador:
+El centrador guía el taladro para perforar un agujero de 1/8" en el centro exacto del extremo
+de la tapa. Este agujero de 1/8" es una guía para efectuar perforaciones más grandes en la tapa de la
+tobera o para armar el grano de retraso. La herramienta de centrado se inserta en la tapa y una mecha de 1/8" se guía a través de la herramienta para realizar el agujero. Un anillo centrador se requiere para la tapa de 1" y otro para la tapa de 1-1/4".
+
+Centrador para realizar el agujero guía
+El centrador está hecho fijando una arandela en ambos extremos de una longitud corta de
+cañería de PVC. El DI de las arandelas es tal que sitúan una guía con un DI de 1/8" para guiar el
+taladro. El epoxi es lo tradicional para fijar las arandelas y la guía a la cañería.
+
+14
+
+Armado del centrador
+Es difícil dar una inscripción exacta de los materiales exigidos para hacer el centrador, pues
+esto depende de la disponibilidad de apropiadas arandelas de ala ancha. Estas arandelas tienen un
+DI pequeño comparado con el DE y proveen una gran superficie para fijar tornillos en materiales
+suaves. El DI de estas arandelas se clasifica según un tamaño 1/32" más grande que el tornillo para
+el que se usan. Así una arandela de 1/4" x 1" tiene, realmente, un DI de 9/32". Idealmente deberá
+usar arandelas de 1/8" x 1" y 1/8" x 1-1/14". Si usted es incapaz de encontrar estas, clasifique las
+arandelas según el tamaño y use las arandelas con el DI más pequeño que pueda encontrar, pero
+nunca de menos de 1/8" (real 5/32"). El centrador puede acomodarse a cualquier tamaño que usted
+encuentre.
+Lista de materiales:
+Motor G
+2 arandelas de ¿? x 1"
+Tubería de PVC de 1"
+y 1-3/4" de longitud
+Tubo de latón de DE = 5/32"
+y subsiguientes en caso necesario
+Cemento epoxi
+Cinta de enmascarar
+
+Motor H e I
+2 arandelas de ¿? x 1-1/4"
+Tubería de PVC 1-1/4"
+y 1-3/4" de longitud
+Tubo de latón de DE = 5/32"
+y subsiguientes en caso necesario
+Cemento epoxi
+Cinta de enmascarar
+
+El centrador es hecho colocando los tubos de latón en secuencia, uno dentro del otro, y soldándolos para formar una sola unidad. El tubo de latón está disponible en las tiendas de aficionados.
+Esta tubería tiene un espesor de pared de 1/64" y está disponible en múltiplos de 1/32" de DE, es
+decir 5/32", 3/16", 7/32", etc. Usted tendrá que obtener los tubos de latón necesarios dependiendo
+del DI de las arandelas que haya podido encontrar. Empiece con 5/32" de DE (1/8" DI) y coloque
+en capas concéntricas adicionales las tuberías hasta que usted consiga un DE tal que empareje el DI
+real de la arandela.
+Corte el tubo, con el DE más grande, de 1-3/4 " de longitud. Corte el de DE más pequeño en
+la secuencia ligeramente más largo que el anterior. De esta manera, cua ndo la tubería se apila, los
+pedazos pueden hacerse sobresalir en forma de escalones en un extremo. Caliente la tubería con un
+soldador y aplique soldadura a la sección escalonada, la soldadura unirá a los tubos todos juntos.
+Nota: Una herramienta Dremel con una rueda cortante abrasiva generalmente es necesaria
+para cortar la tubería de latón. Sin embargo, otra manera de cortar los tubos de latón es con un cuchillo dentado. Ponga la tubería en una superficie plana. Enrolle papel alrededor de la misma y deslice la hoja del cuchillo de un lado al otro de la tubería, cortándola. Con los papeles la hoja del cuchillo seccionará la tubería dejando un borde liso.
+
+15
+
+Las arandelas necesitan encajar ajustadamente dentro de los extremos de la tubería de PVC,
+puede ser necesario enrollar pedazos cortos de cinta de enmascarar dentro de la cañería para construir el espesor de pared necesario. Ponga los pedazos de cinta de extremo a extremo y asegúr ese
+que la cinta queda firme y que no haya ninguna figura desigual o protuberancias. Después de insertar las arandelas, inserte el centrador a través de las arandelas y encole todo el conjunto con epoxi.
+2. Molde de la tobera:
+Este molde se usa para formar la convergencia y la garganta de la tobera. Un inserto para la
+garganta es colocado encima de una guía apropiada y asegurado en su posición por el molde de la
+tobera, el conjunto entero se inserta a través del extremo superior de la cubierta del motor. Se coloca el hormigón en la cubierta a través de un agujero en la tapa del extremo. Cuando el hormigón
+empieza a fraguar, la guía es liberada dejando el inserto de la garganta dentro. El molde entonces se
+retira de la cubierta dejando el hormigón y el inserto de la garganta dentro. Un molde de tobera es
+necesario para la cubierta de 1" y otro para la de 1-1/4". Los moldes son clavijas de madera con un
+DE ligeramente más pequeño que el DI de la cubierta de PVC que se usará. Una vara de apoyo sobresale en un extremo del molde para afirmar la guía de la garganta y el inserto de la garganta. La
+forma convergente de la tobera se talla en la clavija alrededor de la vara de apoyo. Lo siguiente es
+un dibujo del molde de la tobera, la guía de la garganta y las dimensiones críticas.
+
+Molde de la tobera
+
+Guía de la garganta
+Dimensión
+A
+B
+C
+D
+E
+
+Motor G
+1/4"
+5/32"
+3-1/8"
+1/4"
+7/8"
+
+Motor H
+3/8"
+1/4"
+2-5/8"
+5/16"
+1"
+
+Motor I
+3/8"
+5/16"
+2-3/8"
+7/16"
+1-1/8"
+
+Las guías de la garganta se usan colectivamente al agruparse en los moldes de tobera para
+los motores “H” y el “I”. La guía del motor “G” se usa dentro de la guía del “H” y las guías “G” y
+“H” dentro de la guía del motor “I”. Sus longitudes son tales que ellas se escalonan una dentro de la
+otra.
+16
+
+Lista de materiales:
+Motor “G”
+Clavija de madera de 1"
+Vara de acero de 5/32" x 3"
+Tubo de latón de 3/16" x 3-1/8"
+Tubo de latón de 7/32" x 3"
+Tubo de latón de 1/4" x 2-7/8"
+Adhesivo con cianoacrilato
+Cinta de enmascarar
+Centrador de 1"
+Cañería de PVC de 1" x 12"
+Cupla de PVC de 1"
+Mecha de 1/8" x 6"
+
+Motor “H” e “I”
+Clavija de madera de 1-1/4"
+Vara de acero de 5/32" x 3"
+Tubo de latón de 9/32" x 2-5/8"
+Tubo de latón de 5/16" x 2-1/2"
+Papel carta de 8-1/2" x 11"
+Adhesivo con cianoacrilato
+Cinta de enmascarar
+Adhesivo en spray (3M Súper 77)
+Centrador de 1-1/4"
+Cañería de PVC de 1-1/4" x 12"
+Cupla de PVC de 1-1/4"
+Mecha de 1/8" x 6"
+
+Motor “I” (guía sola)
+Tubo de latón de 11/32" x 2-3/8"
+Tubo de latón de 3/8" x 2-1/4"
+Tubo de latón de 13/32" x 2-1/8"
+Tubo de latón de 7/16" x 2"
+La mayoría de los procedimientos para hacer los moldes de 1-1/4" y de 1" son los mismos,
+teniendo en cuenta los tamaños según el molde a realizar. Use las dimensiones del esquema como
+una guía.
+Las clavijas que se usen deben encajar en los moldes cómodamente, pero sin demasiada ho lgura. Se ha encontrado que el DI real de la cañería de PVC varía un poco de tanda en tanda dentro
+del mismo fabricante y también entre diferentes fabricas de cañería de PVC. Los ajustes finales del
+molde de la tobera en la cubierta serán logrados envolviendo con cinta de enmascarar alrededor del
+molde hasta que encaje ajustado dentro de la cañería. La clavija de 1", tal como se compra en la
+tienda, presenta un diámetro adecuado para la cubierta de PVC de 1". Sin embargo, la clavija de 11/4" presenta un DE demasiado pequeño comparado al DI real de la cañería de PVC de 1-1/4". Para
+compensar para esta diferencia será necesario agrandar el diámetro de la clavija. Se logra enrollando hojas de papel consecutivas hasta el diámetro apropiado. Corte las hojas de papel de carta a un
+ancho de 7". Rocíe el adhesivo en spray en un lado del papel y enrolle el papel alrededor del extremo de la clavija. Deje que el adhesivo seque alrededor de 15 - 20 segundos antes de enrollar la clavija. Esto permitirá que el adhesivo actúe mejor. Agregue varias hojas hasta que el molde entre flojamente en la cañería. Una vez que el tamaño apropiado se ha logrado, sature el papel con cola a fin
+de impermeabilizar y proteger.
+Ubicar y taladrar el agujero para la vara de apoyo son las tareas más exigentes al hacer el
+molde de la tobera. Este agujero debe estar centrado exactamente en el extremo de la clavija. Cua lquier desvió situará la garganta de la tobera fuera del centro. Esto producirá un empuje lateral que
+podría causar que el cohete no vuele en línea recta.
+El centrador puede usarse para posicionar el agujero para la vara de apoyo. Inserte el centrador en un extremo de una cupla y un trozo de cañería de 12" de longitud en el otro extremo. Inserte
+la clavija en la cañería hasta que descanse contra el centrador. Si la clavija tambalea a los lados dentro de la cañería, envuelva cinta de enmascarar alr ededor del extremo superior de la clavija y de
+nuevo aproximadamente 10" debajo de ese extremo, utilice lo suficiente para que la clavija encaje
+ajustadamente y no tambalee.
+Esto asegurará que la clavija este exactamente posicionada en el centro de la cañería. Use el
+centrador para taladrar un agujero de 1/8" de diámetro y una profundidad de aproximadamente 1".
+Quite la clavija y agrande el agujero de 1/8" a 5/32".
+17
+
+Inserte una vara de acero de 5/32" en el agujero de un largo tal que sobresalga por lo menos
+2". Encole la vara en ese lugar con adhesivo con cianoacrilato. Si usted es incapaz de encontrar una
+vara de acero de 5/32" utilice un fragmento de mecha de ese diámetro como alternativa.
+La dimensión “A” en el dibujo del molde de la tobera es la longitud convergente. Talle la
+convergencia con un cuchillo y termine con papel de lija. Sature esta superficie con una superficie
+delgada de adhesivo con cianoacrilato para impermeabilizar la madera.
+Suelde las 3 guías de tubo de latón que usará según la lista de materiales. El procedimiento
+para hacer estas guías es igual al que se usó para hacer las guías para el centrador. Quite las salpic aduras y/o excesos de soldadura para que las guías resbalen fácilmente entre ellas.
+Haga una marca en cada guía según la dimensión "E". Esta dimensión indica la posición del
+molde de la tobera dentro de la cubierta.
+Una vez usted está satisfecho con el molde de la tobera corte la clavija de 1" a una longitud
+15" y la clavija de 1-1/4" a 24".
+
+Molde y guías para los motores “H” e “I”
+3. Cortador divergente:
+La divergencia es formada en la tobera con un cortador divergente una vez que el molde de
+la tobera es retirado de la cubierta y mientras el hormigón todavía es dúctil. El cortador divergente
+es llevado, a mano, a través del agujero dejado por la guía de la garganta, al extraerla, hasta que el
+diámetro de salida de tobera correcto se alcanza. Un molde de plantilla clasificado según tamaño se
+sostiene en posición sobre la tobera para marcar el diámetro de salida.
+El cortador divergente se hace de una mecha tipo pala (*7) de 3/4". La punta de una mecha
+tipo pala tiene un ángulo aproximado al requerido para la divergencia. Desarrollando la hoja de la
+mecha, por extracción o rellenado, hacia una forma en “V” se da la forma al cortador divergente.
+Las plantillas para el diámetro de salida se hacen de cuadrados de 1-1/2" de lado de hojas de
+plástico delgadas, en los que un agujero de 1/2", 5/8" y 3/4" se taladran para los motores “G”, “H” e
+“I” respectivamente. Los cuadrados de plástico están cortados de recipientes desechables de plástico.
+
+Cortador divergente y plantillas de salida.
+18
+
+4. Soporte del molde y vara de extracción del núcleo:
+El soporte del molde sostiene el manguito inhibidor mientras se realiza la colada del propelente. La base del soporte es un pedazo de contrachapado de 1/2" en el que un agujero del tamaño
+de la vara de extracción ha sido taladrado. Un tubo de apoyo hecho de un pedazo de cañería de PVC
+del mismo diámetro que la cubierta de motor y de la longitud del grano propelente se mantiene apoyado encima del agujero gracias a un soporte cortado de una cupla de PVC. Papel encerado se usa
+para cubrir el agujero del soporte durante el proceso de colado del propelente. Después que el propelente es colado en el manguito inhibidor, la vara de extracción del núcleo se introduce a través del
+propelente suavemente, agujerea el papel encerado, y queda capturada y apoyada por el agujero de
+la base hasta que el propelente se endurece.
+
+Soporte del molde
+Lista de materiales:
+Motor “G”
+Motor “H” e “I”
+Contrachapado de 1/2" x 3-1/2" x 8"
+2 bloques de madera de 1-1/2" x 1-1/2" x 3-1/2" (cada uno)
+1 cupla de PVC de 1"
+1 cupla de PVC de 1-1/4"
+Cañería de PVC de 1" x 7"
+Cañería de PVC de 1-1/4" x 7-1/2"
+Mecha de 3/8"
+Mecha de 9/16"
+Pegamento epoxi
+Pegamento epoxi
+Vara de madera de 3/8" x 15" Vara de madera de 1/2" x 15"
+Tubo de latón de 9/16"
+Marque el centro de la base de contrachapado cruzando líneas diagonales (de esquina a esquina). Use las mechas recomendadas en la lista de materiales para taladrar un agujero en el centro
+de la base de madera. Los bloques de madera están cortados de varas de 1-1/2" x 1-1/2". Éstos son
+patas que elevan la base para que la vara de extracción del núcleo pueda introducirse a través del
+agujero de la base. Clave los bloques de madera en cada extremo de la base.
+Corte un anillo del extremo de la cupla de PVC de 5/16" de largo para el soporte del tubo.
+Coloque epoxi en la superficie cortada del anillo y encólelo sobre el agujero de la base centrándolo.
+Quite y limpie cualquier exceso de cemento que pueda haber quedado dentro del anillo o en su base.
+Nota: Sostener la cupla en la caja de corte para cortarla puede ser difícil. Inserte un pedazo
+corto de cañería en la cupla y otra cupla en el otro extremo de la cañería. Esto proporcionará un
+agarre extra mientras se corta la cupla.
+19
+
+La cañería de PVC será el tubo de apoyo para el manguito inhibidor. Esto completa el soporte del molde.
+La vara de extracción del núcleo para el motor “G” se hace de una clavija de 3/8". Talle una
+punta en un extremo para facilitar la introducción de la vara a través del propelente y para agujerear
+el papel encerado. La vara de extracción del núcleo para el motor “H” y el “I” se hacen usando tubos de latón de 9/16" y clavijas de 1/2". Deslice la clavija a través de la tubería hasta que 3/4" de la
+clavija se destaque de un extremo del tubo de latón. Fije con pegamento. Puede ser necesario envo lver cinta o empapelar alrededor de la clavija para mantener un buen contacto con el tubo. Talle una
+punta en los 3/4" de longitud de la clavija que se destaca del tubo. Endurezca las puntas de las varas
+de extracción del núcleo con adhesivo con cianoacrilato.
+5. El molde del manguito:
+Este molde es una forma en la que el manguito inhibidor se enrolla. El diámetro exacto del
+molde es determinado por ensayo y error y queda fijo cuando se puede enrollar un manguito que se
+deslice fácilmente en la cubierta del motor sin quedar suelto.
+Lista de materiales:
+Motor “G”
+Vara de madera de 3/4" x 5-3/4"
+Papel kraft
+Adhesivo en spray (3M Súper 77)
+Papel carta de 8-1/2" x 11"
+
+Motor “H” e “I”
+Vara de madera de 1-1/4" x 6-1/4"
+Papel kraft
+Adhesivo en spray (3M Súper 77)
+Cartulina Nº 100 o carpeta de archivo
+
+Las clavijas de madera son un punto de arranque para los moldes. El papel kraft está cortado
+en tiras 10" de longitud y 1/2" más ancho que la longitud de las clavijas. El adhesivo en spray se usa
+para adherir el papel a la clavija. Deje que el adhesivo en spray seque unos segundos antes de enrollar el papel en la clavija. Asegúrese que el papel se enrolla uniformemente en la clavija haciendo
+fuerza. Si el papel no se enrolla uniformemente, el manguito puede empezar a adelgazar y cuando
+esté terminado no tendrá un diámetro uniforme de un extremo al otro. Si esto pasa, vuelva a emp ezar. Después de enrollar cada hoja de papel en el molde, arregle el exceso de papel de cada extremo
+del molde.
+Una vez que usted tiene un molde que piensa está a punto y que es del tamaño correcto; enrolle un manguito inhibidor, para ver si encaja bien dentro de la cubierta. Los materiales del manguito inhibidor son diferentes para los distintos tamaños de grano, pero las técnicas son las mismas.
+Para el motor “G”, el manguito se realiza de un solo pedazo de papel de carta cortado a 7-1/4" x
+11". El papel se pone en una superficie plana y el molde del manguito se posiciona en un extremo
+por la dimensión estrecha del papel. El borde del papel se empieza a enrollar hasta que el borde del
+papel toca nuevamente en si mismo (una vuelta). Asegúrese que la fuerza entre el papel y el molde
+sea uniforme para impedir al manguito adelgazar hacia los extremos. Rocíe la superficie plana expuesta del papel con adhesivo. Una capa ligera es suficiente, pero asegúrese de rociar bien todos los
+bordes y esquinas. También rocíe en el área bajo el molde donde la primera vuelta se encuentra
+nuevamente con el papel. El molde del manguito es más corto que el ancho del papel para que el
+papel actúe como una máscara para impedir que el adhesivo entre en el manguito y cause que el
+molde y el manguito se peguen. Deje que el adhesivo seque 15 - 20 segundos antes de completar el
+enrollado del papel. Deje curar al adhesivo un tiempo extra antes de quitar el maguito del molde.
+Si el molde es demasiado pequeño, enrolle otra capa de papel kraft en el mismo hasta que
+pueda hacer un manguito inhibidor que se deslice fácilmente en la cubierta del motor, pero que no
+quede suelto. El manguito no debe salirse de la cubierta del motor por su propio peso. Si el manguito es demasiado grande, usted tendrá que volver a empezar.
+El molde del manguito para los motores “H” e “I” se hace de la misma manera que el “G”,
+sólo que se enrollan hojas de cartulina de 7-3/4" x 10". Para hacer el ma nguito, enrolle las capas
+sucesivas de papel kraft en la clavija de 1-1/4" hasta que pueda enrollar un manguito inhibidor del
+20
+
+tamaño correcto. Cartulina de calidad grado Nº 100 puede obtenerse en hojas de 24" x 36" en tiendas de impresión u otras casas de suministro de papel. Una fuente alternativa para la cartulina son
+las carpetas para archivo de “Manila” que pueden comprarse en cualquier tienda de papelería.
+6. Caja de almacenamiento del grano prope lente:
+Una vez que el grano propelente se cuela, puede ser necesario guardarlo por un periodo indefinido de tiempo. Puesto que los propelentes de azúcar son higroscópicos y absorben agua del aire
+el mejor lugar para guardar los granos propelentes es en una caja desecadora para almacenamiento.
+Un desecador puede hacerse de un envase tipo Tupper. Éstos están disponibles en medidas de 5" de
+profundidad, 9" de ancho y 14" de largo y tiene tapas firmes. La cosa más fácil de hacer es poner un
+plato lleno de material desecante dentro de la caja junto con los granos propelentes. El desecante
+absorbe la humedad del aire y mantiene los granos secos. También se cree que esta sequedad ayuda
+a curar el propelente sacando la humedad restante del grano.
+Un desecador más eficaz puede hacerse del mismo Tupper. En lugar de un plato de desecante, el fondo entero de la caja se cubre con desecante. Esto expone más de-secante al aire que lo que
+puede lograrse con un plato. Un estante se ajusta sobre el desecante para elevar los granos propelentes. El estante se hace de malla de alambre de cuadrados de 1" que se corta a las dimensiones del
+interior de la caja. La malla se apoya a 1" del fondo de la caja por dos tiras de madera que se fijan
+dentro de la caja. Una capa de desecante se extiende en el fondo de la caja y el estante se pone en
+los apoyos de madera encima del desecante.
+Hay varios desecantes que podrían usarse, pero el más barato y prontamente disponible es
+cloruro de calcio (*8). El cloruro de calcio puede obtenerse en las tiendas de agricultura donde se
+vende para extender en caminos polvorientos para controlar el polvo. El cloruro de calcio absorbe
+humedad del aire y guarda la humedad en el camino. Otra fuente sería una tienda de accesorios para
+piletas de natación. El cloruro de calcio para las piscinas se usa para aumentar el calcio que endur ece el agua de la piscina y se ve nde bajo varias marcas de fábrica. El cloruro de calcio también se
+vende como un licuante de hielo para las aceras.
+Es importante guardar los desecantes cerrados en todo momento ya que el cloruro de calcio
+absorberá humedad continuamente del aire. Cuando el cloruro del calcio absorbe humedad, se pone
+blando y debe reemplazarse. Otros desecantes distintos, no el cloruro del calcio, pueden secarse en
+un horno y re-usarse.
+
+Caja de almacenamiento del grano propelente con el desecante
+21
+
+Construcción
+Las instrucciones acerca de cómo construir los motores de PVC son genéricas para los tres
+tamaños de motor. Las técnicas aplicadas a un tamaño específico pueden utilizarse para los otros.
+La construcción básica consiste en la preparación de la cubierta, la tobera, el grano propele nte, el cierre del extremo superior y se completa el motor en un armado final.
+A. Cubierta y tobera:
+1. Preparado de la cubierta del motor:
+Lista de materiales:
+•
+•
+•
+•
+•
+•
+•
+•
+
+Cañería de PVC de 1" y 1-1/4" Sch 40.
+Tapas de PVC de 1" y 1-1/4".
+Centrador.
+Pegamento y limpiador para PVC.
+Mecha de 1/8" x 6" y taladro eléctrico.
+Mecha tipo pala de 3/4" y de 7/8".
+Pintura látex para interior, acabado satinado o mate.
+Papel de lija Nº 120.
+
+Escoja el motor del tamaño que usted desea construir, seleccione y corte la cañería de PVC a
+la longitud apropiada.
+
+Tamaño de cañería
+Longitud de la cubierta
+
+Motor “G”
+1" Sch 40
+8-1/4"
+
+Motor “H”
+1-1/4" Sch 40
+9-1/4"
+
+Motor “I”
+1-1/4" Sch 40
+17"
+
+Use el papel de lija para esmerilar (opacar) la superficie interior de un extremo de la cañería
+de PVC a una profundidad de 1-1/2". Pinte esta superficie con el látex. Deje secar durante la noche.
+Taladre un agujero de 1/8" (para guía de la mecha tipo pala) en la tapa usando el centrador y
+la mecha de 1/8". Use la mecha tipo pala apropiada para taladrar un agujero más grande a través de
+la tapa, usando el agujero anterior como guía.
+
+Tamaño de la mecha tipo pala
+
+Motor “G”
+3/4"
+
+Motor “H” e “I”
+7/8"
+
+Se debe tener cautela cuando se usa la mecha tipo pala con PVC. La mecha tiende a agarrar
+el PVC suave y puede adherirse y sacar el taladro de las manos. Agarre la tapa en un tornillo de
+banco (morsa) al realizar estas operaciones.
+Después que la pintura ha secado, use el limpiador de PVC y luego el cemento para encolar
+la tapa en el extremo pintado de la cubierta.
+2. Preparado del inserto para la garganta y moldeado de la tobera:
+Lista de materiales:
+•
+•
+•
+•
+
+Molde de la tobera y guía de la garganta.
+Arandelas para el inserto de la garganta.
+Adhesivo con cianoacrilato, calidad hobysta.
+Grasa para ejes.
+22
+
+Seleccione las 3 arandelas para el inserto de la garganta según el tamaño del motor.
+
+Arandela, de acero plana USS, para tornillo
+
+Motor “G”
+3/16"
+
+Motor “H”
+1/4"
+
+Motor “I”
+3/8"
+
+Pegue las arandelas juntas para formar el inserto de la garganta. Seleccione la guía de la garganta apropiada para el tamaño de la arandela y cubra un extremo de la guía con grasa. La grasa
+impide que las arandelas se adhieran a la guía. Apile las arandelas en la guía de la garganta encima
+del extremo engrasado. Aplique una gota de adhesivo al borde de las arandelas para que corra entre
+ellas. Espere 1 segundo y quite las arandelas de la guía. Limpie la grasa y cualquier depósito de
+pegamento seco de la guía.
+
+Preparando el inserto de la garganta
+Deje que el pegamento en las arandelas seque completamente. Quite cualquier resto de pegamento seco del DI del inserto con una trincheta. El inserto de la garganta debe resbalar fácilmente
+encima de la guía.
+Complete la preparación del molde de la tobera deslizando la guía de la garganta encima de
+la vara de apoyo del molde de la tobera y colocando el inserto de la garganta encima de la guía. El
+inserto debe descansar contra el molde de la tobera en la superficie convergente.
+
+Molde de la boquilla con el inserto
+23
+
+3. Moldeo de la tobe ra:
+
+Lista de materiales:
+•
+•
+•
+
+Cemento rápido o cemento de anclaje.
+Vaso y palillos descartables.
+Cortador divergente y plantillas de salida de la tobera.
+
+Inserte el molde de la tobera armado a través del extremo de la tapa de la cubierta del motor
+para que la marca hecha en la guía de la garganta esté a nivel con la superficie externa de la tapa.
+Esta marca regula la longitud de la tobera dentro de la cubierta del motor. El molde de la tobera no
+debe tambalearse a los lados dentro de la cubierta. Si lo hace, se quita el molde y se envuelve una
+capa o dos de cinta de enmascarar alrededor del molde por debajo de la sección convergente. El
+molde debe encajar ajustadamente dentro de la cubierta sin permitir ningún movimiento de ida y
+vuelta. Sostenga el molde de la tobera en un tornillo de banco y deje que la cubierta descanse enc ima de las mandíbulas del tornillo de banco.
+
+Molde de la tobera colocado en la cubierta
+
+Mezcle el hormigón en el vaso descartable. La mezcla no debe ser muy líquida, pero debe
+estar lo bastante liviana para que el hormigón pueda trabajarse y deslizarse bajo el inserto en el área
+convergente. Cargue el hormigón en el espacio entre la guía y la tapa y empújelo en el área conve rgente con un palillo. Es importante que el área convergente se llene completamente de hormigón. El
+motor “I” es especialmente difícil ya que el DE grande del inserto de la garganta deja un lugar pequeño para empujar el ho rmigón por alrededor. Llene completamente el volumen para la tobera
+hasta el extremo superior de la tapa.
+
+24
+
+Cargando el concreto en la cubierta
+Si usted usa cemento rápido, trabaje velozmente para evitar que el hormigón se consolide totalmente antes de entrar en la tobera. Esto es especialmente verdad en verano en donde las temperaturas calurosas acortan el tiempo de curado del hormigón. Si el concreto endurece antes de que haya
+tenido una oportunidad para adherirse al cebador de pintura, se puede crear un soplo en la tobera. Si
+usted encuentra que el cemento rápido endurece demasiado prontamente, use cemento de anclaje
+que tiene un tiempo de secado más largo.
+Cuando el hormigón empiece a ponerse firme quite la guía de la garganta. Use la plantilla de
+la salida más pequeña deslizándola encima de la guía de la garganta. Apriete contra el hormigón
+suavemente para prevenir que el inserto se mueva a través del hormigón y quite la guía. Con la guía
+de la garganta fuera, use un ligero movimiento de giro y quite el molde de la cubierta.
+
+Quitando la guía de la garganta
+Mientras el hormigón todavía esté relativamente suave, afiance la cubierta en un tornillo de
+banco con la tobera hacia arriba. Centre la plantilla de la salida apropiada encima del agujero dejado
+al salir la guía de la garganta. Gire el cortador divergente a mano profundizando en el hormigón
+hasta que se detenga debido a la plantilla de la salida.
+25
+
+Tamaño de la plantilla de salida
+
+Motor “G”
+1/2"
+
+Motor “H”
+5/8"
+
+Motor “I”
+3/4"
+
+Use una linterna eléctrica para iluminar con un rayo de luz desde abajo a través de la tapa y
+observar si el inserto esta cubierto con hormigón. Si el inserto queda expuesto en todo su DI, esta
+OK. Sin embargo, si se ve algo de metal de las arandelas hacia el DE del inserto estaría indicando
+que usted no consiguió que el hormigón cubra completamente por alrededor. Esto puede llevar a la
+tobera a generar un soplo, esta cubierta no debe usarse. Puede tomar varios intentos perfeccionar su
+técnica para hacer toberas.
+Deje al hormigón endurecer y secar durante, por lo menos, cuatro días.
+B. Grano propelente:
+El siguiente procedimiento es sólo una manera en la que el grano propelente puede prepararse. Usted puede tener su propia técnica para preparar el propelente. Sin embargo, se sugiere que una
+vez que usted tenga una técnica para preparar el propelente realice pruebas de velocidad de quemado de hebra para evaluar qué tan bien está preparando el propelente. Cuele una hebra o varilla de
+propelente en un molde de 1/4" x 1/4" x 3" hecho de tiras delgadas de madera clavadas a una base
+también de madera. Después que el propelente ha ya endurecido, quite la hebra del molde. Cuando
+el propelente esté curado totalmente, ponga dos marcas en la hebra aproximadamente a 1/2" de cada
+extremo. Encienda un extremo con una lámpara de soldar y use un cronómetro para medir el tiempo
+de quemado entre las dos marcas. De esto usted puede calcular la velocidad de quemado. El propelente de KN-Sorbitol debe tener una velocidad de quemado mínima de 0,102 pulgadas/segundo en
+aire abierto.
+1. Preparado del manguito inhibidor, el pie de moldeo y extracción del núcleo del propelente:
+Lista de materiales:
+•
+•
+•
+•
+•
+•
+
+Varas de extracción del núcleo.
+Moldes para el manguito.
+Papel encerado.
+Grasa para ejes.
+Adhesivo en spray, 3M súper 77.
+Cartulina y papel de carta.
+
+Enrolle el manguito inhibidor usando la misma técnica descripta al hacer los moldes del
+manguito. Corte las hojas de cartulina o papel de carta a los tamaños siguientes que dependen del
+grano que va a ser realizado. A lo sumo, las carpetas de archivo de papel Manila disponible en las
+tiendas de papelería son una alternativa a la cartulina regular.
+Motor “G”
+7-1/4" x 11" Papel de carta
+
+Motor “H” e “I”
+7-3/4" x 10" Cartulina
+
+Centre el molde del manguito en el ancho del papel o cartulina. Enrolle por el borde del papel, repetidas veces hasta que simplemente empiece a tomar forma. El papel debe estar firme contra
+el molde para que el manguito terminado no se achique y el DI terminado sea parejo de extremo a
+extremo. Pruebe enrollar “en seco” unas veces para estar seguro que el papel se posiciona apropiadamente en el molde del manguito. Cuando el papel esté completamente acomodado al molde, las
+capas de papel en el extremo del manguito deben estar una pegada a la otra. Desenrolle el manguito
+hasta la posición de comienzo, donde el borde del papel apenas da una vuelta y queda bajo el mo lde. Rocíe adhesivo encima de la superficie plana del papel, asegúrese de rociar también alrededor
+de los bordes y esquinas del papel. El molde es más corto que el ancho del papel para que, este último, actúe como una máscara que impida al adhesivo pegar el manguito al molde. Use sólo la can26
+
+tidad necesaria de adhesivo para humedecer el papel. Deje al adhesivo secar 15 - 20 segundos antes
+de enrollar y terminar el manguito.
+Deje al adhesivo secar unos minutos antes de quitar el molde. Use este tiempo para retocar
+cualquier arruga o burbujas y asegurarse que el borde este firme. Después de quitar el molde, deje
+secar al manguito durante varias horas.
+Ponga papel encerado encima del soporte de montaje. Empuje el tubo de apoyo en el soporte. El papel encerado cubrirá el agujero del soporte que se usará para centrar la vara de quitar el
+núcleo. Inserte el manguito inhibidor en el tubo de apoyo. El manguito debe extenderse 1/4" sobre
+el tubo de apoyo.
+
+Molde en su soporte
+Aplique grasa a la vara de extracción del núcleo. Esto impedirá que el propelente se pegue a
+la vara. Deje la vara a un lado. Se usará después que el propelente haya sido colado dentro del manguito.
+2. Preparado de los ingredientes secos :
+Lista de materiales:
+•
+•
+•
+•
+•
+
+Nitrato de potasio.
+Sorbitol.
+Molinillo de café.
+Balanza con exactitud de 0,1 gramo.
+Envase tipo Tupper.
+
+El Nitrato de potasio usado en estos motores es granulado y se usa como fertilizante. Se
+muele a un polvo fino en un molinillo de café y se cie rne a través de un colador de cocina de ala mbre. El Nitrato de potasio se procesa con el molinillo de café varias veces ha sta lograr una reducción
+completa de los gránulos a un polvo fino.
+El Sorbitol se compra en la tienda local de comidas naturistas. Sin embargo, si usted no puede encontrar Sorbitol localmente, este está disponible en Internet. El Sorbitol se usa como viene en
+la bolsa sin pre-procesar.
+27
+
+El Nitrato de potasio y el Sorbitol son mezclados en una proporción de 65/35, en peso, según la tabla siguiente.
+
+Nitrato de potasio
+Sorbitol
+
+Motor “G”
+97,5 gramos
+52,5 gramos
+
+Motor “H” e “I”
+162,5 gramos
+87,5 gramos
+
+Se ponen el Nitrato de potasio y el Sorbitol en un envase tipo Tupper y se agitan juntos, a
+mano, durante por lo menos 5 minutos.
+No mue la o mezcle el Nitrato de potasio y el Sorbitol juntos en el molinillo de café.
+3. Colado del grano propelente:
+Lista de materiales:
+•
+•
+•
+•
+•
+•
+
+Calentador eléctrico.
+Cacerolas de 3/4 y 1/4 de galón (*9) en un conjunto de olla doble.
+Cera en lata.
+Termómetro de cocina o de dulce, bueno, de por lo menos 300º F
+Cucharitas de té y palillos descartables.
+Envase para almacenar el grano.
+
+La mezcla de KN-Sorbitol se funde y se mezcla en el conjunto de olla doble, armado por las
+dos cacerolas, calentando el sistema con un plato caliente. El medio de traslado del calor es la cera.
+Se supervisa la temperatura de la cera cuidadosamente con un termómetro de dulce y se mantiene a
+las 250º F durante el proceso de fusión. La punta del termómetro se posiciona a la misma profund idad en la cera que tiene el fondo de la cacerola pequeña.
+Una vez que la cera ha alcanzado una temperatura de 250º F, la mezcla de KN-Sorbitol se
+vierte en la cacerola pequeña. La mezcla se revuelve continuamente con una varilla de madera de
+1/2" hasta que todo el Sorbitol se haya fundido y la mezcla tenga una consistencia homogénea. Continúe revolviendo durante unos minutos para asegurarse que el nitrato de potasio y el Sorbitol fundido están bien mezclados.
+La masa fundida de KN-Sorbitol es espesa y pegajosa. La mejor manera de transferir el propelente fundido al manguito es cargándola con una cucharita. Use el palillo descartable para empujar el propelente fuera de la cuchara y dentro del manguito. El palillo también se usa para aglomerar
+el propelente en el fondo del manguito y para quitar las burbujas de aire. Trabaje rápidamente, pero
+no se apresure. Uno de las ventajas del Sorbitol es su tiempo extendido de plasticidad.
+Una vez que todo el propelente ha sido cargado y aglomerado, empuje dentro del molde la
+vara de quitar el núcleo, el lado puntiagudo primero, bajando a través del centro del molde para
+formar el núcleo del grano. Sostenga por la parte superior el molde y empuje hacia abajo para impedir que el propelente fundido escape. Empuje la vara despacio para que las burbujas de aire puedan subir a medida que la vara cambia de lugar el propelente. Una vez que la punta de la vara para
+extraer el núcleo alcance el fondo del molde, empuje la vara a través del papel encerado, dentro del
+agujero. Este agujero centrará y apoyará la vara de extraer el núcleo durante el inicio de curación
+del grano. Puesto que usted será incapaz de ver el agujero, puede que tenga que “cazarlo” moviendo
+de lado a lado la vara de extracción del núcleo por el fondo del molde y emp ujando ligeramente
+hasta que sienta que la vara agujerea el papel encerado. La punta aguzada de la vara la guiará en el
+agujero. Centre la vara de extracción del núcleo en el extremo superior del grano.
+Deje que el grano se enfríe y cure durante, por lo menos, una hora o hasta que el grano haya
+alcanzado la temperatura del cuarto. Quite la vara de extracción del núcleo y el tubo de apoyo que
+sostiene al grano, en el soporte del molde. Quite el papel encerado. Saque el grano del tubo de apoyo. Usted debe empujar el grano con el extremo llano del molde de la tobera para romper cualquier
+adherencia que pueda haberse formado, entre el tubo de apoyo y el manguito, por el propelente fun28
+
+dido. Maneje el grano suavemente pues estará relativamente flexible. Limpie cua lquier resto de
+propelente del tubo de apoyo y re- inserte el grano, desde atrás, en el tubo de apoyo. Ponga el grano
+y el tubo de apoyo en el envase de almacenamiento con desecador y deje que el grano cure y se endurezca por lo menos por 24 a 48 horas. El desecante también quitará humedad del grano.
+Una vez que el propelente ha endurecido, adapte el extremo superior del grano con un corte
+de sierra a la longitud correcta, que depende del tamaño de motor.
+
+Longitud del grano
+
+Motor “G”
+7"
+
+“H” e “I”
+7-1/2"
+
+Los granos terminados deben guardarse en el envase con desecador hasta el armado final del motor.
+C. Cierre del extremo con grano de retraso:
+1. Preparado del grano de retraso:
+Lista de materiales:
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+
+Cañería de PVC de 1/2".
+Pegamento Epoxi 5-Minutos, Devcon, en dispensador de jeringa doble.
+Nitrato de potasio.
+Azúcar impalpable de confitería.
+Vaso de papel descartable y palillo.
+Balanza de viga de equilibrio, con exactitud de 0,1 gramos.
+Molinillo de café.
+Papel de lija Nº 120.
+Papel encerado.
+Mecha de 1/8".
+Cinta de enmascarar.
+Clavija de madera de 7/16" x 6".
+Bandas elásticas Nº 64.
+Cacerola con agua hirviendo.
+
+Use el molinillo de café para moler el Nitrato de potasio en polvo fino. Combine 70 gramos
+de Nitrato de potasio con 30 gramos de azúcar impalpable en un recipiente y agite durante, por lo
+menos, 5 minutos a fin de conseguir una buena mezcla de los dos ingredientes. Esto producirá 100
+gramos de la mezcla que será bastante para hacer 15 o 16 granos de retraso. Puesto que esta mezcla
+se combinará con epoxi rápido, los granos de retraso se hacen de a uno. El polvo que no se use se
+deberá guardar en el envase con desecador. El desecante mantendrá el polvo seco y evitará que se
+aglutine.
+Corte un trozo de cañería de PVC de 1/2" a una longitud de 1-1/2". La cañería deberá ser
+apretada para formar una restricción de 7/16" en su centro. La restricción mantendrá alejado el gr ano de retraso a fin de no ser expelido por la presión de los gases de la combustión. Para realizar
+esto, envuelva una banda elástica Nº 64 alrededor del centro de la cañería, por lo menos, 7 veces.
+Casi cualquier banda elástica funcionará, pero debe envolverse muy firme. Ponga la cañería con la
+banda elástica en agua hirviente. Dentro de aproximadamente 30 segundos la cañería empezará a
+angostarse bajo la tensión de la banda elástica. Después de aproximadamente 1-1/2 minuto, saque la
+cañería del agua y pruebe el tamaño de la restricción. Use la clavija de 7/16" como medida. La clavija no debe poder ser empujada a través de la cañería, esto indica que la restricción se ha apretado
+a menos de 7/16". Si la clavija encaja a través de la cañería, ponga la cañería nuevamente en el agua
+hirviente por unos segundos más, saque, y re-pruebe. Si después de 2 minutos la cañería no se ha
+apretado a menos de 7/16", saque y re-envuelva la cañería más firmemente con la banda elástica y
+póngalo nuevamente en el agua hirviente. Después que la cañería se haya apretado al tamaño apro29
+
+piado, permita que se enfríe, quite la banda elástica y pare la cañería sobre una superficie plana y
+encima del papel encerado en preparación para el colado del grano de retraso. Esta restricción puede
+realizarse, al mismo tiempo, en muchos pedazos de cañería.
+
+Restricción de la cañería
+La mezcla de KN-azúcar es combinada con el epoxi en una proporción de 3 partes a 1, en
+peso. Esta combinación se hace en cantidades pequeñas y requiere una balanza exacta. Las instrucciones siguientes son para una balanza de viga de equilibrio. Si usted está usando otro tipo de balanza, necesitará ajustar sus procedimientos de acuerdo con ella.
+Mida 6 gramos de la mezcla de KN-azúcar y colóquelo a un lado. Ponga una taza de papel
+en el plato de la balanza y ajuste el peso del contador para equilibrarlo. Agregue 2 gramos al peso
+indicado para la taza y ajuste el peso del contador a ese número. Coloque bastante epoxi en la taza
+hasta equilibrar la balanza. La taza debe contener 2 gramos de epoxi ahora. El dispensador de jeringa doble en el que el epoxi se ve nde es un medio conveniente de regular el epoxi, ya que distribuye
+ambos elementos, el "A" y el "B", en la proporción correcta y a la vez.
+Junte la mezcla de KN-azúcar con el epoxi. Remueva hasta que toda la mezcla seca esté
+completamente ligada con el epoxi. Vuelque esta mezcla en la cañería de PVC, en el diámetro pequeño de la restricción, por lo menos, a una profundidad de 3/4". Use una clavija de 1/4" para concentrar la mezcla en la cañería y eliminar burbujas de aire. Deje que el grano de retraso cure durante
+por lo menos 15 minutos.
+
+Preparando la mezcla de retraso
+30
+
+Taladrando un agujero de 1/8" en el extremo superior de los granos se establece el tiempo de
+retraso. El tiempo de retraso es determinado por la distancia entre el fondo del agujero y el fondo
+del grano de retraso. La tabla siguiente proporciona alguna correlación entre la longitud del grano
+de retraso y el retraso cronometrado al segundo más cercano para los motores y mezclas de retraso
+descriptas aquí.
+Longitud del grano de retraso
+Tiempo de retraso desde la ignición
+
+1/4"
+9 segundos
+
+3/8"
+11 segundos
+
+1/2"
+13 segundos
+
+Taladrar el agujero que establece el tiempo requiere un cierto grado de exactitud. Un error
+de 1/8" puede producir una diferencia de 2-3 segundos en los retrasos. Para taladrar este agujero
+haga una marca con lápiz en la cañería de PVC midiendo desde el fo ndo del grano, dentro de la
+cañería, hasta la longitud deseada del grano de retraso, es decir 1/4" para un retraso de 9 segundos,
+etc. Ponga la mecha de 1/8" a lo largo de la cañería para que la punta de esta quede alineada con la
+marca del lápiz y el mandril del taladro quede encima de la cañería. Envuelva cinta de enmascarar
+alrededor de la mecha de manera que el borde inferior de la cinta empareje el borde del extremo
+superior de la cañería. Use esta marca para que al taladrar el agujero en el centro del grano de retraso se llegue a una profundidad tal que los bordes queden alineados.
+
+2. Armado del conjunto del grano de retraso:
+Lista de materiales:
+•
+•
+•
+•
+
+Cupla de PVC para cañería de 1/2".
+Adhesivo y limpiador para PVC.
+Papel encerado.
+2 monedas de 1 centavo cada una.
+
+Corte un anillo, de 3/8" de largo, de un extremo de la cupla de 1/2". Éste será el anillo de
+fijación que retendrá el grano de retraso dentro de la cubierta. Apile las dos monedas, una encima
+de la otra, en un pedazo de papel encerado. Estas monedas regularán la profundidad a la que el gr ano de retraso se colocará en el anillo de fijación. Limpie y aplique cemento al DI del anillo de fij ación y coloque este anillo alrededor de las monedas con el borde cortado hacia abajo. Limpie y
+aplique cemento al extremo del fondo de la cañería de 1/2" del grano de retraso. Mientras sostiene
+el anillo de fijación para que no se resbale, inserte la cañería de PVC, del grano de retraso, en el
+anillo de fijación y empuje hasta que haga tope contra las monedas. Limpie los excesos de pegamento del borde superior del anillo de fijación. Es importante que esta superficie esté limpia, ya que
+formará una pieza con la tapa del motor. Quite las monedas y deje que el cemento seque completamente.
+
+Cupla de 1/2", anillo, grano de retraso y conjunto armado del grano de retraso
+31
+
+3. Cierre del extremo superior completo:
+La realización del armado del extremo superior es el mismo para los tres tipos de motor, con
+excepción del tamaño de tapa.
+Lista de materiales:
+•
+•
+•
+•
+•
+•
+•
+•
+
+Tapa de PVC de 1" o 1-1/4".
+Arandela plana de 7/16" USS.
+Arandela ancha de 1/2" x 1-1/2".
+Sellador de silicona para alta temperatura (RTV ROJO) o equivalente.
+Centrador.
+Mecha de 1/8" x 6".
+Mecha tipo pala de 13/16".
+Cotonetes (hisopos para oídos).
+
+Taladre un agujero de 1/8" en el centro de la tapa usando una mecha de 1/8" y el centrador.
+Agrande este agujero usando una mecha tipo pala de 13/16". En este agujero debe calzar el conjunto
+del grano de retraso. Si es demasiado pequeño, trabaje aproximándolo con una trincheta. Inserte,
+por dentro de la tapa, el conjunto de grano de retraso. Dibuje una línea de lápiz alrededor del conjunto de grano de retraso armado en la tapa, a la altura de la superficie de la tapa. Quite el conjunto
+de grano de retraso y aplique una cantidad generosa de sellador rojo de silicona de alta temp eratura
+entre la línea del lápiz y el tope del anillo de fijación. Re-inserte el conjunto de grano de retraso a
+través del agujero en la tapa y apriete hasta que sienta que el conjunto de grano de retraso asienta
+firmemente contra la tapa. Use la hoja de un destornillador plano para quitar cualquier exceso de
+sellador que pueda haber quedado sobre el margen del anillo de fijación. No remueva el sellador
+debajo del margen. Limpie, también, todo el sellador que pueda haber resbalado en la pared interior
+de la tapa. Esta superficie debe permanecer limpia para proporcionar una superficie de pegado buena en el armado final del motor. Deje que el sellador cure durante 24 horas.
+Nota: El sellador RTV ROJO está disponible en las tiendas de partes de automóvil como sellador de juntas.
+
+Aplicando sellador al conjunto del grano de retraso
+
+32
+
+El grano de retraso asentado en la tapa
+Seleccione una arandela dependiendo del tamaño de motor:
+Motor “G”
+Arandela plana USS de 7/16"
+
+Motor “H” e “I”
+Arandela de ala ancha de 1/2" x 1-1/2"
+
+Aplique una cantidad generosa de sellador ROJO alrededor del DI en la superficie plana de
+la arandela. Apriete la superficie de la arandela con el sellador contra el conjunto de grano de retraso hasta que asiente firmemente contra el anillo de fijación. Centre la arandela dentro del DI de la
+tapa. Use un cotonete para quitar y limpiar el sellador del DI de la arandela para exponer la superficie del grano de retraso en todo el DI de la arandela. Intente que no queden huecos en el sellador
+debajo de la arandela. Limpie todo rastro de sellador que pueda haber resbalado en las paredes int eriores de la tapa. Deje que el sellador cure durante otras 24 horas.
+
+Aplicando el sellador al conjunto de grano de retraso
+Esto completa el cierre del extremo superior con el grano de retraso. Varios cierres del extremo pueden hacerse a la vez. El grano de retraso no es higroscópico de manera que puede mant enerse al aire libre sin que se degrade.
+
+33
+
+Cierre del extremo superior completo
+
+D. Armado final del motor:
+
+Lista de materiales:
+•
+•
+•
+•
+•
+•
+
+Conjunto de cubierta y tobera.
+Grano propelente.
+Cierre del extremo superior.
+Cemento y limpiador de PVC.
+Cañería de PVC de 3/4" Sch 40.
+Cañería de PVC de 1" Sch 40.
+
+1. Motor “G” y “H”:
+Corte un anillo de 1/8" de largo de la cañería de PVC para espaciar el grano propelente de la
+arandela del cierre del extremo superior. Esto evitará que la superficie del extremo superior del gr ano propelente quede expuesta como una superficie combustión. El DE del espaciador depende del
+tamaño del motor.
+
+Cañería de PVC
+
+Motor “G”
+3/4"
+
+Motor “H” e “I”
+1"
+
+Usted necesitará cortar una sección de la pared del espaciador hecho de cañería de 3/4" para
+el motor “G” con el objeto que pueda apretarse para encajar dentro de la cubierta de 1".
+La cubierta debe adaptarse a su longitud final. La cubierta estaba deliberadame nte cortada
+más larga que lo necesario para permitir una cierta tolerancia. Recuerde el refrán “mida dos veces,
+corte una vez” durante las siguientes instrucciones. Inserte el grano en la cubierta hasta que se afirme contra la tobera y ponga el espaciador encima del grano. Para marcar dónde hacer el corte final,
+ponga una clavija pequeña o palillo en la superficie interior de la cubierta para que descanse contra
+la parte superior del espaciador. Con un lápiz afilado, haga una marca en la clavija a la altura del
+borde de la cubierta. Quite la clavija y colóquela externamente contra la cubierta haciendo coincidir
+el extremo de la clavija con el extremo de la cubierta. Haga una marca en la cubierta donde esté la
+marca de la clavija. Haga esto varias veces, para conseguir un promedio. Puesto que la hoja de la
+sierra tiene un cierto ancho, corte la cubierta exteriormente de la marca. También es importante que
+este corte sea a escuadra con la cubierta para ma ntener un buen asiento de la arandela en el cierre
+del extremo superior.
+34
+
+Limpie y aplique cemento de PVC a la cubierta y dentro de la tapa. Con la tobera apuntando
+hacia abajo, instale la tapa en la cubierta. Sostenga la tapa firmemente en el lugar hasta que el cemento haya agarrado en las superficies. No empuje el cierre superior desde el tope del conjunto de
+grano de retraso, con esto podría romper el sello entre el conjunto de grano de retraso y la tapa. Deje que el pegamento cure durante por lo menos 12 horas.
+
+2. Motor “I”:
+La única diferencia entre los motores “G” y “H” y el motor “I” en el armado final del motor
+es la preparación del 2º segmento de grano propelente. Corte un segundo espaciador de cañería de
+PVC de 1" para espaciar entre los 2 segmentos del grano. Aplique una cinta estrecha de sellador
+ROJO alrededor del borde externo en la superficie del extremo de cada uno de los 2 segmentos de
+grano propelente. Apriete un espaciador encima del sellador en uno de los segmentos. Inserte el
+segmento en la cubierta con el espaciador hacia arriba. Deslice el segundo segmento en la cubierta,
+con el extremo del sellador hacia abajo. Apriete los 2 segmentos juntos. Esto formará un sello que
+prevendrá que los gases de la porción superior del motor fluyan alrededor de la superficie externa
+del segmento más bajo. El grano entero debe apretarse firme contra la tobera.
+
+Conjunto del motor “I”
+
+El motor “I” se termina poniendo un espaciador encima del grano, adaptando la cubierta a su
+longitud final y encolando el cierre del extremo superior como se describió anteriormente.
+
+3. Carga de eyección:
+La carga de eyección es pólvora negra de calidad comercial tipo FFFF (4F). Se vende en las
+tiendas deportivas para el uso con rifles de pólvora negra. Usted puede querer atrasar la carga del
+grano de retraso con la pólvora negra hasta que esté en el sitio del lanzamiento y preparado para
+lanzar el cohete. Esto impedirá cualquier pérdida de pólvora negra del conjunto de grano de retraso
+durante el almacenamiento, manejo y transporte.
+La cantidad de pólvora negra depende del tamaño del cohete y el tipo de sistema de eyección
+del paracaídas. Demasiada pólvora negra puede dañar el cuerpo del cohete o puede rasgar las trabas
+del paracaídas. Poca pólvora negra y el paracaídas no podrá desplegarse. Si usted está usando un
+35
+
+sistema de despliegue tipo pistón sólo necesitará la mitad de pólvora negra de la que necesitaría con
+un sistema de tipo tapón de algodón. Un cohete largo con una estructura de diámetro grande necesitará más pólvora negra que cohetes cortos que tienen una estructura estrecha.
+Una medida de 1 a 1-1/2 gramos debe ser lo adecuado. Una medida de 1/8 de una cucharita
+de té es igual a 0,75 gramos de pólvora negra. Use 1 medida más de 1/8 de cucharita de té dependiendo del cohete en particular. Después que la pólvora negra se haya cargado en la cavidad del
+grano de retraso, coloque un tapón de algodón para llenar el resto de la cavidad del conjunto del
+grano de retraso. Esto ma ntendrá la pólvora negra en su lugar durante los momentos de gravedad
+negativa del vuelo. Ponga un solo pedazo de cinta de enmascarar encima del extremo del conjunto
+del grano de retraso para sostener el tapón de algodón en su lugar.
+
+4. Almacenamiento del motor de PVC:
+Los propelentes basados en Azúcar como Kn-Sorbitol son higroscópicos. Es decir, absorben
+humedad del aire. El Kn-Sorbitol, en particular, se pone suave y blando. Si usted no va a usar el
+grano propelente dentro de unos pocos días después de que se ha preparado, debe guardarlo en la
+caja de almacenamiento de propelente con desecador. El desecante guardará el grano propelente
+seco.
+Sin embargo, una vez que el motor se arma, no hay ninguna razón por la que el motor no
+pueda guardarse durante mucho tiempo sin almacenamiento especial. La cubierta de PVC es imp enetrable a la humedad y el grano de retraso no es higroscópico. Selle la tobera con cinta adhesiva
+plástica y el propio motor se volverá su mejor recipiente de almacenamiento.
+
+GUARDE SUS MOTORES EN UN LUGAR SEGURO
+
+36
+
+Ignición, Montaje y Conclusión
+Los ignitores que se usaron con éstos motores de PVC a través de la tobera, son ignitores del
+tipo eléctrico. Estos proporcionan un encendido “suave ”, este tipo de ignitor produce grandes cantidades de llama caliente y chispas para encender la mayor superficie del grano propelente posible.
+Cuanto más caliente sea la llama del ignitor, más rápido el grano encenderá y más rápido se extenderá la llama. El ignitor se posiciona en el extremo superior del motor para que en la ignición, los
+gases calientes fluyan hacia abajo por toda la longitud del grano propelente para encender la superficie combustión entera.
+Hay varios ignitores comerciales en el mercado que serían una opción excelente para estos
+motores. Un de estos ignitores es el AeroTech FirstFire. Esto no es un paso al costado, pero los ignitores buenos y fiables pueden ser difíciles de hacer. Dos características de un buen ignitor son; (1)
+la ignición fiable de una fuente de calor y la segur idad de calentar rápidamente los gases y (2) que
+produzca llamas calientes y chispas. Esto requiere el uso de “cloratos”, “percloratos” y polvo de
+metales. Una extrema cautela debe usarse al trabajar con estos materiales, ya que en combinación
+ellos son favorablemente incendiarios.
+El artículo de Richard Nakka, Rocket Motor Ignition Systems (Sistemas de Ignición de
+Motores Cohete) proporciona descripciones acerca de cómo hacer varios tipos de ignitores. Lo que
+sigue es una descripción para otro tipo más. A diferencia de los ignitores tradicionales que usan un
+alambre caliente como fuente de calor para encender un pirógeno, estos ignitores usan grafito. Los
+ignitores son hechos sumergiendo un par de alambres en una mezcla ligada de polvo de grafito y un
+aglomerante para formar un puente de resistencia y luego en una pasta de pirógeno. Los ignitores
+aquí descriptos se han usado con éxito con propelentes compuestos.
+Lista de materiales:
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+
+Polvo de grafito (lubricante seco).
+Pegamento para PVC.
+Limpiador para PVC.
+Perclorato de potasio.
+Polvo de aluminio.
+Polvo de carbón de leña.
+Líquido concentrado de almidón para lavado.
+Tapa de cañería de cobre de 3/4".
+Envase de película de 35 mm.
+Detergente de cocina.
+Barniz de protección al agua de base acrílica.
+
+Retuerza dos alambres Nº 26 juntos, a lo largo, para hacer un par. Una fuente para este
+alambre son los cables telefónicos multipares. Quite el aislamiento externo del cable y saque los
+pares torcidos juntos. Corte los pares a una longitud de 2 pies y quite 1/4" de aislamiento de un extremo de cada alambre. Retuerza los alambres muy apretadamente en una longitud de 1/2" detrás
+del alambre desnudo. Se piensa que al retorcer firmemente se reduce el movimiento relativo entre
+los alambres que podría crear tensiones en el puente de grafito y degradar su resistencia. Cuando
+este trabajo de preparación esté completo, los extremos desnudos del alambre deben quedar paralelos con sólo 1/32" o menos entre ellos. Sostenga el par a la luz para estar seguro que los alambres
+desnudos no se tocan entre si.
+Si el ignitor será usado en motores tamaño “H”, pliegue el alambre en sí mismo aproximadamente a 1" del extremo despojado de aislante para mantener una gran superficie para sumergir en
+el pirógeno. El doblado o plegado del alambre debe hacerse antes de la formación del puente de
+grafito, para eliminar tensiones en el puente de grafito que podrían ser causadas por el movimiento
+del alambre. Deje este pliegue ligeramente abierto para mantener un gancho conveniente para colgar los ignitores durante el secado del puente de grafito. Si el ignitor será usado con un motor más
+37
+
+pequeño como un solo par, pliegue el alambre aproximadamente a 6" del extremo para formar un
+gancho para los propósitos colgantes.
+En una redoma de vidrio pequeña u otro recipiente, adelgace un poco de cemento de PVC
+mezclando 50/50 con el limpiador, este contiene MEC (cetona de etilo metilo) y otros solventes y
+adelgazará el cemento. El proceso siguiente debe realizarse rápidamente para armar tantos pares
+como ignitores se quieran hacer. Coloque una cantidad pequeña de cemento de PVC adelgazado en
+la tapa de 3/4" de cobre. Usando un palo descartable, mezcle polvo de grafito en esta solución. El
+truco es hacer un ligado espeso de polvo de grafito, pero no tan espeso que cuando el par se sumerja
+en la mezcla se forme una burbuja pesada en el extremo. A mayor volumen de polvo de grafito en la
+mezcla más baja será la resistencia del puente, esto es un rasgo deseable en estos ignitores. Cons eguir la mezcla apropiada requerirá alguna experimentación. En el futuro usted podrá juzgar la consistencia correcta de la mezcla observando cómo esta se aferra al palo descartable.
+Sumerja los extremos desnudos del par en la mezcla de cemento de PVC y grafito, tan sólo
+se debe cubrir el alambre desnudo. Cuelgue el ignitor encima de un alambre tieso o de una clavija
+pequeña suspendido de un tablero por el gancho que se formó anteriormente. Sumergir todos los
+alambres preparados rápidamente ya que esta mezcla se espesará rápidamente. Deje que el puente
+de grafito cure durante 2 horas. Para los motores más grandes, una vez que el puente de grafito esté
+completamente seco, cierre el gancho en esos ignitores de manera que el par se doble atrás en sí
+mismo para formar un par doble. La resistencia del puente de grafito no debe ser nunca más de 30
+ohms. Fácilmente pueden lograrse resistencias tan bajas como 3 ohms.
+El puente de grafito se sumerge luego en una pasta de pirógeno que se seca como una cápsula dura. Haga los pirógenos moliendo el Perclorato de potasio, el carbón de leña, y el polvo de aluminio en LOTES SEPARADOS.
+NO MUELA ESTOS QUÍMICOS UNA VEZ QUE REALICE LA MEZCLA.
+Pese los químicos en las proporciones siguientes. Guarde siempre lotes pequeño s.
+Perclorato de potasio (oxidante)
+Carbón de leña (combustible)
+Polvo de aluminio (combustible térmico)
+
+14 gramos
+4 gramos
+2 gramos
+
+Ponga los ingredientes en el envase de película y agite para lograr una mezcla homogénea.
+Agregue el almidón líquido y revuelva con un palo descartable. Agregue simplemente bastante almidón para hacer una pasta hasta que cuando usted quite el palo descartable la pasta sea lo suficientemente espesa para aferrarse al palo, pero no tan espesa que posea grumos. Agregue unas gotas de
+detergente a la pasta para romper la tensión superficial del agua en el almidón y mejorar la “cobertura” de la pasta. Sumerja el extremo conectado del par en la pasta. Cuando el par este fuera de la
+pasta debe haber una capa pareja de pirógeno alrededor del extremo del par. Como anteriormente,
+doble el par aproximadamente a 6" del extremo para formar un gancho de manera que pueda colgarse, para permitir al pirógeno secar toda la noche. Este proceso puede requerir varios intentos
+hasta lograrse correctamente. Para dar protección al ignitor de los esfuerzos mecánicos y del desgaste, sumérjalo en un barniz de protección al agua de base acrílica. No use otros barnices con otros
+tipos de solventes ya que muchos solventes atacarán el puente de grafito y degradarán su resistencia. Estos ignitores de grafito requieren una fuente de poder de alta energía, como una batería de 12
+Volt de carga para un funcionamiento fiable.
+Como una alternativa a la mezcla pirógena de Perclorato de potasio puede usarse pólvora
+negra. Use la calidad comercial de pólvora negra y almidón líquido para hacer la pasta de pirógena.
+Sin embargo, la pólvora negra no produce una llama tan caliente como la que puede lograrse con
+metales en polvo.
+Nota: No es una buena práctica mezclar metales en polvo con agua ya que esta puede reaccionar con el metal para generar gas de hidrógeno y calor. Se probaron varios aglomerantes no
+acuosos alternativos, pero estos otros aglomerantes contuvieron solventes volátiles que atacaban el
+38
+
+cemento de PVC en el puente de grafito y degradaban la resistencia del puente. El almidón líquido
+fue elegido luego que una búsqueda en un “manual del pirotécnico” reveló varias fórmulas de pirotecnia que usan aglomerantes para aluminio basados en agua. No ha habido nunca un problema,
+pero guarde pequeños lotes. Si usted siente que la mezcla se pone calurosa, disponga inmediatamente de ella en un cubo grande con agua. No use polvos de magnesio o hierro como una alternativa a
+los de aluminio con almidón como aglomerante.
+Montaje y retención del motor
+Los motores de PVC son acoplados en la estructura del cohete usando las mismas técnicas
+de montaje del motor que se usan en los kits de cohetes. Aquí es donde la experiencia de construir
+cohetes a partir de kits entra en juego. Una vez que usted construya unos cuantos kits será obvio
+cómo montar estos motores. Con una hoja de cartulina enrollada en un tubo se puede hacer un soporte del motor. Los moldes de soporte del motor para enrollar la cartulina pueden ser hechos de un
+pedazo de cañería en el que se montan anillos, cortados de tapas a las que se quita el extremo sup erior. Corte bastantes anillos para ponerlos a una distancia de 1-1/2" centrados a lo largo de la cañería. Termine cada extremo de la cañería con una tapa entera.
+
+Molde del soporte del motor
+
+Longitud del molde
+Hoja de cartulina
+
+Motor “G”
+8-1/2"
+10" x 21"
+
+Motor “H” e “I”
+22"
+24" x 36"
+
+La cartulina se enrolla en el molde de la misma manera que el manguito inhibidor. Centre el
+molde del soporte de motor por la dimensión más estrecha y en un extremo de la hoja de cartulina.
+Enrolle el borde de la cartulina hasta completar una vuelta. Rocíe la cartulina con el adhe sivo en
+spray y asegúrese que la superficie expuesta se cubra entera, incluso las esquinas y los bordes. Use
+sólo el adhesivo necesario para humedecer el papel. Deje que el pegamento seque 15 - 20 segundos
+antes de completar el enrollado. Luego deje que la cola seque durante varios minutos antes de quitar
+el molde. Adapte el tubo a la longitud deseada.
+Las tiras de cinta de papel enrolladas alrededor del soporte de motor funcionan como anillos
+centradores. Corte tiras de 1/4" x 18" de cinta de papel kraft. Humedezca el adhesivo y enrolle las
+tiras alrededor del soporte de motor. Enrolle capa tras capa del papel hasta que el DE del anillo encaje en el DI del tubo-cuerpo del cohete. Una vez que la cinta haya secado, sature la cinta con cemento con cianoacrilato. Esto producirá un anillo centrador fuerte que colocará el soporte de motor
+justo en el centro del tubo-cuerpo.
+Un aro puede encolarse a la tapa de la tobera de los motores “H” e “I” para permitir que
+cualquiera de estos motores pueda ser usado en el mismo cohete. El aro retén sujeta la parte inferior
+del soporte de motor y transfiere la fuerza de empuje del motor al cuerpo del cohete. El aro retén
+también posee un medio para que un gancho, montado al soporte de motor, puede agarrar por detrás
+del aro retén para la detención positiva del motor.
+39
+
+El aro retén es un anillo de 1/4" de largo que está cortado de una cupla de PVC de 1-1/2".
+Una sección de 3/4" de la pared del aro retén, está cortada; a fin de proporcionar un hueco a través
+del que un gancho pueda pasar cuando el motor se inserta en el soporte del motor. Una vez que el
+aro retén esta firme contra el soporte del motor, se gira el motor para que el gancho pueda deslizar
+por detrás del aro retén y engancharse.
+El gancho es una curva de 90º, de 1/2" de longitud de un total de 6" de largo de un alambre
+de 1/16". El extremo largo del gancho se encola a lo largo del soporte del motor, con epoxi, de manera que el gancho se extienda, aproximadamente, 1/4" o el espesor del aro retén, luego del extremo
+del soporte del motor.
+
+Aro retén y detención del motor “H” e “I”
+El motor “G” es el único que no necesita un aro retén fijo al motor. Sin embargo un aro retén cortado de una tapa de PVC de 1" puede encolarse dentro del soporte del motor para fijar el motor. El aro retén se posiciona en el soporte del motor para que el motor sobresalga 1/2" del extremo
+del soporte del motor. El motor se retiene en el soporte del motor envolviendo cinta de enmascarar
+alrededor de la tapa de la tobera y el soporte del motor.
+Conclusión
+Es posible hacer motores de cohete de alto poder fiables, usando cañería de PVC y otros materiales de bajo costo, fácilmente disponibles. La actuación de los motores de PVC es algo reducida
+debido a la fuerza limitada de la cañería de PVC. Sin embargo, para el “volador dominguero” que
+disfruta lanzando cohetes por diversión y goce, éste es un acercamiento a esta afición a un costo
+eficaz.
+Para aquéllos que quieren aumentar al máximo el poder de estos motores, la tobera es un
+área en la que podría haber alguna mejora. Una mejora podría ser una tobera de plástico similar al
+usado en los motores recargables.
+El plan presentado en este artículo es un acercamiento a los motores cohete de PVC. Hay
+otros planes que están actualmente en uso y que pueden ser tan o más eficaces que los motores aquí
+descriptos.
+
+CON SEGURIDAD, DISFRUTE Y DIVIÉRTASE
+Reconocimiento: El autor desea agradecer a todos aquéllos que se toman el tiempo para escribirme
+sobre sus sugerencias, éxitos y fracasos. Yo desearía agradecer, sobre todo, a Richard Nakka ya que
+sin su especialización profesional, ayuda e investiga ción en los propelentes de azúcar y proyectos
+de motores cohete, este esfuerzo no habría sido posible.
+40
+
+Lanzamiento de cohete con motor “G”.
+
+Chuck Knight con el cohete recuperado.
+
+Lanzamiento de cohete impulsado por
+motor “I”.
+
+Chuck Knight con el cohete recuperado y el motor “I”.
+Este cohete es de 4" (10 cm) de diámetro, 54" (1,4 m) de
+alto y 4.6 lb (2 kg) de peso.
+
+Cuadro de un descenso perfecto.
+
+41
+
+Anexo
+(*1) Equivalencias de longitud y peso:
+
+", in, Pulgadas
+0
+mm
+1
+25,4
+2
+50,8
+3
+76,2
+4
+101,6
+5
+127,0
+
+", in, Pulgadas
+0
+mm
+1
+25,4
+2
+50,8
+3
+76,2
+4
+101,6
+5
+127,0
+
+1/16
+1/8
+3/16
+1/4
+5/16
+3/8
+7/16
+1,6
+3,2
+4,8
+6,4
+7,9
+9,5
+11,1
+27,0 28,6 30,2 31,8 33,3 34,9 36,5
+52,4 54,0 55,6 57,2 58,7 60,3 61,9
+77,8 79,4 81,0 82,6 84,1 85,7 87,3
+103,2 104,8 106,4 108,0 109,5 111,1 112,7
+128,6 130,2 131,8 133,4 134,9 136,5 138,1
+
+1/2
+9/16
+5/8 11/16 3/4 13/16 7/8 15/16
+12,7 14,3 15,9 17,5 19,1 20,6 22,2 23,8
+38,1 39,7 41,3 42,9 44,5 46,0 47,6 49,2
+63,5 65,1 66,7 68,3 69,9 71,4 73,0 74,6
+88,9 90,5 92,1 93,7 95,3 96,8 98,4 100,0
+114,3 115,9 117,5 119,1 120,7 122,2 123,8 125,4
+139,7 141,3 142,9 144,5 146,1 147,6 149,2 150,8
+
+ft (pie) = 12" = 30,48 cm
+lb (libra o pounds) = 453,59 gramos
+oz (onza) = 28,7 gramos
+
+(*2) Equivalencias de velocidad:
+1 in/s = 25,4 mm/s
+0,114 in/s = 2,896 mm/s
+0,112 in/s = 2,845 mm/s
+0,102 in/s = 2,591 mm/s
+1 ft/s = 0,3048 m/s
+2999 ft/s = 914,095 m/s
+
+(*3) Equivalencias de densidad y masa:
+El slug es una medida de masa norteamericana, es la masa que cuando se le aplica una
+fuerza de 1 lb (fuerza) adquiere una aceleración de 1 ft/s2 , equivaldría a 32,185 lb (masa) ó
+14.598,86 g.
+1 slug/in3 = 890,877 g/cm3
+0,00207 slugs/in3 = 1,844 g/cm3
+0,00206 slugs/in3 = 1,835 g/cm3
+42
+
+(*4) Datos de PVC Schedule 40:
+
+Diámetro
+Nominal
+1/2"
+3/4"
+1"
+1-1/4"
+1-1/2"
+2"
+
+Diámetro
+Externo
+(mm)
+21,3
+26,7
+33,4
+42,4
+48,3
+60,3
+
+Esp.
+(mm)
+
+Peso
+(Kg / m)
+
+2,8
+2,9
+3,4
+3,6
+3,7
+3,9
+
+0,25
+0,34
+0,48
+0,64
+0,77
+1,03
+
+(*5) Equivalencias de presión:
+1 psi = 0,07 kg/cm2
+1 kg/cm2 = 0,098 MPa
+1330 psi = 93,1 kg/cm2 = 9,12 MPa
+978 psi = 68,46 kg/cm2 = 6,71 MPa
+
+(*6) Caja de corte o caja ingletadora o caja de ingletes:
+
+(*7) Mecha tipo pala:
+
+(*8) También pueden usarse piedritas higiénicas (las que se usan para los gatos), aunque no
+sea un sustituto tan bueno es mejor que nada.
+43
+
+(*9) Equivalencias de volumen y temperatura:
+1 galón = 4,55 litros
+3/4 galón = 3,41 litros (olla de 20 cm de diámetro y 11 cm de alto).
+1/4 galón = 1,14 litros (ollita de 15 cm de diámetro y 7 cm de alto).
+32 ºF (Fahrenheit) = 0 ºC
+212 ºF = 100 ºC
+5
+⋅ (º F − 32 )
+9
+9
+º F = ⋅º C + 32
+5
+ºC =
+
+300 ºF = 148,9 ºC
+250º F = 121,1 ºC
+
+Javier Esteban Fernández
+quimeifc@yahoo.com.ar
+
+44
+
+

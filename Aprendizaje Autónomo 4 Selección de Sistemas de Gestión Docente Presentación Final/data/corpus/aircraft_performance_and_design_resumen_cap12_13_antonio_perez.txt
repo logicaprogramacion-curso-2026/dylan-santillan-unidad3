@@ -1,0 +1,1059 @@
+Introducción a la Ingeniería
+Aeroespacial
+Resumen Académico – Módulos 1 al 7, 12 y 13
+
+Antonio Pérez
+Curso ME-2930 / ME-4932
+
+24 de agosto de 2025
+
+Índice
+Nomenclatura (Aerodinámica y Performance) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Nomenclatura (Propulsión) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Fórmulas (Aerodinámica y Performance) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+1
+4
+5
+
+1 Módulo 1 – Los Primeros Ingenieros Aeroespaciales . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+6
+
+2 Módulo 2 – La Atmósfera Estándar . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+7
+
+3 Módulo 3 – Fundamentos de Aerodinámica . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+9
+
+4 Módulo 4 – Perfiles Alares y Alas . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+5 Módulo 6 – Elementos de Desempeño del Avión - Parte I . . . . . . . . . . . . . . . . . . . . 11
+6 Módulo 7 – Maniobras y Desempeño . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+7 Capítulo 12 – Aerodinámica. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+8 Capítulo 13 – Propulsión . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+
+1
+
+Símbolo Nombre
+
+Unidades Descripción
+
+AR
+
+Relación de aspecto
+
+–
+
+AR = b2 /S; eficiencia geométrica del
+ala.
+
+S
+
+Área alar
+
+m2
+
+Superficie de referencia del ala.
+
+b
+
+Envergadura
+
+m
+
+Distancia punta a punta del ala.
+
+V
+
+Velocidad del flujo
+
+m/s
+
+q
+
+Presión dinámica
+
+N/m
+
+ρ
+
+Densidad del aire
+
+kg/m3
+
+Varía con altitud y temperatura.
+
+µ
+
+Viscosidad dinámica
+
+Pa·s
+
+Propiedad del fluido (fricción interna).
+
+P
+
+Presión
+
+N/m
+
+Presión estática del flujo.
+
+T
+
+Temperatura
+
+K
+
+a
+
+Velocidad del sonido
+
+m/s
+
+Temperatura absoluta del aire.
+√
+a = γRT .
+
+M
+
+Número de Mach
+
+–
+
+M = V /a (efectos de compresibilidad).
+
+R
+
+Constante del aire
+
+J/(kg·K) ≈ 287.
+
+γ
+
+Relación de calores
+
+–
+
+γ = cp /cv ; aire seco ≈ 1,4.
+
+g
+
+Aceleración de la gravedad
+
+m/s2
+
+≈ 9,81.
+
+L
+
+Sustentación
+
+N
+
+Fuerza perpendicular al flujo.
+
+D
+
+Resistencia
+
+N
+
+Fuerza opuesta al movimiento.
+
+T
+
+Empuje (propulsión)
+
+N
+
+Fuerza del/los motores.
+
+W
+
+Peso
+
+N
+
+W = mg.
+
+CL
+
+Coef. de sustentación
+
+–
+
+CL = L/(qS).
+
+CD
+
+Coef. de resistencia
+
+–
+
+CD = D/(qS).
+
+CD0
+
+Resistencia parásita
+
+–
+
+Parte de CD independiente de CL .
+
+e
+
+Eficiencia de Oswald
+
+–
+
+0 < e ≤ 1 (afecta CDi ).
+
+Re
+
+Número de Reynolds
+
+–
+
+Re = ρV L/µ.
+
+n
+
+Factor de carga
+
+–
+
+n = L/W .
+
+Vs
+
+Velocidad de pérdida
+
+m/s
+
+Mínima velocidad sustentable.
+
+ṁ
+
+Flujo másico de aire
+
+kg/s
+
+Flujo a través del motor.
+
+ṁf
+
+Flujo másico de combustible kg/s
+
+Consumo de combustible.
+
+T SF C
+
+Consumo específico de empuje kg/(N·s) T SF C = ṁf /F .
+
+ηp
+
+Eficiencia propulsiva
+
+–
+
+Conversión energía cinética → empuje.
+
+ηt
+
+Eficiencia térmica
+
+–
+
+Energía química → energía del chorro.
+
+ηo
+
+Eficiencia global
+
+–
+
+ηo = ηp ηt .
+
+Velocidad relativa del aire.
+2
+
+2
+
+q = 12 ρV 2 .
+
+Cuadro 1: Nomenclatura (Aerodinámica y Performance)
+2
+
+Símbolo
+
+Español
+
+Inglés
+
+b
+
+Envergadura
+
+Wingspan
+
+S
+
+Área alar
+
+Wing area
+
+2
+AR = bS
+
+Relación de aspecto
+
+Aspect ratio
+
+Λ
+
+Ángulo de flecha
+
+Sweep angle
+
+c
+
+Cuerda media
+
+Mean chord
+
+cMAC
+
+Cuerda media aerodinámica
+
+Mean aerodynamic chord (MAC)
+
+W
+
+Peso
+
+Weight
+
+L
+
+Sustentación
+
+Lift
+
+D
+
+Resistencia
+
+Drag
+
+T
+
+Empuje
+
+Thrust
+
+q = 12 ρV 2
+L
+CL =
+qS
+D
+CD =
+qS
+CD0
+CL2
+CDi =
+πeAR
+e
+
+Presión dinámica
+
+Dynamic pressure
+
+Coeficiente de sustentación
+
+Lift coefficient
+
+Coeficiente de resistencia
+
+Drag coefficient
+
+Resistencia parásita (a CL = 0)
+
+Zero-lift drag
+
+Resistencia inducida
+
+Induced drag
+
+Eficiencia de Oswald
+
+Oswald efficiency factor
+
+Razón sustentación/resistencia
+
+Lift-to-drag ratio
+
+V
+M=
+√a
+a = γRT
+ρV L
+Re =
+µ
+ρ
+
+Número de Mach
+
+Mach number
+
+Velocidad del sonido
+
+Speed of sound
+
+Número de Reynolds
+
+Reynolds number
+
+Densidad del aire
+
+Air density
+
+T (atmósfera)
+
+Temperatura
+
+Temperature
+
+P
+
+Presión
+
+Pressure
+
+α
+
+Ángulo de ataque
+
+Angle of attack
+
+αL0
+
+Ángulo de sustentación nula
+
+Zero-lift AoA
+
+Factor de carga
+
+Load factor
+
+ 
+L
+D
+
+n=
+
+L
+W
+s
+
+2W
+Velocidad de pérdida
+ρSCL máx
+CL máx
+Coeficiente de sustentación
+máximo
+Vs =
+
+Stall speed
+Maximum lift coefficient
+
+Cuadro 2: Nomenclatura (Aerodinámica y Performance)
+3
+
+Símbolo
+
+Español
+
+Inglés
+
+ṁ
+
+Flujo másico de aire
+
+Mass flow rate
+
+F = ṁ(Ve − V0 ) + (pe − p0 )Ae Empuje neto
+
+Net thrust
+
+Ve
+
+Velocidad de salida
+
+Exit velocity
+
+V0
+
+Velocidad de vuelo
+
+Flight velocity
+
+pe , p 0
+
+Presión de salida y ambiente
+
+Exit & ambient pressure
+
+Ae
+
+Área de la tobera
+
+Nozzle exit area
+
+ṁ
+T SF C = Ff
+ηp = 1+V2e /V0
+
+Consumo específico de empuje
+
+Thrust specific fuel consumption
+
+Eficiencia propulsiva
+
+Propulsive efficiency
+
+ηt
+
+Eficiencia térmica
+
+Thermal efficiency
+
+ηo = ηt ηp
+
+Eficiencia global
+
+Overall efficiency
+
+BP R
+
+Relación de bypass
+
+Bypass ratio
+
+OP R
+
+Relación de presión total
+
+Overall pressure ratio
+
+T IT
+
+Temperatura de entrada de
+turbina
+
+Turbine inlet temperature
+
+Cuadro 3: Nomenclatura — Propulsión.
+
+4
+
+Tema
+
+Fórmula
+
+Significado
+
+Bernoulli (incomp.)
+
+P + 21 ρV 2 + ρgh = cte
+
+Conservación de energía mecánica por partícula.
+
+Velocidad del sonido
+
+a=
+
+Reynolds
+
+√
+
+γRT
+
+Relación termodinámica básica de ondas acústicas.
+
+Re =
+
+ρV L
+µ
+
+Régimen del flujo
+nar/turbulento).
+
+Coeficientes
+
+CL =
+
+L
+D
+, CD =
+qS
+qS
+
+Cargas aerodinámicas adimensionales; q = 21 ρV 2 .
+
+Polar (ala finita)
+
+CD = CD0 +
+
+Pendiente de CL (ala finita)
+
+a=
+
+Razón L/D máx.
+
+CL2
+πeAR
+
+a0
+a0 , CL = a(α−
+1+
+πeAR
+
+α0 )
+s
+ 
+L
+1 πeAR
+=
+D máx 2 CD0
+s
+
+2W
+ρSCLmáx
+
+(lami-
+
+Resistencia parásita + inducida.
+Corrección 2D → 3D; a0 ≈ 2π
+rad−1 .
+Eficiencia aerodinámica de
+planeo.
+
+Pérdida (stall)
+
+Vs =
+
+Empuje a reacción
+
+F = ṁ(Ve − V0 ) + (pe − p0 )Ae
+
+Balance momentum + presión en tobera.
+
+Potencia de empuje
+
+PT = F V0
+
+Potencia útil entregada por el
+propulsor.
+
+Eficiencia propulsiva
+
+ηp =
+
+Brayton (ideal, indicativa)
+
+2
+1 + Ve /V0
+1
+ηt ≈ 1 − (γ−1)/γ
+rp
+
+Velocidad mínima sin pérdida.
+
+Máxima cuando Ve ≈ V0 .
+Eficiencia térmica vs. relación
+de presiones rp .
+
+Breguet (jet)
+
+R=
+
+V
+L
+Wi
+ln
+T SF C D
+Wf
+
+Alcance idealizado para turborreactor/turbofán.
+
+Breguet (hélice)
+
+R=
+
+ηp L
+Wi
+ln
+c D
+Wf
+
+Alcance para propulsor de hélice; c = ṁf /P .
+
+Cuadro 4: Fórmulas.
+
+5
+
+1.
+
+Módulo 1 – Los Primeros Ingenieros Aeroespaciales
+La ingeniería aeroespacial se divide en dos ramas principales:
+Ingeniería Aeronáutica (Aeronautical Engineering): estudio y diseño de vehículos que operan dentro de la atmósfera de la Tierra.
+Ingeniería Astronáutica (Astronautical Engineering): estudio y diseño de vehículos que operan fuera de la atmósfera de la Tierra.
+
+Aportes históricos
+Leonardo da Vinci: ornitópteros inspirados en aves.
+Hermanos Montgolfier: globos aerostáticos (1783).
+George Cayley: separación conceptual de sustentación y propulsión.
+Otto Lilienthal: pionero en planeadores.
+Hermanos Wright: primer vuelo controlado y sostenido (1903).
+
+Historia de la propulsión
+Desde motores de combustión interna hasta hélices, que permitieron superar los 500 mph
+hacia 1945.
+
+Nomenclatura
+AR Relación de aspecto (Aspect Ratio).
+CL Coeficiente de sustentación (Lift Coefficient).
+CD Coeficiente de resistencia (Drag Coefficient).
+
+6
+
+2.
+
+Módulo 2 – La Atmósfera Estándar
+
+La atmósfera estándar internacional (ISA) fue definida en 1952 por la ICAO. A nivel del
+mar, sus propiedades son:
+Presión: P0 = 1,01325 × 105 N/m2
+Densidad: ρ0 = 1,225 kg/m3
+Temperatura: T0 = 288,15 K
+Velocidad del sonido: a0 = 340,3 m/s
+La composición del aire seco a nivel del mar es aproximadamente 21 % oxígeno y 78 %
+nitrógeno. La presencia de vapor de agua reduce la densidad del aire hasta en un 3 %.
+
+Ecuaciones fundamentales
+Ecuación hidrostática:
+dP = −ρg dh
+Variación de presión con altura (isoterma):
+P = P0 e−gh/RT
+Variación de presión con altura (gradiente L):
+Lh
+P
+= 1+
+P0
+T0
+
+!− g
+
+LR
+
+Velocidad del sonido:
+a=
+
+q
+
+γRT
+
+Tipos de Altitud
+Altitud Geométrica (h): Altura real sobre el nivel del mar.
+Altitud Geopotencial (hg ): Altura ajustada para que la gravedad se considere constante.
+
+7
+
+Nomenclatura
+P Presión (Pressure) [N/m2 ].
+ρ Densidad (Density) [kg/m3 ].
+g Gravedad local (Gravity) [m/s2 ].
+h Altura (Altitude/Height) [m].
+a Velocidad del sonido (Speed of sound) [m/s].
+L Gradiente de temperatura (Temperature lapse rate) [K/m].
+R Constante de gas del aire (Gas constant of air) [287 J/kgK].
+M Masa molar del aire (Molar mass of air) [0.029 kg/mol].
+γ Relación de calores específicos (Specific heat ratio).
+
+8
+
+3.
+
+Módulo 3 – Fundamentos de Aerodinámica
+
+Ecuaciones principales
+Ecuación de Bernoulli (incompresible):
+P + 12 ρV 2 + ρgh = constante
+Número de Reynolds:
+Re =
+
+ρV L
+µ
+
+Coeficientes aerodinámicos:
+L
+,
+ρV 2 S
+2
+
+CL = 1
+
+Nomenclatura
+Re Número de Reynolds (Reynolds Number).
+CL Coeficiente de sustentación (Lift Coefficient).
+CD Coeficiente de resistencia (Drag Coefficient).
+S Área alar (Wing Area) [m2 ].
+V Velocidad del flujo (Flow velocity) [m/s].
+µ Viscosidad dinámica (Dynamic viscosity) [Pa·s].
+
+9
+
+D
+ρV 2 S
+2
+
+CD = 1
+
+4.
+
+Módulo 4 – Perfiles Alares y Alas
+
+Este módulo aborda la geometría de los perfiles alares y cómo sus características afectan
+el desempeño de la aeronave.
+
+Nomenclatura de Perfiles
+Cuerda (Chord): Línea recta que une el borde de ataque con el borde de salida.
+Línea de Curvatura Media (Meanline): Línea que equidista de las superficies
+superior e inferior.
+Camber (Camber): Máxima separación entre la línea de curvatura media y la cuerda.
+Los perfiles con camber positivo generan sustentación a un ángulo de ataque de 0º.
+Grosor (Thickness): Distancia máxima entre las superficies superior e inferior.
+
+Ángulo de Ataque (α)
+El ángulo de ataque es el ángulo que forma la cuerda del perfil alar con la dirección del
+flujo de aire libre. Aumentarlo incrementa CL y CD hasta el stall.
+
+Serie NACA
+Serie de 4 dígitos (NACA 2412): camber máx., posición, grosor.
+Serie de 5 dígitos (NACA 23012): CL de diseño, posición, grosor.
+
+10
+
+5.
+
+Módulo 6 – Elementos de Desempeño del Avión Parte I
+En vuelo nivelado se cumple el equilibrio:
+L = W,
+
+T =D
+
+Sustentación y Resistencia
+L = CL 21 ρV 2 S,
+
+D = CD 12 ρV 2 S
+
+Otros Conceptos de Desempeño
+Tasa de Ascenso (Rate of Climb): velocidad vertical.
+Alcance (Range): depende de (L/D) y eficiencia del motor.
+Autonomía (Endurance): tiempo máximo en vuelo.
+
+Nomenclatura
+L Sustentación (Lift) [N].
+W Peso (Weight) [N].
+T Empuje (Thrust) [N].
+D Resistencia (Drag) [N].
+
+11
+
+6.
+
+Módulo 7 – Maniobras y Desempeño
+
+Maniobras Aceleradas
+Factor de carga: n = L/W ; en virajes n > 1.
+Velocidad de pérdida:
+s
+
+Vs =
+
+2W
+ρSCLmáx
+
+Despegue
+Fuerza neta ≈ T − (D + Ff ); fricción de rodadura:
+Ff = µk (W − L)
+
+Nomenclatura
+n Factor de carga.
+Vs Velocidad de pérdida.
+CLmáx Coeficiente de sustentación máximo.
+Ff Fuerza de fricción [N].
+µk Coef. de fricción de rodadura.
+
+12
+
+7.
+
+Capítulo 12 – Aerodinámica
+
+Presión dinámica y fuerzas
+q = 12 ρV 2 ,
+
+L = CL qS,
+
+D = CD qS
+
+Polar de arrastre (refinada)
+Para ala finita:
+
+CL2
+πeAR
+Notas: CD0 agrega fricción, forma e interferencias; el término inducido depende de AR y e.
+CD = CD0 +
+
+Pendiente de CL y ángulo de ataque
+CL = a(α − α0 ),
+
+a=
+
+a0
+a0 ,
+1+
+πeAR
+
+a0 ≈ 2π (rad−1 )
+
+CLmáx fija la condición de pérdida (α de stall).
+
+Capa límite y fricción superficial
+Aproximaciones típicas en placa plana:
+1,328
+,
+Cf,ℓ ≈ √
+ReL
+
+Cf,t ≈
+
+0,074
+1/5
+ReL
+
+(ReL ≳ 5 × 105 )
+
+que contribuyen a CD0 .
+
+Flujo compresible y número de Mach
+q
+V
+,
+a = γRT
+a
+Para sub-sónico bajo–medio (M ≲ 0,7), corrección de Prandtl–Glauert (lineal):
+
+M=
+
+Cp,comp ≈ √
+
+Cp,inc
+1 − M2
+
+Cerca de Mcrit aparecen ondas de choque y wave drag; en transónico, CD crece de forma
+marcada.
+13
+
+Razón L/D y condición óptima
+
+
+L
+D
+
+
+
+1
+=
+2
+máx
+
+s
+
+πeAR
+CD0
+
+Velocidad de mejor planeo se obtiene en la V que produce CL asociado a esa condición.
+
+14
+
+8.
+
+Capítulo 13 – Propulsión
+
+Ecuación de empuje y potencia
+F = ṁ(Ve − V0 ) + (pe − p0 )Ae ,
+
+PT = F V0
+
+Para tobera choked (cuello sónico), el gasto másico queda fijado por condiciones de entrada
+y geometría.
+
+Eficiencias
+Propulsiva:
+ηp =
+
+2
+1 + Ve /V0
+
+(máxima si Ve ≈ V0 )
+
+Térmica (Brayton ideal, indicativa):
+ηt ≈ 1 −
+
+1
+(γ−1)/γ
+rp
+
+Global: ηo = ηp ηt .
+
+Consumos específicos y alcance
+T SF C =
+
+ṁf
+,
+F
+
+Rjet =
+
+V
+L
+Wi
+,
+ln
+T SF C D Wf
+
+Rhélice =
+
+ηp L
+Wi
+ln
+c D Wf
+
+donde c = ṁf /P es el consumo específico por potencia.
+
+Turbofán y relación de derivación
+En turbofanes, el bypass ratio (BPR) alto permite mayor ηp (chorro frío de gran masa
+con ∆V menor), reduciendo ruido y TSFC en crucero.
+
+Observaciones de diseño
+A altitud, a disminuye y cambia el régimen de Mach para la misma V .
+Para máximo alcance: aumentar (L/D) y la fracción ln(Wi /Wf ); reducir TSFC o c.
+La selección de AR, e y CD0 impacta directamente el consumo.
+15
+
+

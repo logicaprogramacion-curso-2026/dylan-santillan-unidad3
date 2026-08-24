@@ -1,0 +1,351 @@
+<!-- jinja: ignore -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso | Estación Espacial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --space-dark: #020010;
+            --panel-bg: rgba(8, 12, 32, 0.85);
+            --panel-border: rgba(124, 138, 255, 0.25);
+            --hud-line: rgba(124, 138, 255, 0.35);
+            --accent: #7c8aff;
+            --accent-bright: #9fb0ff;
+            --text-primary: #e4e7ff;
+            --text-secondary: #8088b8;
+            --text-tertiary: #565d8a;
+            --danger: #f87171;
+            --success: #4ade80;
+            --comet-cyan: #00e5ff;
+            --font-display: 'Orbitron', sans-serif;
+            --font-body: 'Space Grotesk', sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: var(--font-body);
+            background: var(--space-dark);
+            color: var(--text-primary);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .space-bg {
+            position: fixed; top: 0; left: 0;
+            width: 100%; height: 100%; z-index: 0; pointer-events: none;
+        }
+        .star {
+            position: absolute; background: white; border-radius: 50%;
+            animation: twinkle var(--duration) infinite ease-in-out;
+            animation-delay: var(--delay);
+        }
+        @keyframes twinkle {
+            0%, 100% { opacity: var(--min-opacity); transform: scale(1); }
+            50% { opacity: 1; transform: scale(2); }
+        }
+        .nebula {
+            position: absolute; border-radius: 50%; filter: blur(100px); opacity: 0.07;
+        }
+        .nebula-1 {
+            width: 400px; height: 300px; background: #6b3fa0;
+            top: -5%; right: -8%; animation: drift 15s infinite ease-in-out;
+        }
+        .nebula-2 {
+            width: 350px; height: 250px; background: #1a5fb4;
+            bottom: -8%; left: -8%; animation: drift 18s infinite ease-in-out reverse;
+        }
+        @keyframes drift {
+            0%, 100% { transform: translate(0,0) scale(1); }
+            50% { transform: translate(30px,-20px) scale(1.06); }
+        }
+
+        /* ============================================================
+           CONSOLA PRINCIPAL
+           ============================================================ */
+        .console {
+            position: relative; z-index: 1;
+            width: 420px; max-width: 90%;
+            animation: entry 0.6s ease-out;
+        }
+        @keyframes entry {
+            from { opacity: 0; transform: translateY(30px) scale(0.96); }
+            to { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
+        .console-frame {
+            position: relative;
+            background: var(--panel-bg);
+            padding: 34px 32px 30px;
+            border-radius: 4px;
+            border: 1px solid var(--panel-border);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255, 255, 255, 0.02);
+        }
+
+        .corner {
+            position: absolute; width: 18px; height: 18px;
+            border: 2px solid var(--comet-cyan); opacity: 0.65;
+        }
+        .corner-tl { top: -1px; left: -1px; border-right: none; border-bottom: none; }
+        .corner-tr { top: -1px; right: -1px; border-left: none; border-bottom: none; }
+        .corner-bl { bottom: -1px; left: -1px; border-right: none; border-top: none; }
+        .corner-br { bottom: -1px; right: -1px; border-left: none; border-top: none; }
+
+        .status-bar {
+            display: flex; align-items: center; justify-content: space-between;
+            font-family: var(--font-mono); font-size: 0.66rem;
+            letter-spacing: 0.5px; color: var(--text-tertiary);
+            margin-bottom: 20px; padding-bottom: 12px;
+            border-bottom: 1px solid var(--hud-line);
+        }
+
+        .status-bar .blink {
+            display: inline-block; width: 6px; height: 6px;
+            border-radius: 50%; background: var(--accent);
+            box-shadow: 0 0 8px var(--accent);
+            margin-right: 6px; animation: dotGlow 1.6s infinite;
+        }
+
+        @keyframes dotGlow {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.35; }
+        }
+
+        .header { text-align: center; margin-bottom: 22px; }
+
+        .header-icon {
+            width: 48px; height: 48px;
+            margin: 0 auto;
+            color: var(--accent-bright);
+            animation: float 3s infinite ease-in-out;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+        .header h1 {
+            font-family: var(--font-display);
+            font-size: 1.2rem; font-weight: 700; letter-spacing: 1.5px;
+            background: linear-gradient(180deg, #f0f0ff 0%, #b0bfff 100%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-top: 12px;
+        }
+
+        .alert {
+            padding: 10px 14px;
+            border-radius: 4px;
+            margin-bottom: 18px;
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            display: flex; align-items: center; justify-content: center; gap: 8px;
+            border-left: 2px solid;
+        }
+        .alert svg { width: 15px; height: 15px; flex-shrink: 0; }
+        .alert-error {
+            background: rgba(248,113,113,0.08);
+            border-color: var(--danger);
+            color: #fca5a5;
+        }
+        .alert-success {
+            background: rgba(74,222,128,0.08);
+            border-color: var(--success);
+            color: #6ee7a8;
+        }
+
+        .form-group { margin-bottom: 16px; }
+        label {
+            display: flex; align-items: center; gap: 7px;
+            font-family: var(--font-mono);
+            color: var(--text-secondary);
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 7px;
+        }
+        label svg { width: 13px; height: 13px; color: var(--text-tertiary); }
+
+        input {
+            width: 100%;
+            padding: 12px 15px;
+            background: rgba(12, 16, 40, 0.7);
+            border: 1px solid rgba(124, 138, 255, 0.18);
+            border-radius: 4px;
+            color: var(--text-primary);
+            font-family: var(--font-body);
+            font-size: 0.92rem;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+        input:hover {
+            border-color: rgba(124, 138, 255, 0.35);
+            background: rgba(18, 24, 55, 0.8);
+        }
+        input:focus {
+            border-color: rgba(124, 138, 255, 0.55);
+            background: rgba(18, 26, 60, 0.9);
+            box-shadow: 0 0 0 3px rgba(124, 138, 255, 0.1);
+        }
+
+        .btn {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, #6b5ce7 0%, #5a4bd1 100%);
+            border: 1px solid rgba(124, 138, 255, 0.35);
+            border-radius: 4px;
+            color: white;
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+            display: flex; align-items: center; justify-content: center; gap: 9px;
+        }
+        .btn svg { width: 16px; height: 16px; }
+        .btn:hover {
+            background: linear-gradient(135deg, #7c6af7 0%, #6a58e0 100%);
+            box-shadow: 0 10px 30px rgba(100,80,220,0.35);
+            transform: translateY(-2px);
+        }
+
+        .info {
+            text-align: center;
+            margin-top: 16px;
+            color: var(--text-secondary);
+            font-family: var(--font-mono);
+            font-size: 0.72rem;
+            padding: 11px;
+            background: rgba(124,138,255,0.05);
+            border: 1px solid var(--hud-line);
+            border-radius: 4px;
+            line-height: 1.6;
+        }
+        .info strong { color: var(--accent-bright); }
+
+        .back-link {
+            display: flex; align-items: center; justify-content: center; gap: 6px;
+            text-align: center;
+            margin-top: 14px;
+            color: var(--text-secondary);
+            font-family: var(--font-mono);
+            font-size: 0.76rem;
+            text-decoration: none;
+            padding: 6px;
+            transition: color 0.3s ease;
+        }
+        .back-link svg { width: 12px; height: 12px; }
+        .back-link:hover { color: var(--accent-bright); }
+    </style>
+</head>
+<body>
+
+    <!-- Fondo de estrellas y nebulosas -->
+    <div class="space-bg" id="spaceBg">
+        <div class="nebula nebula-1"></div>
+        <div class="nebula nebula-2"></div>
+    </div>
+
+    <!-- Panel de login -->
+    <div class="console">
+        <div class="console-frame">
+            <div class="corner corner-tl"></div>
+            <div class="corner corner-tr"></div>
+            <div class="corner corner-bl"></div>
+            <div class="corner corner-br"></div>
+
+            <div class="status-bar">
+                <div><span class="blink"></span>CONTROL DE ACCESO</div>
+                <div id="clock">00:00:00 UTC</div>
+            </div>
+
+            <div class="header">
+                <svg class="header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+                    <rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/><circle cx="12" cy="16" r="1.6"/>
+                </svg>
+                <h1>ACCESO A LA ESTACIÓN</h1>
+            </div>
+
+            <!-- Mensajes flash (solo muestra el último, sin duplicados) -->
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% set last_msg = messages|last %}
+                    <div class="alert {{ 'alert-success' if last_msg[0] == 'success' else 'alert-error' }}">
+                        {% if last_msg[0] == 'success' %}
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                        {% else %}
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M15 9l-6 6M9 9l6 6"/></svg>
+                        {% endif %}
+                        {{ last_msg[1] }}
+                    </div>
+                {% endif %}
+            {% endwith %}
+
+            <!-- Formulario -->
+            <form method="POST">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                <div class="form-group">
+                    <label>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="3.4"/><path d="M5 20c0-4 3-6.5 7-6.5s7 2.5 7 6.5"/></svg>
+                        Usuario
+                    </label>
+                    <input type="text" name="usuario" placeholder="Ingrese su usuario" required autofocus>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+                        Contraseña
+                    </label>
+                    <input type="password" name="password" placeholder="Ingrese su contraseña" required>
+                </div>
+                <button type="submit" class="btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    Iniciar sesión
+                </button>
+            </form>
+
+            <!-- Info de credenciales -->
+            <div class="info">
+                <p>Utiliza las credenciales configuradas por el administrador.</p>
+                <p>La contraseña inicial se define en <strong>ADMIN_INITIAL_PASSWORD</strong>.</p>
+            </div>
+
+            <!-- Volver -->
+            <a href="/" class="back-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M19 12H5m0 0l6-6m-6 6l6 6"/></svg>
+                Volver a la Estación
+            </a>
+        </div>
+    </div>
+
+    <!-- Estrellas animadas -->
+    <script>
+        var bg = document.getElementById('spaceBg');
+        for (var i = 0; i < 70; i++) {
+            var s = document.createElement('div');
+            s.classList.add('star');
+            s.style.cssText = 'width:'+(Math.random()*2+0.5)+'px;height:'+(Math.random()*2+0.5)+'px;left:'+(Math.random()*100)+'%;top:'+(Math.random()*100)+'%;--duration:'+(Math.random()*3+2)+'s;--delay:'+(Math.random()*4)+'s;--min-opacity:'+(Math.random()*0.3+0.06)+';';
+            bg.appendChild(s);
+        }
+
+        function updateClock() {
+            var now = new Date();
+            var h = String(now.getUTCHours()).padStart(2, '0');
+            var m = String(now.getUTCMinutes()).padStart(2, '0');
+            var s2 = String(now.getUTCSeconds()).padStart(2, '0');
+            document.getElementById('clock').textContent = h + ':' + m + ':' + s2 + ' UTC';
+        }
+        updateClock();
+        setInterval(updateClock, 1000);
+    </script>
+
+</body>
+</html>

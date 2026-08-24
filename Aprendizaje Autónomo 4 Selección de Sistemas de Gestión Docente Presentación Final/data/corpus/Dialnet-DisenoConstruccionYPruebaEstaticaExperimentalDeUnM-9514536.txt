@@ -1,0 +1,924 @@
+Vol. 20, n.° 2, pp. 97-108, 2021
+
+Revista UIS Ingenierías
+Página de la revista: revistas.uis.edu.co/index.php/revistauisingenierias
+
+Diseño, construcción y prueba estática
+experimental de un motor-cohete de
+combustible solido
+Design, construction and experimental static
+testing of a solid rocket motor
+Rafael Robayo-Salazar 1a, Julián Portocarrero-Hermann 1b, Juan Meneses-Suta 1c,
+Jonathan Salgado-Díaz 1d, Sergio Martínez-Riaño 1e, Fernando Delgado 1f,
+Andrea Gómez-Ruge 1g
+1
+
+Grupo de Investigación en Estudios Aeroespaciales (GIEA), Programa de Ingeniería Mecánica, Escuela Militar de
+Aviación (EMAVI) – Fuerza Aérea Colombiana, Colombia. Orcid: a 0000-0003-1687-2885.
+Correos electrónicos: a rafael.robayo@emavi.edu.co, b julian.portocarrero@emavi.edu.co,
+c
+jdmenesess@emavi.edu.co, d laboratorista.pimec@emavi.edu.co, e asistente.pimec@emavi.edu.co,
+f
+fernando.delgado@emavi.edu.co, g andrea.gomez@emavi.edu.co
+Recibido: 30 junio, 2020. Aceptado: 21 noviembre, 2020. Versión final: 4 enero, 2021.
+
+Resumen
+Este artículo presenta el diseño, construcción y prueba estática de un prototipo de motor cohete propulsado por
+combustible sólido tipo Candy. El diseño se basó en la metodología SRM (Solid Rocket Motor Design). El motor
+cohete incluyó el sistema ignitor, la cámara de combustión, el combustible sólido y la tobera. El diámetro interno de
+la cámara de combustión y la longitud total del motor cohete fueron de 27,67 mm y 230 mm, respectivamente. La
+tobera del motor cohete fue de tipo Laval convergente-divergente. El combustible sólido se basó en la mezcla de nitrato
+de potasio (KNO3) (oxidante) y azúcar de alta pureza (o sucrosa: C12H22O11) (combustible), cuya síntesis se logró a
+través de un proceso de fusión térmica (150-170°C durante 20-25 min). El desempeño del motor cohete fue evaluado
+mediante una prueba estática de combustión; arrojando como resultados una fuerza de empuje máxima (carga) de 227
+N, un impulso total de 98,69 Ns y un impulso especifico de 65,8 s, permitiendo así, su clasificación como un motor
+cohete clase G. Los resultados obtenidos son considerados de gran importancia en el desarrollo y caracterización de
+motores cohete de combustible sólido, necesarios para impulsar el campo de la cohetería experimental en Colombia.
+Palabras clave: motor cohete; motores de combustión interna; combustible sólido; propelente; prueba estática;
+combustión; cohetería; cohetes; diseño; industria aeroespacial.
+Abstract
+This paper introduces the design, construction, and static testing of a solid rocket motor. The design was based on the
+solid rocket motor design methodology (SRM). The rocket motor included the igniter system, the combustion chamber,
+the solid propellant, and the nozzle. The internal diameter of the combustion chamber and the total length of the rocket
+motor were 27,67 mm and 230 mm, respectively. The rocket motor nozzle was of the convergent-divergent Laval type.
+The propellant was based on the mixture of potassium nitrate (KNO 3) (oxidant) and high purity sugar (or sucrose:
+C12H22O11) (fuel), whose synthesis was achieved through a thermal fusion process (150-170 °C for 20-25 min). The
+performance of the rocket motor was evaluated using a static combustion test; resulting in a maximum thrust force
+ISSN impreso: 1657 - 4583. ISSN en línea: 2145 - 8456, CC BY-ND 4.0
+Como citar: R. Robayo-Salazar, J. Portocarrero-Hermann, J. Meneses-Suta, J. Salgado-Díaz, S. Martínez-Riaño, F.
+Delgado, A. Gómez-Ruge, “Diseño, construcción y prueba estática experimental de un motor-cohete de combustible
+solido,” Rev. UIS Ing., vol. 20, no. 2, pp. 97-108, 2021, doi: 10.18273/revuin.v20n2-2021009
+
+98
+
+R. Robayo-Salazar, J. Portocarrero-Hermann, J. Meneses-Suta, J. Salgado-Díaz, S. Martínez-Riaño, F. Delgado, A. Gómez-Ruge
+
+(load) of 227 N, a total impulse of 98,69 Ns and a specific impulse of 65,8 s, thus allowing its classification as a class
+G rocket motor. The results obtained are considered of great importance in the development and characterization of
+solid rocket motors, necessary to promote the experimental rocketry in Colombia.
+Keywords: rocket motor; internal combustion engines; solid propellant; static test; combustion; rocketry; rockets;
+rocket thrust; design; aerospace industry.
+1. Introducción
+Los cohetes experimentales son considerados por la
+NASA como una herramienta única para llevar a cabo
+investigaciones científicas en regiones importantes del
+espacio que son demasiado bajas para ser muestreadas
+por satélites [1]. En este sentido, los cohetes
+experimentales son empleados para el transporte, a bajo
+costo, de instrumentos científicos de medición y
+observación (cargas útiles), los cuales incluyen un
+sistema de recuperación. Entre los campos de aplicación
+se han reportado la bio-meteorología, fotobiología
+atmosférica preventiva, monitoreo de contaminación,
+telecomunicaciones, observación de territorios y toma de
+imágenes aéreas, entre otras [2]. Además del aporte a la
+ciencia y la tecnología, las misiones de cohetería
+experimental también proporcionan herramientas
+invaluables para la formación académica y científica [3],
+promoviendo, a través del desarrollo de proyectos de
+investigación, el surgimiento de escuelas
+de
+conocimiento necesarias para avanzar hacia misiones
+más costosas y de mayor duración [4], como el
+lanzamiento de cohetes tipo sonda y la colocación en
+posiciones suborbitales y orbitales de nano y picosatélites al servicio del país [5].
+El alcance o apogeo de un cohete experimental depende
+principalmente del desempeño y capacidad de empuje
+y/o propulsión del motor cohete. El motor cohete es un
+motor de combustión interna que no toma del exterior los
+gases que debe acelerar para generar el empuje, sino que
+tiene todo lo necesario en su interior, es decir, se trata de
+sistemas autónomos, que no dependen del medio que los
+rodea [6].
+Dentro de los tipos de motor cohete comúnmente
+utilizados se destacan los químicos, los cuales
+aprovechan la reacción química de distintos compuestos
+en una cámara de combustión, de forma que se generan
+gases de alta temperatura y presiones muy altas [7].
+Estos gases son entonces acelerados por una tobera de
+tipo convergente-divergente y son expulsados a gran
+velocidad para producir el cambio de momentum que
+impulsa al cohete. Adicional al empuje por momentum,
+se suma el empuje por presión, que resulta de la
+diferencia de presiones existentes entre los gases de
+
+escape y la atmosfera, en la salida de la tobera. A la
+mezcla de los compuestos químicos se le llama
+propelente (combustible) y a este tipo de motores se les
+clasifica según el estado físico del mismo en; propelente
+líquido, propelente sólido, propelente gaseoso y
+propelente hibrido [8], [9].
+En el caso particular de los propelentes sólidos, los
+combustibles tipo Candy han sido utilizados con éxito en
+el campo de la cohetería experimental [10], [11]. Estos
+combustibles se basan en la combinación de nitrato de
+potasio (KNO3) (oxidante) y azúcares (combustible). Los
+tipos de propelentes Candy más comunes son los
+derivados de las mezclas: nitrato de potasio/sucrosa
+(KNSU), nitrato de potasio/sorbitol (KNSO) y nitrato de
+potasio/dextrosa (KNDX).
+La composición ideal propuesta por Richard Nakka para
+este tipo de propelentes es de 65% oxidante y 35%
+combustible (en masa) [12]. Independientemente del tipo
+de combustible utilizado, los motores cohete son
+clasificados de acuerdo con su capacidad de propulsión
+(impulso especifico e impulso total). La Tabla 1 relaciona
+el impulso total (IT) para las diferentes clases de motores
+cohete.
+En Colombia, los desarrollos en el campo de la cohetería
+experimental se han concentrado en la investigación de
+motores cohetes propulsados por combustibles sólidos
+[13]. Al respecto, investigadores de la Universidad San
+Buenaventura reportaron el diseño de un motor cohete
+clase G y otro de 800 N de fuerza de empuje (teórica),
+ambos basados en un combustible tipo KNSB [14], [15].
+Por su parte, la Universidad Militar Nueva Granada llevo
+a cabo el diseño conceptual de un motor cohete clase I
+[16], [17]. Investigadores de la Universidad de los Andes
+reportaron el diseño de un motor cohete tipo KNSB de
+210 N de fuerza de empuje (teórica) [18]. Así mismo, la
+Fundación Universitaria los Libertadores definió el
+diseño conceptual de un motor cohete de 2,7 KN de
+fuerza de empuje [19], [20]. Trabajos complementarios
+también han sido reportados por la Universidad Nacional
+de Colombia [21], Universidad Libre [22], Universidad
+Industrial de Santander [23]; a los que se ha sumado, en
+algunos casos, la participación de la Industria Militar
+Colombiana (INDUMIL) y de la Fuerza Aérea
+Colombiana (FAC). Cabe destacar que la mayoría de
+
+Diseño, construcción y prueba estática experimental de un motor-cohete de combustible solido
+
+estos reportes corresponden a diseños de tipo conceptual
+(teóricos), y la validación de sus desempeños mediante
+pruebas reales (estáticas) de combustión, o lanzamientos
+del cohete, no ha sido reportada, lo cual impide su
+transferencia tecnológica.
+Tabla 1. Clasificación de motores cohete según su
+capacidad de propulsión
+Clase
+A
+B
+C
+D
+E
+F
+G
+H
+I
+J
+K
+L
+M
+N
+O
+P
+Q
+R
+S
+T
+U
+V
+
+Impulso total (IT)
+(Ns)
+1,26
+2,5
+2,5
+5
+5
+10
+10
+20
+20
+40
+40
+80
+80
+160
+160
+320
+320
+640
+640
+1.280
+1.280
+2.560
+2.560
+5.120
+5.120
+10.240
+10.240
+20.480
+20.480
+40.960
+40.960
+81.920
+81.920
+163.840
+163.840
+327.680
+327.680
+655.360
+655.360
+- 1’310.720
+1’310.720 - 2’621.440
+2’621.440 - 5’242.880
+
+99
+
+2. Materiales y metodología
+La metodología desarrollada en esta investigación se
+resume en tres fases (Figura 1): la primera, relacionada
+con el diseño y construcción del motor cohete; la
+segunda, con la síntesis y moldeo del propelente sólido;
+y finalmente, la tercera, asociada con la prueba estática
+del motor cohete. El diseño conceptual del motor cohete
+se realizó con base en la metodología SRM (Solid Rocket
+Motor Design) propuesta por Richard Nakka [12]. La
+clase del motor seleccionada para fines de diseño se
+estableció con base en el logro de un impulso total de 80160 Ns (motor clase G).
+
+Fuente: Adaptada de [12].
+Recientemente, Colombia planteó su política de
+desarrollo espacial a través del CONPES 3983 del 13 de
+enero del 2020; por medio del cual se establecen las
+condiciones habilitantes para que las tecnologías
+aeroespaciales sean un impulsor de la productividad, la
+diversificación y sofisticación de todo el sector
+productivo colombiano [24]. En este propósito, el
+desarrollo de proyectos en el área de cohetería es
+identificado como una línea estratégica para finalmente
+lograr el posicionamiento de nanosatélites al servicio de
+Colombia. Esta investigación se desarrolló en el marco
+del proyecto “FACSON-1” del Programa de Ingeniería
+Mecánica (PIMEC) de la Escuela Militar de Aviación
+“Marco Fidel Suarez” (EMAVI) - Fuerza Aérea
+Colombiana (FAC), el cual tiene como propósito el
+lanzamiento de un prototipo de cohete experimental
+basado en tecnología colombiana. Con relación a lo
+anterior, el objetivo de este artículo es presentar el
+diseño, construcción y prueba estática de combustión de
+un prototipo a escala del motor cohete.
+
+Figura 1. Metodología experimental desarrollada en la
+investigación. Fuente: elaboración propia.
+El diseño preliminar y detallado del motor cohete se
+realizó mediante el uso del software CAD (diseño
+asistido por computadora) SolidWorks, obteniendo un
+modelo 3D para cada uno de los componentes y un plano
+para su posterior fabricación. Para el mecanizado de la
+cámara de combustión y la tobera del motor cohete se
+utilizó acero galvanizado y acero de bajo contenido de
+carbono AISI 1020, respectivamente. La síntesis del
+combustible sólido tipo Candy se basó en la combinación
+de nitrato de potasio (KNO3) (oxidante) y azúcar de alta
+pureza (o sucrosa: C12H22O11) (combustible);
+componentes que inicialmente fueron sometidos a un
+proceso de molienda fina en un molino de bolas y
+posteriormente fueron mezclados y homogenizados en
+seco.
+
+100
+
+R. Robayo-Salazar, J. Portocarrero-Hermann, J. Meneses-Suta, J. Salgado-Díaz, S. Martínez-Riaño, F. Delgado, A. Gómez-Ruge
+
+El tamaño de partícula promedio obtenido es inferior a la
+malla #200 (75 µm). La obtención del grano propelente
+se realizó mediante fusión térmica de la mezcla a una
+temperatura controlada de entre 150-170°C durante 2025 min.
+El desempeño del motor cohete fue evaluado mediante
+una prueba estática de combustión en un banco de
+pruebas que acoplaba una celda de carga de punto único
+de 70 kg de capacidad, un sistema de encendido
+programado y un sistema electrónico de control y
+adquisición de datos (carga vs. tiempo). Durante la
+prueba de combustión estática fue posible obtener la
+fuerza de empuje generada por el motor-cohete,
+permitiendo su caracterización y posterior clasificación.
+El sistema electrónico de control y adquisición de datos
+se integró a partir de una tarjeta de desarrollo electrónica
+y programable Arduino I que incluía: un
+microcontrolador, un módulo micro-SD para el
+almacenamiento de datos, un módulo HX711 como
+interfaz para la adquisición de los datos de la celda de
+carga, cuatro diodos LED indicadores de estado, un
+pulsador para inicio de la prueba y un relé 5 V DC. El
+sistema electrónico fue programado en la plataforma de
+Arduino en un lenguaje de programación de alto nivel
+(Processing).
+La metodología SRM (Solid Rocket Motor Design)
+propuesta por Richard Nakka [12], seguida para el diseño
+conceptual del motor cohete de combustible sólido,
+consiste en un procedimiento secuencial que permite la
+selección y cálculo de las variables teóricas involucradas
+en el diseño de la cámara de combustión, grano
+propelente y tobera, permitiendo finalmente su
+dimensionamiento para un desempeño deseado (Figura
+2), que en este caso corresponde a un motor cohete clase
+G.
+Donde,
+Dc: diámetro de la cámara
+Lc: longitud de la cámara
+Vc: volumen de la cámara
+Do: diámetro externo del grano propelente
+do: diámetro del núcleo del grano
+Lo: longitud del grano propelente
+Ae: área de salida de gases
+At: área de la garganta de la tobera
+Lc: longitud del área convergente de la tobera
+Ld: longitud área divergente de la tobera
+Lo: longitud de la tobera
+
+Figura 2. Metodología SRM (Solid Rocket Motor
+Design). Fuente: elaboración propia.
+3. Resultados y análisis
+3.1. Diseño y construcción del motor cohete
+El diseño y construcción del motor cohete incluyo; la
+cámara de combustión, el sistema ignitor y la tobera o
+boquilla de escape de los gases. Para el diseño preliminar
+y detallado de los componentes se utilizó el software
+CAD SolidWorks, obteniendo un modelo 3D y un plano
+de cada uno de los componentes para su posterior
+fabricación. Estos diseños fueron posibles tras la
+aplicación de la metodología SRM (Solid Rocket Motor
+Design) propuesta por Richard Nakka [12]. Inicialmente,
+se diseñó la cámara de combustión, cuyas dimensiones
+están directamente relacionadas al diseño conceptual del
+grano propelente. Con relación a lo anterior, el grano
+propelente fue diseñado de forma cilíndrica para encajar
+perfectamente dentro de la cámara de combustión del
+motor cohete, buscando la mayor eficiencia volumétrica.
+En este sentido, la cámara de combustión corresponde a
+un tubo galvanizado y roscado en los extremos de 27,7
+mm de diámetro interno (Dc), 5,5 mm de espesor de pared
+y 152,4 mm de longitud (Lc), tal y como se puede
+observar en la Figura 3. De acuerdo con estas
+dimensiones, la cámara de combustión presento un
+volumen (Vc) de 91.642 mm3.
+El ignitor se acoplo a la cámara de combustión en el
+extremo opuesto a la tobera por medio de un tapón
+roscado (Figura 3). El ignitor consistió en un cartucho de
+Candy KNSU en contacto con un filamento de acero
+como resistencia eléctrica.
+
+Diseño, construcción y prueba estática experimental de un motor-cohete de combustible solido
+
+101
+
+Mediante el sistema electrónico de control se programó
+el encendido del ignitor aplicando 12V y 100-200 mA de
+corriente continua, logrando que el filamento de acero
+(resistencia eléctrica) alcanzara la temperatura umbral
+(≥300°C). En el centro del tapón ignitor se dispone un
+orificio de 1 mm a través del cual pasan los cables de
+alimentación que están conectados al alambre resistivo
+encapsulado en el cartucho de Candy KNSU.
+Luego de fijar el circuito, el tapón fue sellado
+internamente, con un compuesto de tipo ablativo basado
+en la mezcla de resina poliéster, partículas refractarias y
+fibra de vidrio, para evitar fugas y pérdida de presión
+durante la combustión.
+
+Figura 4. Diseño de la tobera del motor cohete: planos
+de fabricación. Fuente: elaboración propia.
+3.2. Síntesis y moldeo del combustible sólido KNSU
+(grano propelente)
+
+Figura 3. Diseño de la cámara de combustión del motor
+cohete: planos de fabricación. Fuente: elaboración
+propia.
+La tobera diseñada para el motor cohete corresponde a
+una de tipo convergente-divergente o tobera de Laval,
+cuyo perfil geométrico varía el área seccionada
+transversalmente (o diámetro). La condición de diseño de
+la tobera se realizó con un área de entrada (Ae)
+(convergente), área de garganta (At) y área de salida (Ae)
+(divergente) de 601,3, 33,9 y 339,0 mm 2,
+respectivamente. Para este diseño, el diámetro de la
+garganta de la tobera fue de 6,57 mm, con una relación
+de expansión optima Ae/At de 10 y ángulos convergentedivergente de 60-24°. La relación entre el área de
+quemado y el área de la garganta de la tobera (Kn (max))
+fue de 254. La longitud de la tobera (L o), representada
+como la suma de las longitudes convergente (Lc) y
+divergente (Ld), fue de 51,68 mm con un espesor de pared
+constante en todas las zonas de 2,36 mm. La geometría
+presentada en la Figura 4 fue obtenida por mecanizado de
+un bloque macizo de acero de bajo contenido de carbono
+AISI 1020 en un torno CNC de 4 ejes.
+
+El propelente solido se basó en la mezcla de dos
+constituyentes principales: un oxidante y un combustible.
+En el caso de los combustibles sólidos tipo Candy, el
+oxidante comúnmente utilizado para su síntesis es el
+nitrato de potasio (KNO3 (KN)). Entre las azúcares
+(combustible) se destacan: la sucrosa (SU), el sorbitol
+(SO) y la dextrosa (DX). La composición ideal propuesta
+por Richard Nakka para este tipo de propelentes es de
+65% oxidante y 35% combustible (en masa) [12]. En este
+sentido, la mezcla estándar seleccionada para la síntesis
+y moldeo del grano propelente fue 65%KNO3+35%SU
+(Candy tipo KNSU).
+Respecto al diseño del grano propelente cabe anotar que,
+el motor cohete opera bajo el principio de convertir
+energía calórica, de las reacciones químicas, en energía
+cinética. Es decir, el calor liberado por la combustión del
+propelente provee la energía calórica; la alta velocidad de
+los productos de escape saliendo del motor a través de la
+tobera otorgan la energía cinética. Por lo tanto, la
+combustión del propelente KNSU es una reacción
+química exotérmica (≈1.450°C). Para iniciar la
+combustión se necesitó de una fuente de calor externa
+(sistema ignitor) que suministrara la energía necesaria a
+un nivel de umbral (temperatura ≥ 300°C).
+
+102
+
+R. Robayo-Salazar, J. Portocarrero-Hermann, J. Meneses-Suta, J. Salgado-Díaz, S. Martínez-Riaño, F. Delgado, A. Gómez-Ruge
+
+En efecto, la combustión del propelente tipo KNSU está
+dada por la ecuación 1 (reactivos → productos) (1 mol de
+sucrosa y 6,29 moles de KNO3) [25].
+𝐶12 𝐻22 𝑂11 + 6,29𝐾𝑁𝑂3
+→ 3,80𝐶𝑂2 + 5,21𝐶𝑂
++ 7,79𝐻2 𝑂 + 3,07𝐻2
++ 3,14𝑁2 + 3𝐾2 𝐶𝑂3
++ 0,27𝐾𝑂𝐻
+
+(1)
+
+Donde los compuestos se simbolizan de la siguiente
+manera: sucrosa (solido) (C12H22O11), nitrato de potasio
+(solido) (KNO3), dióxido de carbono (gas) (CO2),
+monóxido de carbono (gas) (CO), vapor (gas) (H2O),
+hidrogeno (gas) (H2), nitrógeno (gas) (N2), carbonato de
+potasio (liquido) (K2CO3) e hidróxido de potasio
+(liquido) (KOH).
+El grano propelente consistió en un solo segmento
+cilíndrico de 150 mm de longitud (Lo) y 27,67 mm de
+diámetro (Do) (Figura 5), con un núcleo hueco central que
+se extiende a través de todo el grano para incrementar el
+área de la superficie del propelente expuesta a la
+combustión inicial. La forma del núcleo hueco fue de tipo
+tubular o circular con un diámetro (do) de 6,35 mm. Cabe
+resaltar que el empuje que el motor genera es
+proporcional al área en combustión en cualquier instante
+particular del tiempo, que depende casi exclusivamente
+de la forma inicial del grano [25]. Este grano cilíndrico
+hueco y el sistema ignitor del motor cohete fueron
+diseñados para promover el quemado radial y un perfil de
+empuje-tiempo de tipo progresivo. Este quemado
+empieza a lo largo de la longitud del núcleo central, con
+el avance progresivo de la superficie de la quema en
+retroceso y radialmente hacia el exterior. La relación
+longitud/diámetro (L/D) del grano propelente fue de
+5,42.
+Para el diseño del motor cohete, siguiendo la
+metodología SRM [12], se tuvo en cuenta una fracción
+de carga volumétrica del motor cohete de 0,932, definida
+como la relación entre el volumen del grano (Vg) y el
+volumen de la cámara (Vc). Así entonces, el volumen del
+grano propelente fue de 85.448 mm3, con una masa de
+0,153 kg calculada para una densidad real de 1,79 g/cm3.
+El área total de quemado (Abo) del combustible sólido fue
+de 6.410 mm2, con una generación de presión teórica
+(MEOP) en la cámara de combustión de 850 psi. Al
+respecto, la cámara de combustión de acero galvanizado
+diseñada tiene la capacidad de soportar este nivel de
+presión.
+
+Figura 5. Diseño del motor cohete y dimensiones del
+grano propelente. Fuente: elaboración propia.
+Cabe destacar que el proceso de moldeo del grano
+propelente se llevó a cabo mediante la fusión térmica de
+la mezcla 65%KNO3-35%SU (KNSU) y su posterior
+vaciado dentro de la cámara de combustión. Inicialmente,
+como se puede observar en la Figura 6, la mezcla KNSU
+fue calentada progresivamente hasta alcanzar su estado
+fundido a una temperatura controlada de 150-170°C. El
+control de la temperatura se llevó a cabo utilizando una
+cámara termográfica FLIR E40. La fusión térmica de la
+mezcla KNSU se logró en un tiempo de entre 20-25 min;
+tiempo durante el cual la mezcla se mantuvo en constante
+agitación manual.
+Cabe destacar que la temperatura alcanzada en este
+proceso está por encima del punto de fusión de la sucrosa
+y esta tiende a “caramelizarse”, mientras que el KNO 3
+permanece como partículas sólidas parcialmente
+disueltas y suspendidas en la matriz de sucrosa. La
+“caramelización” de la mezcla de Candy se caracteriza
+por un oscurecimiento de la masa fundida, tal y como se
+puede observar en la Figura 6. Al respecto, como
+resultado de varios ensayos preliminares se estableció
+que un color oscuro implica que la mezcla se ha calentado
+demasiado tiempo a una temperatura demasiado alta.
+
+Diseño, construcción y prueba estática experimental de un motor-cohete de combustible solido
+
+Figura 6. Proceso de síntesis y moldeo del grano
+propelente (combustible sólido tipo Candy). Fuente:
+elaboración propia.
+Una vez la mezcla se encontraba en estado fundido, fue
+homogenizada y vertida dentro de la cámara de
+combustión (molde). La aplicación de vibrado mecánico
+favoreció la extracción del aire atrapado durante el
+vaciado de la mezcla de Candy. De manera previa y
+durante el proceso de moldeo del grano propelente, la
+cámara de combustión fue calentada (150 °C)
+externamente utilizando una pistola de calor (Figura 6);
+esto favoreció el vertido y la compactación de la mezcla
+dentro del molde (cámara de combustión), impidiendo su
+rápida solidificación. Cabe anotar que, el núcleo hueco
+tubular (o circular) del grano propelente se obtuvo
+fijando una varilla de acero de 6,35 mm de diámetro de
+forma concéntrica al interior de la cámara de combustión.
+Una vez el grano propelente solidifico (≈60 min), la
+varilla central fue retirada, logrando la geometría de
+diseño requerida. Luego de desmoldar el núcleo, la
+cámara de combustión con el grano propelente en su
+interior se conservó sellado con una película plástica, con
+la finalidad de preservarlos de la humedad hasta el
+momento de realizar la prueba estática de combustión.
+3.3. Prueba estática del motor cohete
+La prueba estática de combustión permitió la validación
+del diseño y la clasificación del motor cohete en función
+de su desempeño. Inicialmente, se realizó el ensamble y
+verificación de todos los componentes que integran el
+motor cohete (Figura 7).
+
+103
+
+Figura 7. Descripción motor cohete: 1) Tapón ignitor de
+acero galvanizado de 1”, 2) Tubo acero galvanizado
+(cámara de combustión) de 1” x 6”, 3) Tobera
+convergente-divergente, 4) Ignitor electrónico, 5)
+Sellante material compuesto y 6) Grano propelente.
+Fuente: elaboración propia.
+La Figura 8 presenta el montaje experimental de la
+prueba estática de combustión del motor cohete, el cual
+fue colocado de forma horizontal apoyando un tornillo
+que fue fijado al tapón ignitor, sobre la celda de carga de
+punto único de 70 kg de capacidad. El banco de pruebas
+cuenta con un sistema guía que permite el libre
+deslizamiento horizontal del motor cohete. La fuerza de
+empuje (carga) y el tiempo de propulsión fueron los datos
+primarios recolectados durante la prueba. La adquisición
+de estos datos fue posible mediante la adaptación de un
+sistema electrónico (interfaz) que controlaba: 1) la
+ignición programada del motor cohete y 2) la captación y
+almacenamiento simultaneo de los datos (carga vs.
+tiempo) durante la prueba. Previo a la ignición del motor
+cohete, se llevaron a cabo pruebas de verificación de los
+sistemas de encendido y adquisición de datos, para
+confirmar el correcto funcionamiento de todos los
+subsistemas.
+Los resultados obtenidos mediante la prueba estática de
+combustión se presentan en la Tabla 2 y Figura 9. Es
+posible identificar que el perfil empuje-tiempo obtenido
+fue de tipo progresivo, característico de un grano
+propelente con núcleo hueco tubular (o circular), con un
+
+104
+
+R. Robayo-Salazar, J. Portocarrero-Hermann, J. Meneses-Suta, J. Salgado-Díaz, S. Martínez-Riaño, F. Delgado, A. Gómez-Ruge
+
+valor de empuje máximo (Fmax) registrado de 227 N.
+Aunque este valor de empuje es un criterio importante
+para caracterizar la capacidad de elevación de un motor
+cohete, no proporciona ninguna indicación de que tan
+alto será propulsado el cohete. Para conocer esto, se
+necesita una medida de la producción total en términos
+de capacidad de propulsión. El criterio esencial para esto
+es el impulso total (IT) del motor cohete, que relaciona el
+empuje con el tiempo o duración de la propulsión. Cabe
+destacar que el apogeo de un cohete también depende de
+la relación empuje/masa del cohete.
+
+Figura 8. Montaje y prueba estática de combustión del
+motor cohete. Fuente: elaboración propia.
+Los resultados obtenidos mediante la prueba estática de
+combustión se presentan en la Tabla 2 y Figura 9. Es
+posible identificar que el perfil empuje-tiempo obtenido
+fue de tipo progresivo, característico de un grano
+propelente con núcleo hueco tubular (o circular), con un
+valor de empuje máximo (Fmax) registrado de 227 N.
+Aunque este valor de empuje es un criterio importante
+para caracterizar la capacidad de elevación de un motor
+cohete, no proporciona ninguna indicación de que tan
+alto será propulsado el cohete. Para conocer esto, se
+necesita una medida de la producción total en términos
+de capacidad de propulsión. El criterio esencial para esto
+es el impulso total (IT) del motor cohete, que relaciona el
+empuje con el tiempo o duración de la propulsión. Cabe
+destacar que el apogeo de un cohete también depende de
+la relación empuje/masa del cohete.
+A partir de la curva carga (N) vs. tiempo (s) obtenida por
+medio de la prueba estática fue posible determinar el
+impulso total (IT) del motor cohete. El impulso total (IT)
+se define como la integral del empuje (F) durante el
+tiempo de propulsión (t) del motor (ecuación 2):
+𝑡
+
+𝐼𝑇 = ∫ 𝐹 𝑑𝑡
+0
+
+(2)
+
+Tabla 2. Datos de carga (N) registrados por medio de la
+prueba estática de combustión
+Tiempo (s)
+0,0
+0,1
+0,2
+0,3
+0,4
+0,5
+0,6
+0,7
+0,8
+0,9
+1,0
+1,1
+1,2
+1,3
+1,4
+1,5
+1,6
+1,7
+1,8
+1,9
+2,0
+
+Carga (N)
+0,00
+0,00
+0,00
+0,00
+0,49
+23,05
+34,42
+109,15
+156,91
+227,22
+218,59
+85,71
+53,64
+24,12
+17,65
+13,53
+4,71
+5,10
+5,59
+4,51
+4,32
+
+Fuente: elaboración propia.
+
+Figura 9. Gráfico Carga (N) vs. Tiempo (s) e Impulso
+Total (Ns) obtenido a partir de la prueba estática de
+combustión del motor cohete. Fuente: elaboración
+propia.
+De acuerdo con los datos reportados en la Figura 9, el
+impulso total (IT) del motor cohete fue de 98,7 Ns. A
+partir de este resultado y la clasificación de los motores
+cohetes presentada en la Tabla 1, este motor cohete puede
+ser catalogado como un motor clase G con un impulso
+total (IT) entre 80-160 Ns. Con base en el impulso total
+(IT) obtenido, y teniendo en cuenta que el tiempo de
+
+Diseño, construcción y prueba estática experimental de un motor-cohete de combustible solido
+
+propulsión (t) fue de 1,3 s, fue determinado el empuje
+promedio (Favg) del motor cohete utilizando la ecuación
+3. Este calculo arrojo como resultado un valor de Favg de
+75,9 N.
+𝐹𝑎𝑣𝑔 =
+
+𝐼𝑇 98,7 𝑁𝑠
+=
+= 75,9 𝑁
+𝑡
+1,3 𝑠
+
+(3)
+
+Por su parte, el impulso especifico (ISP) es una medida del
+rendimiento (potencial) de los combustibles sólidos y
+está definido como el impulso total impartido por unidad
+de gasto (peso o volumétrico) de propelente utilizado. En
+este sentido, un mayor valor de impulso especifico (ISP)
+indica un propelente eficiente y de alto poder. El cálculo
+del impulso especifico (ISP) está representado con la
+ecuación 4, siendo m la masa del grano propelente y g la
+constante gravitacional. Con base en lo anteriormente
+descrito, el impulso especifico (ISP) del motor cohete fue
+de 65,8 s.
+𝐼𝑆𝑃 =
+
+𝐼𝑇
+98,7 𝑁𝑠
+=
+𝑚 𝑔 0,153 𝑘𝑔 × 9,81 𝑚/𝑠 2
+= 65,8 𝑠
+
+(4)
+
+Finalmente, la Tabla 3 resume la caracterización y
+clasificación del motor cohete basada en los resultados
+arrojados por la prueba estática de combustión. Como se
+pudo corroborar, el desempeño del motor cohete
+concuerda con las especificaciones de diseño conceptual
+previamente establecidas (motor cohete clase G).
+Tabla 3. Caracterización y clasificación del motor
+cohete
+Característica
+Masa de grano propelente
+Empuje máximo (Fmax)
+Impulso total (IT)
+Tiempo de propulsión (t)
+Empuje promedio (Favg)
+Impulso especifico (ISP)
+Clasificación del motor
+
+Resultado
+0,153 kg
+227 N
+98,7 N-s
+1,3 s
+75,9 N
+65,8 s
+Clase G
+
+Fuente: elaboración propia.
+Estos resultados son considerados de suma importancia
+para lograr la trasferencia tecnológica de este tipo de
+motores cohete y contribuir al desarrollo del campo de la
+cohetería experimental en Colombia, cuyas bases más
+importantes a nivel mundial se han logrado establecer a
+partir del diseño, construcción y lanzamiento de cohetes
+propulsados por combustibles sólidos.
+
+105
+
+4. Conclusiones
+El desarrollo de esta investigación demostró la
+posibilidad de diseñar un motor cohete propulsado por un
+combustible sólido tipo Candy KNSU (65%KNO335%Sucrosa), siguiendo la metodología SRM, para su
+implementación en el lanzamiento de cohetes
+experimentales.
+La validación del diseño del motor cohete, a través de una
+prueba real de combustión, permitirá escalar estos
+resultados en el desarrollo de nuevas versiones con
+mayores capacidades de propulsión.
+Estos resultados impulsan el desarrollo de toda una línea
+de investigación enfocada en la optimización del
+desempeño de motores cohetes de combustibles sólidos,
+que a su vez fomente el desarrollo de misiones de
+cohetería experimental en Colombia.
+Los resultados experimentales obtenidos por medio de la
+prueba estática de combustión permitieron concluir que
+el impulso total (IT) e impulso especifico (IS) del motor
+cohete fueron de 98,7 Ns y 65,8 s, respectivamente, con
+un valor de empuje promedio (Favg) de 75,9 N y un
+tiempo de propulsión de 1,3 s.
+Los resultados experimentales permitieron clasificar el
+motor cohete diseñado como un motor clase G, con un
+empuje máximo de 227 N, destacando la obtención de
+este desempeño con la utilización de un combustible
+sólido tipo Candy KNSU de 0,153 kg de masa.
+La metodología SRM (Solid Rocket Motor Design)
+resultó ser coherente con los resultados reales obtenidos
+mediante la prueba de combustión estática.
+Agradecimiento
+Los autores, miembros del Grupo de Investigación en
+Estudios Aeroespaciales (GIEA) de la Fuerza Aérea
+Colombiana, agradecen a la Sección de Investigación
+(SEINV) y al Grupo Académico (GRUAC) de la Escuela
+Militar de Aviación (EMAVI) por todo el apoyo recibido
+en el marco de esta investigación.
+Referencias
+[1] NASA, “Descripción general del programa Rocket
+de sondeo de la NASA: Oportunidades únicas para
+investigación científica enfocada, de bajo costo y
+rápida”, NASA Rocking Science Rocking, 2019. [En
+línea].
+Disponible
+en:
+https://rscience.gsfc.nasa.gov/srrov.html.
+
+106
+
+R. Robayo-Salazar, J. Portocarrero-Hermann, J. Meneses-Suta, J. Salgado-Díaz, S. Martínez-Riaño, F. Delgado, A. Gómez-Ruge
+
+[2] V. Marcado et al., “Progresos alcanzados en el
+proyecto universitario cohete sonda ULA”, Universidad,
+Cienc. y Tecnol., vol. 13, no. 53, pp. 305-316, 2009.
+[3] E. A. Acosta Vasquez, L. E. Marin, O. Jaimes,
+“Cohetes hidraulicos. Diseño, construccion y
+experimentacion, una experiencia integradora”, Revista
+científica, vol. 13, no. 1, pp. 229-231, 2011, doi:
+10.14483/23448350.966
+[4] M. Bandecchi, B. Melton, F. Ongaro, “Concurrent
+engineering applied to space mission assessment and
+design”, Esa Bull. Sp. Agency, vol. 99, pp. 34-40, 1999.
+[5] C. E. Álvarez Calderón, C. G. Corredor Gutiérrez,
+El espacio exterior: una oportunidad infinita para
+Colombia. Bogotá D.C.: Fuerza Aérea Colombiana,
+2019.
+[6] C. Seisdedos Corteguera, “Diseño y contrucción de
+un motor cohete hibrido”, tesis de maestría, Universidad
+Carlos III de Madrid, 2013.
+[7] J. Murcia Piñeros, S. Gómez Salcedo, “Diseño de
+los motores cohetes de propelente solido para el despegue
+asistido de un vehículo aéreo no tripulado (VANT)”,
+Cienc. y Tecnol. Aeronáutica, vol. 17, pp. 29-39, 2012.
+[8] D. Martinez Pino, “Diseño y optimización de un
+cohete de sondeo”, trabajo fin de grado, Universidad de
+Sevilla, 2014.
+[9] G. P. Suton, O. Biblarz, Rocket Propulsion
+Elements, Eighth Edi. New Jersey: John Wiley & Sons,
+INC., 2010.
+[10] L. Lacruz, M. Parco, R. Santos, C. Torres, J.
+Ferreira, P. Benítez-Díaz, “Análisis experimental de las
+oscilaciones de presión interna en un motor de
+combustible sólido para cohete sonda”, Rev. Cienc. e
+Ing., vol. 37, no. 2, pp. 81-88, 2016.
+[11] C.
+Cubides,
+“Propelentes
+solidos:
+Una
+experimentacion para el futuro”, Rev. Cienc. y Tecnol.
+del Ejercito, vol. 6, no. 12, pp. 11-19, 2015.
+[12] R. Nakka, “Richard Nakka’s Experimental
+Rocketry Web Site”, 1997. [En línea]. Disponible en:
+http://www.nakka-rocketry.net/.
+
+[13] R. A. Robayo-Salazar, “Cohetes tipo sonda con
+fines científicos, tecnológicos y militares: una
+oportunidad para su desarrollo en la EMAVI-FAC”, en
+Ciencia, Gestión e Ingeniería en el Desarrollo
+Aeroespacial, Cali, Colombia, 2019, pp. 49-72.
+[14] M. Correal, D. Castaño, O. Rincón, H. Aguillón,
+“Diseño y construcción de un cohete amateur tipo G”,
+trabajo de grado, Universidad de San Buenaventura,
+2009.
+[15] E. A. Perez Reina, N. Bermeo Perez, D. A. Fuquen,
+“Diseño y construccion de un motor cohete que produzca
+800 newton de empuje”, trabajo de grado, Universidad de
+San Buenaventura, 2010.
+[16] F. A. Riveros Enciso, L. A. Rodriguez Herrera,
+“Diseño y construcción de un cohete aficionado
+controlado mediante el accionamiento de una tobera de
+empuje vectorial”, trabajo de grado, Universidad Militar
+de Nueva Granada, 2010.
+[17] J. A. Aponte Rodriguez, D. Amaya Hurtado, A.
+Rubiano Fonseca, V. Prada Jimenez, “Modelado, diseño
+y construccion de un sistema activo de control de
+estabilidad de bajo costo para cohetes experimentales
+aficionado”, Cienc. e Ing. Neogranadina, vol. 20, no. 1,
+pp. 77-96, 2010.
+[18] J. A. Urrego Peña, F. A. Rojas Mora, “Misiones de
+coheteria experimental con propelente solido: Mision
+Seneca, Cohete AINKAA 1”, Cienc. e Ing.
+Neogranadina, vol. 20, no. 2, pp. 53-64, 2010.
+[19] J. O. Murcia Piñeros, H. D. Ceron Muñoz, S. A.
+Gomez Salcedo, S. N. Pachon Laiton, “Diseño
+conceptual, preliminar y análisis de la trayectoria de
+vuelo de un cohete sonda de propelente solido para carga
+util de 2 kg”, en Cuarto Congreso Internacional en
+Ciencia y Tecnología Aeroespacial (CICTA 2012), no.
+Octubre, pp. 1-11.
+[20] O. D. Salazar Ceballos, M. A. Solorzano Gomez,
+“Diseño conceptual, preliminar y detallado del cohete
+sonda recuperable ‘Aristarco I’ propulsado con
+propelente solido”, trabajo de grado, Fundacion
+Universitaria Los Libertadores, 2016.
+
+Diseño, construcción y prueba estática experimental de un motor-cohete de combustible solido
+
+[21] N. Alvarez Rojas, J. Huérfano, O. Ojeda, “Diseño
+e implementación de misión para el lanzamiento de un
+cohete para tres kilometros de altura”, en VIII Congreso
+Argentino de Tecnología Espacial, 2015, pp. 1-10.
+
+[22] F. A. Galindo Herrera, J. O. Calderon Rojas,
+“Diseño estructural y aerodinámico de un cohete sonda
+para ser usado en la adquisición de variables
+atmosféricas”, en XII Congreso Iberoamericano de
+Ingeniería Mecánica (CIBIM XII), 2015, pp. 1-9.
+[23] D. Valdivieso Merino, M. A. Rojas Nova, A. F.
+Correa Rivera, “Diseño y validacion de los calculos de
+un motor cohete R-Candy E65”, Research Report,
+Universidad Industrial de Santander, 2017.
+[24] DPN Colombia, Política de desarrollo espacial:
+condiciones habilitantes para el impulso de la
+competitividad nacional. Bogotá, D.C. Colombia,
+Documento CONPES 3983, 2020.
+[25] R. Nakka, “Solid propellant rocket motor desing
+and testing”, trabajo de grado, University of Manitoba,
+1984.
+
+107
+
+

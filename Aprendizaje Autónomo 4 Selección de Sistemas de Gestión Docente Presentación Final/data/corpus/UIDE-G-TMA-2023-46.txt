@@ -1,0 +1,2050 @@
+i
+
+INGENIERÍA AUTOMOTRIZ
+
+Proyecto Previo a la Obtención del Título de Ingeniero Automotriz
+
+Autor: Bryan Isaac Cuenca Fuentes
+Tutor: Ing. Edgar Gustavo Vera Puebla, MsC.
+
+Construcción de un Prototipo Monoplaza Sobre Base de Chasis Tubular
+del Tipo Auto de Ruta
+
+Guayaquil-Ecuador |2023
+
+ii
+
+iii
+Certificado de Autoría
+Yo, Bryan Isaac Cuenca Fuentes, declaramos bajo juramento, que el trabajo aquí
+descrito es de mí autoría; que no ha sido presentado anteriormente para ningún grado
+calificación profesional y que se ha consultado la bibliografía detallada. Cedo mis derechos de
+propiedad intelectual a la Universidad Internacional del Ecuador, para que sea publicado y
+divulgado en internet, según lo establecido en la Ley de Propiedad Intelectual, reglamento y
+leyes.
+
+Bryan Isaac Cuenca Fuentes
+C.I: 0956838585
+
+iv
+Aprobación del Tutor
+Yo, Edgar Gustavo Vera Pueblo certifico que conozco a los autores del presente
+trabajo siendo responsable exclusivo tanto de su originalidad y autenticidad, como de su
+contenido.
+
+Ing. Edgar Gustavo Vera Puebla, MsC.
+Tutor del Proyecto
+
+v
+Dedicatoria
+Quiero dedicar este trabajo a mis profesores y mentores, quienes han sido guías
+indispensables en mi formación académica. Vuestra sabiduría, experiencia y dedicación han
+sido fundamentales para mi crecimiento como estudiante y como persona. Agradezco
+especialmente a mi director de tesis, por su paciencia, sabios consejos y por ayudarme a dar
+forma a mis ideas. Finalmente, quiero dedicar esta tesis a aquellos docentes que han luchado
+y siguen luchando por la expansión del conocimiento y por el bienestar de la humanidad,
+dentro de la Universidad Internacional del Ecuador. Vuestra dedicación y pasión son una
+fuente constante de inspiración para mí.
+Bryan Isaac Cuenca Fuentes
+
+vi
+Agradecimientos
+Con gran emoción y gratitud, me dirijo a quienes han sido una fuente constante de
+apoyo, inspiración y aliento a lo largo de esta ardua travesía académica. En primer lugar,
+quiero expresar mi más profundo agradecimiento a mi familia. A mis padres, por su
+inquebrantable amor, paciencia y sacrificio. Su apoyo incondicional ha sido fundamental para
+que yo pueda alcanzar este logro. A mis hermanos, por su compañía y ánimo en los
+momentos difíciles. Agradezco a mis abuelos, tíos, primos y demás familiares, por su
+constante aliento y por creer en mí.
+Bryan Isaac Cuenca Fuentes
+
+vii
+Índice General
+Certificado de Autoría............................................................................................................... iii
+Aprobación del Tutor ................................................................................................................ iv
+Dedicatoria ................................................................................................................................. v
+Agradecimientos ....................................................................................................................... vi
+Índice General .......................................................................................................................... vii
+Índice de Figuras ....................................................................................................................... xi
+Índice de Tablas ....................................................................................................................... xv
+Resumen.................................................................................................................................. xvi
+Abstract .................................................................................................................................. xvii
+Capítulo I ................................................................................................................................... 1
+Antecedentes .............................................................................................................................. 1
+1.1 Tema de Investigación ........................................................................................................ 1
+1.2 Planteamiento, Formulación y Sistematización del Problema............................................ 1
+1.2.1 Planteamiento del Problema .......................................................................................... 1
+1.2.2 Formulación del Problema ............................................................................................ 2
+1.2.3 Sistematización del Problema ........................................................................................ 2
+1.3 Objetivos de la Investigación .............................................................................................. 2
+1.3.1 Objetivo General ............................................................................................................ 2
+1.3.2 Objetivos Específicos ..................................................................................................... 2
+1.4 Justificación y Delimitación de la Investigación ................................................................ 3
+1.4.1 Justificación Teórica ...................................................................................................... 3
+
+viii
+1.4.2 Justificación Metodológica ............................................................................................ 3
+1.4.3 Justificación Práctica..................................................................................................... 3
+1.5 Delimitación Temporal ....................................................................................................... 3
+1.6 Delimitación Geográfica ..................................................................................................... 4
+1.7 Delimitación del Contenido ................................................................................................ 4
+1.8 Alcance ............................................................................................................................... 4
+Capítulo II .................................................................................................................................. 5
+Marco Referencial ...................................................................................................................... 5
+2.1 Criterios de Diseño en Ingeniería Mecánica ....................................................................... 5
+2.2 Tipos de Estructuras Mecánicas ......................................................................................... 8
+2.2.1 Máquinas ........................................................................................................................ 9
+2.2.2 Armaduras .................................................................................................................... 10
+2.2.3 Bastidores..................................................................................................................... 12
+2.3 Materiales Usados en Bastidores ...................................................................................... 14
+2.4 Conexiones de Unión y Soldadura.................................................................................... 17
+2.4.1 Soldadura por Arco Eléctrico ...................................................................................... 17
+2.4.2 Soldadura por Resistencia ........................................................................................... 18
+2.4.3 Soldadura por Gas ....................................................................................................... 18
+2.4.4 Soldadura TIG (Tungsten Inert Gas) ........................................................................... 19
+2.4.5 Soldadura MIG (Metal Inert Gas) ............................................................................... 20
+2.4.6 Soldadura por Puntos .................................................................................................. 20
+
+ix
+2.5 Parámetros de Funcionalidad y Criterios de Construcción. .............................................. 21
+2.5.1 Dimensiones Máximas de los Vehículos ...................................................................... 22
+2.5.2 Rigidez .......................................................................................................................... 22
+2.5.3 Ancho de Vía ................................................................................................................ 23
+2.5.4 Espacio ......................................................................................................................... 24
+2.5.5 Peso y Distribución ...................................................................................................... 26
+2.5.6 Eje de Balanceo............................................................................................................ 27
+2.6 Proceso de Reingeniería Inversa ....................................................................................... 28
+2.7 Diseño Asistido por Computadora.................................................................................... 29
+2.7.1 Programas CAD (Diseño Asistido por Computadora) ................................................ 30
+2.7.2 Programas CAE (Ingeniería Asistida por Computadora) ........................................... 30
+2.7.3 Programas CAM (Fabricación Asistida por Computadora) ....................................... 30
+2.8 Bastidores Tubulares......................................................................................................... 31
+2.8.1 Bastidor SAE Student ................................................................................................... 33
+2.8.2 Bastidor Caterham 7 .................................................................................................... 34
+2.8.3 Bastidor Ariel Atom...................................................................................................... 35
+2.9 Propuesta de un Prototipo ................................................................................................. 36
+Capítulo III ............................................................................................................................... 38
+Construcción del Prototipo de Chasis Tubular ........................................................................ 38
+3.1 Proceso de Modelado ........................................................................................................ 38
+3.1.1 Modelado Cad Mediante Autodesk Inventor................................................................ 41
+
+x
+3.1.2 Ensayos de Esfuerzo y Deformación ............................................................................ 46
+3.2 Maqueta Mediante Impresión 3D ..................................................................................... 48
+3.2.1 Preparación del Modelo .............................................................................................. 48
+3.2.2 Impresión SLA (Estereolitografía) ............................................................................... 50
+3.2.3 Proceso de Curado....................................................................................................... 51
+3.2.4 Etapa de Postprocesado............................................................................................... 51
+3.3 Maqueta a Escala 1:1 ........................................................................................................ 52
+3.4 Construcción del Chasis Tubular ...................................................................................... 58
+3.4.1 Selección de Materiales ............................................................................................... 58
+3.4.2 Proceso de Corte y Doblado de Tubos ........................................................................ 59
+3.4.3 Proceso de Soldadura .................................................................................................. 60
+3.4.4 Proceso de Ensamblaje y Alineación ........................................................................... 62
+Capítulo IV............................................................................................................................... 64
+Resultados y Discusión ............................................................................................................ 64
+4.1 Interpretación de Resultados............................................................................................. 64
+4.1.1 Descripción de Simulaciones ....................................................................................... 64
+4.1.2 Resultados de Ensayos de Esfuerzo ............................................................................. 66
+4.2 Observación de Datos Presentes en las Pruebas Realizadas ............................................. 68
+Conclusiones ............................................................................................................................ 70
+Recomendaciones .................................................................................................................... 71
+Bibliografía .............................................................................................................................. 72
+
+xi
+Índice de Figuras
+Figura 1 Etapas e Iteraciones de un Proceso de Diseño ........................................................... 7
+Figura 2 Ejemplos de Máquinas Mecánicas .............................................................................. 9
+Figura 3 Ejemplo de Armadura................................................................................................ 10
+Figura 4 Unión de una Armadura por Nodos .......................................................................... 11
+Figura 5 Ejemplos de Bastidores ............................................................................................. 12
+Figura 6 Análisis Estructural de un Bastidor Autoportante .................................................... 13
+Figura 7 Soldadura por Arco Eléctrico ................................................................................... 17
+Figura 8 Soldadura por Resistencia ......................................................................................... 18
+Figura 9 Soldadura por Gas .................................................................................................... 19
+Figura 10 Soldadura TIG ......................................................................................................... 19
+Figura 11 Soldadura MIG ........................................................................................................ 20
+Figura 12 Soldadura por Puntos .............................................................................................. 20
+Figura 13 Formula CEAX de la Real Federación Española de Automovilismo...................... 21
+Figura 14 Vista Superior de un Chasis Tubular ...................................................................... 23
+Figura 15 Esquema del Percentil Masculino ........................................................................... 25
+Figura 16 Eje de Balanceo ....................................................................................................... 27
+Figura 17 Diagrama del Proceso de Ingeniería Inversa ......................................................... 28
+Figura 18 Diseño Asistido por Computadora .......................................................................... 29
+Figura 19 Chasis Tubular del Tipo Biplaza ............................................................................. 31
+Figura 20 Componentes de un Bastidor Monoplaza ................................................................ 32
+Figura 21 Vehículo Formula SAE Student ............................................................................... 33
+
+xii
+Figura 22 Bastidor Caterham 7 ............................................................................................... 34
+Figura 23 Ariel Atom 4............................................................................................................. 35
+Figura 24 Boceto de Chasis ..................................................................................................... 36
+Figura 25 Chasis Tubular del Ariel Atom 3s ........................................................................... 37
+Figura 26 Dimensiones del Modelo Ariel Atom ....................................................................... 38
+Figura 27 Dimensiones y Factor de Escala ............................................................................. 39
+Figura 28 Boceto del Chasis .................................................................................................... 40
+Figura 29 Malla del Chasis en Autodesk Inventor ................................................................... 41
+Figura 30 Sección Trasera del Vehículo .................................................................................. 42
+Figura 31 Sección del Piloto .................................................................................................... 42
+figura 32 Sección Frontal del Chasis....................................................................................... 43
+Figura 33 Unión de las Partes del Chasis ............................................................................... 43
+Figura 34 Boceto Final del Chasis........................................................................................... 44
+Figura 35 Herramienta de Insertar Estructura ........................................................................ 44
+Figura 36 Acabado Final de la Estructura Tubular ................................................................ 45
+Figura 37 Simulación de Cargas Muertas y Vivas................................................................... 46
+Figura 38 Cargas de Impacto Frontal ..................................................................................... 47
+Figura 39 Cargas Laterales ..................................................................................................... 47
+Figura 40 Cinta de Entornos de Autodesk Inventor ................................................................. 48
+Figura 41 Servicio de Impresión 3D ........................................................................................ 49
+Figura 42 Slicer Ultimaker Cura ............................................................................................. 49
+
+xiii
+Figura 43 Impresión SLA ......................................................................................................... 50
+Figura 44 Proceso de Curado .................................................................................................. 51
+Figura 45 Acabado Final del Modelo a Escala 1:10 ............................................................... 51
+Figura 46 Designación de Área de Trabajo ............................................................................. 52
+Figura 47 Construcción Sección del Motor ............................................................................. 53
+Figura 48 Construcción Sección del Piloto ............................................................................. 53
+Figura 49 Construcción Sección Frontal ................................................................................. 54
+Figura 50 Colocación y Alineación de Elementos ................................................................... 54
+Figura 51 Alineación de Elementos ......................................................................................... 55
+Figura 52 Fijación de Soportes para la Estructura ................................................................. 55
+Figura 53 Perforación de los Puntos de Unión ....................................................................... 56
+Figura 54 Fijación de Elementos de Unión ............................................................................. 56
+Figura 55 Triangulación de Nodos .......................................................................................... 57
+Figura 56 Revisión Final de Anclajes y Uniones ..................................................................... 57
+Figura 57 Corte de Tubos ........................................................................................................ 59
+Figura 58 Doblado de Tubos.................................................................................................... 59
+Figura 59 Proceso de Soldadura Ensamble ............................................................................. 60
+Figura 60 Proceso de Soldadura en Estructura ....................................................................... 60
+Figura 61 Proceso de Soldadura Integral ................................................................................ 61
+Figura 62 Proceso de Inspección Visual .................................................................................. 61
+Figura 63 Unión de Elementos Finales.................................................................................... 62
+
+xiv
+Figura 64 Acabados Finales .................................................................................................... 62
+Figura 65 Acabado de la Estructura Tubular .......................................................................... 63
+Figura 66 Comparación entre la Maqueta Escala 1:1 y la Estructura Tubular ..................... 63
+Figura 67 Simulación de Cargas Estáticas .............................................................................. 65
+Figura 68 Simulación de Impacto Frontal ............................................................................... 65
+Figura 69 Simulación de Impacto Lateral ............................................................................... 66
+Figura 70 Mapa de Colores de Tensiones................................................................................ 66
+Figura 71 Resultados Simulación de Cargas Estáticas ........................................................... 67
+Figura 72 Resultados Simulación de Impacto Frontal ............................................................ 67
+Figura 73 Resultados Simulación de Impacto Lateral ............................................................. 68
+Figura 74 Desplazamientos en Caso de Impacto Lateral ........................................................ 69
+
+xv
+Índice de Tablas
+Tabla 1 Fases del Diseño Mecánico .......................................................................................... 6
+Tabla 2 Propiedades Mecánicas de los Materiales ................................................................. 14
+Tabla 3 Normas ASTM para el Acero y Aleaciones ................................................................ 16
+Tabla 4 Percentil 95” Masculino ............................................................................................. 24
+Tabla 5 Características del Generador de Estructuras ........................................................... 45
+Tabla 6 Tubos Estructurales ASTM A36.................................................................................. 58
+Tabla 7 Resultados de Simulación de Esfuerzos ...................................................................... 69
+
+xvi
+Resumen
+El presente proyecto tiene como finalidad la construcción de un bastidor tubular monoplaza en
+el que puedan ser adaptables todos los sistemas que constituyen un automóvil, mediante el
+análisis de los parámetros de diseño establecidos por entes reguladores encargados de la
+estandarización de vehículos de tipo auto de ruta. Este trabajo busca llevar a cabo la selección
+adecuada de la estructura correspondiente a un vehículo monoplaza del tipo auto de ruta a
+través de un proceso de reingeniería inversa, con la finalidad de ayudar a identificar, priorizar
+y solucionar problemas de diseño que afecten directamente en la fabricación del prototipo y
+que permitan ahorrar tiempo y dinero durante las etapas de construcción. Como primer punto
+se usará la aplicación de Autodesk Inventor para obtener un boceto 3D del diseño del chasis
+tubular con el cual se pueda realizar una simulación considerando las cargas que se presenten
+en el vehículo. De la misma forma, se considera la selección de la materia prima, debiendo
+escoger un material que pueda soportar las cargas que generará este prototipo, aparte de los
+requisitos de calidad que el mismo debe tener. El siguiente paso consiste en elaborar una
+representación visual de lo que se espera conseguir, tomando en cuenta tanto las cargas
+estáticas ejercidas, así como las dinámicas a las cuales estará sometido en caso de colisiones.
+Por último, se justifica el proceso de construcción del prototipo evaluando los datos obtenidos
+en las simulaciones y pruebas de esfuerzo.
+Palabras clave: Ingeniería automotriz, bastidor, prototipo, monoplaza, diseño
+
+xvii
+
+Abstract
+The purpose of this project is the construction of a single-seater tubular frame in which all the
+systems that make up an automobile can be adapted through the analysis of the design
+parameters established by regulatory entities in charge of the standardization of Carcross-type
+vehicles. This works seeks to carry out the appropriate selection of the structure for a singleseater road car type vehicle using a reverse engineering process, with the purpose of helping to
+identify, prioritize and solve design problems that directly affect the manufacturing of the
+prototype while aiming to save time and money during the construction stages. As a first point,
+the Autodesk Inventor application will be used to obtain a 3D sketch of the design of the tubular
+chassis to simulate the loads that occur on the vehicle. Similarly, the selection of the raw
+material is considered as it is necessary to choose a material that can withstand the loads that
+this prototype will generate, aside from the quality requirements it must have. The next step
+consists of developing a visual representation of what is expected to be achieved, considering
+both the static loads exerted and the dynamics to which it will be subjected in the event of
+collisions. Finally, the prototype construction process is justified considering the data obtained
+in the simulations and stress tests.
+Keywords: Automotive engineering, chassis, prototype, single-seater, design
+
+1
+Capítulo I
+Antecedentes
+1.1
+
+Tema de Investigación
+Construcción de un prototipo monoplaza sobre base de chasis tubular del tipo auto de
+
+ruta.
+1.2
+
+Planteamiento, Formulación y Sistematización del Problema
+Los vehículos monoplazas están diseñados con un enfoque en la ligereza y la rigidez
+
+estructural. Su diseño tiene como finalidad disminuir el peso y aumentar la resistencia se
+utilizan materiales como fibra de carbono y aluminio, normalmente son empleados dentro de
+competiciones o eventos deportivos, pero al no contar con una fórmula de competición de auto
+de ruta dentro del país no existe una entidad gubernamental que regule la construcción de estos
+modelos los cuales en su mayoría son de construcciones hechos a manos o improvisadas lo que
+los vuelve poco fiable. Se busca aplicar las normas establecidas dentro de reglamentos oficiales
+tales como la formula SAE (Society of Automotive Engineers) y el Campeonato de España de
+Autocross (CEAX), para ello se aplica un proceso de diseño automotriz.
+1.2.1 Planteamiento del Problema
+Un vehículo de tipo auto de ruta es un monoplaza de tamaño reducido empleado para
+recorrer terrenos mixtos es decir que son aptos para manejarse tanto en tierra como pavimento,
+con el objetivo de asegurar la integridad del piloto “el chasis debe cumplir ciertos criterios
+constructivos como la rigidez, resistencia mecánica, ergonomía, el confort, la durabilidad y el
+comportamiento en caso de choque” (CEAX, 2023). En la actualidad en el Ecuador, no hay
+una empresa adecuada que se encargue de la creación de estos tipos de chasis tubulares ya que
+no son de uso común o no hay competencias que tengan las mismas características que estos
+tipos de chasis por lo que las pocas creaciones que hay de estos son de una forma empírica o
+personas que lo hacen por hobby.
+
+2
+1.2.2 Formulación del Problema
+Al desconocer tanto las especificaciones técnicas de este tipo de chasis de base tubular
+el tipo de cargas que debe soportar es incierto. Basándose en diseños como el Ariel Atom,
+además del Caterham, el SAE Formula Student, FSAE Michigan, los cuales ha ganado
+reconocimiento mundial por su rendimiento excepcional, se formula la propuesta de fabricar
+un prototipo capaz de cumplir las condiciones de seguridad, estabilidad, ergonomía,
+dimensiones, entre otros, establecido por la norma CEAX para vehículos de tipo auto de ruta.
+1.2.3 Sistematización del Problema
+•
+
+¿Cuáles son las consecuencias de no estandarizar la construcción de un chasis tubular?
+
+•
+
+¿Por qué es importante cumplir con los parámetros de seguridad en vehículos,
+específicamente en lo referente a estructura tubular?
+
+•
+
+¿Cuál es el beneficio de la implementación de normas de diseño sobre el chasis de un
+vehículo tipo Car Cross bajo el reglamento internacional?
+
+1.3
+
+Objetivos de la Investigación
+
+1.3.1 Objetivo General
+Construir un prototipo de vehículo monoplaza del tipo tubular aplicando los procesos
+de diseño automotriz.
+1.3.2 Objetivos Específicos
+•
+
+Investigar las normas que permiten obtener los parámetros de dimensiones, ergonomía,
+fabricación y seguridad para un chasis tubular monoplaza de tipo auto de ruta, dictados
+por la Real Federación Española De Automovilismo (RFEDA).
+
+•
+
+Determinar la metodología adecuada para el diseño y la construcción del prototipo de
+vehículo monoplaza sobre base de chasis tubular del tipo auto de ruta.
+
+•
+
+Verificar cuales son las condiciones de funcionamiento del prototipo de chasis de base
+tubular mediante pruebas de simulación CAD y comparando con el resultado final.
+
+3
+1.4
+
+Justificación y Delimitación de la Investigación
+Tomando como punto de partida para el tema de estudio se pondera la presente
+
+investigación desde una perspectiva teórica, practica y metodológica.
+1.4.1 Justificación Teórica
+Se basa en la selección del proceso de manufactura y materiales adecuados para la
+construcción del chasis tubular de tipo monoplaza teniendo en cuenta las normas existentes en
+el campo automotriz.
+1.4.2 Justificación Metodológica
+Se hará uso de recurso tales como: libros, manuales, artículos científicos cuyo
+contenido aporten información del chasis monoplaza teniendo en cuenta procesos de
+manufactura, normas de diseño, propiedades y composición de materiales como el acero.
+1.4.3 Justificación Práctica
+Los resultados obtenidos sirven para futuros procesos de construcción de vehículos tipo
+Auto de ruta. Se lleva a cabo el respectivo proceso para la construcción de este prototipo de
+vehículo monoplaza se lo realiza mediante algunos procesos del cual se requiere como primer
+punto tener en un boceto 3D el diseño del chasis tubular y una simulación de este mismo con
+las cargas que se presenten en el vehículo, en este caso se usara la aplicación de Autodesk
+Inventor o la de Autodesk Fusion 360. Luego se tiene en cuenta la selección de la materia prima
+ya que hay que escoger un material que pueda soportar las cargar que generará este prototipo,
+aparte de la calidad que tendrá este mismo. Se aplicarán procesos de soldadura para la unión
+de las estructuras, además de usar procesos de acabados como punto final.
+1.5
+
+Delimitación Temporal
+El trabajo comenzará en el mes de mayo de 2023, hasta agosto de 2023, lapso que
+
+permitirá diseñar, ensamblar y construir el equipo, así como evidenciar los resultados de las
+pruebas.
+
+4
+1.6
+
+Delimitación Geográfica
+El trabajo se desarrollará dentro de la ciudad de Guayaquil y su implementación se
+
+llevará dentro de las instalaciones de la UIDE ubicado en el Campus Escuela de Ingeniería
+Automotriz.
+1.7
+
+Delimitación del Contenido
+En la primera fase se encuentra información acerca del chasis monoplaza de tipo de
+
+autos de ruta, tipos de estructuras, materiales de construcción, parámetros de funcionalidad y
+diseño, así como la propuesta del prototipo. En la segunda fase se plantea el boceto de la
+estructura, los procesos de diseño, las fases de construcción y se detalla la construcción del
+chasis de tipo tubular. En la tercera fase se discute el proceso de construcción adecuándolas
+condiciones de funcionamiento de monoplaza para autos de ruta así mismo como las
+simulaciones y pruebas de esfuerzos que se le realizan al prototipo.
+1.8
+
+Alcance
+La finalidad de este proyecto es la construcción de un bastidor del tipo tubular en el
+
+cual pueda ser compatible con todos los sistemas que comprenden un vehículo del tipo carcross,
+esto mediante la comprensión de los distintos parámetros de diseño que comprenden a la
+estructura de un vehículo monoplaza del tipo auto de ruta.
+
+5
+Capítulo II
+Marco Referencial
+2.1
+
+Criterios de Diseño en Ingeniería Mecánica
+La ingeniería mecánica es una disciplina que se encarga de concebir, analizar,
+
+desarrollar y fabricar componentes mecánicos destinados a ser usados en diversos campos de
+aplicación. Por ende, el trabajo de un ingeniero mecánico implica diversas actividades, como
+el diseño de sistemas, la selección de materiales adecuados, la creación de modelos y
+prototipos, la supervisión de procesos de fabricación, el control de calidad, la gestión de
+proyectos y el mantenimiento de equipos. Todo esto mediante la realización de cálculos que
+corroboren el análisis de sus resultados.
+El diseño en ingeniería mecánica juega un papel fundamental, ya que es el proceso
+mediante el cual se solucionan las necesidades técnicas de un producto o maquinaria. Por ende,
+el ingeniero mecánico debe aplicar sus conocimientos técnicos para convertir los requisitos y
+objetivos del proyecto en soluciones tangibles. El principal objetivo del diseño es crear una
+estructura o sistema funcional, confiable, seguro, económico y de calidad en varias fases
+sucesivas, teniendo en cuenta diversos criterios mecánicos que sirvan de guía para el producto
+final. Esto implica que “La creatividad personal, la comunicación y las habilidades de
+resolución de problemas de un diseñador están vinculadas al conocimiento técnico y sus
+fundamentos” (Budynas Gordon & Shigley , 2020), de manera que permita seleccionar los
+procesos de fabricación adecuados para cumplir las especificaciones del diseño.
+En general, el diseño mecánico busca encontrar un equilibrio entre todas estas
+consideraciones técnicas que se presentan dentro de un proyecto para lograr desarrollar
+soluciones efectivas y satisfactorias, siguiendo una serie de lineamientos iterativos desde el
+punto de vista técnico, económico y humano. Debido a esto la labor de un ingeniero es esencial
+para el progreso de tecnologías innovadoras y guiar el adelanto integral de la sociedad.
+
+6
+Se puede enfatizar que el diseño es un proceso lleno innovaciones y altamente iterativo.
+El proceso de toma de decisiones a veces requiere poca información, a veces la cantidad justa
+de información y a veces demasiada información, lo que puede resultar contradictorio en
+algunos casos. Algunas veces las decisiones son provisionales, por lo que es conveniente
+reservarse el derecho de hacer ajustes a medida que se obtenga más información. La iteración
+en el diseño de máquinas es un enfoque metódico que fomenta la mejora y la adaptación
+continuas; este proceso iterativo debe repetirse muchas veces para perfeccionar el diseño con
+el tiempo. Es común que dentro de las primeras iteraciones se generen los cambios más
+significativos, mientras que las iteraciones posteriores se centran en aspectos más detallados y
+minuciosos. Como muestra la tabla 1 este enfoque se basa en la idea de que el diseño es un
+proceso evolutivo y que se pueden obtener mejores resultados mediante la retroalimentación.
+Tabla 1 Fases del Diseño Mecánico
+Fases del Diseño Mecánico
+Nombre
+Reconocimiento de la
+necesidad
+
+Descripción
+identifica y comprende la problemática
+
+Reconocer deficiencias, puntualizar
+requisitos.
+Síntesis
+Recopilar información relevante.
+Análisis y optimización
+Desarrollar soluciones eficientes.
+Evaluación
+Identificar posibles mejoras, realizar ajustes.
+Compartir información y resultados del
+Presentación
+diseño.
+Tomado de: Diseño en Ingeniería Mecánica de Shigley, 2020
+Definición del Problema
+
+Iteración
+1
+2, 5
+3, 4, 5
+4, 3, 4, 5
+5, 3, 4, 5
+6
+
+El objetivo de aplicar estas fases de retroalimentación continua es en palabras de
+Groover, (2008) “lograr que el diseñador en ingeniería pueda sentirse personalmente cómodo
+cuando ejerce la función de toma de decisiones y de resolución de problemas, debido a que el
+diseño es una actividad que requiere una intensa comunicación” (pág. 32), normalmente se
+emplea representaciones como esquemas, figuras o formas escritas y orales de comunicación.
+
+7
+La ventaja de un proceso de diseño iterativo es que se puede ajustar y mejorar
+continuamente a medida que se obtiene más información y se comprenden mejor las
+necesidades y desafíos del proyecto. También facilita la detección temprana de posibles
+problemas y reduce los riesgos asociados con un diseño final poco adecuado. En la figura 1 se
+muestra las iteraciones presentes en un proceso de diseño.
+Figura 1 Etapas e Iteraciones de un Proceso de Diseño
+Etapas e Interacciones de un Proceso de Diseño
+
+Tomado de: Diseño en Ingeniería Mecánica de Shigley, 2020
+Después de la implementación, se evalúa el diseño en función de su desempeño y se
+recopila información sobre su uso y experiencia de los usuarios. Esta información se utiliza
+para aprender y mejorar futuros diseños. El proceso iterativo de diseño implica repetir estos
+pasos varias veces, con ciclos de retroalimentación y mejora continua, hasta lograr un resultado
+final que satisfaga las necesidades y expectativas establecidas. A medida que se avanza en el
+proceso, las iteraciones tienden a ser más refinadas y focalizadas en aspectos específicos del
+diseño. Esto permite evolucionar el diseño, maximizando sus posibilidades de éxito.
+
+8
+2.2
+
+Tipos de Estructuras Mecánicas
+Dentro de la ingeniería existen elementos o componentes fundamentales que se utilizan
+
+en la elaboración de diferentes tipos de estructuras, al ensamblarse estos, conforman un sistema
+estructural. Estas estructuras básicas proporcionan soporte, resistencia y estabilidad a diversos
+tipos de construcciones, cada una de ellas se adapta a diferentes necesidades de diseño
+enfocadas en aplicaciones específicas considerando aspectos como la resistencia y rigidez de
+los materiales utilizados, la distribución de cargas, las condiciones de carga estática y dinámica,
+los factores ambientales, la estabilidad, la vibración, la fatiga y otros aspectos relevantes para
+el rendimiento y la seguridad de la misma, su versatilidad les permite combinarse o modificarse
+en función de los factores de carga, seguridad, estética y sostenibilidad necesarios para cumplir
+con los requisitos del proyecto.
+Las estructuras de ingeniería se conciben teniendo en cuenta los principios de la
+mecánica estructural, la resistencia de materiales y estática; conocimientos técnicos que en
+palabras del autor Mccormac Jack (2011) “permiten que la unión ya sea de tirantes, puntales,
+columnas, diafragmas, vigas o trabes integren un conjunto el cual pueda ser catalogado como
+un sistema estructural” (p. 8). Las mismas pueden estar compuestas por diversos materiales,
+como acero, hormigón, madera, aluminio o materiales compuestos. Además, pueden adoptar
+diferentes formas y configuraciones, desde estructuras simples hasta sistemas complejos y se
+busca asegurar que la estructura pueda ser capaz de soportar las cargas a las que estará expuesta
+durante su vida útil, sin comprometer los requisitos de seguridad, funcionalidad, durabilidad y
+estética.
+Existen diversos tipos de estructuras que se utilizan en diferentes industrias y con
+múltiples aplicaciones. Estas estructuras se pueden clasificar en diferentes categorías, para
+simplificar su estudio se consideran tres grupos estructurales: Armaduras, bastidores y
+máquinas.
+
+9
+2.2.1 Máquinas
+Las máquinas mecánicas son dispositivos que utilizan principios físicos y mecánicos
+para realizar tareas o realizar trabajo. Estas máquinas están compuestas por componentes
+mecánicos, como engranajes, palancas, poleas, ejes, levas, correas y rodamientos, que
+interactúan entre sí para transformar la energía y realizar un trabajo útil. Algunos ejemplos
+comunes de máquinas mecánicas incluyen:
+Motores de combustión interna: Estos motores convierten la energía química del
+combustible en energía mecánica. Se utilizan en muchos campos industriales.
+Máquinas herramienta: Estas máquinas, como tornos, fresadoras y taladros, se utilizan
+para dar forma, cortar y mecanizar materiales.
+Transmisiones: Los sistemas de transmisión, se utilizan para transmitir y controlar la
+potencia generada por un motor a otras partes móviles.
+En la figura 2 se muestran algunos ejemplos de máquinas mecánicas, pero existen
+muchas otras, las máquinas mecánicas han sido fundamentales para el desarrollo de la
+tecnología y la mejora de la eficiencia y productividad en diversas industrias y campos de
+aplicación.
+Figura 2 Ejemplos de Máquinas Mecánicas
+Ejemplos de Máquinas Mecánicas
+
+Tomado de: Portal Electromecánico/máquinas mecánicas
+
+10
+2.2.2 Armaduras
+La armadura de ingeniería es un término utilizado en el área de la ingeniería estructural
+para referirse a los sistemas de refuerzo utilizados en estructuras de hormigón armado. Consiste
+en barras de acero estratégicamente colocadas y ancladas dentro del concreto para proporcionar
+resistencia adicional y mejorar la capacidad de carga de la estructura. Dentro de la ingeniería
+este tipo de elementos están diseñados para resistir las tensiones de tracción generadas en la
+estructura.
+La adición de armadura de ingeniería ayuda a evitar la falla por tracción y mejorar la
+capacidad de carga y la ductilidad de una estructura, en la figura 3 se muestra un ejemplo de
+una armadura estructural.
+Figura 3 Ejemplo de Armadura
+Ejemplo de Armadura
+
+Tomado de: Clases de mecánica / análisis de estructura
+El diseño de armaduras de ingeniería depende de factores como las cargas esperadas,
+las propiedades del suelo, las condiciones ambientales y las especificaciones del proyecto. Para
+ello los ingenieros utilizan software de análisis y diseño especializados para determinar la
+cantidad, el diámetro y la distribución de las barras de refuerzo necesarias para garantizar la
+seguridad y el rendimiento de la estructura.
+
+11
+Para el análisis de este tipo de estructura se utiliza el método conocido como “análisis
+por nodos donde se identifican los nodos, que son los puntos de intersección de los elementos
+en la armadura” (Mc. Cormac, 2011). Además, se determinan los elementos de la armadura,
+como las vigas y barras, y se numeran para facilitar el análisis. El cual supone que sus
+elementos están conectados mediante una red nodal, esto permite determinar las fuerzas
+internas en los elementos de la armadura, lo que es fundamental para el diseño estructural y la
+verificación de la resistencia y estabilidad de la estructura. tal como se muestra en la figura 4
+donde se observa la unión de 4 elementos por medio de 4 nodos.
+Figura 4 Unión de una Armadura por Nodos
+Unión de una Armadura por Nodos
+
+Tomado de: Clases de mecánica / análisis de estructura
+Dentro de la imagen se puede apreciar como la armadura estructural distribuye las
+cargas a lo largo de la estructura, evitando que se concentren en puntos débiles y minimizando
+los esfuerzos y las deformaciones excesivas. Es importante tener en cuenta que el análisis de
+armaduras por nodos es un enfoque simplificado y asume ciertas suposiciones, como elementos
+estructurales ideales y comportamiento lineal elástico de los materiales.
+De manera simplificada, el acero se considera un sistema estructural ensamblado, cuya
+finalidad es aumentar su resistencia y capacidad portante y permitir la transferencia de carga a
+los elementos que lo componen, asegurando la estabilidad global de la estructura.
+
+12
+2.2.3 Bastidores
+Los marcos o bastidores son estructuras que consisten en elementos rígidos
+interconectados para proporcionar soporte y estabilidad a diferentes tipos de construcciones.
+Estos elementos generalmente están hechos de materiales como madera, metal o plástico, y se
+utilizan en una amplia variedad de aplicaciones, desde construcciones industriales hasta
+muebles. Mientras que una armadura se enfoca en la resistencia estructural y distribución de
+cargas dentro de una estructura, “los bastidores son estructuras estacionarias diseñadas para
+soportar cargas, sujetas a la acción de múltiples fuerzas” (Beer & Johnston, 2017). En general
+como se muestra en la figura 5 su diseño y aplicación difieren en función de su propósito y
+contexto de uso.
+Figura 5 Ejemplos de Bastidores
+Ejemplos de Bastidores
+
+Tomado de: Generador de imágenes con tecnología de DALL·E
+Las características y aplicaciones de un armazón o bastidor mecánico tienen como
+finalidad proporcionar soporte y mantener en su lugar componentes mecánicos específicos.
+Dentro de la industria automotriz se utilizan para dar soporte y estructura a carrocerías y chasis
+de vehículos. Estos marcos pueden ser de acero, aluminio u otros materiales resistentes y se
+diseñan para resistir cargas y proteger a los ocupantes en caso de colisión.
+
+13
+El análisis de un bastidor implica la modelación, la aplicación de las condiciones de
+equilibrio y la resolución del sistema de ecuaciones para determinar las fuerzas internas y las
+deformaciones. Normalmente se sugieren diversos métodos tales como el: análisis global,
+análisis por elementos, equilibrio de elementos y graficas de resultados. Esto permite verificar
+la seguridad y el rendimiento estructural del bastidor, “para ello es necesario suponer que sus
+elementos son fijos y tengan un comportamiento ideal carente desplazamientos o
+deformaciones de cualquier tipo” (Resendiz Cortez, 2020), la complejidad del análisis varía en
+función de su geometría, condiciones de cargas y materiales empleados. En algunos casos, se
+pueden requerir métodos numéricos más avanzados, como el método de elementos finitos que
+se muestra en la figura 6, estas herramientas son usadas para un análisis más preciso.
+Figura 6 Análisis Estructural de un Bastidor Autoportante
+Análisis Estructural de un Bastidor Autoportante
+
+Tomado de: Ingeniería y mecánica automotriz / análisis de elementos finitos fea
+En resumen, una estructura bastidor se refiere a un marco o armazón que proporciona
+soporte, estabilidad y resistencia en diferentes campos, como la construcción, la fabricación de
+vehículos, donde se requiere de estructuras con un espacio interior libre su diseño y
+composición puede variar en función de la aplicación específica para la cual está siendo
+concebido.
+
+14
+2.3
+
+Materiales Usados en Bastidores
+Entre los materiales más comunes utilizados para este propósito se encuentra el acero
+
+al carbono, que proporciona una combinación óptima de resistencia, durabilidad y costo
+accesible. Por ejemplo, el acero al carbono, que es el más común y está compuesto
+principalmente de hierro y carbono. El acero inoxidable, por su parte, contiene cromo como
+elemento principal de aleación, otorgándole resistencia a la corrosión y al desgaste, y se utiliza
+ampliamente en aplicaciones donde se requiere esta propiedad. Como se muestra en la tabla 2
+cada tipo de material presenta sus propias características y aplicaciones específicas, de igual
+forma las propiedades mecánicas de los metales pueden variar dependiendo de su composición
+química, procesamiento y tratamiento térmico.
+Tabla 2 Propiedades Mecánicas de los Materiales
+Propiedades Mecánicas de los Materiales
+Material
+Aluminio, CW
+Aleaciones de aluminios
+Hierro colado
+Aleaciones de magnesio
+Níquel, templado
+Acero, bajo C
+Acero, alto C
+Acero, aleaciones
+Acero, inoxidable
+Hierro dúctil ASTM A536
+Titanio, puro
+Aleaciones de titanio
+
+Resistencia de deformación
+MPa
+𝐥𝐛⁄𝐢𝐧𝟐
+105
+15000
+175
+25000
+275
+40000
+175
+25000
+150
+22000
+175
+25000
+400
+60000
+500
+75000
+275
+40000
+552
+80
+350
+50000
+800
+
+120000
+
+Resistencia a la tensión
+MPa
+𝐥𝐛⁄𝐢𝐧𝟐
+125
+18000
+350
+50000
+275
+40000
+275
+40000
+450
+65000
+300
+45000
+600
+90000
+700
+100000
+65011
+95000
+379
+55
+515
+75000
+900
+
+130000
+
+Tomado de: Fundamentos de manufactura moderna, 2008
+Estas propiedades mecánicas en los metales se utilizan para evaluar su comportamiento
+bajo cargas y fuerzas externas, debido a que es común encontrar una relación inversa entre la
+resistencia a la deformación y la resistencia a la tensión, donde un material con alta resistencia
+a la tensión puede tener una menor resistencia a la deformación y viceversa.
+
+15
+Dentro de su clasificación, existen normas establecidas por organismos internacionales
+y nacionales que guían la identificación y caracterización de estos materiales. Estas normas se
+han desarrollado para garantizar la consistencia en la industria y asegurar que los materiales
+cumplan con los requisitos de calidad y propiedades específicas para sus diversas aplicaciones.
+La Organización Internacional de Normalización (ISO) es uno de los principales
+organismos que emiten normas para la clasificación del acero y aleaciones a nivel
+internacional. La norma ISO 4948-1:2018 "Acero y fundiciones de hierro - Nomenclatura de
+designación" establece un sistema de designación alfanumérica para diferentes tipos de acero.
+En el caso de los Estados Unidos, el American Iron and Steel Institute (AISI) y la Sociedad de
+Ingenieros Automotrices (SAE) también han desarrollado un sistema de clasificación
+ampliamente utilizado, donde cada tipo de acero y aleación recibe un número de cuatro dígitos
+que indica su composición química y características mecánicas.
+Por ejemplo, el acero al carbono comúnmente utilizado en aplicaciones estructurales se
+clasifica de la siguiente manera en el sistema AISI/SAE:
+•
+
+Acero al carbono simple: 10XX (donde XX representa el porcentaje de carbono)
+
+•
+
+Acero al carbono con manganeso: 15XX (donde XX representa el porcentaje de
+carbono)
+
+•
+
+Acero al carbono con níquel: 23XX (donde XX representa el porcentaje de
+carbono)
+
+•
+
+Acero al carbono con níquel-cromo: 31XX (donde XX representa el porcentaje
+de carbono)
+
+•
+
+Acero al carbono con níquel-cromo-molibdeno: 41XX (donde XX representa el
+porcentaje de carbono)
+
+•
+
+Acero al carbono con níquel-cromo-molibdeno-vanadio: 61XX (donde XX
+representa el porcentaje de carbono)
+
+16
+Estas normas también se aplican a las aleaciones de acero, que son combinaciones de
+acero con otros elementos, como níquel, cromo, molibdeno, entre otros. Las aleaciones
+permiten mejorar las propiedades específicas del acero, como la resistencia a la corrosión, la
+dureza, la conductividad eléctrica, entre otras, haciéndolas ideales para aplicaciones
+particulares.
+Existen otras normas internacionales que clasifican el acero y las aleaciones según sus
+propiedades y aplicaciones específicas. Algunas de estas normas son la norma europea EN, la
+norma alemana DIN, la norma japonesa JIS y la norma internacional ISO, dentro el ámbito
+comercial nacional se emplean las normas ASTM para el acero, estas son especificaciones
+estándar establecidas por la Sociedad Americana para Pruebas y Materiales (ASTM, por sus
+siglas en inglés) para diferentes tipos de acero y sus aplicaciones. Como muestra la tabla 3 las
+normas cubren aspectos como la composición química, propiedades mecánicas, perfiles y
+aplicaciones, acabado de superficie entre otras propiedades relevantes para el acero.
+Tabla 3 Normas ASTM para el Acero y Aleaciones
+Normas ASTM para el Acero y Aleaciones
+
+Material
+Descripción
+ASTM
+Perfiles, placas y barras de acero al carbón.
+A36
+ASTM
+Perfiles, placas y barras de acero al carbón soldada y
+A53
+sin costura.
+ASTM
+barras de acero al carbón, aceros para forjar y aceros
+A108
+para moldes.
+ASTM
+barras y formas de acero inoxidable austenítico.
+A276
+ASTM
+Tubería de acero al carbono estructural soldada y sin
+A500
+costura.
+ASTM
+aceros bajo contenido de carbón y alta resistencia a la
+A242
+corrosión
+Tomado de: Fundamentos de manufactura moderna, 2008
+
+Resistencia
+máxima
+MPa
+𝐤𝐬𝐢
+400
+
+58
+
+414
+
+60
+
+308
+
+44
+
+517
+
+75
+
+427
+
+62
+
+434
+
+63
+
+17
+2.4
+
+Conexiones de Unión y Soldadura
+Una unión consiste en el acto de conectar dos o más componentes para formar una
+
+estructura más grande o funcional. Pueden existir diferentes tipos de uniones, como conexiones
+atornilladas, remachadas, encoladas, ensamblajes con pernos, entre otras. Las uniones
+temporales permiten la desmontabilidad, mientras que las permanentes proporcionan una unión
+sólida y duradera.
+La soldadura es un proceso específico para unir dos piezas de metal fundiendo sus
+bordes y fusionándolos para formar una sola pieza sólida. Esto se logra mediante la aplicación
+de calor, a medida que la soldadura se enfría, los bordes de las piezas fundidas se unen y se
+forman una conexión resistente. Existen varios tipos de soldadura, cada uno con sus propias
+características y aplicaciones. A continuación, se menciona los tipos de soldadura más
+comunes:
+2.4.1 Soldadura por Arco Eléctrico
+Este es uno de los métodos de soldadura más utilizados. Como muestra la figura 7 se
+utiliza un electrodo para crear un arco eléctrico entre el material base y el electrodo de
+soldadura, la energía del arco derrite los extremos de las piezas que se van a unir y forma una
+soldadura cuando se enfría.
+Figura 7 Soldadura por Arco Eléctrico
+Soldadura por Arco Eléctrico
+
+Tomado de: Tecnologías en soldadura /soldadura de arco
+
+18
+El proceso de soldadura por arco eléctrico involucra la utilización de diferentes tipos
+de electrodos, como electrodos revestidos o alambres sólidos, dependiendo de la aplicación y
+el material que se va a soldar. Los electrodos revestidos, por ejemplo, tienen un revestimiento
+que actúa como escudo protector y suministra material de aporte adicional. El control preciso
+de parámetros como la corriente, la tensión y la distancia entre el electrodo y la pieza de trabajo
+es esencial para lograr una soldadura de alta calidad. Debido a que esta es una técnica
+fundamental para unir metales de manera eficiente, segura y su bajo costo de empleo se decidió
+emplear este método para llevar a cabo la construcción del bastidor tubular.
+2.4.2 Soldadura por Resistencia
+Este tipo de soldadura se basa en la generación de calor mediante la resistencia al paso
+de la corriente eléctrica a través de las piezas a unir. Como muestra la figura 8 se aplica en la
+soldadura de metales conductores, como acero y aluminio, y es común en la industria
+automotriz.
+Figura 8 Soldadura por Resistencia
+Soldadura por Resistencia
+
+Tomado de: Soldadura por resistencia (rw,2020)
+2.4.3 Soldadura por Gas
+Como muestra la figura 8 la soldadura por gas utiliza una llama generada por la
+combustión de un gas combustible, como el acetileno, y un gas oxidante, como el oxígeno, para
+fundir los bordes de las piezas a unir. Como muestra la figura 9 este método es comúnmente
+utilizado en la soldadura de tuberías de metal.
+
+19
+Figura 9 Soldadura por Gas
+Soldadura por Gas
+
+Tomado de: Amoviblesio /soldadura oxi-gas
+2.4.4 Soldadura TIG (Tungsten Inert Gas)
+En la soldadura TIG, se utiliza un electrodo de tungsteno no consumible para generar
+un arco eléctrico. Como muestra la figura 10 se introduce un gas inerte, como el argón, para
+proteger el área de soldadura de la contaminación atmosférica. Es utilizado en aplicaciones que
+requieren alta calidad de soldadura.
+Figura 10 Soldadura TIG
+Soldadura TIG
+
+Tomado de: Máquinas y herramientas / soldadura-tig
+La soldadura TIG también requiere de habilidades y destreza del soldador, ya que es un
+proceso más lento y delicado en comparación con otros métodos de soldadura.
+
+20
+2.4.5 Soldadura MIG (Metal Inert Gas)
+Como muestra la figura 11, la soldadura MIG utiliza un electrodo consumible en forma
+de alambre continuo que se alimenta automáticamente a través de una pistola de soldadura. Es
+comúnmente utilizado en la industria de fabricación y construcción.
+Figura 11 Soldadura MIG
+Soldadura MIG
+
+Tomado de: Codinter /soldadura mig
+2.4.6 Soldadura por Puntos
+Este método tal y como muestra la figura 12 utiliza para soldar metales delgados
+mediante la aplicación de presión y corriente eléctrica en puntos específicos. Es común en la
+fabricación de carrocerías de automóviles y electrodomésticos.
+Figura 12 Soldadura por Puntos
+Soldadura por Puntos
+
+Tomado de: El chapista /soldadura por puntos en las carrocerías
+
+21
+2.5
+
+Parámetros de Funcionalidad y Criterios de Construcción.
+Para el presente trabajo se procede a construir un bastidor tubular lo cual crea la
+
+necesidad de investigar acerca de medidas homologadas que regularicen los parámetros de
+diseño y funcionalidad del proyecto. La figura 13 muestra el campeonato CEAX de la RFEDA
+(Real Federación Española de Automovilismo) ente que dentro de su reglamento especifica los
+factores que afectan al chasis y los requerimientos que deben seguir dentro del campo de los
+autos de ruta, homologándolos para estas competiciones.
+Figura 13 Formula CEAX de la Real Federación Española de Automovilismo
+Formula CEAX de la Real Federación Española de Automovilismo
+
+Tomado: Formula CEAX
+Se deben cumplir con las normativas y regulaciones locales y nacionales pertinentes
+que rigen el diseño y la construcción de estructuras. Estas normativas proporcionan pautas y
+criterios de seguridad y rendimiento que deben seguirse para garantizar la conformidad con los
+estándares establecidos. Por ende, todos los elementos mecánicos que conforman el conjunto
+deben dimensionarse de manera correcta.
+El diseño y construcción de estructuras pueden involucrar aspectos más específicos los
+cuales varían en función de la estructura y las condiciones de proyecto, las especificaciones
+técnicas que se toman en cuenta para la elaboración del presente estudi1o son las siguientes:
+
+22
+2.5.1 Dimensiones Máximas de los Vehículos
+La estabilidad es crucial para garantizar que la estructura sea capaz de mantener su
+equilibrio y resistir las cargas laterales El chasis del vehículo estará constituido por una
+estructura tubular que acoja los elementos mecánicos y proporcione al piloto la protección
+necesaria en caso de vuelco o accidente. (Reglamento Tecnico Carcross, 2023), los parámetros
+encargados de delimitar las proporciones dentro de la carrocería serán las siguientes:
+•
+
+Longitud: rango entre los 2400 y 2810 mm.
+
+•
+
+Anchura: rango entre los 1600 y 1890 mm.
+
+•
+
+Altura: rango entre los 1100 mm y 1400 mm.
+
+2.5.2 Rigidez
+La rigidez es una característica importante ya que facilita la distribución de peso en la
+estructura, mejora la estabilidad y la maniobrabilidad. Y en palabras del autor Martinez
+Fernández, 2017 “A su vez nos dará una mayor sensibilidad del piloto debido a la precisa
+transferencia de fuerzas y una deformación elástica mínima para garantizar un funcionamiento
+óptimo del vehículo” (pág. 29). Se debe tomar en cuenta que La rigidez de un chasis tubular se
+refiere a su capacidad para resistir deformaciones o flexiones bajo cargas y fuerzas aplicadas,
+existen dos tipos:
+Rigidez a Flexión: Este tipo de flexión se refiere a la posibilidad de que la estructura se
+flexione a causa de su propio peso, para evitarlo se pueden tomar varias medidas, como
+aumentar el momento de inercia de la sección transversal evitando materiales demasiado
+dúctiles, dando preferencia a aquellos usando con un alto módulo de Rigidez
+Rigidez a Torsión: Este tipo de rigidez se refiere a la capacidad una estructura para
+resistir la deformación angular cuando se aplica un momento de torsión o una fuerza rotativa a
+lo largo de su eje longitudinal. Como medidas preventivas se recomienda aumentar el diámetro
+de los componentes sujetos a torsión o agregar refuerzos estructurales.
+
+23
+Tomando en cuenta lo anteriormente mencionado el método más utilizado para crear
+rigidez en estructuras tubulares es mediante refuerzos estructurales aplicando la triangulación
+de nodos. Empleando una correcta triangulación de componentes se logra minimizar la
+deformación máxima dentro del bastidor, esto considerando que deformaciones producidas por
+esfuerzos axiales son menos frecuentes que las causadas por momentos flectores.
+Dentro de la estructura tubular del presente trabajo esto se ejemplifica en el área de los
+largueros laterales lugar donde, usando el método de triangulación de nodos se genera una zona
+dentro de la estructura con una gran rigidez, sin comprometer la deformación en la parte
+delantera en caso de impacto frontal. En la figura 14 se observa la triangulación de nodos dentro
+de un chasis tubular.
+Figura 14 Vista Superior de un Chasis Tubular
+Vista Superior de un Chasis Tubular
+
+Tomado de: Formula SAE Student
+2.5.3 Ancho de Vía
+El objetivo del diseño del ancho de vía es poder aproximarse lo mayormente posible a
+las dimensiones dictadas por el reglamento CEAX de RFEDA organismo que regula la
+fabricación de este tipo de vehículos, certificándolos para competiciones. Un mayor ancho de
+vías asegura proporcionar una mayor estabilidad lo cual asegura estabilidad al tomar una curva
+permitiendo un paso más seguro y efectivo. Sin embargo, en palabras de Martinez Fernantes,
+
+24
+(2017), “aumentar el ancho de vías de un vehículo, también supone que aumente las tensiones,
+cargas, y en definitiva los esfuerzos que deberá soportar el chasis, el conjunto de suspensiones
+y hasta la dirección” (pág. 25). Con tres vueltas de volante, el piloto debe ser capaz de llevar
+lar ruedas desde un extremo hacia su giro máximo contrario para poder obtener así un cambio
+de dirección rápido y directo.
+2.5.4 Espacio
+Con el objetivo de cumplir con las condiciones de trabajo del chasis, se debe considerar
+que todos los tubos de nuestro bastidor deben trabajar siempre a compresión o extensión,
+evitando lo mayormente posible las cargas a flexión ya que estas pueden comprometer la
+estabilidad de la estructura. Al buscar hacer que la distribución de la cabina sea lo
+suficientemente ergonómica y segura para el piloto. Por lo tanto, se tuvieron en cuenta los
+diversos factores, de los cuales se destaca como el más importante “la evacuación del piloto en
+caso de accidente, así como la previa evaluación de su estado dentro del vehículo estableciendo
+la distribución de la cabina basado en el modelo ``Percentil95´´, que engloba al 95% de las
+personas” (Martinez, 2017) de menos estatura que limita a la altura marcada por el 5% restante,
+datos que se detallan dentro de la tabla 4.
+Tabla 4 Percentil 95” Masculino
+Percentil 95” Masculino
+Nombre
+Valor
+Longitude de pie
+30 cm
+Angulo del pie con la pierna
+90°
+Longitud del muslo
+53 cm
+Altura del piso a la cadera
+20 cm
+Longitud del torso
+55 cm
+Longitud del antebrazo
+35 cm
+Inclinación del antebrazo respecto a la vertical
+10°
+Longitud del brazo
+30 cm
+Diámetro del casco
+35 cm
+Inclinación del torso respecto a la vertical
+15°
+Tomado de: Sociedad internacional de ingenieros de automoción, SAE student
+
+25
+A pesar de la importancia de la seguridad, es necesario el confort para rendir un mejor
+rendimiento. Los asientos se diseñan para adaptarse al cuerpo del piloto y brindando soporte
+en cada ciclo de conducción. En términos generales, estos requisitos consideran la estatura
+promedio y el rango de tamaños de los pilotos el espacio designado para el conductor debe está
+diseñado para acomodar a pilotos de estaturas que se encuentran dentro de los percentiles 5 al
+95, lo que significa que la gran mayoría de los pilotos estarán cómodos en esas cabinas, con la
+finalidad de garantizar la seguridad y el rendimiento del conductor es necesario que los
+controles, como el volante y los pedales, se ajustan según las preferencias del piloto para que
+puedan operarlos con facilidad. Normalmente el piloto sentado y se debe “poder tener facilidad
+de acceso a los elementos que forman parte de los sistemas de pilotaje, así como a todos los
+elementos que hacen posible el corte de los circuitos eléctricos y poder detener el motor” (Vera
+Puebla & Peña Pinargote, 2019) tal y como se aprecia en la figura 15.
+Figura 15 Esquema del Percentil Masculino
+Esquema del Percentil Masculino
+
+Tomado de: Formula SAE Student
+El tamaño, la altura y la dirección del ángulo presente en los pedales influyen en la
+altura de la parte frontal y la longitud del espacio del piloto. El ángulo presente en los pies junto
+a las dimensiones de la contextura del piloto establece la altura de la silla. Estos aspectos deben
+garantizar la evacuación del conductor si hay accidente, según lo dictado por la norma
+SAE/Student el tiempo debe estar debajo de los 5 segundos.
+
+26
+2.5.5 Peso y Distribución
+Según la RFEDA (Real federación de automovilismo española) en este tipo de
+vehículos la posición del conductor y del motor influyen directamente en la distribución del
+peso, lo cual es una de las principales desventajas de este tipo de vehículos, debido a que la
+ubicación de elementos esenciales como el motor, la batería, debido a su pequeño El tamaño y
+el tanque de combustible están ubicados en la parte trasera de la estructura tubular. Como señala
+el autor Igor Martinez (2017) “la geometría propuesta en este proyecto se ha diseñado teniendo
+en cuenta la importancia de avanzar el mínimo la posición del piloto” (pág. 35) considerando
+también las siguientes circunstancias:
+Cuanto menor sea el peso del chasis, respetando la resistencia y rigidez, mejor se
+aprovechará la potencia del motor. El hecho de tener ubicados los principales
+elementos pesados en una misma zona hacen que el centro de gravedad del vehículo
+quede desplazado a la zona posterior del vehículo, por lo que el pilotaje quedará
+afectado en momentos grandes de aceleraciones. En un análisis de aceleración se
+puede comprobar que se genera poca carga en el eje delantero, por lo que la dirección
+quedará limitada. (Martinez, 2017, pág. 38).
+El centro de gravedad del automóvil se determina por la ubicación y distribución de
+los componentes pesados, como el motor, la batería, el sistema de transmisión y otros
+elementos estructurales. En general, el motor suele ser uno de los componentes más pesados y
+su ubicación influye significativamente en la posición del centro de gravedad. Para reducir el
+efecto anteriormente comentado es necesario reducir el centro de gravedad ubicando elementos
+como el motor y depósito de combustible lo más cercano al área del arco principal.
+En resumen, el centro de gravedad es un factor crítico en el diseño de automóviles, ya
+que afecta la estabilidad, la tracción y el manejo del vehículo. Un centro de gravedad bajo es
+deseable para mejorar el rendimiento y la seguridad del automóvil.
+
+27
+2.5.6 Eje de Balanceo
+Cuando un automóvil toma una curva, el peso se transfiere hacia el lado exterior de la
+curva, lo que provoca un balanceo lateral. El eje de balanceo está diseñado para minimizar este
+balanceo y mantener las ruedas en contacto con la superficie de la carretera para mejorar la
+tracción y el control. Cuando el vehículo se inclina hacia un lado debido a la fuerza centrífuga
+durante una curva, la barra de torsión aplica fuerza a las ruedas del lado opuesto. Esta acción
+contrarresta el balanceo, ayudando a mantener el automóvil nivelado tal como se muestra en la
+figura 16.
+Figura 16 Eje de Balanceo
+Eje de Balanceo
+
+Tomado de: Km77 / técnica bastidor balanceo t01
+Con la finalidad de poder disminuir el balanceo, se debe intentar conseguir un centro
+de gravedad lo más bajo posible, esto permite garantizar que el brazo por donde actúa la palanca
+de la fuerza centrífuga sea menor al entrar en una curva. Como menciona Igor Martinez, (2017)
+”Para conseguir esto, se aumentará en lo posible el ancho de vía (siempre que no se sobrepasen
+los 1400 mm que marca la normativa) y se situarán todos los anclajes de los elementos lo más
+bajo posible” (pág. 43).
+Por ende, el eje de balanceo es un componente clave en el sistema de suspensión de un
+automóvil que ayuda a mejorar la estabilidad y el control del vehículo durante las curvas y
+maniobras.
+
+28
+2.6
+
+Proceso de Reingeniería Inversa
+La ingeniería inversa se considera un proceso de análisis cuyo objetivo es identificar
+
+los factores presentes dentro de un sistema o mecanismo que determinan su funcionamiento,
+con la finalidad de llevar a cabo la construcción de un prototipo de igual o semejantes
+características. Como se muestra en la figura 17 este proceso es mayormente empleado para
+trabajar en diseños con, geometrías de un alto nivel de complejidad que requieran de alta
+precisión, permitiendo reducir en gran medida los tiempos de desarrollo del producto final.
+Figura 17 Diagrama del Proceso de Ingeniería Inversa
+Diagrama del Proceso de Ingeniería Inversa
+
+Tomado de: (Valentia3D, 2020)
+
+29
+En el caso del presente proyecto la ingeniería inversa es una herramienta para concebir
+el diseño de un auto monoplaza en base de chasis tubular usando como modelo de partida al
+Ariel Atom 3s el cual es un ejemplar cuyo proceso de diseño y construcción original no se
+encuentra al acceso común de las personas naturales por lo tanto debido a su complejidad estos
+diseños no son aptos para su producción en masa.
+2.7
+
+Diseño Asistido por Computadora
+El diseño asistido por computadora es una herramienta ampliamente empleada dentro
+
+de los campos de la ingeniería, la arquitectura, el diseño industrial y muchas otras disciplinas
+que requieren representaciones precisas y detalladas de productos, para ello se emplean
+software especializados en el modelado de dibujos 2D y 3D. como muestra la figura 18 el
+diseño de estructuras mecánicas implica el análisis de las cargas, la selección de materiales
+adecuados, la consideración de los factores de seguridad, la determinación de las formas y
+dimensiones óptimas, y la aplicación de técnicas de fabricación y montaje.
+Figura 18 Diseño Asistido por Computadora
+Diseño Asistido por Computadora
+
+Tomado de: Hwlibre / wp-content-diseño
+
+30
+El uso de herramientas de análisis y software de diseño asistido por computadora
+contribuyan a la concepción de un modelo que se ajuste a los requerimientos mecánicos
+solicitados por el diseñado. Dentro del diseño y la fabricación asistidos por computadora
+existen tres ramas las cuales son:
+2.7.1 Programas CAD (Diseño Asistido por Computadora)
+Las siglas CAD Computer-Aided Design significan Diseño Asistido por Computadora
+y se refiere al uso de software especializado para crear dibujos y modelos en 2D y 3D de objetos
+y sistemas. Los programas CAD permiten a los diseñadores crear representaciones digitales
+precisas de productos y realizar modificaciones rápidas. Ejemplos de programas CAD son:
+AutoCAD, sketchUp, Catia y Solidworks.
+2.7.2 Programas CAE (Ingeniería Asistida por Computadora)
+Computer-Aided Engineering o en español” Ingeniería Asistida por Computadora” se
+refiere al uso de software de simulación y análisis para evaluar y mejorar el rendimiento de
+productos y sistemas. Los programas CAE permiten a los ingenieros realizar análisis de
+elementos finitos, simulaciones de flujo de fluidos, análisis de estructuras, análisis térmicos,
+análisis electromagnéticos y más. Estas herramientas ayudan a predecir el comportamiento y
+las características de los productos, lo que permite optimizar el diseño y reducir costos.
+2.7.3 Programas CAM (Fabricación Asistida por Computadora)
+Las siglas CAM corresponden a Computer-Aided Manufacturing y se refiere al uso de
+software para controlar máquinas y procesos de fabricación. Los toman los modelos de diseño
+creados en CAD y generan automáticamente instrucciones para las máquinas herramienta,
+desde tornos y fresadoras; hasta máquinas de fabricación aditiva como impresoras 3D. Para
+producir las piezas de acuerdo con las especificaciones el software CAM optimiza la
+producción al calcular trayectorias de herramientas eficientes y generar códigos de control
+numérico (CNC) para las máquinas.
+
+31
+2.8
+
+Bastidores Tubulares
+Un bastidor tubular es una estructura compuesta por tubos de metal interconectados que
+
+se utiliza en una variedad de aplicaciones para proporcionar soporte y resistencia. Los
+bastidores tubulares en el contexto de los automóviles se refieren a la estructura principal del
+chasis del vehículo, también conocido como bastidor o estructura monocasco. Este tipo de
+bastidor está construido utilizando tubos de metal interconectados para formar una estructura
+resistente y rígida. En la figura 19 muestra como la estructura sirve de unión para los diferentes
+sistemas del vehículo, actuando conjuntamente como soporte y protección en caso de impacto.
+Figura 19 Chasis Tubular del Tipo Biplaza
+Chasis Tubular del Tipo Biplaza
+
+Tomado de: Análisis técnico de un chasis tubular
+El uso de bastidores tubulares en la industria automotriz tiene varias ventajas. En
+primer lugar, los tubos proporcionan una excelente resistencia y rigidez, lo que mejora la
+estabilidad del vehículo. También permiten una distribución de las fuerzas del impacto de
+manera más efectiva, absorbiendo la energía generada durante un accidente y protegiendo a los
+ocupantes del vehículo. Por otro lado, la flexibilidad en el diseño es otra ventaja significativa
+del bastidor tubular, ya que permite adaptar su forma y dimensiones para ajustarse a las
+necesidades específicas de cada tipo de vehículo.
+
+32
+Es relevante destacar que estos bastidores son ampliamente utilizados en vehículos de
+alto rendimiento, como autos deportivos, coches de carreras, buggies todoterreno y vehículos
+todoterreno modificados. Tal y como se puede apreciar en la siguiente figura 20, al momento
+de construir el bastidor se debe tener presente que la estructura debe ser rígida capaz de
+salvaguardar la integridad del ocupante además su diseño liviano y resistente los hace ideales
+para numerosos usos en la industria automotriz.
+Figura 20 Componentes de un Bastidor Monoplaza
+Componentes de un Bastidor Monoplaza
+
+Tomado de: Formula SAE Student
+En comparación a otros tipos de estructuras un bastidor tubular, proporcionando una
+mayor eficiencia en términos de construcción. Además, ya que permite a las soldaduras o
+uniones adaptarse a las necesidades específicas de cada diseño. Entre las diferentes
+competiciones que emplean vehículos con chasis de base tubular, se encuentra Fórmula SAE
+(Society of Automotive Engineers) el campeonato CEAX de la RFEDA (Real Federación
+Española de Automovilismo). Circuitos que establecen los lineamentos para la construcción de
+automóviles para competencia los cuales en su mayoría son del tipo monoplaza y los aspectos
+más importantes a considerar a la hora de diseñarlo son el peso, la rigidez y la altura del centro
+de gravedad. Además, se deben contemplar las especificaciones dadas por las reglas
+establecidas para cada edición de la competencia.
+
+33
+2.8.1 Bastidor SAE Student
+El chasis de Formula SAE (Society of Automotive Engineers) es una estructura
+fundamental y vital en la construcción de un vehículo tipo fórmula estudiantil. Este chasis debe
+ser diseñado con precisión para proporcionar la base sólida para el resto de los componentes
+del automóvil de carreras, asegurando la seguridad del conductor y la integridad estructural del
+vehículo. Aquí hay algunas características clave y consideraciones importantes para el diseño
+del chasis de Formula SAE para estudiantes. Los equipos deben cumplir con las normas
+establecidas por la competición Formula SAE. Estas reglas abarcan aspectos como las
+dimensiones del chasis, las características de seguridad, la ubicación del asiento del conductor,
+la disposición del motor y otras especificaciones técnicas.
+En términos de distribución del peso, el diseño del chasis debe proporcionar una
+distribución óptima del peso del vehículo para mejorar el rendimiento y el manejo. La
+ubicación del motor, la caja de cambios, el tanque de combustible y otros componentes afectará
+significativamente la distribución del peso tal y como se muestra en la figura 21. Con esto se
+logra que la estructura proporcione suficiente espacio para alojar todos los sistemas mecánicos
+y eléctricos necesarios, además de cumplir con los estándares de seguridad establecidos por la
+competición.
+Figura 21 Vehículo Formula SAE Student
+Vehículo Formula SAE Student
+
+Tomado de: Formula SAE Car
+
+34
+2.8.2 Bastidor Caterham 7
+El Caterham 7 es un icónico automóvil deportivo diseñado para la conducción pura y
+sin complicaciones. Debido a su diseño simple y minimalista es uno de los modelos más
+populares fabricados por la empresa británica Caterham Cars. Este vehículo está basado en el
+Lotus Seven, un automóvil ligero y de alto rendimiento creado en la década de 1950. El
+Caterham 7 sigue el concepto auto de ruta deportivo y ligero. Tal como se aprecia en la figura
+22 su bastidor está construido principalmente con tubos de acero, lo que le brinda una gran
+resistencia y al mismo tiempo mantiene el peso lo más bajo posible.
+Figura 22 Bastidor Caterham 7
+Bastidor Caterham 7
+
+Tomado de: Fresh-imports / el nuevo primer peldaño de caterham
+El diseño del bastidor es del tipo "tubular spaceframe" (bastidor espacial tubular), que
+es común en muchos automóviles deportivos y de alto rendimiento, la estructura de tubos es
+soldada para formar un armazón rígido pero liviano, lo que es esencial para mantener el enfoque
+de "coche deportivo ligero" de Caterham. Este diseño de bastidor ofrece una combinación de
+rigidez, ligereza y seguridad, proporcionando una base sólida para el automóvil y
+contribuyendo a su manejo ágil y capacidad de respuesta.
+El Caterham 7 es muy popular entre los entusiastas de los deportivos y aquellos que
+buscan una experiencia de conducción pura y emocionante.
+
+35
+2.8.3 Bastidor Ariel Atom
+El primer prototipo del Ariel Atom, conocido como "Atom 1", se presentó en 1996.
+Este vehículo concepto sentó las bases para el desarrollo de futuras versiones. El Atom 1 se
+destacó por su diseño minimalista y sin carrocería, que permitía ver claramente su chasis
+tubular y otros componentes mecánicos. Sin embargo, no fue hasta 1999 cuando Ariel Motor
+Company presentó oficialmente el Ariel Atom 2, el primer modelo de producción. El Atom 2
+contaba con un chasis tubular y estaba propulsado por un motor Honda de 1.8 litros, que
+proporcionaba una potencia de alrededor de 120 a 190 caballos de fuerza, dependiendo de la
+versión. Tal como se muestra en la figura 23 al ser una estructura del tipo “spaceframe” su
+diseño implica la creación de una estructura mediante la interconexión de tubos de acero,
+formando un armazón altamente rígido pero liviano,
+Figura 23 Ariel Atom 4
+Ariel Atom 4
+
+Tomado de: Ariel Atom
+El chasis del Ariel Atom es el resultado de años de desarrollo y refinamiento, con el
+objetivo de ofrecer un rendimiento excepcional y una experiencia de conducción única. La
+combinación de su chasis tubular, ligereza y enfoque en la conducción pura ha hecho del Ariel
+Atom uno de los automóviles deportivos más apreciados por los entusiastas y los amantes de
+la conducción extrema.
+
+36
+2.9
+
+Propuesta de un Prototipo
+Para poder comenzar todo proceso de construcción se debe partir de una idea base la
+
+cual debe ser plasmada dentro de una representación visual de lo que se espera conseguir, de
+esta manera se conoce como prototipo a “el primer modelo que ayuda para la representación
+de un producto final permitiendo así la verificación del diseño y que cuente con las
+características ya planeadas” (Pacheco, 2019), tal como se muestra en la figura 24. Al llevar a
+cabo la construcción del prototipo se debe considerar que el mismo sea capaz de soportar los
+esfuerzos presentes cuando este en movimiento, tomando en cuenta las condiciones de manejo
+a las cuales estará sometido.
+Figura 24 Boceto de Chasis
+Boceto de Chasis
+
+Tomado de: Chasis para vehículo FSAE
+Se recomienda para su construcción recurrir a formas triangulares ya que
+geométricamente son las que presentan mayor resistencia a esfuerzos cortantes, de compresión
+y extensión. Esto debido a que una vez aplicada la triangulación de estructuras la deformación
+con referencia al esfuerzo axial es menor, en magnitudes de momentos de flexión o torsión,
+para logarlo se debe lograr que todos los tubos del bastidor se sometan siempre a compresión
+o extensión, evitando las cargas a flexión ya que estas pueden comprometer la estabilidad de
+la estructura. Por esta razón es recomendado aplicar en las estructuras tubulares el tipo de
+esfuerzo axial de tracción para evitar problemas de pandeo en la estructura.
+
+37
+El bastidor tubular del tipo car cross por lo general suele ser una estructura monoplaza,
+el cual es construido con materiales accesibles, comúnmente construidos a partir de tubos de
+acero estructural con perfil circular. Para el presente trabajo se consideró al Ariel atom 3s el
+cual es un automóvil de estructura tubular, de alto desempeño fabricado por Ariel Motor
+Company. Cuya forma de diseño de le permite tener un bajo peso ya que no tiene puertas y
+techo, así no recurre a otros factores como tener un motor de potencia elevada. De modo que
+“Este vehículo no busca la comodidad del ocupante sino la funcionalidad”. (Munckin, 2020)
+como se ve en la Figura 25 el modelo Ariel Atom se usó de referencia para la construcción del
+prototipo tubular.
+Figura 25 Chasis Tubular del Ariel Atom 3s
+Chasis Tubular del Ariel Atom 3s
+
+Tomado de: Ariel Atom 1
+
+38
+Capítulo III
+Construcción del Prototipo de Chasis Tubular
+3.1
+
+Proceso de Modelado
+El modelado 3D es el proceso de crear representaciones tridimensionales utilizando
+
+software especializado, este proceso permite diseñar y visualizar objetos en tres dimensiones,
+lo que es esencial en diversas industrias. Para ello se comienza con la recopilación de datos
+relevantes sobre la estructura que se va a modelar. Esto puede incluir planos, especificaciones
+técnicas o cualquier otro detalle importante.
+Para comenzar a diseñar un chasis tubular basado en el modelo Ariel Atom, es necesario
+conocer las dimensiones exactas de sus respectivas estructuras. Sin embargo, en su página web
+el fabricante solamente proporciona al público dimensiones generales, tales como altura,
+ancho, largo y distancia entre ejes, datos que se encuentran copilados dentro de la figura 26.
+Figura 26 Dimensiones del Modelo Ariel Atom
+Dimensiones del Modelo Ariel Atom
+
+Tomado de: Ariel Atom 3s
+La recopilación de datos para el modelado 3D es un paso crucial para obtener resultados
+precisos y detallados. La cantidad y el tipo de datos que necesitarás dependerán del objeto o
+escenario que desees modelar.
+
+39
+No obstante, el diseño requiere de todas las medidas o al menos la mayoría de estas
+para pasarlo al programa de Autodesk Inventor. El método empleado para obtener las medidas
+del chasis consiste en usar lineamentos básicos de la ingeniería inversa, donde con ayuda de
+los dados presentes en la figura 27 se usa una regla de tres para obtener un factor de referencia,
+el cual modifica el tamaño del objeto en relación con su tamaño original. Este término se
+conoce como factor de escala, dicho factor es una medida proporcional que se aplica al modelo
+completo para agrandarlo o reducirlo uniformemente en todas sus dimensiones.
+Figura 27 Dimensiones y Factor de Escala
+Dimensiones y Factor de Escala
+
+Debido a que las dimensiones del Ariel Atom pueden variar ligeramente en función del
+modelo, la versión específica, motorización, junto al hecho de que el vehículo ha tenido
+diferentes actualizaciones y configuraciones a lo largo del tiempo; solo se considera útil los
+lineamentos que permitan recopilar datos con precisión además tener una comprensión clara
+del propósito y las funciones del chasis permite crear un modelo 3D funcional, adecuado para
+sus necesidades específicas. Por ende, en la concepción de este modelo los métodos usados
+para definir la forma y la estructura del bastidor se tienen como objetivo brindar condiciones
+que permitan ajustar o modificar el diseño fácilmente.
+
+40
+Para comenzar a dibujar, se toma punto de partida parámetros tales como: la longitud,
+el ancho, la altura, el diámetro de los tubos, la ubicación de las conexiones y otras
+características relevantes, por lo tanto, como indica la figura 28 usando el factor de conversión
+se procede a tomar las medidas reales del chasis las cuales son anotas dentro del boceto guía
+de la estructura tubular, asegurándose de mantener las proporciones correctas.
+Figura 28 Boceto del Chasis
+Estructura de Chasis
+
+Una vez que llenados los datos en el boceto, se verifica que los mismos se ajusten a los
+requisitos y visión del chasis tubular. Completado todo este proceso, se puede pasar a la
+siguiente fase y utilizar software de modelado 3D para crear una versión más detallada y precisa
+antes de la fabricación.
+
+41
+3.1.1 Modelado Cad Mediante Autodesk Inventor
+Considerando las condiciones de diseño establecidas en el capítulo anterior, se procede
+a elaborar un boceto de la estructura utilizando el programa de Autodesk Inventor Professional
+es una versión avanzada del software de diseño CAD Autodesk Inventor, el cual brinda
+herramientas tanto de modelado 3D como de simulación, los cuales son recursos útiles para el
+proceso de construcción del bastidor tubular.
+El primer paso dentro del proceso es activar un proyecto de trabajo, el cual almacena
+todos los archivos usados para la concepción del prototipo. Como muestra la figura 29, dentro
+del espacio de trabajo del proyecto se crea un nuevo archivo en formato IPT (Inventor Part) el
+cual tiene como nombre “Chasis tubular”. Bajo este formato se crean diferentes planos de
+trabajo cuyas distancias y medidas correspondan a las obtenidas en los bocetos del apartado
+anterior.
+Figura 29 Malla del Chasis en Autodesk Inventor
+Malla del Chasis en Autodesk Inventor
+
+Cada plano corresponde a las diferentes secciones del chasis, el proceso de construcción
+de la estructura se detalla paso a paso especificando cada boceto que contiene el archivo.
+Como muestra la figura 30 para un mejor manejo del proceso se opta por comenzar por
+la sección trasera de la estructura lugar donde se ubica componentes como motor, depósito de
+combustible y transmisión del vehículo el cual posee un volumen de 700 mm x 850 mm x 780
+mm.
+
+42
+Figura 30 Sección Trasera del Vehículo
+Sección Trasera del Vehículo
+
+Luego mediante los desfases de planos se define la sección del vehículo destinada al
+piloto, acorde a los parámetros del percentil masculino 95”, en la figura 31 se muestra los
+bocetos consumidos para definir el espacio asignado.
+Figura 31 Sección del Piloto
+Sección del Piloto
+
+Para la sección delantera donde se alberga el atenuador de impacto y el punto de anclaje
+para elementos de suspensión y dirección se línea como arco que une los largueros superiores
+se concibe un área de 420 mm x 197 mm, luego con un desfase de plano de 375 mm respecto
+al uso en el frontal se proyecta la geometría anterior, tal como se muestra en la figura 32 con
+la herramienta de boceto 3D se dibujó las líneas del frontal del chasis.
+
+43
+figura 32 Sección Frontal del Chasis
+Sección Frontal del Chasis
+
+A continuación, dentro de la figura 33 se muestra como mediante la opción de boceto
+3D se asignan las líneas correspondientes a los largueros laterales, se toma como referencia los
+puntos que dan forma a los largueros principales, de esta manera las líneas base se irán
+ajustando según la necesidad.
+Figura 33 Unión de las Partes del Chasis
+Unión de las Partes del Chasis
+
+El paso final consiste en unir todos los puntos de intersección de la estructura, una vez
+culminado el boceto se guarda el archivo creado y se procede a crear un nuevo archivo en
+formato IAM (Inventor Assembly File), ya dentro de este formato de ensamble se puede optar
+por un material específico y dimensiones prestablecidas por las normas ANSI o ISO, en función
+de si se requiere que las medidas estén en mm o pulgadas (in). Dentro de la figura 34 se muestra
+el bosquejo final del boceto ya completado.
+
+44
+Figura 34 Boceto Final del Chasis
+Boceto Final del Chasis
+
+Finalmente, se crea un archivo con extensión IAM (Inventor Assembly File)
+seleccionando la plantilla estándar, donde se “inserta” el archivo IPT (Inventor Part) para ser
+trabajado como estructuras. Como material se escoge el acero ASTM A36, debido a su
+facilidad de conseguir y su amplia variedad en cuanto a los tamaños que se encuentran dentro
+del mercado. Dentro de la figura 35 se aprecia como mediante la herramienta de “insertar
+estructura” se puede elegir características de perfil, grosor, material y aspecto para la estructura.
+Figura 35 Herramienta de Insertar Estructura
+Herramienta de Insertar Estructura
+
+45
+
+Cada uno de los aspectos presentes dentro del cuadro generador de estructuras permite
+modificar las propiedades físicas y mecánicas que tendrá el bastidor, estos parámetros influyen
+de forma directa sobre los resultados de cada análisis de esfuerzo. dentro de la tabla 5 se detalla
+que aspecto de la estructura modifica cada parámetro del generador de estructuras.
+Tabla 5 Características del Generador de Estructuras
+Características del Generador de Estructuras
+Parámetros
+Categoría
+Norma
+Familia
+Tamaño
+Material
+Aspecto
+
+Descripción
+Determina el tipo de perfil a usar en la estructura
+Indica el reglamento de estandarización para medidas
+Permite seleccionar que función tendrá la estructura
+Indica las diferentes dimensiones comerciales que ofrece la Norma
+Asigna características físicas reales correspondientes, acero, madera y
+vidrio, etc.
+Representa con más precisión el material que se utiliza en una pieza
+
+como se muestra en la figura 36 mediante el generador de estructuras se obtiene un
+aspecto más realista, de igual forma si se desea es posible modificar las texturas a los
+componentes del chasis, lo que permitirá un mejor acabado visual.
+Figura 36 Acabado Final de la Estructura Tubular
+Acabado Final de la Estructura Tubular
+
+46
+3.1.2 Ensayos de Esfuerzo y Deformación
+Una vez aplicado al Boceto el material de trabajo (acero al carbono ASTM A36) se
+debe dar los acabados finales previo a la simulación: Pruebas de interferencias Soldadura de la
+estructura, creación de estudio de tensión, mallado, Aplicación de restricciones, determinación
+de cargas. Para comenzar con la simulación de esfuerzos y deformaciones es necesario
+especificar las cargas que se usarán. La Real Federación de Automovilismo español dentro del
+apartado 7 de su reglamento técnico CEAX indica que un motor 4 cilindros junto con su caja
+de cambios y transmisión ronda los 400 kg, valor que corresponde a una carga de3922.6 N.
+Respecto a donde está alojado la carga del motor, es de sección rectangular se
+descompondrá el peso en dos para dividirlo en dos puntos. En cuanto a los ocupantes, el valor
+promedió de acuerdo con el percentil 95 es de una masa de 75 kg por persona. Como se observa
+en la figura 37 estos valores quedan definidos dentro del estudio.
+Figura 37 Simulación de Cargas Muertas y Vivas
+Simulación de Cargas Muertas y Vivas
+
+Acorde a las normas SAE International (Sociedad de Ingenieros de Automoción) La
+normativa brinda la posibilidad de diseñar y fabricar dos tipos de chasis: monocasco y tubular
+Las pruebas para el chasis tubular deben simular un impacto frontal, posterior con cargas de
+
+47
+entre 150 KN a 350 KN, en la figura 3 se muestra el respectivo ensayo de las cargas de impacto
+frontal.
+Figura 38 Cargas de Impacto Frontal
+Cargas de Impacto Frontal
+
+en la figura 39 se muestra el respectivo ensayo de las cargas de impacto lateral. La
+norma SAE International (Sociedad de Ingenieros de Automoción) apartado AF4.3 dicta que
+la estructura debe soportar cargas laterales equivalentes a dos veces su propio peso.
+Figura 39 Cargas Laterales
+Cargas Laterales
+
+48
+3.2
+
+Maqueta Mediante Impresión 3D
+Los modelos a escala reducida, conocidos como maquetas, son utilizados para
+
+representar el diseño general del vehículo. Estos modelos pueden estar fabricados con diversos
+materiales, como arcilla, plástico o espuma, y proporcionan una representación tridimensional
+de la apariencia y proporciones del vehículo.
+Para el proceso de impresión 3D, se emplea programas del tipo Slicer para convertir
+modelos 3D en instrucciones específicas de código binario que permiten construir objetos
+físicos.
+3.2.1 Preparación del Modelo
+Como indica la figura 40, cuando el modelo esté completamente diseñado y listo para
+la impresión en 3D, se debe exportar el archivo desde Autodesk Inventor ha Ultimaker Cura
+para un software de preparación y rebanado de modelos 3D. para hacerlo dentro de la cinta de
+entornos se selecciona la opción de “impresión 3d” el cual convierte de forma automática el
+modelo en un archivo del tipo "Estereolitografía (*.stl)" permitiendo a Ultimaker Cura
+interpretar este formato.
+Figura 40 Cinta de Entornos de Autodesk Inventor
+Cinta de Entornos de Autodesk Inventor
+
+49
+Una vez creado el Archivo STL (Standard Tessellation Language), sirve de modelo
+guía para que la impresora 3D determine la forma y los detalles del objeto. Teniendo en cuenta
+que las medidas del diseño conservan sus dimensiones reales, en la figura 41 se usa la
+herramienta del servicio de impresión 3D de Autodesk Inventor permite configurar el factor de
+escala antes de crear el formato STL (Standard Tessellation Language) del chasis.
+Figura 41 Servicio de Impresión 3D
+Servicio de Impresión 3D
+
+Como se aprecia en la figura 42 el slicer de Ultimaker cura empaqueta la información
+de impresión específica para la impresora 3D y convierte el archiva en un código binario de
+extensión ".gcode".
+Figura 42 Slicer Ultimaker Cura
+Slicer Ultimaker Cura
+
+50
+3.2.2 Impresión SLA (Estereolitografía)
+La impresora 3D SLA utiliza una resina líquida fotosensible como material de
+impresión. La resina se coloca en un tanque transparente que está ubicado en la parte inferior
+de la impresora. Un láser ultravioleta o una fuente de luz similar se dirige hacia la superficie
+de la resina, y donde el láser toca la resina, esta se solidifica y se forma la primera capa del
+objeto. La figura 43 muestra cómo se lleva a cabo la impresión 3D.
+Figura 43 Impresión SLA
+Impresión SLA
+
+Después de la solidificación de la primera capa, la plataforma de construcción se mueve
+hacia arriba (o la impresora baja) en una pequeña distancia, y se aplica una nueva capa de resina
+líquida sobre la capa anterior. El láser o la fuente de luz vuelve a exponer la resina y endurece
+las áreas correspondientes a la siguiente capa. Este proceso se repite capa por capa hasta que
+se completa el objeto impreso.
+Una vez que se ha impreso todo el modelo, la plataforma de construcción se retira del
+tanque de resina y el objeto impreso se lava para eliminar cualquier exceso de resina no
+solidificada.
+
+51
+3.2.3 Proceso de Curado
+El curado es una etapa crítica en el proceso de impresión SLA, el curado final es
+necesario para asegurar que la resina esté completamente endurecida y estable, como muestra
+la figura 44 esto garantiza que el objeto impreso tenga la resistencia y la durabilidad adecuadas.
+Figura 44 Proceso de Curado
+Proceso de Curado
+
+3.2.4 Etapa de Postprocesado
+El postprocesado de objetos impresos en resina, después de la impresión SLA, es una
+etapa donde se mejorar la calidad y el acabado final del modelo. Se pueden añadir extensiones
+y otros elementos que mejores el aspecto visual del producto final, la figura 45 muestra la
+maqueta ensamblada con sistemas de suspensión delantero y trasero.
+Figura 45 Acabado Final del Modelo a Escala 1:10
+Acabado Final del Modelo a Escala
+
+52
+3.3
+
+Maqueta a Escala 1:1
+La maquetaría de vehículos y prototipos tiene como objetivo validar el diseño, evaluar
+
+la estética, ergonomía y funcionalidad del vehículo antes de iniciar con el proceso de
+producción, estos prototipos se construyen para visualizar y evaluar físicamente el concepto
+del vehículo.
+El primer paso consiste en seleccionar un espacio para construir la maqueta y como
+muestra la figura 46 con cinta de papel se bosqueja el área donde estará alineado cada uno de
+los componentes de la maqueta.
+Figura 46 Designación de Área de Trabajo
+Designación de Área de Trabajo
+
+Dentro del espacio de trabajo se asignan particiones debido a que la maqueta se divide
+en tres secciones: espacio para el motor, espacio para el piloto, espacio para anclaje de
+elementos de suspensión y dirección. Cada parte es cortada y ensamblada según los planos y
+diseños previos, asegurando que las líneas y las proporciones se mantengan fieles al diseño
+conceptual original.
+
+53
+Como se aprecia en la figura 47 el espacio asignado para el motor se construye con
+tubos de pvc con 1½” de diámetro, mediante el uso de pegamento para tubos se une los
+elementos de la estructura y finalmente se los une mediante cordones de alambre.
+Figura 47 Construcción Sección del Motor
+Construcción Sección del Motor
+
+Para construir la sección que actúa de base para el espacio que corresponde al piloto se
+selecciona tubos de pvc con 1¼” de diámetro, como muestra la figura 48 con ayuda de cinta
+americana y cordones de alambre se fija los elementos asignados.
+Figura 48 Construcción Sección del Piloto
+Construcción Sección del Piloto
+
+54
+La sección final corresponde al área frontal que sirve de anclaje para elementos de
+suspensión y dirección, como muestra la figura 49 los tubos pvc empleados poseen un diámetro
+de 1¼”.
+Figura 49 Construcción Sección Frontal
+Construcción Sección Frontal
+
+Ya construidas las tres secciones de la maqueta se procede a alinear las estructuras
+dentro del área marcada con la cinta de papel, la figura 50 muestra el proceso de alineación.
+Figura 50 Colocación y Alineación de Elementos
+Colocación y Alineación de Elementos
+
+55
+Tal como muestra la figura 51 para restringir el desplazamiento de los elementos se
+emplea cinta americana para fijar con firmeza cada estructura dentro su área correspondiente.
+Figura 51 Alineación de Elementos
+Fijación de Elementos
+
+El siguiente paso consiste en unir las secciones mediante tubos pvc de2 ½” de diámetro,
+la figura 52 muestra los largueros que actúan como elementos de unión.
+Figura 52 Fijación de Soportes para la Estructura
+Unión de Soportes para la Estructura
+
+56
+Para asegurar la rigidez de la estructura es necesario triangular la estructura, en la figura
+53 se muestra como con ayuda de un taladro se perfora las guías para cada elemento.
+Figura 53 Perforación de los Puntos de Unión
+Perforación de los Puntos de Unión
+
+La figura 54 muestra la forma en que cada inserción coincide con los puntos de
+referencia los cuales ayudaran a realiza la triangulación de nodos.
+Figura 54 Fijación de Elementos de Unión
+Fijación de Elementos de Unión
+
+57
+Con las guías listas tal como muestra la figura 55, se realiza la triangulación de nodos
+insertando tubos de 1¼” y fijándolos con firmeza mediante nudos de alambre.
+Figura 55 Triangulación de Nodos
+Triangulación de Nodos
+
+Por último, se sustituye las uniones que poseen cinta americana y se las reemplaza por
+nudos de alambre, la figura 56 muestra el acabado final de la maqueta a escala 1:1.
+Figura 56 Revisión Final de Anclajes y Uniones
+Revisión Final de Anclajes y Uniones
+
+58
+3.4
+
+Construcción del Chasis Tubular
+La construcción de un chasis tubular es un proceso que involucra la fabricación de la
+
+estructura principal de un vehículo o máquina utilizando tubos de acero u otros materiales
+tubulares. Estos chasis se utilizan comúnmente en vehículos todo terreno (como buggies,
+quads, motos y vehículos de competición) y en ciertos tipos de maquinaria. Antes de comenzar
+la construcción, se debe realizar un diseño detallado del chasis que permita asegurar la calidad,
+la seguridad y la durabilidad del chasis. Esto incluye establecer las dimensiones, la ubicación
+de los puntos de montaje para los componentes, la geometría general y otros detalles
+importantes.
+3.4.1 Selección de Materiales
+Los chasis tubulares generalmente se construyen utilizando tubos de acero de alta
+resistencia o aleaciones de aluminio. Para llevar a cabo la elección del material se considera
+factores como: el uso previsto, el peso del vehículo, la disponibilidad y el costo del material,
+en cuento a la selección de los perfiles para los tubos de acero, se opta por un acero ASTM
+A36 el cual es un acero al carbono estructural ampliamente utilizado debido a su resistencia y
+versatilidad. Se eligen los perfiles adecuados según el diámetro, el espesor y las proporciones
+que se requieran para el diseño del chasis sin impactar negativamente en la viabilidad
+económica del proyecto. Dentro de la tabla 6 se describe los espesores, longitud y cantidad de
+tubos empleados.
+Tabla 6 Tubos Estructurales ASTM A36
+Tubos Estructurales ASTM A36
+Tipo
+Perfil
+1”
+1¼”
+1½”
+2 ½”
+Tomado de: Dismetal Ec, 2023
+
+Diámetro
+25.40
+31.80
+38.10
+63.50
+
+Dimensiones
+Espesor
+1.20
+1.50
+2.00
+2.00
+
+peso
+Kg/6m
+4.32
+6.72
+10.68
+18.18
+
+59
+3.4.2 Proceso de Corte y Doblado de Tubos
+Los tubos se cortan en las longitudes necesarias según el diseño del chasis, se puede
+utilizar sierras, cortadoras eléctricas o herramientas similares para realizar los cortes. Las partes
+donde los tubos se unirán entre sí necesitarán prepararse para asegurar conexiones fuertes y
+precisas, esto implica cortes angulares, chaflanes o ranuras para una unión adecuada, tal y como
+se aprecia en la figura 57.
+Figura 57 Corte de Tubos
+Corte de Tubos
+
+Como muestra la figura 58 en el doblado de tubos de acero, se reconoce que ciertos
+materiales y espesores pueden ser más susceptibles a la formación de arrugas o fisuras. Por
+esto se debe considera estos factores al seleccionar la técnica de doblado más apropiada.
+Figura 58 Doblado de Tubos
+Doblado de Tubos
+
+60
+3.4.3 Proceso de Soldadura
+La mayoría de los chasis tubulares se ensamblan mediante soldadura. Como muestra la
+figura 59 y 60 los tubos se colocan en su posición y se sueldan para formar la estructura. Es
+importante al realizar las soldaduras se pueda garantizar la integridad estructural del chasis.
+Figura 59 Proceso de Soldadura Ensamble
+Proceso de Soldadura en Ensamble
+
+Figura 60 Proceso de Soldadura en Estructura
+Proceso de Soldadura en Estructura
+
+Dependiendo del diseño y el uso previsto del chasis, es posible que se agreguen
+refuerzos y soportes adicionales para aumentar la resistencia y estabilidad. Estos pueden ser
+tubos adicionales o placas de refuerzo que se sueldan en puntos estratégicos del chasis.
+
+61
+Posteriormente se procede a soldar los largueros a las diferentes secciones de la
+estructura. Como muestra la figura 61 y 62 los tubos se colocan en su posición y se sueldan
+con cada elemento siempre salvaguardando la integridad estructural del chasis.
+Figura 61 Proceso de Soldadura Integral
+Proceso de Soldadura Integral
+
+Figura 62 Proceso de Inspección Visual
+Proceso de Inspección Visual
+
+Una vez que se completa la soldadura, se realiza una inspección visual para detectar
+defectos visibles como porosidad, grietas o desalineaciones. Además, se pueden realizar
+pruebas no destructivas, como pruebas de líquidos penetrantes o pruebas ultrasónicas, para
+detectar defectos internos.
+
+62
+3.4.4 Proceso de Ensamblaje y Alineación
+Como muestra la figura 63 una vez que todas las partes del chasis están soldadas, se
+realiza un proceso de ensamblaje y alineación para asegurar que todas las dimensiones y
+ángulos estén dentro de las tolerancias especificadas en el diseño.
+Figura 63 Unión de Elementos Finales
+Unión de Elementos Finales
+
+Después de completar la construcción y asegurarse de que todo esté alineado
+correctamente, tal como muestra la figura 64 el chasis puede recibir un tratamiento superficial,
+como pintura, para protegerlo contra la corrosión y mejorar su aspecto.
+Figura 64 Acabados Finales
+Acabados Finales
+
+63
+Finalmente, como parte de la inspección de calidad final se lleva a cabo un monitoreo
+de control de calidad donde se realiza una revisión exhaustiva para detectar cualquier defecto
+en las soldaduras, verificar la integridad estructural y garantizar que el chasis cumpla con los
+estándares establecidos. La figura 65 muestra los resultados finales del proyecto de
+construcción del prototipo de chasis tubular del tipo auto de ruta, mientras que en la figura 66
+se muestra el modelo a escala real junto con el bastidor terminado.
+Figura 65 Acabado de la Estructura Tubular
+Acabado de la Estructura Tubular
+
+Figura 66 Comparación entre la Maqueta Escala 1:1 y la estructura Tubular
+Comparación entre la Maqueta Escala 1:1 y la Estructura Tubular
+
+64
+Capítulo IV
+Resultados y Discusión
+4.1
+
+Interpretación de Resultados
+Dentro del capítulo anterior se detalló la metodología donde se indican las pruebas de
+
+simulación que respaldan la construcción del prototipo de chasis tubular del tipo monoplaza,
+en este análisis correspondiente al proceso de diseño se debe tomar en cuenta los esfuerzos que
+debe soportar la estructura, las carga se designan según lo dictado por el reglamento de la
+RFDA, estos factores afectan combinaciones básicas, estructurales, por ende las
+consideraciones de diseño no deben exceder a los factores de cargas forzadas y respetando lo
+establecido en la normativa de la reglamentación.
+El análisis correspondiente a los lugares donde fueron ubicadas cada una de las cargas
+sobre la estructura fija fueron las manguetas en las que permiten el alojamiento de las ruedas
+delanteras y en las bases de los soportes posteriores donde descansará el eje posterior, a estos
+cuatro puntos se los determina como puntos de anclaje. De esta manera se conjugan los valores
+estimados por carga muerta, carga viva junto a las cargas de impacto lateral y frontal, las
+mismas que fueron definidas y calculadas con anterioridad en el apartado 3.1.2 (ensayo de
+esfuerzo y deformación), para luego ser ejecutadas y generar de esta manera los resultados del
+análisis.
+4.1.1 Descripción de Simulaciones
+La descripción de combinación de factores con las cargas generadas sobre la parte
+estructural y aplicadas según el método de diseño de carga son seleccionadas de acuerdo con
+la reglamentación de la competencia basadas en la norma aplicada (reglamento CEAX de la
+RFEDA) que para el caso del presente estudio se determina de la siguiente manera: para carga
+muerta 12%, para carga viva 5% y para carga de giro 16%. Estos factores permiten saber qué
+parte de la estructura es más sensible a la deformación, mediante la simulación se determinan
+
+65
+las combinaciones individuales con menores valores de seguridad, y cuál es la parte que
+produce mayor deformación, como se puede observar en la figura 67 la cual corresponde a la
+simulación de sensibilidad de estructura.
+Figura 67 Simulación de Cargas Estáticas
+Simulación de Sensibilidad de Estructura
+
+Cómo se puede observar en la figura 68 considerando las cargas descritas en el apartado
+3.2.1 se establece las condiciones de simulación de impactos frontales sobre la estructura.
+Figura 68 Simulación de Impacto Frontal
+Simulación de Impacto Frontal
+
+66
+Cómo se puede observar en la figura 69 considerando las cargas descritas en el apartado
+3.2.1 se establece las condiciones de a la simulación de impactos laterales sobre la estructura.
+Figura 69 Simulación de Impacto Lateral
+Simulación de Impacto Lateral
+
+4.1.2 Resultados de Ensayos de Esfuerzo
+Si el análisis revela áreas problemáticas, es posible que se requieran de ajustes al diseño
+antes de lograr una solución que cumpla con los requisitos de resistencia y seguridad. En la
+mayoría de los casos, los ensayos de esfuerzos realizados dentro de la simulación por parte del
+programa de Autodesk Inventor Profesional muestran en rojo tensiones o deformaciones altas,
+o un coeficiente de seguridad bajo. el efecto que genera las distintas cargas sobre la estructura
+se interpreta mediante el mapa de colores mostrado en la figura 70.
+Figura 70 Mapa de Colores de Tensiones
+Mapa de Colores de Tensiones
+
+Tomado de: Autodesk Inventor
+
+67
+Cómo se puede observar en la figura 71 corresponde a los resultados de la simulación
+de cargas estáticas sobre la estructura.
+Figura 71 Resultados Simulación de Cargas Estáticas
+Simulación de Cargas Estáticas
+
+Cómo se puede observar en la figura 72 corresponde a los resultados de la simulación
+de impactos frontales sobre la estructura.
+Figura 72 Resultados Simulación de Impacto Frontal
+Simulación de Impacto Frontal
+
+Cómo se puede observar en la figura 73 corresponde a los resultados de la simulación
+de impactos laterales sobre la estructura.
+
+68
+Figura 73 Resultados Simulación de Impacto Lateral
+Simulación de Impacto Lateral
+
+4.2
+
+Observación de Datos Presentes en las Pruebas Realizadas
+En última instancia, el análisis de tensión en Autodesk Inventor permite tomar
+
+decisiones informadas al diseñar productos o componentes, asegurándose de que cumplan con
+los estándares de calidad y confiabilidad necesarios para su aplicación prevista. Comparando
+los datos de las diferentes pruebas se presenta visualmente a través de mapas de colores, donde
+destacan las áreas críticas que podrían estar sujetas a tensiones excesivas. Se puede observar
+que las mayores deformaciones se producen en el caso de una colisión lateral, donde la sección
+con mayor carga es la parte frontal donde se albergan los sistemas de suspensión y dirección,
+por otro lado, las deformaciones presentes en el ancho de vía y la sección del piloto son
+relativamente menores y no comprometen el espacio de seguridad para el ocupante, por último,
+la sección donde se ubica el motor posee menos desplazamientos.
+Tal como muestra la figura 74 con el objetivo de apreciar mejor estos resultados la
+escala de la visualización correspondiente a los desplazamientos de los elementos de la
+estructura se aumentó 5 veces.
+
+69
+Figura 74 Desplazamientos en Caso de Impacto Lateral
+Desplazamientos en Caso de Impacto Lateral
+
+Una vez obtenidos los resultados se procede a verificar que los valores máximos de
+cada simulación no excedan los límites de fluencia (Sy) y cadencia (Su) correspondientes al
+material seleccionado, acero estructural ASTM A36. También se verifica que los valores que
+se encuentran dentro de la tabla 7, no estén por debajo de la unidad en el caso de los coeficientes
+de seguridad.
+Tabla 7 Resultados de Simulación de Esfuerzos
+Resultados de Simulación de Esfuerzos
+Simulaciones
+Cargas muertas Impacto lateral
+Tensión Von Misses (Mpa)
+10.11
+163
+Primera Tensión (Mpa)
+6.5
+128.3
+Desplazamientos (mm)
+0.068
+322
+Coeficiente de seguridad
+15
+1.26
+Tomado de: Informe de Ensayo de autodesk Inventor, 2023
+Valores máximos
+
+Impacto frontal
+100.2
+56.72
+72.68
+1.87
+
+70
+Conclusiones
+Se construyo un bastidor del tipo tubular funcional, confiable, seguro, económico,
+donde el proceso de diseño mecánico mantiene un equilibrio entre todas estas consideraciones
+técnicas, de modo que el proceso de construcción sea iterativo para permitir la adaptación y
+mejora continua a medida que se recolectaba más información y se comprenden mejor las
+necesidades y desafíos del proyecto.
+Se investigó las normas necesarias que se involucran dentro la construcción de un chasis
+tubular en base a lo estipulado por el reglamento para autos carcross establecido por el
+reglamento CEAX de la Real Federación Española de Automovilismo, anexo 9 lineamento 3
+y 7. Además las cargas de simulaciones se establecen según la normativa la SAE – Students de
+la Society of Automotive Engineers en su apartado A9. Además, se detallan las fases de diseño,
+construcción y pruebas necesarias en un prototipo monoplaza de tipo auto de ruta.
+Se determinó que los procesos iterativos de diseño permiten adecuar una metodología
+de construcción funcional donde se retroalimente los datos obtenidos en las fases de diseño
+asistido por computadora, creación de maqueta a escala y maqueta a tamaño real; con la
+triangulación de nodos de la estructura dentro de su fase de construcción para garantizar un
+mayor grado de rigidez e integridad estructural los cuales son ventajas que se presentan durante
+las iteraciones del diseño.
+Se verificó las condiciones de funcionamiento del prototipo mediante software de
+diseño tales como: Autodesk Inventor programa con herramientas CAD enfocado en el diseño
+digital y las herramientas CAE presentes en la versión de Autodesk Inventor Professional el
+cual se ocupa del análisis y la simulación para la ingeniería. Las pruebas otorgan factores de
+seguridad mayores a la unidad, con valores de 15 para cargas estáticas, 1.26 en caso de impacto
+lateral y 1.87 en caso de impacto frontales. Valores que se corroboran al poder ensamblar todos
+los elementos del vehículo con exito sin comprometer la integridad del bastidor.
+
+71
+Recomendaciones
+Con la finalidad de conseguir un Prototipo con mejores acabados se recomienda llevar
+a cabo un estudio con análisis estático para cada carga frontal y carga lateral, comprobando los
+datos del análisis de fatiga, tomando en cuenta la aerodinámica, junto a un estudio del centro
+de gravedad, etc.
+La construcción de un chasis tubular requiere habilidades de soldadura y conocimientos
+en diseño y fabricación. Si no se tiene experiencia en este tipo de trabajo, es recomendable
+buscar la ayuda de profesionales o capacitarse adecuadamente antes de embarcarte en un
+proyecto de construcción de chasis tubular.
+Tomar en cuenta todos los componentes importantes de un vehículo carcross, como los
+amortiguadores delanteros y traseros, la dirección, los frenos, el motor y la caja de cambios,
+para optimizar las iteraciones dentro del proceso de diseño
+Identificar que componentes están directamente relacionados con el tamaño del bastidor
+tubular con la finalidad de trabajar conjuntamente en su construcción, para eliminar pérdidas
+de tiempo y costos innecesarios.
+
+72
+Bibliografía
+Barcelona Tech. (2020). Diseño mediante programas de modelado 3D de un chasis tubular y
+posterior estudio de su comportamiento estructural. Barcelona.
+Barros Calderón, F., & Cedeño Villamil, W. (2015). Rehabilitación en la Carrocería del
+Vehículo Mazda 3 Aplicando.
+Beer, & Jhonston . (2017). Mecánica Vectorial: Dinámica. Mc Graw Hill.
+Beer, F., & Johnston, R. (2017). Mecanica Vectorial: Estatica. Mc Graw Hill.
+Budynas Gordon, R., & Shigley , J. E. (2020). DISEÑO EN INGENIERÍA MECÁNICA DE
+SHIGLEY. México, D.F.: Mc Graw Hill.
+CEAX. (2023). ANEXO 9: Reglamento Técnico Vehículos Car Cross. España: Campeonato de
+España de Autocross.
+Chuan Yu, & Taehyun Shim. (2013). Modeling of comprehensive electric drive system for a
+study of regenerative brake system. American Control Conference, Washington, DC.
+Groover, M. (2008). Fundamentos de manufactura moderna. Mexico: Mc Graw Hill.
+Martinez, I. (2017). Diseño de un Bastidor Tubular para un Carcross. E.T.S. de Ingeniería
+Industrial,.
+Mc. Cormac, J. C. (2011). Análisis de Estructuras. Métodos Clásico y Matricial. Alfaomega
+Grupo Editor.
+Motor en marcha. (2019). Mecánica Automotriz: Calculo de la Altura del Centro de Gravedad.
+http://motorenmarcha.com/mecanica-automotriz-altura-del-centro-de-gravedad/
+Reglamento Tecnico Carcross. (2023). Campeonato de Autocross de la RFEDA.
+Resendiz Cortez, H. (2020). Mecánica del Cuerpo Rigido: Analisis de Bastidores. Instituto
+Politécnico Nacional.
+Torres, V., & Carillo, K. (2021). VALORACIÓN DE LAS DEFORMACIONES EN
+CARROCERÍAS DE VEHÍCULOS. Quito: Universidad Internacional del Ecuador.
+
+73
+Velasco Manrique, J., & Ingelmo Gómez, M. (2019). Estructura tubular de vehículo eléctrico
+urbano con altas.
+Vera Puebla, E., & Peña Pinargote, A. (2019). Ergonomía para pilotos de monoplaza.
+Colloquium.
+
+74
+
+

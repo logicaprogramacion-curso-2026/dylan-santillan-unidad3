@@ -1,0 +1,1192 @@
+Antonio Creus Sole
+
+INICIACIÓN A LA AERONÁUTICA
+
+Agradecimientos
+
+Este libro ha sido posible gracias a la experiencia en temas aeronáuticos adquirida en la empresa GAVINA (Grupo Aviación y
+Náutica S.L.) de la que fui socio fundador. Los diversos aspectos
+relacionados con la creación de una escuela de vuelo de pilotos privados, el pilotaje de los aviones Robin de la escuela, su transporte
+en vuelo desde la fábrica de Dijon (Francia) hasta el aeropuerto
+de Sabadell, las demostraciones, y todas las actividades que comporta su manejo, me inclinaron a plasmar en este libro mi afición
+por la aviación.
+Desde el punto de vista comercial, el mundo de la aviación no es
+fácil. Es necesario buscar alumnos y pilotos que utilicen los aviones
+como entrenamiento, y dentro de la dureza del trabajo, compensa,
+no solo los ratos de vuelo sino también el contacto y el apoyo de
+los alumnos y pilotos. Entre ellos debo agradecer especialmente
+la ayuda del doctor Oriol Doménech que nos infundió ánimos en
+los momentos difíciles y que nos facilitó durante un tiempo su propio despacho para impartir las clases teóricas. Tengo también una
+deuda de gratitud con el anterior Director del aeropuerto de Sabadell don Antonio Navarro, por su apoyo general a las empresas sitas
+en el aeropuerto, y con el Jefe de la Torre de Control de Sabadell,
+don Juan Esteban Linares, por sus valiosos conocimientos aeronáuticos.
+También unas palabras de agradecimiento a los instructores que
+hicieron posible la calidad de enseñanza de las clases prácticas de
+la Escuela, en especial a don Miguel Zendrera, por su dedicación
+y su entusiasmo.
+Asímismo debo mencionar a los amigos y compañeros pilotos asiduos de GAVINA, Juan Arriaga, Miquel Barroeta, Víctor Esquerra,
+VII
+
+Francesc Hombravella y Remy Vincent, entre otros, por las comidas
+y cenas periódicas hablando de aviones y por el clima aeronáutico creado en el entorno amigable del hangar de GAVINA de Josep
+Quera.
+Agradezco a mi mujer Carmen y a mi hija Ariadna su ayuda, su
+paciencia y su comprensión por el tiempo que he dejado de dedicarles a lo largo de las muchas horas empleadas en este libro.
+
+Antonio Creus Sole
+
+Índice
+
+Prólogo............................................................................................
+
+XV
+
+Capítulo 1 ••
+
+Introducción: las aeronaves. .........................................
+
+1
+
+Capítulo 2 ••
+
+Aerodinámica .............................................................
+
+5
+
+2.1.
+
+El aire ....................................................................................
+
+5
+
+2.2.
+
+Las alas .................................................................................
+2.2.1. Generalidades .............................................................
+2.2.2. Teorema de Bernouilli ..................................................
+2.2.3. Coeficientes CL y CD ....................................................
+2.2.4. Sustentación y resistencia ...........................................
+2.2.5. Curva polar ................................................................
+2.2.6. Perfil aerodinámico de un ala ........................................
+2.2.7. Torbellinos de punta del ala ..........................................
+2.2.8. Dispositivos de freno e hipersustentadores .....................
+
+7
+7
+7
+9
+10
+11
+12
+14
+15
+
+Capítulo 3 ••
+
+Motores ....................................................................
+
+21
+
+3.1.
+
+Motor de combustión interna ...................................................
+3.1.1. Generalidades .............................................................
+3.1.2. Ciclo de funcionamiento ..............................................
+3.1.3. Sistema de refrigeración ..............................................
+3.1.4. Sistema de lubricación .................................................
+3.1.5. Combustible ...............................................................
+3.1.6. Control de la salida de potencia. La hélice.......................
+3.1.7. Potencia del motor ......................................................
+
+21
+21
+23
+25
+26
+27
+27
+32
+
+3.2.
+
+Turbina de gas .......................................................................
+
+34
+
+3.3.
+
+Avión con motor cohete ..........................................................
+
+36
+
+3.4.
+
+Mochila individual de chorro de aire (JetPack) .............................
+
+37
+
+IX
+
+●●●●
+
+X
+
+Iniciación a la aeronáutica
+
+3.5.
+
+Avión con motor eléctrico alimentado con baterías ......................
+
+37
+
+3.6.
+
+Avión con motor eléctrico alimentado con pilas de hidrógeno ........
+
+38
+
+Capítulo 4 ••
+
+Estructura de la aeronave ............................................
+
+41
+
+4.1.
+
+Tipos de fuselaje .....................................................................
+
+41
+
+4.2.
+
+Estructura del ala ....................................................................
+
+42
+
+4.3.
+
+Empenaje o cola .....................................................................
+
+44
+
+4.4.
+
+El fuselaje y tren de aterrizaje ...................................................
+
+45
+
+4.5.
+
+El morro .................................................................................
+
+46
+
+4.6.
+
+Accesorios .............................................................................
+
+46
+
+4.7.
+
+Sistema de combustible ...........................................................
+
+47
+
+4.8.
+
+Sistema hidráulico ...................................................................
+
+49
+
+4.9.
+
+Fly-by-wire .............................................................................
+
+49
+
+Capítulo 5 ••
+
+Comportamiento de la aeronave en vuelo .......................
+
+53
+
+5.1.
+
+Fuerzas que actúan sobre el avión en vuelo ................................
+
+53
+
+5.2.
+
+Pérdida ..................................................................................
+
+55
+
+5.3.
+
+Barrena ..................................................................................
+
+57
+
+5.4.
+
+Mandos y superficies de vuelo ..................................................
+
+58
+
+5.5.
+
+Carga y centrado ....................................................................
+
+61
+
+5.6.
+
+Maniobras de vuelo .................................................................
+5.6.1. Estabilidad .................................................................
+5.6.2. Virajes .......................................................................
+5.6.3. Despegue ...................................................................
+5.6.4. Aterrizaje ...................................................................
+
+62
+63
+65
+67
+68
+
+5.7.
+
+Maniobras básicas ...................................................................
+5.7.1. Técnicas usuales en pilotaje .........................................
+5.7.2. Pilotaje en vuelo instrumental .......................................
+
+71
+71
+73
+
+Capítulo 6 ••
+
+Los instrumentos del avión ..........................................
+
+77
+
+6.1.
+
+Instrumentos de vuelo .............................................................
+6.1.1. Anemómetro...............................................................
+6.1.2. Altímetro....................................................................
+6.1.3. Variómetro. ................................................................
+6.1.4. Brújula magnética........................................................
+6.1.5. Instrumentos giroscópicos. ...........................................
+
+78
+78
+84
+89
+91
+93
+
+6.2.
+
+Instrumentos del motor ............................................................
+
+98
+
+6.3.
+
+●●●●
+
+Índice
+
+XI
+
+6.2.1. Palanca del gas. ..........................................................
+6.2.2. Mando de calefacción del carburador. ............................
+6.2.3. Mando de la mezcla aire-gasolina...................................
+6.2.4. Selector de magnetos/Starter........................................
+6.2.5. Tacómetro..................................................................
+6.2.6. Indicador de la presión de admisión (manifold - MP). ........
+6.2.7. Contador de horas y minutos. .......................................
+6.2.8. Manómetro de aceite. ..................................................
+6.2.9. Termómetro de aceite..................................................
+6.2.10. Indicador de presión de combustible...............................
+6.2.11. Indicador de nivel de combustible..................................
+6.2.12. Amperímetro...............................................................
+6.2.13. Termómetro del aire del carburador................................
+6.2.14. Termómetro de la culata del cilindro...............................
+6.2.15. Indicador de temperatura del gas de escape....................
+6.2.16. Termómetro del aire exterior.........................................
+6.2.17. Vacuómetro................................................................
+6.2.18. Reloj..........................................................................
+6.2.19. Cuadro de luces. .........................................................
+6.2.20. Monitor de cilindros.....................................................
+
+99
+99
+101
+104
+104
+104
+109
+109
+110
+110
+111
+112
+112
+112
+113
+114
+114
+115
+115
+115
+
+Instrumentos de navegación .....................................................
+6.3.1. ADF (Automatic Direction Finder). .................................
+6.3.2. VOR (Very High Frequency Omnidirectional Range)..........
+6.3.3. Navegación de área (RNAV)..........................................
+6.3.4. Respondedor (Transponder). .........................................
+6.3.5. Sistema PCAS (Portable Collision Avoidance Systems).....
+6.3.6. El sistema TCAS (Traffic-Alert and Collision Avoidance
+System). ....................................................................
+6.3.7. LORAN (Long Range Navigation). ..................................
+6.3.8. GPS (Global Positioning System)....................................
+6.3.9. Indicador radiomagnético (RMI). ....................................
+6.3.10. RLG (Ring Laser Gyro)..................................................
+6.3.11. ILS (Instrument Landing System)...................................
+6.3.12. Indicador de situación horizontal (HSI)............................
+6.3.13. Sistema de aumento de área local (LAAS: Local Area
+Augmentation System).................................................
+
+119
+119
+120
+123
+124
+125
+126
+128
+128
+131
+131
+132
+134
+135
+
+6.4.
+
+Equipos de comunicaciones ...................................................... 136
+
+6.5.
+
+Cabina de cristal (glass cockpit) ..............................................
+
+Capítulo 7 ••
+7.1.
+
+137
+
+Meteorología .............................................................. 143
+
+Generalidades ......................................................................... 143
+
+●●●●
+
+XII
+
+Iniciación a la aeronáutica
+
+7.1.1.
+7.1.2.
+7.1.3.
+7.1.4.
+
+La atmósfera ..............................................................
+Medición de la temperatura ..........................................
+Transferencia del calor .................................................
+Medición de la presión atmosférica ................................
+
+144
+145
+146
+147
+
+7.2.
+
+Vientos ..................................................................................
+7.2.1. Gráficos de isobaras ....................................................
+7.2.2. Efecto de la rotación de la Tierra: fuerza de Coriolis .........
+7.2.3. Viento de gradiente, viento geostrófico ..........................
+7.2.4. Sistemas prevalentes en la presión en el mundo. .............
+7.2.5. Efectos locales del viento en la superficie .......................
+7.2.6. Ondas de montaña ......................................................
+7.2.7. Notificación de la velocidad del viento ...........................
+7.2.8. Corriente de chorro .....................................................
+
+150
+151
+153
+154
+155
+156
+158
+160
+160
+
+7.3.
+
+Nubes ................................................................................... 161
+
+7.4.
+
+Frentes .................................................................................. 164
+
+7.5.
+
+Peligros del vuelo dentro de las nubes ........................................ 165
+
+7.6.
+
+Información meteorológica ....................................................... 169
+
+Capítulo 8 ••
+
+Espacio aéreo y derecho aeronáutico ............................. 175
+
+8.1.
+
+Introducción al derecho aéreo ................................................... 175
+
+8.2.
+
+Reglas de vuelo ...................................................................... 175
+
+8.3.
+
+Clasificación del espacio aéreo .................................................. 176
+
+8.4.
+
+Regla semicircular ................................................................... 179
+
+8.5.
+
+Plan de vuelo .......................................................................... 182
+
+8.6.
+
+Notams .................................................................................. 184
+
+8.7.
+
+Procedimientos en socorro o urgencia ........................................ 184
+
+8.8.
+
+Títulos y licencias de piloto ...................................................... 185
+
+8.9.
+
+Mantenimiento de los aviones ................................................... 221
+
+Capítulo 9 ••
+
+Navegación................................................................. 223
+
+9.1.
+
+Generalidades ......................................................................... 223
+
+9.2.
+
+La Tierra ................................................................................ 223
+9.2.1. Coordenadas: longitud y latitud ..................................... 224
+9.2.2. Coordenadas UTM ...................................................... 224
+
+9.3.
+
+Cartas, mapas y publicaciones .................................................. 225
+
+9.4.
+
+Rumbos geográfico y magnético – Declinación ........................... 227
+
+9.5.
+
+Cálculo de rumbos y distancias ................................................. 227
+
+●●●●
+
+Índice
+
+XIII
+
+9.6.
+
+Triángulo de velocidades .......................................................... 228
+
+9.7.
+
+Navegación observada y a la estima .......................................... 230
+
+9.8.
+
+Navegación por instrumentos ................................................... 232
+
+Capítulo 10 •• Fisiología aeronáutica y factores humanos ..................... 245
+10.1. Forma física ...........................................................................
+10.1.1. Forma física deficiente .................................................
+10.1.2. Régimen alimenticio .....................................................
+10.1.3. Dolencias leves comunes .............................................
+10.1.4. Medicamentos ............................................................
+10.1.5. Estrés ........................................................................
+10.1.6. Alcohol ......................................................................
+10.1.7. Tabaco ......................................................................
+
+245
+245
+245
+246
+247
+249
+249
+250
+
+10.2. Hipoxia .................................................................................. 251
+10.3. Hiperventilación ...................................................................... 254
+10.4. Gases comprimidos .................................................................
+10.4.1. Sistema gastrointestinal ...............................................
+10.4.2. Senos paranasales .......................................................
+10.4.3. Cavidades dentarias ....................................................
+10.4.4. Oídos ........................................................................
+10.4.5. Disbarismo .................................................................
+10.4.6. Descompresión ...........................................................
+
+255
+255
+255
+256
+256
+256
+257
+
+10.5. Sistema normal de orientación ..................................................
+10.5.1. Vista .........................................................................
+10.5.2. Oído interno ...............................................................
+10.5.3. Orientación espacial ....................................................
+10.5.4. Ilusiones sensoriales ....................................................
+
+257
+257
+258
+260
+261
+
+10.6. Factores humanos ...................................................................
+10.6.1. Generalidades .............................................................
+10.6.2. Modelos y tipos de errores ..........................................
+10.6.3. Vuelo en las cabinas de cristal ......................................
+
+264
+264
+265
+267
+
+Capítulo 11 •• El vuelo ..................................................................... 269
+11.1. Generalidades ......................................................................... 269
+11.2. La preparación ........................................................................ 269
+11.3. En el avión ............................................................................. 273
+Capítulo 12 •• Las otras aeronaves .................................................... 283
+12.1. Los aeróstatos ........................................................................ 283
+
+●●●●
+
+XIV
+
+Iniciación a la aeronáutica
+
+12.1.1. El globo ..................................................................... 283
+12.1.2. El dirigible .................................................................. 284
+12.2. Ala rotatoria ........................................................................... 284
+12.2.1. El autogiro .................................................................. 284
+12.2.2. El helicóptero .............................................................. 288
+12.3. Los planeadores ...................................................................... 290
+12.4. Avión con motor cohete ........................................................... 291
+12.5. Avión con motor eléctrico alimentado con baterías o con pila
+de combustible de hidrógeno .................................................... 292
+12.6. Aviones de construcción amateur .............................................. 292
+12.7. Ultraligeros ............................................................................ 293
+12.8. Ala delta ................................................................................ 297
+12.9. Parapente .............................................................................. 297
+12.10. Cohetes y naves espaciales ..................................................... 298
+Capítulo 13 •• Historia de la aviación ................................................. 301
+13.1. Los orígenes ........................................................................... 301
+13.2. Los pioneros prácticos ............................................................. 303
+13.3. Los aviones de la segunda guerra mundial .................................. 306
+13.4. Los logros espectaculares ........................................................ 307
+13.5. Los autogiros y helicópteros ..................................................... 310
+13.6. El espacio .............................................................................. 312
+Capítulo 14 •• Profesiones relacionadas con la aviación ........................ 317
+14.1. Controladores ......................................................................... 317
+14.2. Mecánicos de aviación ............................................................. 322
+14.3. Tripulantes de cabina de pasajeros (TCP) ................................
+
+328
+
+Apéndice ......................................................................................... 335
+Glosario de términos aeronáuticos ...................................................... 353
+Bibliografía ...................................................................................... 361
+
+Prólogo
+
+Este libro está pensado como introducción a la aeronáutica para el
+lector que se inicia en estos conocimientos, bien sea por curiosidad,
+o cómo no, con la idea de ser piloto algún día, y como complemento
+para los estudiantes, los pilotos y los instructores de vuelo. El objetivo del autor ha sido doble, por un lado escribir de un modo riguroso y preciso que no deje nada al azar ni a la improvisación, y por
+el otro intentar conseguir un relato novelesco, relajado, agradable
+y poético.
+Cuando se vuela un avión se puede realizar con dos mentalidades
+distintas. Una muy cerebral, estudiando los movimientos necesarios
+en las palancas y los mandos para evitar que el aparato se estrelle y pase a ser un montón de chatarra, y la otra, con el corazón,
+viviendo el vuelo y las reacciones del avión, a través de los mandos,
+como si estos fueran una prolongación de los miembros del piloto.
+En este segundo caso, el alma del aparato se va incorporando poco
+a poco a la personalidad del piloto, con lo que el oficio de volar se
+convierte en un arte en forma análoga a la del pintor que mejora
+sus cuadros de día en día. Y es así como el piloto siente el placer
+de volar, como una mezcla embriagadora entre la visión del paisaje
+desde el aire y la habilidad de llevar un aparato tan complicado
+y a la vez tan sencillo como es un avión. Además, lo mismo que el
+aficionado al mar, que admira las infinitas formas que éste presenta
+a lo largo del día, el piloto se mueve en un medio, la atmósfera, que
+cambia continuamente de condiciones y de aspecto, de tal manera
+que ningún vuelo es igual a otro. El piloto que no tenga el propósito
+de mejorar su técnica en cada vuelo es como el artista pintor que
+pinta siempre los mismos cuadros sin perfeccionar su estilo. Puede
+tener muchas horas de vuelo, pero si no las ha practicado a conciencia, cualquier día tomará la decisión errónea de salir a volar
+XV
+
+●●●●
+
+XVI
+
+Iniciación a la aeronáutica
+
+en condiciones marginales de tiempo que personalmente no podrá
+asumir con seguridad; en lugar de renunciar al vuelo y quedarse en
+tierra, el vuelo se le planteará como una cuestión de desafío personal frente a la atmósfera.
+Un avión es una máquina que es fruto del trabajo continuo de perfeccionamiento de todos los actores que intervienen (fabricantes,
+pilotos, compañías explotadoras, etc.). La tripulación de un gran
+avión de pasajeros dispone de la última versión de los instrumentos
+(cabina de vidrio o glass cockpit) que le permiten navegar y volar
+con seguridad. Cuando la sofisticación es extrema no es infrecuente
+ver a un piloto de un avión de transporte o de pasajeros, volar en
+sus ratos libres con una avioneta o con un ultraligero para congraciarse de nuevo con la atmósfera y con la tierra. El piloto es
+libre para volar simplemente los fines de semana desde un único
+aeropuerto local, o bien para realizar viajes a otros aeropuertos,
+incluso fuera del país, practicando la fraseología aeronáutica en
+otro idioma o en inglés (idioma internacional en aviación).
+En otras palabras, mientras se sienta íntimamente, el volar es lo
+que uno quiere que sea, puede ser la profesión para toda la vida, o
+bien una diversión que ayude a relajarse y a trabajar a pleno ritmo
+durante el resto de la semana.
+
++PVTQFWEEKÉPNCUCGTQPCXGU
+
+1
+
+Las aeronaves son vehículos diseñados para volar, cualquiera que sea su modo de
+VXVWHQWDFLyQRSURSXOVLyQ6HFODVL¿FDQHQPiVOLJHURVTXHHODLUH\PiVSHVDGRVTXH
+el aire.
+Los más ligeros que el aire (aeróstatos) contienen un gas (hidrógeno, helio, aire
+caliente) que les proporciona sustentación. Son:
+ Globos:TXHÀRWDQHQHODLUHVLQGLUHFFLyQVRPHWLGRVDOFDSULFKRGHORVYLHQtos, y los dirigibles dotados de motor y timones que pueden maniobrarse en
+todas direcciones.
+
+Figura 1.1. Globo y dirigibles. Fuente: Ultramagic y Good Year.
+
+Los más pesados que el aire (aerodinos) son:
+ $ODV¿MDVque aseguran la sustentación por la acción dinámica del aire sobre
+XQRVSODQRV¿MRV6HFODVL¿FDQHQ
+1
+
+ƔƔƔƔ
+
+2
+
+Iniciación a la aeronáutica
+
+– Avión:GRWDGRGHXQIXVHODMHODVDODVHOHPSHQDMHORVWLPRQHV\XQRR
+varios motores que propulsan el aparato.
+– Planeador: que no dispone de motor y es remolcado hasta una cierta altura.
+El piloto, para mantenerse en el aire, busca ascendencias cuya velocidad
+vertical sea mayor que la de descenso del aparato.
+– Ultraligero: avión de un peso máximo limitado, de chasis tubular, con alas
+recubiertas de tela o bien de material composite, que puede ser de dos o tres
+HMHVGHPDQGRRWHQHUHOFKDVLVVXVSHQGLGRGHODOD PRGHORSHQGXODU 
+– Ala delta: formada por alas tubulares recubiertas de tela de las que va suspendido el piloto y que gobierna por el desplazamiento de su cuerpo.
+– Parapente: formado por unas alas que se hinchan con el viento de la marcha, de las que va suspendido el piloto y que gobierna con unos cables que
+pliegan lateralmente las puntas. Puede ser motorizado.
+
+Figura 1.2. $ODV¿MDV DYLyQSODQHDGRUXOWUDOLJHURDOD
+delta y parapente sin motor y motorizado).
+
+ƔƔƔƔ
+
+Introducción: Las aeronaves
+
+3
+
+ Alas rotatorias: que disponen de palas giratorias que actúan como alas proSRUFLRQDQGRODVXVWHQWDFLyQ\TXHVHFODVL¿FDQHQ
+– Autogiro: que asegura la sustentación con una hélice de gran diámetro que
+gira libremente por la acción del aire de la marcha.
+– Helicóptero: que se sostiene por una hélice de gran diámetro, que actúa
+como un ala y es accionada por un motor.
+– Tilt rotor (rotor inclinable): que combina dos hélices inclinables (prorotors) para la suspensión y la propulsión. En vuelo vertical las hélices
+actúan como las palas de un helicóptero y, a medida que se van inclinando
+hacia delante, el aparato gana velocidad hasta convertirse en un avión.
+
+Figura 1.3. Alas rotatorias (autogiro, helicóptero y rotor orientable –tilt rotor).
+
+2
+
+#GTQFKP±OKEC
+
+2.1. EL AIRE
+(ODLUHHVHOÀXLGRHQHOTXHVHPXHYHHODYLyQ/RVJDVHVTXHFRPSRQHQHODLUH
+son O2, N2, CO2 y otros gases nobles en muy pequeña proporción. El aumento de
+temperatura incrementa la energía de las moléculas de los gases, de tal modo que
+DXPHQWDVXYROXPHQ/DSUHVLyQLQÀX\HWDPELpQHQHOYROXPHQRFXSDGRSRUHODLUH
+Un aumento de presión reduce el volumen, mientras que una disminución de presión
+ORDXPHQWD/DSUHVLyQHOYROXPHQ\ODWHPSHUDWXUDGHODLUHVHLQÀX\HQPXWXDPHQWH
+según las siguientes fórmulas básicas que los relacionan:
+Ecuación de los gases perfectos:
+Presión * Volumen
+= Constante
+Temperatura absoluta
+
+Ley de Boyle-Mariotte:
+Presión * Volumen = Constante
+
+La unidad de presión es el pascal, TXH HV OD SUHVLyQ TXH HMHUFH XQD IXHU]D GH XQ
+newton (fuerza que produce una aceleración de 1 metro/segundo cada segundo sobre
+XQNLORJUDPRPDVD VREUHXQDVXSHU¿FLHGHXQPHWURFXDGUDGR6HDEUHYLD3D2WUDV
+equivalencias son:
+1 milibar (mb)
+= 100 Pascal (Pa) = 1 Hectopascal (Hpa) = 0,02953 pulgadas columna de mercurio
+(‘c.d.Hg)
+1 atmósfera (atm) = 1.013,2 milibares (mb) = 760 mm mercurio = 29,92 pulgadas columna
+mercurio (‘c.d.Hg) = 1,033 kg/cm²
+
+La unidad de volumen es el metro cúbico (m³).
+5
+
+ƔƔƔƔ
+
+6
+
+Iniciación a la aeronáutica
+
+La unidad de temperatura es el grado centígrado, con 0 ºC como punto de congelación del agua y 100 ºC como punto de ebullición del agua. Otras equivalencias son:
+ Grados Fahrenheit (ºF) (congelación del agua a 100 ºF y ebullición del agua a
+212 ºF).
+ Grados Kelvin (ºK) (0 ºK es el punto de energía nula de las moléculas y el punto
+de congelación del agua es de 273,15 ºKelvin (K)).
+El avión vuela en el seno del aire en condiciones de presión, temperatura y volumen
+TXHFDPELDQGXUDQWHHOYXHORORTXHGL¿FXOWDODFRPSDUDFLyQGHODVFDUDFWHUtVWLFDV
+de los diferentes modelos de aviones y sus actuaciones (performances). Por este
+PRWLYRVHKDFUHDGRXQDGH¿QLFLyQGHatmósfera tipo o estándar.
+La atmósfera tipo o estándarHVODDWPyVIHUDLGHDOGH¿QLGDSRUOD2$&, 2UJDQL]Dción de Aviación Civil Internacional), como la que a nivel del mar tiene una temperatura de 15 °C y una presión atmosférica de 1.013,2 mb (29,92 “ de Hg o 760 mm Hg)
+y 0% de humedad. La temperatura va disminuyendo con la altura en una relación de
+2 °C/1.000 pies (6,5 °C/1000 m) hasta una altitud de 36.090 pies (11.000 m) donde
+HVFRQVWDQWHHLJXDOD&(QOD7DEOD¿JXUDQORVYDORUHVGHODSUHVLyQ\
+de la temperatura según la altura, de la atmósfera tipo internacional (International
+Standard Atmosphere).
+Tabla 2.1. Atmósfera tipo internacional (ISA) (OACI, 1962).
+Altura
+(pies)
+
+t ºC
+
+mb
+
+" Hg
+
+Altura
+(pies)
+
+t ºC
+
+mb
+
+" Hg
+
+0
+
+15
+
+1013,2
+
+29,92
+
+16.000
+
+-15.7
+
+572
+
+16,89
+
+1.000
+
+14.0
+
+977
+
+28,86
+
+17.000
+
+-17.7
+
+549
+
+16,22
+
+3.000
+
+13.0
+
+942
+
+27,82
+
+19.000
+
+-20.7
+
+506
+
+14,95
+
+4.000
+
+10.1
+
+908
+
+26,82
+
+20.000
+
+-25.6
+
+466
+
+13,76
+
+5.000
+
+8.1
+
+875
+
+25,84
+
+23.000
+
+-29.6
+
+428
+
+12,65
+
+6.000
+
+6.1
+
+843
+
+24,9
+
+25.000
+
+-33.5
+
+392
+
+11,61
+
+7.000
+
+4.1
+
+812
+
+23,98
+
+27.000
+
+-37.5
+
+361
+
+10,64
+
+8.000
+
+1.1
+
+782
+
+23,09
+
+29.000
+
+-40.5
+
+329
+
+9,74
+
+9.000
+
+-0.8
+
+752
+
+22,23
+
+30.000
+
+-45.4
+
+301
+
+8,9
+
+10.000
+
+-3.8
+
+724
+
+21,39
+
+33.000
+
+-49.4
+
+274
+
+8,12
+
+11.000
+
+-5.8
+
+697
+
+20,58
+
+35.000
+
+-53.4
+
+250
+
+7,4
+
+13.000
+
+-7.8
+
+670
+
+19,8
+
+37.000
+
+-56.5
+
+227
+
+6,73
+
+14.000
+
+-9.8
+
+644
+
+19,03
+
+39.000
+
+-56.5
+
+207
+
+6,1
+
+14.000
+
+-11.7
+
+619
+
+18,3
+
+40.000
+
+-56.5
+
+188
+
+5,54
+
+15.000
+
+-14.7
+
+595
+
+17,58
+
+ƔƔƔƔ
+
+Aerodinámica
+
+7
+
+2.2. LAS ALAS
+2.2.1. Generalidades
+Las partes principales de un avión son las alas, que producen la sustentación; el
+empenaje o la cola del avión con su timón de altura y su timón de dirección que
+gobiernan el vuelo; el fuselaje, que une los elementos anteriores, y el tren de aterrizaje. La parte delantera del avión suele albergar el motor y el panel de instrumentos,
+aparte de servir de referencia visual al piloto durante el vuelo.
+
+Figura 2.1. Partes principales de un avión.
+
+El avión genera la fuerza de sustentación en las alas, al moverse a una cierta velocidad a través del aire. El ala es de sección redondeada por delante, casi plana por su
+SDUWHLQIHULRU\D¿ODGDSRUGHWUiV/DSDUWHVXSHULRUVHOODPDextradós y la parte inferior intradós6XIRUPDSURYRFDXQHVWUHFKDPLHQWRGHORV¿OHWHVGHDLUHTXHFKRFDQ
+con el ala durante el vuelo.
+2.2.2. Teorema de Bernouilli
+El teorema de Bernouilli relaciona la presión (p) y la velocidad (v) del aire (densiGDG HQWUHGRVSXQWRVVLWXDGRVDODPLVPDDOWXUDHQHOVHQRGHXQÀXMRGHFRUULHQWH
+según la fórmula:
+p+
+
+ȡ Y2
+constante
+2 =
+
+Por consiguiente, un aumento de la velocidad del aire se traduce en una disminución
+de la presión, mientras que una disminución en la velocidad comporta un aumento.
+(QHODODODVSDUWtFXODVGHDLUHTXHSDVDQSRUHQFLPD\ODVTXHSDVDQSRUGHEDMR
+deben llegar al mismo tiempo al borde de salida.
+Por lo tanto, la velocidad del aire es mayor en la parte superior del ala (extradós), que
+tendrá así una menor presión (succión). En la parte inferior (intradós), al ser menor
+
+ƔƔƔƔ
+
+8
+
+Iniciación a la aeronáutica
+
+la velocidad del aire por oponerse el ala al movimiento, existirá una mayor presión.
+La diferencia de presiones entre el extradós y el intradós, produce una fuerza hacia
+arriba que es la fuerza de sustentación que soporta el peso del avión.
+
+Figura 2.2. Ala de un avión.
+
+La componente perpendicular será la sustentación propiamente dicha, mientras que
+su componente horizontal será la resistencia al avance.
+El ángulo de ataque HV HO iQJXOR TXH IRUPD HO SHU¿O GHO DOD FRQ OD GLUHFFLyQ GHO
+viento. Al aumentarlo, las partículas que pasan por la parte superior del ala alargan
+más su recorrido, por lo que aumentan todavía más su velocidad y por consiguiente
+se incrementa la succión sobre el ala y el avión asciende. Lo contrario ocurre cuando
+disminuye el ángulo de ataque.
+La capa límite HVODGLVWDQFLDTXHH[LVWHHQWUHODVXSHU¿FLHGHODODGRQGHODYHORFLGDG
+GHODVSDUWtFXODVGHDLUHTXHÀX\HQHVQXODGHELGRDOUR]DPLHQWR\ODFRUULHQWHOLEUH
+GRQGHODYLVFRVLGDGHQWUHODVFDSDV\DQRLQÀX\H\ODYHORFLGDG\DHVLJXDODODGHO
+movimiento del avión con respecto al aire. La capa límite se desprende del ala para
+valores grandes del ángulo de ataque, lo que se llama pérdida. Los dispositivos que
+LPSLGHQVXGHVSUHQGLPLHQWR ÀDSUDQXUDGRDVSLUDGRUHVGHFDSDOtPLWHHWF UHWDUGDQ
+la entrada en pérdida del avión. En los aviones existe un dispositivo en el ala llamado
+avisador de pérdida que hace sonar una bocina en la cabina del piloto cuando el
+avión está próximo a la pérdida en unos 3 a 6 nudos (5 a 10 km/h).
+
+ƔƔƔƔ
+
+Aerodinámica
+
+9
+
+Figura 2.3. Flujo normal, pérdida en un ala y avisador de pérdida.
+
+&RH¿FLHQWHV&L y CD
+5HDOL]DQGRH[SHULPHQWRVHQXQW~QHODHURGLQiPLFRFRQXQSHU¿ODVLPpWULFRGHDOD
+y midiendo la sustentación L y la resistencia D a diferentes ángulos de ataque A , se
+REWLHQHXQFRH¿FLHQWH&L sin dimensiones.
+CL=
+
+L
+q*S
+
+Siendo: L = sustentación
+q = presión dinámica (q = ½ v2)
+
+
+6 VXSHU¿FLHDODU
+
+'H PRGR DQiORJR VH REWLHQH HO FRH¿FLHQWH GH UHVLVWHQFLD &D GH¿QLGR FRPR HO
+cociente:
+CD=
+
+Siendo: D = resistencia
+q = presión dinámica (q = ½ v2)
+
+
+6 VXSHU¿FLHDODU
+
+D
+q*S
+
+ƔƔƔƔ
+
+10
+
+Iniciación a la aeronáutica
+
+(QOD¿JXUDVHUHSUHVHQWDHOYDORUGH&L en función del ángulo de ataque:
+
+Figura 2.4. &RH¿FLHQWHVGHVXVWHQWDFLyQ&L y resistencia CD SDUDXQSHU¿OGHDOD&ODUN<
+
+En la curva se aprecia que la sustentación L aumenta proporcionalmente al ángulo
+GHDWDTXH\TXHVHDQXOD HQWUDGDHQSpUGLGD FXDQGRHOiQJXORGHDWDTXHĮHVGH
+XQRV(QHVWDVFRQGLFLRQHV\GHELGRDODIXHU]DFHQWUtIXJDORV¿OHWHVGHDLUHVRQ
+LQFDSDFHVGHVHJXLUHOSHU¿ODODU\ORDEDQGRQDQHQIRUPDGHUHPROLQRV6HREVHUYD
+TXHHOFRH¿FLHQWHGHUHVLVWHQFLD&D es mínimo para un ángulo de ataque ligeramente
+negativo y que después crece exponencialmente.
+2.2.4. Sustentación y resistencia
+Cuando el avión vuela en horizontal, el peso es igual a la sustentación, es decir:
+&RPRHOFRH¿FLHQWHGHVXVWHQWDFLyQ&L es función del ángulo de ataque A, se deduce
+que para transportar un peso determinado puede realizarse a varias velocidades con
+distinto ángulo de ataque A, y que a mayor velocidad menor será el ángulo de ataque.
+W=
+
+1
+ȡ 92 * S * CL
+2
+
+D=
+
+1
+ȡ 92 * S * CD
+2
+
+La resistencia es:
+
+

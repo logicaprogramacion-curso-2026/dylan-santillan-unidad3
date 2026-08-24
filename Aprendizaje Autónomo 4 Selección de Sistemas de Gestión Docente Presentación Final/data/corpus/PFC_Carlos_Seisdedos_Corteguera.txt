@@ -1,0 +1,3738 @@
+UNIVERSIDAD CARLOS III DE MADRID
+ESCUELA POLITÉCNICA SUPERIOR
+
+DEPARTAMENTO DE BIOINGENIERÍA E INGENIERÍA
+AEROESPACIAL
+
+DISEÑO Y CONTRUCCIÓN DE UN
+MOTOR COHETE HIBRIDO
+
+PROYECTO FINAL DE CARRERA
+INGENIERÍA INDUSTRIAL
+Autor: Carlos Seisdedos Corteguera
+Tutor de proyecto: Oscar Flores Arias
+Director de proyecto: Manuel García-Villalba
+Junio 2013
+
+Agradecimientos
+
+Quisiera dar las gracias en primer lugar a mi familia y a la universidad por darme la
+oportunidad de cursar estos estudios.
+Gracias a todos aquellos compañeros y amigos que me han ayudado a lo largo del toda
+la carrera y en la realización de este proyecto.
+Gracias a mis profesores Oscar Flores y Manuel García-Villalba por la oportunidad de
+poder realizar un proyecto tan interesante y al técnico de taller Carlos Cobos por sus
+consejos y experiencia.
+Un agradecimiento especial a Manuel Martínez-Sánchez profesor del MIT de Boston
+por su ayuda y consejos.
+
+¡Muchas gracias a todos!
+
+~1~
+
+Resumen del proyecto
+Este trabajo práctico tiene como finalidad el diseño y la construcción de un motor de
+propulsión tipo cohete. Así mismo, el estudio de la idoneidad del motor cohete tipo
+híbrido para el propósito docente del proyecto.
+Para su diseño, partimos del motor cohete de demostración del Departamento de
+Aeronáutica y Aeroespacial del Instituto Tecnológico de Massachusetts (MIT).
+El diseño 3D de las piezas se ha realizado con el programa Solid Edge (Siemens).
+Para el cálculo de las dimensiones de los diferentes elementos, se han realizado
+diferentes suposiciones, las cuales se especifican en los apartados correspondientes al
+diseño del elemento en cuestión, como son:
+•
+
+Flujo estacionario y condiciones próximas a las de remanso aguas arriba de la
+tobera, la cual se ha diseñado como tobera sónica.
+
+•
+
+En el cálculo de resistencias mecánicas, se utiliza tanto la suposición de pared
+delgada como de pared gruesa para asegurar coeficientes de seguridad aceptables.
+
+•
+
+En algunos casos se han tomado valores extraídos de otros trabajos de manera que
+se asegure el correcto funcionamiento del sistema.
+
+Los resultados de este proyecto han sido:
+•
+
+Diseño y construcción de un motor cohete híbrido de demostración con un nivel de
+empuje del orden de magnitud requerido por los objetivos del proyecto.
+
+•
+
+Diseño modular el cual permite continuar, mediante trabajos futuros, el estudio de
+los diferentes parámetros geométricos que afectan las actuaciones de este tipo de
+motores cohete.
+
+•
+
+Construcción de una estructura auxiliar, la cual permite desplazar de manera
+cómoda y albergar tanto el motor como todos los sistemas necesarios para su
+funcionamiento
+
+~2~
+
+Abstract
+The aim of this project is the designing and building of a rocket propulsion engine, as
+well as the study of hybrid rocket type engine.
+For the design, we start from the demonstration hybrid rocket engine of the Aeronautics
+and Aerospace Department of the Massachusetts Institute of Technology (MIT).
+The 3D design of the parts was made with the program Solid Edge (Siemens).
+For the calculation of the dimensions of the different elements, different assumptions
+have been made, which are specified in the sections corresponding to the design of the
+element in question, such as:
+• Stationary flow conditions, stagnation conditions upstream of the nozzle, which is
+designed as sonic nozzle.
+• In the calculation of mechanical resistances, the thin wall assumption is used as well
+as thick wall to ensure acceptable safety factors.
+• In some cases they have taken values extracted from other works so that it ensure
+proper system operation.
+The results of this project were:
+• Design and construction of a demonstration hybrid rocket motor with thrust level of
+the order of magnitude required by the project's objectives.
+• Modular design which allows continuing through future works the study of the
+different geometric parameters that affect this type of rocket engines performance.
+• Construction of an auxiliary structure, which allows you to move comfortably and
+hold both the engine and all the systems required for operation
+
+~3~
+
+~4~
+
+Índice:
+
+Introducción y objeto del proyecto…………………………………………....…………8
+1 La propulsión a reacción……………………………………………………………….9
+1.1 Motores alternativos…………….…………………………...………………9
+1.2 Motores a reacción………………………………………………………….10
+2 El motor cohete……………………………………………………………………….14
+2.1 Clasificación de los motores cohete………………………………………...15
+3 El cohete híbrido……………………………………………………………………...25
+3.1 Ventajas y desventajas de la propulsión híbrida:…………………………...26
+3.2 Aplicaciones y propulsores:…………………………………………….…..29
+3.3 Análisis de la actuación y configuración de grano……………………..…..32
+3.4 Proceso de combustión……………………………………………………..35
+4. Definiciones y fundamentos de la propulsión:………………………………………41
+5. Teoría de flujo isentrópico, toberas y relaciones termodinámicas que rigen su
+comportamiento………………………………………………………………………...47
+6. Diseño y construcción……………………………………………………………….60
+Diseño de partida……………………………………………………………….60
+Diseño de nuestro motor………………………………………………………..62
+Bloques metálicos………………………………………………………………62
+Bloque de combustible………………………………………………………….76
+Tobera y boquilla de grafito…………………………………………………….86
+Sellado del aparato…………………………………………………...…………99
+Estructura soporte……………………………………………………..………100
+Vía de alimentación de oxígeno……………………………………………….101
+7. Montaje, puesta en marcha y medidas…………………….……………………….104
+8. Presupuesto…………………………………………………………………………114
+
+~5~
+
+9. Conclusiones………………………………………………………………………..115
+10. Trabajos futuros y mejoras de diseño……………………………………………..116
+11. Bibliografía………………………………………………………………………..118
+
+~6~
+
+Introducción y objeto del proyecto.
+
+Este proyecto para el Departamento de Bioingeniería e Ingeniería Aeroespacial surge
+como necesidad para complementar la teoría de los nuevos grados de la universidad, en
+concreto el grado de Ingeniería Aeroespacial.
+El objeto es diseñar y construir un motor cohete con el que poder demostrar a los
+alumnos los principios de las asignaturas relacionadas con la propulsión, facilitando de
+este modo el aprendizaje. Los parámetros que se fijaron previos al diseño fueron:
+•
+
+El empuje del cohete se limita a un valor entorno a un kilogramo de fuerza (10N) y
+el uso de tobera convergente (sónica).
+
+•
+
+El combustible ha de ser polimetilmetacrilato (PMMA) y el oxidante oxígeno
+gaseoso.
+
+•
+
+El diseño debe ser fácilmente accesible, fácil de operar, seguro y abierto a
+modificaciones posteriores. Además de su función demostrativa, el motor está
+orientado a continuar, en trabajos posteriores, con el estudio y diseño de estos
+sistemas de propulsión, así como a la realización de prácticas académicas para las
+asignaturas del área de propulsión.
+
+~7~
+
+1. La propulsión a reacción.
+
+Se llaman motores a los mecanismos capaces de transformar la energía de cualquier
+origen en energía mecánica. Dentro de esta definición existe el grupo de los motores
+térmicos, que son capaces de obtener esa energía mecánica a partir de la energía
+química de un combustible.
+Los motores de este tipo conocidos pueden dividirse, a su vez, en dos grandes grupos:
+1.1 Motores alternativos.
+El motor alternativo, también conocido como motor de pistón, es un motor térmico que
+usa uno o varios sistemas de cilindro-pistón para convertir fuerzas de presión en
+movimiento de rotación de un eje.
+Existen infinidad de diseños de este tipo de motores, desde la máquina de vapor,
+pasando por los motores de dos y cuatro tiempos, hasta el motor Stirling. Podemos ver
+algunas configuraciones de pistones en la figura 1.
+
+Figura 1 Sistemas cilindro-pistón
+
+~8~
+
+1.2 Motores a reacción.
+Los motores a reacción, también llamados reactores o jets, son motores que descargan al
+exterior un chorro de fluido a elevada velocidad para generar empuje. Dentro de esta
+definición se incluyen los turborreactores, turbofanes, cohetes y estatorreactores;
+aunque normalmente el término se usa para cualquier turbina de gas utilizada para
+propósitos de propulsión.
+Pasamos a describir los diferentes tipos de motores a reacción:
+a) Turborreactor: este motor consiste en una entrada de aire, un compresor de aire, una
+cámara de combustión, una turbina de gas (la cual mueve el compresor) y una
+tobera. El ciclo de trabajo de estos motores es el de Brayton. Los turborreactores
+son bastante ineficientes y muy ruidosos, pero proporcionan un alto empuje en
+relación a su peso. El la figura 2 podemos ver el esquema de este tipo de motores.
+
+Figura 2 Esquema de un turborreactor
+
+b) Turbofán: reemplazaron en aviación comercial a los turborreactores. Se caracteriza
+por tener un ventilador en la parte frontal del motor. El aire que entra al aparato se
+divide en dos flujos, uno que sigue las mismas etapas que en un turborreactor en el
+núcleo y otro que se dirige a través de un conducto anular exterior concéntrico al
+núcleo. En comparación a los anteriores, presentan como ventajas consumir menos
+combustible y ser menos ruidosos. El la figura 3 podemos ver el esquema de este
+tipo de motores.
+
+~9~
+
+Figura 3 Esquema de un turbofán
+
+c) Turbohélice: en este caso, la potencia generada por la turbina se transmite mediante
+un eje a una hélice propulsora situada delante de la misma. En torno al 90% del
+empuje lo proporciona la hélice, siendo solamente el 10% realizado por el chorro de
+los gases de escape. El la figura 4 podemos ver el esquema de este tipo de motores.
+
+Figura 4 Esquema de un turbohélice
+
+~ 10 ~
+
+d) Cohete: se caracterizan porque incorporan tanto el combustible como el comburente
+u oxidante dentro del sistema, por lo que son los únicos sistemas completamente
+autónomos de esta clasificación. Se explican con detalle más adelante. El la figura 5
+podemos ver el esquema de este tipo de motores.
+
+Figura 5 Esquema de un cohete
+
+e) Estatorreactor: se encuentran en un punto intermedio entre los turborreactores y los
+cohetes. Necesitan tomar aire del exterior pero la compresión, en vez de realizarla
+con un compresor, la realizan mediante una serie de ondas de choque que aparecen a
+la entrada del aparato o mediante compresión isentrópica de la corriente a la entrada
+del aparato, lo cual requiere que el aparato se desplace a velocidades supersónicas
+M>1; y la expansión, mediante una tobera convergente-divergente, en lugar de con
+una turbina. En la nomenclatura inglesa se dividen en ramjet y scramjet según si la
+combustión se realiza a velocidades subsónicas o supersónicas respectivamente en la
+cámara de combustión. El las figura 6 y 7 podemos ver los esquemas de estos tipos
+de motores.
+
+~ 11 ~
+
+Figura 6 Esquema de un ramjet
+
+Figura 7 Esquema de un scramjet
+
+~ 12 ~
+
+2. El motor cohete.
+
+El motor cohete es el motor más potente construido y conocido, su relación pesopotencia también es la mayor conocida, y además porta en su interior todos los
+componentes para llevar a cabo la reacción exotérmica necesaria (motor
+autónomo), por lo que es el tipo de motor idóneo para vehículos espaciales. En
+la figura 8 vemos su aplicación más conocida.
+
+Figura 8 Fotografía del transbordador espacial Atlantis
+
+Los motores cohete, al ser motores a reacción, obtienen su empuje como reacción a la
+expulsión de fluido a altas velocidades. Este fluido generalmente suele estar formado
+por los gases de combustión producidos en la cámara a altas presiones, aunque puede
+ser un fluido de trabajo calentado por cualquier otro proceso. Para alcanzar elevadas
+velocidades, este fluido se hace pasar por una tobera en la que la energía térmica del
+fluido es transformada en energía cinética. Como más adelante se estudiará, mayores
+presiones y temperaturas permitirán alcanzar mayores velocidades de escape,
+favoreciendo el rendimiento del aparato.
+
+~ 13 ~
+
+2.1 Clasificación de los diferentes tipos motores cohete según combustible/fuente de
+energía:
+A continuación pasamos a describir los principales tipos de motores tipo cohete. Los
+sistemas de propulsión tipo cohete pueden clasificarse, entre otras características, de
+acuerdo al tipo de fuente de energía y según el mecanismo por el cual aceleran el fluido
+de trabajo. Veremos que no todos obtienen su empuje a partir de una reacción
+exotérmica como es la combustión de combustibles fósiles.
+- Motor Químico:
+Obtiene su empuje de una reacción de propulsores químicos a elevada presión,
+normalmente un combustible y un oxidante, lo cual permite alcanzar muy altas
+temperaturas en el gas resultante. Posteriormente, los gases producidos se expanden en
+una tobera, donde se aceleran hasta alcanzar grandes velocidades. Debido a que las
+temperaturas que se pueden alcanzar en el fluido están en algunos casos muy por
+encima del punto de fusión de los materiales del sistema propulsado, es necesario
+refrigerar o aislar las superficies expuestas a los gases calientes. Debido a que las
+sustancias a partir de las cuales se forman los fluidos propulsores pueden presentarse en
+diferentes formas, podemos clasificar este tipo de motores según cuales sean las fases en
+que se presentan dichos componentes:
+Propulsor sólido:
+La carga de propulsor sólido se denomina grano y contiene todos los
+componentes para realizar una combustión completa. El propulsor, o mezcla
+propulsora, se encuentra desde un principio en la cámara de combustión. Una
+vez es encendido, se quema suavemente a un ritmo determinado por el área de
+superficie expuesta. El inicio de la combustión se produce en una perforación
+cilíndrica que se realiza previamente en el sólido, de modo que se tiene una gran
+superficie de combustión. La cavidad inicial va aumentando a medida que se
+consume el propulsor. No necesitan sistemas de alimentación o valvulería. Por
+otra parte, una vez encendido es prácticamente imposible su apagado hasta que
+se haya consumido todo el grano. Podemos ver su esquema y una fotografía de
+estos motores en la figura 9 a continuación.
+
+~ 14 ~
+
+Figura 9 Esquema de un cohete tipo sólido e imagen del motor tipo sólido Hércules
+
+Propulsor Líquido:
+Usa sustancias propulsoras en estado líquido que se inyectan a la cámara de
+combustión a elevada presión. Si se usan dos propulsores, combustible y
+oxidante, el sistema se denomina bipropulsado. Si sólo se usa uno
+monopropulsado, esta sustancia debe contener el combustible y el oxidante
+mezclados o de alguna manera descomponerse dando lugar a una reacción
+exotérmica. Este tipo de motor de cohete presenta la ventaja de poder ser
+encendido y apagado a voluntad. Este tipo de motores requieren numerosas
+válvulas de precisión y complejos mecanismos de alimentación, los cuales
+incluyen bombas, turbinas o sistemas de presurización del propulsor, así como
+una relativamente compleja cámara de combustión. En las figuras 10 y 11
+podemos observar una imagen y esquema de este tipo de motores cohete.
+
+Figura 10 Toberas y sistema de alimentación de un cohete de tipo líquido
+
+~ 15 ~
+
+Figura 11 Esquema de motor cohete líquido
+
+Propulsor gaseoso:
+Este tipo de motor cohete utiliza gases almacenados a elevada presión, tales
+como aire, nitrógeno o helio, como fluidos de trabajo o propulsores. El gas
+almacenado requiere pesados tanques de almacenamiento. Estos motores de gas
+frío han sido usados en vehículos espaciales como sistemas de control en altura.
+Calentando el fluido de trabajo, ya sea mediante energía eléctrica, por
+combustión u otro medio, mejora la actuación y pasan a ser denominados
+motores cohete de gas caliente.
+
+~ 16 ~
+
+Propulsor hibrido:
+Son sistemas en los que se usan a la vez un propulsor solido y otro en fase
+gaseosa o líquida, uno como combustible y el otro como oxidante. Este tipo de
+motores, sus características y modos de actuación se describirán con mayor
+detalle en un capítulo dedicado exclusivamente a ellos.
+Cuando se plantean misiones que requieren mucha energía, se llega a la conclusión de
+que, incluso con los propulsores químicos más energéticos, la masa de combustible en
+relación con la masa total del vehículo se vuelve excesivamente grande. Esta relación de
+masas (masa inicial/masa final del vehículo) es muy sensible al ratio aceleración del
+vehículo - velocidad de gases de escape. Con el objetivo de reducir estos ratios, se han
+investigado otras formas de energía más allá de la propia energía química del propulsor.
+- Motor Nuclear:
+Conceptualmente se trata de una idea simple, el cohete nuclear opera mediante la
+transferencia de calor del reactor al fluido de trabajo y posteriormente éste se expande
+en una tobera de empuje.
+Se han investigado tres formas para aportar calor de origen nuclear al fluido de trabajo
+que se explican más adelante. De todos modos, ninguna de estas tecnologías se
+considera completamente desarrollada. Las tecnologías que se conocen son: el reactor
+de fisión, el reactor de decaimiento de isótopos radiactivos y el reactor de fusión. Estos
+tres tipos de motores se pueden clasificar como una extensión de los motores de
+propulsor líquido. El calentamiento del fluido se realiza con la energía proveniente de
+las transformaciones de los núcleos de los átomos. En los motores químicos, el calor se
+obtiene de los mismos propulsores, pero en los nucleares normalmente la fuente de
+energía se encuentra separada del fluido de trabajo. Naturalmente esto es así para no
+realizar emisiones radiactivas.
+En un cohete con reactor de fisión, el calor obtenido de la fisión de uranio en estado
+sólido se transfiere posteriormente al fluido de trabajo. Este tipo de cohete proporciona
+un elevado impulso (este parámetro se define en el Capitulo 4), de hasta unos 900
+segundos. Fueron desarrollados en los años 60 en EEUU. En los ensayos en tierra con
+hidrogeno como fluido de trabajo se alcanzaron los 980KN de empuje utilizando un
+
+~ 17 ~
+
+reactor con núcleo de grafito de 4100MW, alcanzando un impulso especifico (este
+parámetro se explica en el Capitulo 4) equivalente en altura a 848 segundos y una
+temperatura del hidrógeno de unos 2500K. Estos motores presentan grandes problemas
+en cuanto a durabilidad debido a las altas temperaturas, la intensa radiación y la
+complejidad de los sistemas de control, entre otros muchos. En la figura 12 vemos el
+esquema de un motor cohete de fusión nuclear.
+
+Figura 12 Esquema de un motor cohete de fusión nuclear
+
+En el motor de decaimiento isotópico, el material radiactivo emite radiación fácilmente
+convertible en calor. Se han utilizado con éxito fuentes de energía basadas en el
+decaimiento de isótopos para la generación eléctrica en vehículos espaciales y algunos
+están presentes en satélites y sondas espaciales como fuente de alimentación. La energía
+liberada puede ser usada para elevar la temperatura de un fluido de trabajo, como puede
+ser el hidrógeno o quizás para hacer funcionar un sistema de propulsión eléctrica.
+Normalmente proporcionan un empuje más bajo y a menor temperatura que otros tipo
+de motor nuclear. Hasta ahora no se han desarrollado motores cohete que utilicen esta
+tecnología.
+El tercer tipo de obtención de energía de origen nuclear, el reactor de fusión, sigue en
+estudio. Hasta la fecha no ha sido probado.
+Actualmente, investigadores de la Universidad de Washington financiados por el
+programa de innovación de la NASA, trabajan en un nuevo tipo de motor de fusión. La
+
+~ 18 ~
+
+universidad ha explicado en su web que el nuevo motor de fusión se basa en lanzar un
+núcleo de plasma al interior un campo magnético. El campo magnético se comprime,
+haciendo que tres anillos de litio colapsen sobre el núcleo de plasma, generando
+una fusión nuclear controlada. La energía generada calienta el plasma, seguidamente el
+plasma se acelera mediante campos magnéticos y se expande en una tobera. Además es
+posible generar energía eléctrica en el proceso.
+La posibilidad de un accidente con este tipo de motores de cohete y el elevado coste de
+su desarrollo han hecho que no se haya desarrollado ningún cohete nuclear de gran
+tamaño.
+En el extremo de mayor energía, dentro del espectro de la propulsión, se debe aportar
+tanta energía al fluido propulsor que sistemas auto-refrigerantes, como los nucleares, no
+pueden aportar la energía suficiente. De aquí surge la necesidad de sistemas propulsores
+no térmicos como los motores cohete eléctricos.
+- Motor eléctrico:
+En este tipo de cohetes, la fuente que genera la electricidad está, por lo general,
+físicamente separada de la que produce el empuje. Este tipo de propulsión se ha visto
+entorpecida porque las fuentes de energía disponibles (baterías) son pesadas e
+ineficientes. El empuje es típicamente bajo, entre 0.005N y 1N. A fin de conseguir un
+aumento de la velocidad significativo es necesario aplicar el empuje, y por lo tanto una
+pequeña aceleración, durante un largo periodo de tiempo (semanas o meses).
+Existen tres tipos básicos de motor eléctrico para cohete: electrotérmico, electrostático y
+electromagnético. Cada uno de ellos produce el empuje por un mecanismo diferente.
+El electrotérmico calienta un fluido de trabajo presurizado, haciendo pasar la corriente a
+través del mismo, de manera que la energía eléctrica se transforma en energía térmica
+en el fluido. Posteriormente el fluido de gran entalpía será acelerado en una tobera igual
+que en otros motores térmicos. Estos motores están limitados por las pérdidas que se
+producen por ionización o disociación.
+Los otros dos tipos, electrostáticos y electromagnéticos, o también llamados propulsor
+de iones y motor de magnetoplasma respectivamente, realizan la propulsión mediante
+mecanismos diferentes y no utilizan la expansión de gases en tobera. Ambos trabajarán
+
+~ 19 ~
+
+únicamente en el vacío. En la figura 13 se ilustra el funcionamiento de este tipo de
+motores cohete.
+
+Figura 13 Esquema de un motor cohete iónico
+
+En un cohete iónico el fluido de trabajo es ionizado para posteriormente acelerar dichos
+iones mediante un campo electrostático hasta velocidades en el rango de 2.00060.000m/s. Después, los iones son neutralizados, es decir, se recombinan con los
+electrones para evitar la acumulación de carga en el vehículo.
+Por otra parte, en un cohete de plasma magnético, un plasma de iones es acelerado
+mediante la interacción conjunta de corrientes eléctricas y campos magnéticos, y
+expulsado a velocidades en el rango de 1.000-50.000m/s. Existen numerosos tipos y
+geometrías. Este tipo tiene buen resultado como sistema de control de actitud en
+aeronaves.
+
+~ 20 ~
+
+Figura 14 Esquema de un motor cohete de plasma magnético
+
+La figura 14 muestra el esquema de este tipo de motores cohete.
+Cuando se trabaja con velocidades de escape tan elevadas, la energía de las partículas es
+mucho mayor que las pérdidas típicas por ionización, por lo que se pueden despreciar.
+Al
+
+tratarse
+
+de
+
+plasmas
+
+ionizados,
+
+se
+
+pueden
+
+confinar
+
+mediante
+
+campos
+
+electromagnéticos y ser direccionados hacia el exterior sin que sea necesario el contacto
+con las paredes del sistema. Esto reduce enormemente el desgaste erosivo de las
+superficies sólidas del motor.
+
+- Otros conceptos de propulsión de vehículos espaciales:
+Existen varias tecnologías para aprovechar la energía solar para propulsar vehículos
+espaciales y también con energía eléctrica de origen solar. Las células fotovoltaicas
+generan energía eléctrica a partir de la radiación del sol. Están bastante desarrolladas y
+se utilizan con éxito desde hace varias décadas. La mayoría de sistemas eléctricos usan
+células fotovoltaicas para su alimentación o para cargar la batería que los alimenta.
+Una idea interesante es el cohete de energía solar térmica que cuenta con un gran espejo
+o lente que concentra la radiación solar sobre un receptor o en el interior de una
+
+~ 21 ~
+
+cavidad. El receptor debe estar fabricado en un material que pueda soportar altas
+temperaturas, tales como tungsteno o renio, y debe tener un intercambiador de calor. El
+fluido de trabajo, normalmente hidrógeno, se calienta hasta unos 2700K, el gas caliente
+se controla mediante valvulería y es expulsado mediante una o varias toberas al exterior.
+El espejo debe estar orientado hacia el sol y necesita un sistema que ajuste su
+orientación. Las actuaciones pueden ser de dos a tres veces mayor que en un cohete
+químico y el empuje en la mayoría de los estudios ha sido pequeño, de 1 a 10N. Dado
+que un sistema óptico grande y ligero no podría aguantar las fuerzas de rozamiento
+dentro de la atmósfera estos sistemas tienen que ser armados fuera de la misma. La
+contaminación
+
+puede
+
+considerarse
+
+despreciable,
+
+pero
+
+el
+
+almacenamiento
+
+y
+
+reabastecimiento de hidrógeno líquido son los retos de esta tecnología. Actualmente se
+investiga en el desarrollo de espejos y lentes más ligeros, aumento de
+
+vida útil,
+
+reducción de pérdidas en la evaporación de hidrógeno y pérdidas de calor a otros
+componentes del vehículo. Hasta la fecha, el cohete térmico solar no ha sido el motor de
+empuje principal en ningún vehículo espacial.
+Otra idea es el concepto de vela solar. Se trata de un método alternativo al uso de
+motores como los anteriormente vistos. Permite a la nave prescindir de motores y
+combustible, con la consiguiente reducción de peso. En función de la fuente del impulso
+se clasifican en velas de fotones o velas de plasma. Las velas fotónicas consisten en una
+gran superficie reflectante muy ligera, que aprovechan la presión lumínica de la
+radiación solar para obtener impulso. A parte de para aprovechar los fotones de origen
+solar pueden ser diseñadas para aprovechar ondas electromagnéticas generadas por el
+hombre, como pueden ser rayos laser o microondas.
+En la figura 15 vemos un satélite con una vela solar desplegada orbitando la Tierra.
+
+~ 22 ~
+
+Figura 15 Vela solar en órbita
+
+Por otro lado, las velas de plasma, a diferencia de las anteriores, consisten en grandes
+mallas o redes metálicas en las que se induce un campo eléctrico o magnético capaz de
+interactuar con el plasma del viento solar para obtener impulso. En función de los
+campos que generen las velas se clasifican en magnéticas o eléctricas. Debido a la
+escasa potencia que ofrecen las velas solares, las naves propulsadas por este método
+necesitan ser lanzadas al espacio por otro tipo de cohetes.
+
+~ 23 ~
+
+3. Cohete Híbrido.
+
+En este capítulo se explican las características propias de los motores de cohete híbridos
+y las razones por las cuales se ha seleccionado este tipo para el propósito docente que
+hay detrás de este proyecto.
+Los motores de propulsión de cohete llamados híbridos, son aquellos en los que uno de
+los componentes de la mezcla propulsora está almacenado en fase líquida, mientras que
+el otro se encuentra en fase sólida. Normalmente, en este tipo de sistemas, se utilizan un
+oxidante líquido y un combustible sólido.
+
+Figura 16 Esquema de un motor cohete híbrido
+
+La figura 16 muestra el esquema básico de estos motores cohete
+El oxidante puede inyectarse directamente en la cámara de combustión, donde se aloja
+el combustible, otra opción es inyectarlo en una cámara de precombustión o
+vaporización aguas arriba de la cámara. La cámara de combustión puede estar formada
+por uno o varios puertos de combustión axiales en los cuales se vaporiza el combustible
+y comienza su combustión. Se suele añadir al final de los puertos una cámara de
+postcombustión, con la que nos aseguramos de que todo el combustible reacciona con el
+oxidante antes de salir por la tobera.
+
+~ 24 ~
+
+3.1 Ventajas y desventajas de la propulsión híbrida:
+Comenzaremos explicando las ventajas de este tipo de motor.
+La primera de ellas es la seguridad, característica de estos motores. El combustible es
+inerte, es decir, no se puede iniciar accidentalmente la combustión debido a descargas
+electroestáticas, choques o vibraciones durante la fabricación, ensamblaje, transporte u
+operaciones. El sistema no es explosivo, ya que en ningún momento se da una mezcla
+de combustible y oxidante que no sea durante la combustión. Además, el combustible se
+coloca una vez está listo el resto del montaje, y en caso de emergencia se apaga el motor
+cortando el flujo de oxidante líquido. Por esto, no se tiene constancia de ningún
+accidente relacionado con motores híbridos.
+Las características de los motores híbridos permiten una gran flexibilidad de operación
+con ellos, ya que son fácilmente regulables parámetros como:
+-El motor puede ser fácilmente regulado mediante el paso de líquido de oxidante
+que se deja entrar en la cámara de combustión, lo cual se realiza de manera más sencilla
+que en un motor cohete de tipo líquido, en los que dos flujos deben ser sincronizados
+mientras se regula el sistema.
+-Encendidos y apagados. También permite el encendido hipergólico, es decir,
+que oxidante y combustible entran en ignición de manera espontánea cuando entran en
+contacto sin fuente de ignición, esto se produce después de un primer encendido forzado
+y siempre que el sistema no se haya enfriado en exceso.
+-Presión de alimentación de la cámara, determinante en la actuación de la tobera
+y poco influyente en el proceso de evaporación-combustión.
+
+Estos motores son muy robustos debido a su construcción simple, a las menores
+temperaturas de trabajo, y a que el combustible sólido permite imperfecciones en su
+construcción, sin que ello afecte gravemente al funcionamiento.
+Presentan baja sensibilidad a la temperatura ambiente, al igual que los de tipo líquido.
+Debido a que el efecto de la temperatura sobre el ratio evaporación de combustible es
+pequeño, variaciones en la temperatura ambiente entre ensayos tienen un efecto muy
+
+~ 25 ~
+
+bajo sobre la presión en la cámara de combustión. Por lo tanto, la preocupación que
+existe a la hora de diseñar los cohetes tipo sólido para una presión máxima de
+funcionamiento se reduce.
+Otra ventaja que presentan es que hay una gran flexibilidad a la hora de elegir el tipo de
+sustancias que conforman la mezcla propulsora. El propulsor híbrido requiere unas
+propiedades menos exigentes, y por ello la NASA empezó a financiar un programa de
+investigación en la que se usaba propelente sólido y un contenido mínimo de polímero.
+El polímero que daba mejor resultado fue el HTPB (Polibutadieno Hidróxi-Terminado),
+que con un contenido en el grano del 4%, daba unos resultados muy buenos y un
+impulso específico excelente, tanto con O2 como con N2O4 como oxidantes.
+Por último, y no menos importante, el coste del proyecto y de operación es bajo, debido
+a lo comentado en los párrafos anteriores. La variedad y menor exigencia en la calidad
+de los combustibles permite el uso de opciones más económicas, así como la posibilidad
+de tener una planta de combustible cerca de la zona donde se realizan los ensayos o
+lanzamientos. La simplicidad del diseño y su robustez, nos evitan los problemas típicos
+de delicados sistemas de alimentación y control de presión y temperatura en la cámara
+de combustión.
+Tampoco se debe olvidar el bajo impacto ambiental, con un buen rendimiento
+propulsivo (el mejor en termoquímica).
+Pero hay inconvenientes, que siguen sin solucionarse desde el inicio de los
+experimentos con motores híbridos e impiden el pleno desarrollo de éstos a gran escala.
+Las principales desventajas de este tipo de motores son:
+-La baja velocidad de evaporación de combustible, poco sensible a las
+condiciones de funcionamiento. Esto provoca que la relación O/F (masa de
+oxidante/masa de combustible) varíe a lo largo del régimen estacionario de operación,
+lo cual no nos permitirá tener un impulso constante.
+-La baja densidad volumétrica del combustible. Como consecuencia de la baja
+velocidad de evaporación se debe presentar una gran superficie de grano de combustible
+para obtener el empuje requerido. Esto generalmente se logra mediante una geometría
+
+~ 26 ~
+
+multipuertos que nos lleva a una menor densidad, referida al volumen que ocupa el
+combustible dentro del aparato.
+-El bajo rendimiento de la combustión del grano comparado con otros tipos de
+motores. Esto es debido a que en este tipo de cohete la combustión es mediante llama de
+difusión y no de premezcla como pueda ser en los de tipo gas o líquido. Este hecho
+reduce la eficiencia de la combustión significativamente en comparación con los
+anteriormente mencionados. La pérdida es de entre un 1-2% mayor que en líquidos y
+sólidos.
+-Menor impulso especifico frente a los motores de propulsor sólido.
+-Al final de la combustión, debe permanecer retenida en la cámara de
+combustión una franja de combustible, para evitar que se expulsen por la tobera grandes
+fragmentos de combustible sin vaporizar, provenientes de desprendimientos de la pared.
+-Cambios en el dosado de la mezcla. El aumento de superficie expuesta a
+medida que avanza el tiempo provoca un cambio gradual en este parámetro, el cual
+puede disminuir la actuación del sistema respecto a la teórica. De todos modos, con el
+diseño adecuado del dosado inicial, estas pérdidas pueden permanecer por debajo del
+1% para una mezcla híbrida típica.
+- Etapas transitorias más lentas. El periodo transitorio de encendido es más lento,
+así como la respuesta a la regulación del flujo de alimentación. En la mayoría de las
+aplicaciones prácticas, donde la reproducibilidad es más importante que la velocidad de
+respuesta, este aspecto no es significativo.
+-No se ha probado la viabilidad de construirlos a escalas grandes.
+
+Como se puede deducir, estos inconvenientes no son impedimentos para el uso que se le
+quiere dar al aparato en este proyecto.
+
+~ 27 ~
+
+3.2 Aplicaciones y propulsores:
+El cohete híbrido puede ser utilizado prácticamente para cualquier aplicación en la que
+se empleen cohetes. La propulsión híbrida se adapta especialmente bien a aplicaciones o
+misiones que requieren regulación de apagados y reencendidos, misiones de larga
+duración que requieran almacenar propulsores no-tóxicos, o infraestructuras de
+operaciones (fabricación y lanzamiento) que se vean beneficiadas por un sistema
+propulsor no auto-deflagrante. A continuación se muestra una lista de ejemplos:
+1. Cohetes de sondeo. Representa uno de los usos más extensivos que se les han dado
+hasta la fecha. Debido a su bajo coste, seguridad y alcance, es el más utilizado por
+aficionados y académicos.
+2. Fuentes de potencia auxiliares. Estas unidades son generadoras de gas para diversas
+aplicaciones.
+3. Cohetes o misiles tácticos. Si tener una envoltura compacta no es un factor
+determinante, los cohetes híbridos son ideales dada su capacidad de regulación.
+4. Motores espaciales. Las características de los cohetes híbridos son especialmente
+interesantes para la realización de una parte de un vuelo espacial sin maniobra
+orbital, etapas en altura, sistemas de maniobras satelitales, o para ajustar la
+velocidad exacta de un vehículo para su reentrada en la atmosfera.
+5. Refuerzo al empuje primario en el lanzamiento de vehículos espaciales.
+6. Grandes impulsores de lanzamiento o empuje primario. Se han realizado intentos
+pero la tecnología se abandonó en favor de los cohetes tipo líquido (hidrógenooxígeno)
+
+Muchos de los primeros desarrollos de motores híbridos tenían como objetivo el ser
+misiles tácticos de bajo coste. Otros desarrollos se enfocaron a motores de alta energía
+para etapas en altura. Más recientemente, los esfuerzos se han concentrado en prototipos
+para el lanzamiento de equipos espaciales.
+Los requerimientos de diseño para misiles, que se llevaron a producción en los años 70,
+incluían un empuje nominal de 2200N con una relación de áreas de 8:1, oxidante
+líquido almacenable, y apagado del motor a voluntad. Los propulsores seleccionados
+incluían tetraóxido de nitrógeno mezclado con oxido nitroso, como oxidante, y como
+
+~ 28 ~
+
+combustible, polimetilmetacrilato (Plexiglás) metalizado con magnesio. El impulso
+específico (este parámetro se define más adelante en el Capitulo 4) obtenido en vacío
+con estos propulsores se sitúa en el rango 230 y 280 segundos. (Referencia 3.1)
+En otro programa, un motor híbrido fue desarrollado para tener un alto rendimiento en
+aplicaciones en etapas de altura. Los requerimientos de diseño incluían un empuje
+nominal de 22.240N y una relación de expansión en tobera 8:1. Como propulsores se
+seleccionaron difluoruro de oxigeno como oxidante e hidruro de litio/butadieno como
+combustible. (Referencia 3.2)
+Analítica y experimentalmente, los oxidantes más enérgicos son las mezclas de flúor y
+oxígeno líquido (FLOX) y los compuestos de cloro-flúor, tales como ClF3 y ClF5.
+Complementariamente, los combustibles más enérgicos son los hidruros de metales
+ligeros, como berilio, litio y aluminio, mezclados con un aglutinante polimérico
+adecuado. Estos nos pueden proporcionar niveles de impulso específico, en el vacío, en
+el rango de 350 hasta 380 segundos. Con estos propulsores se han alcanzado eficiencias
+en la combustión del 95%, de todos modos, ninguna de estas exóticas combinaciones se
+han usado fuera de un laboratorio.
+Más práctico, aunque de menor energía, es el sistema de propulsión híbrida formado
+peróxido de hidrógeno (H2O2) de pureza entre 90 y 95%, combinado con HTPB,
+hidroxi-polibutadieno. El peróxido de hidrógeno se puede considerar almacenable para
+la duración de las misiones en altura, típicamente meses, y es relativamente barato. En
+los motores tipo sólido, el HTPB se utiliza como aglutinante para consolidar una matriz
+para el aluminio, combustible, y el perclorato de amonio, oxidante. En un híbrido el
+HTPB pasa a ser el combustible. El HTPB es barato, de fácil procesado y no se
+autodegradará con el tiempo. Por ello ha sido la combinación mejor estudiada hasta la
+fecha.
+El sistema propulsor elegido para aplicaciones de refuerzo es oxígeno líquido (LOX) y
+combustible HTPB. El oxígeno es ampliamente utilizado en la industria, es
+relativamente seguro y proporciona un alto rendimiento a bajo coste. Esta combinación
+produce un escape no tóxico y relativamente libre de humo. La combinación
+LOX/HTPB para aplicaciones de refuerzo es química y operativamente equivalente a un
+sistema bi-propulsor LOX-queroseno.
+
+~ 29 ~
+
+Cuando la emisión de humo por el escape no supone un problema, para determinadas
+aplicaciones, algunos propulsores híbridos se ven beneficiados por la adición de
+aluminio en polvo al combustible. Esto incrementa la temperatura de combustión,
+reduce la relación de mezcla estequiométrica e incrementa tanto la densidad del
+combustible como el impulso densidad-específico (impulso específico multiplicado por
+la densidad). El aumento de este último parámetro mediante la adición de aluminio, por
+otra parte, implica la disminución del impulso específico. Esto ocurre debido a que el
+aumento de la temperatura, al añadir aluminio, no compensa el incremento en el peso
+molecular en los gases de escape. (Referencia 3.3)
+El desarrollo de cohetes híbridos de gran escala, hasta la fecha, ha estado enfocado en
+motores de empuje de aproximadamente 250.000 libras de fuerza, equivalente a
+1.112.000N. (Referencia 3.4)
+
+~ 30 ~
+
+3.3 Análisis de la actuación y configuración de grano.
+Una de las características propias de los cohetes híbridos, es que la regresión del
+combustible es típicamente menos de la tercera parte que la de la mezcla usada con
+propulsores sólidos. Es muy difícil alcanzar ratios de regresión comparables a un motor
+de tipo sólido con uno de tipo híbrido. Por lo que, para alcanzar empujes elevados con
+un motor híbrido, es necesario realizar múltiples perforaciones (también llamados
+puertos de combustión) en el grano combustible, de manera que se obtenga la superficie
+de evaporación necesaria. La actuación del motor depende, en gran medida, del grado
+de mezcla que se alcance en la cámara de combustión. Un mal mezclado lleva a la no
+combustión del material, que no aportaría su energía al proceso. El alto rendimiento es
+consecuencia de una buena eficiencia de la combustión, la cual depende de lo bien que
+se mezclen oxidante y combustible en la capa límite de los puertos y en la cámara de
+postcombustión. La existencia de varios puertos mejora la eficiencia de la combustión,
+como resultado de la mezcla turbulenta que se produce en la cámara de mezclado
+posterior a los puertos. El número de puertos que requiere el motor es un problema de
+optimización que debe tener en cuenta el empuje deseado, cambios aceptables en el
+dosado de la mezcla, limitaciones de diámetro y longitud del motor, y el flujo de
+oxidante que se desea.
+El diseño de un motor de cohete híbrido comienza mediante la especificación de un
+nivel de empuje deseado y una mezcla propulsora. Seguidamente la elección de una
+relación de oxidante-combustible, O/F, determina la velocidad característica. Una vez se
+tiene la velocidad característica y el dosado, se pueden calcular el flujo de combustible
+necesario que debe evaporarse, así como el de oxidante necesario. El flujo de
+combustible está determinado por el área de los puertos (perímetro por longitud) y el
+ratio de regresión. Como se verá más adelante, el ratio de regresión del combustible
+está determinado por flujo másico de oxidante por unidad de área, también llamado
+simplemente flujo de oxidante. El flujo de oxidante es igual al flujo másico de oxidante
+en un puerto dividido por el área transversal del mismo. Por lo que el flujo de
+combustible y oxidante están intrínsecamente ligados y no pueden ser impuestos
+independientemente el uno del otro, como en los cohetes de tipo líquido, lo cual hace
+que para poder seguir este esquema de diseño debemos disponer previamente de los
+
+~ 31 ~
+
+coeficientes de regresión típicos de la mezcla oxidante-combustible que vayamos a
+utilizar, los cuales se explicarán más adelante.
+
+Gran parte de la tecnología de los cohetes tanto de tipo sólido como de tipo líquido es
+directamente aplicable a los cohetes híbridos. Las principales diferencias radican en los
+mecanismos de accionamiento para la quema del combustible sólido y la regresión del
+combustible híbrido.
+En un sistema de propulsión de tipo sólido, el oxidante y el combustible se mezclan
+bien durante el proceso de fabricación de la mezcla propulsora. La combustión se
+produce como resultado de las reacciones químicas heterogéneas que tienen lugar sobre
+o muy cerca de la superficie de la mezcla propulsora sólida. La tasa de mezcla
+propulsora que se consume es controlada por la presión de la cámara de combustión y
+sigue la ecuación que se presenta a continuación:
+ =  
+
+(3.1)
+
+Donde p1 es la presión en la cámara de combustión y ‘a’ y ‘n’, son los coeficientes de
+regresión, se obtienen de manera experimental para distintas mezclas propulsoras.
+Dado que la tasa de gasificación del propulsor por unidad de área en un motor de
+combustible sólido, a una temperatura dada y en ausencia de combustión erosiva, se
+determina únicamente por la presión de la cámara de combustión, el empuje del motor
+está predeterminado por el área de superficie inicial de propulsor grano y la geometría
+de la sección del grano. La regulación o el apagado del cohete es muy difícil de lograr
+en la práctica, ya que el oxidante y el combustible no se pueden separar.
+Dado que el grano de combustible de los cohetes híbridos no contiene oxidante, la
+combustión y el gasto de combustible son marcadamente diferentes a como tienen lugar
+en los cohete de tipo sólido. Debido a que el combustible sólido debe ser vaporizado
+antes de que la combustión pueda ocurrir, la regresión de la superficie del combustible
+está intrínsecamente relacionada con el acoplamiento de la fluidodinámica del puerto de
+combustión y transferencia de calor a la superficie del grano de combustible. La región
+de combustión primaria sobre la superficie del grano de combustible se ha demostrado
+que se limita a una zona de llama relativamente estrecha situada dentro de la capa límite
+
+~ 32 ~
+
+de grano de combustible. En este caso tenemos una llama de difusión frente a la llama
+de premezcla que aparecería en un cohete de tipo sólido o líquido. Los factores que
+influyen en el desarrollo de la capa límite sobre el grano de combustible y, por lo tanto,
+en la regresión del combustible, incluyen la presión, la temperatura del gas, la
+composición del grano, el flujo másico de oxidante en el puerto de combustión y la
+longitud del propio puerto. La transferencia de calor entre el gas y la fase sólida
+depende de si la capa límite es laminar o turbulenta. En un híbrido que usa oxígeno
+como oxidante, el número de Reynolds por unidad de longitud es típicamente del orden
+de 1 a 2 x 105 por pulgada de longitud (25.4mm), para posibles valores del gasto de
+entre 0,3 y 0,6 libras por segundo y pulgada cuadrada (de 21 a 42 gramos por segundo y
+centímetro cuadrado en SI). Por lo tanto, las propiedades de una capa límite turbulenta
+gobiernan los procesos de transferencia de calor por convección al grano de
+combustible, siempre y cuando éste no contenga partículas metálicas.
+El los híbridos con partículas metálicas en el grano de combustible, o de grano
+metalizado, la radiación de la nube de partículas de óxido metálico pasa a ser el
+mecanismo principal de transferencia de calor al grano de combustible.
+La tasa de regresión de combustible es muy sensible al nivel de turbulencia en el puerto
+de combustión. En las zonas cercanas a la pared de combustible donde aparezcan
+torbellinos o zonas de recirculación, la regresión se ve incrementada significativamente.
+La tasa de regresión de combustible en motores híbridos se muestra insensible a
+variaciones en la temperatura del grano, dentro del rango de temperaturas en las que
+operan normalmente los cohetes sólidos (-54ºC hasta 73ºC). Esto es debido a la
+ausencia de combustión de premezcla en la superficie del combustible, en la cual la
+velocidad de reacción depende de la temperatura, y porque, en el intervalo de
+temperatura anterior, el intercambio de calor con el combustible sólido es pequeño
+comparado con el que es necesario para evaporar el combustible.
+La selección de los componentes del combustible también puede tener un impacto
+significativo en la tasa de regresión de grano, que es en gran medida, una función de la
+energía necesaria para convertir el combustible de sólido a la fase de vapor, entalpía de
+vaporización (hv). Esta energía de gasificación, para los combustibles poliméricos,
+incluye la energía requerida para romper las cadenas de polímero (calor de
+
+~ 33 ~
+
+despolimerización) y el calor requerido para pasarlos a fase gaseosa (calor de
+vaporización). El término "calor de vaporización" se utiliza a menudo como una
+expresión comodín para incluir todos los mecanismos de descomposición en los
+combustibles híbridos. En granos de combustible no metalizados, bajos calores de
+gasificación tienden a producir mayores tasas de regresión. Uno de los metales más
+estudiados es el polvo ultra-fino de aluminio, con partículas de tamaños entre 0.05 y 0.1
+micras. Se observa experimentalmente que aumenta la tasa de regresión de forma
+considerable respecto a la de HTPB puro. Este efecto no se produce en cohetes híbridos
+si se utiliza polvo de aluminio para cohetes sólidos, con tamaños de partícula de entre
+40 y 400 micras.
+
+3.4 Proceso de combustión:
+
+Figura 17 Esquema del proceso de combustión y transferencia de calor en la pared del puerto de combustión
+
+La figura 17 ilustra el proceso de combustión en el puerto, válido tanto para oxidante
+liquido como gaseoso.
+La figura muestra el modelo simplificado del proceso de combustión híbrido para un
+sistema de combustible no metalizado (no radiante). El combustible se evapora como
+
+~ 34 ~
+
+consecuencia del calor transferido desde la zona de la llama a la masa de combustible.
+El combustible vaporizado se transporta por convección hacia arriba, hacia la zona de
+llama, mientras que el oxidante de la corriente libre (flujo del núcleo) se transporta a la
+zona de la llama por la difusión y la turbulencia del flujo. La llama se establece en un
+lugar dentro de la capa límite determinado por las condiciones estequiométricas, en las
+que la combustión se puede producir. El grosor de la llama se determina principalmente
+por la velocidad a la que la reacción de oxidación se produce. Esta tasa es, en gran
+medida, dependiente de la presión y típicamente sigue una relación de Arrhenius.
+Los mecanismos de transferencia de calor a la superficie del grano de combustible en un
+híbrido son la convección y la radiación. En un grano de combustible no metalizado, a
+presiones y niveles de flujo de interés para aplicaciones de propulsión, el calor
+transferido por convección se piensa que es mucho mayor que el transferido por
+radiación en fase gaseosa o la radiación de partículas de hollín en el flujo. Como
+resultado, las características básicas de regresión del grano de combustible pueden ser
+exploradas a través de un análisis de la transferencia de calor por convección en una
+capa límite turbulenta. Realizando un balance de energía en la superficie del grano de
+combustible (Ref: Rocket Propulsion Elements), se puede derivar una expresión para la
+regresión de la superficie del tipo:
+ =
+
+ .
+   .
+ 
+.
+
+(3.2)
+
+Donde G es el flujo másico de propulsor en la corriente libre (flujo de oxidante y
+combustible, por ejemplo, en gramos por segundo y centímetros cuadrados) en
+cualquier sección x de un puerto de combustión, ρf es la densidad del combustible en
+fase sólida, µ es la viscosidad del gas combustible, y β es el parámetro adimensional del
+flujo másico de combustible, resultante de la vaporización, evaluado en la superficie
+del mismo. El parámetro β también suele llamarse coeficiente de soplado.
+La ecuación nos muestra que la regresión del combustible, para un sistema no
+metalizado, es fuertemente dependiente del parámetro G y que la dependencia en cuanto
+a posición, x, la viscosidad y el coeficiente β es muy débil. También debe darse cuenta
+uno de que la regresión no depende explícitamente de la presión de la cámara de
+combustión. De hecho, la experiencia muestra que, o no existe o la dependencia es
+
+~ 35 ~
+
+mínima respecto a la presión. Por otra parte, esta dependencia sí se observa en
+combustibles híbridos metalizados de manera muy pronunciada.
+
+A medida que se incrementa la longitud del puerto de combustión, el combustible
+vaporizado se añade al flujo másico del puerto. En puertos que operan a bajas relaciones
+de mezcla (O/F) el aumento puede ser del mismo orden que el flujo de masa oxidante
+que inicialmente entra en el puerto. Dada la debilidad de la dependencia de la tasa de
+regresión respecto de x en la ecuación, cabría esperar un incremento en la tasa de
+regresión del combustible con un aumento de la longitud, debido a que con ello se
+incrementa G. Si bien esto suele ser el caso, la tasa de regresión de combustible se ha
+observado que puede, tanto aumentar como disminuir al aumentar x, dependiendo de
+detalles de la configuración del motor. En la práctica, las características axiales de
+regresión de combustible están fuertemente influenciadas por la manera en la que se
+realiza la inyección del oxidante y las características de diseño de las cámaras de precombustión/vaporización. Las tendencias generales que se han medido en los puertos de
+combustión de sistemas híbridos a medida que aumenta x son: aumento del flujo másico
+total, crecimiento del espesor de capa límite, incremento de la temperatura del gas en el
+puerto y disminución de la concentración de oxidante.
+Puesto que el coeficiente de soplado β no es sólo un parámetro aerodinámico, sino
+también un parámetro termoquímico, y la dependencia de x es del mismo orden que β
+en la ecuación de regresión, a menudo esta expresión se simplifica con el propósito de
+facilitar un diseño preliminar, agrupando los efectos de x, β, densidad del combustible y
+la viscosidad del gas en un parámetro ‘a’. En la práctica, con frecuencia se observan
+pequeñas desviaciones del exponente 0,8 para G. El resultado de la simplificación es
+mantener la forma funcional y poder fijar las tres constantes; a y n con datos obtenidos
+experimentalmente para una pareja combustible/oxidante dada. Una forma funcional de
+la expresión para la ingeniería es:
+ =  
+
+(3.3)
+
+Donde Go es el flujo másico de oxidante, que se calcula como el gasto de oxidante (g/s)
+dividido por el área del puerto de combustión (ej: mm2). Con esta definición y con datos
+experimentales somos capaces de caracterizar de manera simple y aproximada nuestra
+combinación combustible/oxidante híbrida.
+
+~ 36 ~
+
+Una forma alternativa de la ecuación, para dar cuenta de la dependencia con la presión
+y/o con el diámetro del puerto de combustión sería:
+ =    
+
+(3.4)
+
+Donde p1 es la presión de la cámara de combustión, o del puerto si no la hubiese, y Dp el
+diámetro del mismo. También son calculables experimentalmente de manera sencilla,
+siempre que se disponga de la instrumentación necesaria.
+El comportamiento dinámico debe ser analizado usando la ecuación de continuidad:
+  !
+= "# − "%&
+
+
+(3.5)
+
+La cual expresa que la variación de masa en la cámara de combustión es igual a la
+diferencia entre el gas generado por la evaporación del oxidante líquido más el generado
+por la tasa de regresión de la superficie del combustible sólido y el flujo a través de la
+tobera. La ecuación anterior puede ser reescrita como:
+  !
+ (
+= " + " − ∗
+
+
+(3.6)
+
+Cuando se alcanza el estado estacionario, el término a la izquierda se anula, resultando:
+" = " + " =
+
+ (
+∗
+
+(3.7)
+
+Como se explicará en el capítulo 4, el empuje en un motor de cohete híbrido puede ser
+expresado como:
+* = "+, - = ." + " /+, -
+
+(3.8)
+
+Cambiar el empuje de un híbrido se consigue cambiando el flujo de oxidante,
+generalmente por medio de una válvula en la línea de alimentación de oxidante. El flujo
+de combustible es una función del flujo de oxidante, pero no necesariamente una
+función lineal. Para geometrías puerto circulares con un radio R, la ecuación:
+ =  
+
+~ 37 ~
+
+(3.9)
+
+Se redefine como:
+ =  0
+
+" 
+3
+12 
+
+(3.10)
+
+La tasa de evaporación o de producción de combustible viene dada por:
+" =  (4  = 21 26
+
+(3.11)
+
+Donde Ab es la superficie del puerto de combustión y L es la longitud del mismo.
+Combinando esta expresión con la anterior, obtenemos la tasa de evaporación en
+términos del radio del puerto y del flujo másico del oxidante:
+" = 217  6"  27
+
+(3.12)
+
+De esta expresión se observa que, para el valor particular de n=0,5, el caudal másico de
+combustible es independiente del radio del puerto de combustión y varía como la raíz
+cuadrada del flujo másico de oxidante. En este mismo caso, si el flujo de oxidante se
+reduce a la mitad de su valor nominal, entonces el flujo de combustible se reducirá en
+un factor de 0,707 y el empuje del motor, que depende del flujo de propelente total
+
+(" + " ), no varía linealmente con el cambio de flujo de oxidante. Por lo general,
+
+como el empuje se reduce mediante la reducción del flujo de oxidante, la mezcla se
+vuelve más rica en combustible. En algunos diseños, a fin de mantener una relación de
+mezcla constante, se inyecta oxidante en una cámara de mezcla aguas abajo del grano.
+Sin embargo, para la mayoría de aplicaciones, el diseño del sistema puede ser
+optimizado para un rango de relaciones de mezcla con muy poca pérdida de impulso
+específico gracias a sistemas de regulación.
+La ecuación anterior también indica que, para un flujo constante de oxidante, la
+evaporación de combustible se incrementará a medida que aumente el radio interior del
+puerto si n<0,5. En el caso contrario, n>0,5, la evaporación de combustible irá
+decreciendo a medida que dicho radio aumente.
+Para un grano de combustible multipuerto, de N puertos circulares, la ecuación anterior
+puede ser integrada fácilmente para calcular el radio de puerto instantáneo, la tasa
+
+~ 38 ~
+
+instantánea de evaporación de combustible, la relación de mezcla instantánea y el total
+de combustible consumido como funciones del tiempo de operación del aparato:
+Radio del puerto de combustión como función del flujo másico de oxidante en un
+tiempo t:
+
+
+<
+" 
+2 ! = 829 + 1! 0 3 + 2#< =
+1;
+
+(3.13)
+
+Flujo o tasa instantánea de evaporación de combustible en un tiempo t:
+7
+
+<
+" 
+" 
+"  ! = 21; 6 0 3 829 + 1! 0 3 + 2#< =
+1;
+1;
+
+(3.14)
+
+Relación de mezcla instantánea en un tiempo t:
+7
+
+<
+"
+1
+" 7!
+" 
+ !=
+0 3
+829 + 1! 0 3 + 2#< =
+"
+2 6 1;
+1;
+
+(3.15)
+
+Combustible total consumido en un tiempo t:
+
+
+<
+" 
+"  ! = 1; 6 >829 + 1! 0 3 + 2#< =
+− 2# ?
+1;
+
+(3.16)
+
+Donde L es la longitud del grano, Ri es el radio inicial de los puertos, N es el número de
+
+puertos, y " y " son respectivamente el flujo másico de oxidante y combustible.
+
+Aunque las ecuaciones anteriores son estrictamente válidas sólo para puertos de
+combustión de sección circular, se pueden usar para predecir y comprender el
+comportamiento de un motor híbrido con puertos de geometría no circular.
+Todas estas expresiones serán de gran utilidad, una vez construido el aparato y dotado
+del adecuado sistema de instrumentación y medida, para poder caracterizar
+adecuadamente la mezcla propulsora de oxidante y combustible.
+
+~ 39 ~
+
+4. Definiciones y fundamentos de la propulsión:
+
+Los principios básicos de la propulsión son la mecánica y la termodinámica. La
+propulsión se obtiene al aplicar una fuerza sobre un cuerpo para acelerar o mantener su
+movimiento contra una fuerza que se oponga al mismo. Esta fuerza, en los cohetes, se
+obtiene al expulsar una masa, o flujo de masa, a gran velocidad que denominaremos a
+partir de ahora propulsor. A continuación pasamos a definir los principales parámetros
+de la propulsión.
+Empuje de un motor cohete:
+La fuerza de empuje de un cohete es la reacción experimentada por su estructura debido
+a la expulsión a alta velocidad de materia a través de su escape, llamado tobera. Por el
+principio de acción-reacción la cantidad de movimiento de la masa que abandona el
+cohete es igual, en modulo, al que recibe el cohete. Cantidad de movimiento se define
+como el producto de la masa por la velocidad. En la propulsión de cohetes pequeñas
+cantidades de gases son expulsadas a altas velocidades para conseguir tal efecto.
+
+Figura 18 Esquema de una tobera isentrópica
+
+De esta parte en adelante la notación que se seguirá en todos los cálculos referentes a la
+tobera será la de la figura 18.
+
+~ 40 ~
+
+El flujo de escape de un vehículo cohete puede ser entendido como la expulsión de
+masas ∆m, a una velocidad v2, respecto al vehículo, este tiene una masa mv y se mueve
+a una velocidad u. Considerando que sólo una partícula ∆m es expulsada, la cantidad de
+movimiento ganada por el vehículo será:
+mA Δu = Δm v
+
+(4.1)
+
+Si esta expresión la diferenciamos respecto del tiempo, para un flujo de gas continuo
+podemos sustituir:
+mA
+
+Δu Δm
+=
+v
+Δt
+Δt 
+
+(4.2)
+
+Si la velocidad del escape es constante y ∆m y ∆u muy pequeños, la ecuación podemos
+pasarla a forma diferencial. Por lo que nos queda:
+"F
+
+GH G"
+=
+I
+G
+G 
+
+(4.3)
+
+El término de la izquierda se puede igualar según la segunda ley de Newton a la fuerza
+de empuje como:
+*=
+
+G"
+I = "I
+G 
+
+(4.4)
+
+Esta fuerza es el empuje que obtiene cualquier sistema propulsado por cohete en el que
+la presión a la salida de la tobera es igual a la atmosférica, o exterior al sistema. Se
+asume que la velocidad de salida del flujo es uniforme en toda el área de salida del
+chorro.
+La presión del fluido de alrededor, normalmente aire, tiene influencia sobre el empuje
+del vehículo. Si se tiene en cuenta su efecto, la ecuación se completa de la siguiente
+forma:
+* = "I +  −  !(
+
+(4.5)
+
+Siendo p3 la presión exterior, A2 el área de salida del fluido y v2 la velocidad del mismo.
+Por lo que el empuje del vehículo está compuesto por dos componentes. El primero,
+denominado empuje por momento, el producto del flujo de masa del propulsor por la
+
+~ 41 ~
+
+velocidad con la que sale del sistema de propulsión. El segundo, el empuje de presión,
+debido a la diferencia de presión entre la corriente que abandona la tobera y el ambiente,
+por lo que esta componente del empuje puede ser negativa. Normalmente por diseño,
+esta componente es prácticamente nula y despreciable en comparación con el primer
+termino del empuje. Se diseña la tobera de tal manera que la presión sea igual o
+ligeramente superior a la ambiente. Cuando la presión a la salida se iguala o se acerca
+mucho a la ambiente volvemos a trabajar con la ecuación anterior del empuje, en la que
+solamente se tiene el empuje debido a la conservación del momento cinético:
+* = "I
+
+(4.6)
+
+Una tobera cuyo diseño permite la expansión del gas hasta una presión que es igual a la
+del ambiente se dice que es una tobera con relación de expansión óptima o adaptada.
+Impulso total (It).
+Aunque el empuje es un parámetro importante para conocer la aceleración que va a
+experimentar un vehículo, éste no nos proporciona ningún dato sobre la distancia que
+puede recorrer o la altura hasta la que será capaz de elevarse. Para esto, se define el
+impulso total del motor cohete como la integral del empuje respecto al tiempo que
+puede operar el motor de manera continuada. Matemáticamente esta definición toma la
+siguiente forma.
+&
+
++& = J * G
+Se representa como el área bajo la curva de la gráfica empuje-tiempo (figura 19).
+
+Figura 19 Representación gráfica del impulso total
+
+~ 42 ~
+
+(4.7)
+
+Para un impulso constante y periodos transitorios de encendido y apagado muy cortos,
+la expresión se reduce a:
++& = * ∙
+
+(4.8)
+
+Las unidades de este parámetro son en el Sistema Internacional de Newton-segundo
+(Ns).
+Es importante tener en cuenta que este dato por sí solo no es de gran utilidad. Dos
+cohetes con el mismo impulso total pueden presentar actuaciones completamente
+diferentes. Sean un motor que aporte un empuje F durante un tiempo t y otro motor que
+aporte un empuje de F/2 durante un tiempo 2t, ambos presentarán un impulso total
++& = * en sus especificaciones.
+
+La altitud y aceleración alcanzadas por estos dependerá principalmente de la relación
+empuje/masa. La aceleración viene dada por:
+=
+
+*
+−"
+
+(4.9)
+
+Donde m es la masa del cohete.
+Con una aceleración más baja las aletas tardaran más tiempo en proporcionar la
+estabilidad necesaria en vuelo. Y en un caso llevado al extremo, el cohete con un
+empuje demasiado bajo no será capaz de despegar, por muy grande que sea su impulso
+total.
+Impulso específico (Is)
+El impulso específico se define como el impulso total por unidad de peso de propulsor.
++, =
+
+L *G
+&
+
+- L " G
+
+(4.10)
+
+Siendo g el valor de la aceleración gravitatoria local.
+Para sistemas de propulsión con empuje y flujo de propulsor constante, la expresión se
+puede simplificar a la siguiente:
+(4.11)
+
+~ 43 ~
+
++, = +& ⁄" - !
+Según su definición, las unidades del impulso especifico son de Newtonsegundo/Newton, que simplificando da como resultado que la unidad de este parámetro
+es el segundo.
+Velocidad de efectiva escape y velocidad característica (c*).
+En una tobera de cohete la velocidad de escape no es uniforme en la sección de salida y
+es difícil de medir con precisión. En una primera aproximación para un análisis
+unidimensional es conveniente suponer una velocidad uniforme de salida de valor c.
+Ésta se denomina velocidad efectiva de escape, y es equivalente a la velocidad a la que
+el propulsor es expulsado del vehículo. La velocidad efectiva de escape se define como:
+= +, - = * ⁄"
+
+(4.12)
+
+Sus unidades son metros por segundo.
+Esta ecuación se puede modificar a:
+
+= I +  −  ! ( ⁄"
+
+(4.13)
+
+Normalmente el término de la derecha se puede considerar despreciable en comparación
+con v2.
+La velocidad característica se usa con frecuencia en la literatura de propulsión de
+cohetes. Su símbolo es c*y se define como:
+∗
+
+=  (& ⁄"
+
+(4.14)
+
+Sus unidades son también metros por segundo.La notación es la misma que se definió
+en la figura 18.
+La velocidad característica c* se utiliza para comparar el rendimiento relativo entre
+diferentes diseños de cohetes químicos de sistemas de propulsión y propulsores. Se
+
+determina fácilmente a partir de datos medibles: p1, At y " . Este término está muy
+relacionado con la eficiencia de la combustión y es esencialmente independiente de las
+características de la tobera.
+
+~ 44 ~
+
+Presión en la cámara.
+La presión de la cámara de combustión de un cohete es otro de los parámetros
+fundamentales que rigen su actuación. La presión de la cámara influye sobre parámetros
+de actuación como son el empuje y la tasa de regresión de propelente, pero además
+sobre las cargas de la estructura del motor.
+
+Figura 20 Gráfica de la presión frente al tiempo en una cámara de combustión
+
+En una gráfica típica de la presión de la cámara de combustión, como la de la figura 20,
+podemos distinguir claramente tres fases: dos fases transitorias, correspondientes al
+arranque y al apagado de motor, y una zona estacionaria, en la que la presión se
+mantiene estable.
+
+~ 45 ~
+
+5. Teoría de flujo isentrópico, toberas y relaciones termodinámicas que
+rigen su comportamiento.
+
+Las relaciones termodinámicas del proceso que ocurre en el interior de la tobera del
+cohete y la cámara de combustión son la herramientas matemáticas que necesitamos
+para poder calcular la actuación y determinar los parámetros de diseño de sistemas de
+propulsión por cohete. Esta teoría es aplicable a sistemas de propulsión por cohete
+químico, motores de cohete nucleares, sistemas de cohete de calentamiento solar o de
+arco eléctrico, y cualquier otro sistema de propulsión que use la expansión de un gas
+como mecanismo de propulsión por expulsión de gases a alta velocidad.
+Cohete ideal.
+Para un sistema de propulsión por cohete los principios termodinámicos que rigen su
+funcionamiento pueden ser expresados como relaciones matemáticas, las cuales se
+explican más adelante. Estas ecuaciones describen el flujo a través de la tobera como
+cuasi-unidimensional y son una simplificación e idealización de las ecuaciones
+tridimensionales que describen de manera próxima a la realidad el comportamiento del
+fluido. Aún con las simplificaciones anteriores, las ecuaciones que se presentan a
+continuación son bastante adecuadas para obtener soluciones para el análisis de sistemas
+cohete. En cohetes de propulsión química la actuación medida se desvía menos de un
+6% de los resultados ideales. En el diseño de nuevos cohetes está aceptado el uso de las
+ecuaciones ideales y posteriormente añadir modificaciones, según corresponda al caso,
+para realizar las correcciones apropiadas. En un cohete ideal, las siguientes suposiciones
+son validas:
+1. El fluido de trabajo es homogéneo.
+2. Todas las especies presentes en el fluido de trabajo presentan estado gaseoso.
+Cualquier condensado se puede considerar despreciable.
+3. El fluido de trabajo se considera un gas ideal.
+4. No existe transferencia de calor a través de las paredes del cohete, por lo que se
+considera que el flujo es adiabático.
+
+~ 46 ~
+
+5. El flujo es estacionario y constante. La expansión del fluido de trabajo tiene
+lugar de manera uniforme y estacionaria, sin vibraciones. Los efectos de los
+estados transitorios se desprecian ya que estos son muy cortos.
+6. El fluido abandona axialmente la tobera.
+7. La velocidad del gas, su presión, temperatura y densidad son uniformes en toda
+sección perpendicular al eje de la tobera.
+8. Existe equilibrio químico a lo largo de la tobera.
+9.
+
+Se pueden despreciar los efectos de fricción y capa límite en las paredes del
+sistema.
+
+10. No existen ondas de choque o discontinuidades en el flujo de la tobera.
+Se debe aclarar esta última suposición. Esta suposición se realiza en base a que cuando
+se diseña un motor cohete para aplicación real, sólo una tobera supersónica resulta
+interesante, en la cual discontinuidades de estos tipos solo pueden aparecer en el
+exterior de la tobera.
+Otro punto a aclarar es el número 7. En toberas axilsimétricas no ideales, es el valor de
+v2 es normalmente mayor en el centro y se reduce según nos acercamos a las paredes,
+por lo que la velocidad no es uniforme en la sección de salida. La media de la velocidad
+se puede determinar en una tobera axilsimétrica, como función del radio.
+I =
+
+21 NO
+J I  G
+(
+
+(5.21)
+
+Desarrollos similares se pueden aplicar al resto de variable que se enumeran en el
+apartado.
+Estas suposiciones serán más o menos acertadas según el tipo y las características del
+cohete utilizado. En sistemas con combustible líquido y un buen sistema de inyección,
+el combustible y el oxidante se mezclan perfectamente, resultando un fluido de trabajo
+homogéneo. En un cohete de combustible sólido, el gas es necesariamente homogéneo y
+uniforme y el consumo es estacionario. En sistemas de propulsión nuclear, por
+calentamiento solar o por arco, se asume que la temperatura del fluido de trabajo es
+uniforme en cualquier sección transversal de la tobera.
+
+~ 47 ~
+
+Dado que las temperaturas en la cámara anterior a la tobera son elevadas, superiores a
+2000 grados Kelvin con facilidad, los gases están muy por encima de sus puntos de
+saturación y se comportan como gases ideales.
+Las perdidas por fricción en la tobera son muy difíciles de calcular con precisión, pero
+normalmente son muy pequeñas. Exceptuando las cámaras muy pequeñas las pérdidas
+de energía debidas a perdidas de calor por las paredes son despreciables. Si a esto le
+sumamos la suposición de flujo estacionario, la tobera puede considerarse isentrópica y
+reversible, y por lo tanto la transformación de energía térmica en cinética es máxima. En
+una tobera simple supersónica esta transformación ocurre de manera progresiva y sin
+discontinuidades u ondas de choque.
+Los diez postulados anteriores nos permiten derivar una teoría simple, cuasi
+unidimensional, para el flujo en toberas.
+Relaciones termodinámicas en fluidos con flujo isentrópico.
+Las deducciones de estas ecuaciones se pueden encontrar en cualquier libro o apuntes
+sobre dinámica de fluidos, como los que se incluyen en la bibliografía de este proyecto.
+
+Figura 21 Esquema de la notación para una tobera isentrópica supersónica
+
+El principio de conservación de la energía aplicada a un proceso con flujo adiabático,
+sin adición o pérdida de calor ni intercambio de trabajo con el ambiente, puede aplicarse
+a este caso. Cuando no existe fricción, el proceso pasa a ser isentrópico y reversible, lo
+
+~ 48 ~
+
+que significa que la variación de entropía es nula. El concepto de entalpía aquí es útil,
+ello consiste en la suma de la energía interna del gas más el trabajo que realiza o recibe
+el gas, y se expresa como la constante del calor específico Cp multiplicado por la
+temperatura absoluta T. En un proceso adiabático la entalpía total, o de remanso, h0 es
+contante. También se puede expresar de la forma:
+ℎ =ℎ+
+
+I
+= Q9R 9
+2
+
+= S T
+
+La conservación de la energía en un flujo isentrópico entre dos secciones x e y muestra
+que una variación de entalpía, es decir en la temperatura, será compensada con una
+variación igual en la energía cinética del fluido.
+1
+ℎU − ℎV = .IV − IU / = S TU − TV !
+2
+
+(5.2)
+
+El principio de conservación de la masa en un flujo estacionario indica que el flujo
+másico a través de cualquier sección de un conducto, o tobera en el caso que nos toca,
+es constante. Matemáticamente a esta ecuación se la denomina ecuación de continuidad.
+Dicha ecuación en su forma diferencial sería como sigue:
+GI(⁄ ! = 0
+
+(5.3)
+
+Donde V representa el volumen específico, v la velocidad local del gas y A el área de la
+sección.
+Cuando esta ecuación se integra en un conducto en cualquiera de sus secciones, a o b,
+obtenemos:
+" = "X = "4 = (X IX ⁄ X = (4 I4 ⁄ 4
+
+(5.4)
+
+Por otra parte, otra ecuación importante para nuestro sistema será la ley de los gases
+ideales.
+U U = 2TU
+Donde R es la constante del gas, resultado de la división de la constante universal de los
+gases R’ entre el peso molecular del propio gas M. Cuando se trata de una mezcla de
+gases, el peso molecular debe promediarse.
+
+~ 49 ~
+
+La relación entre el calor específico a presión constante del gas y su calor específico a
+volumen constante se conoce como gamma, γ, o como k en la literatura inglesa:
+γ = k = C\ ⁄CA
+
+(5.6)
+
+También es interesante la siguiente relación de términos para más adelante:
+S ⁄2 = γ⁄γ − 1!
+
+(5.7)
+
+El calor específico a presión contante también se puede definir como la derivada parcial
+de la entalpía respecto a la temperatura a presión constante.
+Para un proceso adiabático e isentrópico se cumplen las siguientes relaciones a lo largo
+de un conducto:
+]7!^
+]
+
+TX
+X
+=0 3
+T4
+4
+
+]7
+
+=0 3
+4
+
+X
+
+(5.8)
+
+En una expansión isentrópica en tobera de un flujo estacionario, la presión disminuye, la
+temperatura absoluta desciende en un factor bastante menor y el volumen específico se
+incrementa.
+Cuando un flujo compresible es remansado mediante un proceso adiabático y reversible,
+las condiciones que se alcanzan se denominan propiedades de remanso, las cuales se
+designan con el subíndice 0. A partir de la ecuación de la energía podemos definir la
+temperatura de remanso:
+T =T+
+
+(5.9)
+
+I
+2S
+
+
+En un proceso adiabático las condiciones de remanso permanecen constantes y se
+siguen cumpliendo las relaciones anteriores.
+]7!^
+]
+
+T
+
+=0 3
+T
+
+
+]7
+
+=0 3
+
+(5.10)
+
+Otro parámetro muy importante es la velocidad del sonido en un gas, que determinará
+qué velocidad marca la frontera entre subsónico y supersónico en nuestro fluido. Su
+definición es la siguiente:
+
+~ 50 ~
+
+(5.11)
+
+ = _γRT
+El número de Mach es el parámetro adimensional del flujo y es la relación entre la
+velocidad local del fluido y la velocidad del sonido en una sección de la corriente.
+b=
+
+I
+I
+=
+ _γRT
+
+(5.12)
+
+No confunda el lector esta M de Mach con la anterior M del peso molecular del gas, ésta
+ya va incluida en R del gas.
+Cuando el número de Mach sea inferior a 1 el flujo se denomina subsónico, si es mayor
+que 1 supersónico y si es igual a 1 la velocidad del fluido es la del sonido. Se mostrará
+más adelante que la velocidad de la corriente en la garganta de una tobera supersónica
+es igual a 1.
+Habiendo definido el número de Mach podemos reescribir la ecuación que define la
+temperatura de remanso en términos de Mach:
+1
+T = T c1 + γ − 1!b d
+2
+
+(5.13)
+
+La presión de remanso es la presión a la que se encuentra el fluido cuando la energía de
+una corriente se transforma isentrópicamente en energía térmica. Permanece constante
+en un proceso isentrópico:
+]
+
+^]7!
+1
+ =  c1 + γ − 1!b d
+2
+
+(5.14)
+
+La relación de área en una tobera también puede ser expresada en términos de Mach
+para cualesquiera secciones a y b de la misma:
+(4 bX 1 + gγ − 1!⁄2hb4
+ef
+=
+i
+(X b4
+1 + gγ − 1!⁄2hbX
+
+~ 51 ~
+
+]<!⁄]7!
+
+(5.15)
+
+Flujo isentrópico a través de toberas:
+A partir de la primera ecuación del capítulo podemos obtener la velocidad del fluido a la
+salida de la tobera, v2:
+I = j2ℎ − ℎ ! + I
+
+(5.16)
+
+Esta ecuación es aplicable a cohetes tanto ideales como no ideales. Esta ecuación puede
+ser reescrita haciendo uso de relaciones termodinámicas anteriores como:
+2k
+ l7!⁄l
+I = e
+2T 81 − 0 3
+= + I
+k−1
+
+
+(5.17)
+
+En los casos en los que la sección de la cámara de combustión es mucho mayor que la
+de la tobera la velocidad v1 puede despreciarse y simplificar la ecuación de la siguiente
+manera. Pudiendo referirse todo a condiciones de remanso:
+2k
+ l7!⁄l
+2k
+ l7!⁄l
+I = e
+2T 81 − 0 3
+==e
+2T 81 − 0 3
+=
+k−1
+
+k−1
+
+
+(5.18)
+
+Se puede observar que la velocidad de escape de los gases es una función de la relación
+p1/p2 y del parámetro γ, y es proporcional a la raíz de la temperatura. También se puede
+hacer el cambio de T0 a la velocidad del sonido de remanso a0:
+ = _γRT
+
+(5.19)
+
+I =  el7 c1 − O 
+
+
+
+
+m
+
+l7!⁄l
+
+d
+
+(5.20)
+
+De estas ecuaciones podemos deducir que existe una velocidad máxima teórica para la
+salida del gas de la tobera. Cuando tengamos una relación de presiones infinita:
+2γRT
+2
+I !XU = e
+= e
+γ−1
+γ−1
+
+~ 52 ~
+
+(5.22)
+
+La velocidad de salida tiene un máximo finito para esta situación. En esta expansión, la
+temperatura del gas cae por debajo del punto de licuefacción o incluso del punto de
+solidificación, por lo que la velocidad teórica calculada no puede ser alcanzada.
+Configuración de tobera:
+Si en una tobera queremos alcanzar velocidades superiores a la del sonido, el área
+necesaria de tobera decrece hasta un mínimo, para posteriormente crecer. Las toberas de
+este tipo, muchas veces llamadas toberas de De Laval, consisten en un tramo
+convergente seguido uno divergente de conducto. El área mínima de la tobera se llama
+garganta. Según la ecuación de conservación de la masa, o de continuidad, el área es
+inversamente proporcional a la relación v/V, velocidad - volumen específico. A la
+relación del área de salida frente al área de garganta se le denomina ratio o relación de
+expansión:
+n = ( ⁄(&
+
+(5.23)
+
+En procesos con flujo estacionario e isentrópico, tal como ocurre en las toberas de los
+cohetes, el flujo puede ser calculado a partir de la ecuación de continuidad, las
+relaciones isentrópicas y de velocidad del gas entre cualquier sección x de la tobera y la
+entrada.
+S U /l
+(U 
+U l<!/l
+" =
+=i
+√2 f 80 3 − 0 3
+2
+T 
+
+
+/
+
+(5.24)
+
+El máximo flujo de masa por unidad de área tiene lugar en la garganta de la tobera, y la
+presión en este punto guarda una relación única que siempre se da a bloqueo:
+l
+
+^l7!
+&
+2
+=c
+d
+k + 1!
+
+
+(5.25)
+
+La presión en la garganta que hace máximo el flujo másico es llamada presión crítica.
+La expresión 5.24 deja de ser válida cuando se sobrepasa la presión crítica debido a que
+el bloqueo sónico impide seguir aumentando el caudal.
+
+~ 53 ~
+
+En el punto de presión crítica, los valores de volumen específico y de temperatura se
+pueden obtener a partir de las relaciones isentrópicas, quedando:
+k − 1 ⁄l7!
+3
+& = 0
+2
+T& = T
+
+
+
+l<
+
+(5.26)
+
+(5.27)
+
+En la ecuación anterior, T1, normalmente es la temperatura de combustión y la
+temperatura de remanso del flujo (T0). Haciendo uso de las expresiones anteriores del
+capítulo podemos obtener una expresión para la velocidad del fluido al atravesar una
+garganta. La velocidad crítica o velocidad de garganta, vt, sería:
+I& = e
+
+2γ
+RT = _γRTq = &
+γ+1 
+
+(5.28)
+
+Es decir, en la garganta con condiciones de presión criticas, la velocidad de fluido
+coincide con la del sonido, lo que equivale a Mach unidad siempre. Esto se conoce
+como bloqueo sónico. Esta velocidad no se puede superar en un conducto meramente
+convergente.
+De la primera igualdad de la expresión podemos calcular la velocidad del flujo en la
+tobera a partir de las condiciones de entrada del fluido a la misma, sin conocer ningún
+parámetro de la tobera. La parte divergente de la tobera nos permite disminuir más la
+presión e incrementar la velocidad más allá de la velocidad del sonido. Si la tobera
+acaba en la garganta, la salida del fluido es sónica. La condición de flujo sónico o
+supersónico sólo puede darse si se alcanza presión crítica en la tobera. Por lo que
+básicamente existen tres posibles tipos de toberas: subsónicas, sónicas y supersónicas.
+Sus características se pueden comparar en la siguiente tabla.
+
+~ 54 ~
+
+Subsónicas
+
+Sónicas
+
+Supersónicas
+
+I& < &
+
+I& = &
+
+I& = &
+
+Velocidad en la
+garganta
+
+I < 
+
+Velocidad a la salida
+Mach
+Relación de presión
+
+Geometría
+
+b < 1
+
+I = &
+
+b = b& = 1
+
+
+k + 1 l⁄
+<0
+3
+
+2
+
+
+k + 1 l⁄
+=0
+3
+
+2
+
+Convergente
+
+Convergente
+
+l7!
+
+l7!
+
+I < I&
+
+b > 1
+
+
+k + 1 l⁄
+>0
+3
+
+2
+
+l7!
+
+ConvergenteDivergente
+
+Las toberas supersónicas son las normalmente utilizadas en cohetes. La relación de
+presiones entre la cámara de combustión y el ambiente en todos los cohetes es lo
+suficientemente grande como para conseguir flujo supersónico. Si la presión de la
+cámara baja de las 2.17 atm, aproximadamente, el chorro será subsónico con la tobera
+funcionando al nivel del mar.
+La velocidad del sonido es igual a la velocidad de propagación de una onda de presión
+en el medio, ya que el sonido es una onda de presión. Si se alcanza la velocidad sónica
+en algún punto de una corriente estacionaria, será imposible que ninguna onda atraviese
+dicha sección aguas arriba de la corriente. Por otra parte, cualquier perturbación o
+pequeña obstrucción del flujo aguas abajo de la garganta, no tiene influencia sobre el
+flujo en la garganta o aguas arriba de la misma, siempre y cuando, esta perturbación no
+haga aumentar la presión aguas abajo por encima de la presión crítica. No es posible
+aumentar la velocidad del flujo en la garganta disminuyendo la presión aguas abajo. A
+esta situación se le llama bloqueo sónico.
+El flujo a través de la sección crítica o garganta en una tobera supersónica se puede
+obtener a partir de expresiones anteriores, resultando:
+
+" =
+
+(& I&
+&
+
+= (& 
+
+2 l<!⁄l7!
+k e k + 1 
+
+~ 55 ~
+
+_k2T
+
+(5.29)
+
+El flujo a través de una tobera es proporcional al área de su garganta, At, y a la presión
+aguas arriba, p1, e inversamente proporcional a la velocidad del sonido aguas arriba
+
+_k2T y función de propiedades del gas.
+
+Otra ecuación útil para el diseño de toberas supersónicas es la que relaciona el ratio de
+áreas con el ratio de presiones entre la cámara de combustión y el ambiente exterior:
+(&
+=
+(U
+
+& IU
+
+U I&
+
+=0
+
+k + 1 ⁄l7! U ⁄l k + 1
+U l7!⁄l
+3
+0 3 e
+81 − 0 3
+=
+2
+
+k−1
+
+
+(5.30)
+
+Cuando sea px=p2, entonces Ax/At=A2/At=ε, es decir, la relación de expansión en la
+tobera. En aplicaciones a bajo nivel (o-10.000m), las relaciones de área en toberas
+suelen tener valores de ε=3-35, dependiendo de la presión en la cámara de combustión
+para altitudes mayores se usan valores de entre 40 y 100, aunque a se ha llegado hasta
+400.
+De manera similar, también podemos deducir una expresión para el ratio de velocidad
+entre la garganta y la sección de salida de la tobera:
+Ft
+Fu
+
+=e
+
+l<
+l7
+
+c1 −  t 
+
+
+v
+
+l7!⁄l
+
+d
+
+(5.31)
+
+Estas ecuaciones permiten obtener inmediatamente la relación de áreas y velocidades en
+toberas ideales.
+Empuje y coeficiente de empuje:
+Habiendo estudiado la termodinámica de las toberas, ahora podemos reescribir las
+ecuaciones del empuje en términos conocidos. Primero haremos un breve repaso del
+tema.
+La ecuación que nos da el empuje es:
+* = "I +  −  !(
+
+~ 56 ~
+
+(5.32)
+
+Esta expresión la podemos expandir sustituyendo:
+" =
+
+(& I&
+&
+
+(5.33)
+
+Si seguimos operando, podemos dejar la expresión en términos de At, A2, p1, p2 y p3:
+(5.34)
+2k 
+2 l<!⁄l7!
+ l7!⁄l
+e
+* = (& 
+0
+3
+81 − 0 3
+= +  −  !(
+k−1 k+1
+
+
+Esta expresión es aplicable a toberas ideales en las que se pueda considerar γ constante
+a lo largo del proceso de expansión. La ecuación muestra que el empuje es directamente
+proporcional al área de garganta y a la presión de entrada, también que es función de la
+relación de presiones entre la entrada y la salida de la tobera así como del parámetro γ y
+del empuje, debido a la diferencia de presiones entre salida y ambiente. Esta ecuación se
+conoce con el nombre de ecuación del empuje ideal.
+Se define el coeficiente de empuje como el empuje partido de la presión de la cámara de
+combustión y el área de garganta de la tobera. Partiendo de la ecuación anterior
+obtenemos:
+*
+2k 
+2 l<!⁄l7!
+ l7!⁄l
+ −  !( (5.35)
+S =
+=e
+0
+3
+81 − 0 3
+=+
+k−1 k+1
+
+ (&
+(& 
+El coeficiente de empuje presenta un máximo cuando p2=p3, este valor se conoce como
+coeficiente de empuje óptimo. Este valor se puede obtener derivando la expresión
+respecto del ratio de presiones e igualando a cero. El uso del coeficiente de empuje nos
+permite usar la expresión:
+* = S (& 
+
+(5.36)
+
+Esta expresión puede aportar un valor experimental de Cf para valores conocidos de
+presión en cámara, área de garganta y empuje. Dado que el coeficiente es una función
+de la presión en la cámara, el empuje no es exactamente proporcional a p1. Pero sí lo es
+respecto al área de garganta. El coeficiente determina la amplificación del empuje
+debido a la expansión del gas en la tobera del cohete, comparado con el empuje que
+habría si la presión de la cámara actuase sobre el área de garganta contra el ambiente. El
+
+~ 57 ~
+
+coeficiente de empuje toma valores de entre 0.8 y 1.9. Es un parámetro muy útil a la
+hora de hacer correcciones en el empuje a medida que varía la presión en la cámara de
+combustión o la altitud, o para saber qué resultados necesitamos a nivel del mar para
+tener un funcionamiento correcto en altitud.
+
+~ 58 ~
+
+6. Diseño y construcción
+Diseño de partida
+Una vez se han estudiado y comprendido los mecanismos que rigen el funcionamiento
+de un motor cohete y en particular los de tipo híbrido, podemos iniciar el diseño.
+En este caso partimos del diseño, en escala de laboratorio, que posee el Departamento
+de Aeronáutica y Aeroespacial del Instituto Tecnológico de Massachusetts (MIT).
+
+Figura 22 Imagen del motor cohete hibrido del MIT
+
+Este diseño se puede dividir en tres bloques claramente diferenciados:
+1- Bloque frío: bloque de metal, fabricado en una sola pieza, por el que se
+introduce el oxidante por su extremo, contiene el sistema de encendido que
+consta de vía de alimentación de metano y bujía de encendido. En el otro
+extremo se une con el combustible.
+2- Bloque combustible: barra de polimetilmetacrilato (PMMA) a la que se le ha
+practicado un taladro central para permitir el paso del oxidante. Al vaporizarse
+su pared interior y mezclarse con el oxidante se produce la combustión.
+3- Bloque caliente: bloque metálico, fabricado en una única pieza, en el que se
+completa la combustión (postcombustor). También contiene la tobera de salida
+
+~ 59 ~
+
+en grafito y una boquilla para mejorar el mezclado a la entrada del bloque,
+realizada en este mismo material.
+Partiendo de este diseño, realizaremos las modificaciones necesarias para poder cumplir
+las especificaciones requeridas por la universidad y medidas de seguridad oportunas,
+con los materiales de los que disponemos hoy día.
+A continuación se explican las piezas y los materiales de los que se compone cada
+bloque en nuestro diseño y los motivos para su elección.
+
+Figura 23 croquis del cohete híbrido del MIT extraído de la tesis de Steve Bates
+
+Las modificaciones principales que se realizan respecto del diseño de partida son:
+a) Modularidad: se realiza un diseño del motor en piezas intercambiables para
+permitir la realización de estudios sobre los diferentes parámetros del cohete,
+tales como longitud de la cámara de postcombustión, longitud del puerto de
+combustión o geometría de toberas.
+b) Encendido: por motivos de seguridad no se permite el encendido mediante gas
+combustible, por lo que se realizara el encendido introduciendo por la tobera una
+fuente de llama manualmente.
+
+~ 60 ~
+
+Diseño de nuestro motor:
+Comenzaremos describiendo cómo se han diseñado y fabricado los bloques 1 y 3.
+A diferencia del diseño americano, en el que estos bloques son una sola pieza, nosotros
+realizaremos un diseño modular con el que poder utilizar tramos de diferentes
+longitudes o introducir un suavizador de flujo en el bloque frío. Esto permitirá, en un
+futuro, estudiar los efectos de distintos perfiles de velocidad a la entrada del puerto de
+combustible y distintas longitudes de la cámara de postcombustión.
+Bloque frío
+Es el bloque por el que se introduce el oxígeno, a partir de ahora lo denominaremos
+bloque frío. Los motivos para tal notación son:
+Debido a la expansión del oxigeno, desde la presión del almacenamiento en la bombona
+a la presión a la que vayamos a realizar el experimento, éste sufrirá un enfriamiento
+respecto a la temperatura ambiente a la que inicialmente se encuentre la bombona.
+Además, en este bloque no tiene lugar la combustión ni es atravesado por gases
+calientes.
+Por estos motivos, este primer bloque, en principio, lo podríamos realizar en aluminio.
+Este material es mucho más ligero que el acero y fácil de mecanizar, pero al estar
+trabajando con oxígeno puro, esta idea se descarta ya que una acumulación de polvo de
+aluminio en las piezas mecanizadas podría provocar una explosión al encender el
+aparato.
+Hasta hace unos años, el oxígeno se almacenaba en bombonas de aluminio. A causa de
+la acumulación de polvo de aluminio en una de ellas, espontáneamente se produjo una
+explosión y consiguiente incendio. Así pues, se toma como medida de precaución de
+riesgos laborales por la universidad no utilizar elementos de aluminio al trabajar con
+oxígeno.
+Dado que no podemos utilizar aluminio para nuestra aplicación, utilizaremos acero para
+esta pieza. El motivo principal para usar este material es que, como más adelante se
+explicará, el bloque caliente será realizado en acero (F1 ó F111) también, de modo que
+podremos utilizar la misma herramienta para mecanizar todo el artefacto.
+
+~ 61 ~
+
+1
+
+2
+
+3
+
+Figura 24 Esquema del bloque frío
+
+Este bloque se conforma de tres piezas:
+1. Pieza inicial (Pieza001): es la pieza inicial del cohete, siguiendo el orden en el
+que el fluido recorre el aparato. Es la pieza a la que se conecta la alimentación
+de oxígeno, cierra por este extremo el aparato y sobre ella se ajustan las tuercas
+de las varillas roscadas.
+
+2. Tramo intermedio (Pieza002): Esta pieza está formada por un tubo de acero
+cilíndrico de sección constante. Es una pieza intercambiable, puede ser
+sustituida, o suprimida, por otras de semejante geometría con distintas
+longitudes para estudiar efectos del perfil del flujo sobre el ratio de regresión del
+combustible a la entrada del puerto de combustible. Aunque para este primer
+diseño no se nos ha permitido, se le puede añadir una vía de alimentación de
+combustible gaseoso y una bujía que permitan realizar el encendido de manera
+remota, como en el diseño americano.
+
+3. Pieza de unión entre el bloque frío y el combustible (Pieza003): actúa como
+adaptador entre ambas secciones, además posee orificios para las varillas que
+unirán todo el conjunto de modo que mantengan bien alineadas las piezas.
+
+Existe la posibilidad de colocar una chapa perforada o tejido metálico antes de la pieza
+intermedia para suavizar el flujo del gas y así poder estudiar sus efectos a la entrada del
+puerto.
+
+~ 62 ~
+
+Bloque caliente.
+Este bloque es el que se sitúa después del puerto de combustible. Se compone de varias
+piezas y secciones con diferentes funciones, las cuales pasamos a describir:
+4. Pieza de sujeción del combustible (Pieza009): en ella se introduce el extremo
+final del bloque de combustible y una boquilla de grafito. Por el lado contrario
+conecta con otro tramo intermedio que hace la función de cámara de
+postcombustión.
+
+5. Boquilla de grafito (Pieza010): inmediatamente después del puerto de
+combustible se coloca lo que hemos denominado boquilla, un disco de grafito
+con un orificio central de menor sección que la del puerto de combustible y que
+la de la cámara de postcombustión situada a continuación. Este escalón forzará
+la aparición de turbulencia a la entrada de dicha cámara, lo cual acelerará el
+mezclado de la corriente, con lo que se debería completar la combustión y dar
+uniformidad a la corriente antes de alcanzar la tobera.
+
+6. Tramo intermedio (Pieza002): este bloque realiza la función de cámara de
+postcombustión. Esta pieza está formada por un tubo de acero cilíndrico de
+sección constante. En nuestro caso es igual a la pieza intermedia del bloque frio.
+Estas piezas son idénticas, y por tanto, intercambiables con la equivalente del
+otro bloque.
+
+El objeto de una cámara de postcombustión después del puerto es completar la
+combustión. Si inmediatamente al acabar el puerto colocásemos la tobera, el
+combustible que se ha evaporado en la sección final del puerto se quemaría en el
+exterior del aparato, con la consiguiente pérdida de eficiencia y desperdicio del
+combustible.
+
+7. Pieza de unión entre el bloque caliente y la tobera de grafito (Pieza003): actúa de
+adaptador entre ambas piezas, además posee orificios para las varillas que unirán
+
+~ 63 ~
+
+todo el conjunto de modo que mantengan bien alineadas las piezas. Es idéntica a
+la misma del bloque frío.
+
+8. Tobera de grafito (Pieza011): por último, antes de liberar los gases, debemos
+acelerar el fluido para conseguir el empuje deseado. Después de la cámara de
+postcombustión colocamos una tobera realizada en grafito. La elección de este
+material se explicará más adelante.
+
+9. Pieza final (Pieza012): sus funciones principales son sujetar el extremo final de
+la tobera y sujetar el conjunto por este extremo, ya que sobre ella se ajustan las
+varillas roscadas mediante tuercas de palomilla. Tiene un taladro en la zona
+central para permitir el escape de los gases desde la tobera al exterior. Sobre ella
+se ajustan las tuercas de las varillas que sujetan el conjunto.
+
+5
+
+4
+
+6
+
+7
+
+8
+
+Figura 25 Esquema del bloque caliente
+
+~ 64 ~
+
+9
+
+Fabricación y detalles de los elementos metálicos del los bloques frío y caliente:
+Los motivos para usar acero F1 como material, tanto para la cámara de postcombustión
+como para las piezas con las que uniremos las distintas secciones del bloque caliente,
+son sus buenas propiedades térmicas, a saber: conducción, calor específico y
+temperatura de fusión elevadas. Así mismo, su mecanizado no es especialmente
+complicado ni costoso.
+A partir de tochos cilíndricos mecanizaremos las diferentes piezas de estos bloques, uno
+de diámetro 80mm y otro de diámetro 40mm. La unión de cada pieza con la siguiente se
+realiza siempre de la misma forma, con el fin de simplificar y estandarizar las
+operaciones de mecanizado y poder usar el mismo tipo de juntas para el sellado en todas
+las uniones.
+1. Pieza inicial (Pieza001): es la pieza inicial del cohete siguiendo el orden en el
+que el fluido recorre el aparato. A este bloque llega la vía de alimentación de
+oxígeno, la cual se une al bloque mediante un racor con sujeción de seguridad y
+rosca métrica 12. Sobre ella se aprietan las tuercas de mariposa que sujetan las
+varillas roscadas. Por el extremo opuesto se une con el tramo intermedio o
+directamente con la pieza de unión entre el bloque frío y el bloque combustible,
+según el estudio que se quiera llevar a cabo.
+
+Su fabricación parte del tocho de acero de diámetro 80mm. El operario, con una
+sierra industrial, tronza de éste una longitud igual a la de la pieza final más
+2mm.
+
+La pieza obtenida se coloca en el torno en un primer agarre. Este primer agarre
+comienza con el refrentado de la pieza. Seguidamente, se realiza el taladro
+pasante, utilizando primeramente una broca de puntear para marca el punto
+central y la dirección en la que a continuación se va a realizar el taladro pasante
+con broca de diámetro 10mm, adecuado a la métrica 12 de la rosca. A
+continuación se realiza un cilindrado interior de 10mm de profundidad hasta
+llegar a diámetro 30mm, necesario para la unión con la pieza que se vaya a
+colocar a continuación de ésta. Para finalizar este agarre se achaflana el canto
+exterior para evitar cortes al manipular la pieza.
+
+~ 65 ~
+
+En un segundo agarre, se refrenta la pieza hasta la longitud final requerida y
+también se achaflana el canto exterior.
+
+Con un taladro vertical se utiliza la broca de puntear para marcar y guiar dónde
+realizar los cuatro taladros pasantes de diámetro 5,5mm para las varillas
+roscadas. Seguidamente se avellanan los agujeros por ambos lados para eliminar
+rebabas y facilitar la inserción de las varillas.
+
+Por último, para realizar la rosca de métrica 12, se utilizó un juego de machos de
+roscar manual.
+
+Figura 26 Plano de la pieza inicial
+
+Figura 27 Posición de la pieza inicial en el montaje
+
+Para su sujeción a la estructura se le introduce una varilla roscada idéntica a las
+utilizadas para sujetar el conjunto, de manera que se apoye sobre ella. Para
+
+~ 66 ~
+
+realizar esta rosca se ha tenido que aplanar una pequeña zona de la superficie
+cilíndrica exterior para posteriormente realizar el taladrado y roscado
+correspondiente.
+
+Figura 28 Esquema 3D e imagen del detalle de sujeción de la pieza inicial a la estructura
+
+2. Tramo intermedio (Pieza002): si se coloca en el bloque frío, esta pieza realiza la
+función de dejar desarrollar al fluido su perfil de velocidades, en mayor o menor
+medida según la longitud que le demos antes de penetrar en el bloque de
+combustible. Por otra parte, si se coloca en el bloque caliente, realizará la
+función de cámara de postcombustión, permitiendo que se acabe de quemar el
+material vaporizado.
+
+Esta pieza se puede fabricar de las longitudes que deseemos, para estudiar cómo
+afecta este parámetro sobre los procesos antes mencionados. En este caso,
+hemos fabricado dos piezas idénticas, con la relación L/D~2, en diámetro
+interior que se mecaniza coincide con el del bloque combustible, en nuestro caso
+20mm.
+
+Su fabricación parte del tocho de acero de diámetro 40mm. El operario, con una
+sierra industrial, tronza de éste una longitud igual a la de la pieza final más
+2mm.
+
+La pieza obtenida se coloca en el torno en un primer agarre. Este primer agarre
+comienza con el refrentado de la pieza. Seguidamente se realiza el taladro
+
+~ 67 ~
+
+pasante, utilizando primeramente una broca de puntear para marca el punto
+central y la dirección en la que a continuación se va a realizar el taladro pasante
+de diámetro 10mm. Por último, se realiza otro taladro con una broca de 20mm.
+Posteriormente realizaremos un cilindrado interior hasta diámetro 30mm en los
+10mm del extremo, necesario para la unión con la pieza que se vaya a colocar a
+continuación. Antes de finalizar este agarre se achaflana el canto exterior para
+evitar cortes al manipular la pieza.
+
+En un segundo agarre, se refrenta la pieza hasta la longitud final requerida, se
+realiza un cilindrado exterior a los 10mm del extremo hasta obtener diámetro
+30mm. Se achaflanan ambos cantos exteriores y se comprueba que encaja con
+facilidad en la pieza anterior.
+
+Figura 29 Plano de la pieza intermedia de los bloques
+
+Figura 30 Posiciones del las piezas intermedias en el montaje (opcional)
+
+~ 68 ~
+
+3. Pieza de unión entre el bloque frío y el combustible y pieza de unión entre el
+bloque caliente y la tobera de grafito (Pieza003): actúan como adaptadores entre
+secciones.
+
+Su fabricación parte del tocho de acero de diámetro 80mm. El operario, con una
+sierra industrial, tronza de éste una longitud igual a la de la pieza final más
+2mm.
+
+La pieza obtenida se coloca de nuevo en el torno en un primer agarre. Este
+primer agarre comienza con el refrentado de la pieza. Seguidamente se realiza el
+taladro pasante, utilizando primeramente una broca de puntear para marca el
+punto central y la dirección en la que a continuación se va a realizar el taladro
+pasante de diámetro 10mm. Por último, se realiza otro taladro con una broca de
+20mm. Posteriormente realizaremos un cilindrado interior hasta diámetro 50mm
+en los 10mm desde el extremo, necesario para la unión con la pieza que se vaya
+a colocar a continuación. Para finalizar este agarre se achaflana el canto exterior
+para evitar cortes al manipular la pieza.
+
+En un segundo agarre, se refrenta la pieza hasta la longitud final requerida, se
+realiza un cilindrado exterior a los 10mm del extremo hasta obtener diámetro
+30mm. Se achaflanan ambos cantos exteriores y se comprueba que encaja con
+facilidad en la pieza anterior.
+
+Con un taladro vertical se utiliza la broca de puntear para marcar y guiar dónde
+realizar los cuatro taladros pasantes de diámetro 5,5mm para las varillas
+roscadas. Seguidamente se avellanan los agujeros por ambos lados para eliminar
+rebabas y facilitar la inserción de las varillas.
+
+~ 69 ~
+
+Figura 31 Plano de los adaptadores
+
+Figura 32 Posición de los adaptadores en el montaje
+
+4. Pieza de sujeción del combustible (Pieza009): en ella se introduce el extremo
+final del bloque de combustible y una boquilla de grafito. Por el lado contrario
+conecta con otro tramo intermedio que hace la función de cámara de
+postcombustión.
+
+Su fabricación parte del tocho de acero de diámetro 80mm. El operario, con una
+sierra industrial, tronza de éste una longitud igual a la de la pieza final más
+2mm.
+
+La pieza obtenida se coloca en el torno en un primer agarre. Este primer agarre
+comienza con el refrentado de la pieza. Seguidamente se realiza el taladro
+pasante, utilizando primeramente una broca de puntear para marca el punto
+
+~ 70 ~
+
+central y la dirección en la que a continuación se va a realizar el taladro pasante
+de diámetro 10mm. Por último, se realiza otro taladro con una broca de 20mm.
+Posteriormente, hasta una profundidad de 20mm este cilindrado interior se
+realiza hasta un diámetro 50mm en el que poder introducir la boquilla de grafito
+y el extremo del bloque de combustible. Para finalizar este agarre se realiza un
+achaflanado en el canto exterior.
+
+En un segundo agarre, se refrenta la pieza hasta que la pieza sea de la longitud
+deseada. Se realiza un cilindrado interior de profundidad 10mm hasta diámetro
+30mm para poder unir la pieza que coloquemos a continuación. Por último se
+achaflana el canto exterior y se libera la pieza.
+
+Con un taladro vertical se utiliza la broca de puntear para marcar y guiar dónde
+realizar los cuatro taladros pasantes de diámetro 5,5mm para las varillas
+roscadas. Seguidamente se avellanan los agujeros por ambos lados para eliminar
+rebabas y facilitar la inserción de las varillas.
+
+Figura 33 Plano de la pieza de sujeción del combustible
+
+~ 71 ~
+
+Figura 34 Posición de la pieza de sujeción del combustible en el montaje
+
+Al igual que la pieza 001, esta pieza se utilizará para asegurar el aparato a la
+estructura. Para conseguir una mayor estabilidad se optó por dos apoyos, que
+junto con el de la pieza inicial son tres, aportando una estabilidad superior. Para
+tal fin, se mecanizan roscas para varillas a cada lado de la pieza, previa
+obtención mediante fresado de sendas superficies planas para taladrar. El
+resultado es el siguiente:
+
+Figura 35 Vista detalle del plano de la pieza e imagen del detalle de la pieza acabada
+
+~ 72 ~
+
+5. Pieza final (Pieza011): sus funciones son sujetar el extremo de la tobera, servir
+como soporte a las tuercas para fijar las varillas que unen el conjunto y permitir
+la salida de los gases que atraviesan la tobera de grafito.
+
+Su fabricación parte del tocho de acero de diámetro 80mm. El operario, con una
+sierra industrial, tronza de éste una longitud igual a la de la pieza final más
+2mm.
+
+La pieza obtenida se coloca de nuevo en el torno en un primer agarre. Este
+primer agarre comienza con el refrentado de la pieza. Seguidamente se realiza el
+taladro pasante, utilizando primeramente una broca de puntear para marca el
+punto central y la dirección en la que a continuación se va a realizar el taladro
+pasante de diámetro 10mm. Por último, se realiza otro taladro con una broca de
+20mm. A continuación se realiza un cilindrado interior para obtener un diámetro
+interior de 50mm en los 10mm del extremo, necesario para introducir el extremo
+final de la tobera. Para finalizar este agarre se realiza un achaflanado en el canto
+exterior.
+
+En un segundo agarre, se refrenta la pieza hasta obtener la longitud deseada.
+Para finalizar este agarre se realiza un achaflanado en el canto exterior.
+
+Con un taladro vertical se utiliza la broca de puntear para marcar y guiar dónde
+realizar los cuatro taladros pasantes de diámetro 5,5mm para las varillas
+roscadas. Seguidamente se avellanan los agujeros por ambos lados para eliminar
+rebabas y facilitar la inserción de las varillas.
+
+Para este proyecto no es necesaria una mayor área de salida para los gases de
+escape, pero en trabajos sucesivos puede serlo si se quieren alcanzar mayores
+empujes o utilizar toberas supersónicas, las cuales necesitan áreas de salida
+mayores. Esta ampliación no presenta ninguna complicación, ya que la pieza
+permite esta modificación siempre y cuando se siga pudiendo sujetar la tobera.
+
+~ 73 ~
+
+Figura 36 Plano de la pieza final
+
+Figura 37 Posición de la pieza final en el montaje
+
+~ 74 ~
+
+Bloque combustible
+En el diseño de partida, el combustible utilizado era polimetilmetacrilato (PMMA). El
+bloque estaba formado por dos tubos concéntricos de dicho material.
+Debido a sus propiedades ópticas, decidimos seguir utilizando el mismo combustible
+que en el diseño de partida. Aún así, existen otros motivos para tal elección, a
+continuación enunciamos sus propiedades más interesantes de cara al proyecto:
+•
+
+Transparencia.
+
+•
+
+Alta resistencia al impacto.
+
+•
+
+Ligero: su densidad es 1190 Kg/m3.
+
+•
+
+De fácil combustión, no es auto extinguible.
+
+•
+
+No produce ningún gas tóxico al arder.
+
+•
+
+Gran facilidad de mecanizado y moldeo.
+
+Como idea inicial se pretendía utiliza una barra maciza de polimetilmetacrilato a la que
+se le realizaría un taladro de 20mm en su interior. Esta idea se descarto rápidamente por
+el elevado coste del material en este formato y el desperdicio que suponía la operación
+de mecanizado.
+Como solución a estos dos inconvenientes, utilizaremos tres tubos concéntricos que
+fácilmente se pueden encajar unos dentro de otros, y así también, evitamos desperdiciar
+material y tiempo con la operación de vaciado.
+Las dimensiones de estos tubos son:
+Tubo
+
+Diámetro interior
+
+Diámetro exterior
+
+Longitud (m)
+
+(mm)
+
+(mm)
+
+1
+
+20
+
+30
+
+200
+
+2
+
+30
+
+40
+
+200
+
+3
+
+40
+
+50
+
+200
+
+Las dimensiones de los tubos se han elegido tomando como referencia las del diseño
+americano, ya que no disponemos de los resultados experimentales de consumo del
+
+~ 75 ~
+
+material, pero sí sabemos que permiten realizar varios ensayos con ellos sin tener que
+ser sustituidos.
+En cuanto a la longitud, la teoría recomienda nunca sobrepasar L/D>40 para evitar
+problemas de interferencias de la capa límite, así como el apagado de llama en el
+interior del aparato por exceso de combustible evaporado. Por lo que, para probar el
+correcto funcionamiento del aparato, utilizaremos un valor L/D=10 ya que sabemos que
+ha sido probado y da resultados satisfactorios.
+Los cálculos de resistencia mecánica están realizados suponiendo que solamente el tubo
+exterior soporta la presión de la cámara a la que se realiza el ensayo. Deberemos cerrar
+la alimentación de oxígeno cuando veamos que queda poco para que empiece a
+fundirse, evitando que este elemento falle o tener que sustituirlo cada vez que se
+requiera meter combustible de nuevo.
+
+Figura 38 Plano de los distintos tubos de PMMA que conforman el puerto de combustible
+
+~ 76 ~
+
+Figura 39 Posición del puerto de combustible en el montaje
+
+Cálculo de resistencia de los tubos de plexiglás:
+La configuración que se va a usar consta de tres tubos concéntricos de
+polimetilmetacrilato (PMMA), comercialmente conocido como Plexiglás. Estos tubos
+se colocan entre los dos bloques de acero, separados por unas juntas tóricas selladoras
+(o-rings). El cálculo se va a realizar para el caso más desfavorable, en el que el sellado
+de presión lo realiza el tubo delgado exterior. Tomaremos como presión interior 13.61
+atm (200 psi), un valor que podría utilizarse más adelante con toberas supersónicas, y 1
+atm como presión exterior.
+Valores típicos de la resistencia mecánica del PMMA son:
+Temperatura
+
+Resistencia
+
+23°C
+
+72-80 MPa
+
+70°C
+
+35-40MPa
+
+Para realizar los cálculos podemos, en primera aproximación, con la suposición de
+pared delgada y después realizar el cálculo con mayor precisión suponiendo pared
+gruesa.
+Los tubos que se van a utilizar son de diámetros comerciales. Las dimensiones del tubo
+exterior son: diámetro exterior 50mm e interior de 40mm, por lo que su espesor es
+5mm.
+
+~ 77 ~
+
+Pared delgada:
+La suposición de pared delgada, nos dice que el esfuerzo se reparte de manera uniforme
+a lo largo del espesor de la pared del tubo.
+Realizamos el sumatorio de fuerzas por unidad de longitud de tubo y siempre debe
+cumplirse que:
+2w x y# − y} !
+σ: límite de tensión en la pared.
+e: espesor de pared.
+P: presión. ‘i’ interior, ‘e’ exterior.
+Figura 40 Esquema de esfuerzas sobre el tubo
+exterior de PMMA
+
+D: diámetro. 60mm.
+
+35 10| y!2 ∙ 5 "" x 13.61 − 1!10 y 50 ""
+35 10| y! x 13.61 − 1!10 y
+
+35 10| y x 6.805 10| y
+
+50 ""
+10 ""
+
+Nota: Pa∙mm=N/mmlineal
+Se cumple, con un factor de seguridad, n:
+9=
+
+35 by
+~5.1
+6.805 by
+
+Este tubo de este material cumple ampliamente los requerimientos.
+Vamos a volver a calcular el factor de seguridad, pero con la suposición de pared
+gruesa, ya que 5mm no es un espesor despreciable.
+
+~ 78 ~
+
+Pared gruesa: en estos cálculos no se sigue la suposición de que la tensión es uniforme
+en la pared.
+
+Figura 41 Esquema de las presiones sobre el tubo exterior
+
+De acuerdo con la teoría, las tensiones que aparecen en la pared son:
+w = y# 4O 7XO N O + 1 − y} 4O 7XO  N O + 1 ; w > 0  ó9
+XO
+
+4O
+
+4O
+
+XO
+
+wN = y# 4O 7XO N O − 1 − y} 4O 7XO  N O + 1 ; wN > 0 Q" Ró9
+XO
+
+4O
+
+4O
+
+XO
+
+a: radio interior. En este caso a=20mm.
+b: radio exterior. En este caso b=25mm.
+r: radio.
+
+Se puede observar que las máximas tensiones aparecerán en la superficie interior del
+cilindro, donde el primer y mayor término se hace máximo. Así mismo, éstas son las
+tensiones principales, por lo que no es necesario utilizar el círculo de Mohr.
+Con r=a, obtenemos como resultados:
+w = 6.76 by  ó9
+
+wN = 1.3 by Q" Ró9
+
+9=
+
+35 by
+~5.1
+6.76 by
+
+El resultado es prácticamente el mismo, por lo tanto, para las propiedades y las
+dimensiones escogidas, se puede considerar el supuesto de pared delgada.
+
+~ 79 ~
+
+Llegados a este punto, resulta interesante realizar el cálculo a la inversa y conocer hasta
+qué presión podemos llegar, manteniendo al menos un factor de seguridad n=2,5. Para
+ello utilizaremos la hipótesis de pared delgada:
+9 = 2,5
+
+2w x 9y# − y} !
+
+2 ∗ 35 10| y ∗ 5 "" x 2,5y# − 10 y! 50 ""
+y# ≤ 29 10 y
+
+Tomaremos un valor máximo de presión de 25 bares. Este valor es lo suficientemente
+elevado como para permitir en un futuro diseñar y estudiar las toberas supersónicas.
+Seguridad y modos de fallo:
+Si por algún motivo el experimento se prolongase más de lo debido, cabrían esperar dos
+posibles modos de fallo:
+Primero: reblandecimiento del material del tubo exterior. El material, debido a la
+transferencia de calor desde la llama, se calienta a lo largo del ensayo. A partir de cierta
+temperatura, el material se reblandece y es capaz de fluir. Debido a la diferencia de
+presión entre el interior y el exterior comenzaría a hincharse hasta que se perforase. Lo
+más probable es que el material, al reblandecerse, caiga en llamas sobre lo que haya
+debajo, por lo que debemos colocar una chapa metálica debajo del aparato para evitar
+que precipite sobre la bombona de oxígeno o sobre la instrumentación que ahí se
+encuentre.
+Segundo: experimentalmente sabemos que, a la entrada del puerto de combustión es
+donde más rápidamente se consume el material. Debido a esto, podríamos consumir
+material hasta llegar al exterior, o reblandecerlo, de manera que por la diferencia de
+presiones se perfore. Si se diese el caso, observaríamos una llama que saldría por el
+orificio a la vez que disminuye el flujo a través de la tobera, o directamente deja de salir
+gas por la tobera. Al estar situado al inicio del puerto, habría poco combustible
+evaporado, por lo que la llama sería relativamente pequeña y estaría localizada
+alrededor de la perforación, sin mayor complicación.
+
+~ 80 ~
+
+Ambos modos de fallo son fáciles de detectar y la manera de atajarlos es cortar la
+alimentación de oxígeno. Es muy posible que, tras cortar la alimentación, el
+combustible siga ardiendo con el oxígeno del ambiente, por lo que se debe tener un
+pequeño extintor o simplemente agua cerca para poder apagarlo completamente.
+Llegados a este punto, se debe recordar que en ningún caso cabe la posibilidad de que
+haya una gran explosión, ya que nunca tendremos una gran cantidad de combustible
+vaporizado.
+Otro modo de fallo se puede producir por la aparición de una grieta, ya sea debido a
+sobrepresión o a fatiga del material en el puerto, ya que es el elemento que menor
+presión resiste. Si esto pasase, lo más probable es que suceda algo similar al caso
+segundo antes descrito y evolucione del mismo modo, pero partiendo de una grieta en el
+material que comunique el interior con el ambiente. Se debe proceder del mismo modo.
+Preparación y montaje:
+El material fabricado por extrusión en forma de barras o tubos se vende en unidades de
+2m de largo para cualquiera que sea su geometría. Debido a esto, el material debe ser
+cortado en segmentos de la longitud que precisemos para nuestros ensayos; en nuestro
+caso 200mm.
+Como se indicó previamente, el montaje consiste simplemente en insertar los tubos unos
+dentro de otros. Esta operación no resultó tan sencilla como cabría esperar. Al ser éste
+un material principalmente usado en arquitectura y decoración, sus tolerancias en la
+fabricación son grandes. Esto provocó que, debido a la fricción que aparecía entre
+ambas superficies, el tubo intermedio no se pudiese introducir completamente en el
+exterior. Para este problema propusimos dos soluciones:
+1. Realizar una operación de cilindrado exterior al tubo intermedio, eliminando una
+décima de milímetro en la superficie, lo cual nos permitiría reducir su diámetro
+en 2 décimas de milímetro.
+Sin embargo, antes de abordar esta opción, con el consiguiente desperdicio de
+material y disponibilidad de un operario de torno, decidimos proceder inicialmente
+con un método menos agresivo:
+
+~ 81 ~
+
+2. Haciendo uso de las propiedades térmicas de los materiales, procedimos al
+enfriamiento en máquina frigorífica, un congelador convencional, del tubo
+intermedio, esperando que la contracción térmica del material fuese suficiente
+para poder introducirlo en el correspondiente tubo exterior.
+
+Esta segunda opción requiere más tiempo, pero es una operación mucho más sencilla y
+no precisa de personal cualificado. Tampoco impediría la realización del mecanizado si
+fuese necesario.
+Debido a esto, decidimos probar esta segunda opción.
+Este sencillo paso fue suficiente para poder introducir manualmente un cilindro dentro
+del otro. Veamos por qué:
+El coeficiente de dilatación térmica del PMMA toma valores elevados, entre 5 y 10 105
+K-1. A partir de ello podemos calcular su contracción de la siguiente manera:
+∆ =  ∙∝∙ ∆T
+
+Siendo ∆ la variación del diámetro, D el diámetro de partida inicial (40mm), ∝ el
+
+coeficiente de dilatación térmica y ∆T la diferencia de temperatura entre ambos
+
+estados.
+
+∆ = 40"" 5 ∗ 107 ! 7 −20 − 20!
+Lo cual representa una contracción de al menos:
+∆ = −0.16""
+
+Si no hubiese sido posible introducir un tubo dentro del otro, antes de mecanizar la
+pieza, aún tenemos la opción de, al mismo tiempo que hemos enfriado el tubo
+intermedio, calentar ligeramente el tubo exterior para dilatarlo. Siempre por debajo de la
+temperatura de reblandecimiento del polimetilmetacrilato, por encima de la cual se
+vuelve fácilmente deformable.
+
+~ 82 ~
+
+Calculo de resistencia de las varillas de acero roscadas:
+Las varillas se encargan de sujetar el conjunto de las piezas del cohete unidas. La
+tensión a la que se someten depende de la presión en el interior del cohete, haciendo el
+sumatorio de fuerzas obtenemos la siguiente expresión:
+4* = (y
+
+F: la fuerza que soporta cada varilla.
+A: área sobre la que actua la presion de la cámara.
+P: presíon de la cámara
+La presion el aparato, como máximo, será la presión que hemos establecido como límite
+en el apartado del cálculo de la resistencia del PMMA, es decir, 25 atm.
+El área sobre la que se aplica la presion de la cámara, nunca será superior al diámetro
+exterior del tubo de combustible, la sección presurizada será de un diametro de 50mm.
+Por lo que A será inferior 7,854 10-3 m2.
+Habiendo hecho estas suposiciones podemos resolver la primera ecuación.
+*=
+
+7.854 107 m 25 10 Pa
+= 4908.75;
+4
+
+La fuerza será siempre inferior a 4908N por varilla.
+
+Ahora debemos calcular el área de varilla necesaria según la resistencia del acero 316 o
+304, que son los materiales con los que suelen ser fabricadas, a tracción. Un valor
+aproximado de la resistencia del acero, σ, es 505 MPa o N/mm2.
+w=9
+
+Av: área se la sección de la varilla.
+
+*
+(F
+
+n: factor de seguridad, será 1,5.
+505 ;/"" = 1.5
+
+Resultando:
+
+D=4,31mm
+
+~ 83 ~
+
+4908 ;
+
+1 4
+
+Por lo que teniendo encuenta este resultado, las suposiciones anteriores y el factor de
+seguridad, una rosca M5 será valida para nuestro diseño. A priori cabria esperar que esta
+varilla fuese suficientemente robusta para soportar esta tension, pero debemos
+comprobarlo:
+La rosca metrica se define por su diametro exterior, D. Pero la superficie que realmente
+soporta la tensión es la que está por debajo de la rosca, por ello lo que nos interesa es
+que el parámetro d3 (diametro núcleo)sea mayor que el diametro obtenido.
+
+M5x0,8:
+
+D=5mm
+d3=4,484 mm
+
+Con una rosca M5 tendriamos un diametro núcleo suficiente.
+
+~ 84 ~
+
+Tobera y boquilla de grafito
+El principal motivo para utilizar grafito, tanto en este elemento como en la boquilla
+anterior a la cámara de postcombustión, es su elevada temperatura de fusión (3800K
+aprox.), muy por encima de la que podríamos alcanzar en el aparato.
+Al reducir con estos elementos la sección por la que pasan los gases de combustión, la
+capa límite del fluido se hace también más estrecha, lo que hace que la transferencia de
+calor, la fricción y la temperatura sean mucho mayores que en las secciones donde no se
+reduce el área de paso.
+La otra razón para utilizarlo fue que, además de sus buenas propiedades, era
+relativamente barato y fácil de mecanizar. El único problema que presenta el grafito a la
+hora de ser mecanizado es que forma polvo en vez de viruta. Para evitar esto,
+realizaremos todas las operaciones de mecanizado de grafito con taladrina. Este polvo,
+a pesar de ser el grafito un material no metálico, es conductor eléctrico, por lo que
+puede dañar la electrónica de la herramienta y es altamente dañino para el sistema
+respiratorio.
+La taladrina es una mezcla de agua y aceite que se usa como lubricante y refrigerante en
+operaciones de mecanizado. Además, en este caso el líquido atraparía las partículas de
+polvo de grafito que pudiesen saltar al aire.
+
+~ 85 ~
+
+Boquilla de grafito:
+Su área de paso debe ser siempre mayor que la de la tobera. De no ser así, el bloqueo se
+producirá en esta sección y no en la de salida.
+
+Figura 42 Plano de la boquilla de grafito
+
+Figura 43 Imagen de la boquilla de grafito
+
+Su posición en el montaje es en el interior de la pieza 009:
+
+Figura 44 Posición de la boquilla en el montaje
+
+~ 86 ~
+
+Tobera de grafito:
+Los cálculos y consideraciones para su diseño se explican a continuación
+
+Figura 45 Plano de la tobera de grafito
+
+Figura 46 Imágenes de la tobera de grafito
+
+Figura 47 Posición de la tobera de grafito en el montaje
+
+~ 87 ~
+
+Cálculos para el diseño de la tobera y estimación del consumo de O2:
+Para resolver esta incógnita debemos partir de la ecuación que nos proporciona el
+empuje del sistema:
+* = "I + y − yX& !(
+El subíndice ‘2’ hace referencia a la sección de salida de la tobera y ‘atm’ a las
+condiciones del ambiente.
+El caso que vamos a estudiar es el de una tobera convergente adaptada, es decir, que la
+presión a la salida coincide con la del ambiente, lo cual nos permite reducir la expresión
+anterior a tan solo el primer término.
+* = "I
+Para lograr que la tobera esté bloqueada la relación de presiones entre el interior y el
+ambiente debe ser superior a:
+k + 1 l⁄
+
+=0
+3
+
+2
+
+l7!
+
+Por lo que debemos presurizar el aparato a:
+ > 1.78  "
+Para asegurar el bloqueo, utilizaremos una presión de 2.5 atm. Podemos seguir
+despreciando el término de empuje debido a la diferencia de presiones, ya que
+seguramente aparezcan pérdidas en el sistema y el área de salida de tobera que vamos a
+obtener es muy pequeña.
+Para obtener un resultado en primera aproximación supondremos que la velocidad del
+fluido aguas arriba (subíndice ‘1’) de la tobera es mucho menor que la del sonido. Esta
+suposición es siempre válida para velocidades del fluido por debajo de M=0,3, ya que
+este término entra en las ecuaciones al cuadrado. Lo cual además implica:
+b ≪ 1
+y ≅ y
+
+~ 88 ~
+
+Donde M es el numero de Mach en la corriente, P la presión y el subíndice ‘0’ hace
+referencia al estado de remanso de la corriente.
+El siguiente paso para poder calcular el tamaño de garganta que necesitamos para
+nuestra tobera es calcular la velocidad de salida del fluido.
+Para calcular la velocidad a la que es expulsado el gas por la tobera hacia el ambiente
+necesitamos calcular la velocidad del sonido en condiciones de remanso,
+
+lo que
+
+equivale en nuestro caso a las de la cámara de postcombustión:
+ = _k2T
+Nos ayudamos del programa ProPEP 3 para realizar los cálculos de la temperatura de
+nuestro fluido. Este programa hace uso de las ecuaciones del cálculo de temperatura de
+llama adiabática para obtener el parámetro en función de la mezcla de reactantes que se
+le especifique, también tiene en cuenta las disociaciones de las especies a altas
+temperaturas.
+Ya que el programa nos facilita el cálculo, podemos hallar la temperatura para las
+situaciones que se dan en el aparato. La literatura nos indica que la relación de mezcla,
+masa de oxidante - masa de combustible, inicialmente toma valores elevados cercanos a
+4 y que, a medida que avanza el ensayo, se desplaza asintóticamente hasta un valor 2.
+En estos casos obtendremos los siguientes resultados:
+
+Figura 48 Imagen del programa ProPEP3
+
+~ 89 ~
+
+Figura 49 Imagen del programa ProPEP3
+
+Es importante, a parte de la temperatura de la cámara, conocer la temperatura máxima
+que alcanzaremos en el interior del sistema. La temperatura máxima será la temperatura
+de la llama de difusión que tenemos en el bloque de combustible, ya que en una llama
+de difusión se da la relación estequiométrica de combustible y oxidante.
+La relación de masas de la mezcla estequiométrica la obtenemos de la ecuación de
+combustión completa del PMMA:
+S   ybb(! + 6 → 5S + 4 
+La relación es de un mol de PMMA a seis de oxígeno, lo que en masa equivale a 100
+gramos de PMMA y 192 gramos de oxígeno. De esta mezcla resulta una temperatura de
+llama estequiométrica.
+
+~ 90 ~
+
+Figura 50 Imagen del programa ProPEP3
+
+Continuando con el diseño de la tobera, con estos datos podemos calcular la velocidad
+del sonido en nuestra cámara de combustión. Como no existe mucha disparidad en los
+resultados, tomaremos valores intermedios entre las dos situaciones obtenidas:
+k = 1.215
+
+∙ "
+
+"Q ∙  = 302.33 "
+2=
+0.0275 -/"Q
+R
+8,314
+
+T = 3000
+
+Por lo que nos queda:
+ = _k2T
+
+ = √1.215 302.33 3000 = 1049.76"/R
+Como la tobera es siempre convergente, la velocidad a la salida de la garganta es la
+velocidad del sonido local:
+I =  =  ∙
+
+~ 91 ~
+
+
+
+
+Necesitamos hallar la relación isentrópica de las velocidades del sonido para esta
+relación de presiones y γ. Para ello partimos de la relación isentrópica de la temperatura:
+7
+1
+T
+
+= c1 + γ − 1!b d
+2
+T
+
+Como la velocidad del sonido depende de la raíz cuadrada de la temperatura, nos queda
+que:
+7
+
+1
+
+= c1 + γ − 1!b d
+
+2
+
+Y estando bloqueada la salida (b = 1):
+
+
+= 0.815
+
+
+Por lo que nuestra velocidad en el escape será:
+I =  =  ∙
+
+
+"
+= 1049.76 0.815
+
+R
+
+I = 855.55 "/R
+
+Volviendo a la ecuación de partida, podemos calcular el caudal que debemos tener a la
+salida de la tobera para un empuje dado:
+* = "I
+" =
+
+*
+I
+
+Si nuestro objetivo son 10N de fuerza:
+" =
+
+*
+10;
+=
+I 855.55 "/R
+
+Realizando el correspondiente cambio de unidades:
+" = 11.688 -/R
+
+~ 92 ~
+
+Con este dato podemos estimar el gasto de oxígeno que vamos a tener. El gasto a la
+salida es la suma del flujo de oxígeno de la alimentación más la masa de combustible
+vaporizada:
+" = "O + "
+Sabiendo que la relación entre ambas magnitudes oscila entre 2 y 4 a lo largo de los
+ensayos, nuestro gasto de oxígeno se situará entre 7.8 g/s y 9.35 g/s respectivamente.
+Ahora que ya conocemos el gasto que necesitamos a la salida de la tobera, podemos
+calcular su área de garganta:
+" =
+
+= H( =   (
+
+Sólo queda conocer la densidad del gas a la salida. Se calcula de la siguiente manera:
+ = 
+
+
+
+
+Nos falta esta relación isentrópica. La podemos obtener fácilmente:
+
+
+7
+]7
+1
+
+= c1 + γ − 1!b  d
+
+2
+
+Resultando en nuestro caso:
+
+
+= 0.622
+
+
+También podemos calcular la densidad de remanso en la cámara de combustión:
+ =
+
+y
+2.5 " ∙ 27.5 -/"Q
+=
+∙ "
+2T
+0.082
+∙ 3000
+"Q ∙ 
+ = 0.279
+
+= 279 
+6
+"
+
+Por lo que nuestra densidad a la salida es:
+ = 279 ∗ 0.622
+
+~ 93 ~
+
+ = 173 
+
+
+Ya podemos despejar y calcular el valor del área de salida de nuestra tobera, según:
+" =   (
+( =
+
+Sustituyendo:
+
+"
+ 
+
+11.688
+R
+( =
+173  855.55 "/R
+"
+
+Quedando como resultado:
+( = 7.896 107 "
+Si utilizamos una tobera cónica, es decir, de sección circular, nuestro diámetro de salida
+debe ser:
+ = e
+
+4(
+= 10.03 ""
+1
+
+Dado que no se trata de un ejercicio teórico, la pieza la mecanizaremos con un diámetro
+de garganta de 10mm.
+Llegados a este punto, podemos comprobar si nuestra suposición de que en la cámara
+que precede a la tobera, las velocidades son relativamente bajas.
+Si queremos crear una turbulencia para favorecer el mezclado antes de que
+definitivamente el fluido atraviese la tobera, podemos crear un escalón a la entrada de la
+misma, por lo que la mecanizaremos con un diámetro de 30mm a su entrada.
+Si en la tobera partimos de un diámetro de 30mm y reducimos el área hasta 10mm,
+tendremos una relación de áreas:
+(
+= 0.333
+(
+Lo cual implica que el fluido aguas arriba de la tobera se estaría moviendo a una
+velocidad según la expresión:
+
+~ 94 ~
+
+(4 bX 1 + gγ − 1!⁄2hb4
+ef
+=
+i
+(X b4
+1 + gγ − 1!⁄2hbX
+
+]<!⁄]7!
+
+Si suponemos que la corriente avanza uniformemente, obtendremos que el Match de la
+corriente en esta sección será:
+b = 0.065 ≪ 1
+Dado que el flujo no se desarrollará completamente antes de llegar a esta sección,
+calcularemos este mismo Mach suponiendo que el flujo no se desarrolla en absoluto, es
+decir, suponiendo que la corriente parte de un diámetro 20mm tal como sale de la
+cámara de postcombustión. El resultado en este caso será:
+b′ = 0.15 ≪ 1
+Por lo que nuestra hipótesis era correcta. El fluido se mueve, pero a velocidades que no
+afectan a la compresibilidad.
+Una vez determinadas las dimensiones clave de la tobera, pasamos a describir su
+fabricación.
+Presión de trabajo máxima de la tobera.
+Al ser el grafito un material frágil (tensión de rotura 23 MPa) debemos calcular para la
+geometría que vamos a dar a la pieza si podrá soportar la presión de funcionamiento del
+aparato. La presión máxima en la tobera se dará al inicio de la misma, donde
+supondremos presión de alimentación.
+Realizando los mismos cálculos que para el tubo de plexiglás obtenemos una presión
+máxima de funcionamiento con coeficiente de seguridad n=2 del orden de 50 atm. Esto
+se debe al gran espesor de la pared de la pieza (10mm).
+
+Fabricación de la tobera y la boquilla de entrada a la cámara de postcombustión:
+Para fabricar estos elementos se ha comprado un tocho de grafito isostático del tipo
+FU4501, de dimensiones 50 mm de diámetro por 500 mm de longitud. Este diámetro
+nos permite no tener que diseñan una pieza diferente para adaptar la sección intermedia
+
+~ 95 ~
+
+con la tobera, pudiendo usar una pieza idéntica a la que adapta el tramo intermedio del
+bloque frío al bloque de combustible y también permite poder colocar la boquilla al
+final del puerto.
+Los pasos para su fabricación son similares a los de los elementos metálicos de los
+bloques frío y caliente. Las herramientas utilizadas para su fabricación fueron las
+mismas, pero se ha tenido la precaución de realizar el avance de la maquina más
+suavemente, debido a la fragilidad del material, y procurar que la producción de polvo
+pudiese ser absorbida por la taladrina de la herramienta.
+
+Pasos para la fabricación de la tobera de grafito:
+El operario tronza del tocho un segmento de longitud 2mm superior a la necesaria para
+la pieza con la sierra industrial.
+La pieza obtenida se coloca en el torno en un primer agarre. Se refrenta la pieza y se le
+practica un taladro pasante de diámetro 10mm, tal como hemos calculado previamente
+para obtener el empuje requerido. Se le realiza un cilindrado exterior de profundidad
+5mm hasta diámetro 15mm, para que encaje adecuadamente con la pieza final del
+aparato.
+En un segundo agarre mecanizaremos la zona convergente de la tobera mediante dos
+operaciones de cilindrado interior, previamente debemos refrentar la pieza por este lado
+también. Primero se cilindra una zona de entrada de diámetro 30mm y una profundidad
+de 20mm. Posteriormente colocamos el carro portaherramientas con la herramienta a
+45° y mecanizaremos hasta que coincida la zona cónica con el cilindrado anterior.
+Nota: El ángulo de la zona convergente de una tobera cónica no afecta en gran medida
+al flujo, no siendo así en la zona divergente de una tobera supersónica, donde, si se
+desprende la corriente de la pared, perderemos la ventaja que este tipo de toberas aporta.
+A esta pieza no se le achaflanan los cantos ya que el material es mucho más ligero, y
+además con el uso y manejo se irán desgastando.
+Pasos para la fabricación de la boquilla de grafito:
+
+~ 96 ~
+
+El operario tronza del tocho un segmento de longitud 2mm superior a la necesaria para
+la pieza con la sierra industrial.
+La pieza obtenida se coloca en el torno en un primer agarre. Primero se refrenta la pieza,
+para seguidamente realizar un taladro pasante de diámetro 15mm. A continuación se
+realiza un cilindrado exterior hasta diámetro 20mm, de manera que encaje dentro del
+puerto de combustible. Dado que no interesa una zona de remanso a la entrada de la
+boquilla donde se une con la pared interior del puerto, se mecaniza la entrada de la
+boquilla a 45° de la misma manera que se hizo con la tobera.
+En un segundo agarre, se refrenta la pieza por el otro lado.
+
+~ 97 ~
+
+Sellado del aparto:
+Para asegurar la estanqueidad del sistema, se colocarán durante el montaje juntas tóricas
+entre las diferentes piezas. Las juntas van mordidas entre cada par de piezas. La fuerza
+se aplica mediante el apriete de las tuercas de las varillas que unen todo el sistema. El
+apriete no debe ser demasiado fuerte, ya que se corre el riesgo de dañar el bloque de
+combustible, por lo que se aconseja realizarlo de manera manual hasta que se note el
+conjunto firme.
+Además, a medida que se desarrolla el ensayo, las piezas en contacto con la corriente se
+dilatarán por efecto del aumento de temperatura, no así las varillas roscadas, de manera
+que el sellado mejora debido a este efecto.
+Ésta no es la manera en la que normalmente se colocarían las juntas de este tipo, pero
+actualmente el departamento no dispone de la herramienta necesaria para mecanizar las
+ranuras en las que deberían de ir montadas. De todos modos, colocándolas de esta
+manera realizarán su función, sin más problema que estar expuestas a la corriente de
+oxígeno o a gases de combustión dada su posición en el montaje.
+Al haber realizado el diseño con dos tamaños de uniones, sólo se requieren dos tipos de
+juntas. Los tamaños necesarios son diámetro de salida menor o igual a 30mm y 50mm.
+El material de las juntas que se ha seleccionado es silicona. Este material garantiza un
+buen funcionamiento a temperaturas de trabajo de hasta 200°C. Esta temperatura está
+muy por debajo de la que se puede alcanzar en el bloque caliente, pero al ser los ensayos
+muy breves deberían de ser capaces de resistir varios de ellos.
+Además de realizar la función de sellado de gases, las juntas de silicona absorberán
+parte de las vibraciones de los elementos evitando, por ejemplo, que las piezas de
+grafito se dañen.
+
+Figura 51 Juntas y varillas de unión
+
+~ 98 ~
+
+Estructura soporte.
+Además de construir el propio motor cohete, es necesario montar una plataforma sobre
+la que poder ubicarlo junto con el sistema de alimentación de oxígeno y que, en un
+futuro, permita colocar los sistemas de instrumentación y medida necesarios para
+continuar el estudio de estos sistemas de propulsión.
+No sólo tiene que poder albergar todos estos elementos, sino que además necesitamos
+que tenga la altura suficiente para que el escape del motor se dirija hacia el sistema de
+extracción de gases de la sala, situado en la pared a una altura de entre 1.10 y 1.40
+metros sobre el suelo.
+La estructura se ha realizado con perfiles de aluminio, en dos alturas: una para el motor
+y otra para la bombona de oxigeno. Está provista de ruedas en las patas para permitir su
+fácil desplazamiento. Bajo la altura superior se ha colocado una chapa metálica para
+proteger a la inferior ante cualquier fallo que pueda tener lugar en el aparato.
+El uso de estos perfiles de aluminio permite modificar la estructura o añadir nuevas
+alturas según sean necesarias.
+
+Figura 52 Perfil de aluminio utilizado e imagen de la estructura básica
+
+~ 99 ~
+
+Vía de alimentación de oxígeno:
+El sistema de alimentación de oxígeno debe permitir, de manera sencilla y segura,
+alimentar el sistema con oxígeno a la presión de ensayo que precisemos. Para ello el
+sistema se compone de los siguientes elementos, se enumeran según el orden en el que
+el gas recorre la vía:
+Bombona de oxígeno industrial: a diferencia de las bombonas para uso médico, éstas
+están preparadas para ambientes y aplicaciones industriales, tales como soldadura o
+fabricación de acero. La bombona contiene una carga inicial de oxígeno de 4,2 m3 de
+oxígeno en condiciones normales, lo cual equivale a 5,926 kg.
+Si recordamos del apartado del cálculo de dimensiones de la tobera el gasto de oxígeno
+que necesitábamos, podremos estimar el número de ensayos que podremos realizar con
+esta carga. El gasto estimado era de unos 9.3 g/s, siguiendo las recomendaciones del
+diseño original los ensayos no deberían sobrepasar los 10 segundos. Esto conlleva una
+estimación de unos 60 ensayos por carga.
+Regulador: este dispositivo nos permite regular la presión de salida con la que queremos
+alimentar el sistema. Para ello disponemos de un manómetro de alta, en el cual
+observamos la presión en el interior de la bombona, un manómetro de baja, mediante el
+cual podemos regular la presión de salida, y una válvula de cierre, para regular el paso
+del gas.
+
+Figura 53 Regulador de presión de alimentación
+
+Válvula antirretorno: se ha colocado como medida de seguridad. Esta válvula impide
+que se produzca retroceso de los gases desde el aparato hacia el regulador o la bombona.
+Nos limita la presión de funcionamiento a 10bar.
+
+~ 100 ~
+
+Figura 54 Válvula antirretorno específica para oxígeno
+
+Tubo de alimentación especial para oxígeno y racores de seguridad en ambos extremos:
+este tipo de tubo se fabrica con fibra de aramida, resistente al fuego, por lo que
+colocándolo alejado de la zona de escape no presentará riesgo alguno. El motivo para
+usar en ambos extremos racores de seguridad, en vez de acopladores, es evitar fugas de
+oxigeno puro si por error alguien tira o golpea el tubo.
+
+Figura 55 Racores de seguridad en ambos extremos de la vía de alimentación
+
+~ 101 ~
+
+Nota informativa sobre el uso de oxígeno:
+Efectos sobre la salud del oxígeno:
+Respirar oxígeno puro a presión baja puede causar daño a los pulmones, en forma de
+quemaduras; afecta al sistema nervioso causando mareo, mala coordinación, sensación
+de hormigueo, molestia en los ojos y oídos, contorciones musculares, pérdida del
+conocimiento y convulsiones.
+Por todo ello se recomienda, como medida de seguridad, realizar el ensayo sin cerrar
+completamente la puerta de la sala de ensayos y siempre acompañado.
+Medidas de primeros auxilios:
+Trasladar la víctima al aire fresco lo más pronto posible. El médico debe ser avisado de
+la exposición a altas concentraciones de oxígeno. Personal profesionalmente entrenado
+debe suministrar ayuda médica como la resucitación cardiopulmonar, si es necesario.
+No es apropiado suministrar oxígeno suplementario.
+Medidas contra incendio:
+El oxígeno no es inflamable, pero si comburente. El oxígeno acelera la combustión.
+Cualquier combustible y algunos materiales no combustibles en condiciones normales
+pueden quemarse fácilmente en un ambiente rico en oxígeno.
+Puede ser utilizado todo elemento extintor conocido. Si es posible cerrar la válvula de
+oxígeno que alimenta el fuego. Enfriar la bombona con agua y una vez fríos sacarla del
+área de incendio.
+
+~ 102 ~
+
+7. Montaje y puesta en marcha
+Este capítulo es un manual para el montaje y puesta en marcha del aparato paso a paso
+mediante imágenes y breves aclaraciones.
+El diseño del aparto se ha realizado intentando que su montaje sea lo más sencillo e
+intuitivo posible.
+Al ser las uniones entre pieza de una profundidad de 10mm, se puede encajar el
+conjunto tanto en posición horizontal como vertical y posteriormente introducir las
+varillas para sujetarlo. Para su posterior colocación en la estructura soporte, resulta más
+práctico el montaje en horizontal. Entre cada par de piezas se debe introducir una junta
+tórica adecuada para el sellado del sistema. A ambos extremos de los tramos
+intermedios se colocaran juntas con diámetro de salida 30mm y en el resto de uniones
+de diámetro exterior 50mm. La última junta, la que se coloca entre la tobera y la pieza
+final del aparato no realiza la función de sellado, pero es necesaria para evitar que la
+tobera se deteriore por las vibraciones del sistema.
+A continuación se muestra cómo montar en aparato y su colocación en la estructura
+auxiliar.
+Paso primero: se insertan las varillas en la pieza inicial. Se colocan arandelas y tuercas
+de palomilla.
+El montaje también se puede realizar sin colocar las varillas desde un comienzo y
+realizar esta operación como paso final.
+
+Figura 56 Paso 1 del montaje
+
+~ 103 ~
+
+Paso segundo: colocamos el tramo intermedio (si procede) y el adaptador para el bloque
+de combustible. No debe olvidarse colocar una junta en cada unión.
+
+Figura 57 Paso 2 del montaje
+
+Paso tercero: colocación del bloque de combustible. Se inserta el extremo del
+combustible en la pieza anterior junto con la correspondiente junta. En el extremo
+opuesto colocamos la boquilla de grafito con una junta a cada lado y lo introducimos en
+la pieza de sujeción del combustible.
+
+Figura 58 Paso 3 del montaje
+
+~ 104 ~
+
+Paso cuarto: colocación de la cámara de postcombustión. Idéntico al paso segundo.
+
+Figura 59 Paso 4 del montaje
+
+Paso quinto: colocación de la tobera de grafito y pieza final. Una vez colocada el
+adaptador, se coloca entre éste y la piza final, al mismo tiempo colocamos una junta a
+cada lado.
+
+Figura 60 Paso 5 del montaje
+
+~ 105 ~
+
+Paso sexto y final: se asegura el conjunto colocando las arandelas y tuercas de palomilla
+en las varillas. Se ajustan manualmente hasta notar el conjunto firme. Se recomienda
+ajustar progresivamente las tuercas siguiendo un patrón de ajuste en diagonal para evitar
+dañar las piezas.
+
+Figura 61 Paso 6 del montaje
+
+~ 106 ~
+
+Montaje completo:
+
+Figura 62 Imagen del motor montado
+
+Figura 63 Esquema del montaje del aparato 3D
+
+~ 107 ~
+
+Colocación sobre la estructura:
+Para colocar el aparto sobre la estructura, se colocan las varillas soporte en las piezas
+correspondientes (Piezas 001 y 009)
+
+y se introducen éstas en los perfiles de la
+
+estructura preparado a tal efecto. Mediante un sistema de tuerca-arandela podemos
+regular la altura.
+La siguiente imagen explica el modo en que se sujeta el conjunto.
+
+Figura 64 Imagen de la sujeción cohete-estructura
+
+Como puede observarse podemos variar la distancia entre los perfiles soporte según lo
+requiera el montaje que hayamos realizado del cohete.
+Con el aparato montado y la vía de alimentación de oxígeno conectada, el conjunto se
+presenta de la siguiente manera:
+
+Figura 65 Motor cohete sobre la estructura y en posición para ensayos
+
+~ 108 ~
+
+Puesta en marcha:
+El apartado de puesta en marcha se realiza de una manera mucho más básica que en el
+diseño de partida. El encendido se realizaba de manera remota mediante la introducción
+metano antes del puerto de combustible, y una bujía provocaba la ignición de la mezcla.
+Para el encendido de nuestro sistema necesitamos introducir una fuente de llama que
+inicie la combustión del puerto. Con el aparato montado la única forma de acceder al
+interior del puerto de combustible, es a través del escape. La opción que se propone es
+introducir por el extremo del cohete un fosforo previamente encendido con ayuda de
+unas pinzas hasta el puerto de combustible. Esta operación no está exenta de riesgo para
+el operario y se recomienda realizarla de la siguiente manera:
+Siempre llevando guantes de protección. Primero se enciende un fósforo
+suficientemente largo como para alcanzar la zona del puerto de combustible. Éste se
+sujeta e introduce hacia el interior con una pinza, para evitar situar las manos en la zona
+del escape del motor. Una vez introducido hasta el puerto de combustible, abrimos un
+poco la válvula de paso del oxígeno de manera que la llama no se extinga. Cuando
+veamos que la llama avanza aguas arriba de la corriente podemos retirar la pinza y abrir
+la válvula del oxígeno por completo.
+Una vez el motor se ha encendido, el fósforo debe ser apagado en un recipiente con
+agua o arena, así evitaremos tener dos focos de llama en la sala.
+
+Figura 66 Motor cohete encendido
+
+En los ensayos realizados, hemos observado en el escape una llama de color azulado, lo
+cual nos indica que la combustión es próxima a ser completa en el interior del aparato.
+Si no ocurriese así la llama tomaría tonos rojizos.
+
+~ 109 ~
+
+Medida del empuje obtenido.
+Con este fin se ha sujetado el aparato sobre varillas roscadas. Midiendo su
+desplazamiento con un reloj comparador podemos calcular su empuje. Para estimar la
+longitud necesaria para que este desplazamiento sea medible se han realizado los
+siguientes cálculos y suposiciones:
+Suponemos que todo el empuje es soportado por una sola de las varillas.
+La sección de la varilla es circular, con el diámetro del núcleo de la varilla roscada M5.
+Los apoyos de la varilla se consideran: un empotramiento en el aparato y
+empotramiento guiado o apoyo simple en la estructura. Dado que nuestro agarre no será
+perfecto nuestra solución se hallará en un punto intermedio.
+
+Figura 67 Esquema de sujeción de las varillas
+
+Los cálculos que a continuación se presentan son sólo para estimar la longitud de varilla
+que necesitamos. El nivel de empuje se calibra manualmente antes de los ensayos una
+vez se ha completado el montaje y la estructura está en su posición definitiva.
+Para estos dos supuestos, las ecuaciones que determinan el desplazamiento vertical de
+las secciones ‘x’ de la varilla son respectivamente:
+ 
+=
+3 − 2!
+12+
+=
+
+ 
+3 − !
+6+
+
+Donde en nuestro caso W es el empuje aplicado, x la sección de la viga, y la deflexión
+de tal sección, E el modulo de elasticidad del material, I el momento de inercia de la
+sección y l la longitud total de la viga.
+
+~ 110 ~
+
+Aplicado estas ecuaciones y suponiendo que el empuje se aplica en el extremo (x=l).
+ 
+=
+12+
+=
+
+ 
+3+
+
+Nuestro reloj comparador tiene una precisión de centésimas de milímetro, por lo que
+buscaremos una longitud de varilla con la que vayamos a tener un desplazamiento
+medible (0.5mm).
+Como datos de partida tenemos la elasticidad del acero y el momento te inercia del
+núcleo de la varilla:
+
++=
+
+ = 210 y
+
+12 
+= 2.049 107 "
+4
+
+Necesitamos una varilla de longitud ‘l’ del orden de 15-20cm de longitud. Debemos
+tener en mente que el empuje no se aplica sobre el extremo de la varilla si no a la altura
+del escape de la tobera, por lo que el momento aplicado a la varilla será mayor del
+estimado aquí.
+Para la calibración del sistema utilizaremos un dinamómetro y un reloj comparador una
+vez tengamos el sistema completamente montado.
+En la página siguiente, en las figuras 68 y 69 se muestra en equipo y método de
+calibrado del sistema.
+En los ensayos realizados, se obtuvieron lecturas de empuje dentro del rango de 0.5-0.7
+Kgf, valores del orden de magnitud del objetivo del proyecto. Por lo que podemos
+considerar que este objetivo se cumple. De todos modos, como ya se ha dado a
+entender, este sistema de medición y calibración no es el adecuado para medir el empuje
+de un motor cohete.
+Se han detectado las siguientes fuentes de error en la medida:
+
+~ 111 ~
+
+El calibrado y método de fijación: la calibración es poco precisa y además, después de
+los ensayos no se recupera la posición inicial. Por lo que se concluye que ambos
+sistemas no son adecuados. Se propone trabajo futuro
+El método de encendido manual: puede hacer que se pierda la calibración al introducir
+la llama. Se propone trabajo futuro
+Nivel de vibración elevado, lo cual se traduce en un nivel de empuje no estable.
+
+Figura 68 Imagen del reloj comparador, brazo articulado y sujeción magnética
+
+Figura 69 Calibración manual mediante dinamómetro
+
+~ 112 ~
+
+8. Presupuesto del proyecto
+En este apartado se desglosan los costes de los materiales que se ha necesitado adquirir
+para la realización este proyecto.
+Costes para la construcción del motor cohete:
+Elemento
+Tochos de acero
+Varillas roscadas
+Tuercas y arandelas
+Juntas tóricas 30mm
+Juntas tóricas 50mm
+Tocho de grafito
+Tubo PMMA pequeño
+Tubo PMMA mediano
+Tubo PMMA grande
+TOTAL
+
+Coste unitario
+2 €/kg
+0,41€/unidad
+0,15€/unidad
+4,95€/50unidades
+7,11€/50unidades
+117,00€/m
+11,90€/m
+15,22€/m
+16,60€/m
+
+Unidades
+34
+3
+14
+1
+1
+1
+4
+4
+4
+
+Coste total
+68,00€
+1,23€
+2,10€
+4,95€
+7,11€
+117,00€
+47,60€
+60,88€
+66,40€
+375,26€
+
+Unidades
+
+Coste total
+
+49,50€/año
+
+1
+
+49,50€
+
+37,70€
+89,00€
+7,40€
+2,08€
+16,85€
+
+1
+1
+1
+1
+2
+
+37,70€
+89,00€
+7,40€
+2,08€
+33,70€
+219,45€
+
+Unidades
+12
+22
+44
+4
+
+Coste total
+145,32€
+34,32€
+15,40€
+38,92€
+233,86€
+
+Costes del sistema de alimentación de oxígeno:
+Elemento
+Alquiler bombona
+industrial
+Carga de O2
+Regulador de presión
+Válvula antirretorno
+Tubo de poliamida
+Racores de seguridad
+TOTAL
+
+Coste unitario
+
+Costes de la estructura de soporte:
+Elemento
+Perfiles de aluminio
+Escuadras
+Tornillo + tuerca
+Ruedas de goma
+TOTAL
+
+Coste unitario
+12,11€/m
+1,56€/unidad
+0,35€/conjunto
+9,73€/unidad
+
+El material no ha sido utilizado en su totalidad, quedando material para futuros trabajos
+y numerosos ensayos.
+Coste total del proyecto: 828,67€
+
+~ 113 ~
+
+9. Conclusiones y resultados:
+Con este proyecto hemos conseguido diseñar y construir un motor cohete híbrido
+modular, los elementos auxiliares necesarios para su funcionamiento y una estructura
+auxiliar para albergar todos estos elementos y facilitar su desplazamiento.
+Este diseño permite estudiar los principios de la propulsión y cómo afecta la variación
+de geometría de las diferentes secciones. Así mismo, en un futuro puede ser modificado
+de modo que se puedan realizar ensayos a mayores presiones, mediante la utilización de
+un tubo metálico para encapsular el combustible y colocando varillas de mayor diámetro
+para sujetar el conjunto.
+Se han realizado una serie de puestas en marcha del motor, en las cuales se han podido
+observar el correcto funcionamiento del aparto.
+El sistema de medición del empuje no es el adecuado para el aparato. El nivel de
+vibración o pequeños movimientos de la estructura hacen que la medida no sea clara y
+que la calibración previa se pierda. Se propone trabajo futuro al respecto.
+Aparte de los trabajos futuros también resultan interesantes las siguientes
+modificaciones del diseño:
+1. Juntas de unión: se propone el mecanizado de los cajetines adecuados para las
+juntas tóricas. Con motivo de prevenir el deterioro de las mismas, se podrían
+mecanizar unos cajetines exteriores en las uniones entre elementos, siempre y
+cuando se disponga de la herramienta necesaria. De no ser así, se podría
+cilindrar el extremo de la unión, de modo que se forme un cajetín entre ambas
+piezas y se reduzca la superficie de las mismas expuesta a la corriente.
+
+2. Cámara de poscombustión: en el diseño original esta sección es de un espesor
+mucho mayor, por lo que su capacidad de disipación del calor es también mayor.
+Si se aprecia que la temperatura se eleva demasiado, se podría realizar la pieza
+con un mayor espesor y/o estudiar la posibilidad de introducir una camisa
+interior de grafito y evitar que se deforme o funda por la temperatura.
+
+~ 114 ~
+
+10. Trabajos futuros y mejoras en el diseño:
+Este proyecto abre la puerta a continuar el estudio de los sistemas de propulsión. Para
+ello se propone la siguiente serie de trabajos:
+1. Implementación de un sistema de instrumentación digital, con el que poder
+obtener datos de manera precisa. Los parámetros de interés son:
+a) El empuje: mediante una célula de carga y colocando el aparato sobre un
+soporte tipo patín que no impida su deslizamiento.
+b) Presión
+
+y
+
+temperatura:
+
+en
+
+la
+
+cámara
+
+de
+
+postcombustión
+
+o
+
+inmediatamente antes de la tobera, mediante la colocación de sensor de
+presión y sonda de temperatura.
+2. Diseño de sistema de encendido remoto, mediante alimentación de gas
+combustible e ignición por chispa. Puede ir acompañado de alguna simulación
+por ordenador para estudiar el proceso de mezclado y la posición adecuada de la
+bujía. Otra opción será estudiar el encendido mediante resistencia eléctrica.
+3. Caracterización de la mezcla propulsora PMMA-O2 para cohete híbrido, a través
+de los datos que se obtengan con la instrumentación. Obtener las diferentes
+constantes de la expresión del ratio de regresión del combustible (a, n, m, etc.)
+correspondientes a los diferentes parámetros que se pueden variar en el motor
+(G, D, P, L, etc.). Ecuacion 3.3 y siguientes.
+4. Estudiar la posibilidad de utilizar otros oxidantes tales como N2O2, H2O2, aire
+comprimido u otros mencionados en la bibliografía. Proceder a la
+caracterización de estas mezclas PMMA-oxidante.
+5. Diseño de un juego de toberas con las que poder observar las diferentes
+situaciones que se pueden dar en una tobera supersónica (adaptada, onda de
+choque a la salida, onda de choque oblicua a la salida, etc.). Una experiencia
+muy interesante podría ser buscar un mismo empuje para las distintas
+situaciones y observar cómo varía el área de garganta necesaria, así como la
+relación de áreas en la sección divergente de la tobera. Obtener
+experimentalmente qué situación aporta mayor empuje para un mismo gasto de
+oxidante.
+6. Diseño de un motor cohete con una relación empuje/peso superior, de tal modo
+que pueda ser funcional para ser colocado en un cohete. Con los datos de los
+
+~ 115 ~
+
+anteriores proyectos propuestos, seleccionar la mezcla propulsora y las
+dimensiones más idóneas a tal efecto.
+7. Diseño de un cohete híbrido funcional. Construcción capaz de albergar un motor
+cohete híbrido y sistema de alimentación de oxidante capaz de alcanzar una
+determinada altura objetivo.
+
+~ 116 ~
+
+11. Bibliografía:
+•
+•
+•
+•
+•
+
+•
+
+•
+•
+
+•
+
+Bates SC. Vortex valve exhaust-driven pressure oscillations in hybrid
+combustion. [Tesis doctoral]. Massachusetts: Institute of Technology; 1970.
+Hill P, Peterson C. Mechanics and Thermodynamics of propulsion. 2nd ed.
+Reino Unido: Addison-Wesley; 1992.
+Timnat YM. Advanced chemical rocket propulsion. Reino Unido: Academic
+Press Inc; 1987.
+Sutton GP. Rocket Propulsion Elements. An Introduction to the Engineering of
+Rockets. 2nd ed. Hoboken (Nueva Jersey): Wiley; 2010.
+Chiaverini MMJ, Kuo KK, Lu FK. Fundamentals of Hybrid Rocket Combustion
+and Propulsion. Estados Unidos: American Institute of Aeronautics and
+Astronautics; 2007.
+University of Washington [Internet]. Washington; 2013 [04 de Abril del 2013].
+Disponible en: http://www.washington.edu/news/2013/04/04/rocket-poweredby-nuclear-fusion-could-send-humans-to-mars/
+Oates GC. Aerothermodynamics of gas turbine and rocket propulsion. Reston
+(Virginia) : American Institute of Aeronautics and Astronautics; 1997.
+Marxman GA.Combustion in the turbulent boundary layer on a vaporizing
+surface. En: Tenth Symposium (International) on Combustion. Sunnyvale
+(California): 1965. p. 1337-49.
+Greiner B, Frederick RA. AlAA 92-3301 Results of Labscale Hybrid Rocket
+Motor Investigation. En: 28th Joint Propulsion Conference and Exhibit.
+Huntsville (Alabama): 1992.
+
+Ref 3.1
+• Mead FB, Bornhorst. Certification Tests of a Hybrid Propulsion System for the
+Sandpiper Target Missile. USAF: 1969. AD0503586.
+Ref 3.2
+• Laforce P.D. et al., "Technological Development of a Throttling Hybrid
+Propulsion System," UTC 2215-FR, January 1967.
+Ref 3.3
+• Lips HR. Experimental Investigation of Hybrid Rocket Engines Using Highly
+Aluminized Fuels. Journal of Spacecraft and Rockets, 1977; 14 (9): 539-45.
+Ref 3.4
+• Mc Farlane JS, et al. Design and Testing of AMROC's 250,000 lbf Thrust
+Hybrid Motor. En: 29th Joint Propulsion Conference and Exhibit. Monterey
+(California): 1993.
+
+~ 117 ~
+
+

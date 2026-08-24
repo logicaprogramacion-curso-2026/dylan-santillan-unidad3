@@ -1,0 +1,694 @@
+Introducción a Machine
+Learning
+Felipe Bravo y Pablo Badilla
+
+Bienvenida
+• Bienvenidos al curso de Machine Learning (ML) del
+diplomado de Inteligencia Artiﬁcial.
+• El curso tiene una componente teórica y otra práctica.
+• La parte teórica estará a cargo de Felipe Bravo y la parte
+práctica de Pablo Badilla.
+• Para cada clase el primer módulo será de teoría y el
+segundo será práctico.
+• En la parte teórica introduciremos los conceptos y
+algoritmos más importantes de ML.
+• En la parte práctica veremos casos aplicados y donde
+aplicarán los métodos vistos en la teoría usando el lenguaje
+de programación python.
+
+Advertencia
+• Entender bien los algoritmos de machine learning (ML)
+requiere conocimientos en cálculo, álgebra,
+probabilidades, estadística, optimización y
+computación.
+• Estamos muy conscientes que no todos tienen estos
+conocimientos frescos.
+• Pero no por eso queremos omitir la matemática detrás de
+los métodos.
+
+Advertencia
+• Intentaremos repasar los fundamentos matemáticos
+cuando se pueda.
+• Pero a veces no será posible repasar todo :(
+• Si no entienden algo por favor pregunten.
+• No se frustren si en cierto momento no puedan seguir la
+matemática de la clase, intenten seguir la idea general
+detrás de los métodos.
+• El objetivo del curso es que entiendan la lógica detrás de
+los métodos, que sean conscientes su complejidad y que
+sepan cuándo aplicarlos.
+
+Evaluaciones
+• Las partes teóricas y prácticas se evaluarán con dos tareas a
+tomarse en la cuarta y octava clase práctica (clases 4 y 8
+segundo módulo).
+• Las tareas tendrán plazo de una semana de entrega.
+• Lo ideal es que puedan avanzar todo lo que puedan durante la
+clase.
+• Pueden hacer las tareas en grupos de a 2.
+• La nota ﬁnal se calcula así:
+Nota Final: Promedio(T1, T2).
+Para aprobar el curso: Nota Final ≥ 4.0.
+
+Algunas Deﬁniciones
+• Machine Learning es la ciencia (y el arte) de programar un
+computador para que pueda aprender a partir de los datos.
+• Machine Learning es el campo de estudio que da a los
+computadores la capacidad de aprender sin ser programados
+explícitamente. Arthur Samuel, 1959.
+• Se dice que un programa computacional aprende de la
+experiencia E con respecto a alguna tarea T y alguna medida de
+rendimiento P, si su rendimiento en T, medido por P, mejora con
+la experiencia E. Tom Mitchell, 1997.
+• Machine Learning y su variante más popular “Deep Learning”
+son las áreas de mayor impacto en la Inteligencia Artiﬁcial.
+
+Un Ejemplo Concreto
+
+SPAM
+
+Un Ejemplo Concreto
+Pensemos cómo escribiríamos un ﬁltro de spam para su correo electrónico usando
+técnicas de programación tradicionales:
+1. Primero se analizan las propiedades del spam. Aquí nos daremos cuenta que
+algunas palabras o frases (como "lotería", "tarjeta de crédito", "gratis" y "viagra")
+tienden a aparecer mucho en el asunto de los correos spam. Luego se analizan
+otros patrones en el nombre del remitente, el texto del correo electrónico y así
+sucesivamente.
+2. Se diseña un algoritmo o programa que detecte cada uno de los patrones del
+paso anterior. El programa clasiﬁcará los correos electrónicos como spam cuando
+se detectan varios de estos patrones.
+3. Se prueba el programa, y se repiten los pasos 1 y 2 hasta que sea lo
+suﬁcientemente bueno.
+
+Un Ejemplo Concreto
+
+Como el problema es no trivial, uno terminaría programando una lista muy grande
+de reglas que serán muy difíciles de mantener.
+
+Un Ejemplo Concreto
+•
+
+•
+
+Por otro lado, un ﬁltro de spam basado en técnicas de ML aprende
+automáticamente qué palabras y frases son buenas para predecir spam en un
+correo.
+Esto se hace detectando patrones de palabras que ocurren más
+frecuentemente en ejemplos de correos etiquetados por los usuarios como
+spam en comparación con ejemplos de correos etiquetados como normales.
+
+El programa basado en ML es mucho más simple, fácil de mantener y probablemente
+cometa menos errores.
+
+Un Ejemplo Concreto
+• Supongamos ahora que los spammers se dan cuenta que todos sus
+correos electrónicos que contienen la palabra "lotería" están siendo
+bloqueados.
+• Éstos podrían reemplazar la palabra “lotería” por “premio” es sus
+nuevos spam.
+• Un ﬁltro de spam basado técnicas de programación tradicionales
+necesitaría ser actualizado para darse cuenta del cambio.
+• Pero si los spammers siguen reﬁnando constantemente sus correos,
+tendríamos que seguir escribiendo nuevas reglas para siempre.
+• En cambio, un ﬁltro de spam basado en técnicas de Machine Learning
+puede seguir aprendiendo sobre las nuevas etiquetas de los usuarios de
+correo y adaptarse automáticamente a que la palabra "premio" se usa
+en el spam.
+
+Un Ejemplo Concreto
+
+ML permite adaptar el programa al cambio.
+
+¿Cuándo Aplicar ML?
+• ML es muy útil para problemas que son demasiado complejos
+para ser resueltos algorítmicamente.
+• Ejemplo: reconocimiento de voz, procesar texto, procesar
+imágenes.
+• Consideremos el problema de reconocimiento de voz.
+
+• Supongamos que queremos escribir un programa capaz de
+distinguir las palabras "one" y "two" en inglés.
+
+¿Cuándo Aplicar ML?
+• Sabemos que la palabra "two" comienza con un sonido de tono
+alto ("T").
+• Entonces nuestro algoritmo podría medir la intensidad del sonido
+para distinguir entre “one” y“two”.
+• Obviamente, esta técnica no escalaría a miles de palabras
+habladas por millones de personas en ambientes ruidosos y en
+varios de idiomas.
+• La mejor solución (al menos hoy en día) para este tipo de
+problemas es escribir un algoritmo que aprenda a partir de los
+datos.
+• En este caso los datos serían muchas grabaciones de
+entrenamiento por cada palabra.
+
+¿Cuándo Aplicar ML?
+• Machine Learning puede ayudar a los humanos a aprender sobre
+problemas complejos.
+• Algunos algoritmos de ML como los árboles de decisión o los
+modelos lineales pueden ser inspeccionados para ver lo que
+han aprendido.
+• Otras técnicas como las redes neuronales son muy difíciles de
+interpretar.
+• Una vez que el ﬁltro de spam ha sido entrenado (con un método
+interpretable), éste nos puede revelar la lista de palabras y frases
+que mejor predicen el spam.
+• Esto nos puede indicar correlaciones insospechadas o nuevas
+tendencias que nos ayudarán a comprender mejor problema.
+
+¿Cuándo Aplicar ML?
+
+¿Cuándo Aplicar ML?
+• La aplicación de técnicas de ML para analizar grandes
+cantidades de datos puede ayudar a descubrir nuevos
+patrones o conocimiento sobre éstos.
+• A este proceso se le llama minería de datos.
+• Advertencia: si ya hicieron un curso de minería de datos
+se van a repetir el plato con varios cosas.
+• Tómenlo como una oportunidad para profundizar sus
+conocimientos.
+
+¿Cuándo Aplicar ML?
+En resumen, ML es útil para:
+• Problemas en los que las soluciones existentes requieren mucho
+ajuste manual o largas listas de reglas: un algoritmo de ML
+puede simpliﬁcar el código y funcionar mejor.
+• Problemas complejos para los que no se puede encontrar una
+buena solución algorítmica.
+• Problemas cambiantes: un sistema de ML puede adaptarse y
+aprender de nuevos datos.
+• Hacer minería de datos: obtener conocimiento sobre problemas
+complejos y grandes cantidades de datos.
+
+Datos
+• Hasta ahora hemos dicho que ML consiste en aprender a partir
+de datos.
+• Pero, ¿qué son los datos?
+• Según la OECD: Los datos son características o
+información, generalmente numéricos, que se recogen
+mediante la observación.
+• Según el Australian Bureau of Statistics: los datos son un
+conjunto de valores de variables cualitativas o cuantitativas
+sobre una o más personas u objetos.
+
+Datos
+• Existen muchos tipos de datos
+complejos como las secuencias
+de ADN, el texto, las imágenes,
+el video, el audio, datos
+espacio-temporales, etc.
+• En este curso nos enfocaremos
+en datos tabulares.
+• En cursos más avanzados
+aprenderán a trabajar con datos
+más complejos: procesamiento
+de lenguaje natural,
+procesamiento de imágenes,
+etc.
+
+Fuente: Wikipedia
+
+Datos Tabulares
+Atributos
+
+● Un atributo es una propiedad o
+característica de un objeto
+○ Ejemplos: color de ojos,
+temperatura, etc.
+○ Un atributo también se conoce
+como: variable, campo,
+característica, dimensión.
+● Un objeto es una colección de
+atributos
+○ Un objeto también se puede
+llamar: registro, ejemplo,
+punto, instancia, observación.
+○ Todos los objetos de un
+dataset tienen la misma
+cantidad de atributos.
+
+Objetos
+
+● Un dataset tabular es una
+colección de objetos con sus
+atributos
+
+Tipos de Atributos
+Existen principalmente dos tipos de atributos: 1) numéricos o
+continuos y 2) discretos o categóricos.
+1. Atributos numéricos o continuos: Tiene números reales o
+enteros como valores de atributo. Ejemplos: temperatura,
+altura, peso, etc.
+a. Los atributos continuos se representan como variables de
+punto ﬂotante en el computador.
+2. Atributos discretos o categóricos: tiene un conjunto ﬁnito
+de valores o categorías. Ejemplos: sexo, estado civil, país,
+comuna, etc..
+a. Nota: los atributos binarios son un caso especial de
+atributos discretos con dos categorías.
+•
+•
+
+No todos los algoritmos de ML puedan trabajar con estos dos tipos de atributos.
+A veces tenemos que hacer transformaciones antes de pasar los datos a nuestro
+algoritmo.
+
+Tipos de Machine Learning
+Existen 3 enfoques principales para hacer ML: 1) Aprendizaje
+Supervisado, 2) Aprendizaje No-Supervisado y 3) Aprendizaje
+Reforzado.
+
+Fuente: https://www.guru99.com/images/tensorﬂow/082918_1102_WhatisMachi5.png
+
+Aprendizaje Supervisado
+En el aprendizaje supervisado, los datos de entrenamiento que
+se le pasan como entrada al algoritmo de aprendizaje incluyen
+las salidas esperadas, a las que llamamos etiquetas.
+
+•
+
+Un dataset de entrenamiento para una tarea de aprendizaje supervisado, en este
+caso la tarea es la clasiﬁcación de spam.
+
+Aprendizaje Supervisado
+Dos tareas principales en aprendizaje supervisado son la
+clasiﬁcación y la regresión.
+1. Clasiﬁcación: mapear los atributos de un objeto a una
+variable objetivo de carácter categórica llamada clase.
+2. Regresión: predecir una variable objetivo numérica a partir de
+los atributos de un ejemplo.
+El grueso de este curso se enfoca en este tipo de técnicas.
+La gran limitación para poder aplicarlas es que se requiere un
+dataset de entrenamiento donde los ejemplos tengan su etiqueta
+correspondiente.
+A veces tenemos que construir o anotar un dataset de
+entrenamiento para poder entrenar un modelo.
+
+Proceso de Clasiﬁcación
+
+Clasiﬁcación:
+Aplicación 1
+Análisis de sentimientos en Twitter.
+• Clasiﬁcar un tweet a las categorías: positivo, neutral,
+negativo.
+
+Clasiﬁcación:
+Aplicación 2
+
+∙ Detección de Fraude: predecir transacciones
+fraudulentas en el uso de tarjetas de crédito.
+
+∙ Objetos: las transacciones de tarjetas de
+crédito.
+
+∙ Atributos: dónde compra un cliente, que
+compra, frecuencia de compra, etc.
+
+∙ Etiquetar las transacciones pasadas como
+fraude o transacciones válidas.
+
+∙ Entrenar y utilizar este modelo para detectar
+fraudes observando transacciones en tarjetas
+de crédito en una cuenta.
+
+Clasiﬁcación:
+Aplicación 3
+Detección de cáncer de mama (maligno, benigno)
+Classificación
+Salida binaria (0
+or 1)
+
+1(Y)
+
+Maligno?
+0(N)
+
+Tamaño del
+tumor
+
+Proceso de Regresión
+
+Regresión: Aplicación 1
+Predicción de Precio de propiedades.
+
+Precio ($)
+in 1000’s
+
+Tamaño en
+metros2
+
+Aprendizaje Supervisado
+“las respuestas correctas” son
+dadas
+
+Regresión: predecir una
+variable continua (precio)
+
+Regresión: Aplicación 2
+Predicción de índices de felicidad en base al
+producto interno.
+
+Aprendizaje No-Supervisado
+En el aprendizaje no-supervisado los datos de entrenamiento no están
+etiquetados. El sistema trata de aprender una organización de los
+datos.
+1. Clustering: encontrar grupos de objetos o clusters donde los
+objetos de un mismo cluster sean similares entre sí y distintos de
+los objetos de otros clusters.
+2. Reducción de dimensionalidad: reducir la cantidad de atributos de
+mis objetos combinando atributos redundantes o muy
+correlacionados (ej: el kilometraje de un auto con los años que
+tiene).
+a. Reducir dimensionalidad se puede hacer antes de entrenar un
+algoritmo de ML para que funcione de forma más eﬁciente.
+La gran limitación de estas técnicas es que son difíciles de evaluar,
+pues a diferencia del aprendizaje supervisado, aquí no sabemos cual es
+la respuesta correcta.
+
+Aprendizaje No-Supervisado
+
+El resultado de un proceso de clustering donde se encontraron 4 clusters.
+Los clusters no eran conocidos antes del entrenamiento.
+
+Aprendizaje No-Supervisado
+
+● Las técnicas de reducción de dimensionalidad como PCA o t-sne permiten
+proyectar los objetos a dos dimensiones (o atributos) y así poder visualizarlos.
+● Esto permite encontrar clusters u otros patrones de manera visual.
+
+Clustering: Aplicación 1
+Segmentación de mercado
+Encontrar grupos de clientes con
+comportamientos de consumo
+parecido (ej: retail, Netﬂix,
+Amazon)
+
+∙ Representer los clientes como objetos
+donde los atributos son patrones de
+compra más información demográfica
+(sexo, edad).
+
+∙ Los clusters ayudan a enfocar la
+publicidad y las recomendaciones.
+
+Clustering: Aplicación 2
+Clustering de documentos
+
+∙ Para una colección grande de
+documentos (bibliotecas,
+reclamos, redes sociales)
+encontrar grupos de
+documentos u oraciones que
+con temática similar.
+
+∙ Se representan los
+documentos usando las
+palabras como atributos y se
+usa una medida de distancia.
+
+Aprendizaje Reforzado (reinforcement learning)
+• El aprendizaje reforzado (RL) es muy distinto a los otros dos enfoques
+(supervisado y no-supervisado).
+• Aquí se tiene un agente (ej: un robot) que evalúa su ambiente (ej: su
+campo visual) y en base a eso realiza una acción (ej: moverse a la
+izquierda).
+• El agente puede recibir recompensas o penalizaciones dependiendo si
+hizo algo bueno o malo (ej: es bueno subir una escalera, es malo caerse
+de un precipicio).
+• Luego debe aprender por sí mismo cuál es la mejor estrategia o policy
+para maximizar su recompensa (y minimizar sus penalizaciones) a lo
+largo del tiempo.
+• La policy aprendida deﬁne las acciones que el agente escogerá cuando
+se encuentra en una situación determinada.
+• No veremos RL en este curso.
+
+Aprendizaje Reforzado (reinforcement learning)
+
+Aprendizaje Reforzado Aplicaciones
+
+• Muchos robots implementan algoritmos de aprendizaje
+reforzado para aprender a caminar.
+• AlphaGo de DeepMind venció al campeón mundial Ke Jie en
+el juego de Go el año 2017.
+• El agente aprendió su policy ganadora analizando millones de
+juegos y jugando muchos juegos contra sí mismo.
+• Durante los juegos contra el campeón, AlphaGo sólo utilizó la
+policy que había aprendido.
+
+Aprendizaje Reforzado Aplicaciones
+
+Fuente: http://prod-upp-image-read.ft.com/4bb1cd86-0a48-11e7-ac5a-903b21361b43
+
+Kaggle
+• Kaggle: (https://www.kaggle.com/) es un sitio web que publica
+competencias de ML.
+• Algunas competencias tienen recompensas monetarias para los
+sistemas ganadores.
+
+Temario
+En este curso veremos los siguientes conceptos.
+1. Aprendizaje Supervisado
+a. Clasiﬁcación - Framework y Evaluación.
+b. Árboles de decisión
+c. KNN
+d. Naive Bayes
+e. Support Vector Machines
+f. Regresiones Lineales
+g. Redes Neuronales.
+h. Selección de Atributos.
+2. Aprendizaje No-Supervisado
+a. K-means
+b. Clustering Jerárquico
+c. DBSCAN
+d. PCA
+
+Repaso Matemático
+
+Álgebra Lineal
+En ML usamos las siguientes representaciones algebraicas para
+nuestros objetos y sus atributos: escalares, vectores y matrices.
+• Escalares: un escalar es simplemente un número como 7.56. El
+valor de un atributo numérico para un objeto se representa por
+un escalar.
+• Vectores: un vector es un arreglo ordenado de escalares
+x= [x1,x2,..,xn] donde xi es el i-ésimo elemento de x.
+a. En ML un objeto de n atributos numéricos puede ser
+representado por un vector de n dimensiones.
+b. El producto punto entre dos vectores a·b es la suma de la
+multiplicación de todos sus elementos:
+
+Álgebra Lineal
+Norma y distancia euclideana:
+• La norma euclideana de un vector ||v||2 es el largo del vector en
+un espacio euclideano (piensen en pitágoras).
+
+• Luego, la distancia euclideana nos permite calcular que tan lejos
+están dos vectores x e y.
+
+Álgebra Lineal
+
+Distancia Euclideana en R2. Fuente: Wikipedia
+
+Álgebra Lineal
+Matrices
+• Una matriz es un arreglo de dos dimensiones, entonces cada
+elemento se identiﬁca por dos índices en vez de uno.
+• Ejemplo: sea A una matriz de dos ﬁlas y dos columnas ( A ∈ R2*2)
+
+• Un dataset de n objetos y m atributos numéricos se puede
+representar por una matriz de n*m.
+• El i-ésimo ejemplo de un dataset se representa como el vector de la
+i-ésima ﬁla de su matriz correspondiente.
+• Un vector puede ser visto como una matriz de una sola columna.
+
+Álgebra Lineal
+Matrices
+• La transpuesta de una matriz AT, corresponde a una copia de la
+matriz donde se intercambian las ﬁlas por las columnas.
+
+• Podemos sumar dos matrices, siempre y cuando éstas tengan las
+mismas dimensiones, sumando sus elementos correspondientes: C
+= A + B donde Ci,j= Ai,j+Bi,j. Ejemplo:
+
+Álgebra Lineal
+Matrices
+• También podemos sumar un escalar a una matriz o multiplicar una
+matriz por un escalar, simplemente realizando esa operación en
+cada elemento de una matriz: D = a*B +c donde Di,j = a*Bi,j+c
+• Podemos multiplicar dos matrices A y B (C=A*B) siempre y cuando
+el número de ﬁlas de A sea igual al número de columnas de B. El
+valor de Cij es igual al producto punto de la i-ésima ﬁla de A por la jésima columna de B ( Ai: · B:j).
+
+Fuente:
+https://www.javabr
+ahman.com/wp-co
+ntent/uploads/Matri
+xMultiplicationEg.p
+ng
+
+Matrices
+
+Álgebra Lineal
+
+• Una matriz cuadrada es una matriz que tiene el mismo número de
+ﬁlas y columnas.
+• Una matriz cuadrada muy particular es la matriz identidad I que
+tiene 1s en la diagonal y ceros en todas las otras celdas.
+
+• La inversa de una matriz A se denota como A-1 y cumple con la
+propiedad que A* A-1=I
+
+Optimización
+
+La optimización es una
+metodología para encontrar el valor
+máximo o mínimo de una función
+matemática.
+Muchos métodos de ML se
+plantean como problemas de
+optimización.
+• Supongamos que tenemos una
+función y = f (x), donde tanto x
+como y son números reales.
+• La derivada de esta función se
+escribe así f’(x) o así:
+• La derivada f’(x) nos entrega el
+valor de la pendiente de f(x) en
+el punto x.
+
+Optimización
+La derivada de una función es muy útil para encontrar valores
+mínimos o máximos.
+• Los puntos en que la derivada de una función vale cero (f’(x)=0)
+se conocen como puntos críticos: máximo, mínimo o punto de
+inﬂexión (o punto silla).
+
+Optimización
+• Para distinguir entre estos tres tipos de puntos críticos es necesario
+analizar la segunda derivada de la función f’’(x) (la derivada de la
+derivada) que nos da información sobre la curvatura de la función.
+
+• Otra gran diﬁcultad al optimizar funciones es que a veces los puntos
+cŕiticos pueden corresponder a mínimos o máximos locales.
+
+Optimización
+•
+
+¿Cómo optimizamos funciones con múltiples inputs?
+
+•
+
+La derivada parcial
+cambio en xi.
+
+•
+
+El gradiente
+
+•
+
+Para encontrar puntos críticos en funciones de varios inputs tenemos que encontrar
+los valores de x donde el gradiente vale cero.
+Para distinguir entre máximos, mínimos y puntos silla tenemos que recurrir al
+Hessiano, que es una matriz con todas las segundas derivadas.
+
+•
+
+mide cómo cambia f sólo cuando hacemos un
+
+es un vector con todas las derivadas parciales de una función.
+
+Optimización
+•
+
+¿Qué pasa cuando le agregamos restricciones al problema?
+
+•
+
+Existen dos tipos de restricciones: 1) restricciones de igualdad y 2) restricciones
+de desigualdad.
+
+Restricciones de igualdad
+
+•
+
+Supongamos que queremos encontrar el mínimo de f(x1,x2,...,xd) sujeto a las
+siguientes p restricciones de igualdad:
+
+•
+•
+
+Cada restricción de igualdad es una función del tipo g(x) = 2*x1 + 3*x2 -3 = 0
+Esto se puede resolver usando un método llamado multiplicadores de
+Lagrange.
+
+Optimización
+Multiplicadores de Langrage
+
+1.
+
+Deﬁnimos el Lagrangiano
+donde λi es una variable adicional llamada multiplicador de Lagrange.
+
+2.
+
+Derivamos el Langrangiano respecto a x y λ, igualamos a cero y despejamos el
+sistema de ecuaciones.
+
+La solución óptima del Lagrangiano corresponde al óptimo de f(x) que satisface
+las restricciones de igualdad.
+
+Optimización
+Restricciones de desigualdad:
+•
+•
+
+¿Qué hacemos cuando tenemos restricciones de desigualdad del tipo hi (x) ≤ 0?
+Por ejemplo x1+x2 ≤ 0.
+Se formula entonces un problema optimización con restricciones como
+minimizar f(x1,x2,...,xd) sujeto a las siguientes q restricciones de desigualdad:
+
+•
+
+El método para resolver este problema es bastante similar al método de
+Lagrange descrito anteriormente.
+
+•
+
+Sin embargo, las restricciones de la desigualdad plantean condiciones
+adicionales al problema de optimización.
+
+Optimización
+•
+
+El problema de optimización con restricciones de desigualdad se formula con el
+siguiente Lagrangiano:
+
+•
+
+Una solución óptima de este problema debe satisfacer las condiciones
+Karush-Kuhn-Tucker (KKT):
+
+Optimización
+• Notemos ahora que los multiplicadores de Lagrange no pueden ser
+negativos.
+• Las restricciones KKT nos obligan veriﬁcar que un óptimo satisfaga todas
+las condiciones.
+• Eso puede ser muy difícil de lograr analíticamente, especialmente si se
+tienen muchas restricciones.
+• Por lo general recurrimos a métodos numéricos como la programación
+lineal y la programación cuadrática.
+
+Bibliografía
+
+1. Aurélien Géron. Hands-on Machine Learning with Scikit-Learn,
+Keras, and TensorFlow: Concepts, Tools, and Techniques to Build
+Intelligent Systems.
+2. Pang-Ning Tan, Michigan, Michael Steinbach, Anuj Karpatne,
+Vipin Kumar. Introduction to Data Mining (Second Edition).
+3. Goodfellow, Ian, Yoshua Bengio, and Aaron Courville. Deep
+learning. MIT press, 2016.
+
+

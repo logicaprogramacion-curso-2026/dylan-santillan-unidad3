@@ -1,0 +1,99 @@
+{
+    "1": {
+        "pregunta": "¿En qué año se dio la Revolución Francesa y qué sistema cayó?",
+        "criterios": [
+            [
+                "1789"
+            ],
+            [
+                "monarquia",
+                "rey",
+                "corona",
+                "luis"
+            ],
+            [
+                "pueblo",
+                "francia",
+                "paris"
+            ],
+            [
+                "revolucion",
+                "levantamiento",
+                "rebelion",
+                "bastilla"
+            ],
+            [
+                "libertad",
+                "igualdad",
+                "derechos",
+                "republica"
+            ]
+        ]
+    },
+    "2": {
+        "pregunta": "¿Cómo se repite un bloque de código en Python de forma controlada?",
+        "criterios": [
+            [
+                "bucle",
+                "ciclo",
+                "repeticion",
+                "repetir"
+            ],
+            [
+                "for",
+                "while"
+            ],
+            [
+                "control",
+                "condicion",
+                "limite"
+            ],
+            [
+                "iteracion",
+                "iterar",
+                "recorrer",
+                "elemento"
+            ],
+            [
+                "rango",
+                "range",
+                "lista",
+                "secuencia"
+            ]
+        ]
+    },
+    "3": {
+        "pregunta": "¿Qué estructura de datos utiliza el principio LIFO (Last In, First Out) para almacenar y recuperar sus elementos?",
+        "criterios": [
+            [
+                "pila",
+                "stack",
+                "lifo"
+            ],
+            [
+                "ultimo",
+                "primero",
+                "orden",
+                "insercion"
+            ],
+            [
+                "push",
+                "pop",
+                "apilar",
+                "desapilar"
+            ],
+            [
+                "elemento",
+                "dato",
+                "tope",
+                "cima"
+            ],
+            [
+                "memoria",
+                "estructura",
+                "almacenamiento",
+                "recuperacion"
+            ]
+        ]
+    }
+}

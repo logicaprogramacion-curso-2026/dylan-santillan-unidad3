@@ -1,0 +1,2013 @@
+Informática
+
+Machine Learning
+y Deep Learning
+Usando Python, Scikit y Keras
+
+Jesús Bobadilla
+
+Conocimiento a su alcance
+
+Bogotá - México, D.F.
+
+Bobadilla, Jesús
+Machine Learning y Deep Learning/ Jesús Bobadilla --. Bogotá: Ediciones de la U,
+2020
+294 p. ; 24 cm
+ISBN 978-958-792-145-8
+e-ISBN 978-958-792-146-5
+1. Informática 2. Programación 3. Clustering 4. Redes Tít.
+621.39 ed.
+
+Edición original publicada por © Editorial Ra-ma (España)
+Edición autorizada a Ediciones de la U para Colombia
+Área: Informática
+Primera edición: Bogotá, Colombia, mayo de 2020
+ISBN. 978-958-792-145-8
+© Jesús Bobadilla
+© Ra-ma Editorial. Calle Jarama, 3-A (Polígono Industrial Igarsa) 28860 Paracuellos de Jarama
+www.ra-ma.es y www.ra-ma.com / E-mail: editorial @ra-ma.com
+Madrid, España
+© Ediciones de la U - Carrera 27 #27-43 - Tel. (+57-1) 3203510 -3203499
+www.edicionesdelau.com - E-mail: editor@edicionesdelau.com
+Bogotá, Colombia
+
+Ediciones de la U es una empresa editorial que, con una visión moderna y estratégica de
+las tecnologías, desarrolla, promueve, distribuye y comercializa contenidos, herramientas
+de formación, libros técnicos y profesionales, e-books, e-learning o aprendizaje en línea,
+realizados por autores con amplia experiencia en las diferentes áreas profesionales e
+investigativas, para brindar a nuestros usuarios soluciones útiles y prácticas que contribuyan
+al dominio de sus campos de trabajo y a su mejor desempeño en un mundo global,
+cambiante y cada vez más competitivo.
+Coordinación editorial: Adriana Gutiérrez M.
+Carátula: Ediciones de la U
+Impresión: DGP Editores SAS
+Calle 63 #70D-34, Pbx (57+1) 3203510
+Impreso y hecho en Colombia
+Printed and made in Colombia
+No está permitida la reproducción total o parcial de este libro, ni su tratamiento informático, ni la
+transmisión de ninguna forma o por cualquier medio, ya sea electrónico, mecánico, por fotocopia,
+por registro y otros medios, sin el permiso previo y por escrito de los titulares del Copyright.
+
+A mis compañeros de trabajo, que me han apoyado
+en docencia y en investigación: a Santiago Alonso,
+por sus correcciones técnicas a esta publicación;
+a Fernando Ortega por su continuo apoyo en las tareas de investigación;
+a Abraham Gutiérrez por su ayuda en todos los ámbitos
+y por su envidiable sentido del humor;
+por último, a Antonio Hernando por compartir con nosotros
+sus amplios conocimientos matemáticos
+en el área de la Inteligencia Artificial
+Jesús Bobadilla
+
+ÍNDICE
+ACERCA DEL AUTOR...................................................................................................... 11
+CAPÍTULO 1. INTRODUCCIÓN.....................................................................................13
+1.1 TIPOS DE MACHINE LEARNING ................................................................... 14
+1.2 TRATANDO CON DATOS..................................................................................20
+1.3 MEDICIÓN DE LA CALIDAD........................................................................... 23
+1.4 MEJORA DEL MODELO.................................................................................... 27
+CAPÍTULO 2. DATASETS. ............................................................................................... 29
+2.1 DATASET DE DIABETES (REGRESIÓN)........................................................30
+2.2 DATASET BOSTON (REGRESIÓN)..................................................................32
+2.3 DATASET DE LIRIOS (CLASIFICACIÓN). .....................................................35
+2.4 DATASET DE CÁNCER DE PECHO (CLASIFICACIÓN)...............................36
+2.5 DATASET DE VINOS (CLASIFICACIÓN). ...................................................... 38
+2.6 DATASET GENERADO MAKE_BLOBS (CLASIFICACIÓN)........................39
+2.7 DATASET GENERADO MAKE_REGRESSION (REGRESSION).................. 40
+2.8 DATASET GENERADO MAKE_MOONS (CLASIFICACIÓN Y
+CLUSTERING).................................................................................................... 41
+2.9 DATASET MNIST (CLASIFICACIÓN). ............................................................42
+2.10 CARAS DE OLIVETTI (CLASIFICACIÓN).....................................................44
+2.10.1 Caras etiquetadas “in the wild”: LFW (clasificación).............................45
+CAPÍTULO 3. REGRESIÓN............................................................................................. 47
+3.1 MODELOS DE REGRESIÓN............................................................................. 48
+3.1.1 Regresión lineal (desde cero)..................................................................48
+3.1.2 Regresión lineal usando SciKit...............................................................54
+3.1.3 Regresión Polinómica (desde cero). .......................................................58
+3.1.4 Regresión polinómial desde cero (enfoque de gradiente descendente). . 61
+
+8 MACHINE LEARNING Y DEEP LEARNING
+
+© RA-MA
+
+3.1.5
+
+3.2
+
+Regresión de los K vecinos más cercanos (K-Nearest Neighbors
+o KNN) desde cero. ................................................................................ 64
+3.1.6 Regresión por K vecinos más cercanos (KNN) usando librerías
+SciKit. .....................................................................................................66
+3.1.7 Regresión Kernel Gaussiana (Gaussian Kernel Regression)
+desde cero. .............................................................................................. 67
+3.1.8 Regresión Kernel Gaussiana usando librerías SciKit.............................. 70
+3.1.9 Regresión Ridge (forma cerrada)............................................................71
+3.1.10 Ridge Regression usando librerías de SciKit..........................................73
+3.1.11 Regresión Lasso usando librerías de SciKit............................................75
+3.1.12 Regresión Elastic Net usando librerías de SciKit. ..................................76
+ANÁLISIS DE CALIDAD EN LA REGRESIÓN LINEAL................................78
+
+CAPÍTULO 4. CLASIFICACIÓN..................................................................................... 87
+4.1 MODELOS DE CLASIFICACIÓN.....................................................................88
+4.1.1 Regresión Logística (Logistic Regression) desde cero...........................88
+4.1.2 Regresión Logística (clasificación) usando librerías SciKit...................93
+4.1.3 Clasificación K vecinos más cercanos (K Nearest Neighbours).............98
+4.1.4 Support Vector Machines (SVM) using SciKit libraries.......................101
+4.1.5 Árboles de Decisión usando librerías de SciKit. .................................. 112
+4.1.6 Random Forest usando librerías de SciKit. .......................................... 118
+4.2 ANÁLISIS DE CALIDAD DE LOS MÉTODOS DE CLASIFICACIÓN........ 119
+CAPÍTULO 5. CLUSTERING.........................................................................................127
+5.1 ALGORITMOS DE CLUSTERING.................................................................. 127
+5.1.1 K-Means (K-medias) desde cero. .........................................................128
+5.1.2 K means usando las librerías de SciKit.................................................130
+5.1.3 DBSCAN basado en densidad, desde cero. ..........................................132
+5.1.4 DBSCAN basado en densidad, usando SCiKit.....................................135
+5.1.5 Clustering Acumulativo (Agglomerative clustering), usando SciKit. ..136
+5.2 MEDIDA DE CALIDAD DEL CLUSTERING. ...............................................137
+CAPÍTULO 6. REDUCCIÓN DE DIMENSIONES. .....................................................141
+6.1 FACTORIZACIÓN MATRICIAL USANDO SCIKIT. ..................................... 142
+6.2 ANÁLISIS DE COMPONENTES PRINCIPALES (PCA),
+USANDO SCIKIT..............................................................................................145
+CAPÍTULO 7. REDES NEURONALES......................................................................... 157
+7.1 LA NEURONA BIOLÓGICA............................................................................ 157
+7.2 LA NEURONA ARTIFICIAL............................................................................159
+7.3 APRENDIZAJE HEBBIANO............................................................................ 161
+7.4 EL PERCEPTRÓN.............................................................................................163
+7.5 REDES MULTICAPA Y EL ALGORITMO BACK PROPAGATION. ............ 164
+7.6 DEMOSTRACIÓN DEL ALGORITMO BACK PROPAGATION...................169
+
+© RA-MA
+
+ÍNDICE 9
+
+CAPÍTULO 8. CLASIFICACIÓN USANDO REDES NEURONALES...................... 173
+8.1 CLASIFICACIÓN DEL DATASET MNIST......................................................173
+8.2 CLASIFICACIÓN DEL DATASET FASHION MNIST. .................................. 182
+8.3 CLASIFICACIÓN DEL DATASET CIFAR 100. .............................................. 188
+CAPÍTULO 9. REDES CONVOLUCIONALES.
+CONCEPTOS BÁSICOS.................................................................................................. 195
+CAPÍTULO 10. CLASIFICACIÓN USANDO REDES CONVOLUCIONALES
+EN DATASETS SENCILLOS. .........................................................................................205
+10.1 CLASIFICACIÓN DEL DATASET MNIST. .................................................... 205
+10.2 CLASIFICACIÓN DEL DATASET CIFAR 100. .............................................. 211
+10.3 CLASIFICACIÓN DEL DATASET FASHION MNIST. .................................. 216
+CAPÍTULO 11. GENERADORES DE DATOS. ............................................................ 223
+11.1 CLASIFICACIÓN USANDO EL DATASET: DOGS AND CATS................... 223
+11.2 DATA GENERATORS....................................................................................... 229
+CAPÍTULO 12. ENRIQUECIMIENTO DE DATOS (DATA AUGMENTATION)....233
+12.1 ENRIQUECIMIENTO DE DATOS. ENFOQUE I............................................ 233
+12.2 ENRIQUECIMIENTO DE DATOS. ENFOQUE II...........................................241
+CAPÍTULO 13. VISUALIZACIÓN DE LAS CAPAS OCULTAS. .............................. 245
+13.1 MAPAS DE ACTIVACIÓN EN EL DATASET ‘DOGS AND CATS’. .............245
+13.2 MAPAS DE ACTIVACIÓN EN EL DATASET MNIST. .................................. 251
+CAPÍTULO 14. APRENDIZAJE POR TRANSFERENCIA (TRANSFER
+LEARNING). ..................................................................................................................... 255
+14.1 REUTILIZACIÓN DEL MODELO VGG16. ....................................................255
+14.2 REFINADO DEL MODELO VGG16................................................................ 261
+14.3 TRANSFER LEARNING EN DOS ETAPAS. .................................................. 263
+CAPÍTULO 15. AUTOENCODERS. .............................................................................. 267
+15.1 AUTOENCODER DE UNA SOLA CAPA........................................................267
+15.2 AUTOENCODER EN VARIAS CAPAS...........................................................273
+15.3 AUTOENCODERS CONVOLUCIONALES.................................................... 276
+15.4 VISUALIZACIÓN DEL ESPACIO MULTIDIMENSIONAL. .........................279
+CAPÍTULO 16. APRENDIZAJE GENERATIVO.........................................................285
+MATERIAL ADICIONAL................................................................................................ 293
+
+ACERCA DEL AUTOR
+JESÚS BOBADILLA SANCHO
+Doctor y Licenciado en Informática por la Universidad
+Politécnica de Madrid. Catedrático de Escuela en la Escuela
+Técnica Superior de Ingeniería de Sistemas Informáticos
+(ETSISI) de la Universidad Politécnica de Madrid (UPM).
+Ha impartido docencia en los campos de Arquitectura de
+Computadores,
+Sistemas
+Operativos,
+Telemática,
+Reconocimiento de Voz, Inteligencia Artificial y
+Programación Orientada a Objetos. Ha sido autor de diez
+libros publicados en el ámbito de la Informática. Su trayectoria de investigación
+incluye estancias en la Universidad de Berkeley y en la Universidad de Sheffield. Es
+autor de numerosas publicaciones técnicas en revistas internacionales de alto
+impacto, y que suman una gran cantidad de citas. Una de estas publicaciones se
+encuentra entre el 1% de las más relevantes a nivel mundial en el área de Informática
+(fuente: Web of Science). Su investigación principal se centra en el Filtrado
+Colaborativo que fundamenta los modernos Sistemas de Recomendación (Amazon,
+Netflix, Spotify, etc.): un campo importante en el área del Aprendizaje Automático.
+
+1
+INTRODUCCIÓN
+En este capítulo se explican diversos conceptos importantes de machine
+learning (aprendizaje automático). Estos conceptos nos ayudarán a comprender los
+siguientes apartados, donde se verán modelos de regresión y clasificación, así como
+las técnicas de clustering (agrupamiento) y de reducción de dimensiones. Mientras
+que los siguientes capítulos incluirán algunos formalismos matemáticos y desarrollos
+en Python, aquí se explicarán los conceptos de la manera más simple posible. En
+resumen, este capítulo pretende ofrecer un marco que facilite la comprensión de los
+principales conceptos asociados a machine learning.
+Machine learning es la ciencia que hace que los ordenadores “aprendan” a
+partir de los datos. En vez de programar, paso a paso, cada solución específica para
+cada necesidad planteada, tal y como se realiza en el enfoque de la programación
+convencional, el área de machine learning está dedicada al desarrollo de algoritmos
+genéricos que pueden extraer patrones de diferentes tipos de datos. De esta manera, un
+programa de machine learning destinado, por ejemplo, a clasificar números escritos a
+mano, no va a diferir sustancialmente de un programa destinado a la clasificación de
+las imágenes de señales de tráfico: ambos se basarán en la existencia de algún tipo de
+algoritmo de machine learning que clasifique datos etiquetados. En este punto se podría
+pensar que el proceso completo de machine learning es fácilmente automatizable,
+cuando realmente no es el caso: un ingeniero de datos (data scientist) debe llevar a
+cabo numerosas tareas específicas tales como la identificación de la fuente de datos,
+su limpieza, la eliminación de información que esté fuertemente correlacionada, la
+búsqueda de información sesgada, la realización de las normalizaciones necesarias,
+la identificación de los tipos de soluciones de machine learning cuya aplicación
+resulte apropiada, la elección del algoritmo más adecuado, el ajuste fino de los hiperparámetros del método elegido, el análisis de los resultados, la identificación de
+comportamientos incorrectos, la vuelta a procesos anteriores con el fin de cambiar lo
+que resulte necesario para mejorar los resultados, etc.
+
+14 MACHINE LEARNING Y DEEP LEARNING
+
+© RA-MA
+
+1.1 TIPOS DE MACHINE LEARNING
+Con el objetivo de poder abordar cualquier tarea específica, el ingeniero de
+datos debe conocer algunos conceptos importantes de machine learning, así como
+las diferentes opciones existentes, las medidas de calidad más utilizadas, etc. Los
+conocimientos básicos incluyen la identificación de las tareas, empezando por la
+clasificación de los problemas de machine learning en alguno de los siguientes tipos:
+zz Aprendizaje supervisado
+●● regresión
+●● clasificación
+zz Aprendizaje no supervisado
+●● clustering (agrupamiento)
+●● reducción de dimensiones
+zz Aprendizaje semi-supervisado
+zz Aprendizaje por refuerzo
+El aprendizaje supervisado en machine learning se aplica cuando cada dato,
+o conjunto de datos de entrada (muestra) tiene asociada una etiqueta. Pongamos
+un ejemplo: un conjunto de imágenes en las que cada una de ellas contiene algún
+tipo de metadato (habitualmente una etiqueta o conjunto de etiquetas): ((pict0001.
+bmp, “perro”), (pict0002.bmp, “pájaro”), (pct0003.bmp, “gato”). Partiendo de este
+conjunto de datos se pueden usar diferentes algoritmos de clasificación de machine
+learning con el objetivo de “entrenar” un modelo y poder, al acabar el entrenamiento,
+predecir la etiqueta correspondiente a una nueva imagen (no incluida en el conjunto
+de datos original); éste es un problema de clasificación. De igual manera, podemos
+hacer uso de un conjunto de datos que contenga muestras con valores numéricos
+asociados: por ejemplo, un conjunto de muestras de terremotos cuyos datos contienen
+la intensidad de la vibración previa tomada de sensores y cuyo objetivo es determinar
+la intensidad oficial del terremoto ([7.1, 6.3, ...], 5.4), ([3.2, 9.7, ...], 7.1). Este es un
+problema de regresión y su utilidad podría ser la de generar información acerca de
+la intensidad predicha por el modelo de regresión cuando se le aporta una nueva
+muestra (valores sísmicos recogidos en tiempo real).
+Los siguientes números escritos a mano pueden ayudar a entender las
+posibilidades de los algoritmos de clasificación. Como veremos más tarde, hemos
+conseguido reconocerlos todos con la excepción del ‘cinco’ situado en medio de los
+dos ‘nueves’.
+
+© RA-MA
+
+Capítulo 1. INTRODUCCIÓN 15
+
+En el siguiente gráfico tridimensional podemos ver los datos correspondientes
+a un problema de regresión. El objetivo es predecir el precio de una propiedad
+inmobiliaria en Boston atendiendo a diferentes tipos de información. En el gráfico
+solo se muestra el “número de habitaciones” y la “distancia a la autopista” como tipos
+de información. El término utilizado en machine learning para los “tipos de datos
+de información” es “característica” (“feature”). Así, en el ejemplo, tanto “número de
+habitaciones” como “distancia a la autopista” son características. Los ejes horizontales
+x e y representan, cada uno, una característica. El eje vertical z muestra los valores
+objetivos para cada precio de venta de las propiedades inmobiliarias de Boston.
+En este caso, los valores objetivos no son etiquetas o nombres de categorías: son
+valores numéricos. Aquí afrontamos un problema de regresión, donde al suministrar
+un nuevo dato (habitaciones, distancia) lo que se obtiene es la predicción esperada:
+el precio de la propiedad inmobiliaria.
+
+De los párrafos anteriores podemos entresacar un concepto importante: el
+modelo de machine learning. Este es un elemento clave, ya que la mayoría de los
+algoritmos de machine learning crean un modelo a partir de los datos. El modelo
+puede ser tan simple como la solución lineal que mejor ajuste las muestras de
+origen a los valores objetivo, o mucho más complejo, como la búsqueda de factores
+ocultos que representen la información más importante que esta contenida en los
+datos. La siguiente figura muestra una regresión lineal (gráfico de la izquierda) y una
+clasificación lineal (gráfico de la derecha). En el primer caso, los precios en Boston
+se obtienen usando un modelo de regresión simple que solamente usa la información
+más representativa de estos datos: el número de habitaciones. Para predecir el precio
+de una nueva propiedad inmobiliaria simplemente debemos conocer su número de
+habitaciones, y el modelo predecirá, linealmente, su valor. El gráfico de la derecha
+muestra dos clases generadas (clase 0 y clase 1), cada una de las cuales está definida
+por dos características (característica 1 y característica 2). El modelo de clasificación
+lineal ha resultado ser capaz de separar ambas clases. Para conocer la clase a la que
+
+16 MACHINE LEARNING Y DEEP LEARNING
+
+© RA-MA
+
+pertenece una nueva muestra usamos el modelo lineal: indica si la muestra está a un
+lado o a otro de la recta que separa ambas clases. Aquí, el algoritmo de clasificación
+ha deducido (“entrenado”) un modelo a partir de los datos: la recta de color negro es
+el modelo aprendido.
+
+La importancia del aprendizaje supervisado en machine learning está
+aumentando muy rápidamente debido a:
+1. Las nuevas oportunidades brindadas por el Internet de las Cosas (Internet
+of Things o IoT), de donde se pueden obtener cantidades masivas de
+datos etiquetados de manera automática.
+2. Las redes sociales, en cuyos servidores se almacena una enorme cantidad
+de interacciones y cuyo número de aplicaciones, como las destinadas al
+mercado digital, no para de crecer.
+3. Los nuevos algoritmos, destinados a resolver diferentes tipos de
+aprendizaje supervisado, que hacen posible obtener resultados comerciales
+significativos: conducción automática, reconocimiento facial, sistemas
+de recomendación, etc.
+4. Las crecientes capacidades de procesamiento, particularmente las
+supercomputadoras paralelas y las unidades de procesamiento gráfico
+(GPUs).
+5. La “democratización” del machine learning, por la que todos podemos
+trabajar con recursos altamente tecnológicos como Tensorflow o granjas
+de GPUs, así como con potentes APIs, entornos, IDEs, etc., tales como
+las tecnologías proporcionadas por Scikit, Keras y Jupiter.
+
+© RA-MA
+
+Capítulo 1. INTRODUCCIÓN 17
+
+El aprendizaje no supervisado utiliza información no etiquetada. La aplicación
+más conocida del aprendizaje no supervisado es la de clustering (agrupamiento).
+El objetivo de la técnica de clustering es agrupar muestras: p. ej.: para obtener los
+diferentes tipos de clientes en un servicio online, para agrupar productos en un
+comercio electrónico, para identificar comportamientos en la conducción, etc. El
+siguiente gráfico muestra un esquema típico de clustering. Contiene tres clusters
+(grupos o clases) correspondientes a tres diferentes tipos de lirios. Podemos observar
+que es fácil diferenciar el tipo “setosa” de los otros dos, mientras que se podrían
+presentar dificultades para precisar los grupos de los tipos versicolor y virginica.
+
+Un modelo de clustering podría proporcionar varios hiperplanos lineales de
+separación (en el caso anterior: dos rectas), mientras que un modelo de clustering
+diferente podría proporcionar algunos elementos virtuales representativos: centroides
+cuya “área de influencia” determina a qué cluster pertenece cada una de las muestras.
+Hay más tipos de modelos de clustering, pero los que se han indicado pueden ayudar
+a entender el concepto de modelo y el hecho de que diferentes algoritmos de machine
+learning pueden estar basados en diferentes tipos de modelos. El siguiente gráfico
+muestra un ejemplo de la evolución de los centroides (estrellas rojas) de cara a ajustar
+los cuatro clusters existentes en los datos de ejemplo.
+
+18 MACHINE LEARNING Y DEEP LEARNING
+
+© RA-MA
+
+La reducción de dimensionalidad se usa habitualmente como una etapa de
+pre-procesamiento en algún otro tipo de labores de machine learning, principalmente
+en clasificación o regresión. Muchos escenarios reales aportan datos dispersos o
+datos que en su mayoría proporcionan muy poca información. Un ejemplo de datos
+dispersos es la información que se maneja en un sistema de recomendación: los
+usuarios solamente compran, hacen clic, consumen o votan una proporción muy
+pequeña de los productos, canciones, películas, etc., disponibles. Si colocamos esta
+información en forma de matriz (usuarios x ítems), la matriz contendrá una gran
+proporción de elementos sin información: normalmente más del 97% de los datos
+en sistemas de recomendación son así. Siendo capaces de comprimir los datos, tal y
+como se hace con las imágenes o con los ficheros de texto, los datos comprimidos
+contendrían casi toda la información, pero de una manera “condensada”. Trabajar
+con esta información comprimida es mucho más eficiente y produce resultados más
+precisos. Lo que hacemos aquí es convertir datos multidimensionales (una dimensión
+para cada una de las características: para cada ítem), que son altamente dispersos, en
+información multidimensional mucho más concentrada y densa. La siguiente figura
+muestra una imagen fuente y varias versiones de la imagen obtenida a base de aplicar
+diferentes niveles de reducción de dimensionalidad.
+
+El aprendizaje semisupervisado trata con conjuntos de datos en los que
+una porción de los datos está etiquetada y el resto no. Normalmente, la cantidad
+de muestras etiquetadas es mucho más pequeña que las no etiquetadas. La mayoría
+de los algoritmos de aprendizaje semisupervisado son una mezcla de métodos
+supervisados y no supervisados. El aprendizaje por refuerzo es un área innovadora y
+con un gran futuro, ya que está inspirada en mecanismos naturales. En este caso, el
+algoritmo de aprendizaje recibe información de un entorno real o simulado. Cuando
+el sistema realiza una acción es recompensado o penalizado, tal y como pasa con
+los seres vivos. Tales algoritmos de aprendizaje se denominan agentes y pueden
+aprender siguiendo los principios de la evolución natural. Los agentes aprenden
+estrategias, denominadas “políticas”, que maximizan las recompensas y minimizan
+las penalizaciones. La mayoría de los sistemas de inteligencia artificial actuales,
+que están especializados en juegos, están basados en el enfoque de aprendizaje por
+refuerzo.
+
+© RA-MA
+
+Capítulo 1. INTRODUCCIÓN 19
+
+Los métodos de machine learning también pueden ser clasificados como:
+zz Basado en modelos o basados en memoria.
+zz Aprendizaje incremental o aprendizaje por lotes.
+zz Aprendizaje superficial (shallow learning) o aprendizaje profundo (deep
+learning).
+Los algoritmos basados en memoria (basados en instancias) toman las
+muestras de datos como entrada y procesan directamente la predicción o la
+clasificación. Si se necesita una nueva predicción se procesa de nuevo, partiendo de
+las muestras de datos. Por el contrario, los algoritmos basados en modelos necesitan
+actualizar el modelo periódicamente, aunque el proceso de predicción es mucho más
+rápido que en el enfoque basado en memoria. La separación lineal que hemos visto
+previamente es un modelo simple: puede llevar algún tiempo calcular la pendiente
+y el punto de corte de la recta, pero la predicción del valor de y partiendo de una
+nueva muestra x es muy rápido. Si se aportan nuevas muestras de manera periódica,
+el modelo debe ser actualizado para poder calcular la nueva recta que se ajusta
+mediante clasificación o regresión.
+Los algoritmos de aprendizaje por lotes (batch learning) siempre calculan el
+modelo desde el principio. Si disponemos de 2000 muestras, el proceso por lotes las
+usa todas para crear el modelo. Cuando se aporten 300 nuevas muestras al sistema,
+el proceso por lotes crea el modelo desde el principio, usando las 2300 muestras y
+así sucesivamente.
+Los algoritmos de aprendizaje incremental no crean sucesivos modelos
+desde el principio: actualizan el modelo existente. En nuestro ejemplo lineal, los
+algoritmos de proceso por lotes obtendrían el modelo procesando, desde cero, las
+2300 muestras existentes. Sin embargo, los algoritmos de aprendizaje incremental
+usarían las 300 nuevas muestras para cambiar los valores de la pendiente existente y
+el punto de corte (en muchas situaciones se usan más muestras de datos que las 300
+nuevas). Los algoritmos incrementales presentan una importante ventaja: pueden ser
+usados como el núcleo de sistemas de machine learning escalables.
+En el aprendizaje superficial (shallow learning), los parámetros (pendiente,
+punto de corte, etc.) se aprenden directamente de las características de las muestras
+de datos. En el aprendizaje profundo (deep learning) siempre existe una arquitectura
+con más de un nivel (capa). En el segundo nivel (y sucesivos), los parámetros
+“aprenden” de los resultados de las capas precedentes. No aprenden directamente
+de las características de las muestras de datos, que están situadas en la primera capa.
+Las arquitecturas deep learning (aprendizaje profundo) pueden conformarse a base
+de varias capas con métodos de machine learning iguales o diferentes, aunque de
+manera habitual están basadas en redes neuronales multi-capa.
+
+20 MACHINE LEARNING Y DEEP LEARNING
+
+© RA-MA
+
+1.2 TRATANDO CON DATOS
+En machine learning, los datos son la base de todo; no habrá aprendizaje
+si no hay suficientes datos, o éstos no son representativos o presentan información
+sesgada. Cuando la cantidad de datos es insuficiente, los algoritmos de machine
+learning no pueden generalizar los resultados: simplemente aprenden los patrones
+específicos de las muestras existentes. Si un niño solo ha visto cinco vehículos a
+motor, podrá reconocerlos, pero probablemente no podrá generalizarlo y clasificar
+como vehículo a motor los diferentes tipos de coches, camiones, motos, etc.
+Este concepto es muy importante en machine learning: se denomina sobreajuste
+(overfitting) y los ingenieros de datos deben prevenirlo.
+Incluso si disponemos de suficiente cantidad de datos, éstos podrían no
+ser aceptables para algunos propósitos específicos de machine learning si no son
+representativos o están sesgados. Como ejemplo: no podremos predecir qué canción
+le gustará escuchar a una mujer de edad avanzada que acabe de conectarse a un
+servicio de música online, sobre todo si este servicio es usado normalmente por
+personas jóvenes: simplemente, los datos están sesgados por las preferencias
+musicales de los jóvenes. Sin embargo, en este contexto, machine learning puede
+hacer un gran trabajo recomendando música a usuarios jóvenes. De la misma manera,
+si ajustamos un modelo para clasificar imágenes de perros y gatos, probablemente
+funcionará adecuadamente clasificando perros y gatos, pero no podemos esperar que
+clasifique correctamente leones o tigres: es más, si casi todas las imágenes son de
+perros pastores alemanes, será muy difícil que clasifique de manera adecuada a los
+perros chihuahua. Esto es debido a que los datos están sesgados hacia los perros
+pastores alemanes.
+Incluso si vamos a usar algún conjunto de datos que contiene información
+representativa y no sesgada, machine learning podría presentar fallos si la información
+no es de calidad. Ejemplos de información de mala calidad son:
+zz Cuando hay muchas muestras con valores vacíos en alguna característica
+(feature): por ejemplo, personas que no rellenan su edad, o falta el código
+postal en los formularios, etc.
+zz Valores atípicos (outliers): datos incorrectos provenientes de errores
+humanos, sensores de IoT que funcionan incorrectamente, errores en los
+programas: p. ej. Mezcla de medidas entre sistema métrico internacional
+y sistema métrico anglosajón.
+zz Datos incorrectos e inconsistentes: direcciones de correo sin el símbolo
+@, direcciones postales sin el número del portal, nombres de calles que
+no se corresponden con el código postal, etc.
+
+© RA-MA
+
+Capítulo 1. INTRODUCCIÓN 21
+
+También las características irrelevantes pueden estropear un proceso de
+machine learning. Para poder obtener resultados adecuados necesitamos datos
+relevantes. Si solo se recogen datos basados en características psicológicas será muy
+difícil predecir la existencia de un tumor cancerígeno. Lo mismo puede ocurrir si se
+predice la venta de pañales en base a información del tiempo atmosférico.
+Cuando se trabaja en el campo de machine learning debemos diferenciar
+entre características de tipo continuo y características de tipo categórico
+(categorical) (características discretas). Habitualmente resulta equivalente a la
+división previamente presentada: clasificación vs. regresión, pero aplicado a los
+datos de entrada. Ejemplos de características de entrada continuas son: la intensidad
+de color en un pixel, la presión en un sensor, el tiempo de ejecución, precios, etc.
+Las características categóricas clasifican muestras en grupos: sexo, color (negro,
+rojo,…), departamento (música, deportes, etc.), país.
+Para representar valores categóricos se usa, normalmente, el proceso
+denominado codificación one-hot (one-hot encoding). Básicamente, la codificación
+one-hot representa una variable categórica mediante el uso de varias características
+binarias nuevas (una nueva característica por cada valor categórico existente).
+Imaginemos un sistema de control de incendios en el que tenemos una característica
+categórica denominada ‘riesgo’ que solamente admite los valores discretos: riesgo
+= {‘rojo’, ‘naranja’, ‘amarillo’, ‘verde’}. Podríamos tener miles de muestras de
+edificios con, probablemente, docenas de características, una de las cuales sería
+‘riesgo’. El ingeniero de datos sabe que la mayoría de los algoritmos de machine
+learning no admiten valores de entrada categóricos, así que podría transformar
+los colores que indican el riesgo en valores numéricos que pudiesen alimentar al
+algoritmo: riesgo = {1,2,3,4}. Puede funcionar, pero resultará mucho más difícil para
+los algoritmos relacionar los niveles de riesgo con otras características importantes
+o representativas tales como ‘instalaciones de acceso’. La codificación one-hot hace
+más fácil para los métodos de machine learning la extracción de patrones y la relación
+entre características, con el objeto de predecir objetivos (tales como ‘probabilidad de
+éxito en una acción de rescate’). En este ejemplo, la característica de riesgo estará
+codificada one-hot en las siguientes nuevas características binarias: ‘riesgoRojo’,
+riesgoNaranja’, ‘riesgoAmarillo’, ‘riesgoVerde’.
+El proceso denominado binning (bucketing) convierte una característica
+numérica en varias características binarias. Considérese, por ejemplo, una situación
+en la que la edad de cada uno de los trabajadores determina, en algún grado, la
+productividad de la empresa: consideremos, en este ejemplo, que los trabajadores más
+jóvenes y los más mayores serán menos productivos, mientras que la productividad
+alcanzará su máximo nivel en las edades intermedias. En este escenario, la
+característica ‘edad’ no se ajustará a la productividad objetivo; resultaría mucho más
+
+nuevas características binarias: ‘riesgoRojo’, riesgoNaranja’, ‘riesg
+‘riesgoVerde’.
+
+El proceso denominado binning (bucketing) convierte una c
+numérica en varias características binarias. Considérese, por ejemplo, u
+en la que la edad de cada uno de los trabajadores
+determina, en alg
+22 MACHINE LEARNING Y DEEP LEARNING
+© RA-MA
+productividad de la empresa: consideremos, en este ejemplo, que los
+más jóvenes y los más mayores serán menos productivos, mien
+productividad alcanzará su máximo nivel en las edades intermedi
+fácil para los algoritmos de machine
+learning
+procesar la edad
+si estuviese
+escenario,
+la característica
+‘edad’
+no se codificada
+ajustará a la productivida
+de manera categórica (enumerada).
+Podríamos
+reemplazar
+la
+característica
+numérica
+resultaría mucho más fácil para los algoritmos de machine learning
+‘edad’ por los valores binarios
+enumerados:
+‘muyJoven’,
+‘edadMedia’,
+edad
+si estuviese
+codificada‘joven’,
+de manera
+categórica (enumerada).
+‘senior’.
+reemplazar la característica numérica ‘edad’ por los valores binarios e
+‘muyJoven’, ‘joven’, ‘edadMedia’, ‘senior’.
+Muchos de los algoritmos de machine learning funcionan mejor cuando todas
+las características y el valor numérico
+objetivo
+en el mismo
+Además,
+Muchos
+de están
+los algoritmos
+derango.
+machine
+learning funcionan m
+evitando que los valores de entrada
+sean
+muy grandesy sel ayuda
+los algoritmos
+todas las
+características
+valor anumérico
+objetivo están en el m
+a encontrar la solución y a encontrarla
+de manera
+razón,
+de muy grandes se
+Además, evitando
+quemás
+losrápida.
+valoresPor
+de esta
+entrada
+sean
+manera habitual, es necesario algoritmos
+llevar a cabo
+un
+proceso
+de
+Normalización
+sobre
+las
+a encontrar la solución y a encontrarla de manera más rápi
+muestras. La normalización más
+simple
+en dividirescada
+muestrallevar
+por ela valor
+razón,
+de consiste
+manera habitual,
+necesario
+cabo un proceso de No
+máximo de dichas muestras. En
+este las
+caso,
+el rangoLa
+denormalización
+datos presenta más
+comosimple
+límiteconsiste
+el
+sobre
+muestras.
+en dividir c
+valor uno. -128, 0, 128, 240, 255
+0.0,
+0.5, 0.94,
+Para muestras.
+obtener unEn
+rango
+por=el-0.5,
+valor
+máximo
+de 1.
+dichas
+esteque
+caso, el rango de da
+vaya de 0 a 1, la ecuación de normalización
+como límite eles:valor uno. -128, 0, 128, 240, 255 = -0.5, 0.0, 0.5, 0
+obtener un rango que vaya de 0 a 1, la ecuación de normalización es:
+
+xi =
+
+xi − min( X )
+max( X ) − min( X )
+
+La normalización puede fallar cuando hay información sesgad
+La normalización puede
+fallaratípicos
+cuando(outliers).
+hay información
+sesgada
+existen
+valores
+Si un valor
+atípicoo se
+cuela entre los datos d
+valores atípicos (outliers). Si un
+valor
+atípico
+se
+cuela
+entre
+los
+datos
+de
+entrada,
+efecto de la normalización se deteriorará: -128, 0, el
+128, 2000, 240, 25
+efecto de la normalización se deteriorará:
+0, 128,
+2000,
+-> -0.064,
+0.0,
+0.0, 0.064, -128,
+1, 0.12,
+0.127.
+Por240,
+este255
+motivo,
+la estandarización
+(norm
+0.064, 1, 0.12, 0.127. Por estescore
+motivo, standardization)
+la estandarización
+z-score
+o opción. La esta
+es,(normalización
+muy a menudo,
+la mejor
+standardization) es, muy a menudo,
+estandarización
+centra los
+centra lalosmejor
+datosopción.
+en suLa
+media
+y los distribuye
+de acuerdo con el
+© RA-MA
+datos en su media y los distribuye de
+acuerdo con el valor de la desviación típica. Un
+valor estandarizado puede ser interpretado como el número de desviaciones típicas
+desviación típica. Un valor estandarizado puede ser interpretado c
+que lo separa de la media.
+de desviaciones típicas que lo separa de la media.
+
+xi =
+
+son:
+
+xi − µ ( X )
+σ(X)
+
+Para tratar con los valores vacíos en las características, los e
+Para tratar con los valoresson:
+vacíos en las características, los enfoques típicos
+
+• Eliminar las muestras que contengan valores vacíos.
+zz Eliminar las muestras que contengan
+valores
+• Insertar
+losvacíos.
+valores correctos cuando sea posible: p.ej.: c
+dirección
+postal.p.ej.: código postal o
+zz Insertar los valores correctos cuando
+sea posible:
+•
+Utilización
+de la técnica de data imputation.
+dirección postal.
+
+La técnica
+de data imputation consiste en reemplazar los va
+zz Utilización de la técnica de data
+imputation.
+una característica por alguna predicción. El sistema más simple pa
+media de los valores de la característica: p.ej.: insertar la edad med
+de edad que esté vacío. Un enfoque muy diferente es insertar un
+rango: p.ej.: una edad de 500. De esta manera, el método de m
+puede aprender que las muestras con este valor no contribuyen
+manera similar, se puede añadir una característica nueva para ma
+vacíos con el número uno y los no vacíos con el número cero. Final
+
+Capítulo 1. INTRODUCCIÓN 23
+
+© RA-MA
+
+La técnica de data imputation consiste en reemplazar los valores vacíos en
+una característica por alguna predicción. El sistema más simple para predecir es la
+media de los valores de la característica: p.ej.: insertar la edad media en cada valor
+de edad que esté vacío. Un enfoque muy diferente es insertar un valor fuera del
+rango: p.ej.: una edad de 500. De esta manera, el método de machine learning puede
+aprender que las muestras con este valor no contribuyen al modelo. De manera
+similar, se puede añadir una característica nueva para marcar los valores vacíos con
+el número uno y los no vacíos con el número cero. Finalmente, se puede usar una
+regresión para predecir los valores.
+
+1.3 MEDICIÓN DE LA CALIDAD
+Los ingenieros de datos emplean una gran cantidad de tiempo mejorando la
+calidad de los resultados de los modelos obtenidos. Normalmente no es posible saber
+visualmente si un resultado es mejor que otro; resulta necesario procesar algunas
+medidas de calidad para conocer la exactitud de los resultados. Dependiendo del
+enfoque de machine learning que estemos usando, podemos emplear diferentes
+medidas de calidad: algunas son aplicables a resultados de clasificación, otras pueden
+ser aplicadas a regresión, etc. Vamos a explicar cada una de las medidas de calidad
+más importantes, pero primero expondremos la metodología.
+La regla de oro en metodología de la validación es: no medir la calidad
+con el mismo conjunto de datos empleado para obtener el modelo. Queremos evitar
+situaciones en las que el modelo aprende cada una de las muestras de datos, pero
+es incapaz de tratar datos nuevos. Esta es la situación de sobreajuste (overfitting)
+que hemos presentado anteriormente, al principio de la sección precedente (pastores
+alemanes y gatos). Es necesario dividir las muestras de datos y los valores objetivo
+en varios conjuntos:
+zz Entrenamiento
+zz Validación
+zz Test
+El conjunto de datos de entrenamiento es el mayor: un valor típico es que sea
+el 80% del conjunto total de muestras. Se usa para entrenar el modelo. El conjunto
+de validación contiene las muestras usadas para mejorar el modelo a base de realizar
+un ajuste fino en los híper-parámetros (valores que controlan diferentes variaciones
+en el funcionamiento de los algoritmos). Por último, el conjunto de test (o pruebas)
+nos permitirá medir la calidad del modelo utilizando las muestras que no hayan
+sido usadas para entrenar el modelo o para mejorarlo. Debemos asegurarnos de
+que los tres conjuntos tienen una distribución similar de los datos, que contienen
+
+El conjunto de datos de entrenamiento es el mayor: un valor típico es qu
+el 80% del conjunto total de muestras. Se usa para entrenar el modelo. El con
+de validación contiene las muestras usadas para mejorar el modelo a bas
+realizar un ajuste fino en los híper-parámetros (valores que controlan difer
+variaciones en el funcionamiento de los algoritmos). Por último, el conjunto d
+pruebas) nos permitirá medir la calidad del modelo
+utilizando las muestra
+24 MACHINE LEARNING Y DEEP(o
+LEARNING
+© RA-MA
+no hayan sido usadas para entrenar el modelo o para mejorarlo. Deb
+asegurarnos de que los tres conjuntos tienen una distribución similar de los d
+que contienen datos representativos y que su intersección es nula. Una vez
+datos representativos y hayamos
+que su intersección
+Unacon
+vezelque
+hayamos
+entrenado es
+el nula.
+modelo
+conjunto
+deentrenado
+muestras de entrenamiento
+el modelo con el conjunto
+de
+muestras
+de
+entrenamiento
+y
+lo
+hayamos
+mejorado
+hayamos mejorado usando el conjunto de muestras
+de validación, podremos
+usando el conjunto de las
+muestras
+de validación,
+podremos
+usar las muestras
+de test
+muestras
+de test para
+hacer predicciones
+con estos
+datos, que no han
+para hacer prediccionespreviamente
+con estos datos,
+que noLos
+han valores
+sido previamente
+procesados.
+indicadoresprocesados.
+de la calidad serán tanto ma
+Los valores indicadorescuanto
+de la calidad
+tanto mayores
+cuanto más obtenidas
+se asemejen
+más seserán
+asemejen
+las predicciones
+a los valores obj
+las predicciones obtenidas
+a
+los
+valores
+objetivo
+existentes.
+existentes.
+
+Dos medidas de calidad
+conocidas
+son el Error
+Medio Absoluto
+(MeanMedio Absoluto (M
+Dosbien
+medidas
+de calidad
+bien conocidas
+son el Error
+Absolute Error o MAE)Absolute
+y el Error
+Cuadrático
+Medio
+(Mean
+Squared
+Differences
+o Squared Differen
+Error o MAE) y el Error Cuadrático Medio (Mean
+MSD). Ambas medidas MSD).
+de calidad
+penalizan
+la
+distancia
+que
+hay
+entre
+cada
+valor
+de
+Ambas medidas de calidad penalizan la distancia que hay entre cada
+una predicción y el valor
+Sus ecuaciones
+deobjetivo.
+una predicción
+y el valorson:
+objetivo. Sus ecuaciones son:
+
+MSD( X , y) =
+MAE( X , y) =
+
+2
+1 N
+ŷi − p( X i ) )
+(
+∑
+N i=1
+1 N
+∑ ŷ − p( X i )
+N i=1 i
+
+Ambas ecuaciones devuelven el error medio cometido en las N muestr
+Ambas ecuaciones
+error ecuaciones
+medio cometido
+en las N muestras
+test. devuelven
+El error enelambas
+es la diferencia
+entre el valor objetivo rea
+de test. El error en ambas
+ecuaciones
+la diferencia
+el valor
+objetivo
+y con valores gra
+valor
+predicho es
+para
+la muestraentre
+X. MSD
+penaliza
+los real
+errores
+el valor predicho para la
+muestra
+X.
+MSD
+penaliza
+los
+errores
+con
+valores
+grandes
+(los eleva al cuadrado) mucho más de lo que lo hace el MAE. La siguiente im
+(los eleva al cuadrado) muestra
+mucho más
+de lo que
+el MAE.
+La siguiente
+los errores
+en lo
+unhace
+modelo
+de regresión
+lineal:imagen
+las líneas verticales que
+muestra los errores en un
+modelo
+de
+regresión
+lineal:
+las
+líneas
+verticales
+que unen
+los valores reales con los predichos.
+los valores reales con los predichos.
+
+Mientras que las medidas anteriores devuelven valores absolutos, la ecuación
+del coeficiente R2 (R2 score) devuelve valores relativos. Esta medida de calidad
+proporciona un valor entre 0 y 1, donde el 1 significa una predicción perfecta, y 0 se
+corresponde al modelo de regresión más simple: predecir la media del conjunto de
+muestras de test. Asumiremos que el regresor de prueba no será peor que el regresor
+más simple. Al coeficiente R2 se le denomina también Coeficiente de Determinación.
+La ecuación de R2 es:
+
+Mientras que las medidas anteriores devuelven valores ab
+ecuación del coeficiente R2 (R2 score) devuelve valores relativos. Esta
+calidad proporciona un valor entre 0 y 1, donde el 1 significa una
+perfecta, y 0 se corresponde al modelo de regresión más simple: predec
+Capítulo
+1. INTRODUCCIÓN
+del conjunto de muestras de test.
+Asumiremos
+que25el regresor de pru
+peor que el regresor más simple. Al coeficiente R2 se le denomi
+Coeficiente de Determinación. La ecuación de R2 es:
+
+© RA-MA
+
+n−1
+
+∑ ( y − f (x ))
+
+R = 1− i=0n−1
+2
+
+i
+
+2
+
+i
+
+∑ ( y − y)
+
+2
+
+i
+
+i=0
+
+Donde f(x)i es la predicción del regresor para la muestra xi
+Donde f(x)i es la predicción del regresor para la muestra xi
+Los algoritmos de clasificación también hacen predicciones: “e
+Los algoritmos de clasificación
+hacen
+“esta Las
+muestra
+pertenece atambién
+este grupo
+o apredicciones:
+este otro grupo”.
+medidas de calidad d
+pertenece a este grupo o a este
+otro
+grupo”.
+Las
+medidas
+de
+calidad
+de
+regresión
+podrían utilizarse también en clasificación: asignando ceros a los err
+podrían utilizarse también enmuestras
+clasificación:
+asignando
+ceros a los
+errores deunos
+las a los errores de l
+clasificadas
+correctamente
+y asignando
+muestras clasificadas correctamente
+y
+asignando
+unos
+a
+los
+errores
+de
+las
+muestras
+clasificadas erróneamente. Existe un enfoque diferente que hace posi
+clasificadas erróneamente. Existe
+un enfoque
+diferente
+que hace posible
+medidas
+de calidad
+más específicas
+para la diseñar
+clasificación. Si centram
+medidas de calidad más específicas
+para
+la
+clasificación.
+Si
+centramos
+nuestra
+atención en la clasificación binaria, en la matriz de confusión solame
+atención en la clasificación binaria,
+en clases
+la matriz
+de confusión solamente pueden
+existir dos
+(grupos):
+existir dos clases (grupos):
+Predicción
+clase 0 (positivo)
+clase 1 (negativo)
+clase
+0
+verdadero
+positivo
+(TP)
+falso
+negativo (FN)
+Predicción
+clase 0 (positivo)
+clase 1 (negativo)
+clase1
+falso positivo (FP)
+verdadero negativo (TN)
+clase 0
+
+verdadero positivo (TP)
+
+clase1
+
+falso positivo Para
+(FP) mostrar un
+verdadero
+negativo
+(TN) supongamos que tenemos 10
+ejemplo
+ilustrativo,
+
+falso negativo (FN)
+
+de test de radiografías etiquetadas: (‘tumor maligno’, ‘tumor benigno’).
+Para mostrar un ejemplo
+supongamos
+que tenemos
+imágenes
+hanilustrativo,
+sido predichas
+correctamente
+como100
+tumores
+benignos, 45 han sid
+de test de radiografías etiquetadas:
+(‘tumor
+maligno’,
+‘tumor
+benigno’).
+35
+de
+ellas
+correctamente como malignos, 5 han sido predichas incorrectam
+han sido predichas correctamente
+como
+tumores
+benignos,
+45 han sido
+predichas
+benignos
+y 15
+han sido
+incorrectamente
+predichas
+como malignos
+correctamente como malignos, 5 han sido predichas incorrectamente como benignos
+y 15 han sido incorrectamente predichas como malignos
+Predicción Tumor
+
+Benigno (+)
+
+Maligno (-)
+
+Benigno
+
+35
+
+15
+
+Maligno
+
+5
+
+45
+
+La medida de calidad denominada Precision nos muestra la proporción de
+aciertos en la predicción: ¿Cuántas de sus predicciones son correctas? La medida
+de calidad Recall centra su atención en el número relativo de muestras positivas (en
+nuestro ejemplo, tumores benignos): ¿Cuántas de sus predicciones son correctas de
+manera relativa al número total de muestras positivas? Mientras que Precision nos
+proporciona un valor de calidad relativo al número total de predicciones realizadas,
+Recall nos proporciona un valor de calidad relativo al número total de muestras
+positivas. Merece la pena mantener niveles altos de Precision cuando el número
+
+Predicción Tumor
+
+Benigno (+)
+
+Maligno (-)
+
+© RA-MA
+USANDO
+Benigno MACHINE LEARNING Y DEEP LEARNING
+35
+15PYTHON, SCIKIT Y KERA
+
+La medida de calidad denominada Precision nos muestra la p
+Predicción
+Maligno Tumor Benigno (+) 5Maligno (-) 45
+aciertos
+en la predicción: ¿Cuántas
+de sus predicciones
+son correctas
+Benigno
+35
+15
+de
+calidad
+Recall
+centra
+su
+atención
+en
+el
+número
+relativo
+de muestras
+Predicción
+Tumor
+Benigno
+(+)denominada
+(-) 45
+Maligno La
+5MalignoPrecision
+medida
+detumores
+calidad
+nospredicciones
+muestra la pro
+nuestro
+ejemplo,
+benignos):
+¿Cuántas
+de
+sus
+son
+Benigno
+35
+aciertos
+enrelativa
+la predicción:
+¿Cuántas
+demuestras
+sus 15
+predicciones
+son
+correctas?
+26 MACHINE LEARNING Y DEEP
+LEARNING
+©
+RA-MA
+manera
+al
+número
+total
+de
+positivas?
+Mientras
+que
+P
+Maligno
+5
+45
+La medida
+de centra
+calidadsudenominada
+Precision
+nos muestra
+la propor
+de calidad
+Recall
+atención
+en el
+número
+relativo
+de muestras
+po
+proporciona un valor de calidad relativo al número total de prediccione
+aciertos
+en ejemplo,
+la predicción:
+¿Cuántas
+de sus
+predicciones
+son correctas?
+La
+nuestro
+tumores
+benignos):
+¿Cuántas
+sus predicciones
+son
+nosdeproporciona
+un valor de
+calidadde
+relativo
+al número
+totalc
+LaRecall
+medida
+calidad
+Precision
+nos
+muestra
+la proporció
+de calidad
+Recall
+centra
+sudenominada
+atención
+enmuestras
+el
+númeropositivas?
+relativo
+de
+muestras
+positi
+manera
+relativa
+al
+número
+total
+de
+Mientras
+que
+Pre
+positivas.
+Merece
+la niveles
+pena mantener
+niveles
+altos
+de Precision
+cuando
+en
+la
+predicción:
+¿Cuántas
+de
+sus
+predicciones
+son
+correctas?
+La
+me
+de predicciones crece.aciertos
+Merece
+la
+pena
+mantener
+altos
+de
+Recall
+cuando
+nuestro
+ejemplo,
+tumores
+benignos):
+¿Cuántas
+de
+sus
+predicciones
+son
+corre
+proporciona
+un valor
+deMerece
+calidadlarelativo
+al númeroniveles
+total dealtos
+predicciones
+predicciones
+crece.
+pena
+mantener
+de
+Reca
+depositivas
+calidad
+Recall
+centra
+su
+atención
+n
+el
+número
+relativo
+de
+muestras
+positiva
+el número de muestras
+es
+bajo.
+Dependiendo
+de
+la
+semántica
+de
+cada
+manera
+relativa
+al
+número
+total
+de
+muestras
+positivas?
+Mientras
+que
+Precis
+Recall
+nos de
+proporciona
+un
+valor de
+relativo al número
+total
+de
+número
+muestras
+positivas
+es calidad
+bajo.
+Dependiendo
+deson
+la correcta
+semán
+nuestro
+ejemplo,
+tumores
+¿Cuántas
+de
+sus
+predicciones
+problema de inteligencia
+artificial,
+los valores
+dela
+labenignos):
+matriz
+de
+confusión
+cobran
+mayor
+proporciona
+un
+valor
+de
+calidad
+relativo
+al número
+total
+de predicciones
+rea
+positivas.
+Merece
+pena
+mantener
+niveles
+altos
+de
+Precision
+cuando
+el
+problema
+inteligencia
+los
+valoresMientras
+de la matriz
+de conf
+relativa
+al de
+número
+total
+de artificial,
+muestras
+positivas?
+quede
+Precision
+nosejemplo
+proporciona
+unmantener
+valor
+de
+calidad
+relativo
+al número
+total
+de m
+o menor importancia. manera
+EnRecall
+nuestro
+es vital
+el
+número
+de niveles
+falsos
+predicciones
+crece.
+Merece
+la
+pena
+mantener
+altos
+Recall
+mayor
+o
+menor
+importancia.
+En
+nuestro
+ejemplo
+vital
+mantener
+e
+proporciona
+un
+valor
+depena
+calidad
+relativo
+albajo.
+número
+total
+de predicciones
+realiza
+positivas.
+Merece
+la
+mantener
+altos
+de Precision
+cuando
+el núm
+positivos (tumores malignos
+no detectados)
+tan
+bajopositivas
+como
+seaniveles
+posible
+yDependiendo
+resulta
+muy
+número
+de
+muestras
+es
+de
+la
+semántic
+falsos
+positivos un
+(tumores
+malignos
+no
+detectados)
+tan total
+bajo de
+como
+s
+nos
+proporciona
+valor
+de
+calidad
+relativo
+al
+número
+mue
+predicciones
+crece.
+Merece
+la
+pena
+mantener
+niveles
+de de
+Recall
+cua
+importante predecir deRecall
+manera
+correcta
+losinteligencia
+negativos
+verdaderos
+(tumores
+malignos
+problema
+de
+artificial,
+los
+valores
+decorrecta
+laaltos
+matriz
+confusi
+resulta
+muy
+importante
+predecir
+de
+manera
+los
+negativos
+positivas.
+Merece
+la pena
+mantener es
+niveles
+altos
+de Precision
+cuando
+el númer
+número
+deo muestras
+positivas
+Dependiendo
+la mantener
+semántica
+detectados).
+mayor
+menor
+importancia.
+En bajo.
+nuestro
+ejemplo
+es de
+vital
+el d
+(tumores
+malignos
+detectados).
+predicciones
+crece.
+Merece
+la
+pena
+mantener
+niveles
+altos
+de
+Recall
+cuand
+problema
+de
+inteligencia
+artificial,
+los
+valores
+de
+la
+matriz
+de
+confusión
+falsos positivos (tumores malignos no detectados) tan bajo como sea
+número
+deo menor
+muestras
+positivas predecir
+es
+Dependiendo
+de amantener
+semántica
+mayor
+En bajo.
+nuestro
+ejemplo
+es vital
+el de
+núm
+resulta
+muy importancia.
+importante
+de
+manera correcta
+los
+negativos
+v
+TP
+problema
+de
+inteligencia
+artificial,
+los
+valores
+de
+la
+matriz
+de
+confusión
+falsos
+positivos
+malignos no detectados) tan bajo como sea co
+po
+(tumores
+malignos
+detectados).
+Precision
+=(tumores
+mayor
+o menor
+importancia.
+En nuestro
+ejemplo correcta
+es vital mantener
+el númer
+TP + FPpredecir
+resulta
+muy importante
+de manera
+los negativos
+verd
+falsos
+positivos
+(tumores
+malignos
+no
+detectados)
+tan
+bajo
+como
+sea
+posib
+(tumores
+malignos
+detectados).
+TP
+Recall
+== TP predecir de manera correcta los negativos verdad
+resultaPrecision
+muy
+importante
+TP
+++FN
+TP
+FP
+(tumores malignosTP
+detectados).
+TP
+Precision =
+Recall
+Existe =
+una
+TPmedida
++ FP de calidad de clasificación que une Precision y Recal
+TPclasificación
++ FN
+Existe una medida de calidad de
+que une Precision y Recall; es
+TP
+Precision = TP
+la F1:
+Precision
+×
+Recall
+RecallF1
+= =TP
++ FP
+2 medida
+TP
++Precision
+FN de +calidad
+Existe una
+recall de clasificación que une Precision y Recall; e
+TP
+Recall =
+× Recallde clasificación que une Precision y Recall; es l
+TPmedida
++Precision
+FN
+ExisteF1
+una
+calidad
+= 2 En el de
+caso
+de que todas las clases sean igualmente importantes s
+Precision
++
+recall
+la Precision
+siguiente ×medida
+Recallde calidad de exactitud (accuracy):
+ExisteF1una
+= 2medida de calidad de clasificación que une Precision y Recall; es la F
+Precision
++ recall
+En el caso
+de que
+TP +todas
+TN las clases sean igualmente importantes se
+Precision
+×
+Recall
+Accuracy
+=
+En el caso de que
+todas
+las
+clases
+sean
+igualmente
+puede usar
+de
+calidad
+de
+F1 = 2la siguiente medida
+TP + TN + FP +importantes
+FNexactitudse(accuracy):
++ recall
+la siguiente medida de calidad Precision
+de
+(accuracy):
+Enexactitud
+el caso
+de
+que todas las clases sean igualmente importantes se pue
++ TN de exactitud (accuracy):
+la siguiente
+medida
+deTP
+calidad
+AccuracyPara
+= medir
+la calidad
+de la clasificación también se usa la
+En el caso deTPque
+todas
+las+clases
+sean igualmente importantes se puede
++ TN + verdaderos
+FP
+FN positivos
+combina los valores
+con los falsos positivos, defin
+TP
++
+TN
+la siguiente
+de calidad de exactitud (accuracy):
+Accuracymedida
+=
+TPmedir
++ TN +laFPcalidad
++ FN de la
+Para
+TP
+FPclasificación también se usa la cu
++ TN
+TPR = losTP
+, verdaderos
+FPR = positivos con los falsos positivos, definid
+combina
+Accuracy
+= TP valores
++ FN
+FP + TN
++ TN +laFP
++ FN de la clasificación también se usa la curva
+ParaTPmedir
+calidad
+TP
+Para medir la calidad
+de la clasificación
+también FP
+se usa la curva ROC:
+combina
+TPR =los valores, verdaderos
+FPR = positivos con los falsos positivos, definida c
+combina los valores verdaderos
+positivos
+con
+los
+falsos
+positivos,
+como: se usa la curva R
+Para medir
+la calidad de laFP
+clasificación
+TP + FN
++ TN definidatambién
+TP
+FP
+combina
+TPR =los valores, verdaderos
+FPR = positivos con los falsos positivos, definida com
+TP + FN
+FP + TN
+TP
+FP
+TPR =
+,
+FPR =
+TP + FN
+FP + TN
+Cuanto mayor sea el área bajo la curva ROC, mejor será el modelo. Los
+valores obtenidos deben ser mayores de 0.5, ya que 0.5 se corresponde con un
+clasificador aleatorio.
+
+© RA-MA
+
+Capítulo 1. INTRODUCCIÓN 27
+
+1.4 MEJORA DEL MODELO
+Para mejorar un modelo de machine learning se debe medir la calidad que
+obtiene al actuar sobre el conjunto de muestras de test (pruebas). En esta sección
+nos centramos en los conjuntos de datos de entrenamiento y de pruebas (test), pero
+debemos recordar que los proyectos profesionales de machine learning deben usar
+también el conjunto de datos de validación. Primero se usa el conjunto de datos
+de entrenamiento para crear el modelo, y podemos, entonces, obtener sus medidas
+de calidad (aplicadas a las muestras de entrenamiento). Si las predicciones del
+modelo presentan muchos errores, las medidas de calidad devolverán valores muy
+bajos. Esto significa que los datos no son suficientemente numerosos, o presentan
+muchos valores atípicos, o las características no son relevantes, o que el algoritmo
+de aprendizaje utilizado no está indicado para la presente tarea (normalmente por
+ser muy simple), o los híper-parámetros de aprendizaje elegidos no son correctos.
+En estos casos, el modelo sufre subajuste (underfitting). Para ilustrar el caso,
+reproducimos la siguiente figura, obtenida de datos generados. Se puede ver que el
+modelo lineal es demasiado simple para ajustar la distribución no lineal de los datos.
+
+La situación opuesta al subajuste es la del sobreajuste (overfitting). Un modelo
+presenta sobreajuste cuando predice con suficiente exactitud el conjunto de datos de
+entrenamiento y, sin embargo, no puede predecir adecuadamente las muestras de
+test: no generaliza. La siguiente figura visualiza varios modelos obtenidos a partir
+de entrenamientos que utilizan el mismo conjunto de muestras. Los dos gráficos
+de la izquierda representan modelos más simples, que son capaces de generalizar
+para predecir de manera adecuada nuevas muestras. Los dos gráficos de la derecha
+representan modelos más complejos, que no son capaces de generalizar: presentan
+situaciones de sobreajuste.
+
+28 MACHINE LEARNING Y DEEP LEARNING
+
+© RA-MA
+
+Para evitar el sobreajuste podemos entrenar el modelo usando más datos:
+en este caso será más difícil para el algoritmo ajustar todos los datos. Por supuesto,
+normalmente no disponemos de más datos. Otra posibilidad es usar un modelo más
+simple (quizás un modelo lineal). Reducir la dimensionalidad de las muestras también
+puede funcionar: puede ser llevado a cabo usando técnicas de reducción de dimensiones.
+Por último, regularizar el modelo es, normalmente, la solución más simple y más
+eficiente. La regularización se puede llevar a cabo de diferentes maneras, dependiendo
+de cada algoritmo de machine learning que se esté usando, pero su concepto subyacente
+es siempre simplificar el modelo. A menudo, la regularización significa mantener los
+pesos de aprendizaje tan pequeños como sea posible: limita la importancia de algunas
+características, simplificando el modelo. En algunos casos, la regularización reduce
+en algún grado el ámbito de aprendizaje: p.ej.: el número máximo de niveles que va a
+tener un árbol de decisión. La siguiente figura muestra los efectos de la regularización;
+en este caso, el parámetro C determina la flexibilidad permitida para crear el modelo.
+Cuando el valor de C es alto, el modelo es complicado y sufre sobreajuste. Los valores
+bajos de C limitan la flexibilidad del aprendizaje y simplifican el modelo: contribuyen
+a generalizar y a obtener mayor exactitud.
+
+Otra técnica específica de regularización es la denominada data augmentation
+(enriquecimiento de datos). Ya que incrementar el número de muestras de entrenamiento
+reduce el sobreajuste, podemos generar nuevas muestras de entrenamiento a base
+de combinar las existentes. Aunque la técnica de data augmentation puede ser
+usada, teóricamente, en cualquier ámbito, se aplica especialmente en clasificación
+de imágenes. Se pueden crear nuevas imágenes simplemente rotando, escalando,
+combinando, etc. las muestras de entrenamiento existentes.
+
+2
+DATASETS
+Scikit-learn es un framework que nos permite realizar con facilidad procesos
+de machine learning. Scikit-learn aporta tres maneras diferentes de proporcionar
+muestras susceptibles de ser usadas en experimentos de aprendizaje automático:
+zz Cargadores de conjuntos de datos (dataset loaders): proporcionan
+conjuntos de datos pequeños, de prueba, especialmente indicados para
+fines académicos.
+zz Recolectores de datos (dataset fetchers): se usan para la obtención y
+carga de conjuntos de datos más grandes.
+zz Conjuntos de datos generados (generated dataset): son generadores
+aleatorios de muestras que pueden ser usados para crear conjuntos de
+datos artificiales con un tamaño y complejidad controlada.
+Tanto los cargadores como los recolectores obtienen un diccionario de
+objetos que contiene al menos dos ítems: un array de dimensión n_muestras_ * n_
+características (excepto 20newsgroups) y un numpy array de longitud n_muestras, que
+contiene los valores objetivo. También existe la posibilidad de que se restrinja la salida
+a una tupla que contiene solamente los datos y el objetivo, estableciendo el parámetro
+return_X_y a true. Los conjuntos de datos contienen también una descripción completa
+en el atributo DESCR. Adicionalmente, algunos contienen features_names (nombres
+de las características) y target_names (nombres de los objetivos).
+En este capítulo proporcionamos ejemplos de algunos conjuntos de
+datos representativos de sklearn que pueden ser usados en ejemplos didácticos:
+principalmente varios cargadores de datos y algunos conjuntos de datos generados. Los
+cargadores sklearn se pueden usar para ejemplos de regresión o de clasificación. Los
+sklearn generados los usaremos para clasificación o para clustering (agrupamiento).
+
+30 MACHINE LEARNING Y DEEP LEARNING
+
+© RA-MA
+
+En este capítulo se muestra un ejemplo de cada uno de los conjuntos de datos más
+representativos, incluyendo gráficos que ayudarán a entender la estructura y el uso
+de la biblioteca matplotlib.
+
+2.1 DATASET DE DIABETES (REGRESIÓN)
+Este es un conjunto de datos con un total de 442 muestras, dispuesto para
+ser usado en ejemplos de regresión. Su dimensionalidad es 10 (diez características).
+Puede ser cargado usando la función load_diabetes(), tal y como se puede ver al inicio
+del siguiente código. Podemos separar fácilmente el conjunto de datos diabetes.data
+del conjunto de datos objetivo diabetes.target. En la descripción del conjunto de
+datos diabetes.DESCR se explica cada una de las características: edad (age), sexo
+(sex), índice de masa corporal (mass index), etc. La dimensión de los conjuntos de
+datos se puede obtener usando la propiedad shape. Al principio del siguiente código
+se pueden ver algunas funciones de impresión (print), que ilustran la manera de
+seleccionar subconjuntos de las muestras (filas) y de las características (columnas).
+Usando este tipo de filtros hemos implementado tres gráficos bidimensionales: un
+gráfico que representa las características de índice de masa corporal (mass index) y
+la presión arterial (blood pressure), y dos diagramas de dispersión (scatter): índice
+de masa corporal vs presión arterial, y edad vs presión arterial.
+from sklearn.datasets import load_diabetes
+import matplotlib.pyplot as plt
+diabetes = load_diabetes()
+X = diabetes.data
+y = diabetes.target
+AGE = 0; SEX = 1; MASS_INDEX = 2; BLOOD_PRESSURE = 3;
+# print (diabetes.DESCR) #Text information about this dataset
+print(X.shape) # Contains 442 samples (rows) and 10 features (columns)
+print(y.shape) # Adequate for Regression. The target are numbers.
+print(X[0:5,:]) # print rows of data, starting from row 0 to row 5-1
+print(y[0:5])
+# Rows of target data, starting from row 0 to row 5-1
+print(X[1,MASS_INDEX]) # print the feature MASS_INDEX from the third row
+print(X[1:3,AGE]) # print the feature AGE for rows 1 and 2
+print(diabetes.data.shape[0])
+x = range(0, diabetes.data.shape[0],1) # same as x = range(0, len(y),1)
+# Plot of several features
+plt.figure(figsize=(30,8))
+plt.plot(x, X[:,MASS_INDEX], ‘y-’, label = ‘Mass Index’)
+
+

@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Control | Estación Espacial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --space-dark: #020010;
+            --panel-bg: rgba(8, 12, 32, 0.82);
+            --panel-border: rgba(124, 138, 255, 0.25);
+            --hud-line: rgba(124, 138, 255, 0.35);
+            --accent: #7c8aff;
+            --accent-bright: #9fb0ff;
+            --input-bg: rgba(12, 16, 40, 0.7);
+            --input-border: rgba(124, 138, 255, 0.18);
+            --input-focus: rgba(124, 138, 255, 0.55);
+            --text-primary: #e4e7ff;
+            --text-secondary: #8088b8;
+            --text-tertiary: #565d8a;
+            --success: #4ade80;
+            --success-bg: rgba(74, 222, 128, 0.08);
+            --success-border: rgba(74, 222, 128, 0.3);
+            --danger: #f87171;
+            --danger-bg: rgba(248, 113, 113, 0.08);
+            --danger-border: rgba(248, 113, 113, 0.3);
+            --warning: #fbbf24;
+            --warning-bg: rgba(251, 191, 36, 0.08);
+            --warning-border: rgba(251, 191, 36, 0.3);
+            --comet-cyan: #00e5ff;
+            --font-display: 'Orbitron', sans-serif;
+            --font-body: 'Space Grotesk', sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--space-dark);
+            color: var(--text-primary);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 25px;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        .space-bg {
+            position: fixed; top: 0; left: 0;
+            width: 100%; height: 100%; z-index: 0; pointer-events: none;
+        }
+
+        .star {
+            position: absolute; background: white; border-radius: 50%;
+            animation: twinkle var(--duration) infinite ease-in-out;
+            animation-delay: var(--delay);
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: var(--min-opacity); transform: scale(1); }
+            50% { opacity: 1; transform: scale(2.2); }
+        }
+
+        .nebula {
+            position: absolute; border-radius: 50%; filter: blur(100px); opacity: 0.07;
+        }
+
+        .nebula-1 {
+            width: 500px; height: 350px; background: #6b3fa0;
+            top: -8%; right: -12%; animation: nebulaDrift 16s infinite ease-in-out;
+        }
+
+        .nebula-2 {
+            width: 420px; height: 300px; background: #1a5fb4;
+            bottom: -10%; left: -10%; animation: nebulaDrift 19s infinite ease-in-out reverse;
+        }
+
+        @keyframes nebulaDrift {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(35px, -22px) scale(1.07); }
+            66% { transform: translate(-22px, 18px) scale(0.93); }
+        }
+
+        .shooting-star {
+            position: absolute; width: 2px; height: 2px;
+            background: white; border-radius: 50%;
+            box-shadow: 0 0 8px 3px rgba(200, 220, 255, 0.7);
+            animation: shoot 0.9s linear forwards; z-index: 5;
+        }
+
+        @keyframes shoot {
+            0% { transform: translate(0, 0) scale(1); opacity: 1; }
+            100% { transform: translate(380px, 180px) scale(0.2); opacity: 0; }
+        }
+
+        /* ============================================================
+           CONSOLA PRINCIPAL
+           ============================================================ */
+        .console {
+            position: relative; z-index: 1;
+            width: 680px; max-width: 100%;
+            animation: containerEntry 0.6s ease-out;
+        }
+
+        @keyframes containerEntry {
+            from { opacity: 0; transform: translateY(30px) scale(0.96); }
+            to { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
+        .console-frame {
+            position: relative;
+            background: var(--panel-bg);
+            padding: 32px 32px 30px;
+            border-radius: 4px;
+            border: 1px solid var(--panel-border);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            box-shadow: 0 25px 70px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.02);
+        }
+
+        .corner {
+            position: absolute; width: 20px; height: 20px;
+            border: 2px solid var(--comet-cyan); opacity: 0.65;
+        }
+        .corner-tl { top: -1px; left: -1px; border-right: none; border-bottom: none; }
+        .corner-tr { top: -1px; right: -1px; border-left: none; border-bottom: none; }
+        .corner-bl { bottom: -1px; left: -1px; border-right: none; border-top: none; }
+        .corner-br { bottom: -1px; right: -1px; border-left: none; border-top: none; }
+
+        .status-bar {
+            display: flex; align-items: center; justify-content: space-between;
+            font-family: var(--font-mono); font-size: 0.68rem;
+            letter-spacing: 0.5px; color: var(--text-tertiary);
+            margin-bottom: 18px; padding-bottom: 12px;
+            border-bottom: 1px solid var(--hud-line);
+        }
+
+        .status-bar .blink {
+            display: inline-block; width: 6px; height: 6px;
+            border-radius: 50%; background: var(--warning);
+            box-shadow: 0 0 8px var(--warning);
+            margin-right: 6px; animation: dotGlow 1.4s infinite;
+        }
+
+        @keyframes dotGlow {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.35; }
+        }
+
+        /* ============================================================
+           HEADER
+           ============================================================ */
+        .header {
+            display: flex; align-items: center; gap: 16px;
+            margin-bottom: 6px;
+        }
+
+        .header-icon {
+            width: 46px; height: 46px; flex-shrink: 0;
+            color: var(--accent-bright);
+            animation: iconPulse 2.5s infinite ease-in-out;
+        }
+
+        @keyframes iconPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.06); }
+        }
+
+        .header-text h1 {
+            font-family: var(--font-display);
+            font-size: 1.35rem; font-weight: 700; letter-spacing: 1.5px;
+            background: linear-gradient(180deg, #f0f0ff 0%, #b0bfff 100%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header-text .subtitle {
+            font-family: var(--font-mono);
+            color: var(--text-secondary); font-size: 0.7rem;
+            letter-spacing: 1px; text-transform: uppercase;
+            margin-top: 6px;
+        }
+
+        .divider {
+            display: flex; align-items: center; gap: 10px;
+            margin: 20px 0 20px;
+        }
+        .divider::before, .divider::after {
+            content: ''; flex: 1; height: 1px;
+            background: linear-gradient(90deg, transparent, var(--hud-line));
+        }
+        .divider::after { background: linear-gradient(90deg, var(--hud-line), transparent); }
+
+        /* ============================================================
+           ALERTAS
+           ============================================================ */
+        .alert {
+            padding: 12px 16px; border-radius: 4px; margin-bottom: 16px;
+            font-family: var(--font-mono); font-size: 0.82rem;
+            display: flex; align-items: center; gap: 10px;
+            border-left: 2px solid;
+            animation: slideIn 0.4s ease;
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-12px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        .alert svg { width: 16px; height: 16px; flex-shrink: 0; }
+
+        .alert-success {
+            background: var(--success-bg); border-color: var(--success);
+            color: #6ee7a8;
+        }
+        .alert-error {
+            background: var(--danger-bg); border-color: var(--danger);
+            color: #fca5a5;
+        }
+
+        .warning-box {
+            background: var(--warning-bg);
+            border-left: 2px solid var(--warning);
+            color: #fcd34d;
+            padding: 13px 16px;
+            border-radius: 4px;
+            margin-bottom: 22px;
+            font-size: 0.82rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            line-height: 1.5;
+        }
+
+        .warning-icon {
+            width: 18px; height: 18px;
+            flex-shrink: 0; margin-top: 1px;
+            animation: warningBlink 1.5s infinite;
+        }
+
+        @keyframes warningBlink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+
+        /* ============================================================
+           FORMULARIO
+           ============================================================ */
+        .form-section { margin-bottom: 20px; }
+
+        .section-title {
+            display: flex; align-items: center; gap: 8px;
+            font-family: var(--font-mono);
+            color: var(--accent-bright); font-size: 0.72rem;
+            font-weight: 500; text-transform: uppercase; letter-spacing: 1.5px;
+            margin-bottom: 14px; padding-bottom: 8px;
+            border-bottom: 1px solid var(--hud-line);
+        }
+
+        .section-title svg { width: 14px; height: 14px; }
+
+        .form-group { margin-bottom: 16px; }
+
+        label {
+            display: flex; align-items: center; gap: 7px;
+            margin-bottom: 7px;
+            font-family: var(--font-mono);
+            color: var(--text-secondary); font-size: 0.7rem;
+            font-weight: 500; letter-spacing: 0.8px;
+            text-transform: uppercase;
+        }
+
+        label svg { width: 13px; height: 13px; color: var(--text-tertiary); }
+
+        input, textarea {
+            width: 100%; padding: 12px 15px;
+            background: var(--input-bg);
+            border: 1px solid var(--input-border);
+            border-radius: 4px;
+            color: var(--text-primary);
+            font-size: 0.9rem;
+            font-family: var(--font-body);
+            transition: all 0.3s ease;
+            outline: none;
+        }
+
+        textarea { resize: vertical; line-height: 1.5; }
+
+        input:hover, textarea:hover {
+            border-color: rgba(124, 138, 255, 0.35);
+            background: rgba(18, 24, 55, 0.8);
+        }
+
+        input:focus, textarea:focus {
+            border-color: var(--input-focus);
+            background: rgba(18, 26, 60, 0.9);
+            box-shadow: 0 0 0 3px rgba(124, 138, 255, 0.1);
+        }
+
+        /* ============================================================
+           GRID DE CRITERIOS
+           ============================================================ */
+        .criterios-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .criterio-item { position: relative; }
+
+        .criterio-item label { color: var(--accent-bright); }
+
+        .criterio-item input { font-size: 0.85rem; padding: 10px 14px; }
+
+        .criterio-item.full-width { grid-column: span 2; }
+
+        .criterio-number {
+            display: inline-flex; align-items: center; justify-content: center;
+            width: 16px; height: 16px;
+            background: rgba(124, 138, 255, 0.12);
+            border: 1px solid rgba(124, 138, 255, 0.35);
+            border-radius: 2px;
+            font-family: var(--font-mono);
+            font-size: 0.62rem; font-weight: 700; color: var(--accent-bright);
+        }
+
+        /* ============================================================
+           BOTÓN
+           ============================================================ */
+        .btn {
+            width: 100%; padding: 15px;
+            background: linear-gradient(135deg, #6b5ce7 0%, #5a4bd1 100%);
+            border: 1px solid rgba(124, 138, 255, 0.35);
+            border-radius: 4px;
+            color: white;
+            font-family: var(--font-body);
+            font-size: 0.95rem; font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            letter-spacing: 0.5px;
+            position: relative;
+            overflow: hidden;
+            margin-top: 4px;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute; top: -50%; left: -50%;
+            width: 200%; height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.12) 0%, transparent 70%);
+            opacity: 0; transition: opacity 0.3s ease;
+        }
+
+        .btn:hover {
+            background: linear-gradient(135deg, #7c6af7 0%, #6a58e0 100%);
+            border-color: rgba(140, 160, 255, 0.55);
+            box-shadow: 0 10px 30px rgba(100, 80, 220, 0.35), 0 0 50px rgba(124, 138, 255, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .btn:hover::before { opacity: 1; }
+        .btn:active { transform: translateY(0) scale(0.98); }
+
+        .btn-content {
+            display: flex; align-items: center; justify-content: center; gap: 10px;
+            position: relative; z-index: 1;
+        }
+
+        .btn-content svg {
+            width: 17px; height: 17px;
+            transition: transform 0.3s ease;
+        }
+
+        .btn:hover .btn-content svg { transform: rotate(15deg) scale(1.1); }
+
+        /* ============================================================
+           VOLVER
+           ============================================================ */
+        .back {
+            display: flex; align-items: center; justify-content: center; gap: 7px;
+            margin-top: 16px;
+            font-family: var(--font-mono);
+            color: var(--text-secondary);
+            text-decoration: none; font-size: 0.78rem; letter-spacing: 0.3px;
+            transition: all 0.3s ease;
+            padding: 8px; border-radius: 4px;
+        }
+
+        .back svg { width: 13px; height: 13px; }
+
+        .back:hover { color: var(--accent-bright); background: rgba(124, 138, 255, 0.05); }
+
+        @media (max-width: 600px) {
+            .console-frame { padding: 24px 18px; }
+            .header-text h1 { font-size: 1.05rem; }
+            .criterios-grid { grid-template-columns: 1fr; }
+            .criterio-item.full-width { grid-column: span 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="space-bg" id="spaceBg">
+        <div class="nebula nebula-1"></div>
+        <div class="nebula nebula-2"></div>
+    </div>
+
+    <div class="console">
+        <div class="console-frame">
+            <div class="corner corner-tl"></div>
+            <div class="corner corner-tr"></div>
+            <div class="corner corner-bl"></div>
+            <div class="corner corner-br"></div>
+
+            <div class="status-bar">
+                <div><span class="blink"></span>MODO DOCENTE</div>
+                <div id="clock">00:00:00 UTC</div>
+            </div>
+
+            <div class="header">
+                <svg class="header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+                    <path d="M12 2c3 3 4.5 7 4.5 11a4.5 4.5 0 0 1-9 0c0-4 1.5-8 4.5-11z"/>
+                    <circle cx="12" cy="11" r="1.6"/>
+                    <path d="M8.5 17.5L6 21M15.5 17.5L18 21"/>
+                </svg>
+                <div class="header-text">
+                    <h1>CENTRO DE CONTROL</h1>
+                    <p class="subtitle">Panel de comando — Configuración de misiones</p>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- Mensajes flash -->
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for msg in messages %}
+                        <div class="alert {{ 'alert-success' if '✅' in msg or 'éxito' in msg|lower else 'alert-error' }}">
+                            {% if '✅' in msg or 'éxito' in msg|lower %}
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+                            {% else %}
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M15 9l-6 6M9 9l6 6"/></svg>
+                            {% endif %}
+                            {{ msg }}
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+
+            <div class="warning-box">
+                <svg class="warning-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M12 9v4M12 17h.01M10.3 3.9L2.7 17a1.8 1.8 0 0 0 1.6 2.7h15.4a1.8 1.8 0 0 0 1.6-2.7L13.7 3.9a1.8 1.8 0 0 0-3.4 0z"/>
+                </svg>
+                <span>Al agregar una nueva misión, la red neuronal se entrenará automáticamente. Este proceso puede tomar <strong>varios minutos</strong> dependiendo de la cantidad de datos.</span>
+            </div>
+
+            <form action="/docente" method="POST" id="docenteForm">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+
+                <div class="form-section">
+                    <div class="section-title">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="0.6" fill="currentColor"/></svg>
+                        Datos de la misión
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 9h6M7 13h10"/></svg>
+                            Código de misión
+                        </label>
+                        <input
+                            type="number"
+                            name="id_pregunta"
+                            placeholder="Ej: 4"
+                            required
+                            min="1"
+                            autocomplete="off"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h11l5 5v11H4z"/><path d="M15 4v5h5"/><path d="M8 13h8M8 16.5h5"/></svg>
+                            Descripción de la misión
+                        </label>
+                        <textarea
+                            name="pregunta_texto"
+                            rows="3"
+                            placeholder="Describe la pregunta o misión a evaluar..."
+                            required
+                        ></textarea>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <div class="section-title">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M19.4 13.5a1.7 1.7 0 0 0 .3-2.7l-1-1a1.7 1.7 0 0 0-1.9-.3 7 7 0 0 0-1.5-.9 1.7 1.7 0 0 0-1.6-1.4h-1.4a1.7 1.7 0 0 0-1.6 1.4 7 7 0 0 0-1.5.9 1.7 1.7 0 0 0-1.9.3l-1 1a1.7 1.7 0 0 0 .3 2.7 7 7 0 0 0 0 1.7 1.7 1.7 0 0 0-.3 2.7l1 1a1.7 1.7 0 0 0 1.9.3 7 7 0 0 0 1.5.9 1.7 1.7 0 0 0 1.6 1.4h1.4a1.7 1.7 0 0 0 1.6-1.4 7 7 0 0 0 1.5-.9 1.7 1.7 0 0 0 1.9-.3l1-1a1.7 1.7 0 0 0-.3-2.7 7 7 0 0 0 0-1.7z"/></svg>
+                        Parámetros de evaluación
+                    </div>
+
+                    <div class="criterios-grid">
+                        <div class="criterio-item">
+                            <label><span class="criterio-number">1</span> Grupo Alpha</label>
+                            <input type="text" name="grupo1" placeholder="palabra1, palabra2" required>
+                        </div>
+                        <div class="criterio-item">
+                            <label><span class="criterio-number">2</span> Grupo Beta</label>
+                            <input type="text" name="grupo2" placeholder="palabra1, palabra2" required>
+                        </div>
+                        <div class="criterio-item">
+                            <label><span class="criterio-number">3</span> Grupo Gamma</label>
+                            <input type="text" name="grupo3" placeholder="palabra1, palabra2" required>
+                        </div>
+                        <div class="criterio-item">
+                            <label><span class="criterio-number">4</span> Grupo Delta</label>
+                            <input type="text" name="grupo4" placeholder="palabra1, palabra2" required>
+                        </div>
+                        <div class="criterio-item full-width">
+                            <label><span class="criterio-number">5</span> Grupo Épsilon</label>
+                            <input type="text" name="grupo5" placeholder="palabra1, palabra2" required>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn">
+                    <span class="btn-content">
+                        <span>Iniciar entrenamiento de red neuronal</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M9.5 3a3.5 3.5 0 0 0-3.5 3.5c0 .3 0 .6.1.9A3 3 0 0 0 4 10v.5A3 3 0 0 0 5.5 16a3 3 0 0 0 2.7 4.3c.3.4.7.7 1.3.7H10v-2.5M9.5 3c.9 0 1.7.4 2.3 1M9.5 3v15.5"/><path d="M14.5 3a3.5 3.5 0 0 1 3.5 3.5c0 .3 0 .6-.1.9A3 3 0 0 1 20 10v.5A3 3 0 0 1 18.5 16a3 3 0 0 1-2.7 4.3c-.3.4-.7.7-1.3.7H14v-2.5M14.5 3c-.9 0-1.7.4-2.3 1M14.5 3v15.5"/></svg>
+                    </span>
+                </button>
+            </form>
+
+            <div class="form-section" style="margin-top:24px;">
+                <div class="section-title">Estado de entrenamientos</div>
+                <div id="trainingJobs" aria-live="polite">
+                    <div class="warning-box"><span>No hay entrenamientos recientes.</span></div>
+                </div>
+            </div>
+
+            <a href="/" class="back">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M19 12H5m0 0l6-6m-6 6l6 6"/></svg>
+                Regresar a la Estación Principal
+            </a>
+        </div>
+    </div>
+
+    <script>
+        const spaceBg = document.getElementById('spaceBg');
+        for (let i = 0; i < 110; i++) {
+            const star = document.createElement('div');
+            star.classList.add('star');
+            const size = Math.random() * 2.2 + 0.5;
+            star.style.cssText = `width: ${size}px; height: ${size}px; left: ${Math.random()*100}%; top: ${Math.random()*100}%; --duration: ${Math.random()*3+2}s; --delay: ${Math.random()*4}s; --min-opacity: ${Math.random()*0.3+0.06};`;
+            spaceBg.appendChild(star);
+        }
+
+        function createShootingStar() {
+            const star = document.createElement('div');
+            star.classList.add('shooting-star');
+            star.style.left = Math.random() * 65 + '%';
+            star.style.top = Math.random() * 35 + '%';
+            spaceBg.appendChild(star);
+            setTimeout(() => star.remove(), 900);
+        }
+        setInterval(() => { if (Math.random() > 0.72) createShootingStar(); }, 3500);
+
+        const form = document.getElementById('docenteForm');
+        form.addEventListener('submit', () => {
+            const btn = form.querySelector('.btn');
+            btn.querySelector('.btn-content').innerHTML =
+                '<span>Enviando entrenamiento a la cola...</span>' +
+                '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" style="animation: spin 1s linear infinite;"><circle cx="12" cy="12" r="9" stroke-dasharray="40 20"/></svg>';
+            btn.style.pointerEvents = 'none';
+            btn.style.opacity = '0.8';
+        });
+
+        function renderJobs(trabajos) {
+            const contenedor = document.getElementById('trainingJobs');
+            contenedor.replaceChildren();
+            if (!Array.isArray(trabajos) || trabajos.length === 0) {
+                const vacio = document.createElement('div');
+                vacio.className = 'warning-box';
+                const texto = document.createElement('span');
+                texto.textContent = 'No hay entrenamientos recientes.';
+                vacio.appendChild(texto);
+                contenedor.appendChild(vacio);
+                return;
+            }
+
+            trabajos.forEach(trabajo => {
+                const tarjeta = document.createElement('div');
+                tarjeta.className = 'warning-box';
+                tarjeta.style.marginBottom = '10px';
+
+                const texto = document.createElement('span');
+                const estado = String(trabajo.estado || 'desconocido').toUpperCase();
+                const detalle = trabajo.error || trabajo.progreso || '';
+                texto.textContent = `Misión ${trabajo.codigo}: ${estado} — ${detalle}`;
+                tarjeta.appendChild(texto);
+                contenedor.appendChild(tarjeta);
+            });
+        }
+
+        async function actualizarEntrenamientos() {
+            try {
+                const respuesta = await fetch('/api/entrenamientos', {
+                    headers: {'Accept': 'application/json'},
+                    credentials: 'same-origin'
+                });
+                if (!respuesta.ok) return;
+                const data = await respuesta.json();
+                renderJobs(data.trabajos);
+            } catch (error) {
+                console.warn('No se pudo actualizar el estado del entrenamiento', error);
+            }
+        }
+
+        actualizarEntrenamientos();
+        setInterval(actualizarEntrenamientos, 5000);
+
+        const clockStyle = document.createElement('style');
+        clockStyle.textContent = '@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }';
+        document.head.appendChild(clockStyle);
+
+        function updateClock() {
+            const now = new Date();
+            const h = String(now.getUTCHours()).padStart(2, '0');
+            const m = String(now.getUTCMinutes()).padStart(2, '0');
+            const s = String(now.getUTCSeconds()).padStart(2, '0');
+            document.getElementById('clock').textContent = `${h}:${m}:${s} UTC`;
+        }
+        updateClock();
+        setInterval(updateClock, 1000);
+    </script>
+
+</body>
+</html>

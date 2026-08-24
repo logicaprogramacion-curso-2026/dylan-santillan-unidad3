@@ -1,0 +1,23 @@
+{
+    "id_pregunta": "1",
+    "proveedor_embedding": "Gemini",
+    "dimensiones": 768,
+    "muestras_totales": 50,
+    "muestras_entrenamiento_validacion": 42,
+    "muestras_prueba": 8,
+    "dataset": "data\\dataset_pregunta_1.csv",
+    "dataset_sha256": "8138efc32f23d020780dcef8d5610d5c0e4ba7b8ecc3ec2ba6c2a513664b9bd0",
+    "modelo": "modelos\\cerebro_pregunta_1.json",
+    "grafica": "graficas\\loss_pregunta_1.png",
+    "metricas_prueba": {
+        "mse": 0.022872,
+        "mae_puntos": 1.1412,
+        "rmse_puntos": 1.5123,
+        "r2": 0.7921,
+        "dentro_de_1_punto_pct": 37.5,
+        "exactitud_aprobacion_pct": 87.5,
+        "muestras_prueba": 8
+    },
+    "fecha_entrenamiento_utc": "2026-08-02T01:13:10.999572+00:00",
+    "seed": 42
+}

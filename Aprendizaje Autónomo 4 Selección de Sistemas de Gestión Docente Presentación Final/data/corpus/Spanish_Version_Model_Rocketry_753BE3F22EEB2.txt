@@ -1,0 +1,1627 @@
+FASE ESCRITA
+i
+SEGUNDA EDICION
+
+(Written Phase-Spanish)
+
+Un programa desarrollado para Cadetes interesados en la
+ciencia, tecnología y vuelo de los cohetes modelo
+Dr. Ben Millspaugh
+Gary Dahlke
+Autores
+Seth Stewart
+Ilustraciones
+Barb Pribulick
+Diseño Gráfico
+Dr. Jeff Montgomery
+Gary Dahlke
+Pete Boulanger
+Stan Troyano
+Ginny Smith
+Editores
+Judy Stone
+Correlación Estándares Nacionales
+Dr. Janice Borrero
+Traducción
+
+Publicado por
+National Headquarters, Civil Air Patrol, Maxwell AFB, Alabama 36112
+SEGUNDA EDICION 2015
+Imágenes Cortesía de Lockheed Martin & Dennis Ven der Vieren
+Diseño Portada por
+Seth Stewart
+i
+
+Tabla de Contenido
+Prelimnares................................................................................................................................................................ iii
+Introducción .......................................................................................................................................................... iii
+Estándares Nacionales........................................................................................................................................... iv
+Objetivos de Aprendizaje ....................................................................................................................................... v
+Programa de Cohetería Modelo ............................................................................................................................ vi
+Requisitos .............................................................................................................................................................. vi
+ETAPA 1: REDSTONE ................................................................................................................................................ viii
+Una Breve Historia De La Cohetería y sus Grandes Pioneros .................................................................................1
+Konstantin E. Tsiolkovsky ...................................................................................................................................1
+Dr. Hermann Oberth...........................................................................................................................................2
+Dr. Robert H. Goddard........................................................................................................................................3
+Dr. Wernher von Braun ......................................................................................................................................4
+ETAPA 2: TITAN ...........................................................................................................................................................5
+Código de Seguridad...............................................................................................................................................6
+L Leyes Que Rigen La Ciencia De La Cohetería .......................................................................................................7
+Primera Ley De Movimiento ...............................................................................................................................7
+Segunda Ley De Movimiento ..............................................................................................................................8
+Tercera Ley De Movimiento ...............................................................................................................................8
+Aerodinámica de los Cohetes .................................................................................................................................8
+Principios de la estabilidad y fuerza en el vuelo.................................................................................................8
+Prueba de vuelo ..................................................................................................................................................9
+ETAPA 3: SATURNO ................................................................................................................................................. 11
+Código de Seguridad............................................................................................................................................ 12
+Rastreo de Altitud................................................................................................................................................ 13
+Determinación de altitud ................................................................................................................................ 13
+Motores de Cohetes Modelo............................................................................................................................... 15
+Thrust – ¡Poder de Empuje! ............................................................................................................................ 16
+Instrucciones para Plantilla de Progreso ................................................................................................................. 19
+Planilla de Progreso ............................................................................................................................................. 20
+
+Nota de la Traductora: Este manual es una traducción al español del libro Civil Air Patrol – Model Rocketry (2da Ed. - 2015). El mismo fue
+traducido con la mayor fidelidad posible al contenido del texto original. Para evitar confusión en términos y conceptos importantes, la
+traductora decidió dejar los mismos en inglés.
+
+ii
+
+Prelimnares
+
+Introducción
+EL PROGRAMA DE
+COHETERÍA MODELO DEL CAP
+
+LO BASICO
+Este manual instruccional fue diseñado para ser una transición de Module 4, ROCKETS, de Aerospace
+Dimensions, a un pasatiempo y ciencia de la cohetería modelo. El material instruccional comienza con simples
+modelos de cohetes con poder-alterno y progresivamente reta al cadete con más modelos avanzados.
+El Programa de Cohetería Modelo del CAP (CAP Model Rocketry Program) ahora consiste de dos
+componentes. Las actividades delineadas en este manual se basan en aspectos básicos. La intensión es que el
+cadete entienda los principios de la historia de la cohetería, la ciencia de los cohetes, construcción de cohetes, y
+el lanzamiento seguro y recuperación de los cohetes modelo. El CAP ha creado un programa avanzado de
+cohetería para acomodar aquellos cadetes que desean continuar proyectos más retadores en la cohetería
+modelo. En orden para diferenciar entre los dos programas, el programa diseñado en este manual será
+denominado como Programa Básico, y el siguiente será denominado como Programa Avanzado.
+El programa ha sido desarrollado para que hasta el cadete más joven pueda participar en él y divertirse
+construyendo cohetes poco costosos. Ha sido dividido en tres etapas: Redstone, Titán y Saturno. Cada etapa es
+más retadora y, hasta completar la Etapa Saturno, el cadete es elegible para el uso del distintivo Civil Air Patrol
+Rocketry Badge, así como el uso del parcho en el BDU.
+Este programa también fue diseñado para incluir aquellos cadetes que viven en áreas donde el combustible
+sólido utilizados en los cohetes modelo está prohibido por la ley. Los cadetes que se encuentren bajo estas
+circunstancias se les ofrece la opción de lanzamiento de cohetes de presión de aire.
+El programa ha sido diseñado para que cadetes, personal adulto cualificado y el comandante de escuadrón
+trabajen juntos. Al completar este programa, el cadete será reconocido por sus compañeros y Staff de adultos
+como uno que tiene destrezas de liderazgo en el campo de la cohetería.
+
+RESUMEN DE CAMBIOS
+Esta es la primera revisión al nuevo programa de cohetería modelo desde que fue introducido en el 2002.
+Dentro de las revisiones significativas realizadas se incluyen las siguientes: 1) Se añaden cohetes de aire y se
+elimina el “junk rockets” de la etapa Redstone. 2) Se eliminan las instrucciones de cohetes específicos en las
+etapas Titán y Saturno considerando que cualquiera que sea el cohete seleccionado para una etapa en particular
+tendrá incluidas las instrucciones detalladas para su construcción; técnicas comunes de construcción/acabados
+también deben ser incluidas según sea el caso. 3) Los tipos de cohetes requeridos para Titán y Saturno han sido
+modificados; un cohete modelo ya no es requerido para Titán; más bien, los tipos de cohete estarán por
+categorías de “Nivel de Destreza”. 4) Las hojas de “Official Witness Log (OWL) fueron eliminadas; una plantilla
+fue establecida y la acción del comandante de unidad ha sido limitada a solo firmar el certificado de
+reconocimiento como que completo el programa; el “Qualified Senior Member “(QSM) registra todo el progreso
+hasta que complete el programa, en ese momento él/ella notificará al comandante. 5) Una revisión completa del
+texto fue realizada para corregir todo aquellos errores existentes en datos o tipográficos.
+
+NOTA IMPORTANTE PARA LOS LÍDERES ADULTOS
+Las actividades delineadas para los cadetes en este manual requieren la vigilancia de un “Qualified Senior
+Member” (QSM). Si la unidad tiene un “Aerospace Education Officer” (AEO) asignado, él/ella es la opción más
+lógica para actuar como QSM. Si la unidad no cuenta como un AEO asignado, el comandante puede asignar un
+miembro adulto apropiado para actuar como el QSM. En adición, el “Aerospace Education Member (AEM)
+puede también actuar como QSM. El QSM debe estar familiarizado con el contenido del manual antes de
+cumplir con los deberes oficiales asignados.
+iii
+
+Estándares Nacionales
+ESTANDARES EN CIENCIA: National Research Council (NRC)
+Estándares A: Ciencia como Investigación
+• Habilidades necesarias para hacer investigación científica
+• Comprensión sobre la investigación científica
+Estándar B: Ciencia Física
+• Propiedades y cambios en las propiedades en la material.
+• Reacciones químicas
+• Movimiento y Fuerzas
+• Transferencia de Energía
+Estándar E: Ciencia y Tecnología
+• Habilidades en el diseño tecnológico
+• Comprensión sobre la ciencia y la tecnología
+Estándar F: Ciencia en Perspectivas Personales y Sociales
+• Riesgos and Beneficios
+• Peligros Naturales e Inducidos por los humaños
+• Ciencia y tecnología en la sociedad
+Estándar G: Historia y Naturaleza de la Ciencia
+• Ciencia como actividad humana
+• Perspectivas Históricas
+• Historia de la Ciencia
+Unificando Conceptos y Procesos
+• Constancia, cambio y medición
+• Evidencia, Modelos y explicación
+• Forma y función
+
+ESTANDARES EN MATEMATICA: National Council of Teachers of Mathematics (NCTM)
+4. Estándares de Medición
+• Comprensión de los atributos medibles de los objetos y de las unidades, sistemas, y procesos de
+medición.
+• Aplicación apropiada de las técnicas, herramientas, y formulas para determinar medición.
+5. Análisis de Data y Estándares de Probabilidad
+• Formulación de preguntas que puedan ser dirigidas con data y recolectar, organizar, y demostrar data
+relevante para contestarlas.
+6. Estándares para Resolver Problemas
+• Resolver problemas que surgen en las matemáticas y otros contextos.
+8. Estándares de Comunicación
+• Usar el leguaje matemático para expresar ideas matemáticas de manera precisa.
+9. Estándares de Conexión
+• Reconoces y aplicar las matemáticas en contextos fuera de las matemáticas.
+
+ESTANDARES EN TECNOLOGIA: International Technology Education Association (ITEA)
+Estándar 8: Comprensión de los atributos del diseño
+Estándar 10: Comprensión del papel de la resolución de problemas, investigación y desarrollo, invención,
+innovación y experimentación en la solución de problemas.
+Estándar 11: Habilidad para aplicar los procesos de diseño.
+
+ESTANDARES EN ESTUDIOS SOCIALES: National Council for the Social Studies (NCSS)
+2. Tiempo, Continuidad, y Cambio
+6. Poder, Autoridad, y Gobierno
+8. Ciencia, Tecnología y Sociedad
+
+iv
+
+Objetivos de Aprendizaje
+ETAPA 1 – REDSTONE
+Luego de completar esta etapa, usted debe ser capaz de:
+
+•
+•
+•
+•
+
+Identificar datos históricos sobre el desarrollo de los cohetes.
+Describir las mayores contribuciones de los cuatros grandes pioneros en la cohetería.
+Recordar los datos sobre la vida y logros de los pioneros en la cohetería.
+Construir y lanzar dos de las opciones de cohetes modelo utilizando métodos de
+propulsión no-convencionales (alternos).
+
+ETAPA 2: TITAN
+Luego de completar esta etapa, usted debe ser capaz de:
+
+•
+•
+•
+•
+
+Explicar las tres Leyes de Movimiento de Newton
+Describir la aerodinámica de un cohete.
+Construir y lanzar dos cohetes modelo presente dentro de las opciones en la Parte
+Práctica (“Hands-On”).
+Demostrar conocimiento del Código de Seguridad de NAR
+
+ETAPA 3: SATURNO
+Luego de completar esta etapa, usted debe ser capaz de:
+
+•
+•
+•
+•
+•
+•
+•
+
+Describir rastreo de altitud
+Explicar la distancia de referencia
+Describir los componentes de un motor de cohete modelo.
+Definir Newton segundos
+Definir impulso total.
+Demostrar conocimiento del Código de Seguridad de NAR.
+Construir y lanzar un cohete en la etapa Saturno.
+
+v
+
+Programa de Cohetería Modelo
+
+Requisitos
+ETAPA UNO: Redstone
+1. Fase Escrita
+El cadete debe repasar y estudiar el material escrito de manera que apruebe un examen sobre la historia de los
+cohetes y las vidas de los cuatro grandes pioneros en la cohetería.
+
+2. Examen
+El cadete debe obtener una puntuación mínima de 70% en el examen de Redstone, administrado ya sea en copia
+impresa o en línea a través de “Learning Management System” (LMS). Una vez completado, el “Qualified Senior
+Member” (QSM) actualizará los resultados en la Plantilla de Progreso.
+
+3. Fase “Hands-On”
+El cadete debe construir dos cohetes con diferentes fuentes de poder. Hay cuatro opciones:
+(1) Cohete Goddard utilizando banda elástica;
+(2) Cohete de Alka Seltzer® y agua;
+(3) Cohete propulsado por aire
+(4) Cohete combinando aire comprimido y botella de agua.
+
+4. Vuelo de Cohetes Modelo
+El cadete debe tener un QSM que atestigüe el lanzamiento de los dos cohetes y añote el evento en la Plantilla de
+Progreso.
+
+ETAPA DOS: Titán
+1. Fase Escrita
+El cadete debe repasar y estudiar el material escrito de manera que apruebe un examen sobre las Leyes de
+Movimiento de Newton y la Aerodinámica de los Cohetes.
+
+2. Examen
+El cadete debe obtener una puntuación mínima de 70% en el examen de Titán, administrado ya sea en copia
+impresa o en línea a través de “Learning Management System” (LMS). Una vez completado, el “Qualified Senior
+Member” (QSM) actualizará los resultados en la Plantilla de Progreso.
+
+3. Fase “Hands-On”
+1) El cadete debe construir dos cohetes en esta etapa. Si el cohete modelo convencional de propulsor solido está
+permitido en la localidad del cadete, entonces él/ella debe construir dos “kits” comerciales disponibles, el primero
+debe tener un mínimo de Nivel de destreza E2X, el segundo debe tener un mínimo de Nivel de Destreza de 1. El
+cadete que tenga las destrezas de construcción, puede exceder el nivel de destreza mínimo si él/ella así lo desee.
+Una descripción detallada de los niveles de destreza son incluidos en el material instruccional de la Etapa Titán.
+2) En algunos estados, los cohetes modelos son considerados un peligro de incendio, o por otras razones, son
+prohibidos por ley. Si este es el caso, el cadete tiene la opción de lanzar y recuperar de manera segura un cohete
+comercial propulsado con aire. Si el cadete escoge esta opción, él/ella debe ofrecer una prueba matemática de
+altitud alcanzada por el vuelo. Esto puede realizarse utilizando un inclinómetro (presentado en la pagina 29 en
+Aerospace Dimensions, Rockets, Module 4), o uno de los buscadores comerciales de altitud tales como Estes
+Altitrak®.
+3) En adición, si un cadete vive en un área donde los cohetes están prohibidos por ley, un cohete modelo convencional
+de propulsor solido puede ser construido (pero no podrá volarlo) que debe tener un Nivel de Destreza mínimo de
+E2X. El construir un cohete modelo convencional le dará al cadete una idea clara del trabajo que se realizar en este
+tipo de cohete. Además. El cohete podría volar en alguna actividad futura donde la cohetería modelo convencional
+sea permitida.
+
+vi
+
+4. Vuelo del Cohete
+El cadete debe probar, antes del vuelo, que el modelo es estable. El cadete debe usar el “swing test” descrito en el
+texto como prueba de estabilidad. Aunque un cohete construido de un manufacturero comercial se espera tenga
+un diseño estable, el “swing test” provee una excelente oportunidad para demostrar la estabilidad a aquellos que
+son nuevos en la cohetería modelo. Un Qualified Senior Member (QSM) debe ser testigo del lanzamiento exitoso,
+vuelo y recuperación del cohete es requerido en esta fase. Es la responsabilidad del Qualified Senior member
+(QSM) velar que las directrices del Código de Seguridad de la Asociación Nacional de Cohetería (“NAR Safety
+Code”) son seguidas en todos los lanzamientos. El cadete debe demostrar dominio del Código de Seguridad,
+seguido por una lista de cotejo pre-vuelo, y ejecutar de lanzamiento y recuperación de manera segura. Una vez
+los vuelos hayan sido realizados conforme al Código de Seguridad, el QSM añotara los eventos en la Plantilla de
+Progreso. NOTA: La opción del cohete de aire consistirá de un (1) vuelo y necesitará seguir solamente el Código de
+Seguridad para aquellos aspectos que apliquen.
+
+ETAPA TRES: Saturno
+1. Fase Escrita
+El cadete debe repasar y estudiar el material escrito de manera que apruebe un examen sobre como determinar la
+altitud, propulsión y el Código de Seguridad de la Asociación Nacional de Cohetería (NAR).
+
+2. Examen
+El cadete debe obtener una puntuación mínima de 70% en el examen de Saturno, administrado ya sea en copia
+impresa o en línea a través de “Learning Management System” (LMS). Una vez completado, el “Qualified Senior
+Member” (QSM) actualizará los resultados en la Plantilla de Progreso.
+
+3. Fase “Hands-On”
+(1) El cadete debe construir UN (1) cohete con un mínimo de Nivel de Destreza 2.
+a. El cadete DEBE ELEGIR CONSTRUIR un cohete de dos etapas que requiera dos motores para alcanzar
+altitud. El cohete debe alcanzar al menos 500’ y debe ser recuperado de manera segura.
+b. El cadete puede elegir construir un modelo de cohete que sea capaz de cargar al menos 2 onzas de
+carga a una altitud de 300’ o más.
+c. El cadete puede elegir construir un cohete modelo que tenga adjunto un planeador por separado. El
+planeador y el cohete debe regresar a tierra a salvo y siempre conservando las directrices del Código
+de Seguridad.
+(2) Si el cadete vive en un área donde los cohetes de combustible-solido están prohibido por ley, él/ella pueden
+elegir construir un cohete propulsado con aire de su propio diseño desde cero. Puede ser lanzado por un lanzador
+comercial como el Estes o Air Burst, también puede ser un lanzador casero (como cualquiera de los que se
+muestran en las secciones Redstone y Titán). El cohete debe alcanzar una altitud mínima de 100’; y el cadete debe
+proveer evidencia de la altitud alcanzada usando un inclinómetro o un modelo comercial como el de Estes
+Altitrak®, o las ecuaciones de tiempo descritas en el material instruccional Titán.
+
+4. Vuelo y recuperación de los cohetes
+Una vez los vuelos hayan sido realizados conforme al Código de Seguridad, el QSM añotará los eventos en la
+Plantilla de Progreso. NOTA: La opción del cohete de aire consistirá en un (1) vuelo y necesitará seguir solamente
+el Código de Seguridad para aquellos aspectos que apliquen.
+
+5. Comandante de Escuadrón (Squadron Commander)
+Una vez se determine que el cadete ha completado todos los requisitos del programa (esto es, Etapas 1, 2 y 3), el
+Comandante de Escuadrón firmará y presentará el certificado de logros del CAP Model Rocketry durante una
+ceremonia de premiación. Este certificado está disponible en la sección de Download en eServices. El comandante
+puede también elegir entregarle al cadete el parcho bordado de cohetería y/o el distintivo metálico (Badge) de
+cohetería.
+
+vii
+
+ETAPA 1
+REDSTONE
+ETAPA 1: REDSTONE
+
+viii
+
+ETAPA 1: REDSTONE
+
+Una Breve Historia De La Cohetería Y Sus Grandes Pioneros
+
+Fase Escrita
+
+UNA BREVE HISTORIA DE LA COHETERÍA Y SUS GRANDES PIONEROS
+Tal vez los primeros verdaderos cohetes fueron
+“accidentes”. En el siglo 1 d.C se informó que los chinos
+experimentaron con un polvo explosivo sencillo hecho de
+nitrato, azufre y carbón. A pesar de estos polvos fueron
+utilizados para crear pequeñas explosiones en las fiestas
+religiosas, finalmente terminaron en armas. Los chinos
+llenaban tubos de bambú con esta mezcla y las adjuntaban
+a las flechas. Estas "flechas de fuego", como se les llamaba,
+se utilizaron en la batalla de Kai-Keng donde los chinos
+repelieron a los invasores mongoles con un "bombardeo
+de misiles". Esto ocurrió en el año 1232.
+Mucho más tarde, en 1405, un ingeniero alemán de
+nombre Konrad Kyeser von Eichstadt diseñó un cohete que
+fue impulsado por pólvora. Otro país europeo, Francia,
+utilizó cohetes para defender Orleans contra los británicos
+en 1429 y de nuevo en el asedio de Pont-Andemer en
+1449.
+Durante la Guerra de los Treinta Años (1618-1648) los
+cohetes disparados pesaban hasta 100 libras. Estos
+explotaban y enviaban pequeños trozos de metales en
+todas direcciones. Los cohetes fueron ampliamente
+utilizados en la India cuando se les disparó a los británicos
+en las batallas de Seringapatam (1792-1799).
+Durante la última parte del siglo 17 las bases
+científicas para la cohetería moderna fueron establecidas
+por Sir Isaac Newton, un gran científico británico. Newton
+organizó su conocimiento sobre el movimiento físico en
+tres leyes científicas (discutidas en la Etapa Titán en este
+texto). Las leyes de Newton pronto comenzaron a tener un
+impacto práctico en el diseño de cohetes en esos días.
+Durante el siglo 18, los cohetes experimentaron un breve
+resurgimiento como arma de guerra. India utilizó cohetes
+con gran éxito contra los británicos en 1792 y esto provocó
+que el Coronel William Congreve, un experto en artillería
+británica, empezara a utilizar más de un acercamiento
+científico para el desarrollo de cohetes sofisticados. El
+estandarizó las composiciones de explosivos en la pólvora
+y luego añadió un estabilizador de vuelo con barras de
+guía. Congreve fue capaz de aumentar el alcance de los
+cohetes desde aproximadamente 300 hasta más de 3000
+yardas. Aproximadamente 25,000 cohetes Congreve
+fueron usados en 1807 en la batalla de Copenhaguen.
+
+En la guerra de 1812 entre Gran Bretaña y Estados
+Unidos, los británicos usaron cohetes contra las tropas
+estadounidenses. Durante un asedio típico, los cohetes
+iluminaban el cielo de la noche y en la batalla en el Fuerte
+McHenry, en 1812, Francis Scott Key fue testigo del
+despliegue. Esto le inspiró a escribir un poema que más
+tarde pasó a formar parte del Himno Nacional de Estados
+Unidos, el " Star Spangled Banner”.
+Pese a los avances tecnológicos de William Congreve,
+la precisión de los cohetes todavía dejaba mucho que
+desear. William Hale, un inglés, desarrolló una técnica
+llamada estabilización de giro. En esta tecnología, los gases
+de escape salen golpeando las hélices pequeñas en la
+parte inferior del cohete, causando que gire como una bala
+en vuelo. Esto dio al cohete estabilidad y mayor precisión.
+Aún con las mejoras en la estabilización, el cohete
+nunca fue utilizado como un arma militar importante hasta
+el siglo 20. La artillería estándar fue mucho más utilizada
+debido a la precisión superior de un proyectil de cañón
+para dar en un blanco específico.
+A finales del siglo 19, los hombres empezaron a soñar
+con viajar al espacio y llegar a otros planetas. Para lograr
+tal hazaña necesitaban una máquina que tuviera una gran
+potencia y velocidad. En un principio, la comunidad
+científica se burló de la idea de los vuelos espaciales, pero
+unos pocos valientes científicos siguieron soñando y
+desarrollaron incluso experimentos con el poder de los
+cohetes.
+
+CUATRO GRANDES PIONEROS
+EN LA COHETERÍA
+Konstantin E. Tsiolkovsky
+(1857-1935)
+Tsiolkovsky fue un maestro ruso que hizo algunos de
+los primeros cálculos matemáticos para los vuelos de los
+cohetes en el espacio. El nació en Izhevskoe, Rusia, y fue el
+5to de 18 hijos. Su padre era guarda forestal de profesión.
+
+i
+1
+
+habló sobre el giroscopio para controlar la orientación de
+una nave espacial.
+En 1903, Tsiolkovsky publicó en la revista científica
+Nauchnoe Obozrenie, el articulo “The Exploration of the
+World Space with Jet Propulsion Instruments”. Los expertos
+ahora reconocen este artículo como la primera propuesta
+basada en hechos científicos para la exploración del
+espacio. En el artículo, se formuló la relación entre el
+cambio de masa de un cohete a medida que va quemando
+combustible, la velocidad de escape de los gases, y la
+velocidad final del cohete. Su trabajo también incluyó e
+ilustró, un motor de cohete que contenía hidrógeno
+líquido y oxígeno, mezcla que se utiliza hoy día en muchos
+vehículos de lanzamiento. En trabajos posteriores, el habló
+de cohetes multi-etapas, aviones propulsados por cohetes,
+estaciones espaciales en órbita y eventualmente la
+colonización de la galaxia.
+Aunque nunca construyó un cohete, el basó mucho de
+su trabajo en la ingeniería aeroespacial teórica. El fue un
+humilde maestro que, aún hoy, mantiene la admiración de
+las personas en Rusia. Es conocido como el Padre de los
+Viajes Espaciales.
+
+Konstantin Eduardovich Tsiolkovsky
+
+El fue un visionario y se sigue considerando por sus
+compatriotas como el primer científico en sentar las bases
+para la exploración espacial. A la edad de 10 años, luego de
+sufrir de fiebre escarlata quedo incapacitado con casi
+sordera total por el resto de su vida. Esta discapacidad lo
+llevó a convertirse en alguien introvertido y desarrolló
+pasión por los libros. La sordera lo forzó a abandonar la
+educación pública, y fue ahí cuando el joven Konstatin
+decidió educarse a sí mismo en su casa. A principios del
+1870, su familia reconoció su inteligencia y fue enviado a
+Moscú a estudiar. Allá conoció a Nikolai Fedorov, un
+filósofo excéntrico que compartía sus teorías radicales en
+el “cosmismo”. Esta relación tuvo un profundo efecto en el
+pensamiento futuro del joven
+Tsiolkovsky. Los
+historiadores concuerdan que las teorías de Nikolai
+Fedorov inspiraron el interés de Tsiolkovsky en los vuelos
+espaciales. En esta tarea de leer todo lo relacionado a este
+tema, descubrió las novelas de Julio Verne y quedó
+fascinado con la novela De la Tierra a la Luna (1865).
+Tsiolkovsky decidió tratar su propia suerte escribiendo
+ciencia ficción y su trabajo reflejaba experticia técnica que
+estaba basada en ciencia real, no en fantasía. Se incluían
+conceptos antes desconocidos como: la microgravedad, los
+trajes espaciales, y el control de un cohete fuera de la
+atmósfera.
+Años de estudio dieron fruto cuando Tsiolkovsky
+aprobó el examen para convertirse en maestro certificado.
+Se mudó al pueblo de Borovsk donde fue contratado para
+enseñar matemáticas. Durante este periodo, conoció y se
+casó con Varvara Sokolova en 1880. Durante los años
+subsiguientes, el maestro-científico escribió un artículo
+titulado Svobodnoe Prostranstvo o “Espacio Libre”. Nunca
+fue publicado en vida, pero a mediados del siglo 20 fue
+presentado. En este escrito histórico habló sobre el vacío,
+la falta de gravedad y muchos otros de los peligros que
+enfrentarían los futuros viajeros del espacio. También
+
+Dr. Hermann Oberth
+(1894 – 1989)
+Hermann Julius Oberth nació el 25 de junio de 1894,
+en el pueblo de Hermannstadt, Transilvania. En algunos
+círculos es también conocido como el “Padre de los Viajes
+Espaciales”. Su interés en la cohetería comenzó en 1905
+cuando tenía 11 años. Una vez más el libro De la Tierra a la
+Luna, por Julio Verne, estimuló su imaginación sobre las
+posibilidades de exploración del espacio por el hombre.
+
+2
+
+Luego de un cuidadoso estudio, Oberth entendió que
+mucha de las “fantasías” que encontró en el libro tiene
+principios científicos. A los 14 años, Oberth teorizó que un
+cohete de retroceso o “recoil rocket” puede viajar a través
+del espacio mediante la expulsión de gases de escape.
+Como estudiante universitario encontró que la
+universidad no era mucho reto. Como quiera, cuando llegó
+a la escuela graduada, y estaba trabajando en su grado
+doctoral, encontró muchos retos que lo llevaron a
+integrarse de lleno a la ciencia. Fue en ese tiempo que
+escribió una tesis sobre el desarrollo de un cohete. Este
+trabajo se publicó en 1923, y fue titulado “The Rocket into
+Planetary Space”, el cual en un principio fue rechazada por
+las comunidades científicas. En este libro, Oberth cubrió
+conceptos tales como la propulsión, los peligros de
+trabajar con propulsores sólidos y los posibles daños a los
+humanos. También concluyó que a medida que el cohete
+vuela más y más alto, la masa del propulsor se vuelve
+menor, mientras la masa del cohete se mantiene sin
+cambiar. En términos relativos, esto significa que el cohete
+se vuelve más pesado en relación con la habilidad del
+motor de proveer empuje. Fue este pensamiento el que
+dio a Oberth la idea de multi-etapas. Esto es que cuando el
+combustible de la primera etapa se quema, la etapa debe
+ser descartada, concepto que se sigue usando
+actualmente.
+En los años 30’s, Oberth desarrolló una relación
+estrecha de trabajo con Wernher von Braun. Ellos
+trabajaron juntos en el desarrollo del infame V-2 o
+Vengance Weapon, para el ejército alemán. Luego de la
+Segunda Guerra Mundial, von Braun y Oberth, trabajaron
+en el United States Army Ballistic Missile Agency en
+Huntsville, Alabama.
+Hermann Oberth, un gran pionero en el campo de la
+aeronáutica, hizo una enorme contribución a la
+exploración del espacio por el hombre, murió en Alemania
+Occidental el 29 de diciembre de 1989, a la edad de 95
+años.
+
+en práctica mediante la experimentación con los cohetes.
+Como estudiante graduado, Goddard trabajó de cerca con
+el reconocido físico, Dr. Gordon A. Webster. Esta
+asociación le dio un gran refuerzo en las ciencias. Luego de
+completar sus estudios graduados, fue contratado por
+Clark University como miembro de la facultad. Luego de un
+
+largo periodo de experimentación, Goddard construyó con
+éxito un cohete con combustible líquido que fue lanzado el
+16 de marzo de 1926, desde un campo cerca de la ciudad
+de Worcester, Massachusetts. Aunque el cohete voló por
+solo 2.5 segundos y llegó a una altura de solamente 41
+pies, comprobó que los cohetes de combustible líquido
+funcionan. Una de las mayores ventajas del combustible
+líquido es que puede ser controlado, a diferencia del
+combustible sólido que se quema completo una vez es
+encendido.
+Durante la Primera Guerra Mundial, Goddard recibió
+unos fondos de parte del U.S. Army para trabajar con los
+proyectos de cohetes propulsores sólidos. Una de las
+invenciones, desarrollada durante ese tiempo, fue un
+cohete de 3 pulgadas lanzado a través de un tubo de
+acero. Más tarde, esto evolucionó a la muy conocida
+bazooka que fue usada durante la Segunda Guerra
+Mundial.
+En los años 20’s, los experimentos con cohetes de
+Goddard captaron la atención de los medios. En uno de sus
+estudios, publicado por el Smithsonian Institute, el
+especuló en el eventual viaje a la Luna usando cohetes más
+potentes. Desafortunadamente, fue ridiculizado por la
+prensa y esto causó que él continuara sus próximos
+experimentos en secreto.
+Goddard y su esposa, Ester, eventualmente se
+mudaron a Roswell, Nuevo México, donde continuarían
+realizando experimentos sin la humillación de los medios
+noticiosos. Mucho de este trabajo fue financiado por la
+Fundación Guggenheim y fue presenciado por el famoso
+aviador Charles A. Lindbergh. Aunque en los Estados
+
+Dr. Robert H. Goddard
+(1882-1945)
+El Dr. Robert Goddard es considerado como el Padre
+de la Cohetería Moderna. El padre de Robert fue un gran
+creyente en la educación y motivaba a su hijo a
+experimentar con las cosas. Robert y su padre pasaban
+muchas horas caminando por el bosque estudiando la
+naturaleza. El tenía un telescopio y aún estando en la
+escuela primaria desarrolló interés en el espacio.
+Goddard asistió a Worchester Polytechnic Instutite y
+en 1904 obtuvo un Bachillerato en Ciencias con un grado
+en Física. Luego, asistió a Clark University obteniendo un
+grado avanzado en Física, recibiendo su PhD en 1909. Esto
+le dio la oportunidad de poner su conocimiento científico
+
+3
+
+Unidos no fue reconocido como un científico de gran
+importancia, su trabajo fue visto como uno muy
+importante por los científicos en Alemania, quienes se
+estaban preparando para la guerra en Europa.
+Sus experimentos incluyen bombas de propulsión,
+estabilizadores giroscópicos, y los instrumentos para seguir
+el vuelo del cohete. Justo antes de la Segunda Guerra
+Mundial, el Dr. Goddard fue contratado para ayudar a
+desarrollar cohetes de propulsión, para el despegue rápido
+de los aviones del U.S. Navy. En Alemania, la cohetería
+seguía adelante con el desarrollo de motores de alta
+potencia.
+Estos
+experimentos
+eventualmente
+evolucionaron y se convirtió en el infame V2 que fue
+utilizado como misil balístico intercontinental contra Gran
+Bretaña.
+Después de la Segunda Guerra Mundial, tanto Estados
+Unidos como Rusia adquirieron científicos de cohetes
+alemanes. Estos hombres formaron el núcleo de un
+programa que se especializó en los vehículos de
+lanzamiento de gran alcance usados hoy día.
+
+velocidades que excedían las 3,000 millas por hora y podía
+lanzar su ojiva o cabeza nuclear de 2,200 libras a una
+distancia de 200 millas de su lugar de lanzamiento. Antes
+de finalizar la Segunda Guerra Mundial, von Braun se las
+arregló para que muchos de los mejores científicos
+alemanes se rindieran ante los americanos. Esto permitiría
+a los Estados Unidos obtener la mejor ciencia y los
+vehículos de prueba de los alemanes, antes que los rusos.
+Por 15 años después de la guerra, von Braun trabajó con el
+U.S. Army en el desarrollo de misiles balísticos. Como parte
+de la operación militar conocida como “Project Paperclip”,
+von Braun y su equipo fueron enviados a Fort Bliss, Texas e
+hicieron el lanzamiento experimental en White Sands
+Proving Ground en Nuevo México. Más adelante, el equipo
+se mudó al Redstone Arsenal cerca de Huntsville, Alabama.
+En 1960, el centro de cohetes fue transferido del Army
+a una organización recién creada llamada National
+Aeronautics and Space Administration (NASA). Fue durante
+ese tiempo que a von Braun se le fue dada la tarea de
+desarrollar el gran cohete Saturno. Esto lo llevó
+convertirse en el principal arquitecto del vehículo de
+lanzamiento Saturno V que impulsó a los astronautas
+estadounidenses a la Luna.
+Von Braun se convirtió en uno de los más prominentes
+portavoces de la exploración espacial en los Estados
+Unidos durante la última parte de su carrera. En 1970,
+NASA pidió que se mudara a Washington D.C., para que
+encabezara los esfuerzos de planificación estratégica para
+la agencia. El se fue de Huntsville, Alabama, pero en menos
+de dos años, se retiró de NASA y fue a trabajar para
+Fairchild Industries. Murió en Alexandria, Virginia, el 16 de
+junio de 1977.
+.
+
+Dr. Wernher von Braun
+(1912-1977)
+
+Wernher von Braun fue el líder del grupo que
+desarrollo el misil balístico V-2 de los nazis durante la
+Segunda Guerra Mundial. Hoy día, todavía existe la
+controversia sobre su rol en el uso de esclavos para
+trabajar en la construcción de estos exitosos cohetes. El V2 fue algo avanzado para su tiempo y fue usado en
+programas para el desarrollo de cohetes en los Estados
+Unidos. El V-2 tenía una longitud de 46 pies, pesaba 27,000
+libras y tenía un sofisticado, pero confiable sistema de
+propulsor de combustible líquido. El cohete podía volar a
+
+Utilizar cartelones sobre cohetes es una buena estrategia
+como herramienta de aprendizaje para los cadetes. Este
+cartelón muestra muchos de los resultados del trabajo de
+los pioneros científicos presentados en esta unidad.
+Cartelones de este tipo pueden ser comprados Pitsco
+Educational (Dirección Web: http://www.pitsco.com).
+
+4
+
+ETAPA 2
+TITAN
+
+ETAPA 2: TITAN
+
+5
+
+CODIGO DE SEGURIDAD
+Modelos de Cohetes
+Para la Cohetería Modelo
+Este es el Código de Seguridad oficial para la Cohetería Modelo que ha sido desarrollado y promovido por la Asociación Nacional de Cohetería (NAR)
+(Versión Básica, Efectiva Agosto 2012)
+
+1. MATERIALES: Usaré solamente materiales livianos, mi
+cohete no tendrá partes metálicas en la nariz, cuerpo o aletas.
+
+7. TAMAÑO: Mi cohete modelo no pesará más de 1,500
+gramos (53 onzas) en el despegue y no contendrá más de
+125 gramos (4.4 onzas) de combustible o 320N-segundos
+(71.9 libras-segundos) del total de impulso. Si mi modelo de
+cohete pesa más de una libra (453 gramos) al despegue o
+tiene más de 4 onzas (113 gramos) de combustible, se debe
+verificar y cumplir con las reglas y estipulaciones de la
+Administración Federal de Aviación (FAA / Federal
+Aviation Administration) antes de lanzar y volar el cohete.
+
+2. MOTORES: Utilizaré solamente motores certificados y
+hechos comercialmente. No le haré modificaciones o los
+usaré para otros propósitos, excepto aquellos recomendados
+por el manufacturero.
+3. SISTEMA DE IGNICIÓN: Lanzaré mi cohete utilizando
+un sistema de lanzamiento eléctrico e ignición de motores
+eléctrica. Mi sistema de lanzamiento tendrá un interruptor de
+seguridad en serie con el interruptor de lanzamiento y
+utilizaré un interruptor el cual voy a devolver a la posición
+de apagado una vez se lance el cohete.
+
+8. SEGURIDAD DURANTE EL VUELO: No lanzaré mi
+cohete modelo en dirección a un objetivo (“target”), hacia
+las nubes, ni cerca de aviones. Tampoco pondré ningún
+material flamable o explosivos como carga en mi cohete.
+
+4. FALLOS EN LA IGNICIÓN DEL COHETE: Si mi
+cohete no prende cuando presiono el botón de mi sistema de
+lanzamiento eléctrico, yo removeré el conector de seguridad
+de mi lanzador o desconectare la batería, esperare 60
+segundos pasado el intento de lanzamiento antes de permitir
+a que alguna persona se acerque al cohete.
+
+9. LUGAR DE LANZAMIENTO: Lanzaré mi cohete en
+exteriores. En un área abierta al menos tan grande como lo
+explica la tabla que acompaña este escrito, en condiciones
+climatológicas seguras con vientos no mayores de 20 millas
+por hora. Me aseguraré de que no haya pasto seco cercano al
+área de lanzamiento, y que el área de lanzamiento no
+presente riesgo de incendio.
+
+5. SEGURIDAD EN EL LANZAMIENTO: Utilizaré una
+cuenta regresiva antes del lanzamiento, y me aseguraré de
+que todos estén prestando atención y estén a una distancia
+segura de por lo menos 15 pies alejados del cohete cuando
+utilicé motores D o más pequeños, y de 30 pies cuando sean
+lanzados cohetes más grandes. Si no estoy seguro de la
+seguridad o estabilidad de un cohete que no ha sido probado,
+verificaré la estabilidad antes del vuelo y lo volaré solamente
+cuando avise o advierta a los espectadores y los mantenga a
+una distancia segura.
+6. LANZADOR: Lanzaré mi cohete desde una varilla de
+lanzamiento, torre o riel que este apuntando no menos de 30
+grados verticales para asegurarme que el cohete vuele
+prácticamente directo hacia arriba. También utilizaré un
+deflector de fuego para prevenir que el escape del motor
+choque con el suelo. Para prevenir golpes en los ojos, pondré
+el lanzador de manera que la parte final de la varilla de
+lanzamiento este por encima de la altura de los ojos o pondré
+una tapa al final de la varilla de lanzamiento cuando no esté
+en uso.
+
+Impulso Total
+Instalado
+(N-sec)
+
+Tipos
+Equivalentes de
+Motor
+
+Dimensiones
+mínimas del lugar
+(ft)
+
+0.00 – 1.25
+2.26 – 2.50
+2.51 – 5.00
+5.01 – 10.00
+10.01 – 20.00
+20.01 – 40.00
+40.01 – 80.00
+80.01 – 160.00
+160.01 – 320.00
+
+1/4A, 1/2A
+A
+B
+C
+D
+E
+F
+G
+2G’s
+
+50
+100
+200
+400
+500
+1,000
+1,000
+1,000
+1,500
+
+10. SISTEMA DE RECUPERACIÓN: Utilizaré un
+sistema de recuperación tal como un banderín o paracaídas
+para que este pueda regresa de una manera segura y sin
+ningún daño y pueda ser lanzado y volar nuevamente, solo
+usaré materiales resistentes al fuego como parte del sistema
+de relleno de mi cohete.
+11. SEGURIDAD EN LA RECUPERACIÓN DEL
+COHETE: No intentaré recuperar mi cohete si está en líneas
+eléctricas, árboles altos o cualquier otro lugar peligroso.
+
+6
+
+ETAPA 2: TITAN
+Fase Escrita
+LEYES QUE RIGEN LA CIENCIA
+DE LA COHETERÍA
+Para entender mejor cómo vuelan los cohetes, debes
+tener un conocimiento básico de las reglas científicas que
+rigen los objetos en la Tierra y más allá del cielo. Un cohete
+es una máquina que funciona de acuerdo con un conjunto
+de reglas científicas. Un cohete se coloca en una plataforma
+de lanzamiento (estático) hasta que se inicia
+en
+movimiento (dinámico). Lo que hace en la plataforma de
+lanzamiento, como en vuelo, se puede estudiar, y hasta
+cierto grado, predecir por las leyes científicas. Si entiendes
+las leyes, tendrás un mejor entendimiento del cohete.
+Aunque vivió hace cientos de años, Sir Isaac Newton es
+uno de los científicos más respetados de todos los tiempos.
+Sus Leyes de Movimiento siguen siendo consideradas ser
+tan válidas hoy como lo fueron en el siglo XVII. Durante ese
+período de la historia (a través de su vida), gran parte de la
+comprensión de la humanidad en cuanto al conocimiento
+científico se basaba en la superstición. Su previsión y
+pensamiento eran como un faro de luz brillante con vista a
+un oscuro mar de ignorancia.
+En la escuela, es probable que hayas escuchado una y
+otra vez, "por cada acción hay una reacción igual y
+opuesta". Esta es una de las leyes de movimiento Newton y
+se podría decir que esta ley es una declaración de un evento
+previsible, un ejemplo clásico es la gravedad. En la Tierra, la
+gravedad es predecible y constante, es una fuerza que
+siempre empuja la materia hacia el centro de nuestro
+planeta. Newton hizo algunas observaciones sobre la
+gravedad y luego se dedicó a probarlas con las
+matemáticas. Si las matemáticas podían predecir un evento,
+entonces se podría escribir una ley acerca de ello y eso es
+exactamente lo que Sir Isaac hizo con sus teorías de
+movimiento. Newton nunca vio un cohete en vuelo, sin
+embargo, podría haber explicado mucho sobre estos
+mediante la observación de su lanzamiento, vuelo y
+aterrizaje.
+
+Sir Isaac Newton
+(4 de enero de 1643 – 31 de marzo de 1727)
+El reposo y el movimiento pueden ser considerados como
+uno opuesto uno al otro. El reposo es el estado de un
+objeto cuando su posición no cambia en relación con su
+entorno. Si el reposo se define como la ausencia total de
+movimiento, no existiría en la naturaleza. Incluso si
+estuviera sentado en una silla en casa, todavía te estarías
+moviendo porque la silla en realidad está descansando en
+la superficie de un planeta giratorio que está orbitando una
+estrella. La estrella se mueve a través de una galaxia
+rotatoria que también se mueve a través del universo.
+Mientras está sentado "quieto", en realidad estas viajando
+a miles de millas por segundo.
+El movimiento es también un término "relativo". Toda la
+materia en el universo se mueve todo el tiempo, pero en la
+primera de las Leyes de Newton, el movimiento significa
+cambiar de posición en relación con el entorno. Una bola
+está en reposo si está quieta en el suelo. La bola está en
+movimiento si está rodando. Una bola que rueda cambia su
+posición en relación con su entorno. Un cohete despegando
+de la plataforma de lanzamiento cambia de un estado de
+reposo a un estado de movimiento.
+En el vuelo del cohete, las fuerzas se balancean y
+desbalancean todo el tiempo. Un cohete en la plataforma
+
+PRIMERA LEY DE MOVIMIENTO
+Esta ley de movimiento es sólo un hecho evidente, pero
+para saber lo que significa, es necesario entender los
+términos, descanso, movimiento y la fuerza no balanceada.
+
+7
+
+de lanzamiento está balanceado. La superficie de la
+plataforma de lanzamiento empuja el cohete hacia arriba
+mientras que la gravedad hala el cohete hacia abajo.
+Cuando los motores se encienden, el impulso del cohete
+desbalancea las fuerzas, y el cohete viaja hacia arriba. Más
+tarde, cuando el cohete se queda sin combustible, se
+reduce la velocidad, se detiene en el punto más alto de su
+vuelo, y luego vuelve a caer a la Tierra.
+Los objetos en el espacio también reaccionan a las
+fuerzas. Una nave espacial que se mueve a través del
+sistema solar está en constante movimiento. La nave
+espacial se desplazará en línea recta si las fuerzas en ella
+están balanceadas. Esto ocurre sólo cuando la nave está
+muy lejos de cualquier gran fuente de gravedad, tales como
+la gravedad de la Tierra u otros planetas. Si la nave espacial
+se acerca a un gran cuerpo en el espacio, la gravedad de ese
+cuerpo desbalancea las fuerzas y dará curva de la
+trayectoria de la nave espacial. Esto ocurre, en particular,
+cuando un satélite es enviado por un cohete en una
+trayectoria que es paralela a la superficie de la Tierra. Si el
+cohete se dispara de la nave espacial lo suficientemente
+rápido, orbitará la Tierra. Mientras otra fuerza no
+balanceada, como la fricción con moléculas de gas en órbita
+o el disparo de un cohete con motor en la dirección opuesta
+a su movimiento, no reduzca la velocidad de la nave
+espacial, ésta girará alrededor de la Tierra por siempre.
+Una declaración formal de la Primera Ley del
+Movimiento de Newton es: un cuerpo en un estado de
+reposo y un cuerpo en movimiento tiende a permanecer en
+reposo o en movimiento uniforme a menos que actúe sobre
+él una fuerza externa.
+
+TERCERA LEY DE MOVIMIENTO
+Más allá de toda duda, de todas las leyes de Newton,
+esta es la más citada. Imagínate a Sir Isaac, en su elocuente
+acento inglés exponiendo que "Por cada acción hay una
+reacción igual y opuesta". La ley es tan profunda, tan
+importante, que es la base de la "ciencia de los cohetes". El
+motor genera la acción y el movimiento hacia adelante del
+cohete es la "reacción opuesta".
+Un cohete puede despegar desde una plataforma de
+lanzamiento sólo cuando se expulsa el gas por su motor. El
+cohete empuja el gas y el gas a su vez empuja el cohete. La
+acción es la expulsión de los gases fuera del motor, la
+reacción es el movimiento del cohete en la dirección
+opuesta.
+
+LAS LEYES DE NEWTON SE UNEN
+Una fuerza no balanceada debe ser ejercida por un
+cohete para despegar desde una plataforma de lanzamiento
+o de una nave en el espacio para cambiar la velocidad o la
+dirección (Primera Ley de Newton). La cantidad de empuje
+(fuerza) producido por un motor de cohete se determina
+por la masa de combustible de cohetes que se quema y lo
+rápido que el gas se escapa del cohete (Segunda Ley de
+Newton). La reacción, o el movimiento hacia adelante, es
+igual a y en la dirección opuesta de la acción, o empuje,
+desde el motor (Tercera Ley de Newton).
+
+AERODINAMICA DE LOS COHETES
+
+SEGUNDA LEY DE MOVIMIENTO
+
+PRINCIPIOS DE LA ESTABILIDAD Y
+FUERZA EN EL VUELO
+
+La segunda ley establece: La proporción de cambio en el
+movimiento de un cuerpo es proporcional a la fuerza que
+actúa sobre el cuerpo y se encuentra en la dirección de esa
+fuerza. Esta ley esencialmente plantea una ecuación
+matemática. Las tres partes de la ecuación son "masa" (m),
+"aceleración" (a) y la "fuerza" (f). La fórmula básica es: f =
+m · a. La manera más común de presentar esta expresión es
+f=ma (se entiende que los términos m y a se multiplican). La
+cantidad de fuerza necesaria para acelerar un cuerpo
+depende de la masa del cuerpo. A mayor masa, mayor será
+fuerza requerida para acelerar.
+El término “aceleración” se define como el estado de
+cambio de la velocidad con respecto al tiempo. Para
+ilustrarlo, imagina dos sillas con ruedas puestas en un piso
+liso; una silla está ocupada por un adulto y la otra silla está
+vacía. Cada silla es empujada con la misma cantidad de
+fuerza, ¿Cuál de las dos sillas irá mas rápido? La silla vacía,
+por supuesto. Ya que f=ma, si la masa aumenta (la silla
+ocupada), la aceleración disminuye; por otro lado, si la
+masa disminuye (la silla vacía), la aceleración aumenta.
+
+Un cohete es muy parecido a una flecha. Tiene un cuerpo
+largo y cilíndrico con aletas en la parte posterior para la
+estabilidad. Si un cohete es estable, volará bien, por otro
+lado, si es inestable su vuelo será errático; en el mejor de
+los casos.
+Toda la materia, independientemente de su tamaño,
+masa, o la forma tiene un centro de gravedad. El centro de
+gravedad es el punto exacto en que toda la masa del objeto
+está perfectamente balanceada. Puedes encontrar el
+centro de gravedad de un objeto, como una regla,
+balanceándola en tu dedo. Si el material utilizado para
+hacer la regla es uniforme en espesor y densidad, el centro
+de gravedad debe estar en el punto medio entre un
+extremo de la regla y el otro. Si la regla es de madera, y
+tiene un poco de arcilla pegada en un extremo, el centro de
+gravedad se desplazará hacia el lado de más peso y
+distante del centro. Por esto, tendrá que mover su dedo
+hacia la parte más pesada para encontrar el punto de
+equilibrio.
+
+8
+
+Es fácil ver este concepto cuando se aplica a un cohete
+modelo. Cuando el motor está instalado, el centro de
+gravedad se desplazará hacia la parte posterior. Si una
+carga se añade a la parte frontal del cohete, el centro de
+gravedad se desplazará de nuevo y lo más probable que se
+extienda en un punto de equilibrio diferente a cuando el
+cohete estaba vacío. Un cambio en el centro de gravedad
+también se producirá cuando el combustible se quema en el
+motor del cohete.
+Una de las primeras cosas que un diseñador de cohetes
+aprende es que un modelo no va a volar bien a menos que
+sea aerodinámicamente estable. Estabilidad significa que
+tendrá la tendencia a mantener su nariz apuntando hacia
+arriba en la misma dirección a través de su vuelo. Una
+buena estabilidad aerodinámica mantiene el cohete en una
+trayectoria de vuelo correcta a pesar de que fuerzas
+externas traten de hacer que se convierta errático e
+impredecible. El resultado final del vuelo podría ser que se
+voltee y posiblemente termine estrellándose.
+En la siguiente ilustración se ve una línea que va desde la
+nariz hasta la cola. Este es el eje longitudinal y un
+movimiento alrededor de este eje se conoce como “giro”
+(“Roll”). Una línea que va a través del centro de gravedad,
+de lado a lado, se conoce como el eje lateral y el
+movimiento, alrededor de este eje se conoce como grado
+de inclinación (“Pitch”), o nariz arriba, nariz hacia abajo.
+Cuando la nariz de un cohete oscila de lado a lado, la cola se
+mueve en la dirección opuesta debido a que la rotación se
+produce alrededor de su eje vertical. Cuando la nariz se
+mueve a la derecha, la cola se mueve hacia la izquierda, y
+viceversa. El movimiento alrededor de este eje se denomina
+desviación de la línea lateral (“Yaw”).
+Observe que en la ilustración hay otro "centro" y se
+conoce como el centro de presión. El centro de presión
+existe sólo cuando el aire fluye por el movimiento del
+cohete. Este aire que fluye, frotando y presionando contra
+la superficie exterior del cohete, puede causar que se
+empiece a mover alrededor a uno de sus tres ejes.
+Para
+ver un ejemplo de este concepto, piense en una veleta en
+forma de flecha. Esta flecha va montada sobre un techo y se
+
+usa para decir la dirección del viento. La flecha está unida a
+una varilla vertical que actúa como punto de giro. La flecha
+está equilibrada para que el centro de gravedad este justo
+en el punto de giro. Ahora, cuando el viento sopla, la flecha
+se voltea y la punta de la flecha apunta hacia donde el
+viento llega. La razón por la que la punta de la veleta
+apunta hacia el viento es que la cola de la flecha tiene un
+área de superficie mucho más grande que la punta de
+flecha. El aire que fluye imparte una fuerza mayor a la cola.
+Si el centro de presión estuviera en el mismo lugar que el
+centro de gravedad, ninguno de los extremos de la flecha se
+vería favorecidos por el viento y la flecha no apuntaría. El
+centro de presión está entre el centro de gravedad y el
+extremo de cola de la flecha. Esto significa que el extremo
+de la cola tiene más área de superficie que el extremo de la
+punta.
+Es extremadamente importante que el centro de presión
+de un cohete modelo se encuentre hacia la cola y el centro
+de gravedad se encuentre más hacia la nariz. Si están muy
+cerca unos de otros, el cohete será inestable durante vuelo.
+Con el centro de presión situado en el lugar correcto, el
+cohete se mantendrá estable.
+
+PRUEBA DE VUELO
+El modelo se prueba primeramente instalando el motor,
+el relleno y todos los otros componentes. Un lazo en el
+extremo de una cuerda de seis hasta diez pies de largo está
+unido al modelo en el centro de gravedad. Cuando se
+suspende, la cuerda debería estar a 90° con respecto al
+cuerpo del cohete. Deslice el lazo en la posición correcta
+alrededor del cohete y asegúrelo con un pequeño trozo de
+cinta adhesiva.
+Con el cohete suspendido en su centro de gravedad,
+hágalo girar alrededor de una trayectoria circular. Si el
+cohete es muy estable, apuntará hacia adelante contra el
+viento creado por el movimiento hacia adelante. Este
+viento, por cierto, es conocido como el viento relativo.
+Algunos cohetes, aunque estables, no apuntarán hacia
+adelante por sus propios medios, a menos que se pongan
+en dirección. Esto se hace manteniendo el cohete en una
+
+9
+Ilustración por Seth Steward
+
+mano con el brazo extendido y, entonces girar todo el
+cuerpo mientras el cohete se inicia en su trayectoria
+circular. Puede tomar varios intentos antes de que un
+buen comienzo sea alcanzado.
+Si es necesario sostener el cohete para comenzar,
+una prueba adicional se podría hacer para determinar
+cuando el modelo es lo suficientemente estable para
+volar. Mueva el lazo de nuevo sobre el cuerpo hasta
+que el cuerpo apunte hacia abajo en un ángulo de 10°
+por debajo del horizonte. Repita la prueba de
+balanceo. Si el modelo apunta su nariz por hacia
+delante una vez iniciado, debe ser lo suficientemente
+estable como para lanzarlo.
+Se recomienda no lanzar un cohete hasta que
+haya pasado la prueba de estabilidad. Si el cohete no
+pasa la prueba de estabilidad, por lo general se puede
+hacer estable. Dos métodos pueden ser utilizados: el
+punto de equilibrio se puede mover hacia adelante, o
+el área de las aletas se pueden ampliar. Para mover el
+punto de equilibrio hacia adelante, añada peso al cono
+de la nariz. Para los modelos con los conos de plástico,
+simplemente ponga un poco de arcilla de moldear en
+la punta de la nariz. Para dar más peso a los conos de
+balsa, coloque arandelas a la base de los conos donde
+se une el paracaídas. El centro de gravedad también
+puede ser movido hacia adelante al añadir una sección
+de carga útil para el modelo. Las aletas pueden ser
+reemplazadas por otros más grandes o aletas
+adicionales pueden ser añadidas al modelo. Una vez
+que se realicen modificaciones, haga la prueba de giro
+hasta que vuele de manera suave y formando un arco
+simétrico.
+
+Centro de Gravedad o
+Punto de Equilibrio
+
+Punta de Nariz
+
+Motor
+en
+Posición
+
+UN MODELO QUE SE HA FABRICADO Y PROBADO
+ADECUADAMENTE EXPERIMENTARA UN VUELO
+ESTABLE.
+El modelo se prueba primeramente instalando el motor, el relleno y todos los
+otros componentes. Un lazo en el extremo de una cuerda de 6’ hasta 10’ de
+largo está unido al modelo en el centro de gravedad. Cuando se suspende, la
+cuerda debería estar a 90° con respecto al cuerpo del cohete. Deslice el lazo
+en la posición correcta alrededor del cohete y asegúrelo con un pequeño
+trozo de cinta adhesiva. Con el cohete suspendido en su centro de gravedad,
+hágalo girar alrededor de una trayectoria circular. Si el cohete es muy estable,
+apuntará hacia adelante contra el viento creado por el movimiento hacia
+adelante. Este viento, por cierto, es conocido como el viento relativo.
+
+10
+
+ETAPA 3
+SATURNO
+
+ETAPA 3: SATURNO
+
+11
+
+CODIGO DE SEGURIDAD
+Modelos de Cohetes
+Para la Cohetería Modelo
+Este es el Código de Seguridad oficial para la Cohetería Modelo que ha sido desarrollado y promovido por la Asociación Nacional de Cohetería (NAR)
+(Versión Básica, Efectiva Agosto 2012)
+
+1. MATERIALES: Usaré solamente materiales liviaños, mi
+cohete no tendrá partes metálicas en la nariz, cuerpo o aletas.
+
+7. TAMAÑO: Mi cohete modelo no pesará más de 1,500
+gramos (53 onzas) en el despegue y no contendrá más de
+125 gramos (4.4 onzas) de combustible o 320N-segundos
+(71.9 libras-segundos) del total de impulso. Si mi modelo de
+cohete pesa más de una libra (453 gramos) al despegue o
+tiene más de 4 onzas (113 gramos) de combustible, se debe
+verificar y cumplir con las reglas y estipulaciones de la
+Administración Federal de Aviación (FAA / Federal
+Aviation Administration) antes de lanzar y volar el cohete.
+
+2. MOTORES: Utilizaré solamente motores certificados y
+hechos comercialmente. No le haré modificaciones o los
+usaré para otros propósitos, excepto aquellos recomendados
+por el manufacturero.
+3. SISTEMA DE IGNICIÓN: Lanzaré mi cohete utilizando
+un sistema de lanzamiento eléctrico e ignición de motores
+eléctrica. Mi sistema de lanzamiento tendrá un interruptor de
+seguridad en serie con el interruptor de lanzamiento y
+utilizaré un interruptor el cual voy a devolver a la posición
+de apagado una vez se lance el cohete.
+
+8. SEGURIDAD DURANTE EL VUELO: No lanzaré mi
+cohete modelo en dirección a un objetivo (“target”), hacia
+las nubes, ni cerca de aviones. Tampoco pondré ningún
+material flamable o explosivos como carga en mi cohete.
+
+4. FALLOS EN LA IGNICIÓN DEL COHETE: Si mi
+cohete no prende cuando presiono el botón de mi sistema de
+lanzamiento eléctrico, yo removeré el conector de seguridad
+de mi lanzador o desconectare la batería, esperare 60
+segundos pasado el intento de lanzamiento antes de permitir
+a que alguna persona se acerque al cohete.
+
+9. LUGAR DE LANZAMIENTO: Lanzaré mi cohete en
+exteriores. En un área abierta al menos tan grande como lo
+explica la tabla que acompaña este escrito, en condiciones
+climatológicas seguras con vientos no mayores de 20 millas
+por hora. Me aseguraré de que no haya pasto seco cercaño al
+área de lanzamiento, y que el área de lanzamiento no
+presente riesgo de incendio.
+
+5. SEGURIDAD EN EL LANZAMIENTO: Utilizaré una
+cuenta regresiva antes del lanzamiento, y me aseguraré de
+que todos estén prestando atención y estén a una distancia
+segura de por lo menos 15 pies alejados del cohete cuando
+utilicé motores D o más pequeños, y de 30 pies cuando sean
+lanzados cohetes más grandes. Si no estoy seguro de la
+seguridad o estabilidad de un cohete que no ha sido probado,
+verificaré la estabilidad antes del vuelo y lo volaré solamente
+cuando avise o advierta a los espectadores y los mantenga a
+una distancia segura.
+6. LANZADOR: Lanzaré mi cohete desde una varilla de
+lanzamiento, torre o riel que este apuntando no menos de 30
+grados verticales para asegurarme que el cohete vuele
+prácticamente directo hacia arriba. También utilizaré un
+deflector de fuego para prevenir que el escape del motor
+choque con el suelo. Para prevenir golpes en los ojos, pondré
+el lanzador de manera que la parte final de la varilla de
+lanzamiento este por encima de la altura de los ojos o pondré
+una tapa al final de la varilla de lanzamiento cuando no esté
+en uso.
+
+Impulso Total
+Instalado
+(N-sec)
+
+Tipos
+Equivalentes de
+Motor
+
+Dimensiones
+mínimas del lugar
+(ft)
+
+0.00 – 1.25
+2.26 – 2.50
+2.51 – 5.00
+5.01 – 10.00
+10.01 – 20.00
+20.01 – 40.00
+40.01 – 80.00
+80.01 – 160.00
+160.01 – 320.00
+
+1/4A, 1/2A
+A
+B
+C
+D
+E
+F
+G
+2G’s
+
+50
+100
+200
+400
+500
+1,000
+1,000
+1,000
+1,500
+
+10. SISTEMA DE RECUPERACIÓN: Utilizaré un
+sistema de recuperación tal como un banderín o paracaídas
+para que este pueda regresa de una manera segura y sin
+ningún daño y pueda ser lanzado y volar nuevamente, solo
+usaré materiales resistentes al fuego como parte del sistema
+de relleno de mi cohete.
+11. SEGURIDAD EN LA RECUPERACIÓN DEL
+COHETE: No intentaré recuperar mi cohete si está en líneas
+eléctricas, árboles altos o cualquier otro lugar peligroso.
+
+12
+
+ETAPA 3: SATURNO
+Fase Escrita
+Dos parámetros muy importantes son la determinación de la altitud y el rendimiento del motor.
+Ambos están cubiertos como parte de la fase escrita de la etapa Saturno.
+
+RASTREO DE ALTITUD
+En un esfuerzo por contestar la antigua gran
+pregunta, ¿Cuan alto llegó? esta sección tratará con el
+tema de rastreo de altitud. La rama de la matemática
+conocida como trigonometría provee medios para
+determinar la altitud de un cohete sin necesidad de
+medir directamente la distancia desde el suelo hasta el
+apogeo (un método completamente impráctico cuando
+es considerado).
+
+Para calcular la altitud, primero debes notar el término
+“distancia de referencia”. Esta es esencialmente la base
+de un triangulo rectángulo, y el largo es la distancia del
+observador hasta la plataforma de lanzamiento de un
+cohete modelo.
+
+DETERMINACION DE ALTITUD
+
+Altitud
+
+Por definición, el apogeo es el punto más alto en el
+vuelo de un cohete modelo. Es el punto en el que un
+cohete alcanza su máxima altura y se inicia un retorno a
+la Tierra. Hay varias formas de determinar la altura a la
+que un cohete alcanza su apogeo. El método descrito en
+Aerospace Dimensions, Module 4 - ROCKETS, utiliza un
+dispositivo de observación llamado "Rastreador de
+Altitud". Al cadete se le exhorta a revisar el texto sobre
+rastreo de altitud, y construir el "Rastreador de Altitud" y
+utilizarlo como se describe. El cadete también puede
+optar por comprar uno comercial construido como el
+Estes Altitrak® (se vende por alrededor de $24.00).
+
+Angulo
+Distancia de Referencia
+1) Para usar el Altitrak® el observador marca una
+distancia de 500’ o en otras palabras, hace una “distancia
+de referencia” de 500’ (150 metros aprox.).
+
+90º
+Mirilla
+Escala de
+Angulo
+
+Escala de
+Altura
+
+Se debe tener una distancia (“pace”) de 500 pies de la
+plataforma de lanzamiento en un ángulo recto con el
+viento. (Un “pace” es igual al paso promedio de un niño
+de 10-12 años – aprox. 2 ½ pies).
+
+Gatillo
+Brazo
+Giratorio
+
+Hale para liberar el
+brazo giratorio. Soltar
+para asegurar el
+brazo giratorio.
+
+NOTA: Para cohetes de poca altitud, un “pace” de 250 pies y
+dividir la altura entre 2. Para cohetes de mucha altitud, un
+“pace” de 1,000 pies y multiplicar la altura por 2.
+
+13
+
+2) Una vez el observador esté listo, él/ella le hará una
+señal al lanzador. El rastreador de altitud estará
+apuntando al cohete.
+
+EJEMPLO:
+Datos:
+Distancia de Referencia es 500’
+Angulo observado es 50°
+
+3) Cuando el cohete es lanzado subirá hasta llegar a su
+apogeo y luego regresará a la Tierra. El gatillo es liberado
+y esto recogerá el ángulo buscado.
+
+50°
+|-------------- 500 pies --------------|
+
+Soltar el
+gatillo en
+este punto
+
+1) Hallar la Tangente (usando la tabla):
+Tan 50°= 1.19
+2) Utilizando la Fórmula:
+Distancia de Referencia X Tangente del Angulo = Altitud
+
+4) Una vez este ángulo es conocido, el observador o el
+equipo deben hallar la tangente correspondiente
+utilizando la Tabla de Angulo Tangente. La altitud que el
+cohete alcanzó en su apogeo se obtiene mediante la
+siguiente fórmula:
+
+3) Resultado:
+500 pies x 1.19 = 595 pies altitud
+
+Distancia de Referencia X Tangente del Angulo = Altitud
+
+Tabla de Angulo Tangente
+
+Demostración de cómo se utiliza el Estes Altitrak
+
+14
+
+®
+
+MOTORES DE COHETES MODELO
+El motor del cohete modelo se compone de una
+boquilla de cerámica, un propulsor sólido para el
+despegue y aceleración, un dilatador y químico para
+rastrear, una carga de la expulsión, un retenedor de
+arcilla y todo esto está encerrado en un fuerte
+revestimiento de papel.
+
+El motor de cohete modelo es una fuente confiable
+de propulsión. Compañías como Quest, Estes y Pitsco
+venden estos motores. Todos los motores cumplen
+con las regulaciones del National Fire Protection
+Association y están certificados por la National
+Association of Rocketry (NAR).
+
+Papel
+
+Retenedor
+de Arcilla
+
+Carga de Expulsión
+para el Sistema de
+Recuperación
+
+Expulsión
+Carga de
+Retraso
+
+Propulsor sólido
+
+Acercándose al
+apogeo
+
+Propulsor para
+el despegue y la
+aceleración
+
+Boquilla de cerámica
+
+15
+
+El "6" muestra empuje promedio del motor. Este
+parámetro se mide solo en Newtons. Cabe señalar que
+4.45 Newtons = 1 libra de empuje, así como 0.225 libras =
+1 Newton.
+
+Thrust – ¡Poder de Empuje!
+El motor del cohete modelo está diseñado para proveer
+empuje (thrust) y movimiento hacia adelante. Cuando el
+combustible sólido se enciende, generalmente por medios
+eléctricos, ocurre una reacción química y los gases creados
+en esta reacción son forzados a salir por la boquilla. De
+acuerdo con la Tercera Ley de Movimiento de Newton, se
+trata de una acción y propulsa el cohete hacia el cielo
+como una reacción. La altitud, velocidad y capacidad de
+elevación de peso se determina por la cantidad de
+combustible sólido y la duración de la reacción química.
+La potencia total que crea un motor se mide en
+términos de "Newtons" durante un período de tiempo en
+"segundos". La “potencia total” también se refiere al
+“impulso total”. Los motores son clasificados de acuerdo
+con las letras del alfabeto. Según se van alejando las letras,
+más potente es el motor. La siguiente tabla muestra las
+clasificaciones comunes de los motores de los cohetes
+modelo con sus variedades asociadas de impulso total.
+Para un motor caer dentro de la clasificación del impulso
+indicado, el impulso total debe exceder el valor a la
+izquierda y no exceder el valor de la derecha.
+MOTOR
+1/4A
+1/2A
+A
+B
+C
+D
+E
+
+IMPULSO (Ns)
++
+0.3125 - 0.625
++
+0.625 - 1.25
++
+1.25 - 2.50
++
+2.50 - 5.00
++
+5.00 - 10.00
++
+10.00 - 20.00
++
+20.00 - 40.00
+
+La siguiente lugar, en este caso el "4" significa el
+"tiempo de retraso". Este número indica el tiempo de
+retraso en segundos entre cuando se termina empuje y la
+ignición de la carga de la expulsión. Debe tenerse en
+cuenta que los tipos de motores que terminan en "0" no
+tienen tiempo de retraso o de expulsión, y se utilizan para
+las etapas de impulso solamente.
+
+CODIFICACION DEL MOTOR PARA IDENTIFICACION
+RAPIDA Y FACIL
+El color de la etiqueta indica el uso recomendado del
+motor.
+a. Verde --- Cohetes de una sola etapa
+b. Violeta --- Etapa superior o de una sola etapa si
+se usa en cohetes muy ligeros
+c. Rojo ----- *Impulso y etapas intermedias de
+cohetes de etapas múltiples
+d. Negro --- *Motores especiales conectados para
+planeadores R / C
+
+Diámetro (mm)
+13
+13 & 18
+13 & 18
+18
+18 & 24
+24
+24
+
+* Estos no contienen tiempo de retraso.
+TAMAÑO
+MOTOR
+
+Usando un motor común, el B6-4, vamos a investigar lo
+que las letras en el motor de cohete significan:
+
+1/2A6-2
+A8-3
+B6-4
+C6-5
+
+RANGO DE ALTITUD SEGÚN
+EL TAMAÑO Y PESO DEL
+COHETE
+100’ - 400’
+200’ - 650’
+300’ - 1000’
+400’ - 1500’
+
+ALTITUD
+APROXIMADA EN UN
+COHETE TIPICO
+190’
+450’
+750’
+1000’
+
+(Alguno de los cohetes de alto rendimiento alcanzarán altitudes más
+altas que las que se muestran)
+
+SEGURIDAD ANTE TODO
+La "B" es el impulso total, o poder, (en Newton-segundos)
+producido por el motor. Cada letra subsiguiente tiene
+hasta el doble de la potencia total que la letra anterior. Un
+ejemplo de esto es la letra "B" donde se tiene hasta el
+doble de potencia de un motor "A" y este, a su vez,
+significa que debería alcanzar aproximadamente el doble
+de altitud, considerando el mismo cohete. En motores de
+mayor potencia, por ejemplo, un motor "G" puede tener
+hasta 160 Newton-segundos de impulso total.
+
+El motor de los cohete modelo de hoy día es un muy
+seguro y confiable. Los cadetes, estudiantes, adultos y
+maestros deben, sin embargo, tomar todas las
+precauciones para mantener un alto nivel de seguridad. La
+National Association of Rocketry (NAR) tiene once pautas
+que ayudarán a promover la seguridad en la construcción
+de modelos de cohetes. Se recomienda que estas normas
+deben seguirse en cada lanzamiento.
+
+16
+
+17
+
+18
+
+INSTRUCCIONES PARA LLENAR LA PLANTILLA DE PROGRESO
+
+Esta plantilla servirá para poder llevar un seguimiento del progreso del cadete a través del programa de
+cohetería y también servirá para que el QSM pueda notificar al comandante cuando el cadete ha completado el
+programa y se le pueda hacer entrega del certificado y los respectivos distintivos.
+Puede comenzar a llenar una planilla tan pronto como uno o dos cadetes comiencen el programa de cohetería
+en cualquier unidad. También puede ser llenada para cualquier actividad de cohetería que se esté llevando a
+cabo para facilitar la realización del programa de cohetería, ya sea a nivel de escuadrón, grupo, ala, región o
+nacional.
+La plantilla, una vez iniciada, debe ser retenida durante el tiempo que todos los cadetes hayan completado el
+programa o que se vuelva evidente que no se está llevando algún progreso (será determinado por el QSM y/o
+comandante).
+La plantilla debe ser retenida ya sea en copia impresa o electrónicamente (a través de eServices en
+www.capnhq.gov/[TBD].
+Explicación de entradas en la plantilla:
+1. CADET: escriba el apellido del cadete (para cadetes con el mismo apellido incluya la primera inicial o
+nombre)
+2. CAPID: escriba el numero de CAPID del cadete
+3. REDSTONE TEST: anote “P” para “pass” (aprobado) cuando el cadete apruebe el examen y escriba las
+iniciales del QSM – no anote “F” si el cadete no aprueba el examen; déjelo en blanco hasta que el cadete
+lo apruebe (para la plantilla electrónica, escribir las iniciales del QSM esta permitido).
+4. REDSTONE FLIGHTS 1 & 2: anote “S” para “successful” (logrado) cuando el cadete demuestre haber
+completado exitosamente el vuelo del cohete y escriba las iniciales del QSM – no anote “U” si el cadete
+no lograr completar el vuelo; déjelo en blanco hasta que el cadete complete satisfactoriamente el vuelo
+(para la plantilla electrónica, escribir las iniciales del QSM está permitido).
+5. Para registrar las etapas de TITAN Y SATURNO se hace de igual manera que la etapa anterior.
+6. Para el TITAN - FLIGHT 2 (aire solamente) note que el vuelo del cohete no es requerido y puede ser
+firmado (anotar “S”) cuando el cadete complete la construcción del cohete.
+
+19
+
+PLANTILLA DE PROGRESO
+REDSTONE
+CADET
+
+CAPID
+
+TEST
+
+FLIGHT 1
+
+TITAN
+FLIGHT 2
+
+TEST
+
+20
+
+FLIGHT 1
+
+SATURN
+FLIGHT 2
+(air opt
+build only)
+
+TEST
+
+FLIGHT
+
+21
+
+

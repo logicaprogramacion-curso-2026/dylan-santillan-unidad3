@@ -1,0 +1,574 @@
+<!-- jinja: ignore -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Análisis | Estación Espacial</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --space-dark: #020010;
+            --panel-bg: rgba(8, 12, 32, 0.78);
+            --panel-border: rgba(124, 138, 255, 0.25);
+            --hud-line: rgba(124, 138, 255, 0.35);
+            --accent: #7c8aff;
+            --accent-bright: #9fb0ff;
+            --text-primary: #e4e7ff;
+            --text-secondary: #8088b8;
+            --text-tertiary: #565d8a;
+            --success: #4ade80;
+            --warning: #fbbf24;
+            --danger: #f87171;
+            --comet-cyan: #00e5ff;
+            --card-bg: rgba(14, 19, 46, 0.6);
+            --font-display: 'Orbitron', sans-serif;
+            --font-body: 'Space Grotesk', sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--space-dark);
+            color: var(--text-primary);
+            min-height: 100vh;
+            padding: 28px;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        .space-bg {
+            position: fixed; top: 0; left: 0;
+            width: 100%; height: 100%; z-index: 0; pointer-events: none;
+        }
+
+        .star {
+            position: absolute; background: white; border-radius: 50%;
+            animation: twinkle var(--duration) infinite ease-in-out;
+            animation-delay: var(--delay);
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: var(--min-opacity); transform: scale(1); }
+            50% { opacity: 1; transform: scale(2.2); }
+        }
+
+        .nebula {
+            position: absolute; border-radius: 50%; filter: blur(100px); opacity: 0.06;
+        }
+
+        .nebula-1 {
+            width: 450px; height: 320px; background: #6b3fa0;
+            top: -5%; right: -8%; animation: nebulaDrift 15s infinite ease-in-out;
+        }
+
+        .nebula-2 {
+            width: 400px; height: 280px; background: #1a5fb4;
+            bottom: -8%; left: -8%; animation: nebulaDrift 18s infinite ease-in-out reverse;
+        }
+
+        @keyframes nebulaDrift {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(30px, -20px) scale(1.06); }
+            66% { transform: translate(-20px, 15px) scale(0.94); }
+        }
+
+        .container {
+            position: relative; z-index: 1;
+            max-width: 1240px; margin: 0 auto;
+        }
+
+        /* ============================================================
+           HEADER — estilo consola / HUD
+           ============================================================ */
+        .status-bar {
+            display: flex; align-items: center; justify-content: space-between;
+            font-family: var(--font-mono); font-size: 0.68rem;
+            letter-spacing: 0.5px; color: var(--text-tertiary);
+            margin-bottom: 18px; padding-bottom: 12px;
+            border-bottom: 1px solid var(--hud-line);
+        }
+
+        .status-bar .blink {
+            display: inline-block; width: 6px; height: 6px;
+            border-radius: 50%; background: var(--success);
+            box-shadow: 0 0 8px var(--success);
+            margin-right: 6px; animation: dotGlow 2s infinite;
+        }
+
+        @keyframes dotGlow {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.35; }
+        }
+
+        .header {
+            display: flex; align-items: center; justify-content: space-between;
+            gap: 14px; margin-bottom: 26px; flex-wrap: wrap;
+        }
+
+        .header-text h1 {
+            font-family: var(--font-display);
+            font-size: 1.5rem; font-weight: 700; letter-spacing: 1.5px;
+            background: linear-gradient(180deg, #f0f0ff 0%, #b0bfff 100%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header-text .subtitle {
+            font-family: var(--font-mono);
+            color: var(--text-secondary); font-size: 0.7rem;
+            letter-spacing: 1.5px; text-transform: uppercase;
+            margin-top: 6px;
+        }
+
+        .header-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+
+        /* ============================================================
+           STAT CARDS
+           ============================================================ */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 14px; margin-bottom: 22px;
+        }
+
+        .stat-card {
+            position: relative;
+            background: var(--card-bg);
+            border: 1px solid var(--panel-border);
+            border-top: 2px solid var(--accent);
+            border-radius: 4px; padding: 20px 20px 18px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .stat-card:hover {
+            border-color: rgba(120, 160, 255, 0.5);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(80, 100, 200, 0.18);
+        }
+
+        .stat-label {
+            font-family: var(--font-mono);
+            color: var(--text-tertiary); font-size: 0.65rem;
+            letter-spacing: 1.2px; text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .stat-value {
+            font-family: var(--font-display);
+            font-size: 2rem; font-weight: 700; color: #d8deff;
+            line-height: 1;
+        }
+
+        .stat-unit {
+            font-family: var(--font-mono);
+            font-size: 0.95rem; color: var(--text-tertiary); margin-left: 4px;
+        }
+
+        /* Variantes de color de borde por tipo de métrica */
+        .stat-card.is-success { border-top-color: var(--success); }
+        .stat-card.is-warning { border-top-color: var(--warning); }
+        .stat-card.is-info { border-top-color: var(--comet-cyan); }
+
+        /* ============================================================
+           CHART CARDS
+           ============================================================ */
+        .charts-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px; margin-bottom: 22px;
+        }
+
+        @media (max-width: 768px) {
+            .charts-grid { grid-template-columns: 1fr; }
+        }
+
+        .chart-card {
+            position: relative;
+            background: var(--card-bg);
+            border: 1px solid var(--panel-border);
+            border-radius: 4px; padding: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        .chart-card .corner {
+            position: absolute; width: 14px; height: 14px;
+            border: 1.5px solid var(--comet-cyan); opacity: 0.5;
+        }
+        .chart-card .corner-tl { top: -1px; left: -1px; border-right: none; border-bottom: none; }
+        .chart-card .corner-br { bottom: -1px; right: -1px; border-left: none; border-top: none; }
+
+        .chart-title {
+            font-family: var(--font-mono);
+            color: var(--text-secondary); font-size: 0.7rem;
+            text-transform: uppercase; letter-spacing: 1.5px;
+            margin-bottom: 16px; text-align: left;
+            display: flex; align-items: center; gap: 8px;
+        }
+
+        .chart-title::before {
+            content: ''; width: 4px; height: 4px;
+            background: var(--comet-cyan); border-radius: 50%;
+            box-shadow: 0 0 6px var(--comet-cyan);
+        }
+
+        .chart-wrap { position: relative; height: 260px; }
+        .chart-wrap.is-tall { height: 280px; }
+
+        /* ============================================================
+           TABLE CARDS
+           ============================================================ */
+        .table-card {
+            position: relative;
+            background: var(--card-bg);
+            border: 1px solid var(--panel-border);
+            border-radius: 4px; padding: 20px;
+            margin-bottom: 18px; overflow-x: auto;
+        }
+
+        table { width: 100%; border-collapse: collapse; }
+
+        th {
+            text-align: left; padding: 11px 14px;
+            font-family: var(--font-mono);
+            color: var(--accent-bright); font-size: 0.68rem;
+            text-transform: uppercase; letter-spacing: 1.2px;
+            border-bottom: 1px solid var(--hud-line);
+        }
+
+        td {
+            padding: 11px 14px; border-bottom: 1px solid rgba(100, 140, 255, 0.06);
+            font-size: 0.86rem; color: #c8c8e0;
+        }
+
+        td svg {
+            width: 16px; height: 16px;
+            vertical-align: -3px;
+            margin-right: 4px;
+            color: var(--text-tertiary);
+        }
+
+        tr:hover td { background: rgba(40, 50, 90, 0.4); }
+
+        .pill {
+            display: inline-block; padding: 2px 9px;
+            border-radius: 3px; font-family: var(--font-mono);
+            font-size: 0.78rem; font-weight: 500;
+        }
+        .pill.is-high { background: rgba(74, 222, 128, 0.12); color: var(--success); }
+        .pill.is-low { background: rgba(248, 113, 113, 0.12); color: var(--danger); }
+
+        .row-id {
+            font-family: var(--font-mono);
+            color: var(--text-tertiary); font-size: 0.72rem;
+            margin-right: 8px;
+        }
+
+        /* ============================================================
+           BOTONES
+           ============================================================ */
+        .btn {
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 11px 20px;
+            background: rgba(124, 138, 255, 0.08);
+            border: 1px solid rgba(124, 138, 255, 0.25);
+            border-radius: 4px; color: var(--text-secondary);
+            text-decoration: none; font-family: var(--font-mono);
+            font-size: 0.78rem; letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+        }
+
+        .btn svg { width: 14px; height: 14px; }
+
+        .btn:hover {
+            background: rgba(124, 138, 255, 0.15);
+            border-color: rgba(124, 138, 255, 0.5);
+            color: #d0d8ff;
+            box-shadow: 0 5px 20px rgba(80, 100, 200, 0.2);
+        }
+
+        .btn.is-success {
+            background: rgba(74, 222, 128, 0.08);
+            border-color: rgba(74, 222, 128, 0.3);
+            color: var(--success);
+        }
+        .btn.is-success:hover {
+            background: rgba(74, 222, 128, 0.15);
+            border-color: rgba(74, 222, 128, 0.5);
+            box-shadow: 0 5px 20px rgba(74, 222, 128, 0.15);
+        }
+
+        /* ============================================================
+           EMPTY STATE
+           ============================================================ */
+        .empty-state {
+            text-align: center; padding: 70px 30px;
+            background: var(--card-bg);
+            border: 1px solid var(--panel-border);
+            border-radius: 4px;
+            color: var(--text-secondary);
+        }
+
+        .empty-state svg {
+            width: 48px !important; height: 48px !important;
+            color: var(--text-tertiary);
+            margin-bottom: 16px;
+        }
+
+        .empty-state p:first-of-type {
+            font-family: var(--font-body);
+            font-size: 1rem; color: var(--text-primary);
+        }
+
+        .empty-state p:last-of-type {
+            font-family: var(--font-mono);
+            font-size: 0.75rem; color: var(--text-tertiary); margin-top: 8px;
+        }
+
+        @media (max-width: 600px) {
+            .header-text h1 { font-size: 1.2rem; }
+            .stat-value { font-size: 1.6rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="space-bg" id="spaceBg">
+        <div class="nebula nebula-1"></div>
+        <div class="nebula nebula-2"></div>
+    </div>
+
+    <div class="container">
+
+        <div class="status-bar">
+            <div><span class="blink"></span>TELEMETRÍA EN VIVO</div>
+            <div id="clock">00:00:00 UTC</div>
+        </div>
+
+        <div class="header">
+            <div class="header-text">
+                <h1>CENTRO DE ANÁLISIS DE MISIÓN</h1>
+                <p class="subtitle">Estadísticas y métricas de evaluación</p>
+            </div>
+            <div class="header-actions">
+                <a href="/descargar-pdf" class="btn is-success">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>
+                    Descargar Reporte PDF
+                </a>
+                <a href="/" class="btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M19 12H5m0 0l6-6m-6 6l6 6"/></svg>
+                    Regresar a la Estación
+                </a>
+            </div>
+        </div>
+
+        <div id="dashboardContent"></div>
+
+    </div>
+
+    <script type="application/json" id="dashboardData">
+        {{ {
+            "total": total,
+            "promedio": promedio,
+            "aprobados": aprobados,
+            "reprobados": reprobados,
+            "porcentaje": porcentaje_aprobados,
+            "stats_preguntas": stats_por_pregunta,
+            "distribucion": distribucion,
+            "historial": historial_notas,
+            "ultimas": ultimas
+        } | tojson }}
+    </script>
+
+    <script>
+        // ============================================================
+        // DATOS DESDE FLASK — JSON seguro y texto escapado
+        // ============================================================
+        var DASHBOARD_DATA = JSON.parse(document.getElementById('dashboardData').textContent);
+        var TOTAL = Number(DASHBOARD_DATA.total) || 0;
+        var PROMEDIO = Number(DASHBOARD_DATA.promedio) || 0;
+        var APROBADOS = Number(DASHBOARD_DATA.aprobados) || 0;
+        var REPROBADOS = Number(DASHBOARD_DATA.reprobados) || 0;
+        var PORCENTAJE = Number(DASHBOARD_DATA.porcentaje) || 0;
+        var STATS_PREGUNTAS = Array.isArray(DASHBOARD_DATA.stats_preguntas) ? DASHBOARD_DATA.stats_preguntas : [];
+        var DISTRIBUCION = DASHBOARD_DATA.distribucion || {};
+        var HISTORIAL = Array.isArray(DASHBOARD_DATA.historial) ? DASHBOARD_DATA.historial : [];
+        var ULTIMAS = Array.isArray(DASHBOARD_DATA.ultimas) ? DASHBOARD_DATA.ultimas : [];
+
+        function escapeHtml(value) {
+            return String(value == null ? '' : value)
+                .replaceAll('&', '&amp;')
+                .replaceAll('<', '&lt;')
+                .replaceAll('>', '&gt;')
+                .replaceAll('"', '&quot;')
+                .replaceAll("'", '&#039;');
+        }
+
+        // Reloj HUD
+        function updateClock() {
+            var now = new Date();
+            var h = String(now.getUTCHours()).padStart(2, '0');
+            var m = String(now.getUTCMinutes()).padStart(2, '0');
+            var s = String(now.getUTCSeconds()).padStart(2, '0');
+            document.getElementById('clock').textContent = h + ':' + m + ':' + s + ' UTC';
+        }
+        updateClock();
+        setInterval(updateClock, 1000);
+
+        // Estrellas de fondo
+        var spaceBg = document.getElementById('spaceBg');
+        for (var i = 0; i < 80; i++) {
+            var star = document.createElement('div');
+            star.classList.add('star');
+            star.style.cssText =
+                'width:' + (Math.random()*2+0.5) + 'px;' +
+                'height:' + (Math.random()*2+0.5) + 'px;' +
+                'left:' + (Math.random()*100) + '%;' +
+                'top:' + (Math.random()*100) + '%;' +
+                '--duration:' + (Math.random()*3+2) + 's;' +
+                '--delay:' + (Math.random()*4) + 's;' +
+                '--min-opacity:' + (Math.random()*0.3+0.06) + ';';
+            spaceBg.appendChild(star);
+        }
+
+        // ============================================================
+        // ICONOS LINEALES (reemplazan emojis, coherentes con el HUD)
+        // ============================================================
+        var ICONS = {
+            misiones: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l3 6 6 1-4.5 4.4L17.5 20 12 17l-5.5 3 1-6.6L3 9l6-1z"/></svg>',
+            promedio: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>',
+            aprobacion: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 13l4 4L19 7"/></svg>',
+            ratio: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19V9M10 19V5M16 19v-7M22 19"/></svg>',
+            tripulante: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="3.2"/><path d="M5.5 19.5c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"/></svg>',
+            target: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="0.6" fill="currentColor"/></svg>',
+            empty: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="3"/><ellipse cx="12" cy="12" rx="9" ry="4"/><ellipse cx="12" cy="12" rx="4" ry="9" opacity="0.5"/></svg>'
+        };
+
+        // ============================================================
+        // CONSTRUIR DASHBOARD
+        // ============================================================
+        var html = '';
+
+        if (TOTAL > 0) {
+            html += '<div class="stats-grid">';
+            html += '<div class="stat-card"><div class="stat-label">Misiones totales</div><div class="stat-value">' + escapeHtml(TOTAL) + '</div></div>';
+            html += '<div class="stat-card is-info"><div class="stat-label">Promedio general</div><div class="stat-value">' + escapeHtml(PROMEDIO) + '<span class="stat-unit">/10</span></div></div>';
+            html += '<div class="stat-card is-success"><div class="stat-label">Tasa de aprobación</div><div class="stat-value">' + escapeHtml(PORCENTAJE) + '<span class="stat-unit">%</span></div></div>';
+            html += '<div class="stat-card is-warning"><div class="stat-label">Aprobados / Reprobados</div><div class="stat-value">' + escapeHtml(APROBADOS) + '<span class="stat-unit">/' + escapeHtml(REPROBADOS) + '</span></div></div>';
+            html += '</div>';
+
+            html += '<div class="charts-grid">';
+            html += '<div class="chart-card"><div class="corner corner-tl"></div><div class="corner corner-br"></div><div class="chart-title">Promedio por misión</div><div class="chart-wrap"><canvas id="chartPreguntas"></canvas></div></div>';
+            html += '<div class="chart-card"><div class="corner corner-tl"></div><div class="corner corner-br"></div><div class="chart-title">Distribución de resultados</div><div class="chart-wrap"><canvas id="chartDistribucion"></canvas></div></div>';
+            html += '<div class="chart-card" style="grid-column: 1 / -1;"><div class="corner corner-tl"></div><div class="corner corner-br"></div><div class="chart-title">Evolución de puntuaciones</div><div class="chart-wrap is-tall"><canvas id="chartEvolucion"></canvas></div></div>';
+            html += '</div>';
+
+            html += '<div class="table-card"><div class="chart-title">Rendimiento por misión</div><table><thead><tr><th>Misión</th><th>Evaluaciones</th><th>Promedio</th><th>Máxima</th><th>Mínima</th></tr></thead><tbody>';
+            STATS_PREGUNTAS.forEach(function(s) {
+                html += '<tr><td>' + ICONS.target + ' Pregunta ' + escapeHtml(s.id) + '</td><td>' + escapeHtml(s.total) + '</td><td>' + escapeHtml(s.promedio) + '</td><td><span class="pill is-high">' + escapeHtml(s.maxima) + '</span></td><td><span class="pill is-low">' + escapeHtml(s.minima) + '</span></td></tr>';
+            });
+            html += '</tbody></table></div>';
+
+            html += '<div class="table-card"><div class="chart-title">Últimas misiones</div><table><thead><tr><th>Tripulante</th><th>Misión</th><th>Puntuación</th><th>Fecha</th></tr></thead><tbody>';
+            ULTIMAS.forEach(function(u) {
+                html += '<tr><td>' + ICONS.tripulante + ' ' + escapeHtml(u[0]) + '</td><td>Pregunta ' + escapeHtml(u[1]) + '</td><td>' + escapeHtml(u[2]) + '</td><td style="color:var(--text-tertiary); font-family: var(--font-mono); font-size: 0.78rem;">' + escapeHtml(u[3]) + '</td></tr>';
+            });
+            html += '</tbody></table></div>';
+
+        } else {
+            html += '<div class="empty-state">' + ICONS.empty + '<p>No hay datos de misión todavía.</p><p>Realiza algunas evaluaciones para ver estadísticas.</p></div>';
+        }
+
+        document.getElementById('dashboardContent').innerHTML = html;
+
+        // ============================================================
+        // GRÁFICOS
+        // ============================================================
+        setTimeout(function() {
+            if (TOTAL > 0) {
+                var colors = ['#7c8aff', '#4ade80', '#fbbf24', '#f87171', '#00e5ff', '#c084fc'];
+                Chart.defaults.font.family = "'JetBrains Mono', monospace";
+
+                var ctx1 = document.getElementById('chartPreguntas');
+                if (ctx1) {
+                    new Chart(ctx1, {
+                        type: 'bar',
+                        data: {
+                            labels: STATS_PREGUNTAS.map(function(s) { return 'Misión ' + s.id; }),
+                            datasets: [{
+                                label: 'Promedio',
+                                data: STATS_PREGUNTAS.map(function(s) { return s.promedio; }),
+                                backgroundColor: colors,
+                                borderRadius: 4
+                            }]
+                        },
+                        options: {
+                            responsive: true, maintainAspectRatio: false,
+                            scales: {
+                                y: { beginAtZero: true, max: 10, grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#8088b8', font: { size: 10 } } },
+                                x: { grid: { display: false }, ticks: { color: '#8088b8', font: { size: 10 } } }
+                            },
+                            plugins: { legend: { display: false } }
+                        }
+                    });
+                }
+
+                var ctx2 = document.getElementById('chartDistribucion');
+                if (ctx2) {
+                    new Chart(ctx2, {
+                        type: 'doughnut',
+                        data: {
+                            labels: ['Excelente (9-10)', 'Bueno (7-8)', 'Regular (5-6)', 'Malo (<5)'],
+                            datasets: [{
+                                data: [DISTRIBUCION.excelente, DISTRIBUCION.bueno, DISTRIBUCION.regular, DISTRIBUCION.malo],
+                                backgroundColor: ['#4ade80', '#fbbf24', '#fb923c', '#f87171'],
+                                borderColor: 'rgba(8,12,32,0.9)',
+                                borderWidth: 3
+                            }]
+                        },
+                        options: {
+                            responsive: true, maintainAspectRatio: false,
+                            plugins: {
+                                legend: { position: 'bottom', labels: { color: '#8088b8', padding: 12, font: { size: 10 } } }
+                            }
+                        }
+                    });
+                }
+
+                var ctx3 = document.getElementById('chartEvolucion');
+                if (ctx3) {
+                    new Chart(ctx3, {
+                        type: 'line',
+                        data: {
+                            labels: HISTORIAL.map(function(h) { return '#' + h.indice; }),
+                            datasets: [{
+                                label: 'Puntuación',
+                                data: HISTORIAL.map(function(h) { return h.nota; }),
+                                borderColor: '#7c8aff',
+                                backgroundColor: 'rgba(124, 138, 255, 0.1)',
+                                fill: true, tension: 0.4, pointRadius: 3,
+                                pointBackgroundColor: '#7c8aff'
+                            }]
+                        },
+                        options: {
+                            responsive: true, maintainAspectRatio: false,
+                            scales: {
+                                y: { min: 0, max: 10, grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#8088b8', font: { size: 10 } } },
+                                x: { grid: { display: false }, ticks: { color: '#8088b8', maxTicksLimit: 15, font: { size: 10 } } }
+                            },
+                            plugins: { legend: { labels: { color: '#8088b8', font: { size: 10 } } } }
+                        }
+                    });
+                }
+            }
+        }, 100);
+    </script>
+
+</body>
+</html>

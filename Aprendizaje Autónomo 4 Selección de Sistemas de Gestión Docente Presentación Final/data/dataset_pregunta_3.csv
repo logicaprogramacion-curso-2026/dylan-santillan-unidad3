@@ -1,0 +1,51 @@
+respuesta,nota
+"La pila (stack) sigue el principio LIFO: el último elemento insertado es el primero en salir; se utilizan operaciones push y pop para apilar y desapilar, controlando el tope en la memoria de la estructura.",10.0
+"En una estructura tipo stack, el último dato colocado queda en la cima y es el primero que se recupera; se usan push para agregar y pop para quitar, manejando el tope en la memoria.",10.0
+"El concepto LIFO se implementa con una pila donde el elemento más reciente está en la cima; se inserta con push y se elimina con pop, trabajando en la memoria como una estructura de almacenamiento.",10.0
+"Una pila (stack) aplica LIFO: el último inserto es el primero en extraerse; las operaciones apilar (push) y desapilar (pop) actúan sobre el tope, todo dentro de la memoria del programa.",10.0
+"Con LIFO, la estructura de datos llamada pila o stack guarda el último dato en la cima; mediante push y pop se manipula el tope, aprovechando la memoria como almacenamiento temporal.",10.0
+"El stack usa LIFO, por lo que el último elemento insertado será el primero en salir; se emplean push y pop para manejar la pila, controlando el tope de la estructura.",8.0
+En una pila LIFO el último dato se coloca en la cima y se saca primero; se utilizan operaciones push y pop para gestionar la estructura en la memoria.,8.0
+"La estructura LIFO, conocida como pila, inserta el último elemento en la cima y lo recupera primero usando push y pop, todo almacenado en la memoria del programa.",8.0
+"Con LIFO, la pila guarda el último elemento en la cima; mediante push se inserta y con pop se elimina, manejando el tope dentro de la estructura de datos.",8.0
+"Una pila LIFO funciona colocando el último dato en la cima; las operaciones push y pop permiten agregar y quitar elementos, controlando el tope en la memoria.",8.0
+"El stack, que sigue LIFO, coloca el último inserto en la cima; con push se agrega y con pop se elimina, usando el tope como referencia en la estructura.",8.0
+"En LIFO, la pila mantiene el último elemento en la cima; se usan push para apilar y pop para desapilar, manejando el tope dentro de la memoria del programa.",8.0
+"Una pila LIFO inserta el último dato en la cima y lo saca primero; se emplean push y pop para manipularla, controlando el tope de la estructura.",8.0
+"El principio LIFO usa una pila donde el último elemento está en la cima; con push se agrega y con pop se quita, operando sobre el tope en la memoria.",8.0
+"Con LIFO, la estructura de tipo stack coloca el último inserto en la cima; push y pop gestionan la pila, controlando el tope del dato.",8.0
+"Una pila LIFO almacena el último elemento en la cima; se usa push para agregar y pop para eliminar, manejando el tope dentro de la estructura.",8.0
+"En una pila LIFO, el último dato se coloca en la cima y es el primero en salir; se utilizan push y pop para manipularla, usando la memoria como soporte.",8.0
+"El stack bajo LIFO guarda el último elemento en la cima; con push se inserta y con pop se extrae, controlando el tope de la estructura.",8.0
+"Con LIFO, el último dato se inserta en la cima de la pila y se recupera primero; se usan push y pop para gestionarla, trabajando sobre el tope.",8.0
+"Una pila LIFO coloca el último elemento en la cima; las operaciones push y pop permiten agregar y quitar datos, manejando el tope de la estructura.",8.0
+"En LIFO, el último elemento insertado está en la cima de la pila; se emplean push y pop para manipularla, controlando el tope en la memoria.",8.0
+El stack funciona con LIFO: el último dato ingresado queda en la cima y es el primero en salir; se usan push y pop para manejar el tope.,6.0
+"Una pila LIFO guarda el último elemento en la cima; con push se agrega y con pop se elimina, usando el tope como referencia.",6.0
+"En LIFO, el último inserto queda en la cima de la pila; se utilizan operaciones push y pop para manipularla.",6.0
+"La estructura LIFO, conocida como pila, coloca el último elemento en la cima y lo saca primero usando push y pop.",6.0
+"Con LIFO, la pila inserta el último dato en la cima; push y pop permiten agregar y quitar elementos.",6.0
+El stack LIFO guarda el último dato en la cima; push sirve para apilar y pop para desapilar.,6.0
+"En una pila LIFO, el último elemento está en la cima; se usa push para añadir y pop para retirar.",6.0
+Una pila LIFO coloca el último inserto en la cima; push y pop son las operaciones que la manejan.,6.0
+El principio LIFO se implementa con una pila donde el último elemento es el primero en salir; se usan push y pop.,6.0
+"Con LIFO, la pila mantiene el último dato en la cima; las operaciones push y pop permiten su gestión.",6.0
+Una pila LIFO inserta el último elemento en la cima y lo recupera primero mediante push y pop.,6.0
+"En LIFO, el último dato se coloca en la cima de la pila; push y pop son las funciones usadas.",6.0
+El stack LIFO coloca el último elemento en la cima; se usan push y pop para manipularlo.,6.0
+Una pila LIFO guarda el último inserto en la cima; con push se agrega y con pop se quita.,6.0
+"En una pila LIFO, el último dato está en la cima y se saca primero con pop después de push.",6.0
+El principio LIFO usa una pila donde el último elemento está en la cima; push y pop gestionan la estructura.,6.0
+Una pila LIFO coloca el último elemento en la cima; push lo agrega y pop lo elimina.,6.0
+"Con LIFO, el último dato se inserta en la cima de la pila; se usa push para añadir y pop para retirar.",6.0
+"En LIFO, la pila tiene el último elemento en la cima; push y pop son sus operaciones básicas.",6.0
+El stack LIFO mantiene el último elemento en la cima; se emplean push y pop para su manejo.,6.0
+Una pila LIFO coloca el último inserto en la cima; se utilizan push y pop para operar sobre ella.,6.0
+"En LIFO, el último dato se guarda en la cima de la pila; push y pop son los comandos usados.",6.0
+El principio LIFO se basa en una pila donde el último elemento está en la cima; push y pop lo gestionan.,6.0
+Una pila LIFO guarda el último elemento en la cima; se usa push para apilar y pop para desapilar.,4.0
+"Con LIFO, el último dato se coloca en la cima de la pila y se saca primero; se usan push y pop.",4.0
+El stack LIFO inserta el último elemento en la cima; push y pop permiten su manipulación.,4.0
+"En una pila LIFO, el último inserto queda en la cima; se emplean push y pop para manejarla.",4.0
+LIFO implica que la pila guarda el último dato en la cima; se usan push y pop para operar.,4.0
+La pila bajo LIFO coloca el último elemento en la cima; push y pop son las operaciones básicas.,4.0

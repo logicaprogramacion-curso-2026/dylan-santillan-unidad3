@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Evaluador IA | Estación Espacial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --space-dark: #020010;
+            --space-blue: #0a0a2e;
+            --white-dwarf: #f0f0ff;
+            --white-dwarf-glow: #c8d0ff;
+            --nebula-purple: #6b3fa0;
+            --nebula-pink: #c44d8f;
+            --comet-blue: #4dc9f6;
+            --comet-cyan: #00e5ff;
+            --star-yellow: #ffd740;
+            --text-primary: #e4e7ff;
+            --text-secondary: #8088b8;
+            --text-tertiary: #565d8a;
+            --panel-bg: rgba(8, 12, 32, 0.78);
+            --panel-border: rgba(124, 138, 255, 0.25);
+            --accent: #7c8aff;
+            --accent-bright: #9fb0ff;
+            --hud-line: rgba(124, 138, 255, 0.35);
+            --font-display: 'Orbitron', sans-serif;
+            --font-body: 'Space Grotesk', sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--space-dark);
+            color: var(--text-primary);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-y: auto;
+            overflow-x: hidden;
+            position: relative;
+            cursor: default;
+            padding: 24px;
+        }
+
+        /* ============================================================
+           OVERLAY DEL HIPERESPACIO
+           ============================================================ */
+        .hyperspace-overlay {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: #000011;
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: fadeOut 0.6s ease-out 1.8s forwards;
+            pointer-events: none;
+        }
+
+        @keyframes fadeOut {
+            to { opacity: 0; visibility: hidden; }
+        }
+
+        .hyperspace-canvas {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+        }
+
+        .hyperspace-text {
+            position: relative;
+            z-index: 10000;
+            font-family: var(--font-display);
+            color: #9fb0ff;
+            font-size: 1.4rem;
+            font-weight: 700;
+            letter-spacing: 8px;
+            text-align: center;
+            animation: textPulse 0.8s ease-out 0.3s both;
+            text-shadow: 0 0 30px rgba(120, 140, 255, 0.8), 0 0 60px rgba(120, 140, 255, 0.4);
+        }
+
+        @keyframes textPulse {
+            from { opacity: 0; transform: scale(0.3); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        /* ============================================================
+           FONDO ESPACIAL
+           ============================================================ */
+        .space-canvas {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            z-index: 0; pointer-events: none;
+        }
+
+        .star {
+            position: absolute;
+            background: white; border-radius: 50%;
+            animation: twinkle var(--duration) infinite ease-in-out;
+            animation-delay: var(--delay);
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: var(--min-opacity); transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.5); }
+        }
+
+        .white-dwarf {
+            position: absolute; top: 5%; right: 10%;
+            width: 100px; height: 100px;
+            background: radial-gradient(circle, 
+                rgba(255, 255, 255, 1) 0%, 
+                rgba(240, 240, 255, 0.9) 15%, 
+                rgba(200, 210, 255, 0.6) 30%, 
+                rgba(150, 170, 255, 0.2) 60%, 
+                transparent 100%);
+            border-radius: 50%;
+            box-shadow: 
+                0 0 40px 15px rgba(200, 210, 255, 0.5),
+                0 0 100px 40px rgba(180, 190, 255, 0.3),
+                0 0 200px 80px rgba(150, 170, 255, 0.15);
+            animation: whiteDwarfPulse 4s infinite ease-in-out;
+            z-index: 1;
+        }
+
+        @keyframes whiteDwarfPulse {
+            0%, 100% { 
+                box-shadow: 0 0 40px 15px rgba(200, 210, 255, 0.5), 0 0 100px 40px rgba(180, 190, 255, 0.3);
+            }
+            50% { 
+                box-shadow: 0 0 60px 25px rgba(220, 230, 255, 0.7), 0 0 130px 55px rgba(200, 210, 255, 0.45);
+            }
+        }
+
+        .comet {
+            position: absolute;
+            animation: cometOrbit var(--orbit-duration) infinite linear;
+            z-index: 2;
+        }
+
+        .comet-body {
+            width: 8px; height: 8px;
+            background: var(--comet-cyan);
+            border-radius: 50%;
+            box-shadow: 0 0 15px 5px rgba(0, 229, 255, 0.8);
+            position: relative;
+        }
+
+        .comet-tail {
+            position: absolute;
+            width: 60px; height: 3px;
+            background: linear-gradient(90deg, 
+                rgba(0, 229, 255, 0.9) 0%, 
+                rgba(0, 200, 255, 0.4) 40%, 
+                transparent 100%);
+            border-radius: 50%;
+            top: 50%; right: 8px;
+            transform: translateY(-50%);
+            filter: blur(1px);
+        }
+
+        @keyframes cometOrbit {
+            0% { transform: translate(-100px, -100px) rotate(0deg); }
+            100% { transform: translate(-100px, -100px) rotate(360deg); }
+        }
+
+        .comet-fast .comet-tail {
+            width: 80px;
+            background: linear-gradient(90deg, 
+                rgba(255, 215, 64, 0.9) 0%, 
+                rgba(255, 180, 0, 0.4) 40%, 
+                transparent 100%);
+        }
+
+        .comet-fast .comet-body {
+            background: var(--star-yellow);
+            box-shadow: 0 0 15px 5px rgba(255, 215, 64, 0.8);
+        }
+
+        .rocket-container {
+            position: absolute; bottom: 8%; left: 8%;
+            z-index: 3;
+            animation: rocketFloat 5s infinite ease-in-out;
+        }
+
+        @keyframes rocketFloat {
+            0%, 100% { transform: translateY(0) rotate(-5deg); }
+            25% { transform: translateY(-15px) rotate(-3deg); }
+            50% { transform: translateY(-8px) rotate(-7deg); }
+            75% { transform: translateY(-20px) rotate(-4deg); }
+        }
+
+        .rocket {
+            font-size: 70px;
+            filter: drop-shadow(0 0 20px rgba(255, 100, 50, 0.6));
+            animation: rocketThrust 0.3s infinite alternate;
+        }
+
+        @keyframes rocketThrust {
+            from { transform: translateY(0); }
+            to { transform: translateY(-3px); }
+        }
+
+        .rocket-flame {
+            position: absolute; bottom: -20px; left: 50%;
+            transform: translateX(-50%);
+            width: 20px; height: 30px;
+            background: linear-gradient(to bottom, 
+                rgba(255, 150, 50, 1) 0%, 
+                rgba(255, 100, 30, 0.8) 30%, 
+                rgba(255, 50, 0, 0.4) 60%, 
+                transparent 100%);
+            border-radius: 0 0 50% 50%;
+            animation: flameFlicker 0.15s infinite alternate;
+        }
+
+        @keyframes flameFlicker {
+            from { height: 30px; opacity: 0.9; transform: translateX(-50%) scaleX(1); }
+            to { height: 40px; opacity: 0.6; transform: translateX(-50%) scaleX(0.7); }
+        }
+
+        .nebula {
+            position: absolute; border-radius: 50%;
+            filter: blur(80px); opacity: 0.18; z-index: 0;
+        }
+
+        .nebula-1 {
+            width: 400px; height: 300px;
+            background: var(--nebula-purple);
+            top: 30%; left: -10%;
+            animation: nebulaDrift 12s infinite ease-in-out;
+        }
+
+        .nebula-2 {
+            width: 350px; height: 250px;
+            background: var(--nebula-pink);
+            bottom: 20%; right: -5%;
+            animation: nebulaDrift 15s infinite ease-in-out reverse;
+        }
+
+        @keyframes nebulaDrift {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(30px, -20px) scale(1.1); }
+            66% { transform: translate(-20px, 15px) scale(0.95); }
+        }
+
+        /* ============================================================
+           PARALAJE DE ESTRELLAS (sigue al mouse, capas separadas)
+           ============================================================ */
+        .parallax-layer {
+            position: absolute;
+            top: -10%; left: -10%;
+            width: 120%; height: 120%;
+            transition: transform 0.3s ease-out;
+        }
+
+        /* ============================================================
+           CONSOLA / PANEL PRINCIPAL — HUD de nave
+           ============================================================ */
+        .console {
+            position: relative; z-index: 10;
+            max-width: 620px; width: 90%;
+            max-height: 92vh;
+            animation: containerAppear 1s ease-out 2s both;
+        }
+
+        @keyframes containerAppear {
+            from { opacity: 0; transform: scale(0.92) translateY(30px); }
+            to { opacity: 1; transform: scale(1) translateY(0); }
+        }
+
+        .console-frame {
+            position: relative;
+            background: var(--panel-bg);
+            border: 1px solid var(--panel-border);
+            border-radius: 4px;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.03);
+            padding: 38px 40px 30px;
+            overflow-y: auto;
+            max-height: 92vh;
+        }
+
+        .console-frame::-webkit-scrollbar { width: 5px; }
+        .console-frame::-webkit-scrollbar-track { background: transparent; }
+        .console-frame::-webkit-scrollbar-thumb { background: rgba(124, 138, 255, 0.3); border-radius: 3px; }
+
+        /* Corner brackets — el detalle de HUD de nave */
+        .corner {
+            position: absolute;
+            width: 22px; height: 22px;
+            border: 2px solid var(--comet-cyan);
+            opacity: 0.7;
+            filter: drop-shadow(0 0 4px rgba(0, 229, 255, 0.5));
+        }
+        .corner-tl { top: -1px; left: -1px; border-right: none; border-bottom: none; }
+        .corner-tr { top: -1px; right: -1px; border-left: none; border-bottom: none; }
+        .corner-bl { bottom: -1px; left: -1px; border-right: none; border-top: none; }
+        .corner-br { bottom: -1px; right: -1px; border-left: none; border-top: none; }
+
+        /* Barra de estado superior tipo HUD */
+        .status-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: var(--font-mono);
+            font-size: 0.68rem;
+            letter-spacing: 0.5px;
+            color: var(--text-tertiary);
+            margin-bottom: 22px;
+            padding-bottom: 14px;
+            border-bottom: 1px solid var(--hud-line);
+        }
+
+        .status-bar .blink {
+            display: inline-block;
+            width: 6px; height: 6px;
+            border-radius: 50%;
+            background: #4ade80;
+            box-shadow: 0 0 8px #4ade80;
+            margin-right: 6px;
+            animation: dotGlow 2s infinite;
+        }
+
+        .status-left, .status-right { display: flex; align-items: center; }
+
+        .header-area {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .logo-icon {
+            width: 52px; height: 52px;
+            display: inline-block;
+            filter: drop-shadow(0 0 25px rgba(120, 140, 255, 0.5));
+            animation: logoOrbit 6s infinite linear;
+        }
+
+        @keyframes logoOrbit {
+            0% { transform: rotate(0deg) scale(1); }
+            25% { transform: rotate(3deg) scale(1.05); }
+            50% { transform: rotate(0deg) scale(1); }
+            75% { transform: rotate(-3deg) scale(1.05); }
+            100% { transform: rotate(0deg) scale(1); }
+        }
+
+        .title {
+            font-family: var(--font-display);
+            font-size: 1.7rem;
+            font-weight: 900;
+            letter-spacing: 3px;
+            margin-top: 14px;
+            background: linear-gradient(180deg, var(--white-dwarf) 0%, var(--white-dwarf-glow) 50%, var(--accent-bright) 100%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            font-family: var(--font-mono);
+            color: var(--text-secondary);
+            font-size: 0.72rem;
+            margin-top: 10px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 22px 0 24px;
+        }
+
+        .divider::before, .divider::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--hud-line));
+        }
+        .divider::after { background: linear-gradient(90deg, var(--hud-line), transparent); }
+
+        .divider span {
+            font-family: var(--font-mono);
+            font-size: 0.62rem;
+            color: var(--text-tertiary);
+            letter-spacing: 2px;
+            white-space: nowrap;
+        }
+
+        /* ============================================================
+           MÓDULOS DE LA ESTACIÓN — botones rediseñados
+           ============================================================ */
+        .menu {
+            display: flex; flex-direction: column;
+            gap: 10px;
+        }
+
+        .module {
+            display: flex; align-items: center; gap: 16px;
+            width: 100%;
+            padding: 15px 18px;
+            background: rgba(18, 22, 50, 0.55);
+            border: 1px solid rgba(100, 140, 255, 0.14);
+            border-left: 2px solid var(--accent);
+            border-radius: 3px;
+            color: var(--text-primary); text-decoration: none;
+            font-size: 0.93rem; font-weight: 500;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative; overflow: hidden;
+            cursor: pointer;
+        }
+
+        .module::after {
+            content: '';
+            position: absolute; top: -50%; left: -50%;
+            width: 200%; height: 200%;
+            background: radial-gradient(circle, rgba(120, 140, 255, 0.1) 0%, transparent 70%);
+            opacity: 0; transition: opacity 0.4s ease;
+        }
+
+        .module:hover {
+            border-left-color: var(--comet-cyan);
+            background: rgba(22, 28, 60, 0.7);
+            box-shadow: 0 8px 26px rgba(80, 100, 200, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.04);
+            transform: translateX(3px);
+        }
+
+        .module:hover::after { opacity: 1; }
+
+        .module-id {
+            font-family: var(--font-mono);
+            font-size: 0.65rem;
+            color: var(--text-tertiary);
+            width: 32px;
+            flex-shrink: 0;
+            text-align: center;
+        }
+
+        .module-icon {
+            font-size: 1.5rem; width: 42px; height: 42px;
+            display: flex; align-items: center; justify-content: center;
+            background: rgba(124, 138, 255, 0.08);
+            border-radius: 6px;
+            flex-shrink: 0; position: relative; z-index: 1;
+            transition: all 0.3s ease;
+            color: var(--accent-bright);
+        }
+
+        .module:hover .module-icon {
+            background: rgba(124, 138, 255, 0.2);
+            box-shadow: 0 0 16px rgba(124, 138, 255, 0.3);
+        }
+
+        .module-content {
+            text-align: left; flex-grow: 1;
+            position: relative; z-index: 1;
+        }
+
+        .module-title {
+            font-weight: 600; font-size: 0.95rem; color: #d8deff;
+            letter-spacing: 0.3px;
+        }
+        .module-desc {
+            font-family: var(--font-mono);
+            font-size: 0.68rem; color: var(--text-tertiary);
+            margin-top: 3px;
+        }
+
+        .module-arrow {
+            font-size: 1.1rem; color: rgba(124, 138, 255, 0.5);
+            transition: all 0.3s ease; position: relative; z-index: 1;
+            flex-shrink: 0;
+        }
+
+        .module:hover .module-arrow {
+            color: var(--comet-cyan);
+            transform: translateX(4px);
+        }
+
+        .module-logout { border-left-color: rgba(248, 113, 113, 0.7) !important; }
+        .module-logout:hover {
+            border-left-color: #f87171 !important;
+            box-shadow: 0 8px 26px rgba(248, 113, 113, 0.18) !important;
+        }
+
+        .module-login { border-left-color: rgba(74, 222, 128, 0.7) !important; }
+        .module-login:hover {
+            border-left-color: #4ade80 !important;
+            box-shadow: 0 8px 26px rgba(74, 222, 128, 0.18) !important;
+        }
+
+        .section-gap { margin-top: 14px; }
+
+        .footer {
+            margin-top: 26px;
+            padding-top: 14px;
+            border-top: 1px solid var(--hud-line);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-family: var(--font-mono);
+            color: var(--text-tertiary);
+            font-size: 0.66rem; letter-spacing: 1.5px;
+        }
+
+        .footer-dot {
+            display: inline-block; width: 5px; height: 5px;
+            background: var(--comet-cyan); border-radius: 50%;
+            animation: dotGlow 2s infinite;
+            box-shadow: 0 0 8px var(--comet-cyan);
+        }
+
+        @keyframes dotGlow {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.35; }
+        }
+
+        @media (max-width: 500px) {
+            .console-frame { padding: 28px 22px 22px; }
+            .title { font-size: 1.25rem; letter-spacing: 2px; }
+            .module { padding: 12px 14px; gap: 10px; }
+            .module-icon { font-size: 1.2rem; width: 36px; height: 36px; }
+            .module-id { display: none; }
+            .rocket { font-size: 45px; }
+            .white-dwarf { width: 60px; height: 60px; }
+            .comet { display: none; }
+            .hyperspace-text { font-size: 1rem; letter-spacing: 4px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hyperspace-overlay" id="hyperspace">
+        <canvas class="hyperspace-canvas" id="hyperspaceCanvas"></canvas>
+        <span class="hyperspace-text">ENTRANDO AL HIPERESPACIO</span>
+    </div>
+
+    <div class="space-canvas" id="spaceCanvas">
+        <div class="parallax-layer" id="parallaxBack">
+            <div class="nebula nebula-1"></div>
+            <div class="nebula nebula-2"></div>
+        </div>
+        <div class="white-dwarf"></div>
+        <div class="parallax-layer" id="parallaxFront">
+            <div class="comet" style="top: 25%; left: 60%; --orbit-duration: 25s;">
+                <div class="comet-body"></div>
+                <div class="comet-tail"></div>
+            </div>
+            <div class="comet comet-fast" style="top: 45%; left: 75%; --orbit-duration: 15s;">
+                <div class="comet-body"></div>
+                <div class="comet-tail"></div>
+            </div>
+        </div>
+        <div class="rocket-container">
+            <div class="rocket">🚀</div>
+            <div class="rocket-flame"></div>
+        </div>
+    </div>
+
+    <div class="console">
+        <div class="console-frame">
+            <div class="corner corner-tl"></div>
+            <div class="corner corner-tr"></div>
+            <div class="corner corner-bl"></div>
+            <div class="corner corner-br"></div>
+
+            <div class="status-bar">
+                <div class="status-left"><span class="blink"></span>SISTEMA OPERATIVO</div>
+                <div class="status-right" id="clock">00:00:00 UTC</div>
+            </div>
+
+            <div class="header-area">
+                <svg class="logo-icon" viewBox="0 0 64 64" fill="none">
+                    <circle cx="32" cy="32" r="6" stroke="#9fb0ff" stroke-width="2"/>
+                    <circle cx="32" cy="32" r="14" stroke="#7c8aff" stroke-width="1.4" stroke-dasharray="3 4"/>
+                    <ellipse cx="32" cy="32" rx="26" ry="10" stroke="#00e5ff" stroke-width="1.4"/>
+                    <ellipse cx="32" cy="32" rx="10" ry="26" stroke="#7c8aff" stroke-width="1" opacity="0.5"/>
+                </svg>
+                <h1 class="title">ESTACIÓN EVALUADORA</h1>
+                <p class="subtitle">Inteligencia Artificial Académica</p>
+            </div>
+
+            <div class="divider"><span>MÓDULOS DISPONIBLES</span></div>
+
+            <div class="menu">
+                <a href="/evaluar" class="module">
+                    <span class="module-id">01</span>
+                    <div class="module-icon">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6">
+                            <path d="M4 4h11l5 5v11H4z"/><path d="M15 4v5h5"/><path d="M8 13h8M8 16.5h5"/>
+                        </svg>
+                    </div>
+                    <div class="module-content">
+                        <div class="module-title">Evaluar Respuesta</div>
+                        <div class="module-desc">RED NEURONAL + LLM</div>
+                    </div>
+                    <span class="module-arrow">⟶</span>
+                </a>
+
+                {% if user %}
+                <a href="/docente" class="module">
+                    <span class="module-id">02</span>
+                    <div class="module-icon">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6">
+                            <circle cx="12" cy="8" r="3.4"/><path d="M5 20c0-4 3-6.5 7-6.5s7 2.5 7 6.5"/>
+                        </svg>
+                    </div>
+                    <div class="module-content">
+                        <div class="module-title">Panel del Docente</div>
+                        <div class="module-desc">GESTIÓN Y ENTRENAMIENTO</div>
+                    </div>
+                    <span class="module-arrow">⟶</span>
+                </a>
+
+                <a href="/dashboard" class="module">
+                    <span class="module-id">03</span>
+                    <div class="module-icon">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6">
+                            <path d="M4 20V10M11 20V4M18 20v-7"/>
+                        </svg>
+                    </div>
+                    <div class="module-content">
+                        <div class="module-title">Centro de Análisis</div>
+                        <div class="module-desc">ESTADÍSTICAS Y GRÁFICOS</div>
+                    </div>
+                    <span class="module-arrow">⟶</span>
+                </a>
+
+                <a href="/historial" class="module">
+                    <span class="module-id">04</span>
+                    <div class="module-icon">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6">
+                            <path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 5v5h5"/><path d="M12 8v4l3 2"/>
+                        </svg>
+                    </div>
+                    <div class="module-content">
+                        <div class="module-title">Registro de Misión</div>
+                        <div class="module-desc">HISTORIAL COMPLETO</div>
+                    </div>
+                    <span class="module-arrow">⟶</span>
+                </a>
+                {% endif %}
+            </div>
+
+            <div class="menu section-gap">
+                {% if user %}
+                <form action="/logout" method="POST" style="margin:0;">
+                    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                    <button type="submit" class="module module-logout" style="width:100%; text-align:left; font:inherit; cursor:pointer;">
+                        <span class="module-id">⏻</span>
+                        <div class="module-icon">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6">
+                                <path d="M9 4H5v16h4M16 17l4-5-4-5M9 12h11"/>
+                            </svg>
+                        </div>
+                        <div class="module-content">
+                            <div class="module-title">Cerrar Sesión</div>
+                            <div class="module-desc">{{ user.nombre or user.usuario }} · {{ user.rol|upper }}</div>
+                        </div>
+                        <span class="module-arrow">⟶</span>
+                    </button>
+                </form>
+                {% else %}
+                <a href="/login" class="module module-login">
+                    <span class="module-id">⏻</span>
+                    <div class="module-icon">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6">
+                            <rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/>
+                        </svg>
+                    </div>
+                    <div class="module-content">
+                        <div class="module-title">Iniciar Sesión</div>
+                        <div class="module-desc">ACCESO DOCENTE</div>
+                    </div>
+                    <span class="module-arrow">⟶</span>
+                </a>
+                {% endif %}
+            </div>
+
+            <div class="footer">
+                <span class="footer-dot"></span>
+                ESTACIÓN ESPACIAL v3.0 — OPERATIVA
+                <span class="footer-dot"></span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        (function() {
+            const canvas = document.getElementById('hyperspaceCanvas');
+            const ctx = canvas.getContext('2d');
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            const centerX = canvas.width / 2;
+            const centerY = canvas.height / 2;
+            const stars = [];
+            const numStars = 350;
+
+            for (let i = 0; i < numStars; i++) {
+                stars.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height,
+                    z: Math.random() * canvas.width,
+                    speed: Math.random() * 18 + 4
+                });
+            }
+
+            function drawHyperspace() {
+                ctx.fillStyle = 'rgba(0, 0, 17, 0.25)';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                for (let i = 0; i < stars.length; i++) {
+                    const star = stars[i];
+                    const dx = star.x - centerX;
+                    const dy = star.y - centerY;
+                    const prevX = star.x;
+                    const prevY = star.y;
+                    star.x += dx * star.speed * 0.008;
+                    star.y += dy * star.speed * 0.008;
+                    star.z -= star.speed;
+                    if (star.z <= 0 || star.x < -100 || star.x > canvas.width + 100 ||
+                        star.y < -100 || star.y > canvas.height + 100) {
+                        const angle = Math.random() * Math.PI * 2;
+                        const radius = canvas.width * 0.8;
+                        star.x = centerX + Math.cos(angle) * radius;
+                        star.y = centerY + Math.sin(angle) * radius;
+                        star.z = canvas.width;
+                    }
+                    const progress = 1 - star.z / canvas.width;
+                    const size = progress * 4;
+                    const alpha = progress;
+                    ctx.beginPath();
+                    ctx.moveTo(prevX, prevY);
+                    ctx.lineTo(star.x, star.y);
+                    ctx.strokeStyle = `rgba(180, 210, 255, ${alpha * 0.5})`;
+                    ctx.lineWidth = size * 0.6;
+                    ctx.stroke();
+                    ctx.beginPath();
+                    ctx.arc(star.x, star.y, size, 0, Math.PI * 2);
+                    ctx.fillStyle = `rgba(230, 245, 255, ${alpha})`;
+                    ctx.fill();
+                }
+                if (document.getElementById('hyperspace') &&
+                    document.getElementById('hyperspace').style.opacity !== '0') {
+                    requestAnimationFrame(drawHyperspace);
+                }
+            }
+            drawHyperspace();
+            setTimeout(function() {
+                const overlay = document.getElementById('hyperspace');
+                if (overlay) {
+                    overlay.style.opacity = '0';
+                    setTimeout(function() { if (overlay.parentNode) overlay.remove(); }, 600);
+                }
+            }, 2200);
+        })();
+
+        const spaceCanvas = document.getElementById('spaceCanvas');
+        for (let i = 0; i < 150; i++) {
+            const star = document.createElement('div');
+            star.classList.add('star');
+            const size = Math.random() * 2.5 + 0.8;
+            star.style.cssText = `
+                width: ${size}px; height: ${size}px;
+                left: ${Math.random() * 100}%; top: ${Math.random() * 100}%;
+                --duration: ${Math.random() * 3 + 2}s;
+                --delay: ${Math.random() * 3}s;
+                --min-opacity: ${Math.random() * 0.3 + 0.1};
+            `;
+            spaceCanvas.appendChild(star);
+        }
+
+        function createShootingStar() {
+            const star = document.createElement('div');
+            star.style.cssText = `
+                position: absolute;
+                left: ${Math.random() * 80}%; top: ${Math.random() * 50}%;
+                width: 2px; height: 2px;
+                background: white; border-radius: 50%;
+                box-shadow: 0 0 6px 2px rgba(255, 255, 255, 0.8);
+                animation: shootingStar 0.8s linear forwards;
+                z-index: 5;
+            `;
+            spaceCanvas.appendChild(star);
+            setTimeout(() => star.remove(), 800);
+        }
+        const shootingStarStyle = document.createElement('style');
+        shootingStarStyle.textContent = `
+            @keyframes shootingStar {
+                0% { transform: translate(0, 0); opacity: 1; }
+                100% { transform: translate(300px, 150px); opacity: 0; }
+            }
+        `;
+        document.head.appendChild(shootingStarStyle);
+        setInterval(() => { createShootingStar(); }, Math.random() * 10000 + 5000);
+
+        // Paralaje sutil con el mouse
+        document.addEventListener('mousemove', (e) => {
+            const x = (e.clientX / window.innerWidth - 0.5);
+            const y = (e.clientY / window.innerHeight - 0.5);
+            document.getElementById('parallaxBack').style.transform = `translate(${x * 10}px, ${y * 10}px)`;
+            document.getElementById('parallaxFront').style.transform = `translate(${x * 25}px, ${y * 25}px)`;
+        });
+
+        // Reloj UTC tipo HUD
+        function updateClock() {
+            const now = new Date();
+            const h = String(now.getUTCHours()).padStart(2, '0');
+            const m = String(now.getUTCMinutes()).padStart(2, '0');
+            const s = String(now.getUTCSeconds()).padStart(2, '0');
+            document.getElementById('clock').textContent = `${h}:${m}:${s} UTC`;
+        }
+        updateClock();
+        setInterval(updateClock, 1000);
+    </script>
+
+</body>
+</html>

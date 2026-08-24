@@ -1,0 +1,2517 @@
+Daniel Portnoy
+Doctor y máster en Astrofísica e ingeniero Aeroespacial. Obtuvo sus
+títulos en el Instituto Tecnológico de Israel, Technion. Desarrolló
+sistemas aviónicos computados para la Fuerza Aérea Israelí y
+continuó siendo consultor para el Gobierno de Israel en distintos
+proyectos de defensa como el sistema de defensa contra misiles
+balísticos Arrow. Desde hace más de veinte años es consultor
+y trabaja activamente en el desarrollo del programa espacial
+israelí y difunde en distintos congresos de América Latina los
+logros más destacados de este programa. En la actualidad es
+profesor externo de la Universidad de Tel Aviv y lidera el grupo
+de profesionales de distintas disciplinas que son mentores en
+el proyecto Dujifat, en el cual alumnos de escuelas secundarias
+desarrollan e integran nanosatélites con fines educacionales en
+el Centro de Ciencias Herzliya (centro de Israel).
+Jorge Enrique Espíndola Díaz
+Ingeniero de sistemas con especialización en telemática, máster
+en Ciencias de la Información y las Comunicaciones de la
+Universidad Distrital Francisco José de Caldas y doctor en
+Ciencias de Ingeniería y Tecnología Espacial del Instituto
+Nacional de Pesquisas Espaciales, INPE, de Brasil. Es profesor
+titular de la Facultad de Ingeniería y editor de la revista
+Ingeniería, Investigación y Desarrollo de la Universidad
+Pedagógica y Tecnológica de Colombia, UPTC, consultor de la
+firma colombo-israelí Consultech Il SAS. J. E., y socio fundador
+de la Corporación Científica del Sector Aeroespacial, COCSA.
+Espíndola tiene una experiencia de más de diecisiete años en
+el desarrollo de estaciones terrenas para rastreo y control de
+satélites e hizo una pasantía internacional en el departamento de
+Ingeniería Mecánica de la Universidad Ben-Gurión del Néguev, en
+Beerseba, Israel. Entre sus libros más destacados se encuentran:
+Seguimiento de órbitas LEO: Inteligencia artificial aplicada,
+Estación terrena satelital. Rastreo y control de pequeños
+satélites; y Enfoque autónomo y dinámico de redes de estaciones
+terrenas.
+
+41 Ing. Espacial.indd 1
+
+9/01/23 4:03 PM
+
+Figura 5.6
+
+Figura 5.6
+
+Figura 5.6
+
+C
+b
+c = e.a
+A
+
+a
+
+c = e.a
+F2
+
+D
+
+B
+
+X
+
+A
+
+a
+
+D
+
+b
+a
+
+F2
+
+B
+
+X
+
+A
+
+b
+a
+
+D
+
+X
+
+A
+
+a
+
+F2
+
+F1
+
+B
+
+X
+
+A
+
+b
+a
+
+B
+
+X
+
+A
+
+b
+a
+
+Figura 5.6
+
+D
+
+B
+
+X
+
+A
+
+b
+a
+
+Figura 5.6
+
+D
+
+B
+
+X
+
+A
+
+b
+a
+
+41 Ing. Espacial.indd 2
+
+A
+
+X
+
+D
+
+B
+
+A
+
+B
+
+X
+
+A
+
+a
+
+F2
+
+D
+
+c = e.a
+B
+
+X
+
+A
+
+a
+
+X
+
+A
+
+F2
+
+D
+
+B
+
+X
+
+C
+
+a
+
+b
+
+p
+
+c = e.a
+F2
+
+F1
+
+D
+
+p
+
+F1
+
+Figura 5.6
+
+b
+B
+
+X
+
+b
+
+p
+F2
+
+c = e.a
+F2
+
+F1
+
+B
+
+C
+
+F1
+
+p
+
+p
+
+F1
+
+Figura 5.6
+
+a
+
+D
+
+B
+
+X
+
+b
+
+C
+
+a
+
+D
+
+F2
+
+c = e.a
+F2
+
+D
+
+p
+
+F1
+
+p
+
+F1
+
+Figura 5.6
+
+b
+A
+
+A
+
+Figura 5.6
+
+b
+
+X
+
+c = e.a
+B
+
+B
+
+a
+
+C
+
+c = e.a
+F2
+
+D
+
+p
+F2
+
+F1
+
+D
+
+B
+
+p
+
+F1
+
+Figura 5.6
+
+b
+
+X
+
+a
+
+C
+
+c = e.a
+A
+
+D
+
+B
+
+X
+
+c = e.a
+F2
+
+Figura 5.6
+
+a
+
+C
+
+D
+
+C
+
+c = e.a
+F2
+
+F1
+
+F2
+
+F1
+
+p
+
+F1
+
+b
+
+X
+
+b
+
+p
+
+A
+
+p
+
+C
+
+c = e.a
+F2
+
+D
+
+B
+
+a
+
+Figura 5.6
+
+a
+
+C
+
+c = e.a
+A
+
+A
+
+p
+
+F1
+
+Figura 5.6
+
+b
+
+X
+
+b
+B
+
+B
+
+X
+
+c = e.a
+F2
+
+Figura 5.6
+
+a
+
+C
+
+D
+
+C
+
+c = e.a
+F2
+
+F1
+
+F2
+
+F1
+
+p
+
+F1
+
+D
+
+p
+
+C
+
+c = e.a
+
+X
+
+b
+
+p
+
+A
+
+a
+
+Figura 5.6
+
+a
+
+C
+
+c = e.a
+A
+
+A
+
+p
+F2
+
+D
+
+B
+
+X
+
+b
+B
+
+B
+
+X
+
+b
+
+C
+
+F1
+
+Figura 5.6
+
+D
+
+c = e.a
+F2
+
+Figura 5.6
+
+a
+
+C
+
+F2
+
+F1
+
+p
+
+F1
+
+D
+
+p
+
+C
+
+c = e.a
+
+X
+
+c = e.a
+F2
+
+D
+
+A
+
+p
+F2
+
+b
+
+p
+
+F1
+
+Figura 5.6
+
+B
+
+C
+
+c = e.a
+
+A
+
+C
+
+F1
+
+D
+
+B
+
+a
+
+Figura 5.6
+
+a
+
+Figura 5.6
+
+a
+
+Figura 5.6
+
+b
+
+X
+
+b
+
+X
+
+c = e.a
+
+C
+
+A
+
+D
+
+B
+
+X
+
+c = e.a
+F2
+
+c = e.a
+F2
+
+b
+
+p
+
+D
+
+p
+
+F1
+
+p
+
+F1
+
+D
+
+F2
+
+F1
+
+C
+
+a
+
+Figura 5.6
+
+b
+
+D
+
+A
+
+C
+
+c = e.a
+
+Figura 5.6
+
+B
+
+p
+
+C
+
+a
+
+Figura 5.6
+
+b
+B
+
+A
+
+a
+
+Figura 5.6
+
+b
+
+X
+
+c = e.a
+F2
+
+B
+
+X
+
+c = e.a
+F2
+
+C
+
+A
+
+D
+
+p
+
+F1
+
+p
+
+F1
+
+D
+
+Figura 5.6
+
+a
+
+Figura 5.6
+
+c = e.a
+F2
+
+F1
+
+C
+
+c = e.a
+
+Figura 5.6
+
+A
+
+b
+
+p
+
+C
+
+c = e.a
+
+C
+
+A
+
+X
+
+b
+
+p
+
+F1
+
+D
+
+B
+
+a
+
+C
+
+c = e.a
+
+Figura 5.6
+
+c = e.a
+F2
+
+Figura 5.6
+
+C
+
+b
+
+p
+
+F1
+
+C
+
+A
+
+C
+
+b
+
+p
+
+F1
+
+Figura 5.6
+
+Figura 5.6
+
+C
+
+X
+
+B
+
+A
+
+a
+
+p
+F2
+
+F1
+
+D
+
+B
+
+X
+
+9/01/23 4:03 PM
+
+Introducción
+a la
+ingeniería espacial
+Daniel Portnoy
+Jorge Enrique Espíndola Díaz
+PRIMER A EDICIÓN
+
+AlphaEditorial
+
+41 Ing. Espacial.indd 3
+
+9/01/23 4:03 PM
+
+Alpha Editorial S.A.
+Calle 62 20–46 /esquina, Bogotá
+Teléfono (601) 746 0102
+cliente@alpha-editorial.com
+www.alpha-editorial.com
+
+Libros digitales
+www.alphaeditorialcloud.com
+
+Primera edición: Bogotá, 2023
+©
+©
+
+Alpha Editorial S. A.
+Daniel Portnoy / Jorge Enrique Espíndola Díaz
+Derechos reservados. Esta publicación no puede ser reproducida total ni parcialmente. Ni puede
+ser registrada por un sistema de recuperación de información, en ninguna forma ni por ningún
+medio, sea mecánico, fotoquímico, electrónico, magnético, electroóptico, fotocopia o cualquier
+otro, sin el previo permiso escrito de la editorial.
+Edición: Samantha Córdoba Hernández
+Corrección de estilo: Mercedes Rangel
+Ilustraciones: Vivian Andrea Espíndola Carvajal
+Portada: Ana Paula Santander
+ISBN 978-958-778-879-2
+ISBN 978-958-778-880-8 digital
+Impreso en Colombia
+Printed and made in Colombia
+
+41 Ing. Espacial.indd 4
+
+9/01/23 4:03 PM
+
+CONTENIDO
+
+FIGUR A S
+TA BL A S
+NOMENCL AT UR A
+P R ÓL OGO
+IN T R ODUCCIÓN
+
+·1
+
+Los satélites
+1.1. Clasificación de los satélites
+1.1.1. Satélites según la altura de la órbita
+1.1.2. Satélites según la misión a la cual son encomendados
+
+·2
+
+xi
+xiv
+xv
+xxi
+xxiv
+
+2
+2
+3
+
+Los sistemas satelitales
+2.1. Sistemas y subsistemas de un satélite
+2.1.1. Sistema térmico
+2.1.2. Sistema de suministro de energía eléctrica
+2.1.3. Sistema de comunicación de comando y control
+2.1.4. Computadora de a bordo
+2.1.5. Control de actitud
+2.1.6. Navegación – gps
+2.1.7. Sistema de tiempo y frecuencia
+2.1.8. Sistema de propulsión reactiva
+2.1.9. Cámara
+2.1.10. Memoria de a bordo
+2.1.11. Transmisores de video
+2.1.12. Mecanismo de dirección de las antenas de transmisión de video
+
+9
+10
+11
+12
+12
+12
+13
+14
+14
+14
+15
+16
+16
+
+[v]
+
+41 Ing. Espacial.indd 5
+
+9/01/23 4:03 PM
+
+Contenido
+
+·3
+
+El tiempo y el espacio
+3.1. La Tierra
+3.1.1. Escalas de tiempo
+3.1.2. Universal Time (UT1)
+
+3.2. Formatos para la indicación de tiempos
+3.3. Sistemas de ejes de referencia
+3.3.1. Sistemas o marcos inerciales de referencia
+3.3.2. Sistemas o marcos de referencia que giran con la Tierra
+3.3.3. Sistemas o marcos de referencia fijos al satélite
+
+·4
+
+4.2.1.
+4.2.2.
+4.2.3.
+4.2.4.
+4.2.5.
+4.2.6.
+
+Radiación terrestre
+Radiación solar
+Radiación solar electromagnética
+Radiación solar de partículas
+Radiación cósmica
+Campo magnético
+
+23
+24
+26
+28
+
+32
+32
+32
+33
+33
+34
+35
+35
+
+4.3. Cuerpos en el espacio
+
+36
+
+4.4. Efecto sobre los satélites
+4.5. Efectos de la radiación sobre satélites
+
+37
+43
+
+Los cuerpos en el espacio / 1
+5.1. Ley de la gravedad y órbitas de los satélites
+5.1.1. Leyes de movimiento para el caso ideal
+5.1.2. Ecuación del movimiento
+5.1.3. Descripción del movimiento
+
+5.2. Maniobras sobre el plano de la órbita
+5.3. Parámetros adicionales para la descripción de las órbitas
+
+·6
+
+22
+
+El medio ambiente espacial
+4.1. La atmósfera
+4.2. La radiación
+
+·5
+
+17
+20
+21
+
+50
+50
+54
+58
+60
+65
+
+Los cuerpos en el espacio / 2
+6.1. Órbitas de los satélites en general
+
+70
+
+[vi]
+
+41 Ing. Espacial.indd 6
+
+9/01/23 4:03 PM
+
+Contenido
+
+6.1.1. Parámetros de las órbitas
+6.1.2. Variaciones de parámetros
+
+70
+71
+
+6.2. Perturbaciones de las órbitas
+
+73
+77
+80
+
+6.2.1. Fuerza de arrastre
+6.2.2. No esfericidad de la Tierra
+
+·7
+
+Los sistemas de control– sensores y actuadores
+7.1. Sensores
+7.1.1.
+7.1.2.
+7.1.3.
+7.1.4.
+7.1.5.
+7.1.6.
+
+Giróscopos
+Sensor de horizonte o sensor terrestre
+Sensor solar
+Seguidores de estrellas
+Magnetómetro
+Sistema de Posicionamiento Global
+
+7.2. Actuadores
+7.2.1.
+7.2.2.
+7.2.3.
+7.2.4.
+
+Ruedas de reacción
+Propulsión espacial
+Par magnético (magneto-torque)
+Boom gravitacional
+
+7.3. Leyes de control y algoritmos
+7.4. Leyes de control y misión
+7.5. Modos principales en las misiones de los satélites LEO
+7.6. Modos principales en las misiones de los satélites GEO
+7.7. Fuerzas y momentos perturbadores del satélite
+7.8. Principales diseños de sistemas de control
+
+·8
+
+93
+93
+94
+94
+96
+97
+97
+98
+98
+99
+99
+100
+101
+103
+103
+104
+105
+107
+
+La propulsión
+8.1. Ecuación de la fuerza de empuje
+8.2. Cálculo de la velocidad del cohete
+8.3. Tipos de motores cohetes
+8.3.1.
+8.3.2.
+8.3.3.
+8.3.4.
+8.3.5.
+
+Motor de gas frío
+Motor monopropelente
+Motor bipropelente en estado líquido
+Motor bipropelente en estado sólido
+Motor bipropelente híbrido
+
+111
+115
+118
+120
+121
+122
+122
+124
+
+[vii]
+
+41 Ing. Espacial.indd 7
+
+9/01/23 4:03 PM
+
+Contenido
+
+8.3.6. Motores de propulsión eléctrico-térmica
+8.3.7. Motores de propulsión electrostática y de iones
+
+·9
+
+125
+125
+
+El control térmico
+9.1. Conducción
+9.2. Convección
+9.3. Radiación
+9.3.1.
+9.3.2.
+9.3.3.
+9.3.4.
+
+Cuerpo negro
+Coeficiente de emisividad y de absorción
+Coeficientes de absorción, reflexión y transmisión
+Cavidad
+
+9.4. Transferencia de calor por radiación entre dos cuerpos
+cercanos
+9.4.1.
+9.4.2.
+9.4.3.
+9.4.4.
+
+Ley del coseno de Lambert
+Factor de forma de cuerpos negros
+Factor de forma de cuerpos grises
+Frazadas aislantes
+
+9.5. Fenómenos transitorios en radiación
+9.5.1. Sin radiación externa y disipación interna
+9.5.2. Solución lineal
+9.5.3. Solución general
+
+9.6. Las fuentes de flujo de calor en el espacio
+9.6.1. La radiación solar
+9.6.2. La radiación de Albedo
+9.6.3. La radiación IR de la Tierra
+
+9.7. Técnicas para el control térmico
+9.7.1. Control térmico pasivo
+9.7.2. Control térmico activo
+
+9.8. Modelos matemáticos para el análisis térmico computado
+9.9. Pruebas y ensayos en control térmico
+9.9.1.
+9.9.2.
+9.9.3.
+9.9.4.
+9.9.5.
+
+Outgassing de materiales
+Pruebas de subsistemas
+Pruebas sobre el satélite
+Pruebas térmicas del satélite –equipamiento principal
+Pruebas de calificación y aceptación
+
+129
+133
+133
+134
+136
+142
+143
+143
+144
+147
+151
+154
+156
+158
+159
+159
+160
+160
+161
+162
+163
+164
+167
+168
+170
+170
+170
+170
+171
+172
+
+[viii]
+
+41 Ing. Espacial.indd 8
+
+9/01/23 4:03 PM
+
+Contenido
+
+·10
+
+La comunicación satelital
+10.1. Teoría básica de la comunicación - ondas
+electromagnéticas
+10.1.1.
+10.1.2.
+10.1.3.
+10.1.4.
+10.1.5.
+10.1.6.
+
+·11
+
+Tipos de polarizaciones
+Decibeles - dB
+Espectro electromagnético
+Transmisión de ondas electromagnéticas
+Modulación de ondas electromagnéticas
+Cálculo del balance del canal: Link Budget
+
+176
+178
+179
+181
+182
+183
+186
+
+10.2. Sistemas de comunicación satelital: comando
+y telemetría en banda S
+
+188
+
+10.3. Sistema de comunicación satelital:
+Data link en banda X
+
+193
+
+Las estaciones terrenas
+11.1. Segmento de tierra
+11.1.1.
+11.1.2.
+11.1.3.
+11.1.4.
+
+Estación terrena
+Red de comunicaciones
+Centro de control de satélites (CCS)
+Centro de control de misión (CCM)
+
+11.2. Elementos básicos de una estación terrena
+11.2.1.
+11.2.2.
+11.2.3.
+11.2.4.
+
+Transmisor
+Receptor
+Antenas
+Rastreo
+
+195
+195
+197
+197
+198
+198
+198
+201
+202
+202
+
+11.3. Diseño de estaciones terrenas para pequeños satélites
+
+203
+
+11.4. Rastreo de satélites, Two Line Element (TLE)
+
+203
+
+11.5. Teoría básica de antenas
+
+206
+208
+212
+212
+215
+
+11.5.1.
+11.5.2.
+11.5.3.
+11.5.4.
+
+Tipos de antenas
+Alimentación de antenas
+Apuntamiento de antenas parabólicas
+Algunos ejemplos de antenas
+
+GL O S ARIO
+RE FERENCI A S
+
+217
+220
+
+[ix]
+
+41 Ing. Espacial.indd 9
+
+9/01/23 4:03 PM
+
+FIGUR A S
+
+FIGUR A 1.1.
+FIGUR A 2.1.
+FIGUR A 2.2.
+FIGUR A 2.3.
+FIGUR A 2.4.
+FIGUR A 2.5.
+FIGUR A 3.1.
+FIGUR A 3.2.
+FIGUR A 3.3.
+FIGUR A 3.4.
+FIGUR A 3.5.
+FIGUR A 3.6.
+FIGUR A 3.7.
+FIGUR A 3.8.
+FIGUR A 3.9.
+FIGUR A 3.10.
+FIGUR A 3.11.
+FIGUR A 3.12.
+FIGUR A 4.1.
+FIGUR A 4.2.
+FIGUR A 4.3.
+FIGUR A 4.4.
+FIGUR A 4.5.
+FIGUR A 4.6.
+FIGUR A 4.7.
+FIGUR A 5.1
+FIGUR A 5.2
+FIGUR A 5.3.
+FIGUR A 5.4.
+FIGUR A 5.5.
+FIGUR A 5.6.
+FIGUR A 5.7.
+FIGUR A 5.8.
+FIGUR A 5.9.
+FIGUR A 5.10.
+FIGUR A 5.11.
+FIGUR A 5.12.
+FIGUR A 5.13.
+FIGUR A 6.1.
+FIGUR A 6.2.
+FIGUR A 6.3.
+FIGUR A 6.4.
+FIGUR A 6.5.
+FIGUR A 6.6.
+FIGUR A 6.7.
+
+Satélites activos de acuerdo a la misión
+Satélite de observación
+Satélite de observación A y B trabajando en constelación
+Sistema satelital
+Satélite de observación – Sistemas y subsistemas
+Toma de imagen
+El Sol, la órbita de la Tierra y las estaciones del año
+El Sol, la Tierra y el vernal equinox
+Movimiento de precesión del eje de rotación de la Tierra
+Rotación (R), precesión (P) y nutación (N)
+Las distintas escalas de tiempo
+Sistema inercial de referencia
+Sistemas de referencia fijos a la Tierra
+Cambios de dirección del eje de rotación de la Tierra
+Relación entre los sistemas de referencia
+Sistema de referencia orbital
+Rendezvous calculado con el sistema de referencia orbital
+Sistema de referencia satelital
+Espectro solar
+Distribución de la energía de la radiación cósmica
+Campo magnético terrestre
+Actividad solar de los últimos 400 años
+Magnetosfera terrestre
+Movimiento de las partículas en los cinturones de Van Allen
+Distribución de electrones y protones en los cinturones de Van Allen
+Primera ley de Kepler
+Segunda ley de Kepler
+Fuerza gravitatoria entre dos cuerpos
+Movimiento circular
+Cónicas
+La elipse
+Elipse en coordenadas polares
+Área diferencial
+Órbita y parámetros de la elipse
+Cambio de apogeo
+Cambio de perigeo
+Transferencia de órbita de Hohmann
+Parámetros de las órbitas
+Parámetros que determinan la orientación de la órbita
+Clasificación de las órbitas según la inclinación
+Maniobra para cambio de inclinación
+Parámetros y sistema de coordenadas anexos
+Atracción gravitatoria entre un cuerpo puntual y cuerpo con una distribución
+arbitraria de masa
+Geometría dentro y fuera del cuerpo
+Descripción de los ángulos
+
+5
+8
+9
+9
+10
+15
+18
+19
+20
+20
+22
+24
+25
+27
+28
+29
+29
+30
+34
+35
+36
+38
+41
+42
+42
+47
+48
+50
+51
+56
+57
+57
+57
+59
+62
+62
+64
+64
+67
+68
+73
+75
+81
+83
+85
+
+[xi]
+
+41 Ing. Espacial.indd 11
+
+9/01/23 4:03 PM
+
+Figuras
+FIGUR A 6.8.
+FIGUR A 6.9.
+FIGUR A 7.1.
+FIGUR A 7.2.
+FIGUR A 7.3.
+FIGUR A 7.4.
+FIGUR A 7.5.
+FIGUR A 7.6.
+FIGUR A 7.7.
+FIGUR A 7.8.
+FIGUR A 7.9.
+FIGUR A 8.1.
+FIGUR A 8.2.
+FIGUR A 8.3.
+FIGUR A 8.4.
+FIGUR A 8.5.
+FIGUR A 8.6.
+FIGUR A 8.7.
+FIGUR A 8.8.
+FIGUR A 8.9.
+FIGUR A 8.10.
+FIGUR A 8.11.
+FIGUR A 8.12.
+FIGUR A 8.13.
+FIGUR A 8.14.
+FIGUR A 9.1.
+FIGUR A 9.2.
+FIGUR A 9.3.
+FIGUR A 9.4.
+FIGUR A 9.5.
+FIGUR A 9.6.
+FIGUR A 9.7.
+FIGUR A 9.8.
+FIGUR A 9.9.
+FIGUR A 9.10.
+FIGUR A 9.11.
+FIGUR A 9.12.
+FIGUR A 9.13.
+FIGUR A 9.14.
+FIGUR A 9.15.
+FIGUR A 9.16.
+FIGUR A 9.17.
+FIGUR A 9.18.
+FIGUR A 9.19.
+FIGUR A 9.20.
+FIGUR A 9.21.
+FIGUR A 9.22.
+FIGUR A 9.23.
+FIGUR A 9.24.
+FIGUR A 9.25.
+FIGUR A 9.26.
+FIGUR A 9.27.
+FIGUR A 9.28.
+FIGUR A 9.29.
+FIGUR A 9.30.
+FIGUR A 10.1.
+FIGUR A 10.2.
+FIGUR A 10.3.
+FIGUR A 10.4.
+
+Modelo simple que explica la precesión de la órbita
+Órbita de Molniya
+Subsistema IMU – producto de la IAI
+Sensor terrestre ESA y principio de medición – producto de la IAI
+Principio de conservación del momento angular
+Par magnético
+Par gravitacional
+Boom gravitacional telescópico
+Diagrama de un sistema de control
+Sloshing en un tanque de combustible en gravedad cero
+Configuración de los paneles solares en un satélite
+Motor bipropelente líquido
+Motor de estado sólido
+Motor de estado sólido - forma de grano y perfil de empuje con el tiempo
+Pérdida de masa de un cohete
+Cohete de dos etapas
+Simplicidad estructural y rendimiento vs. tipo de motores
+Motor de gas frío
+Motor de hidracina simplificado
+Motor bipropelente
+Motor híbrido
+Motor Resistorjet
+Motor Arcjet
+Motor de iones
+Motor Hall
+Radiación de un cuerpo negro
+Espectro electromagnético
+Radiación de cuerpo negro del Sol con el modelo de Planck superpuesto
+Temperatura de equilibrio de una lámina de aluminio
+Equilibrio térmico
+Absorción, reflexión y transmisión
+Modos reflectivos de una superficie: difuso, especular y real
+La cavidad
+Ley del coseno de Lambert
+Ley del coseno de Lambert – vista tridimensional
+Ángulo sólido
+Ejemplo del uso de la ley del coseno de Lambert
+Ejemplo de factor de forma. Casquete semiesférico
+Ejemplo de factor de forma. Una superficie circular y una diferencial
+Ejemplo de factor de forma cuya solución es dada en formato gráfico
+Ejemplo de cálculo de intercambio de calor entre dos placas infinitas “grises”
+Ejercicio de cálculo de intercambio de calor entre dos cilindros infinitos “grises”
+Frazadas térmicas
+Frazadas térmicas de varias capas
+Gráfico de la ecuación (9.34) para CP = 100 julios/kg*K y distintos valores de m/A
+Flujos de calor internos y externos a un satélite
+Flujos de calor de la radiación solar
+Flujos de calor de la radiación Albedo
+Dependencia de FA en la altura y el ángulo de incidencia del flujo solar
+sobre la Tierra
+Flujos de calor de la radiación IR de la Tierra
+Frazada térmica (MLI) que permite envolver un componente espacial
+Tubo de calor o Heat Pipe
+Persiana térmica
+Partes características del modelo térmico de un satélite
+Gráfico de prueba de vacío térmico
+Onda electromagnética
+Onda electromagnética compuesta por campo eléctrico/magnético
+Polarización de un haz
+Antena isotrópica y antena direccional
+
+87
+88
+94
+95
+99
+100
+100
+101
+102
+106
+107
+110
+110
+111
+112
+117
+119
+120
+121
+123
+124
+125
+126
+127
+127
+135
+137
+138
+141
+142
+142
+143
+144
+144
+145
+146
+147
+149
+149
+151
+153
+154
+155
+157
+159
+161
+161
+162
+163
+163
+166
+167
+168
+169
+173
+177
+178
+178
+181
+
+[xii]
+
+41 Ing. Espacial.indd 12
+
+9/01/23 4:03 PM
+
+Figuras
+FIGUR A 10.5.
+FIGUR A 10.6.
+FIGUR A 10.7.
+FIGUR A 10.8.
+FIGUR A 10.9.
+FIGUR A 10.10.
+FIGUR A 10.11.
+FIGUR A 10.12.
+FIGUR A 10.13.
+FIGUR A 10.14.
+FIGUR A 10.15.
+FIGUR A 10.16.
+FIGUR A 10.17.
+FIGUR A 10.18.
+FIGUR A 10.19.
+FIGUR A 10.20.
+FIGUR A 11.1.
+FIGUR A 11.2.
+FIGUR A 11.3.
+FIGUR A 11.4.
+FIGUR A 11.5.
+FIGUR A 11.6.
+FIGUR A 11.7.
+FIGUR A 11.8.
+FIGUR A 11.9.
+FIGUR A 11.10.
+FIGUR A 11.11.
+FIGUR A 11.12.
+FIGUR A 11.13.
+FIGUR A 11.14.
+FIGUR A 11.15.
+FIGUR A 11.16.
+
+Espectro electromagnético
+Modulación
+Amplitud modulada
+Modulación digital
+Modulación digital por cambio de fase
+ECC – Código de corrección de error
+Pérdida de energía durante la transmisión
+Diagrama de bloque de un sistema de comunicación en banda S
+Diagrama de bloque típico de TTCU
+Sistema de interruptores (switches)
+Ubicación y cobertura de las antenas de la banda S
+Estación terrena receptora en banda S
+Link budget para banda S
+Sistema de comunicación en banda X
+Modulación 8PSK
+Link budget para banda X
+Estación terrena típica
+Diagrama genérico de una estación terrena
+Diagrama típico de estación terrena para pequeños satélites
+Elementos keplerianos
+Antena omnidireccional
+Patrón de radiación de antenas omnidireccionales
+Patrón de radiación en antenas direccionales
+Tipos de antenas
+Algunos tipos de antenas
+Tipos de alimentación de una antena parabólica
+Ángulo de elevación
+Ángulo de azimut
+Satélite al oeste de la estación
+Satélite al este de la estación
+Satélite al oeste de la estación
+Satélite al este de la estación
+
+182
+184
+184
+185
+185
+186
+187
+188
+189
+190
+191
+191
+192
+193
+194
+194
+197
+199
+204
+206
+209
+209
+210
+211
+211
+213
+213
+214
+214
+214
+214
+214
+
+[xiii]
+
+TA BL A S
+
+TA BL A 1.1.
+TA BL A 5.1.
+TA BL A 6.1.
+TA BL A 6.2.
+TA BL A 8.1.
+TA BL A 9.1.
+TA BL A 9.2.
+TA BL A 9.3.
+TA BL A 9.4.
+TA BL A 10.1.
+TA BL A 10.2.
+TA BL A 11.1.
+TA BL A 11.2.
+TA BL A 11.3.
+TA BL A 11.4.
+
+Clasificación de satélites según su peso
+Parámetros para la descripción de las órbitas
+Síntesis de las principales perturbaciones
+Densidad atmosférica
+Valores característicos de impulso específico
+Temperaturas características de trabajo de algunos subsistemas
+Conductividad de algunos materiales
+Características de radiación de ciertos materiales
+Valores característicos de coeficientes termoópticos
+Ejemplos en los que se emplean componentes para transmitir información
+Polarización y el efecto aislante en decibles de energía
+Línea uno de TLE
+Línea dos de TLE
+Datos de la segunda línea de TLE
+Software de seguimiento
+
+5
+65
+73
+78
+120
+130
+132
+140
+165
+175
+179
+207
+207
+208
+208
+
+[xiv]
+
+41 Ing. Espacial.indd 14
+
+9/01/23 4:03 PM
+
+NO M E NC L AT U R A
+
+La siguiente lista abarca los símbolos utilizados en la mayoría de las ecuaciones de este texto. Se
+ha tratado de adoptar los símbolos utilizados en la literatura relevante, reconociendo
+que en algunos casos esto hace que los mismos símbolos se usen para más de una
+cantidad, mientras que en otros casos la misma cantidad está representada por más de
+un símbolo.
+A
+
+Amplitud de la onda o intensidad
+Proyección del área perpendicular a la velocidad
+Área encerrada por la elipse
+
+a
+
+Coeficiente de Albedo que depende de varios factores, como el índice de reflexión del
+suelo: 0.35 (aproximadamente)
+Semieje mayor de la elipse
+Coeficiente de absorción
+
+a​→​	
+
+Vector aceleración
+
+αM
+
+Ángulo entre los ejes de la Tierra y el campo magnético: 11.5° aproximadamente
+
+Ae
+
+Área de la tobera del motor
+
+At
+
+Área de la tobera
+
+AS
+
+Superficie del propelente sólido que es quemada durante la combustión
+
+B
+
+Campo magnético de la Tierra
+
+b
+
+Semieje menor de la elipse
+
+br
+
+Velocidad de regresión o quema del propelente
+
+B0
+
+Constante del campo magnético de la Tierra
+
+c
+
+Distancia del centro de la elipse a los focos
+Velocidad efectiva de salida de los gases por el cuello de la tobera
+
+CD
+
+Coeficiente de la fuerza de arrastre
+
+Cf
+
+Coeficiente de empuje
+
+CP
+
+Calor específico a presión constante
+
+C*
+
+Eficiencia en la utilización del flujo másico
+
+[xv]
+
+41 Ing. Espacial.indd 15
+
+9/01/23 4:03 PM
+
+Nomenclatura
+
+d
+
+Espesor o ancho de la muestra
+
+Δv
+
+Variación de velocidad
+
+Δa
+
+Variación del semieje mayor
+
+Δε
+
+Variación de la energía total por unidad de masa
+
+DM, Dm
+
+Variación de masa
+
+E
+
+Energía de activación: 11.6 kcal/mol
+Anomalía excéntrica
+
+Eabsorbida
+
+Energía de la radiación absorbida
+
+ε
+
+Energía total por unidad de masa
+Coeficiente de emisividad
+
+e
+​e→​	
+
+Excentricidad de la cónica
+
+F
+
+Frecuencia de la onda: cantidad de ciclos por unidad de tiempo (por lo general segundos)
+
+F1 y F2
+
+Focos de la elipse
+
+Fa
+
+Factor de forma que depende de la geometría (posición relativa de la Tierra y el satélite)
+
+FD
+→
+​F ​i​	
+→
+f​ ​	
+
+Fuerza de arrastre
+
+​fθ​​, ​fr​​, ​fh​​	
+
+Fuerzas de perturbación en las direcciones en el espacio
+
+Fij
+
+Factor de forma entre dos superficies
+
+φ
+
+Latitud del satélite medida desde el plano del ecuador
+
+φ
+
+Fase de la onda - corrimiento de la onda del origen
+
+φE
+
+Flujo de radiación sobre la muestra
+
+G
+
+Constante universal de la gravedad: 6.67 x 10–11 Nm2/kg2
+
+g
+
+Aceleración de la gravedad sobre la Tierra: 9.8 m/s2
+
+Vector excentricidad
+
+Fuerzas que actúan sobre el cuerpo
+Fuerzas de perturbación
+
+Vector de la aceleración de la fuerza de gravedad
+
+g
+
+Ángulo orbital
+Coeficiente adiabático del gas
+
+H
+
+Constante llamada Escala de altura: 8.42 km para la atmósfera terrestre
+
+h
+→
+h​ ​	
+
+Constante de Planck: 6.626 x 10-34 julios*s
+
+ħ
+
+constante de Planck, h/2π: 1.054 x 10-34 julios*s
+
+I
+
+Impulso
+
+Cantidad de movimiento angular por unidad de masa
+
+[xvi]
+
+41 Ing. Espacial.indd 16
+
+9/01/23 4:03 PM
+
+Nomenclatura
+
+ISP
+
+Impulso específico
+
+i
+
+Inclinación de la órbita
+Derivada de la inclinación con respecto al tiempo
+
+Jn, Jnq, λnq Constantes empíricas
+k
+
+Constante de conductividad de los materiales
+
+K
+
+Constante de proporcionalidad
+
+KD
+
+Coeficiente balístico
+
+λ
+
+Longitud del satélite medido desde el meridiano de Greenwich
+Longitud de onda de la radiación
+
+m, M
+
+Masa
+
+M
+_
+​M ​	
+
+Anomalía media
+
+ME
+
+Masa de la Tierra: 5.97 x 1024 kg
+
+​m˙ ​	
+
+Masa por unidad de tiempo
+
+m0
+
+Masa inicial en el tiempo t = 0
+
+MP
+
+Masa del propelente
+
+MS
+
+Masa de la estructura
+
+ML
+
+Masa de la carga útil
+
+μE
+
+Parámetro gravitatorio de la Tierra: 3.986 x 1014 m3/s2
+
+w
+
+Ascensión recta del nodo ascendente
+
+˙​
+​Ω
+
+Derivada de la ascensión recta del nodo ascendente con respecto al tiempo
+
+wE
+
+Velocidad angular de la Tierra: 7.2722 x 10-5 rad/s
+
+w
+
+Argumento de perigeo
+
+​ω0​ ​	
+
+Velocidad angular media
+
+p
+
+Parámetro de la cónica
+
+Pabsorbida
+
+Potencia de la radiación absorbida
+
+P0
+
+Presión a nivel mar: 101 325 N/m² ó Pa (Pascal)
+
+Pk
+
+Polinomios de Legendre de primer orden
+
+Pnk
+
+Polinomios de Legendre de segundo orden
+
+Pe
+
+Presión de los gases a la salida del motor
+
+Pa
+
+Presión atmosférica que circunda al cohete
+
+pC
+
+Presión en la cámara de combustión
+
+qA
+
+Flujo de radiación de albedo
+
+qE
+
+Flujo de radiación de la Tierra: 230 vatio/m2 (aproximadamente)
+
+Peso molecular promedio de los gases
+
+[xvii]
+
+41 Ing. Espacial.indd 17
+
+9/01/23 4:03 PM
+
+Nomenclatura
+
+​q˙​	
+
+Flujo de calor
+
+​Q˙ ​	
+
+Potencia de calor
+
+​q˙E​ ​
+
+Flujo de calor de la superficie de la Tierra 230 vatio/m2 (aproximadamente)
+
+​q˙S​ ​	
+
+Flujo de calor del Sol sobre la Tierra 1350 vatio/m2 (aproximadamente)
+
+R
+
+Constante de los gases: 8.31 julios/K*mol (distancia entre dos cuerpos)
+
+RE
+
+Radio de la Tierra: 6378 km
+
+rA
+
+Radio del apogeo
+
+rP
+r​→​	
+
+Radio del perigeo
+Vector posición
+
+​rˆ​	
+
+Vector unidad o vector posición
+
+|​​r→|​​	
+r​˙→​	
+
+Módulo del vector posición
+Primera derivada de la posición respecto al tiempo
+
+​r¨→​	
+
+Segunda derivada de la posición respecto al tiempo
+
+ρ
+
+Densidad
+
+S
+
+Flujo de radiación del Sol: 1350 vatio/m2 (aproximadamente)
+Superficie de la muestra expuesta a la radiación
+_
+
+σ
+
+Constante de Stefan – Boltzmann: ​σ = 5.67 x ​10​−8​​m​ Watt
+​ ​∙ K
+​ ​ ​​
+
+T
+
+Período de la órbita
+
+2
+
+4
+
+Temperatura
+Fuerza de empuje (Thrust)
+t
+
+Tiempo
+
+τ
+
+Constante de tiempo
+
+τ0
+
+Constante de tiempo a temperatura infinita
+
+TE
+
+Temperatura promedio de la Tierra: 288 K (aproximadamente)
+
+TC
+
+Temperatura de combustión en la cámara
+
+TS
+
+Temperatura de la superficie del Sol: 5800 K (aproximadamente)
+
+​ˆ ​
+T
+
+q
+
+θ​ˆ​	
+
+Vector de la fuerza de empuje
+Anomalía verdadera
+Vector unidad o vector angular
+
+θ
+
+Primera derivada del ángulo respecto al tiempo (velocidad angular)
+
+θ
+
+Segunda derivada del ángulo respecto al tiempo (aceleración angular)
+
+θ​ˆ​, ​rˆ​, h​ˆ​	
+U
+
+Direcciones en el espacio: angular, radial (sobre el plano de la órbita) y momento
+angular (perpendicular al plano de la órbita)
+Potencial gravitatorio
+
+[xviii]
+
+41 Ing. Espacial.indd 18
+
+9/01/23 4:03 PM
+
+Nomenclatura
+
+V
+
+Valor absoluto de la velocidad del vehículo
+
+vA
+
+Velocidad en el apogeo
+
+Ve
+
+Velocidad de salida de los gases
+
+vP
+
+Velocidad en el perigeo
+
+V0
+
+Velocidad inicial del vehículo
+
+ν
+
+Frecuencia del fotón
+
+v​ˆ ​	
+​v→ ​	
+
+Vector unitario en la dirección de la velocidad
+Vector (magnitud y sentido) de la velocidad instantánea
+
+→
+​ ​	
+W
+
+Velocidad angular del satélite
+
+​W˙​	
+
+Flujo másico
+
+x
+
+Dirección del flujo de calor
+
+z
+
+Coordenada o la altura sobre nivel del mar
+Operador Nabla
+
+[xix]
+
+41 Ing. Espacial.indd 19
+
+9/01/23 4:03 PM
+
+AGR ADECIMIENTOS
+
+Agradezco a mi familia y principalmente a mi esposa Batia, que me alentó
+constantemente en mi carrera y en publicar este libro. También quiero agradecer
+a todos los que fueron mis mentores y profesores y me transmitieron sus
+conocimientos para plasmarlos en este libro.
+
+d a nie l p or t n o y
+
+Agradecer es una palabra difícil de expresar, significa reconocer, gratificar,
+compensar. Es acá donde quiero retribuir a mi familia y dedicar a ellos este libro,
+recompensar el tiempo que perdí con ellos, no solo en la escritura de este libro sino
+en el tiempo que invertí en mis estudios doctorales, cerca de 5 años alejado, en
+otros países, otras culturas, otras personas y en otros idiomas, pero con la ilusión
+de aprender y de ilustrarme para enseñar a mis estudiantes a quien también hoy
+agradezco; es por ellos que los que nos dedicamos a esta noble profesión de la
+enseñanza invertimos nuestro tiempo, para tener la ilusión de algún un día poder
+cambiar de alguna manera sus vidas.
+
+jorge enrique espíndol a día z
+
+41 Ing. Espacial.indd 20
+
+9/01/23 4:03 PM
+
+PRÓLOGO
+
+La ingeniería espacial, un campo nacido desde el lanzamiento del primer satélite artificial
+fuera de la atmósfera de la Tierra, es un campo de ciencia e ingeniería en constante
+crecimiento que seguirá evolucionando e impactando el desarrollo de la humanidad.
+Comprender los detalles de las diferentes ramas del campo es clave para generar nuevos
+conocimientos y producir nuevos desarrollos, esto a medida que la humanidad continúa su
+búsqueda para aventurarse en el espacio con sondas robóticas o naves espaciales tripuladas
+por humanos. Eso es lo que pretende hacer este libro, Introducción a la ingeniería espacial
+de los expertos Daniel Portnoy y Jorge E. Espíndola Díaz. Además, se presenta en idioma
+español a la comunidad académica de estudiantes y académicos, lo que lo convierte en un
+recurso valioso para estudiantes en todos los países de habla hispana, principalmente en
+América Latina.
+Para motivar la necesidad de este libro oportuno, solo necesitamos revisar los logros de
+los esfuerzos espaciales del pasado reciente.
+En 2020 vimos el éxito de misiones de retorno de muestras de otros cuerpos celestes.
+Estos incluyeron la misión osiris-rex de la Nasa al asteroide Bennu y su exitosa
+adquisición de muestras de superficie para ser devueltas a la Tierra en unos pocos años; La
+misión Hayabusa 2 de Agencia Japonesa de Exploración Aeroespacial (jaxa , por sus siglas
+en inglés) recolectó muestras del asteroide Ryugu y las entregó a la Tierra en diciembre de
+2020, y la misión Chang'e 5 de China recuperó con éxito muestras de la superficie lunar antes
+de fin de año. La misión Solar Orbiter de la Agencia Espacial Europea (esa , por sus siglas
+en inglés) lanzada para estudiar de cerca las regiones polares del Sol y la heliosfera.
+En términos de comunicaciones, la empresa privada SpaceX comenzó a lanzar su
+constelación de conectividad a internet basada en el espacio con su constelación de
+satélites Starlink, de la que serán miles. Esta constelación está diseñada para proporcionar
+conectividad entre las ubicaciones más remotas del mundo, mejorando así el flujo de
+información hacia aquellos que han estado aislados antes.
+En términos de vuelo espacial humano, vimos los primeros a stronautas en ser
+transportados a la Estación Espacial Internacional (iss , por sus siglas en inglés) utilizando
+un cohete de una empresa privada y bajo contrato con la Nasa. Esto promete allanar el
+camino para la comercialización de los servicios de transporte de la tripulación, un hito
+clave, necesarios para la rápida proliferación del acceso al espacio.
+Sin embargo, también hubo retrocesos en la ingeniería y la tecnología espacial: vimos
+el colapso del radiotelescopio de Arecibo y hubo varias fallas de cohetes no tripulados (el
+prototipo de prueba Starship de SpaceX, es un ejemplo de ello). Estas fallas de cohetes
+[xxi]
+
+41 Ing. Espacial.indd 21
+
+9/01/23 4:03 PM
+
+Prólogo
+
+son parte del proceso de desarrollo y se esperan. Sin embargo, lo más importante es que
+proporcionan datos para mejorar los sistemas a bordo, las redundancias y los sensores y
+actuadores necesarios para mantener la estabilidad de objetos tan poderosos y de movimiento
+rápido. Los autores en este libro proporcionan el conocimiento y las técnicas fundamentales
+necesarios para comprender las complejidades de estos sistemas espaciales. Para mayor
+motivación, examinemos lo que nos depara el futuro cercano.
+El 2021 fue un año espectacular para los vuelos espaciales y la ingeniería espacial. Se
+esperaba que tres naves espaciales robóticas diferentes (de los EE. UU., China y los Emiratos
+Árabes Unidos) llegaran de manera segura a Marte. Una de ellas (el Perseverance Rover
+de la Nasa) aterrizó el 18 de febrero de ese mismo año y explora el suelo de un lago seco
+en busca de evidencia de vida anterior cuando el agua abundaba en el planeta. Esta misión
+también desplegó un dron, que se convertirá en el primer vehículo aéreo motorizado en volar
+en otro cuerpo del sistema solar.
+Finalmente, el 25 dediciembre de 2021 vimos el lanzamiento del muy esperado telescopio
+espacial James Webb, que se considera un reemplazo del telescopio espacial Hubble y que
+abrió las regiones más profundas del universo a la biblioteca humana de conocimiento de sus
+orígenes.
+Para el 2022 veremos flotas de vehículos robóticos producidos comercialmente que
+aterrizarán en la Luna de forma casi completamente autónoma en preparación para la
+reconquista sostenida de la Luna.
+Los próximos años de esta década verán el comienzo de la reconquista de la Luna con
+tripulaciones humanas. El Programa Artemis y la estación espacial en órbita lunar, Gateway,
+comenzarán a establecer la infraestructura sostenible a largo plazo necesaria para las
+ambiciosas campañas de exploración humana en la Luna, con el objetivo final de llegar a
+Marte con tripulaciones humanas a mediados de siglo.
+Para comprender los detalles de todas las cosas necesarias para estas misiones y proyectos
+espaciales, los estudiantes e investigadores deben estudiar los conceptos primarios y
+avanzados de las diferentes áreas que caen bajo la categoría general de lo que es la Ingeniería
+Espacial. Esto incluye las diferentes clases de satélites, desde los que se encuentran en órbita
+terrestre baja hasta los que abandonan la órbita terrestre. Las clases de satélites también
+se distinguen por su propósito: desde la observación de la Tierra hasta la navegación y los
+exploradores de las ciencias del espacio profundo.
+La clave para estudiar estos satélites es el conjunto de subsistemas que funcionan unidos
+para hacer que un dispositivo tan artificial sea funcional. Estos incluyen el sistema de
+propulsión traslacional y rotacional, las estructuras y la electrónica a bordo que maneja todo
+el flujo de información para su operación segura y la entrega de los datos que se pretende
+proporcionar a los operadores y usuarios en tierra.
+Se hace esencial que los autores traten el tema de los segmentos tanto espacial como de
+tierra indicando la importancia de ambos y de los requisitos necesarios para entender el tema
+de una forma didáctica que lleva al estudiante a comprender la importancia del tema para el
+desarrollo de la carrera espacial. Los autores, expertos en su campo, están excepcionalmente
+calificados para ofrecer este recurso a toda la comunidad hispana de entusiastas del espacio,
+estudiantes y académicos.
+
+[xxii]
+
+41 Ing. Espacial.indd 22
+
+9/01/23 4:03 PM
+
+Prólogo
+
+El libro ofrece el equilibrio adecuado entre el conocimiento práctico y la teoría
+necesaria para comprender las teorías subyacentes que gobiernan las diferentes partes
+discutidas. Esto va desde la comprensión del hardware de comunicaciones hasta la física
+más fundamental del movimiento de los objetos en el espacio.
+Los planes para expandirse de manera sostenible más allá de la Tierra hacia la
+Luna y Marte en las próximas décadas requerirán miles de científicos e ingenieros b ien
+capacitados de todas partes del mundo. Este libro puede inspirar a los estudiantes de
+la comunidad latinoamericana que no tuvieron acceso a este tipo de información en su
+idioma nativo.
+Un aspecto que debe destacarse es que la ingeniería espacial y su aplicación a los
+sistemas de vuelo reales juegan un papel vital en el desarrollo sostenible de la vida en
+el planeta. Desde el espacio podemos, por ejemplo, monitorear el cambio climático y
+predecir el crecimiento y la salud de los cultivos; también, podemos utilizar la ingeniería
+espacial para aplicaciones menos benévolas como el envío de armas de destrucción
+masiva a cualquier lugar del planeta. Se espera que los lectores de este libro comprendan
+las profundas implicaciones asociadas con las aplicaciones de la información y las
+técnicas aquí presentadas. Además, se espera que estos lectores y profesionales elijan
+utilizar esta información y estas técnicas de ingeniería espacial para promover el
+desarrollo humano sostenible en la Tierra y en todos los mundos en los que estaremos
+presentes en este y en los próximos siglos.
+
+césar ocampo, p h. d.
+
+Ingeniero aeroespacial
+Odyssey Space Research, LLC., Nasa Johnson Space Center
+Houston, Texas
+
+[xxiii]
+
+41 Ing. Espacial.indd 23
+
+9/01/23 4:03 PM
+
+INTRODUCCIÓN
+
+La ingeniería espacial es multidisciplinaria y contempla casi todas las ingenierías y físicas
+conocidas: estructuras, propulsión, computación, métodos numéricos, control y navegación,
+cálculos térmicos, comunicación, mecánica celeste, materiales, óptica, ingeniería de
+sistemas, y un sinfín más de asignaturas que la hacen una disciplina complicada que, a veces,
+promueve temor el encararla.
+Este libro tiene como meta explicar la ingeniería espacial de forma didáctica, desde las
+bases pero sin perder el nivel universitario, y apunta a todos los públicos que se interesen en
+las ciencias espaciales.
+Esta es la primera edición y se espera que el éxito del libro permita ediciones más
+ampliadas y futuras mejoras. Introduce de lleno al lector en las principales disciplinas que
+sirven como base para planificar una misión espacial básica y expone las herramientas para
+el entendimiento de las principales características que definen la misión básica.
+La ingeniería espacial es multidisciplinaria y va desde los principios fundamentales de
+ciencias como la física y la química, pasando por las matemáticas, hasta las tecnologías de
+punta (State of the art) desarrolladas para los componentes espaciales y para los payloads de
+las misiones, como por ejemplo, telescopios para los satélites de observación y comunicación
+con un gran ancho de banda para aumentar la cantidad de información transmitida. También
+existe actividad post mission que requiere desarrollos no menos complicados, por ejemplo,
+el procesamiento de señales (imágenes y sonido) y el análisis de misión, entre otros. Debido
+al hecho de que este es un libro introductorio, se tocan solo los temas más relevantes de esta
+actividad, los cuales se describen a continuación.
+Tiempo y espacio. Cuando un satélite o una nave espacial está en movimiento, nuestro
+objetivo es saber su posición, velocidad y aceleración en cada momento. También es
+necesario saber qué significa “en cada momento”, o sea, cómo se calcula el tiempo.
+Para ello se definen sistemas de coordenadas según las cuales se miden las variables
+dinámicas; también se precisan sistemas temporales para definir los momentos. Estas son
+las definiciones básicas de la ingeniería espacial, sin las cuales es imposible calcular los
+movimientos de los cuerpos en el espacio.
+Cuerpo en el espacio - Mecánica celeste. La ley de gravedad de Newton es la ley
+fundamental que gobierna el movimiento de los satélites; se basa en la atracción de dos
+cuerpos. Según esta ley, si la Tierra fuera una esfera homogénea, solitaria en el espacio y
+sin atmósfera que la rodease, los satélites que están energéticamente unidos a ella formarían
+órbitas cerradas elípticas y como caso especial, órbitas circulares (elipses con ejes de igual
+tamaño).
+[xxiv]
+
+41 Ing. Espacial.indd 24
+
+9/01/23 4:03 PM
+
+

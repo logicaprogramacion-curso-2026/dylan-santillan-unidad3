@@ -1,0 +1,728 @@
+<!-- jinja: ignore -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte de Misión | Estación Espacial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --space-dark: #020010;
+            --panel-bg: rgba(8, 12, 32, 0.85);
+            --panel-border: rgba(124, 138, 255, 0.25);
+            --hud-line: rgba(124, 138, 255, 0.35);
+            --accent: #7c8aff;
+            --accent-bright: #9fb0ff;
+            --text-primary: #e4e7ff;
+            --text-secondary: #8088b8;
+            --text-tertiary: #565d8a;
+            --success: #4ade80;
+            --success-bg: rgba(74, 222, 128, 0.08);
+            --success-border: rgba(74, 222, 128, 0.25);
+            --danger: #f87171;
+            --danger-bg: rgba(248, 113, 113, 0.08);
+            --danger-border: rgba(248, 113, 113, 0.25);
+            --warning: #fbbf24;
+            --comet-cyan: #00e5ff;
+            --card-bg: rgba(14, 19, 46, 0.6);
+            --font-display: 'Orbitron', sans-serif;
+            --font-body: 'Space Grotesk', sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--space-dark);
+            color: var(--text-primary);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 25px;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        .space-bg {
+            position: fixed; top: 0; left: 0;
+            width: 100%; height: 100%; z-index: 0; pointer-events: none;
+        }
+
+        .star {
+            position: absolute; background: white; border-radius: 50%;
+            animation: twinkle var(--duration) infinite ease-in-out;
+            animation-delay: var(--delay);
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: var(--min-opacity); transform: scale(1); }
+            50% { opacity: 1; transform: scale(2.2); }
+        }
+
+        .nebula {
+            position: absolute; border-radius: 50%; filter: blur(100px); opacity: 0.07;
+        }
+
+        .nebula-1 {
+            width: 450px; height: 320px; background: #6b3fa0;
+            top: -5%; right: -8%; animation: nebulaDrift 15s infinite ease-in-out;
+        }
+
+        .nebula-2 {
+            width: 400px; height: 280px; background: #1a5fb4;
+            bottom: -8%; left: -8%; animation: nebulaDrift 18s infinite ease-in-out reverse;
+        }
+
+        @keyframes nebulaDrift {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(30px, -20px) scale(1.06); }
+            66% { transform: translate(-20px, 15px) scale(0.94); }
+        }
+
+        /* ============================================================
+           CONSOLA PRINCIPAL
+           ============================================================ */
+        .console {
+            position: relative; z-index: 1;
+            width: 680px; max-width: 100%;
+            animation: containerEntry 0.6s ease-out;
+        }
+
+        @keyframes containerEntry {
+            from { opacity: 0; transform: translateY(30px) scale(0.96); }
+            to { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
+        .console-frame {
+            position: relative;
+            background: var(--panel-bg);
+            padding: 32px 30px 28px;
+            border-radius: 4px;
+            border: 1px solid var(--panel-border);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            box-shadow: 0 25px 70px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.02);
+        }
+
+        .corner {
+            position: absolute; width: 20px; height: 20px;
+            border: 2px solid var(--comet-cyan); opacity: 0.65;
+        }
+        .corner-tl { top: -1px; left: -1px; border-right: none; border-bottom: none; }
+        .corner-tr { top: -1px; right: -1px; border-left: none; border-bottom: none; }
+        .corner-bl { bottom: -1px; left: -1px; border-right: none; border-top: none; }
+        .corner-br { bottom: -1px; right: -1px; border-left: none; border-top: none; }
+
+        .status-bar {
+            display: flex; align-items: center; justify-content: space-between;
+            font-family: var(--font-mono); font-size: 0.66rem;
+            letter-spacing: 0.5px; color: var(--text-tertiary);
+            margin-bottom: 18px; padding-bottom: 12px;
+            border-bottom: 1px solid var(--hud-line);
+        }
+
+        .status-bar .blink {
+            display: inline-block; width: 6px; height: 6px;
+            border-radius: 50%; background: var(--success);
+            box-shadow: 0 0 8px var(--success);
+            margin-right: 6px; animation: dotGlow 1.6s infinite;
+        }
+
+        @keyframes dotGlow {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.35; }
+        }
+
+        /* ============================================================
+           HEADER
+           ============================================================ */
+        .header { display: flex; align-items: center; gap: 16px; margin-bottom: 6px; }
+
+        .header-icon {
+            width: 44px; height: 44px; flex-shrink: 0;
+            color: var(--accent-bright);
+            animation: iconFloat 3s infinite ease-in-out;
+        }
+
+        @keyframes iconFloat {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+
+        .header-text h1 {
+            font-family: var(--font-display);
+            font-size: 1.35rem; font-weight: 700; letter-spacing: 1.5px;
+            background: linear-gradient(180deg, #f0f0ff 0%, #b0bfff 100%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header-text .subtitle {
+            font-family: var(--font-mono);
+            color: var(--text-secondary); font-size: 0.7rem;
+            letter-spacing: 1px; text-transform: uppercase;
+            margin-top: 6px;
+        }
+
+        .divider {
+            display: flex; align-items: center; gap: 10px;
+            margin: 18px 0 22px;
+        }
+        .divider::before, .divider::after {
+            content: ''; flex: 1; height: 1px;
+            background: linear-gradient(90deg, transparent, var(--hud-line));
+        }
+        .divider::after { background: linear-gradient(90deg, var(--hud-line), transparent); }
+
+        /* ============================================================
+           TARJETA DE PUNTUACIÓN
+           ============================================================ */
+        .score-card {
+            background: var(--card-bg);
+            border: 1px solid var(--panel-border);
+            border-radius: 4px;
+            padding: 26px 25px;
+            text-align: center;
+            margin-bottom: 22px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .score-card::before {
+            content: '';
+            position: absolute; top: -30%; left: -30%;
+            width: 160%; height: 160%;
+            background: radial-gradient(ellipse at center, rgba(124, 138, 255, 0.06) 0%, transparent 70%);
+            animation: scoreGlow 4s infinite ease-in-out;
+        }
+
+        @keyframes scoreGlow {
+            0%, 100% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.1); opacity: 1; }
+        }
+
+        .score-tripulante {
+            position: relative; z-index: 1;
+            font-family: var(--font-mono);
+            color: var(--text-secondary); font-size: 0.74rem;
+            text-transform: uppercase; letter-spacing: 2px;
+            margin-bottom: 10px;
+            display: flex; align-items: center; justify-content: center; gap: 8px;
+        }
+
+        .score-tripulante svg { width: 16px; height: 16px; color: var(--text-tertiary); }
+
+        .score-valor {
+            position: relative; z-index: 1;
+            font-family: var(--font-display);
+            font-size: 3.6rem; font-weight: 900;
+            background: linear-gradient(180deg, #f0f0ff 0%, #b0c8ff 100%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            animation: scorePop 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        }
+
+        @keyframes scorePop {
+            0% { transform: scale(0.3); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        .score-outof {
+            position: relative; z-index: 1;
+            font-family: var(--font-mono);
+            font-size: 0.82rem; color: var(--text-tertiary); margin-top: 4px;
+        }
+
+        .score-badge {
+            display: inline-flex; align-items: center; gap: 6px;
+            padding: 5px 16px;
+            border-radius: 3px;
+            font-family: var(--font-mono);
+            font-size: 0.74rem; font-weight: 600; letter-spacing: 1px;
+            margin-top: 12px;
+            position: relative; z-index: 1;
+        }
+
+        .score-badge svg { width: 13px; height: 13px; }
+
+        .badge-excelente {
+            background: rgba(74, 222, 128, 0.12);
+            border: 1px solid rgba(74, 222, 128, 0.3);
+            color: #4ade80;
+            animation: badgeGlow 2s infinite;
+        }
+        .badge-bueno {
+            background: rgba(251, 191, 36, 0.12);
+            border: 1px solid rgba(251, 191, 36, 0.3);
+            color: #fbbf24;
+        }
+        .badge-regular {
+            background: rgba(248, 113, 113, 0.12);
+            border: 1px solid rgba(248, 113, 113, 0.3);
+            color: #f87171;
+        }
+
+        @keyframes badgeGlow {
+            0%, 100% { box-shadow: 0 0 10px rgba(74, 222, 128, 0.2); }
+            50% { box-shadow: 0 0 20px rgba(74, 222, 128, 0.4); }
+        }
+
+        /* ============================================================
+           SECCIONES
+           ============================================================ */
+        .section {
+            margin-bottom: 18px;
+            animation: sectionSlide 0.5s ease-out forwards;
+            opacity: 0;
+        }
+
+        .section:nth-child(1) { animation-delay: 0.1s; }
+        .section:nth-child(2) { animation-delay: 0.2s; }
+        .section:nth-child(3) { animation-delay: 0.3s; }
+        .section:nth-child(4) { animation-delay: 0.4s; }
+
+        @keyframes sectionSlide {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .section-title {
+            display: flex; align-items: center; gap: 8px;
+            font-family: var(--font-mono);
+            color: var(--accent-bright); font-size: 0.72rem;
+            text-transform: uppercase; letter-spacing: 1.5px;
+            margin-bottom: 10px; font-weight: 500;
+        }
+
+        .section-title svg { width: 14px; height: 14px; }
+
+        /* ============================================================
+           CRITERIOS
+           ============================================================ */
+        .criterio {
+            display: flex; align-items: center; gap: 10px;
+            padding: 10px 14px;
+            background: var(--card-bg);
+            border-radius: 3px;
+            margin-bottom: 6px;
+            font-size: 0.86rem;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+
+        .criterio.ok {
+            border-left: 2px solid var(--success);
+            border-color: rgba(74, 222, 128, 0.2);
+        }
+        .criterio.ok:hover {
+            border-color: rgba(74, 222, 128, 0.4);
+            background: rgba(74, 222, 128, 0.05);
+        }
+
+        .criterio.fail {
+            border-left: 2px solid var(--danger);
+            border-color: rgba(248, 113, 113, 0.2);
+        }
+        .criterio.fail:hover {
+            border-color: rgba(248, 113, 113, 0.4);
+            background: rgba(248, 113, 113, 0.05);
+        }
+
+        .criterio-icon {
+            width: 22px; flex-shrink: 0;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .criterio-icon svg { width: 16px; height: 16px; }
+        .criterio.ok .criterio-icon svg { color: var(--success); }
+        .criterio.fail .criterio-icon svg { color: var(--danger); }
+        .criterio.unknown {
+            border-left: 2px solid var(--warning);
+            border-color: rgba(251, 191, 36, 0.2);
+        }
+        .criterio.unknown .criterio-icon svg { color: var(--warning); }
+        .criterio-texto { display: flex; flex-direction: column; gap: 3px; }
+        .criterio-evidencia {
+            color: var(--text-secondary);
+            font-size: 0.76rem;
+            line-height: 1.35;
+        }
+
+        /* ============================================================
+           PLAGIO
+           ============================================================ */
+        .plagio-card {
+            padding: 12px 16px;
+            border-radius: 3px;
+            font-family: var(--font-mono);
+            font-size: 0.82rem;
+            display: flex; align-items: center; gap: 10px;
+        }
+
+        .plagio-ok {
+            background: var(--success-bg);
+            border-left: 2px solid var(--success);
+            color: #6ee7a8;
+        }
+
+        .plagio-alert {
+            background: var(--danger-bg);
+            border-left: 2px solid var(--danger);
+            color: #fca5a5;
+            animation: alertShake 0.5s ease;
+        }
+
+        @keyframes alertShake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-4px); }
+            75% { transform: translateX(4px); }
+        }
+
+        .plagio-icon { flex-shrink: 0; display: flex; }
+        .plagio-icon svg { width: 18px; height: 18px; }
+
+        /* ============================================================
+           FEEDBACK
+           ============================================================ */
+        .feedback-card {
+            background: var(--card-bg);
+            border: 1px solid var(--hud-line);
+            border-radius: 4px;
+            padding: 15px 17px;
+            font-size: 0.88rem;
+            line-height: 1.6;
+            color: #c8c8e0;
+            position: relative;
+        }
+
+        /* ============================================================
+           BOTONES
+           ============================================================ */
+        .btn-group {
+            display: flex; flex-direction: column; gap: 10px;
+            margin-top: 24px;
+        }
+
+        .btn {
+            display: block; width: 100%; padding: 14px;
+            background: linear-gradient(135deg, #6b5ce7 0%, #5a4bd1 100%);
+            border: 1px solid rgba(124, 138, 255, 0.3);
+            border-radius: 4px;
+            color: white;
+            font-family: var(--font-body);
+            font-size: 0.92rem; font-weight: 600;
+            cursor: pointer; text-align: center; text-decoration: none;
+            transition: all 0.3s ease;
+            letter-spacing: 0.3px;
+            position: relative; overflow: hidden;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute; top: -50%; left: -50%;
+            width: 200%; height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+            opacity: 0; transition: opacity 0.3s ease;
+        }
+
+        .btn:hover {
+            background: linear-gradient(135deg, #7c6af7 0%, #6a58e0 100%);
+            border-color: rgba(140, 160, 255, 0.5);
+            box-shadow: 0 10px 30px rgba(100, 80, 220, 0.35), 0 0 50px rgba(124, 138, 255, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .btn:hover::before { opacity: 1; }
+
+        .btn-secondary {
+            background: rgba(124, 138, 255, 0.06);
+            border: 1px solid rgba(124, 138, 255, 0.2);
+            color: var(--text-secondary);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(124, 138, 255, 0.12);
+            border-color: rgba(124, 138, 255, 0.35);
+            color: #c0d0ff;
+            box-shadow: 0 8px 25px rgba(80, 100, 200, 0.2);
+        }
+
+        .btn-content {
+            display: flex; align-items: center; justify-content: center; gap: 9px;
+            position: relative; z-index: 1;
+        }
+
+        .btn-content svg { width: 16px; height: 16px; }
+
+        @media (max-width: 500px) {
+            .console-frame { padding: 24px 18px; }
+            .score-valor { font-size: 2.7rem; }
+            .header-text h1 { font-size: 1.05rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="space-bg" id="spaceBg">
+        <div class="nebula nebula-1"></div>
+        <div class="nebula nebula-2"></div>
+    </div>
+
+    <div class="console">
+        <div class="console-frame">
+            <div class="corner corner-tl"></div>
+            <div class="corner corner-tr"></div>
+            <div class="corner corner-bl"></div>
+            <div class="corner corner-br"></div>
+
+            <div class="status-bar">
+                <div><span class="blink"></span>EVALUACIÓN COMPLETA</div>
+                <div id="clock">00:00:00 UTC</div>
+            </div>
+
+            <div class="header">
+                <svg class="header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+                    <path d="M4 11a8 8 0 0 1 16 0"/><path d="M2 19l4-7M22 19l-4-7"/><circle cx="12" cy="11" r="2.2"/><path d="M9 19h6l-1 3h-4z"/>
+                </svg>
+                <div class="header-text">
+                    <h1>REPORTE DE MISIÓN</h1>
+                    <p class="subtitle">Resultados del análisis de tripulación</p>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="score-card">
+                <div class="score-tripulante">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="3.2"/><path d="M5.5 19.5c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"/></svg>
+                    <span id="nombreTripulante"></span>
+                </div>
+                <div class="score-valor" id="notaValor"></div>
+                <div class="score-outof">de 10.00 puntos estelares</div>
+
+                <span class="score-badge" id="scoreBadge"></span>
+            </div>
+
+            <div class="section">
+                <div class="section-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M19.4 13.5a1.7 1.7 0 0 0 .3-2.7l-1-1a1.7 1.7 0 0 0-1.9-.3 7 7 0 0 0-1.5-.9 1.7 1.7 0 0 0-1.6-1.4h-1.4a1.7 1.7 0 0 0-1.6 1.4 7 7 0 0 0-1.5.9 1.7 1.7 0 0 0-1.9.3l-1 1a1.7 1.7 0 0 0 .3 2.7 7 7 0 0 0 0 1.7 1.7 1.7 0 0 0-.3 2.7l1 1a1.7 1.7 0 0 0 1.9.3 7 7 0 0 0 1.5.9 1.7 1.7 0 0 0 1.6 1.4h1.4a1.7 1.7 0 0 0 1.6-1.4 7 7 0 0 0 1.5-.9 1.7 1.7 0 0 0 1.9-.3l1-1a1.7 1.7 0 0 0-.3-2.7 7 7 0 0 0 0-1.7z"/></svg>
+                    Sistemas Evaluados
+                </div>
+                <div id="criteriosContainer"></div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l8 3.5v6c0 5-3.5 8.5-8 10.5-4.5-2-8-5.5-8-10.5v-6z"/></svg>
+                    Escaneo de Integridad
+                </div>
+                <div id="plagioCard" class="plagio-card"></div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+                    Análisis de la Misión
+                </div>
+                <div class="feedback-card" id="analisisTexto"></div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v12H8l-4 4z"/></svg>
+                    Comunicado al Tripulante
+                </div>
+                <div class="feedback-card" id="retroTexto"></div>
+            </div>
+
+            <div class="btn-group">
+                <a href="/evaluar" class="btn">
+                    <span class="btn-content">
+                        <span>Iniciar Nueva Misión</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                </a>
+                <a href="/" class="btn btn-secondary">
+                    <span class="btn-content">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M19 12H5m0 0l6-6m-6 6l6 6"/></svg>
+                        <span>Regresar a la Estación Principal</span>
+                    </span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- DATOS DESDE FLASK (sin errores de linter) -->
+    <!--
+        🛡️ FIX: Se reemplazó la interpolación cruda de variables dentro de
+        strings JSON por | tojson de Jinja. El patrón anterior rompía el
+        JSON.parse() cuando el LLM devolvía texto con comillas, saltos de
+        línea o barras invertidas, dejando la página completamente en blanco.
+    -->
+    <script type="application/json" id="flaskData">
+        {{ {
+            "nombre": nombre,
+            "nota": nota,
+            "criterios": criterios,
+            "plagio": plagio,
+            "analisis": analisis,
+            "retroalimentacion": retroalimentacion
+        } | tojson }}
+    </script>
+
+    <script>
+        // Leer datos desde el JSON embebido
+        const data = JSON.parse(document.getElementById('flaskData').textContent);
+
+        // Llenar nombre
+        document.getElementById('nombreTripulante').textContent = data.nombre;
+
+        // Llenar nota
+        const notaValor = parseFloat(data.nota);
+        document.getElementById('notaValor').textContent = data.nota;
+
+        // Badge según nota
+        const checkIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>';
+        const satIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><ellipse cx="12" cy="12" rx="9" ry="4"/></svg>';
+        const toolIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94z"/></svg>';
+        const warnIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 9v4M12 17h.01M10.3 3.9L2.7 17a1.8 1.8 0 0 0 1.6 2.7h15.4a1.8 1.8 0 0 0 1.6-2.7L13.7 3.9a1.8 1.8 0 0 0-3.4 0z"/></svg>';
+
+        const badge = document.getElementById('scoreBadge');
+        if (notaValor >= 8) {
+            badge.className = 'score-badge badge-excelente';
+            badge.innerHTML = checkIcon + 'DESEMPEÑO ESTELAR';
+        } else if (notaValor >= 6) {
+            badge.className = 'score-badge badge-bueno';
+            badge.innerHTML = satIcon + 'MISIÓN ACEPTABLE';
+        } else if (notaValor >= 4) {
+            badge.className = 'score-badge badge-regular';
+            badge.innerHTML = toolIcon + 'REQUIERE REVISIÓN';
+        } else {
+            badge.className = 'score-badge badge-regular';
+            badge.innerHTML = warnIcon + 'MISIÓN FALLIDA';
+        }
+
+        // Llenar criterios sin insertar texto del LLM como HTML.
+        const criteriosContainer = document.getElementById('criteriosContainer');
+        data.criterios.forEach(c => {
+            const div = document.createElement('div');
+            const estado = c.cumplido === true ? 'ok' : (c.cumplido === false ? 'fail' : 'unknown');
+            div.className = 'criterio ' + estado;
+
+            const iconSpan = document.createElement('span');
+            iconSpan.className = 'criterio-icon';
+            if (estado === 'ok') {
+                iconSpan.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>';
+            } else if (estado === 'fail') {
+                iconSpan.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>';
+            } else {
+                iconSpan.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.6 2.6 0 0 1 5 1c0 2-2.5 2.2-2.5 4M12 18h.01"/></svg>';
+            }
+
+            const texto = document.createElement('span');
+            texto.className = 'criterio-texto';
+            const grupo = document.createElement('strong');
+            grupo.textContent = c.grupo || 'Criterio';
+            texto.appendChild(grupo);
+
+            if (c.evidencia) {
+                const evidencia = document.createElement('span');
+                evidencia.className = 'criterio-evidencia';
+                evidencia.textContent = c.evidencia;
+                texto.appendChild(evidencia);
+            }
+
+            div.appendChild(iconSpan);
+            div.appendChild(texto);
+            criteriosContainer.appendChild(div);
+        });
+
+        // Llenar plagio sin insertar datos del estudiante mediante innerHTML.
+        const plagioCard = document.getElementById('plagioCard');
+        const plagioIcon = document.createElement('span');
+        plagioIcon.className = 'plagio-icon';
+        const plagioTexto = document.createElement('span');
+
+        if (data.plagio === 'Ninguno') {
+            plagioCard.className = 'plagio-card plagio-ok';
+            plagioIcon.innerHTML = satIcon; // SVG estático definido por la aplicación
+            plagioTexto.textContent = 'Integridad confirmada — Sin anomalías detectadas';
+        } else {
+            plagioCard.className = 'plagio-card plagio-alert';
+            plagioIcon.innerHTML = warnIcon; // SVG estático definido por la aplicación
+            plagioTexto.textContent = String(data.plagio || 'Alerta de integridad');
+        }
+        plagioCard.replaceChildren(plagioIcon, plagioTexto);
+
+        // Llenar análisis y retroalimentación
+        document.getElementById('analisisTexto').textContent = data.analisis;
+        document.getElementById('retroTexto').textContent = data.retroalimentacion;
+
+        // Crear estrellas de fondo
+        const spaceBg = document.getElementById('spaceBg');
+        for (let i = 0; i < 90; i++) {
+            const star = document.createElement('div');
+            star.classList.add('star');
+            const size = Math.random() * 2 + 0.5;
+            star.style.cssText = `
+                width: ${size}px;
+                height: ${size}px;
+                left: ${Math.random() * 100}%;
+                top: ${Math.random() * 100}%;
+                --duration: ${Math.random() * 3 + 2}s;
+                --delay: ${Math.random() * 4}s;
+                --min-opacity: ${Math.random() * 0.3 + 0.06};
+            `;
+            spaceBg.appendChild(star);
+        }
+
+        // Confeti para notas altas
+        if (notaValor >= 8) {
+            const confettiStyle = document.createElement('style');
+            confettiStyle.textContent = `
+                @keyframes confettiFall {
+                    0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+                    100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+                }
+            `;
+            document.head.appendChild(confettiStyle);
+
+            for (let i = 0; i < 20; i++) {
+                setTimeout(() => {
+                    const confetti = document.createElement('div');
+                    confetti.style.cssText = `
+                        position: fixed;
+                        z-index: 100;
+                        pointer-events: none;
+                        font-size: ${Math.random() * 20 + 15}px;
+                        left: ${Math.random() * 80 + 10}%;
+                        top: -30px;
+                        animation: confettiFall ${Math.random() * 2 + 2}s linear forwards;
+                    `;
+                    confetti.textContent = ['⭐', '🌟', '✨', '💫', '🎉'][Math.floor(Math.random() * 5)];
+                    document.body.appendChild(confetti);
+                    setTimeout(() => confetti.remove(), 4000);
+                }, i * 80);
+            }
+        }
+
+        // Reloj UTC del HUD
+        function updateClock() {
+            const now = new Date();
+            const h = String(now.getUTCHours()).padStart(2, '0');
+            const m = String(now.getUTCMinutes()).padStart(2, '0');
+            const s = String(now.getUTCSeconds()).padStart(2, '0');
+            document.getElementById('clock').textContent = `${h}:${m}:${s} UTC`;
+        }
+        updateClock();
+        setInterval(updateClock, 1000);
+    </script>
+
+</body>
+</html>

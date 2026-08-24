@@ -1,0 +1,3630 @@
+DISEÑO Y CONSTRUCCIÓN DE UN MOTOR PARA UN
+COHETE QUE PUEDA GENERAR UN EMPUJE DE 700 N Y QUE EN VUELO
+PROPULSADO E INERCIAL ALCANCE 500 M DE ALTURA
+
+DIEGO FELIPE ROZO FARIAS
+FRANK DARIO VERA CARRILLO
+
+UNIVERSIDAD DE SAN BUENAVENTURA
+FACULTAD DE INGENIERÍA
+PROGRAMA DE INGENIERÍA AERONÁUTICA
+BOGOTÁ D.C.
+2009
+2
+
+DISEÑO Y CONSTRUCCIÓN DE UN MOTOR PARA UN
+COHETE QUE PUEDA GENERAR UN EMPUJE DE 700 N Y QUE EN VUELO
+PROPULSADO E INERCIAL ALCANCE 500 M DE ALTURA
+
+DIEGO FELIPE ROZO FARIAS
+FRANK DARIO VERA CARRILLO
+
+Proyecto de Grado como requisito para optar a título profesional de
+Ingenieros Aeronáuticos
+
+Asesor:
+Arnold Escobar
+
+UNIVERSIDAD DE SAN BUENAVENTURA
+FACULTAD DE INGENIERÍA
+PROGRAMA DE INGENIERÍA AERONÁUTICA
+BOGOTÁ D.C.
+2009
+3
+
+Nota de aceptación
+______________________________
+______________________________
+______________________________
+______________________________
+______________________________
+
+_____________________________
+Presidente de jurado
+
+_____________________________
+Jurado
+
+_____________________________
+Jurado
+
+Bogotá D.C., agosto de 2009
+
+4
+
+Este trabajo de grado está dedicado a
+nuestras familias que nos apoyaron, y a la
+infinita paciencia y colaboración que nos
+brindaron
+para
+hacer
+posible
+la
+consecución de este objetivo.
+
+5
+
+AGRADECIMIENTOS
+Diego expresa su agradecimiento a:
+-
+
+A mi Mamá: Por su apoyo moral y económico para sacar la tésis adelante.
+A mi Papá: Quien se volvió un integrante más de la tésis. gracias por todo el
+trabajo.
+A Alejandro: Por el trabajo realizado en la tesis. Por la colaboración en el
+diseño y algunas de las fotografías.
+A Adriana: Por el apoyo con los videos finales.
+A Paola: Por su paciencia en el tiempo gastado para la realización de este
+proyecto.
+
+Frank expresa su agradecimiento a:
+-
+
+A mi Mamá: Por todo su apoyo y su asistencia durante el desarrollo del
+trabajo.
+A mi Papá: Por su apoyo moral y económico.
+A mi Hermana: Quien siempre estuvo allí.
+A Gustavo Iván: Por su gran aporte de ideas.
+
+Agradecimientos especiales del grupo de trabajo:
+-
+
+A Richard Nakka: Aunque no lo conocemos. Compartió todos los
+conocimientos necesarios para el desarrollo del motor.
+A Arnold: Gracias por su apoyo, por luchar por nosotros y por demostrarnos
+que aunque uno sueñe con cosas difíciles, todas se pueden lograr.
+A Ferney y Nelson: Gracias por todos los trabajos de todo tipo y la
+paciencia tenida.
+Al ingeniero Luis: Gracias por la confianza en el laboratorio, gracias a esto
+la mezcla quemo como debía ser.
+Al ingeniero Luis George: Por los permisos en las pruebas en la cancha y
+por la misión Guatavita.
+Al Papá de Luis Miguel: Sin sus conocimientos electrónicos no habría sido
+posible el mecanismo ignitor en Guatavita.
+A Luis Miguel, John y Álvaro: Porque después de tanto trabajo se logró el
+objetivo.
+
+6
+
+CONTENIDO
+
+pág.
+INTRODUCCIÓN .................................................................................................. 19
+1
+
+PLANTEAMIENTO DEL PROBLEMA .................................................... 20
+
+1.1
+
+ESTADO DEL ARTE .............................................................................. 20
+
+1.2
+
+DESCRIPCIÓN Y FORMULACIÓN DEL PROBLEMA ........................... 21
+
+1.3
+
+JUSTIFICACIÓN .................................................................................... 21
+
+1.4
+
+OBJETIVOS ........................................................................................... 22
+
+1.4.1
+
+Objetivo General .................................................................................... 22
+
+1.4.2
+
+Objetivos Específicos ............................................................................. 22
+
+1.5
+
+ALCANCES Y LIMITACIONES DEL PROYECTO ................................. 23
+
+1.5.1
+
+Alcances................................................................................................. 23
+
+1.5.2
+
+Limitaciones.: ......................................................................................... 23
+
+2
+
+MARCO DE REFERENCIA .................................................................... 24
+
+2.1
+
+MARCO TEÓRICO-CONCEPTUAL. ...................................................... 24
+
+2.1.1
+
+Historia de los motores cohete.. ............................................................. 24
+
+2.1.2
+
+Motor cohete. ......................................................................................... 25
+
+2.1.4
+
+Tobera del cohete. ................................................................................ 25
+
+2.1.5
+
+Comportamiento del Propelente en la combustión................................. 26
+
+2.1.6
+
+Impulso específico.. ............................................................................... 27
+
+2.1.7
+
+Empuje neto. .......................................................................................... 27
+
+2.1.8
+
+Regulación. . .......................................................................................... 28
+
+2.1.9
+
+Ciclo carnot. ........................................................................................... 30
+
+2.1.9.1
+
+Refrigeración. . ....................................................................................... 30
+
+2.1.9.2
+
+Problemas mecánicos. ........................................................................... 30
+
+2.1.9.3
+
+Problemas acústicos. ............................................................................. 31
+
+2.1.10
+
+Combustión. . ......................................................................................... 31
+
+2.1.11
+
+Ruido de exostación. .............................................................................. 31
+
+7
+
+2.1.12
+
+Pruebas.. ................................................................................................ 31
+
+2.1.13
+
+Seguridad. . ............................................................................................ 31
+
+2.1.14
+
+Química.. ................................................................................................ 31
+
+2.1.15
+
+Ignición.. ................................................................................................. 32
+
+2.1.16
+
+Cohete monopropelente.. ....................................................................... 33
+
+2.1.17
+
+Cohete bipropelente.. ............................................................................. 33
+
+2.1.18
+
+Cohete de propulsión de modo dual. . ................................................... 33
+
+2.1.19
+
+Cohete tripropelente.. ............................................................................. 33
+
+2.1.20
+
+Cohete de aire aumentado.. ................................................................... 33
+
+2.1.21
+
+Turbo cohete.. ........................................................................................ 33
+
+3
+
+METODOLOGÍA DE LA INVESTIGACIÓN ............................................ 34
+
+3.1
+
+ENFOQUE DE LA INVESTIGACIÓN ..................................................... 34
+
+3.2
+
+LÍNEA DE INVESTIGACIÓN .................................................................. 34
+
+3.3
+
+TÉCNICAS DE RECOLECCIÓN DE INFORMACIÓN ........................... 34
+
+3.4
+
+HIPÓTESIS ............................................................................................ 34
+
+3.5
+
+VARIABLES ........................................................................................... 35
+
+3.5.1
+
+Variables independientes. ...................................................................... 35
+
+3.5.2
+
+Variables dependientes. ......................................................................... 35
+
+4
+
+DESARROLLO INGENIERIL “MOTOR COHETE DF-2K9”.................... 36
+
+4.1
+
+PROCESO DE COMBUSTIÓN .............................................................. 36
+
+4.1.1
+
+El grano Propelente ............................................................................... 36
+
+4.1.2
+
+Combustión del propelente .................................................................... 37
+
+4.1.3
+
+Desarrollo Químico. ............................................................................. 37
+
+4.2
+
+DISEÑO DE MOTOR ............................................................................. 38
+
+4.2.1
+
+Presión de cámara, Pc. .......................................................................... 38
+
+4.2.2
+
+Volumen del Cilindro. ............................................................................. 39
+
+4.2.3
+
+Cálculos de la barra de propelente. ....................................................... 39
+
+4.2.3.1
+
+Razón de generación de Gas................................................................. 40
+
+4.2.3.2
+
+Razón de Quemado Linear Inicial. ......................................................... 40
+
+4.2.3.3
+
+Razón de Erosión de Quemado (r) ...................................................... 41
+
+8
+
+4.2.3.4
+
+Flujo Másico del Gas (mg). ................................................................... 41
+
+4.2.3.5
+
+Tiempo de quemado (Tb). ...................................................................... 41
+
+4.2.4
+
+Área de la garganta ................................................................................ 41
+
+4.2.5
+
+Técnica experimental de la tobera. ........................................................ 42
+
+4.2.6
+
+Diseño de cámara de combustión. ......................................................... 43
+
+4.2.7
+
+Empuje Neto. ......................................................................................... 45
+
+4.2.8
+
+Empuje Promedio. .................................................................................. 45
+
+4.2.9
+
+Calculo de Altura. ................................................................................... 45
+
+4.2.10
+
+Análisis Estructural con ANSYS. ............................................................ 47
+
+4.2.11
+
+Análisis de flujo de gases con FLUENT. ................................................ 49
+
+4.2.12
+
+Planos motor cohete “DF-2K9”............................................................... 51
+
+4.2.12.1 Plano Tapa – Sello Motor Cohete. ......................................................... 51
+4.2.12.2 Plano Tobera de Salida. ......................................................................... 52
+4.2.12.3 Plano Tobera de Salida. ......................................................................... 53
+4.2.12.4 Plano Cámara de Combustión. .............................................................. 54
+4.3
+
+CONSTRUCCIÓN MOTOR COHETE “DF-2K9”. ................................... 55
+
+4.3.1
+
+MATERIALES ........................................................................................ 55
+
+4.3.1.1
+
+Acero 1018.. ........................................................................................... 55
+
+4.3.1.2
+
+Acero Inoxidable 304. ............................................................................ 57
+
+4.3.1.3
+
+Acero 1018 ............................................................................................. 58
+
+4.3.2
+
+Maquinado ............................................................................................. 60
+
+4.3.3
+
+Motor cohete finalizado .......................................................................... 63
+
+4.4
+
+PREPARACIÓN DEL COMBUSTIBLE – PROPELENTE ...................... 64
+
+4.4.1
+
+Certificado de análisis del nitrato de potasio. ......................................... 64
+
+4.4.2
+
+Ficha de Seguridad del nitrato de potasio. ............................................. 65
+
+4.4.3
+
+Barra de propelente numero 1. .............................................................. 69
+
+4.4.3.1
+
+Instrucciones.. ....................................................................................... 71
+
+4.4.4
+
+Barra de propelente numero 2. .............................................................. 73
+
+4.4.4.1
+
+Instrucciones para la mezcla. ................................................................ 74
+
+4.5
+
+ANÁLISIS DEL COMBUSTIBLE – PROPELENTE CON GUIPEP ......... 77
+
+9
+
+4.5.1
+
+Introducción a guipep. ........................................................................... 77
+
+4.5.2
+
+Guipep Análisis numero 1.. ................................................................... 79
+
+4.5.4
+
+Guipep análisis numero 2....................................................................... 81
+
+4.5.5
+
+Observaciones de análisis numero 2. .................................................... 84
+
+4.6
+
+PRUEBAS ESTÁTICAS MOTOR COHETE ........................................... 84
+
+4.6.1
+
+Prueba Número 1. .................................................................................. 84
+
+4.6.2
+
+Prueba Número 2. .................................................................................. 87
+
+4.6.3
+
+Prueba Número 3 ................................................................................... 89
+
+4.7
+
+LANZAMIENTO DEL COHETE .............................................................. 91
+
+4.7.1
+
+Lanzamiento Número 1 .......................................................................... 91
+
+4.7.2
+
+Lanzamiento Número 2 .......................................................................... 92
+
+4.8
+
+COSTOS DE REALIZACIÓN ................................................................. 94
+
+CONCLUSIONES ................................................................................................. 95
+BIBLIOGRAFÍA ..................................................................................................... 96
+Anexo A…………………………………………………………………………………...98
+Anexo B………………………………………………………………………………….100
+Anexo C………………………………………………………………………………….101
+
+10
+
+TABLAS
+
+pág.
+
+Tabla 1. Rocket Motor Chamber pressure ............................................................ 37
+Tabla 2. Componentes QUÍMICOS....................................................................... 37
+Tabla 3. Propiedades Termodinámicas de gases de exosto para diferentes
+presiones. ............................................................................................................. 42
+Tabla 4. Análisis químico – Norma Nacional NMX B-301 ..................................... 55
+Tabla 5. Tratamientos Térmicos Recomendados Acero 1018 .............................. 56
+Tabla 6. Propiedades mecánicas Mínimas ........................................................... 56
+Tabla 8. Tratamientos térmicos Recomendados Acero Inoxidable 304 ................ 58
+Tabla 9. Propiedades mecánicas NMX B -83 ....................................................... 58
+Tabla 10. Especificaciones .................................................................................. 64
+Tabla 11. Propiedades Análisis 1......................................................................... 79
+Tabla 12. Chamber Result .................................................................................... 79
+Tabla 13. Exhaust Result ...................................................................................... 80
+Tabla 14. Performance ........................................................................................ 81
+Tabla 15. Propiedades Análisis 2.......................................................................... 82
+Tabla 16. Chamber Results 2 ............................................................................... 83
+Tabla 17. Exhaust Results 2 ................................................................................ 83
+Tabla 18. Performance 2 ..................................................................................... 84
+
+11
+
+GRÁFICAS
+
+pág.
+
+Gráfica 1. Tipos de Tobera ................................................................................... 27
+Gráfica 2. Eficiencia Propulsiva ............................................................................ 28
+Gráfica 3. Ciclo Carnot .......................................................................................... 29
+Gráfica 4. Diseño Preliminar Barra Propelente ..................................................... 39
+Gráfica 5. Burn rate vs Chamber Pressure ........................................................... 40
+Gráfica 6. Tobera Experimental ............................................................................ 42
+Gráfica 7. Diseño Preliminar Cámara de Combustión .......................................... 43
+Gráfica 8. Diseño Preliminar Tobera ..................................................................... 44
+Gráfica 9. Técnica Experimental - Tobera ............................................................ 44
+Grafica 10. Altura Vs Tiempo ................................................................................ 45
+Grafica 11. Velocidad Vs Tiempo.......................................................................... 47
+Gráfica 12. Distribución de cargas de presión en la cámara de combustión ........ 48
+Gráfica 13. Distribución Vectores Velocidad ......................................................... 49
+
+12
+
+FOTOGRAFÍAS
+
+pág.
+Fotografía 1. Barra Acero 1018............................................................................. 59
+Fotografía 2. Material base - Tobera..................................................................... 59
+Fotografía 3. Torno USB en elaboración de cámara de Combustión.................... 60
+Fotografía 4. (a) Tapa Motor Cohete y (b) Tobera Fase de Torneado ................ 60
+Fotografía 5. (a) Tapa final; (b y c) Tobera Final................................................... 61
+Fotografía 6. Cámara de Combustión Final .......................................................... 61
+Fotografía 7. Elementos Final ............................................................................... 62
+Fotografía 8. Elementos Final 2 ............................................................................ 62
+Fotografía 9. Motor Cohete Final .......................................................................... 63
+Fotografía 10. Motor Cohete Final 2 ..................................................................... 63
+Fotografía 11. Materiales preparación Barra Propelente ...................................... 70
+Fotografía 12. Molde barra Propelente ................................................................. 70
+Fotografía 13. Tasa Medidora propelente ............................................................. 71
+Fotografía 14. Mezcla Fase 1 ............................................................................... 71
+Fotografía 15. Mezcla Fase 2 ............................................................................... 72
+Fotografía 16. Mezcla Fase 3 ............................................................................... 72
+Fotografía 17. Mezcla Fase 4 ............................................................................... 72
+Fotografía 18. Mezcla Final .................................................................................. 73
+Fotografía 19. Medidor laboratorio USB ............................................................... 74
+Fotografía 20. Medidor Laboratorio USB 2 ........................................................... 74
+Fotografía 21. Mezcla Laboratorio Fase 1 ............................................................ 75
+Fotografía 22. Mezcla Laboratorio Fase 2 ............................................................ 75
+Fotografía 23. Mezcla Laboratorio Fase 3 ............................................................ 76
+Fotografía 24. Mezcla Laboratorio Fase 4 ............................................................ 76
+Fotografía 25. Mezcla Laboratorio Fase 5 ............................................................ 76
+Fotografía 26. Vaciado Mezcla en Molde .............................................................. 77
+
+13
+
+Fotografía 27. Registro Digital .............................................................................. 85
+Fotografía 28. Preparación Prueba 2 .................................................................... 87
+Fotografía 29. Ejecución Prueba 2........................................................................ 88
+Fotografía 30. Ensamble prueba 3........................................................................ 89
+Fotografía 31. Ejecución Prueba 3........................................................................ 90
+Fotografía 32 Lanzamiento 1 ................................................................................ 92
+Fotografía 33 Lanzamiento 2 ................................................................................ 93
+
+14
+
+FIGURA
+
+Pág.
+
+Figura 1. Principio Operación................................................................................ 25
+Figura 2 Barra Propelente ..................................................................................... 36
+Figura 3 Barra Propelente Tubular........................................................................ 36
+
+15
+
+PLANOS
+
+pág.
+Plano 1 Tapa-Sello del motor cohete. ................................................................... 51
+Plano 2 Plano Tobera de salida Angulo 30º.......................................................... 52
+Plano 3 Plano Tobera de salida Angulo 45º.......................................................... 53
+Plano 4 Cámara de Combustión ........................................................................... 54
+
+16
+
+CUADROS
+
+pág.
+Cuadro 1. Prueba 1 – 01/04/09 ............................................................................. 84
+Cuadro 2. Prueba 2 – 30/04/09 ............................................................................. 87
+Cuadro 3. Prueba 3 – 20/05/09 ............................................................................. 89
+Cuadro 4 Lanzamiento 1 25/07/09 ........................................................................ 91
+Cuadro 5 Lanzamiento 2 25/07/09 ........................................................................ 92
+Cuadro 6 Costos ................................................................................................... 94
+
+17
+
+RESUMEN
+
+Alcanzar el cielo y lo que hay después de él siempre ha sido uno de los sueños
+del hombre, razón por la cual el desarrollo de este proyecto es uno de los
+primeros pasos con los cuales se puede llegar a avanzar en el tema de la
+cohetería.
+Durante el desarrollo de este proyecto, por medio de la investigación,
+dedicación de tiempo y recursos, se logrará hacer un motor cohete que genere
+700 Newton de empuje. Gracias al estudio geométrico, se dimensionará y se
+estudiará el tipo de materiales que resistan las temperaturas y esfuerzos a los
+cuales estará sometido el motor cohete, propulsado con un combustible sólido
+compuesto de sorbitol y nitrato de potasio y se conseguirá un desempeño de
+motor cohete que satisfaga las necesidades propuestas.
+Se desarrollará un sistema de ignición eléctrico, por medio del cual se podrá
+iniciar la combustión del cohete dentro de la cámara de combustión para poder
+generar el empuje, pero de una manera segura para las personas que vallan a
+realizar pruebas de empuje del motor cohete y las pruebas de vuelos
+experimentales del conjunto cohete, motor cohete.
+Elaborando el motor en acero y cumpliendo con las características nombradas
+anteriormente, se desarrollará un sistema de medición de empuje sencillo
+basado en una báscula de peso en kilogramos para medir el empuje del motor
+cohete.
+Como siguiente paso, se colocara el motor cohete dentro de un cohete
+diseñado para este fin y se realizara una prueba de vuelo, en la cual se
+colocara a prueba el desempeño del motor teniendo en cuenta los factores
+naturales que puedan afectar el rendimiento del conjunto cohete, motor cohete.
+Para finalizar, se elaboraran conclusiones, mostrando los resultados del
+rendimiento del motor cohete y del conjunto cohete, motor cohete y se
+entregara un listado de precios con un presupuesto del estimado que se
+gastaría haciendo un motor cohete de estas características.
+Palabras Clave: Motor, Cohete, Cámara de combustión, Propulsor, Propelente,
+Tobera.
+
+18
+
+INTRODUCCIÓN
+
+Es sabido que en los países desarrollados y los que están en vía de desarrollo
+buscan la manera de adelantar y mejorar cada día más la carrera astronáutica.
+En países como Colombia debido a la limitación de recursos se hace muy difícil
+satisfacer este deseo de comenzar y avanzar con la carrera aeroespacial,
+debido a los pocos recursos destinados a la ciencia y al desarrollo, Colombia se
+ha quedado rezagada en este tema.
+
+La importancia de este proyecto, es que se va a colaborar con la ciencia e
+investigación de nuestro país, avanzando un poco más para entrar en la carrera
+que muchos países están desarrollando y la que muchos quieren entrar para
+ser tenidos en cuenta. El avance tecnológico que se puede lograr impulsara
+muchos más proyectos, y mucho más patrocinio para desarrollarlos.
+Colombia, privilegiada por su ubicación geográfica debería ser de los países
+más avanzados e interesados en este tema, aunque la economía lo impide,
+nuestra ubicación hace que se puedan realizar dichos proyectos con menores
+costos y mayores facilidades.
+El propósito perseguido es el diseño de un motor cohete para un cohete que
+alcance una altitud de 500 M, en su fase propulsada e inercial para contribuir
+con el avance tecnológico y dar el primer paso para iniciar una carrera
+Aeroespacial en Colombia.
+
+19
+
+1
+
+PLANTEAMIENTO DEL PROBLEMA
+
+A partir del estudio y el diseño de las dimensiones, tipo de mezcla y geometría del
+conjunto propulsor desarrollar un motor cohete capaz de generar 700 N de empuje
+para que un cohete en vuelo propulsado e inercial llegue a 500 m.
+
+1.1 ESTADO DEL ARTE
+En 1989, Carlos Orlando Parra (actual presidente de ASPA), escribió la propuesta
+para la realización de un programa aeroespacial colombiano la cual fue publicada
+en 1990. Posteriormente, en 1997, se inició la discusión de ésta propuesta en la
+Universidad Antonio Nariño y en el Colegio Liceo Boston de la ciudad de Bogotá, y
+se publica el libro La Hora Cósmica, comenzando la fase de divulgación y
+discusión del proyecto.
+En el primer semestre de 1998, la Universidad Antonio Nariño avala la propuesta
+nombrando a Carlos Orlando Parra como director del proyecto de la Universidad.
+A esta propuesta se une el arquitecto aeroespacial Oscar Arenales, quien trabajó
+paralelamente esta propuesta de manera independiente y escriben "Propuesta
+Para La Creación de la Agencia Aeroespacial Colombiana, por medio de la cual
+hacen una convocatoria dirigida a académicos, científicos, instituciones y en
+general a personas interesadas en crear el Equipo Coordinador del Proyecto. El
+16 de Julio del mismo año, comienzan las reuniones auspiciadas por el Dr. Jorge
+Reynolds Pombo, para conformar dicho equipo. En este año el Ing. Edgar Espejo
+construye el primer dispositivo cohete, se funda la Asociación Pro-Agencia
+Aeroespacial Colombiana -ASPA- y el Arq. Oscar Arenales funda el Nodo de
+Asuntos Aeroespaciales Colombianos NASCA, adscrito a la facultad de
+Aeronáutica de la Universidad de San Buenaventura.
+En 1999, con el apoyo del Dr. Reynolds, surge el proyecto MISIÓN TAMSA como
+la primera misión satelital colombiana. La Universidad de San Buenaventura
+publica el Informe Preliminar de la Situación Espacial en Colombia, documento
+base para la justificación del programa. En ese mismo año, la Asociación ProAgencia Aeroespacial Colombiana, estructura su plan de desarrollo y encamina
+sus esfuerzos para la realización del Encuentro Colombia hacia el Espacio 2001 al
+mismo tiempo que la Armada Nacional de Colombia se une al proyecto MISIÓN
+TAMSA.
+Posteriormente, en el primer congreso de Ingeniería Mecánica realizado en la
+ciudad de Santafé de Bogotá, Colombia, en los días 24, 25 y 26 de noviembre de
+1999, se plasmó en las memorias un documento elaborado por ASPA en donde se
+explica la necesidad de desarrollar estudios aeroespaciales en Colombia. Este
+documento llegó a manos de un estudiante de Ingeniaría Mecánica de la
+20
+
+Universidad Nacional el cual lo motivó para vincularse con la Asociación.
+Posteriormente realizó una convocatoria abierta a principios del primer semestre
+del año 2000 en la Universidad Nacional de Colombia, sede Bogotá con el
+propósito de conformar el Nodo de Estudios Aeroespaciales de la Universidad
+Nacional -NAPSU- , el cual se creó en Marzo del año 2000. NAPSU toma su
+nombre del Príncipe Apsú, perteneciente a la cultura sumeria, príncipe que jamás
+cesa en sus trabajos para renovar el mundo, principio del Bien y la Vida.
+Durante este periodo, NAPSU ha centrado sus primeros trabajos en
+investigaciones para el apoyo técnico de la misión TAMSA, sin dejar a un lado los
+tópicos generales de las ciencias aeroespaciales. Para desarrollar todas las
+actividades del Nodo, éste cuenta con el apoyo permanente de la Asociación ProAgencia aeroespacial Colombiana -ASPA- .
+La Universidad Nacional de Colombia ha sido parte de un despertar nacional y
+mediante el Nodo de Estudios Aeroespaciales NAPSU, contribuye al progreso del
+país en la investigación de ciencias aeroespaciales para su aplicación en la
+solución de problemas sociales. 1
+
+1.2 DESCRIPCIÓN Y FORMULACIÓN DEL PROBLEMA
+Actualmente en Colombia no existe documentación de motores cohete capaces de
+desarrollar 700N de empuje, razón por la cual se tomo la decisión de desarrollar
+un nuevo motor cohete capaz de generar 700N de empuje para un cohete que en
+su fase propulsada e inercial llegue a 500M de altura, por medio del diseño de las
+dimensiones, tipo de mezcla y geometría del conjunto propulsor.
+¿Qué dimensiones, tipo de mezcla, geometría y diseño del conjunto motor permite
+desarrollar un motor cohete que genere 700N de empuje?
+
+1.3 JUSTIFICACIÓN
+Este proyecto es de mucho interés para toda Colombia porque hay una necesidad
+de avanzar y conocer nuevas tecnologías, y es preciso desarrollar el proyecto
+para incentivar la creación de proyectos más grandes a partir de este.
+El interés para los campos de Aviación y campos Aeroespaciales es amplio,
+porque puede colaborar con las bases para comenzar con esta carrera en la que
+1
+
+GUEVARA, Juan Carlos y otros. Semillero Nodo Napsú. Proyecto para la conformación
+y puesta en marcha del nodoing Bogotá, Nodo de estudios Aeroespaciales de la
+Universidad Nacional de Colombia. Santa fe de Bogotá, Septiembre. 2000.
+
+21
+
+todos los países están compitiendo, y es de suma importancia que el proyecto se
+realice ya que es algo innovador, no en el Mundo, sino en Colombia, y sería como
+el primer paso para avanzar e intentar poner a Colombia un poco más cerca de las
+Potencias Mundiales en este tema.
+Alcanzar el cielo y lo que hay después de él siempre ha sido uno de los sueños
+del hombre y para Colombia no es diferente, razón por la cual se deben
+desarrollar proyectos que por medio de la investigación, dedicación de tiempo y
+recursos para ayudar a conseguir ese sueño tan anhelado.
+Con el diseño del motor, se avanzara con los estudios en cohetería, avances en la
+utilización de estas tecnologías desarrolladas para esta expedición y futuras
+expediciones, análisis de datos como empujes, resistencias y materiales, entre
+otros.
+Lo interesante es que en Colombia hay mucha información para realizar proyectos
+de este tipo, y va a ser primordial un buen diseño del motor cohete para lograr la
+expectativa de los demás grupos trabajando para el mismo propósito.
+Se pretende realizar el diseño del motor cohete y realizar las respectivas pruebas
+para determinar el mejor diseño y el propelente optimo para lograr el objetivo de
+impulsar un Cohete en su vuelo propulsado e inercial.
+
+1.4
+
+OBJETIVOS
+
+1.4.1 Objetivo General
+Diseñar y construir un motor para un cohete que produzca 700N de empuje, para
+un cohete que en vuelo propulsado e inercial llegue a 500M.
+
+1.4.2 Objetivos Específicos
+• Investigar los antecedentes relacionados con el diseño e implementación de
+los motores en la cohetería.
+• Calcular y Dimensionar el motor cohete.
+• Identificar el Combustible Óptimo.
+• Analizar el material óptimo para el desarrollo del motor cohete.
+• Presupuestar los costos de realización.
+• Calcular y realizar las pruebas de combustión y análisis del motor sin el
+cohete.
+• Realizar un sistema sensorial de medición de empuje para el motor cohete.
+• Realizar las pruebas del motor ya implementado con el cohete
+
+22
+
+1.5
+
+ALCANCES Y LIMITACIONES DEL PROYECTO
+
+1.5.1 Alcances. Este diseño para el motor Cohete está compuesto de una
+recopilación de antecedentes en el campo aeroespacial orientado a la Cohetería;
+con base en esta información se llevarán a cabo los cálculos necesarios para su
+diseño, desarrollo y posteriores pruebas de combustión del motor cohete para su
+posterior lanzamiento.
+Así mismo, el estudio comprende un análisis e identificación de los materiales que
+compondrán el motor cohete en su fase final. El combustible será seleccionado
+dependiendo de los propelentes que nos puedan ofrecer mayores facilidades de
+elaboración y mejores rendimientos.
+Se llevaran a cabo los análisis respectivos al lanzamiento, y un estudio referente a
+los costos involucrados para el desarrollo del proyecto.
+Para finalizar se entregará un análisis con el diseño del motor cohete, incluyendo
+las dimensiones, materiales, tipo de propelente entre otros, con sus respectivos
+planos y modelado en Solid edge, con un análisis en CFD para ver el
+comportamiento del motor, y se entregará el motor cohete construido.
+1.5.2 Limitaciones. Para el proyecto se tendrán como limitantes, los siguientes
+aspectos a continuación:
+•
+
+Campo de Pruebas: actualmente no se cuenta con un espacio, terreno
+habilitado para el desarrollo de pruebas y practicas correspondientes.
+
+•
+
+Elementos Ajenos: Para el desarrollo del proyecto es necesario recurrir a la
+investigación, desarrollo y aplicación de componentes químicos para
+generar la reacción necesaria.
+
+•
+
+Integración y Coordinación: Debido a que el proyecto se maneja por Grupos
+y no como un todo, esto ocasionará una ardua coordinación entre los
+grupos participantes.
+
+23
+
+2
+
+2.1
+
+MARCO DE REFERENCIA2
+
+MARCO TEÓRICO-CONCEPTUAL.
+
+2.1.1 Historia de los motores cohete. De acuerdo con los escritos del romano
+Aulo Gelio, en c. 400 AC, un griego llamado Pitágoras Arquitas, propulso un pájaro
+de madera a lo largo de cables utilizando vapor. Sin embargo, no parece haber
+sido lo suficientemente poderoso para despegar bajo su propio impulso.
+El aeolipile inventado en el siglo I, consistía esencialmente en un cohete de agua
+caliente en un cojinete. Fue creado casi dos milenios antes de la revolución
+industrial. Al parecer, Héroe de la máquina de vapor no fue llevado a ser poco más
+que un juguete, los principios detrás de él no eran bien entendidos, y todo su
+potencial no reconocido para su milenio.
+La disponibilidad de polvo negro para propulsar los proyectiles fue el precursor
+del desarrollo de los primeros cohetes de propelente sólido. Siglo IX un chino
+taoísta alquimista descubrió polvo negro en la búsqueda de un elixir de la vida, el
+accidental descubrimiento condujo a las flechas de fuego que fueron los primeros
+motores de cohetes en abandonar la tierra.
+El desarrollo lento de esta tecnología continuó a finales del siglo 20, cuando los
+escritos de Konstantin Tsiolkovsky hablaron de motores cohete de combustible
+líquido.
+Estos motores cohete se convirtieron en realidad gracias a Robert Goddard.
+
+2.1.2 Motor cohete. Un motor cohete es un motor jet que toma la masa de
+reacción de los tanques dentro del cuerpo del cohete y lo convierte en un jet de
+alta velocidad, obteniendo empuje según la tercera ley de newton.
+
+2
+
+HOLFORD, Strevens Leofranc., Aulus Gellius. An Antonine Author and his Achievement (Oxford
+University Press; revised paperback edn. 2005) Articulo incorporado en la Encyclopedia Britannica,
+onceava edición. Citado por Rocket Propulsion Elements; 7th edition- chapter.
+
+24
+
+2.1.3 Principio de operación.
+Figura 1. Principio Operación
+
+Fuente: http://en.wikipedia.org/wiki/Rocket_engine
+
+Los motores cohete producen empuje debido a la alta presión en la cámara de
+combustión.
+La mayoría de los cohetes producen empuje debido a la expulsión de gases a alta
+temperatura y alta velocidad. Es creada por la combustión a alta presión de
+propelentes sólidos o líquidos dentro de la cámara de combustión.
+En los propelentes sólidos es preparada una mezcla de combustible y oxidantes
+dentro del espacio de la cámara que se convierte en la cámara de combustión.
+La cámara de combustión para cohetes químicos de propelente solido es
+simplemente un cilindro. Las dimensiones del cilindro son para que el propelente
+pueda quemarse por completo, diferentes propelentes requieren diferentes
+cámaras de combustión. Esto da lugar a un numero llamado L* (generalmente
+conocido como el numero de Laval), que es el rango típico entre 0.6 y 1.5 m.
+
+Donde:
+Vc es el volumen de la cámara
+At es al área de la garganta
+
+2.1.4 Tobera del cohete. Los gases calientes producidos permiten el escape de
+la cámara de combustión a través de una abertura, en un rango de expansión alto
+“tobera de Laval”. La tobera acelera el gas convirtiendo la energía térmica en
+energía cinética. El largo del cono de expansión de la tobera da al cohete su forma
+25
+
+característica. La velocidad de exostacion es tan alta como cinco veces la
+velocidad del sonido a nivel del mar. El empuje proviene de las presiones
+desbalanceadas generadas por el cambio de solido a gaseoso del propelente
+durante la reacción y el aumento de la temperatura que incrementa la presión, da
+como resultado un flujo másico que va de la cámara hacia la parte de afuera,
+aumentando la velocidad de los gases que pasan a través de la tobera.
+
+2.1.5 Comportamiento del Propelente en la combustión. Para que un
+propelente sea eficiente, es importante crear la máxima presión por una cantidad
+específica de propelente en la cámara y en la tobera. Esto puede ser logrado por
+medio del calentamiento del propelente tanto como sea posible, usando baja
+densidad específica del gas o utilizando propelentes que se descomponen en
+moléculas simples con pocos grados de libertad para maximizar la velocidad.
+La velocidad es afectada por todas los factores dentro de la cámara de
+combustión, así mismo, la velocidad de exostación es una excelente medida de la
+eficiencia del propelente del motor.
+Por la influencia de la conservación de la masa y de la energía a lo largo del
+ducto, el flujo de gases en la garganta de la tobera es igual a Mach 1. Debido a
+que la velocidad del sonido en los gases aumenta con la raíz cuadrada de la
+temperatura, el uso de los gases calientes mejora el rendimiento.
+La expansión en la tobera del cohete después de multiplicar la velocidad entre 1.5
+y 2 veces, produce una exostación hipersónica de jet. El incremento de la
+velocidad se determina por el área del radio de expansión, es el radio de área
+entre la garganta y la salida. Radios grandes son los más comunes pero pueden
+tomar más calor de los gases de combustión, lo que produce más velocidad de
+exostación.
+La eficiencia de la tobera se ve afectada por los cambios de la atmosfera por que
+la presión cambia con la altitud, pero debido a la velocidad supersónica la presión
+puede ser mayor o menor que la de ambiente y el equilibrio nunca se consigue.
+Para un rendimiento óptimo la presión a la salida de la tobera debe ser la misma
+que la presión del ambiente. Esto se conoce teóricamente como expansión
+optima. (ver grafica 1. tipos de tobera)
+Para mantener la geometría ideal de la tobera se necesitaría aumentar el diámetro
+de la tobera a medida que sube, dándole a la presión una tobera más larga para
+que actué. Estos incrementos son difíciles de conseguir. Normalmente se utilizan
+toberas de geometría no variable y se tiene en cuenta la reducción en el
+rendimiento. Para mejorar en esto se han propuesto varios diseños artesanales
+teniendo como adaptarse a la cambiante presión de aire en el ambiente y
+26
+
+permitiendo que el gas se expanda lo más posible dando empuje extra a mas
+altura.
+Gráfica 1. Tipos de Tobera
+
+Fuente: http://en.wikipedia.org/wiki/Rocket_engine
+
+Para el rendimiento en todo el motor cohete, las tecnologías combinan altos
+empujes, altas velocidades de salida y altos radios empuje/peso (T/W)>100
+simultáneamente y también pueden operar fuera de la atmosfera.
+Los cohetes pueden ser optimizados a un rendimiento extremo a lo largo de un eje
+a expensas de los otros.
+
+2.1.6 Impulso específico. La medida más importante en cuanto a eficiencia en
+los cohetes es el impulso por unidad de masa de propelente o impulso específico
+(ISP), es medido en velocidad o en tiempo. Un motor cohete que logra un mayor
+ISP es más deseado.
+
+2.1.7 Empuje neto. La siguiente es una ecuación aproximada para calcular el
+empuje neto de un motor cohete
+
+27
+
+Donde
+Flujo másico
+Velocidad de exostacion
+= velocidad actual en la salida de la tobera
+= área de la garganta de la tobera de salida
+Presión estática en la tobera de salida
+Presión atmosférica
+
+A diferencia de un motor jet el motor cohete no tiene toma de aire entonces el
+empuje neto es igual al empuje bruto.
+ISP vacio. Por las ondas de choque generadas en la garganta y por la exostacion
+supersónica previenen que la presión externa entra al cohete viajando hacia
+arriba, como resultado la presión a la salida es idealmente y exactamente
+proporcional al flujo de propelente, manteniendo constante un radio de mezcla y
+una eficiencia en la combustión, es usual reescribir la ecuación como:
+
+Donde
+Velocidad del sonido constante en la garganta
+Coeficiente de empuje constante en la tobera
+Y por consiguiente:
+
+2.1.8 Regulación. Los cohetes pueden ser regulados controlando el flujo másico.
+Pueden ser controlados bajando la presión de salida a un tercio de la presión
+ambiental y arriba del límite mecánico determinado por la construcción del cohete.
+Las mayores limitantes son la estabilidad de la combustión y en la salida no estar
+muy lejos de la presión ambiente para que no se genere separación del flujo.
+
+Gráfica 2. Eficiencia Propulsiva
+28
+
+Fuente: Ibid.
+
+La eficiencia propulsiva está en función de la velocidad del vehículo (v) dividida
+por la velocidad de exostación (c).
+Las toberas del cohete son eficientes, motores de calor para generar un chorro de
+alta velocidad, como consecuencia de alta temperatura de combustión y alto radio
+de compresión de acuerdo con el ciclo carnot. En un motor cohete la eficiencia
+energética es muy buena.
+Gráfica 3. Ciclo Carnot
+
+Fuente: Ibid.
+
+29
+
+2.1.9 Ciclo carnot.
+2.1.9.1
+Refrigeración. En la combustión la temperatura de la masa de
+combustión puede llegar a 3500K lo que es más alto que el punto de fusión de la
+tobera y la cámara de combustión, es importante hacer estas partes en materiales
+que prevengan la fusión o vaporización para el punto de falla. Tecnología en
+materiales pueden colocar un límite alto en temperatura de exostacion.
+Cohetes pueden usar materiales de construcción como aleaciones de aluminio,
+hiero, níquel, o cobre y emplear sistemas de refrigeración para prevenir que el
+material se caliente mucho.
+Técnicas como el film cooling o curtain cooling son muy utilizadas en estos casos
+para dar un tiempo de vida más largo. Estas técnicas aseguran que la capa limite
+térmica gaseosa sea mantenida debajo de donde causaría que el material falle.
+En cohetes donde los flujos de calor que pueden pasar a través de la pared es de
+lo mas complejo de la ingeniería. Los flujos mas grandes están en la garganta de
+la tobera casi el doble de lo que hay en la cámara de combustión.
+Los métodos de refrigeración incluyen:
+•
+•
+•
+•
+•
+•
+•
+
+No refrigerados
+Paredes abrasivas
+Refrigeración radioactiva
+Refrigeración por amortiguación
+Refrigeración regenerativa
+Cortina de refrigeración
+Película de refrigeración
+
+En todos los casos anteriores la refrigeración se hace por una capa delgada de
+refrigerante por las paredes para que no sean destruidas.
+Desprendimiento de la capa limite puede ser causado en fallas de refrigeración o
+inestabilidades de combustión.
+2.1.9.2
+Problemas mecánicos. Las cámaras de combustión de los cohetes
+siempre están trabajando a presiones altas, entre más alta mejor el rendimiento.
+Esto hace que en los bordes exteriores de la cámara estén sometidos a grandes
+esfuerzos. Peor aún debido a las altas temperaturas creadas por los motores
+cohete los materiales usados tienden a tener poca resistencia a los esfuerzos de
+tensión.
+
+30
+
+2.1.9.3
+Problemas acústicos. Además de la extrema vibración y el
+ambiente acústico dentro del motor cohete comúnmente resulta en picos de
+esfuerzos, especialmente en presencia de tubos orgánicos resonancias y
+turbulencias de gas.
+2.1.10 Combustión. Tres diferentes tipos de inestabilidades de combustión
+ocurren.
+• Chugging: es una oscilación a bajas frecuencias en la presión de la cámara
+usualmente causada por la interacción de la aceleración con la presión de
+la cámara.
+• Zumbidos: puede ser causada por presión insuficiente de caída a través de
+los inyectores.
+• Screeching: es la que más daños causa y la más difícil de controlar. Es
+debido a los sonidos dentro de la cámara de combustión que a menudo
+acompañan a los procesos químicos de combustión que son los
+controladores primarios de la liberación de energía y producen una
+resonancia inestable que produce fallas catastróficas. Estos efectos son
+difíciles de predecir durante el diseño y que son corregidos solamente con
+pruebas.
+2.1.11 Ruido de exostación. Para todos pero para los más pequeños, el exosto
+del cohete es comparado con maquinas más sonoras mientras la exostación
+hipersónica se mezcla con el aire, se forman ondas de choque. La intensidad del
+sonido de estas ondas de choque depende del tamaño del cohete.
+2.1.12 Pruebas. Los motores cohete usualmente tienen pruebas estáticas como
+facilidad antes de ser puestos en producción. Para motores a ser usados en
+mucha altitud, también se usa una tobera corta y el cohete debe ser probado en
+una cámara de vacio grande.
+2.1.13 Seguridad. Los cohetes tienen mala reputación de poco confiables y
+peligrosos, especialmente fallas catastróficas. Contrario a su reputación los
+cohetes pueden ser diseñados cuidadosamente haciéndolos confiables. Una de
+las aplicaciones de los cohetes es la colocación en órbita, cuando se busca eso,
+se requiere que el peso sea mínimo y es muy difícil conseguir alta confiabilidad y
+bajo peso al mismo tiempo.
+2.1.14 Química. Los propelentes del cohete requieren una alta energía
+específica, porque idealmente toda la reacción de energía aparece como energía
+cinética en los gases de exostacion, y la velocidad de exostacion es el parámetro
+más importante del rendimiento del motor.
+A parte de las perdidas inevitables y las imperfecciones en el motor, después de
+la reacción especifica de energía, el limite teórico principal reduciendo la velocidad
+
+31
+
+de exostacion obtenida es que de acuerdo con las leyes de la termodinámica una
+fracción de la energía química puede irse dentro de la rotación de las moléculas
+de exostacion donde es imposible producir empuje.
+La reacción específica de energía por unidad de masa de los reactantes es clave,
+bajo peso molecular en los productos de las reacciones es importante en la
+práctica para determinar la velocidad de exostacion.
+
+2.1.15 Ignición. Con cohetes líquidos e híbridos, la ignición inmediata en la
+entrada de la cámara de combustión es esencial.
+La ignición se puede llevar a cabo por muchos medios, una carga pirotécnica, los
+propelentes pueden hacer ignición al contacto con el otro, un plasma torch puede
+ser usado, o bujías eléctricas pueden ser usadas.
+Los propelentes sólidos hacen ignición usualmente con un componente
+pirotécnico. Una vez en ignición, las cámaras de los cohetes se mantienen
+encendidas, cuando los cohetes son refrigerados los cohetes no se pueden volver
+a encender si no es con un mantenimiento menor.
+•
+•
+•
+•
+•
+•
+•
+
+Tipos de motores cohete
+Impulsado físicamente
+Impulsado químicamente
+Impulsado eléctricamente
+Impulsado solarmente
+Impulsado por rayo
+Impulsado nuclearmente
+
+Enfocados en los cohetes impulsados químicamente tenemos:
+•
+
+•
+
+Cohete solido: Descripción: ignicionable, se sostiene solo, mezcla de
+combustible sólido/oxidante con hueco central y tobera. Ventajas, sencillo,
+no tiene partes móviles, razonablemente buena fracción de masa,
+razonable ISP, se puede diseñar el comportamiento del empuje. Una vez
+encendido, extinguirlo es muy difícil, no puede ser regulado en tiempo real,
+la mescla toca hacerla a mano, menor rendimiento que cohetes líquidos, si
+la barra propelente se rompe puede resultar en desastre, volver a colocar
+combustible es más difícil que rellenar tanques.
+Cohete hibrido: Descripción: oxidante/combustible separados normalmente
+el oxidante es liquido y combustible sólido con hueco. Ventajas, sencillo,
+combustible sólido es esencialmente inerte sin el oxidante, seguro,
+regulable y fácil de apagar. Desventajas, algunos oxidantes son
+monopropelentes, falla mecánica del propelente puede bloquear la tobera,
+
+32
+
+el hueco central ensancha mas el área de quemado y afecta el radio de
+mezcla.
+
+2.1.16 Cohete monopropelente. Descripción, Propelente como hidracina,
+peróxido de hidrogeno u oxido nitroso, fluye sobre un catalizador y se
+descompone exotérmicamente y gases calientes son emitidos a través de la
+tobera. Ventajas, simple en concepto, regulable, bajas temperaturas en la cámara
+de combustión. Desventajas, catalizadores pueden ser fácilmente contaminados,
+monopropelentes pueden detonar si son contaminados o provocados y el ISP muy
+bajo.
+
+2.1.17 Cohete bipropelente. Descripción: dos propelentes son introducidos
+dentro de la cámara de combustión por medio de inyectores y son quemados.
+Ventajas, arriba del 99% de eficiencia en combustión con un excelente control de
+mezcla, regulable, pueden ser usados con turbo bombas las cuales permiten peso
+ligero de los tanques, puede ser seguro con extremo cuidado. Desventajas,
+bombas necesarias para altos rendimientos son muy difíciles de diseñar, flujo
+térmico muy grande a través de la pared de la cámara de combustión, modos de
+falla incluyen mas explosiones, muchos tubos necesarios.
+2.1.18 Cohete de propulsión de modo dual. Descripción: el cohete despega
+como bipropelente y después cambia a monopropelente. Ventajas, Simplicidad y
+fácil de controlar. Desventajas, Rendimiento más bajo que los bipropelentes.
+2.1.19 Cohete tripropelente. Descripción, tres propelentes diferentes son
+colocados en la cámara de combustión en diferentes radios de mezcla o múltiples
+motores son usados con radio de mezcla de propelentes arreglado y regulado o
+apagado. Ventajas, reduce el peso de despegue, buena combinación
+empuje/peso con un ISP promedio. Desventajas, similar a los problemas del
+bipropelente pero con mas tuberías.
+
+2.1.20 Cohete de aire aumentado. Descripción, Esencialmente un ramjet donde
+a la entrada aire es comprimido y quemado con el exosto de un cohete. Ventajas,
+de mach 0 a mach 4.5, buena eficiencia en de mach 2 a 4. Desventajas, eficiencia
+similar a los cohetes a bajas velocidades, confiabilidad no desarrollada y tipo no
+explorado, dificultades de refrigeración, muy ruidosa.
+
+2.1.21 Turbo cohete. Descripción, un ciclo combinado turbo jet/cohete donde un
+oxidante adicional es agregado al campo de aire para incrementar la altitud.
+Ventajas, muy cercano a diseños existentes, opera en altitudes muy altas, ancho
+rango de altitudes y velocidad del viento. Desventajas, velocidad del viento
+33
+
+limitada a la atmosfera, carga de oxidante puede ser peligrosa, mucho más
+pesado que un cohete simple.
+
+3
+
+3.1
+
+METODOLOGÍA DE LA INVESTIGACIÓN
+
+ENFOQUE DE LA INVESTIGACIÓN
+
+Empírico-analítico: cuyo interés es el técnico, orientado a la interpretación y
+transformación del mundo material; proporciona una estructura particular a la
+metodología de investigación en tanto que orienta el trabajo a la contrastación
+permanente de las aseveraciones teóricas con la verificación experimental, de
+manera que los cálculos generados a través de modelos matemáticos y
+simulaciones computacionales se deben retroalimentar con la experimentación, en
+la búsqueda de información cada vez más confiable y práctica para la solución del
+problema. Esta simbiótica debe llevar consigo una relación teórica al menos
+presumible entre variables, de manera que se puedan establecer relaciones
+funcionales entre ellas; igualmente y de acuerdo con los medios experimentales,
+también se deben establecer los parámetros experimentales convenientes.
+
+3.2
+
+LÍNEA DE INVESTIGACIÓN
+
+Tecnologías Actuales y Sociedad / Instrumentación y Control de Procesos / Diseño
+y Construcción de Motores
+
+3.3
+
+TÉCNICAS DE RECOLECCIÓN DE INFORMACIÓN
+
+La técnica utilizada para este proyecto se basa en un banco de pruebas
+compuesto por una báscula, caja de seguridad, recipiente con arena para el motor
+cohete. La forma en que se implementa este banco de pruebas es el recipiente
+con arena sobre la báscula para medir en Kilogramos su marcación protegido por
+la caja de seguridad.
+
+3.4
+
+HIPÓTESIS
+
+Por medio de la aplicación de modelos matemáticos en cohetería, es posible
+obtener las dimensiones requeridas para la Cámara de Combustión y la tobera;
+así mismo, utilizando conceptos de expertos fue posible llegar a una mezcla de
+propelente óptima para ejercer un empuje total de 700 N.
+
+34
+
+3.5
+
+VARIABLES
+
+3.5.1 Variables independientes.
+• Variables independientes no controlables.
+o Densidad del aire
+o Dirección del viento
+• Variables independientes controlables.
+o Diámetro del motor cohete
+o Longitud del motor cohete
+o Peso del motor cohete
+3.5.2 Variables dependientes.
+• Velocidad de quemado
+• Velocidad máxima de salida de gases
+
+35
+
+4
+
+4.1
+
+DESARROLLO INGENIERIL “MOTOR COHETE DF-2K9”
+
+PROCESO DE COMBUSTIÓN
+
+4.1.1 El grano Propelente
+
+Figura 2 Barra Propelente3
+
+Fuente: http://www.nakka-rocketry.net/th_grain.html
+
+Esta es la forma en la que se va a utilizar la barra de propelente.
+Como hay una gran variedad de formas para el diseño de la barra como son,
+circular, de estrella, cruz, etc. Como el diseño es amateur, la barra más utilizada
+es la de forma circular la cual se muestra a continuación:
+Figura 3 Barra Propelente Tubular
+
+Fuente: http://www.nakka-rocketry.net/th_grain.html
+
+3
+
+NAKKA, Richard. Solid Rocket Motor Theory -- Propellant Grain. Richard Nakka's Experimental
+Rocketry Web Site. Junio 2009. ON LINE. Available from: http://www.nakkarocketry.net/th_grain.html
+
+36
+
+4.1.2 Combustión del propelente
+Tabla 1. Rocket Motor Chamber pressure
+
+Fuente: http://www.nakka-rocketry.net/design1.html
+
+4.1.3 Desarrollo Químico. La combustión va a ser una reacción exotérmica,
+para esto se necesita un ignitor que va a proveer la energía necesaria. Esta
+combustión está representada por una ecuación química y viene el ejemplo de
+KN-Sucrose (65/35) o conocido como KN/Sacarosa, y está dada así:
+C H O + 6,29 KNO ->
+12
+
+22
+
+11
+
+3
+
+3,80 CO + 5,21 CO + 7,79 H O + 3,07 H + 3,14 N + 3 K CO + 0,27 KOH
+2
+
+2
+
+2
+
+2
+
+2
+
+3
+
+Con los compuestos simbolizados de la siguiente manera:
+
+Tabla 2. Componentes Químicos
+Sacarosa
+Nitrato de potasio
+
+Sólido
+Sólido
+
+C12H22O11
+KNO3
+
+Numero de Moles en el Reactivo:
+12 átomos de Carbono (C)
+22 átomos de Hidrogeno (H)
+3*6,29 = 29,87 átomos de Oxigeno (O)
+6,29 átomos de potasio (K)
+6,29 átomos de Nitrógeno (N)
+
+37
+
+Y en los productos:
+3,67 + 5,19 + 3,14 = 12 átomos de Carbono (C)
+2 * 7,91 + 2 * 3,09 = 22 átomos de Hidrogeno (H)
+3 * 6,29 = 29,87 átomos de Oxigeno (O)
+2 * 3,14 = 6,29 (redondeado) átomos de potasio (K) y Nitrógeno (N)
+
+4.2 DISEÑO DE MOTOR
+4.2.1 Presión de cámara, Pc. Con base en la presión de cámara del motor
+cohete de la Universidad do Norte do Paraná, se escogió una Presión de Cámara
+de 17.56 Kgf/cm2, equivalente a 17 Atmosferas (atm).
+Se decidió usar una barra completa tubular de KNO3, para ser utilizada como
+geometría del propelente, debido a la facilidad en la preparación del mismo.
+De acuerdo con el análisis realizado en Guipep tomamos el impulso específico de
+116 segundos (pag 79).
+La masa del propelente (mp), puede ser calculada de la siguiente forma:
+mp = It/(Is .g)
+
+(1)
+
+Donde:
+It = Impulso Total (N.s)
+Is = Impulso Especifico (s)
+g = Constante gravitacional (m/s2)
+Ya que se tiene como objetivo alcanzar un It igual a 700N*s, se van a realizar los
+cálculos con 1000N*s para un mejor desempeño del motor. Conociendo Is, de la
+ecuación (1) obtenemos una masa total de 880 g.
+mp = 0.880 Kg
+Calculando la Densidad ideal del KNO3+Azucar tenemos lo siguiente:
+
+(2)
+Se obtiene una densidad ideal de 1.888 g/cm3, aunque como es ideal se tiene que
+usar la densidad real usada en varios diseños que es de 1.73 g/cm3.
+Teniendo estos datos podemos obtener el Volumen del Propelente (υp).
+υp = mp/
+(3)
+υp =508.6705 cm3
+
+38
+
+4.2.2 Volumen del Cilindro.
+υc = (ro)2*h
+(4)
+Con lo cual, teniendo la ecuación (4) se despeja h, para saber que altura que se
+obtendrá en la barra del propelente. Teniendo un Burning time, o tiempo de
+quemado estimado de Bt=2.7s se tendrá la altura real de la barra del propelente,
+es decir:
+hp = 27.00 cm
+Teniendo esto se obtiene
+External diameter
+6 cm
+Internal diameter
+2 cm
+Lenght
+27.00 cm
+Burning area
+681.7256 cm2
+
+Gráfica 4. Diseño Preliminar Barra Propelente
+
+4.2.3 Cálculos de la barra de propelente.
+Lc = 2 cm
+Lo = 27.00 cm
+Di = 2 cm
+Do = 6 cm
+Área superficie Exterior =
+Superficie Principal =
+Área de la superficie de cada final =
+
+Ao = п*Do*Lo
+Ao = 508.9380 cm2
+Ac = п*Di(Lo+Lc)
+Ac = 182.2123 cm2
+Ae = п(ro2-ri2)
+Ae = 25.1327 cm2
+
+Se va a calcular diferentes factores para encontrar el Área de garganta, necesario
+para los cálculos de tobera.
+
+39
+
+4.2.3.1
+
+Razón de generación de Gas. Esta dado por la siguiente fórmula:
+Mg =Ab*ρp*r
+(5)
+
+Donde:
+Ab= Área de Quemado
+ρp= Densidad del Grano (1.73 g/cm3)
+r= Velocidad de quemado
+Ab = π{L(Do+Di)+0.5(Do-Di2)} (6)
+Ab = 681.7256 cm2
+4.2.3.2
+
+Razón de Quemado Linear Inicial.
+
+r=r0+a*Pcn
+
+ro= (usualmente tomado cero)
+
+(7)
+
+Gráfica 5. Burn rate vs Chamber Pressure
+
+Fuente: http://www.nakka-rocketry.net/th_grain.html
+
+Con esta Grafica se va a tomar valores asumidos para continuar con los cálculos.
+Debido a la presión asumida, los valores de a y n van a ser los siguientes:
+Pc= 250 psi
+a= 0.06
+n= 0.45
+Pc=250 psi=17.57Kgf/cm2=17atms
+r = 0.2614 cm/s
+Reemplazando en la ecuación (5) se obtiene:
+Mg = 308.2913g/s
+
+40
+
+4.2.3.3
+
+Razón de Erosión de Quemado
+ε =r/r0
+(8)
+
+(r)
+
+r0= Razón de Quemado linear
+r= Razón de Erosión de Quemado
+ε= Test Dinámico (ε=1.4)
+r = 0.3659cm/s
+4.2.3.4
+Flujo Másico del Gas (mg). Flujo Másico del Gas que pasa a través
+de la boquilla.
+(9)
+mg = X*r*ρ*Ab
+X=Fracción de Masa de los gases en el exosto
+X= 0.7894
+r= 0.3659 cm/s
+ρ= 1.73 g/cm3
+Ab= 681.7256 cm2
+Se tiene como resultado:
+mg = 340.655 g/s
+mg = 0.340655 Kg/s
+4.2.3.5
+
+Tiempo de quemado (Tb).
+Tb=mp/mg
+Tb=2.58s
+
+4.2.4 Área de la garganta
+El área de la garganta va a ser calculada de la siguiente manera:
+At = mg .X (γ. Tc R/M)1/2
+Γ . Pc
+
+(10)
+
+Donde:
+γ = Relación de calores específicos
+Tc = Temperatura de Combustión
+R = Constante de Gas Universal
+M = Peso molecular de productos de gases
+Γ = γ(2/γ+1)(γ+1) /2(γ-1)
+
+41
+
+Tabla 3. Propiedades Termodinámicas de gases de exosto para diferentes
+presiones.
+Press
+Tc (k)
+Γ
+X
+M
+Г
+Cf
+(atm)
+5
+1550
+1.1791
+0.8402
+27.83
+0.7004
+1.089
+10
+1615
+1.1712
+0.8145
+27.62
+0.6998
+1.270
+17
+1661.5
+1.16725
+0.7894
+27.47
+0.697425 1.3795
+20
+1677
+1.1639
+0.7722
+27.42
+0.6924
+1.416
+Resultados Área de Garganta. Evaluando las propiedades de los gases a 17 atm,
+o 17.56 Kgf/cm2, se encontró un área de garganta de:
+At = 6.46 cm2
+Lo cual da un Diámetro de Garganta de:
+Dg = 2.8679 cm
+
+Dg = 28.6794 mm
+
+4.2.5 Técnica experimental de la tobera.
+Gráfica 6. Tobera Experimental
+
+Con la grafica anterior se puede ver la técnica experimental donde:
+α = 30º
+β = 12º @ 20º, aunque para este caso es igual a:
+β = 12º
+Velocidad de Exostacion
+
+42
+
+(11)
+R = 8.314472 J/k-mol
+K= 1.043
+Pe = 1.033227 Kgf/cm2 (presión ambiente, expansión óptima)
+Po = 17.564867 Kgf/cm2
+M = 41.99 Kg/k-mol
+To = 1661.5 K
+
+Velocidad característica
+
+C*
+
+R’ = 8314 J/k-mol
+M = 41.99 Kg/k-mol
+To = 1661.5 K
+K= 1.043
+
+4.2.6 Diseño de cámara de combustión.
+Gráfica 7. Diseño Preliminar Cámara de Combustión
+
+Donde:
+Do = 6.5 cm
+L2 = 30 cm
+L1 = 37 cm
+
+43
+
+Gráfica 8. Diseño Preliminar Tobera
+
+Gráfica 9. Técnica Experimental - Tobera
+
+Donde:
+A = 6 cm
+E = 0.5 cm
+
+B = 2.8 cm
+F = 2.75 cm
+
+C = 4.5 cm
+G = 4.25
+
+Coeficiente de Empuje (no ideal sino, Real, calculado)
+
+Donde:
+K = 1.043
+Pe = 1.033227 Kgf/cm2
+Po = 17.564867 Kgf/cm2
+
+44
+
+D = 8 cm
+
+4.2.7 Empuje Neto.
+Fn=710,469 N
+4.2.8 Empuje Promedio.
+ 
+
+ 710.469
+
+ 275.37 
+
+2.58
+
+4.2.9 Calculo de Altura. Se realizó una simulación con los datos obtenidos para
+encontrar la altura a la cual llegará el motor cohete donde se aplicaron las
+siguientes ecuaciones para el cálculo de la trayectoria:
+      ln 
+
+
+0.5!"# $ %&'  ( )*+,(-.  . /
+
+
+Al integrar esta ecuación obtenemos la ecuación de altitud, y
+0  0   -.  . /)*+,(    -.  . /)*+,( 11 
+
+
+
+
+
+
+0.5!"# $ %&'-.  . /)*+,( 11 
+
+Los resultados fueron los siguientes:
+Grafica 10. Altura Vs Tiempo
+
+45
+
+ln
+2
+1
+
+ln
+3
+2  $( -.  . /$ )*+ $ ,(
+1
+
+En la grafica se puede observar la altura alcanzada por el cohete de
+aproximadamente 650M en 8 segundos de vuelo cumpliendo de esta manera con
+el objetivo del proyecto.
+
+46
+
+Grafica 11. Velocidad Vs Tiempo
+
+En la grafica se puede observar la Velocidad lograda por el cohete de 90m/s en 3
+segundos de vuelo. 4
+
+4.2.10 Análisis Estructural con ANSYS.
+Se calculo el grosor de la pared del cohete utilizando acero 1018 y utilizando un
+factor de seguridad de 2. Utilizando la siguiente ecuación:
+
+(14)
+
+Donde:
+p es presión, r es radio, t es grosor, σ es esfuerzo de fluencia.
+En la cual se coloca la presión alrededor de la parte interior del motor cohete y el
+esfuerzo en el radio interior del motor.
+
+4
+
+Bueno, Calderón, Otálora. Proyecto Análisis aerodinámico y estructural para el diseño y
+construcción de un cohete de 700 N de empuje, Bogotá, Universidad San Buenaventura. Bogotá,
+Agosto de 2009.
+
+47
+
+(15)
+Factor de seguridad:
+(16)
+En la práctica se coloco una pared de 2.25 mm por facilidades de construcción, sin
+embargo se calculo de nuevo utilizando el programa para calculo de estructuras
+ANSYS, se realizo un análisis en 2 dimensiones, el análisis se realizo colocando
+una presión de 1000psi dentro del cilindro es decir contra la pared la cual debe
+resistir la presión, y como resultado obtuvimos lo siguiente:
+Gráfica 12. Distribución de cargas de presión dentro de la cámara de combustión
+
+Los resultados están en pascales y como resultado nos da que tenemos el
+siguiente factor de seguridad:
+
+48
+
+(17)
+
+4.2.11 Análisis de flujo de gases con FLUENT.
+
+A continuación se muestra un análisis del programa de análisis y simulación
+FLUENT, que muestra el comportamiento del flujo dentro del cohete.
+Para realizar el análisis, se grafico el cohete con el programa de dibujo de
+FLUENT llamado GAMBIT, se grafico la tobera como es mostrada en los planos y
+después se grafico el cilindro arriba de la tobera, después se grafico un cubo en la
+parte de inferior para ver resultados del análisis en la parte inferior externa del
+cohete, se aplico una presión de 1000psi y una temperatura de 1461K en la parte
+de adentro del cilindro.
+
+A continuación se muestra la grafica distribución vectores velocidad.
+Gráfica 13. Distribución Vectores Velocidad
+
+Esta es la grafica de distribución de los vectores de velocidad dentro y fuera del
+cohete, donde se puede observar la velocidad máxima y mínima de salida de
+
+49
+
+gases, del mismo modo, se observa la velocidad en la tobera del motor cohete, la
+cual es muy similar a la calculada en la velocidad de exostación de los gases; lo
+que indica que los cálculos realizados anteriormente están de acuerdo con el
+análisis del software.
+
+50
+
+4.2.12
+
+Planos motor cohete “DF-2K9”
+
+4.2.12.1
+
+Plano Tapa – Sello Motor Cohete.
+
+Plano 1 Tapa-Sello del motor cohete.
+
+51
+
+4.2.12.2
+
+Plano Tobera de Salida.
+
+Plano 2 Plano Tobera de salida Angulo 30º
+
+52
+
+4.2.12.3
+
+Plano Tobera de Salida.
+
+Plano 3 Plano Tobera de salida Angulo 45º
+
+53
+
+4.2.12.4
+
+Plano Cámara de Combustión.
+
+Plano 4 Cámara de Combustión
+
+54
+
+4.3
+
+CONSTRUCCIÓN MOTOR COHETE “DF-2K9”.
+
+Fuente: Alejandro Rozo
+
+4.3.1 MATERIALES
+4.3.1.1
+
+Acero 1018. AISI, SAE. ASTM NMX,1018. UNS, G10180.
+
+Análisis químico según Norma Nacional NMX B-301 (% en peso):
+Tabla 4. Análisis químico – Norma Nacional NMX B-301
+C
+0.15-0.20
+
+Si
+
+Mn
+
+P máx..
+
+S máx..
+
+0.15-0.35
+
+0.60-0.90
+
+0.040
+
+0.050
+
+Fuente: http://www.acerospalmexico.com.mx/1018.htm
+
+Tipo: Acero de bajo contenido de carbón
+• Formas, Acabados:
+• Barra redonda,
+• Cuadrada,
+• Hexagonal y solera,
+
+55
+
+•
+•
+•
+
+Laminadas o forjadas en caliente,
+estiradas en frío y peladas o maquinadas.
+Placa laminada caliente.
+
+• Características: Entre los aceros de bajo carbono, el 1018 es el más
+versátil por sus características; análisis controlado, mejores propiedades
+mecánicas que otros aceros del mismo tipo por su alto contenido de
+manganeso, buena soldabilidad, buena maquinabilidad. Cuando se requiere
+una superficie muy dura pero un centro tenaz, este acero cementado
+cumple perfectamente. Estirado en frío mejora sus valores de resistencia
+mecánica y su maquinabilidad, haciéndose muy popular para un sin número
+de aplicaciones.
+• Aplicaciones: Se utiliza en la fabricación de partes para maquinaria;
+automotriz, línea blanca, equipo de proceso, etc.; que no estén sujetas a
+grandes esfuerzos. Por su ductilidad es ideal para procesos de
+transformación en frío como doblar, estampar, recalcar, etc. Sus usos
+típicos son flechas, tornillos, pernos, sujetadores, etc., ya cementado en
+engranes, piñones, etc.
+• Tratamientos térmicos recomendados (valores en º C):
+Tabla 5. Tratamientos Térmicos Recomendados Acero 1018
+PUNTOS
+CRÍTICOS
+FORJADO NORMALIZADO
+TEMPLADOREVENIDO
+APROX.
+ABLANDAMIENTO REGENERACIÓN
+Ac1 Ac3
+1100650-700
+850-890
+Cementar
+870-900
+150-250 724 840
+925
+1250
+enfriar al aire
+enfriar en horno
+Fuente: http://www.acerospalmexico.com.mx/1018.htm
+RECOCIDO
+
+• Propiedades mecánicas mínimas estimadas según SAE J1397:
+Tabla 6. Propiedades mecánicas Mínimas
+TIPO DE
+PROCESO
+Y ACABADO
+
+RESISTENCIA A LA
+LÍMITE DE FLUENCIA
+TRACCIÓN
+
+MPa
+
+CALIENTE Y
+400
+MAQUINADO
+
+(kgf/m
+Ksi
+m2)
+
+MPa
+
+(kgf/m
+Ksi
+m2)
+
+RELACIÓN
+DE
+ALARGA- REDUCCIÓN
+DUREZA MAQUINAMIENTO
+DE ÁREA
+BRINELL BILIDAD
+EN 2" %
+%
+1212 EF =
+100%
+
+41
+
+58
+
+220
+
+22
+
+32
+
+25
+
+50
+
+116
+
+ESTIRADO
+EN
+440 45
+FRIÓ
+
+64
+
+370
+
+38
+
+54
+
+15
+
+40
+
+126
+
+70
+
+Fuente: http://www.acerospalmexico.com.mx/1018.htm
+
+56
+
+• Notas:
+•
+Las propiedades arriba listadas, corresponden a barras de 20mm a
+30mm de sección, probadas conforme a las prácticas estándar con
+probeta de 50 mm según norma nacional NMX B - 172.
+•
+En barras más delgadas de 20mm, deben esperarse valores ligeramente
+mayores en los datos de resistencia.
+•
+En barras con diámetros mayores de 30mm, existe un efecto de masa
+que tiene una influencia directa sobre las propiedades mecánicas
+resultando en una disminución ligera de las mismas. 5
+
+4.3.1.2
+
+Acero Inoxidable 304.
+ACERO
+
+INOXIDABLE 304
+
+AISI, ASTM, NMX.
+UNS
+
+304 / 304L
+S30400 / S30403
+
+Análisis químico según Norma Nacional NMX B-83 (% en peso):
+Tabla 7. Análisis químico Norma nacional NMX B-83
+C
+Si máx.
+Mn máx.
+P máx.
+304
+0.08
+1.00
+2.00
+0.045
+304L
+0.03
+1.00
+2.00
+0.045
+Fuente: http://www.acerospalmexico.com.mx/304.htm
+
+S máx.
+0.030
+0.030
+
+Cr
+Ni
+18.00-20.00 8.00-10.50
+18.00-20.00 8.00-12.00
+
+Tipo: Austenítico tipo 18-8.
+• Formas, Acabados: Barra redonda, cuadrada, solera y hexagonal;
+laminadas en caliente, estiradas en frío o pulidas y rectificadas; alambre,
+lámina y placa, cinta, tubo con y sin costura y barra perforada.
+• Características: Excelente resistencia a la corrosión a una amplia variedad
+de medios corrosivos, incluyendo productos de petróleo caliente y gases de
+combustión. Resistente a la corrosión en servicio intermitente hasta 871ºC
+(1600º F) y hasta 926º C (1700º F) en servicio continúo. Excelente
+soldabilidad, utilizar electrodos tipo 308S. Poco maquinable: 45% del acero
+1212, se recomiendan velocidades de 40 a 85 pies de superficie / min.
+• Aplicaciones:Se utiliza en la industria química, alimenticia, textil y
+petrolera, para piezas varias y partes que requieran ser soldadas; para
+fabricar flechas, tuercas, birlos, tornillos, partes para válvulas, cuchillería,
+artículos domésticos, etc.
+
+5
+
+Información Tomada de: http://www.acerospalmexico.com.mx/1018.htm
+
+57
+
+• Tratamientos Térmicos recomendados (valores en o C):
+Tabla 8. Tratamientos térmicos Recomendados Acero Inoxidable 304
+RECOCIDO
+FORJADO
+
+TEMPERATURA
+
+MEDIO DE ENF.
+
+DUREZA BRINELL
+BARRAS
+RECOCIDAS (1)
+
+TEMPLE
+
+160
+
+Endurecible
+solo por
+trabajo
+mecánico
+
+1150-1200° C No
+enfriar rápidamente
+forjar abajo de 900°
+1010-1120
+hasta temperatura
+C enfriar
+ambiente
+rápidamente
+Fuente: http://www.acerospalmexico.com.mx/304.htm
+
+Nota: (1) Dureza exigida por la norma NMX B - 83 (tabla 8). 6
+• Propiedades mecánicas típicas según NMX B - 83, de barras en estado
+recocido:
+Tabla 9. Propiedades mecánicas NMX B -83
+RESISTENCIA A LA
+LÍMITE DE
+RELACIÓN DE
+TRACCIÓN
+FLUENCIA
+ALARGAMIENTO REDUCCIÓN
+MAQUINABILIDAD
+DE ÁREA %
+[ Ksi
+[ Ksi EN 2" %
+1212 EF = 100%
+MPa (kgf/mm2)
+MPa (kgf/mm2)
+]
+]
+304 510
+( 52 ) [ 74 ] 206
+( 21 ) [ 30 ]
+40
+50
+45
+304L 481
+( 49 ) [ 70 ] 176
+( 18 ) [ 26 ]
+Fuente: http://www.acerospalmexico.com.mx/304.htm
+
+4.3.1.3
+
+Acero 1018
+
+Para la construcción de las piezas del Motor Cohete, se decidió utilizar el material
+1018, debido a su costo en el mercado, ya que se consigue aproximadamente a la
+mitad de precio que el Acero inoxidable, dando características similares y
+permitiendo encontrar las características necesarias para la construcción del Motor
+Cohete, y así dar una facilidad para hacer un prototipos para realizar las diferentes
+pruebas logrando los mejores resultados.
+Se compraron 2 piezas en el sector de Paloquemao, que fueron:
+• Tubo de 32 Cms de Largo, de 6.3 de Diámetro exterior y 5.0 De Diámetro
+Interior. (Con Un precio Aproximado de 50 Mil Pesos).
+
+6
+
+Información Tomada de: http://www.acerospalmexico.com.mx/304.htm
+
+58
+
+Fotografía 1. Barra Acero 1018
+
+Con esta pieza lo que se busca es hacer la cámara de combustión del Motor
+Cohete, dejándola finalmente después de maquinarla de 32 Cms de Largo, 6.3
+Cms de Diámetro Exterior y 5.9 de Diámetro Interior.
+• Pieza Solida de Acero 1018, de 12 cms de largo con un Diámetro de 7 cms.
+(Con Un Precio Aproximado de 40 Mil Pesos).
+Fotografía 2. Material base - Tobera
+
+Con Esta pieza lo que se busca es hacer la tobera, y la tapa que va a sellar la
+parte de arriba y nos facilitara la inserción de la barra de propelente.
+
+59
+
+4.3.2 Maquinado
+Fotografía 3. Torno USB en elaboración de cámara de Combustión
+
+Después de tener los materiales necesarios, se procedió de acuerdo al
+cronograma y los planos realizados para maquinar las piezas y dejarlas finalmente
+de la siguiente forma:
+Fotografía 4. (a) Tapa Motor Cohete y (b) Tobera Fase de Torneado
+
+(a)
+
+(b)
+
+Esta era la pieza solida de Acero 1018, de la cual saldrian 2 piezas para el Motor
+Cohete, como lo fue La Tapa para el cierre y acceso a la cámara de combustión,
+Fotografía 4. (a), y la tobera de salida como se ve en la Fotografía 4. (b) aun
+siendo maquinada para darle la forma según planos.
+
+60
+
+Finalmente después de todo el trabajo de Maquinación, la pieza solida quedo así:
+Fotografía 5. (a) Tapa final; (b y c) Tobera Final.
+
+(a)
+
+(b)
+
+(c)
+
+Teniendo la Tapa, Y la tobera ya finalizada y Pulida.
+Después de haber maquinado el tubo para reducirle el Diámetro Interior a la pieza
+en bruto, pasar de 5.0 a 5.9 cms de Diámetro Interior, la pieza quedo de la
+siguiente forma:
+Fotografía 6. Cámara de Combustión Final
+
+Con las demás piezas y en Conjunto quedaron así:
+
+61
+
+Fotografía 7. Elementos Final
+
+Fotografía 8. Elementos Final 2
+
+62
+
+4.3.3 Motor cohete finalizado
+Fotografía 9. Motor Cohete Final
+
+Fotografía 10. Motor Cohete Final 2
+
+63
+
+4.4
+
+PREPARACIÓN DEL COMBUSTIBLE – PROPELENTE
+
+4.4.1 Certificado de análisis del nitrato de potasio.
+CÓDIGO PRODUCTO: 141524
+Potasio Nitrato sin antiapelmazante (RFE, BP, Ph. Eur.) PRS-CODEX
+KNO3
+KNO3
+M.= 101,11
+
+CAS [7757-79-1]
+
+NC 2834 21 00
+
+E -252
+
+EINECS 231-818-8
+
+DATOS FÍSICOS: Pequeños cristales blancos · Solubilidad en agua a 20 °C 320
+g/l · P. F.: 334 °C · Desc. térmica desde 400 °C ·
+APLICACIONES: Reactivo en análisis: USP 30 · BP 2008 · Ph. Eur. 6.0 · Reactivo
+oxidante para la descomposición de muestras orgánicas e inorgánicas por fusión ;
+R. Bock "Aufschlussmethoden der Anorganische & Org. Chemie". Verlag Chemie ,
+Weinheim (1972) · Empleado como diurético en industria Farmacéutica ·
+BIBLIOGRAFÍA: Merck Index 14 , 7733 · Sax PLL 500 · Safety 2 , 2906 B · KühnBirett K 13 · Römpp 8 , 2020 · Fieser 5 , 561 10 , 329 · ACS IX , 516 X , 540 · ISO
+6353/3-1987R - 84 , 58 · Ph. Eur. 5.0 (2005) 6.0 (2008) · USP 30 · BP 2008
+· F.C.C. V, 6 · Directiva 96/77/CE , 26 2008/84/CE ·
+PELIGROSIDAD: RTECS: TT 3700000 · DL50 oral rat 3750 mg/Kg·
+R: 8
+S: 16-41
+NORMAS DE TRANSPORTE: UN: 1486 · ADR: 5.1/III · IMDG: 5.1/III · IATA:
+5.1/III · PAX: 516 · CAO: 518·
+Tabla 10. Especificaciones
+Riqueza (Acidim.) calc. s.p.s.
+
+99,0100,5%
+s/e.
+4,5-8,5
+
+Identidad según Farmacopeas
+pH sol. 5%
+LIMITE MÁXIMO DE IMPUREZAS
+Aspecto de la solución
+s/e.
+Insoluble en H2O
+0,025 %
+Pérdida por desec. a 105°C
+0,5 %
+Disolventes residuales (Ph.Eur/USP) s/e
+Acidez o alcalinidad
+s/e.
+
+64
+
+Amonio (NH4)
+Cloruro (Cl)
+Fosfato (PO4)
+Sulfato (SO4)
+Sustancias reducibles
+Metales pesados (en Pb)
+As
+Ca
+Cu
+Fe
+Mg
+Na
+
+0,005 %
+0,002 %
+0,003 %
+0,01 %
+s/e.
+0,001 %
+0,0002 %
+0,005 %
+0,002 %
+0,001 %
+0,005 %
+0,1 %
+
+Fuente: http://www.panreac.com/new/esp/catalogo/fichastec/141524ES.HTM
+
+4.4.2 Ficha de Seguridad del nitrato de potasio. Ficha de Datos de Seguridad
+Según Reglamento (CE) 1907/2006 141524 Potasio Nitrato sin antiapelmazante
+(RFE, BP, Ph. Eur.) PRS-CODEX
+1. Identificación de la sustancia/preparado y de la sociedad o empresa
+1.1
+Identificación de la sustancia o del preparado
+Denominación:
+Potasio Nitrato
+1.2
+Uso de la sustancia o preparado:
+Para usos de laboratorio, análisis, investigación y química fina.
+1.3
+Identificación de la sociedad o empresa:
+PANREAC QUÍMICA, S.A.U.
+C/Garraf, 2
+Polígono Pla de la Bruguera
+E-08211 Castellar del Vallès
+(Barcelona) España
+Tel. (+34) 937 489 400
+e-mail: product.safety@panreac.com
+Urgencias:
+Número único de teléfono para llamadas de urgencia: 112 (UE)
+Tel.:(+34) 937 489 499
+2. Identificación de los peligros
+Peligro de fuego en contacto con materias combustibles.
+3. Composición/Información de los componentes
+Denominación: Potasio Nitrato
+Fórmula: KNO3 M.=101,11
+CAS [7757-79-1]
+Número CE (EINECS): 231-818-8
+
+65
+
+4. Primeros auxilios
+4.1
+Indicaciones generales:
+En caso de pérdida del conocimiento nunca dar a beber ni provocar el
+vómito.
+4.2
+Inhalación:
+Trasladar a la persona al aire libre.
+4.3
+Contacto con la piel:
+Lavar abundantemente con agua. Quitarse las ropas contaminadas.
+4.4
+Ojos:
+Lavar con agua abundante manteniendo los párpados abiertos. Pedir
+atención médica.
+4.5
+Ingestión:
+Beber agua abundante. Provocar el vómito. Pedir atención médica.
+
+5. Medidas de lucha contra incendio
+5.1
+Medios de extinción adecuados:
+Agua.
+5.2
+Medios de extinción que NO deben utilizarse:
+----Riesgos especiales:
+5.3
+Incombustible. Favorece la formación de incendios. Mantener alejado de
+sustancias combustibles. En caso de incendio pueden formarse vapores
+tóxicos. Precipitar los vapores formados con agua.
+5.4
+Equipos de protección:
+6. Medidas a tomar en caso de vertido accidental
+Precauciones individuales:
+6.1
+No inhalar el polvo.
+6.2
+Precauciones para la protección del medio ambiente:
+6.3
+
+Métodos de recogida/limpieza:
+Recoger en seco y depositar en contenedores de residuos para su
+posterior eliminación de acuerdo con las normativas vigentes. Limpiar los
+restos con agua abundante.
+
+7. Manipulación y almacenamiento
+7.1
+Manipulación:
+Sin indicaciones particulares.
+7.2
+Almacenamiento:
+Recipientes bien cerrados. Ambiente seco. Mantener alejado de sustancias inflamables, fuentes de ignición y calor. Temperatura ambiente.
+8. Controles de exposición/protección personal
+8.1
+Medidas técnicas de protección:
+
+66
+
+8.2
+
+Control límite de exposición:
+
+8.3
+
+Protección respiratoria:
+En caso de formarse polvo, usar equipo respiratorio adecuado.
+Protección de las manos:
+Usar guantes apropiados
+Protección de los ojos:
+Usar gafas apropiadas.
+Medidas de higiene particulares:
+Usar ropa de trabajo adecuada. Quitarse las ropas contaminadas.
+Lavarse manos y cara antes de las pausas y al finalizar el trabajo.
+Controles de la exposición del medio ambiente:
+Cumplir con la legislación local vigente sobre protección del medio
+ambiente.
+
+8.4
+8.5
+8.6
+
+8.7
+
+El proveedor de los medios de protección debe especificar el tipo de
+protección que debe usarse para la manipulación del producto, indicando
+el tipo de material y, cuando proceda, el tiempo de penetración de dicho
+material, en relación con la cantidad y la duración de la exposición.
+9. Propiedades físicas y químicas
+Aspecto:
+Sólido blanco.
+Olor:
+Inodoro.
+pH 5,5-8,0
+Punto de ebullición :>400°C (d
+Punto de fusión : 334°C
+Densidad (20/4): 2,11
+Solubilidad: 320 g/l en agua a 20°C
+10. Estabilidad y reactividad
+10.1
+Condiciones que deben evitarse:
+10.2
+Materias que deben evitarse:
+Compuestos orgánicos. Azufre. Sulfuros. Sustancias inflamables.
+Metales en polvo. Boro.( Calor). Carbono. Azufre./ Carbono. Fosfuros.
+Fósforo. Magnesio.
+10.3
+Productos de descomposición peligrosos:
+Vapores nitrosos.
+10.4
+Información complementaria:
+11. Información toxicológica
+11.1
+Toxicidad aguda:
+DL50 oral rata: 2000 mg/kg
+11.2
+Efectos peligrosos para la salud:
+Por ingestión: Irritaciones en mucosas, náuseas, desarreglos
+intestinales, vómitos.
+Por contacto ocular: irritaciones.
+Por absorción de grandes cantidades: metahemiglobinemia con cefaleas,
+
+67
+
+arritmias, hipotensión, dificultades respiratorias, espasmos, cianosis.
+12. Información Ecológica
+12.1
+Movilidad :
+12.2
+Ecotoxicidad :
+12.2.1 - Test EC50 (mg/l) :
+Crustáceos (Daphnia Magna) = 490 mg/l ; Clasificación : Altamente
+tóxico.
+Animales p. alimentación de peces = EC0 200 mg/l ; Clasificación :
+Altamente tóxico.
+12.2.2 - Medio receptor:
+Riesgo para el medio acuático = Medio
+Riesgo para el medio terrestre = Bajo
+12.2.3 - Observaciones :
+Ecotoxicidad aguda en la zona de vertido.
+12.3
+Degradabilidad :
+12.3.1 - Test :------12.3.2 - Clasificación sobre degradación biótica :
+DBO5/DQO Biodegradabilidad = ----12.3.3 - Degradación abiótica según pH : ------12.3.4 - Observaciones :
+
+12.4
+
+12.5
+
+Acumulación :
+12.4.1 - Test :
+12.4.2 - Bioacumulación :
+Riesgo = ----12.4.3 - Observaciones :
+Otros posibles efectos sobre el medio natural :
+No permitir su incorporación al suelo ni a acuíferos. Los nitratos pueden
+favorecer la eutrofia.
+
+13. Consideraciones sobre la eliminación
+13.1
+Sustancia o preparado:
+En la Unión Europea no están establecidas pautas homogéneas para la
+eliminación de residuos químicos, los cuales tienen carácter de residuos
+especiales, quedando sujetos su tratamiento y eliminación a los
+reglamentos internos de cada país. Por tanto, en cada caso, procede
+contactar con la autoridad competente, o bien con los gestores
+legalmente autorizados para la eliminación de residuos.
+2001/573/CE: Decisión del Consejo, de 23 de julio de 2001, por la que se
+modifica la Decisión 2000/532/CE de la Comisión en lo relativo a la lista
+de residuos.
+Directiva 91/156/CEE del Consejo de 18 de marzo de 1991 por la que se
+modifica la Directiva 75/442/CEE relativa a los residuos.
+En España: Ley 10/1998, de 21 de abril, de Residuos. Publicada en BOE
+22/04/98.
+ORDEN MAM/304/2002, de 8 de febrero, por la que se publican las
+operaciones de valorización y eliminación de residuos y la lista europea
+de residuos. Publicada en BOE 19/02/02.
+13.2
+Envases contaminados:
+Los envases y embalajes contaminados de sustancias o preparados
+peligrosos, tendrán el mismo tratamiento que los propios productos
+
+68
+
+contenidos.
+Directiva 94/62/CE del Parlamento Europeo y del Consejo, de 20 de
+diciembre de 1994, relativa a los envases y residuos de envases.
+En España: Ley 11/1997, de 24 de abril, de Envases y Residuos de
+Envases. Publicada en BOE 25/04/97.
+Real Decreto 782/1998, de 30 de abril, por el que se aprueba el
+Reglamento para el desarrollo y ejecución de la Ley 11/1997, de 24 de
+abril, de Envases y Residuos de Envases. Publicado en BOE 01/05/98.
+14. Información relativa al transporte
+Terrestre (ADR):
+Denominación técnica: NITRATO POTÁSICO
+ONU 1486 Clase: 5.1 Apartado y letra: III
+Marítimo (IMDG):
+Denominación técnica: NITRATO POTÁSICO
+ONU 1486 Clase: 5.1 Grupo de embalaje: III
+Aéreo (ICAO-IATA):
+Denominación técnica: Nitrato potásico
+ONU 1486 Clase: 5.1 Grupo de embalaje: III
+Instrucciones de embalaje: CAO 518
+PAX 516
+15. Información reglamentaria
+Etiquetado según REACH
+Etiquetado según REACH
+Símbolos: O
+Indicaciones de peligro: Comburente
+Frases R: 8 Peligro de fuego en contacto con materias combustibles.
+Frases S: 16-41 Conservar alejado de toda llama o fuente de chispas No fumar. En caso de incendio y/o de explosión, no respire los humos.
+16. Otras informaciones
+Número y fecha de la revisión:0 15.04.08
+Los datos consignados en la presente Ficha de Datos de Seguridad,
+están basados en nuestros actuales conocimientos, teniendo como único
+objeto informar sobre aspectos de seguridad y no garantizándose las
+propiedades y características en ella indicadas.
+Fuente: http://www.panreac.com/new/esp/fds/ESP/X141524.htm
+
+4.4.3 Barra de propelente numero 1.
+ Materiales:
+o 900 gr. (65%) Nitrato de potasio equivalentes a 31,74 onzas
+o 484.61 gr. (35%) Sorbitol equivalente a 17.1 onzas
+o Papel bond
+o Medidor de onzas
+o Maceador
+o Recipiente resistente al calor (olla)
+o Molde
+
+69
+
+Fotografía 11. Materiales preparación Barra Propelente
+
+ Procedimiento previo a la mezcla
+o Alistar todos los materiales.
+o Realizar un forro en papel bond para la parte interna del molde con el
+fin de facilitar el desmolde.
+Fotografía 12. Molde barra Propelente
+
+70
+
+4.4.3.1 Instrucciones. Paso1. Se alista el medidor de onzas que debe estar
+limpio y seco.
+Fotografía 13. Tasa Medidora propelente
+
+Paso 2. Se vierte sorbitol hasta 17.1 onzas dentro del medidor de onzas.
+Paso 3. Verter el sorbitol en el Recipiente resistente al calor.
+Paso 4. Macerar el nitrato de potasio para que quede lo más fino posible (cuando
+el polvo este lo más fino posible).
+Paso 5. Se realiza luego el mismo procedimiento de los pasos 1 y 2 pero usando
+el Nitrato de potasio hasta 31,74 onzas dentro del medidor de onzas. (Ver Foto
+siguiente)
+Fotografía 14. Mezcla Fase 1
+
+71
+
+Fotografía 15. Mezcla Fase 2
+
+Paso 6. Agregar nitrato de potasio sobre el sorbitol fundido de a pocos en el
+recipiente resistente al calor.
+Paso 7. Calentar el recipiente hasta más o menos 100 grados centígrados (con el
+sorbitol adentro) hasta que el sorbitol se funde. (Ver Foto siguiente)
+Fotografía 16. Mezcla Fase 3
+
+Paso 8. Se revuelve para que se disuelva el nitrato de potasio, hasta que se
+consiga una mezcla lo más homogénea posible. (Ver Foto siguiente)
+Fotografía 17. Mezcla Fase 4
+
+72
+
+Paso 9. Realizar un embudo de papel para poder verter la mezcla
+Paso 10. Verter la mezcla en el molde y dejar secar (hasta su punto de
+solidificación). (Ver Foto siguiente)
+Fotografía 18. Mezcla Final
+
+4.4.4 Barra de propelente numero 2.
+• Materiales:
+o 1000 gr. (65%) Nitrato de potasio
+o 538.46 gr. (35%) Sorbitol
+o Báscula
+o Maceador
+o Recipiente de vidrio
+o Recipiente resistente al calor (olla)
+o Molde
+ Procedimiento previo a la mezcla
+o Alistar todos los materiales.
+o Tomar el molde y encerarlo con cera desmoldante (aprox 8 veces).
+
+73
+
+4.4.4.1 Instrucciones para la mezcla. Paso 1. Se coloca un recipiente en la
+báscula y se ajusta a cero. (Ver Foto siguiente)
+Fotografía 19. Medidor laboratorio USB
+
+Paso 2. Se vierte sorbitol hasta que se alcance el peso de 538.46 gramos, Como
+el recipiente de vidrio no es suficiente mente grande se hace en dos vertidas.
+Fotografía 20. Medidor Laboratorio USB 2
+
+Paso 3. Verter el sorbitol en el recipiente resistente al calor.
+
+74
+
+Fotografía 21. Mezcla Laboratorio Fase 1
+
+Paso 4. Macerar el nitrato de potasio para que quede lo más fino posible (para que
+quede en polvo por que se forman grumos en el nitrato de potasio).
+Fotografía 22. Mezcla Laboratorio Fase 2
+
+Paso 5. Se realiza luego el mismo procedimiento de los pasos 1 y 2 pero usando
+el Nitrato de potasio hasta los 1000 gr.
+Paso 6. Mezclar el nitrato de potasio con el sorbitol en el recipiente resistente al
+calor. (Ver Foto siguiente)
+
+75
+
+Fotografía 23. Mezcla Laboratorio Fase 3
+
+Paso 7. Calentar el recipiente hasta más o menos 100 grados centígrados (con la
+mezcla dentro) hasta que se comiencen a formar grumos.
+Fotografía 24. Mezcla Laboratorio Fase 4
+
+Paso 8. Cuando se funda el sorbitol se revuelve para que se disuelva el nitrato de
+potasio, hasta que se consiga una mezcla lo más homogénea posible. (Ver Foto
+siguiente)
+Fotografía 25. Mezcla Laboratorio Fase 5
+
+76
+
+Paso 9. Verter la mezcla en el molde y dejar secar (hasta su punto de
+solidificación). (Ver Foto siguiente)
+Fotografía 26. Vaciado Mezcla en Molde
+
+4.5
+
+ANÁLISIS DEL COMBUSTIBLE – PROPELENTE CON GUIPEP
+
+4.5.1 Introducción a guipep. Para esta parte de análisis de combustible se va a
+usar un Programa de gran ayuda que se conoce como GUIPEP, que es
+básicamente un software (Programa para la Evaluación de Propelentes) con una
+interfaz Grafica conocida como (GUI). Este programa termoquímico permite
+evaluar el funcionamiento del propelente y ver las posibles formulaciones del
+mismo, así como determinar la relación más efectiva de los ingredientes para
+alcanzar el rendimiento deseado.
+El programa requiere únicamente incluir la lista de ingredientes de la barra
+propelente con su masa respectiva, así como la presión de cámara y presión de
+salida en la tobera.
+La salida va a mostrar datos que son de gran ayuda para los cálculos realizados
+del motor cohete, como lo son: Temperatura de Combustión, Exponente
+Isentropico, Peso molecular de los productos, Temperatura de exostación y
+composición, Impulso Especifico, y rata de expansión ideal.
+Para los cálculos y la utilización del programa GUIPEP, se asumirán ciertas
+condiciones para realizar el análisis:
+77
+
+•
+•
+•
+•
+•
+•
+•
+
+Flujo dimensional con ecuaciones de energía y momento.
+Velocidad de Flujo cero en la boquilla (Nozzle) de entrada.
+Combustión completa y Adiabática.
+Expansión en la Tobera isentropica.
+Mezcla homogénea de los productos y reactivos.
+Leyes de gases ideales.
+Retraso de la temperatura y la velocidad en cero de la fase condensada de
+productos.
+
+4.5.2 Guipep Análisis numero 1. Como el propelente va a estar basado en
+Nitrato de Potasio y Azúcar, los ingredientes en el programa GUIPEP serán:
+• Potassium Nitrate (Con un Peso de 65 gm)
+• Sucrose (Table Sugar) (Con un Peso de 35 gm)
+Para realizar los cálculos se necesita el ingreso de una masa de 100 gramos
+compuesta por los ingredientes antes mencionados.
+Imagen 1. GUIPEP Configurado Propelente Nitrato - Azúcar
+
+Las condiciones de operación son las siguientes (Predeterminadas), con:
+• Temperatura de los Ingredientes = 298 K
+• Presión de Cámara = 1000 PSI (*)
+
+78
+
+• Presión de exostación = 14.7 PSI (**)
+(*) La presión de Cámara va ser 1000 PSI y no la calculada de 250 PSI, debido a
+que 1000 PSI es la presión de referencia en la cual el Isp (Impulso Especifico) es
+hallado.
+(**) La presión de Exostación va a ser 14.7 PSI, que es igual a 1 atmosfera, esta
+es la condición ideal de expansión a nivel del mar. Para la mayoría de cálculos se
+utiliza la presión de salida igual a 1 atmosfera.
+Al ejecutar el programa, los datos que se van a obtener para la mezcla propelente
+de Nitrato de Potasio + Azúcar serán:
+4.5.3 Resultados análisis numero 1.
+Tabla 11. Propiedades Análisis 1
+KNSU-DF2K9
+Run using June 1988 Version of PEP,
+Case 1 of 1 14 Jan 2009 at 5:22:36.67 pm
+CODE
+WEIGHT D-H DENS
+COMPOSITION
+821 POTASSIUM NITRATE
+65.000 -1167 0.07670 1N 3O 1K
+897 SUCROSE (TABLE SUGAR)
+35.000 -1550 0.05740 22H 12C 11O
+THE PROPELLANT DENSITY IS 0.06862 LB/CU-IN OR 1.8995 GM/CC
+THE TOTAL PROPELLANT WEIGHT IS 100.0000 GRAMS
+NUMBER OF GRAM ATOMS OF EACH ELEMENT PRESENT IN INGREDIENTS
+2.249436 H
+0.642877 K
+
+1.226965 C
+
+0.642877 N
+
+3.053349 O
+
+•
+La primera sección va a tener el nombre del propelente, en este caso será
+el nombre del motor cohete que es DF-2K9, con su respectiva fecha del día del
+análisis.
+•
+Tiene el código de los ingredientes o elementos utilizados en la mezcla con
+su respectivo nombre, formula química, D-H (Delta heat formation) conocido como
+Formación de calor o Formación de entalpía, Densidad y el Numero de átomos
+presentes en los ingredientes.
+Tabla 12. Chamber Result
+
+79
+
+****************************CHAMBER RESULTS FOLLOW
+*****************************
+T(K) T(F) P(ATM) P(PSI) ENTHALPY ENTROPY CP/CV
+1722. 2640. 68.02 1000.00 -130.10
+166.00
+1.1332
+
+GAS RT/V
+2.383 28.551
+
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL= 10.508 14.982
+NUMBER MOLS GAS AND CONDENSED= 2.3825 0.3062
+0.79708 H2O
+0.53268 CO
+0.38798 CO2
+0.32136 N2
+0.31300 H2
+0.30623 K2CO3* 0.02855 KHO
+0.00151 K
+1.57E-04 K2H2O2 9.97E-05 NH3
+1.90E-05 H
+1.34E-05 KH
+1.06E-05 KCN
+6.74E-06 CH4
+3.48E-06 CH2O
+3.32E-06 CNH
+2.70E-06 HO
+THE MOLECULAR WEIGHT OF THE MIXTURE IS 37.192
+
+•
+La primera fila de esta parte muestra la temperatura de combustión
+expresada en Kelvin y Farenheit, la presión de cámara, la entalpía total de la
+mezcla, entropía, relación de calores específicos, Numero de moles de GAS en la
+mezcla, RT/V es un factor de conversión.
+Tabla 13. Exhaust Result
+****************************EXHAUST RESULTS FOLLOW
+*****************************
+T(K) T(F) P(ATM) P(PSI) ENTHALPY ENTROPY CP/CV
+1144. 1600. 1.00 14.70
+-157.75
+166.00
+1.1387
+
+GAS RT/V
+2.352 0.425
+
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL= 9.711 14.355
+NUMBER MOLS GAS AND CONDENSED= 2.3522 0.3212
+0.67409 H2O
+0.32140 N2
+1.84E-05 NH3
+
+0.50946 CO2
+0.45027 H2
+0.32114 K2CO3& 0.00055 KHO
+1.20E-05 CH4
+
+0.39630 CO
+0.00003 K
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS 37.406
+
+•
+Estos resultados representan la Salida del exosto, es decir, el final de la
+tobera, cuando entra en contacto con la atmosfera.
+•
+Esta sección tiene los mismos parámetros que la Cámara con diferentes
+resultados para la salida de la tobera.
+
+80
+
+Tabla 14. Performance
+**********PERFORMANCE: FROZEN ON FIRST LINE, SHIFTING ON
+SECOND LINE**********
+IMPULSE IS EX
+T*
+P*
+C*
+ISP* OPT-EX D-ISP
+A*M EX-T
+153.3 1.1380 1611. 39.24 3007.9
+10.09 291.2 0.09351 1032.
+155.1 1.1101 1635. 39.63 3069.2 116.1 10.70 294.6 0.09542 1144.
+
+•
+Aquí se obtienen los resultados por los cuales se hizo todo el procedimiento
+y se analizara de la siguiente manera:
+o Impulso: Puede considerarse como el Empuje producido por unidad de Masa,
+es decir el impulso que genera la masa de propelente quemado en 1 segundo.
+o Exponente isentropico: es conocida como la constante k, o CP/CV para un gas
+perfecto.
+o T*: Valor Crítico de temperatura, analizado a Mach 1 en la garganta de la
+tobera.
+o P*: Valor de Presión Crítico, analizado a Mach 1 en la garganta de la tobera.
+o C*: Conocida como la Velocidad Característica de Exostación.
+o ISP*: Es un valor de Impulso en el vacío.
+o OPT-EX: Es la expansión óptima calculada por el programa, mejor conocida
+como Optimum Expansion Ratio (Ae/At), un dato importante para el diseño de
+tobera más adelante.
+o D-ISP: Es la Densidad de Impulso específico, producto del impulso específico
+y la gravedad especifica del propelente.
+o A*M: Es la relación del aérea de la garganta de la tobera con la relación de
+flujo másico.
+o EX-T: Es la temperatura en la salida de la tobera, está dada en (k).
+
+4.5.4 Guipep análisis numero 2. La segunda opción para ser usada como
+propelente principal será:
+• Potassium Nitrate (Con un Peso de 65 gm)
+• Sorbitol PentaNitrate (Con un Peso de 35 gm)
+
+81
+
+Imagen 2. GUIPEP Configurado Propelente Nitrato - Sorbitol
+
+Como en el análisis GUIPEP # 1: Las condiciones de operación son las siguientes
+(Predeterminadas), con:
+• Temperatura de los Ingredientes = 298 K
+• Presión de Cámara = 1000 PSI (*)
+• Presión de exostacion = 14.7 PSI (**)
+(*) La presión de Cámara va ser 1000 PSI y no la calculada de 250 PSI, debido a
+que 1000 PSI es la presión de referencia en la cual el Isp (Impulso Especifico) es
+hallado.
+(**) La presión de Exostación va a ser 14.7 PSI, que es igual a 1 atmosfera, esta
+es la condición ideal de expansión a nivel del mar. Para la mayoría de cálculos se
+utiliza la presión de salida igual a 1 atmosfera.
+Los datos que se obtuvieron para este análisis de Nitrato de Potasio + Sorbitol
+fueron:
+Tabla 15. Propiedades Análisis 2
+KNSB-DF2K9
+Case 1 of 1
+
+Run using June 1988 Version of PEP,
+15 Mar 2009 at 6:22:40.55 pm
+
+CODE
+821 POTASSIUM NITRATE
+
+WEIGHT D-H DENS
+COMPOSITION
+65.000 -1167 0.07670 1N 3O 1K
+
+82
+
+891 SORBITOL PENTANITRATE
+
+35.000 -463 0.00001
+
+6C 9H 16O 5N
+
+THE PROPELLANT DENSITY IS 0.00003 LB/CU-IN OR 0.0008 GM/CC
+THE TOTAL PROPELLANT WEIGHT IS 100.0000 GRAMS
+NUMBER OF GRAM ATOMS OF EACH ELEMENT PRESENT IN INGREDIENTS
+0.773617 H 0.515745 C 1.072664 N 3.303951 O
+0.642877 K
+
+Tabla 16. Chamber Results 2
+****************************CHAMBER RESULTS FOLLOW
+*****************************
+T(K) T(F) P(ATM) P(PSI) ENTHALPY ENTROPY CP/CV GAS RT/V
+1461. 2171. 68.02 1000.00 -92.06 137.86
+1.1237 1.901 35.782
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL= 9.632 15.443
+NUMBER MOLS GAS AND CONDENSED= 1.9010 0.3207
+0.78115 O2
+0.19503 CO2
+6.35E-05 HO
+1.70E-06 NHO2
+
+0.53538 N2
+0.38598 H2O
+0.32066 K2CO3*
+0.00174 NO
+0.00152 KHO
+0.00012 NO2
+6.11E-06 K2H2O2 4.48E-06 HO2
+2.07E-06 NHO2
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS 45.010
+
+Tabla 17. Exhaust Results 2
+****************************EXHAUST RESULTS FOLLOW
+*****************************
+T(K) T(F) P(ATM) P(PSI) ENTHALPY ENTROPY CP/CV GAS RT/V
+957. 1262. 1.00 1 4.70 -111.08
+137.86 1.1382 1.900 0.526
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL= 8.894 14.001
+NUMBER MOLS GAS AND CONDENSED= 1.8996 0.3214
+0.78213 O2
+0.19426 CO2
+
+0.53629 N2
+0.00003 NO
+
+0.38678 H2O
+0.00000 NO2
+
+0.32142 K2CO3&
+0.00000 KHO
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS 45.025
+
+83
+
+Tabla 18. Performance 2
+**********PERFORMANCE: FROZEN ON FIRST LINE, SHIFTING ON
+SECOND LINE**********
+IMPULSE IS EX
+T*
+P*
+C*
+127.1
+1.1269 1374. 39.39 2485.0
+128.6
+1.0975 1393. 39.81 2546.0
+
+ISP* OPT-EX D-ISP
+A*M EX-T
+10.35 0.1 0.07725 909.
+95.8 10.50 0.1 0.07915 957.
+
+4.5.5 Observaciones de análisis numero 2. Después de haber realizado el
+análisis y haber desarrollado la barra propelente, encontramos la siguiente
+conclusión:
+• La temperatura que se maneja utilizando el Sorbitol en el exosto y la
+cámara de combustión es más baja en comparación a la obtenida utilizando
+azúcar.
+Se encontró que la barra de azúcar es más complicada de preparar debido al
+control de temperatura y al inconveniente relacionado con la caramelización de los
+ingredientes, Adicionalmente las ventajas que posee el Sorbitol fueron pieza
+fundamental para su selección:
+• El Sorbitol no se carameliza.
+• La temperatura de la mezcla derretida es significativamente menor a la del
+KNSU, aumentándome los márgenes de seguridad.
+• Mejor compactación en el enfriamiento.
+• Menor probabilidad de Burbujas en el propelente.
+• Mejor rendimiento de la barra propelente.
+4.6
+
+PRUEBAS ESTÁTICAS MOTOR COHETE
+
+4.6.1 Prueba Número 1.
+Cuadro 1. Prueba 1 – 01/04/09
+LUGAR
+HORA Y FECHA
+ELEMENTOS
+
+DOCUMENTO DE PRUEBA
+Universidad de San buenaventura (Bogotá)
+01/04/09 – 4:00 PM a 8:00 PM
+• Motor Cohete
+• Propelente
+• Cable Ignitor
+• Caja de Seguridad
+• Balde con arena
+84
+
+DESCRIPCIÓN
+PRUEBA
+
+•
+•
+•
+•
+•
+•
+
+•
+•
+
+•
+
+Báscula
+Extensiones Eléctricas
+Extintores
+Preparación de los elementos y revisión
+preliminar.
+Ensamble del Motor Cohete con el Propelente.
+Ubicación del componente medidor:
+o Caja de Seguridad
+o Báscula
+o Balde con Arena
+Luego de tener los componentes ensamblados
+se introdujo el cohete en la arena de una forma
+perpendicular a la Báscula.
+La Báscula cuenta con un sistema el cual
+permite establecer en 0 el peso referencia,
+tomando el peso del Cohete + propelente +
+balde con arena.
+Se introdujo el Ignitor dentro del sistema para
+darle paso a la prueba.
+
+• La Cámara de Combustión resistió la
+temperatura
+• La presión generada ocasiono una Fisura entre
+la soldadura que une la tobera con la Cámara de
+combustión, haciendo que la llama se fugara y
+se perdiera parte de la presión dentro de la
+cámara.
+• La tobera, resistió tanto en su interior como en
+su exterior la presión y la temperatura ejercida
+por la combustión del propelente.
+• La relación de expansión de la tobera fue óptima
+ya que como resultado de la combustión no
+presento taponamiento en la garganta ni ruptura.
+• No se registro medición de empuje.
+Fotografía 27. Registro Digital
+RESULTADOS Y
+CONCLUSIONES
+
+85
+
+REGISTRO
+DIGITAL
+
+OBSERVACIONES
+
+• El registro de la Medición del Empuje no se tomo
+debido a:
+o Fisura
+o Imposibilidad de registrar visualmente la
+medición de la báscula por horario en que
+se realizo la prueba.
+• Hubo fallas con el Ignitor lo que retrasó la
+prueba.
+
+86
+
+4.6.2 Prueba Número 2.
+Cuadro 2. Prueba 2 – 30/04/09
+DOCUMENTO DE PRUEBA
+LUGAR
+Universidad de San buenaventura (Bogotá)
+HORA Y FECHA 30/04/09 – 4:00 PM a 5:00 PM
+ELEMENTOS
+• Motor Cohete
+• Propelente
+• Cable Ignitor
+• Caja de Seguridad
+• Balde con arena
+• Báscula
+• Extensiones Eléctricas
+• Extintores
+Fotografía 28. Preparación Prueba 2
+
+DESCRIPCIÓN
+PRUEBA
+
+•
+•
+•
+o
+o
+o
+•
+
+Preparación de los elementos y revisión preliminar.
+Ensamble del Motor Cohete con el Propelente.
+Ubicación del componente medidor:
+Caja de Seguridad
+Báscula
+Balde con Arena
+Luego de tener los componentes ensamblados se
+introdujo el cohete en la arena de una forma
+perpendicular a la Báscula.
+
+87
+
+•
+
+La Báscula peso todos los componentes dándonos como
+resultado 31.74 Kilogramos en total.
+• El Peso del Cohete + Propelente fue de 2.72 kilogramos.
+• Se introdujo el Ignitor dentro del sistema para darle paso
+a la prueba.
+RESULTADOS Y • El empuje generado en la prueba fue de 625 Newtons.
+CONCLUSIONES • No hubo rastro de la Fisura que retraso la primera
+prueba, debido a los análisis que se hicieron, Se Soldó
+nuevamente la unión tobera-Cámara.
+• La Cámara de Combustión y la Tobera, resistieron las
+temperaturas y presiones generadas en la prueba.
+• El tiempo de quemado del propelente fue
+aproximadamente 2.5 Segundos.
+• El sistema ignitor funciono como se propuso inicialmente.
+Fotografía 29. Ejecución Prueba 2
+REGISTRO
+DIGITAL
+
+Click para ver el video completo
+
+OBSERVACIONES
+
+• La prueba obtuvo mejores resultados con respecto a la
+primera, obteniendo 650 Newtons de empuje.
+• La exactitud en la preparación del propelente, usando
+análisis de laboratorios y equipo especializado, fue clave
+para obtener mejores resultados en cuanto al tiempo que
+demoro la combustión y en los Newtons generados.
+• A pesar de los buenos resultados, una parte del exterior
+del propelente se encontraba húmeda debido a la cera
+desmoldante que se aplico al molde.
+
+88
+
+4.6.3 Prueba Número 3
+Cuadro 3. Prueba 3 – 20/05/09
+DOCUMENTO DE PRUEBA
+LUGAR
+Universidad de San buenaventura (Bogotá)
+HORA Y FECHA
+20/05/09 – 3:00 PM a 5:00 PM
+ELEMENTOS
+• Motor Cohete
+• Propelente
+• Cable Ignitor
+• Caja de Seguridad
+• Balde con arena
+• Báscula
+• Extensiones Eléctricas
+• Extintores
+Fotografía 30. Ensamble prueba 3
+
+DESCRIPCIÓN
+PRUEBA
+
+• Preparación de los elementos y revisión preliminar.
+• Ensamble del Motor Cohete con el Propelente.
+• Ubicación del componente medidor:
+o Caja de Seguridad
+o Báscula
+o Balde con Arena
+• Luego de tener los componentes ensamblados se
+introdujo el cohete en la arena de una forma
+perpendicular a la Báscula.
+• La Báscula peso todos los componentes dándonos
+como resultado 30.32 Kilogramos en total.
+89
+
+• El Peso del Cohete + Propelente fue de 2.72
+kilogramos.
+• Se introdujo el Ignitor dentro del sistema para darle
+paso a la prueba.
+• El empuje generado en la prueba excedió las
+expectativas de 700 N al mostrar error en la báscula
+del banco de prueba.
+• Las Presiones y temperaturas se mantuvieron dentro
+de lo normal.
+• El tiempo de quemado del propelente fue
+aproximadamente 3 Segundos.
+• El tiempo de quemado desde que se inicio hasta que
+ceso el humo en el motor fue aproximado de 5
+segundos.
+• El sistema ignitor funciono como se propuso
+inicialmente.
+Fotografía 31. Ejecución Prueba 3
+RESULTADOS Y
+CONCLUSIONES
+
+REGISTRO
+DIGITAL
+
+Click para ver el video completo
+OBSERVACIONES
+
+• La prueba obtuvo mejores resultados con respecto a
+la segunda, obteniendo más de 700 N aunque la
+báscula no indico cuanto.
+• La mezcla fue un poco diferente en cuanto a la prueba
+anterior, ya que alargo mas el tiempo de combustión.
+De todas formas la prueba fue exitosa y el tiempo de
+quemado no fue muy distinto para preocuparse por la
+forma de preparación del propelente.
+
+90
+
+4.7
+
+LANZAMIENTO DEL COHETE
+
+4.7.1 Lanzamiento Número 1
+Cuadro 4 Lanzamiento 1 25/07/09
+LUGAR
+HORA Y FECHA
+ELEMENTOS
+
+DOCUMENTO DE LANZAMIENTO # 1
+Laguna de Tominé – Guasca - Guatavita
+25/07/09 – 10:00 A.M a 6:00 P.M
+• Estructura Cohete
+• Motor Cohete
+• Sistema de recuperación
+• Altímetro
+• Propelente
+• Sistema Ignitor
+• Lanzadera
+• Herramientas varias
+• Extintores
+• Cámaras
+
+DESCRIPCION
+PRUEBA
+
+• Preparación de los elementos y revisión preliminar.
+• Ensamble del Motor Cohete con el Propelente.
+• Ensamble Sistema de Recuperación y Medición con la
+Estructura del Cohete.
+• Ensamble Motor Cohete con la Estructura.
+• Construcción de la Lanzadera
+• Teniendo los componentes ensamblados se integró
+Cohete, Lanzadera y Sistema de Ignición, para darle
+paso a la prueba.
+
+RESULTADOS Y
+CONCLUSIONES
+
+• Se Observaron problemas en el quemado del
+propelente, demasiado tiempo para entregar el
+empuje deseado.
+• El centro de gravedad del cohete no estaba bien
+ubicado, lo que ocasionó que cuando el cohete saliera
+de la lanzadera se fuera hacia un lado.
+• Al caer el cohete doblo una de sus aletas.
+• Una de las tres retenciones del motor con la estructura
+del cohete se cayó debido al impacto.
+• La prueba no fue exitosa.
+
+91
+
+Fotografía 32 Lanzamiento 1
+
+REGISTRO
+DIGITAL
+
+Click para ver el video completo
+4.7.2 Lanzamiento Número 2
+Cuadro 5 Lanzamiento 2 25/07/09
+
+LUGAR
+HORA Y FECHA
+ELEMENTOS
+
+DOCUMENTO DE LANZAMIENTO # 2
+Laguna de Tominé – Guasca - Guatavita
+25/07/09 – 10:00 A.M a 6:00 P.M
+• Estructura Cohete
+• Motor Cohete
+• Sistema de recuperación
+• Altímetro
+• Propelente
+• Sistema Ignitor
+• Lanzadera
+• Herramientas varias
+• Extintores
+• Cámaras
+
+92
+
+DESCRIPCION
+PRUEBA
+
+RESULTADOS Y
+CONCLUSIONES
+
+REGISTRO
+DIGITAL
+
+• Solucionados los problemas de la Prueba # 1, la aleta
+fue reparada, así como la retención del motor.
+• La lanzadera fue arreglada para que la salida del
+cohete fuera lo más recta posible.
+• Se corrigió el Centro de Gravedad del cohete, se
+calculó que faltaba aproximadamente 500 gramos en
+el cono de nariz.
+• El Lanzamiento fue todo un éxito.
+• El propelente quemo de buena forma, aunque no en el
+tiempo que se esperaba, en conclusión se obtuvo
+buen desempeño.
+• El Centro de Gravedad no fue más un problema, el
+cohete salió recto pese a la fuerte velocidad del
+viento.
+• No se obtuvieron mediciones de altura ni velocidad,
+puesto que el sistema de recuperación no opero de la
+manera diseñada, el Cohete impacto contra el suelo
+afectando dicho sistema considerablemente.
+Fotografía 33 Lanzamiento 2
+
+Click para ver el video completo
+
+93
+
+4.8
+
+COSTOS DE REALIZACIÓN
+
+Cuadro 6 Costos
+MATERIAL
+MOTOR COHETE
+Acero 1018 (Tobera)
+Acero 1018 Tubo 6
+cm de diámetro
+Acero 1018 (Tapa)
+PROPELENTE
+Nitrato de Potasio 1
+kg
+sorbitol 1 kg
+SISTEMA IGNITOR
+Cable No 12
+Cable ferroníquel
+Batería
+SISTEMA
+MEDICION DE
+ALTURA
+Altímetro y
+acelerómetro
+Servo
+SERVICIOS DE
+TERCEROS
+Mano de Obra
+Torno
+Soldadura
+
+CANTIDAD
+
+COSTO/UNIDAD
+
+COSTO/TOTAL
+
+2
+1
+
+40.000
+30.000
+
+80.000
+30.000
+
+1
+
+15.000
+
+15.000
+
+7
+
+40.000
+
+280.000
+
+7
+
+17.000
+
+119.000
+
+1
+15
+1
+
+35.000
+800
+250.000
+
+35.000
+12.000
+250.000
+
+1
+
+300.000
+
+300.000
+
+1
+
+200.000
+
+200.000
+
+1
+1
+1
+
+20.000
+30.000
+20.000
+
+20.000
+30.000
+20.000
+
+TOTAL
+
+1.391.000
+
+94
+
+CONCLUSIONES
+
+• De acuerdo a los cálculos realizados para la cámara de combustión
+(diámetro: 6,5cm, Grosor de pared: 2,25mm, Longitud: 30cms), se obtuvo la
+resistencia y eficiencia necesaria para soportar la presión y temperatura.
+• Basándose en los resultados de la tobera número 1 (Angulo Convergente:
+30º) se diseñó y construyó la tobera número 2 (Angulo Convergente: 45º) la
+cual proporcionó un Empuje máximo superior a 700 Newtons, y un Empuje
+Promedio de 275.37 Newtons; Esto debido a su mayor longitud de
+expansión que permite que los gases tengan mayor aceleración.
+• Para el material seleccionado (Acero 1018) se calculó previamente en
+Ansys su factor de seguridad obteniendo como respuesta 4.64, que para su
+análisis costo material, nos daba un beneficio al ser más económico.
+• Con el análisis del combustible, se encontró la relación 65% (Nitrato de
+Potasio) - 35% (Sacarosa ó Sorbitol) para la mezcla de 1.3 Kgs. Al realizar
+las mezclas, se identificó que al usar el Sorbitol, la mezcla se podía manejar
+más fácil debido al control de temperatura que impedía que se caramelizara
+como sucedía con la Sacarosa.
+• El motor cohete obtuvo en sus pruebas estáticas (Banco de Pruebas) un
+empuje incluso superior a 700 Newtons, debido al cálculo preventivo que
+se hizo anteriormente de 1000 N, se determinó que fue superior debido a
+que la báscula marco error (dicho error se produce cuando el peso supera
+los 100 kilogramos) en su lectura.
+• Según los cálculos requeridos del grupo estructural, el motor cohete no
+debía exceder los 3 Kilogramos en su peso total (Motor – Propelente); El
+DF-2k9 pesó 2,72 Kilogramos tanto en pruebas estáticas como el día del
+lanzamiento.
+• Según la simulación realizada para el cálculo de la trayectoria del cohete,
+se cumplió la meta de llegar a los 500 M de altura aunque
+experimentalmente no hay registro.
+• En su segundo lanzamiento, el cohete voló satisfactoriamente como estaba
+previsto, infortunadamente, el sistema de recuperación no funcionó
+ocasionando el impacto directo del cohete con la tierra que afecto el
+sistema de registro barométrico y de aceleraciones.
+
+95
+
+BIBLIOGRAFÍA
+
+Bueno, Calderón, Otálora. Proyecto Análisis aerodinámico y estructural para el
+diseño y construcción de un cohete de 700 N de empuje, Bogotá, Universidad San
+Buenaventura. Bogotá, Agosto de 2009.
+GUEVARA, Juan Carlos y otros. Semillero Nodo Napsú. Proyecto para la
+conformación y puesta en marcha del nodoing Bogotá, Nodo de estudios
+Aeroespaciales de la Universidad Nacional de Colombia. Santa fe de Bogotá,
+Septiembre. 2000.
+GRUPO PALMEXICO, Acero Maquinaria – 1018, Mayo 2008 ON LINE Available
+from:
+http://www.acerospalmexico.com.mx/1018.htm
+GRUPO PALMEXICO, Acero Inoxidable – 304, Mayo 2008 ON LINE Available
+from:
+http://www.acerospalmexico.com.mx/304.htm
+HOLFORD, Strevens Leofranc., Aulus Gellius. An Antonine Author and his
+Achievement (Oxford University Press; revised paperback edn. 2005. Articulo
+incorporado en la Encyclopedia Britannica, onceava edición
+NAKKA, Richard. Solid Rocket Motor Theory -- Propellant Grain. Richard Nakka's
+Experimental Rocketry Web Site. Junio 2009. ON LINE. Available from:
+http://www.nakka-rocketry.net/th_grain.html
+NAKKA, Richard. Rocket Motor design charts. Richard Nakka's Experimental
+Rocketry Web Site. Abril 2009. ON LINE. Available from:
+http://www.nakka-rocketry.net/design1.html
+PANREAC, Potasio Nitrato sin antipelmazante, Mayo 2009 ON LINE available
+From:
+http://www.panreac.com/new/esp/catalogo/fichastec/141524ES.HTM
+PANREAC, Potasio Nitrato sin antipelmazante (Ficha Seguridad), Mayo 2009 ON
+LINE available From:
+http://www.panreac.com/new/esp/fds/ESP/X141524.htm
+ROCKET PROPULSION ELEMENTS, Wikipedia enciclopedia virtual, Mayo 2008
+ON LINE Available from:
+http://en.wikipedia.org/wiki/Rocket_engine
+
+96
+
+SUTTON, George P. Rocket Propulsion Elements; Biblarz, Oscar © 2001 John
+Wiley & Sons
+
+97
+
+ANEXO A. SISTEMA IGNITOR
+•
+
+Descripción. El mecanismo ignitor es un sistema eléctrico encargado de
+generar un corto circuito capaz de producir la chispa necesaria para iniciar
+la combustión.
+
+Fotografía del sistema ignitor
+
+• Componentes. El sistema fue desarrollado con base a los siguientes
+elementos:
+• Dispositivos eléctricos:
+o Extensión eléctrica que en uno de sus extremos sus 2 conectores
+se encuentran abiertos.
+o Alambre Ferro-Níquel: Encargado de cerrar el circuito de la
+extensión y así generar el corto y posteriormente la chispa.
+
+98
+
+• Ensamble del Ignitor.
+Fotografía ensamble del ignitor
+
+Para el ensamble del ignitor se debe llevar a cabo los siguientes pasos:
+1. Tomar la extensión eléctrica en el extremo opuesto de la toma y retirar el
+caucho protector que recubre el alambre.
+2. Tomar una porción (Aprox 20 cms) de alambre Ferro-Níquel y atar cada
+uno de sus extremos al par de alambres de la extensión que se
+encuentran al descubierto.
+3. Introducir los 20 cms de alambre Ferro-Níquel atados a la extensión
+dentro del motor propelente tomando precaución de que en su posición
+final no quede en contacto con el acero de la cámara de combustión o la
+tobera.
+4. Con la debida distancia se puede proceder a conectar la toma corriente
+de la extensión a la electricidad.
+• Recomendaciones. Hay que tener en cuenta que entre más largo sea el
+alambre de Ferro-Níquel se necesitará más energía para que este haga su
+trabajo de ignición; es decir, si se tiene una toma de corriente cercana no
+habrá ningún problema puesto que la toma de la luz nos proporciona lo
+suficiente para hacer el corto, caso contrario si se tiene una batería, es
+aconsejable usar menos cable para que la energía sea suficiente para
+hacer el corto (Aprox 5 cms de Cable Ferro-Niquel o menos).
+
+99
+
+ANEXO B. BANCO DE PRUEBAS
+• Descripción. El banco de pruebas es un sistema desarrollado para este
+proyecto que permite medir la cantidad de empuje generada por el motor
+cohete para pruebas estáticas.
+Fotografía banco de pruebas.
+
+• Componentes. El sistema fue desarrollado con base a los siguientes
+elementos:
+• Báscula: Encargada de medir el empuje generado por el motor y
+mostrarlo en Kilogramos para luego hacer su conversión a Newtons.
+• Balde: Encargado de mantener el motor cohete en una posición firme,
+vertical, y segura. Su interior debe ser llenado de arena para alojar el
+dispositivo.
+• Caja de Seguridad: Estructura metálica usada para prevenir, en caso de
+alguna falla (Explosión), que los elementos (Tobera, Cámara de
+Combustión, Propelente) sean expulsados hacia los alrededores.
+• Pesas: Elementos alojados debajo de la caja de seguridad que dan
+firmeza a la estructura.
+• Elementos Eléctricos: grupo de extensiones eléctricas (Aprox 6)
+utilizadas para generar la chispa que inicia la combustión del propelente
+y proporcionar energía a la bascula.
+• Elementos de Seguridad: Extintores Multipropósito.
+
+100
+
+ANEXO C. CODIGO DE MATLAB
+>> tb=2.5;
+>> v=0;
+>> v0=0;
+>> h=0;
+>> h0=0;
+>> dt=0.02;
+>> t0=0;
+>> t=0.05;
+>> m0=5;
+>> mfuel=1.173950342836;
+>> g=9.79980228;
+>> Ar=0.08741182;
+>> Cd=0.17453626;
+>> Is=116;
+>> cosu=1;
+>> i=0;
+>> Tmean=270;
+>> W0=m0*g;
+>> Wflow=Tmean/Is;
+>> while (t<=0.5)
+rho=0.9393*(exp((-1)*(h/8000)));
+R=W0/(W0-(Wflow*(t-t0)));
+Dv=(0.5*Cd*rho*v*v*Ar)*(log(R)/Wflow)*g;
+v= v0+((Is*g*(log(R)))-Dv-(g*cosu*(t-t0)));
+Dh= (0.5*Cd*rho*v*v*Ar)* (1-((log(R))/(R-1)))*(g/Wflow)*(t-t0)*cosu;
+h=h0+(v*(t-t0)*cosu)+(Is*g*(t-t0)*cosu*(1-((log(R))/(R-1))))-Dh-(0.5*g*(t-t0)* (tt0)*cosu*cosu);
+t = (dt)+t;
+m=(1/g)*(W0-(Wflow*(t-t0)));
+i=i+1;
+velocidad(i)=v;
+tiempo(i)=t;
+altura(i)=h;
+end
+>> while(t>0.5 && t<=1)
+rho=0.9393*(exp((-1)*(h/8000)));
+R=W0/(W0-(Wflow*(t-t0)));
+Dv=(0.5*Cd*rho*v*v*Ar)*(log(R)/Wflow)*g;
+v= v0+((Is*g*(log(R)))-Dv-(g*cosu*(t-t0)));
+Dh= (0.5*Cd*rho*v*v*Ar)* (1-((log(R))/(R-1)))*(g/Wflow)*(t-t0)*cosu;
+h=h0+(v*(t-t0)*cosu)+(Is*g*(t-t0)*cosu*(1-((log(R))/(R-1))))-Dh-(0.5*g*(t-t0)* (tt0)*cosu*cosu);
+t = (dt)+t;
+101
+
+m=(1/g)*(W0-(Wflow*(t-t0)));
+i=i+1;
+velocidad(i)=v;
+tiempo(i)=t;
+altura(i)=h;
+end
+>> while (t>1 && t<=tb)
+rho=0.9393*(exp((-1)*(h/8000)));
+R=W0/(W0-(Wflow*(t-t0)));
+Dv=(0.5*Cd*rho*v*v*Ar)*(log(R)/Wflow)*g;
+v= v0+((Is*g*(log(R)))-Dv-(g*cosu*(t-t0)));
+Dh= (0.5*Cd*rho*v*v*Ar)* (1-((log(R))/(R-1)))*(g/Wflow)*(t-t0)*cosu;
+h=h0+(v*(t-t0)*cosu)+(Is*g*(t-t0)*cosu*(1-((log(R))/(R-1))))-Dh-(0.5*g*(t-t0)* (tt0)*cosu*cosu);
+t = (dt)+t;
+m=(1/g)*(W0-(Wflow*(t-t0)));
+i=i+1;
+velocidad(i)=v;
+tiempo(i)=t;
+altura(i)=h;
+end
+while (v>0)
+rho=0.9393*(exp((-1)*(h/8000)));
+R=W0/(W0-(Wflow*(tb-t0)));
+Dv=(0.5*Cd*rho*v*v*Ar)*(log(R)/Wflow)*g;
+v= v0+((Is*g*(log(R)))-Dv-(g*cosu*(t-t0)));
+Dh= (0.5*Cd*rho*v*v*Ar)* (1-((log(R))/(R-1)))*(g/Wflow)*(t-t0)*cosu;
+h=h0+(v*(t-t0)*cosu)+(Is*g*(t-t0)*cosu*(1-((log(R))/(R-1))))-Dh-(0.5*g*(t-t0)* (tt0)*cosu*cosu);
+t = (dt)+t;
+m=m0-mfuel;
+i=i+1;
+velocidad(i)=v;
+tiempo(i)=t;
+altura(i)=h;
+end
+figure(1),plot(tiempo,altura),xlabel('tiempo (s)'),ylabel('altura (m)'), grid on;
+figure(2),plot(tiempo,velocidad),xlabel('tiempo (s)'),ylabel('velocidad (m/s)'), grid on;
+
+102
+
+

@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Misión | Estación Espacial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --space-dark: #020010;
+            --panel-bg: rgba(8, 12, 32, 0.85);
+            --panel-border: rgba(124, 138, 255, 0.25);
+            --hud-line: rgba(124, 138, 255, 0.35);
+            --accent: #7c8aff;
+            --accent-bright: #9fb0ff;
+            --text-primary: #e4e7ff;
+            --text-secondary: #8088b8;
+            --text-tertiary: #565d8a;
+            --success: #4ade80;
+            --warning: #fbbf24;
+            --danger: #f87171;
+            --comet-cyan: #00e5ff;
+            --table-header: rgba(18, 24, 55, 0.9);
+            --table-row: rgba(14, 19, 46, 0.6);
+            --table-hover: rgba(28, 36, 75, 0.7);
+            --font-display: 'Orbitron', sans-serif;
+            --font-body: 'Space Grotesk', sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--space-dark);
+            color: var(--text-primary);
+            min-height: 100vh;
+            padding: 30px 20px;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        .space-bg {
+            position: fixed; top: 0; left: 0;
+            width: 100%; height: 100%; z-index: 0; pointer-events: none;
+        }
+
+        .star {
+            position: absolute; background: white; border-radius: 50%;
+            animation: twinkle var(--duration) infinite ease-in-out;
+            animation-delay: var(--delay);
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: var(--min-opacity); transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.8); }
+        }
+
+        .nebula {
+            position: absolute; border-radius: 50%; filter: blur(100px); opacity: 0.08;
+        }
+
+        .nebula-1 {
+            width: 500px; height: 350px; background: #6b3fa0;
+            top: -10%; left: -15%; animation: nebulaDrift 15s infinite ease-in-out;
+        }
+
+        .nebula-2 {
+            width: 450px; height: 300px; background: #c44d8f;
+            bottom: -10%; right: -10%; animation: nebulaDrift 18s infinite ease-in-out reverse;
+        }
+
+        @keyframes nebulaDrift {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(40px, -25px) scale(1.08); }
+            66% { transform: translate(-25px, 20px) scale(0.93); }
+        }
+
+        .white-dwarf {
+            position: fixed; top: 3%; right: 8%;
+            width: 70px; height: 70px;
+            background: radial-gradient(circle,
+                rgba(255,255,255,1) 0%,
+                rgba(240,240,255,0.8) 20%,
+                rgba(180,200,255,0.3) 50%,
+                transparent 100%);
+            border-radius: 50%;
+            box-shadow:
+                0 0 30px 10px rgba(200,210,255,0.4),
+                0 0 80px 30px rgba(150,170,255,0.2);
+            animation: dwarfPulse 4s infinite ease-in-out;
+            z-index: 0; pointer-events: none;
+        }
+
+        @keyframes dwarfPulse {
+            0%, 100% { box-shadow: 0 0 30px 10px rgba(200,210,255,0.4), 0 0 80px 30px rgba(150,170,255,0.2); }
+            50% { box-shadow: 0 0 45px 18px rgba(220,230,255,0.6), 0 0 110px 45px rgba(170,190,255,0.35); }
+        }
+
+        /* ============================================================
+           CONSOLA PRINCIPAL
+           ============================================================ */
+        .console {
+            position: relative; z-index: 1;
+            max-width: 1100px; margin: 0 auto;
+        }
+
+        .console-frame {
+            position: relative;
+            background: var(--panel-bg);
+            border: 1px solid var(--panel-border);
+            border-radius: 4px;
+            padding: 32px 30px;
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            box-shadow: 0 25px 70px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.02);
+        }
+
+        .corner {
+            position: absolute; width: 20px; height: 20px;
+            border: 2px solid var(--comet-cyan); opacity: 0.65;
+        }
+        .corner-tl { top: -1px; left: -1px; border-right: none; border-bottom: none; }
+        .corner-tr { top: -1px; right: -1px; border-left: none; border-bottom: none; }
+        .corner-bl { bottom: -1px; left: -1px; border-right: none; border-top: none; }
+        .corner-br { bottom: -1px; right: -1px; border-left: none; border-top: none; }
+
+        .status-bar {
+            display: flex; align-items: center; justify-content: space-between;
+            font-family: var(--font-mono); font-size: 0.68rem;
+            letter-spacing: 0.5px; color: var(--text-tertiary);
+            margin-bottom: 18px; padding-bottom: 12px;
+            border-bottom: 1px solid var(--hud-line);
+        }
+
+        .status-bar .blink {
+            display: inline-block; width: 6px; height: 6px;
+            border-radius: 50%; background: var(--comet-cyan);
+            box-shadow: 0 0 8px var(--comet-cyan);
+            margin-right: 6px; animation: dotGlow 1.6s infinite;
+        }
+
+        @keyframes dotGlow {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+
+        /* ============================================================
+           HEADER
+           ============================================================ */
+        .header { display: flex; align-items: center; gap: 16px; margin-bottom: 6px; flex-wrap: wrap; }
+
+        .header-icon {
+            width: 44px; height: 44px; flex-shrink: 0;
+            color: var(--accent-bright);
+            animation: float 4s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+
+        .header-text h1 {
+            font-family: var(--font-display);
+            font-size: 1.5rem; font-weight: 700; letter-spacing: 1.5px;
+            background: linear-gradient(180deg, #f0f0ff 0%, #b0bfff 100%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header-text .subtitle {
+            font-family: var(--font-mono);
+            color: var(--text-secondary); font-size: 0.7rem;
+            letter-spacing: 1px; text-transform: uppercase;
+            margin-top: 6px;
+        }
+
+        .divider {
+            display: flex; align-items: center; gap: 10px;
+            margin: 20px 0 22px;
+        }
+        .divider::before, .divider::after {
+            content: ''; flex: 1; height: 1px;
+            background: linear-gradient(90deg, transparent, var(--hud-line));
+        }
+        .divider::after { background: linear-gradient(90deg, var(--hud-line), transparent); }
+
+        /* ============================================================
+           TABLA
+           ============================================================ */
+        .table-wrapper {
+            overflow-x: auto;
+            border-radius: 4px;
+            border: 1px solid var(--hud-line);
+        }
+
+        table { width: 100%; border-collapse: collapse; min-width: 700px; }
+
+        thead { background: var(--table-header); }
+
+        th {
+            padding: 14px 18px; text-align: left;
+            font-family: var(--font-mono);
+            color: var(--accent-bright); font-size: 0.68rem;
+            text-transform: uppercase; letter-spacing: 1.2px;
+            font-weight: 500;
+            border-bottom: 1px solid var(--hud-line);
+            position: sticky; top: 0;
+        }
+
+        th svg {
+            width: 13px; height: 13px;
+            margin-right: 6px;
+            vertical-align: -2px;
+        }
+
+        td {
+            padding: 13px 18px;
+            border-bottom: 1px solid rgba(100, 140, 255, 0.06);
+            font-size: 0.88rem; color: #c8c8e0;
+            transition: all 0.2s ease;
+        }
+
+        tbody tr { background: var(--table-row); transition: all 0.3s ease; }
+
+        tbody tr:hover td { background: var(--table-hover); color: #f0f0ff; }
+
+        tbody tr:last-child td { border-bottom: none; }
+
+        .id-cell {
+            font-family: var(--font-mono);
+            color: var(--comet-cyan);
+            font-weight: 600; font-size: 0.82rem; opacity: 0.85;
+        }
+
+        .student-name { font-weight: 500; color: #d0d8ff; }
+
+        .question-badge {
+            display: inline-block; padding: 3px 11px;
+            background: rgba(124, 138, 255, 0.1);
+            border: 1px solid rgba(124, 138, 255, 0.25);
+            border-radius: 3px;
+            font-family: var(--font-mono);
+            font-size: 0.74rem; color: var(--accent-bright); font-weight: 500;
+        }
+
+        .nota-badge {
+            display: inline-block; padding: 4px 12px;
+            border-radius: 3px;
+            font-family: var(--font-mono);
+            font-weight: 700; font-size: 0.82rem; letter-spacing: 0.5px;
+        }
+
+        .nota-alta {
+            background: rgba(74, 222, 128, 0.12);
+            border: 1px solid rgba(74, 222, 128, 0.3);
+            color: #4ade80;
+        }
+        .nota-media {
+            background: rgba(251, 191, 36, 0.12);
+            border: 1px solid rgba(251, 191, 36, 0.3);
+            color: #fbbf24;
+        }
+        .nota-baja {
+            background: rgba(248, 113, 113, 0.12);
+            border: 1px solid rgba(248, 113, 113, 0.3);
+            color: #f87171;
+        }
+
+        .plagio-ok, .plagio-alert {
+            display: inline-flex; align-items: center; gap: 5px;
+            font-family: var(--font-mono);
+            font-size: 0.76rem; font-weight: 500;
+        }
+
+        .plagio-ok { color: var(--success); }
+        .plagio-ok svg { width: 13px; height: 13px; }
+
+        .plagio-alert { color: var(--danger); animation: alertPulse 1.2s infinite; }
+        .plagio-alert svg { width: 13px; height: 13px; }
+
+        @keyframes alertPulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.55; }
+        }
+
+        .date-cell {
+            font-family: var(--font-mono);
+            color: var(--text-tertiary); font-size: 0.74rem; white-space: nowrap;
+        }
+
+        /* Chips de proveedor de embedding */
+        .proveedor-chip {
+            display: inline-block; padding: 2px 10px;
+            border-radius: 3px;
+            font-family: var(--font-mono); font-size: 0.68rem;
+            font-weight: 600; letter-spacing: 0.5px;
+            white-space: nowrap;
+        }
+        .chip-gemini  { background: rgba(74,222,128,0.12); border: 1px solid rgba(74,222,128,0.35); color: #4ade80; }
+        .chip-groq    { background: rgba(251,191,36,0.12);  border: 1px solid rgba(251,191,36,0.35);  color: #fbbf24; }
+        .chip-cohere  { background: rgba(124,138,255,0.12); border: 1px solid rgba(124,138,255,0.35); color: #9fb0ff; }
+        .chip-nvidia  { background: rgba(0,229,255,0.12);   border: 1px solid rgba(0,229,255,0.35);   color: #00e5ff; }
+        .chip-local   { background: rgba(192,132,252,0.12); border: 1px solid rgba(192,132,252,0.35); color: #c084fc; }
+        .chip-ceros   { background: rgba(248,113,113,0.12); border: 1px solid rgba(248,113,113,0.35); color: #f87171; }
+
+        /* ============================================================
+           ESTADO VACÍO
+           ============================================================ */
+        .empty-state { text-align: center; padding: 60px 30px; }
+
+        .empty-icon {
+            width: 56px; height: 56px;
+            color: var(--text-tertiary);
+            animation: float 3s infinite ease-in-out;
+            margin: 0 auto 20px;
+        }
+
+        .empty-title {
+            font-family: var(--font-body);
+            font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 8px;
+        }
+
+        .empty-desc {
+            font-family: var(--font-mono);
+            font-size: 0.78rem; color: var(--text-tertiary);
+        }
+
+        /* ============================================================
+           FOOTER DE TABLA
+           ============================================================ */
+        .table-footer {
+            display: flex; justify-content: space-between; align-items: center;
+            margin-top: 16px; flex-wrap: wrap; gap: 12px;
+        }
+
+        .total-badge {
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 7px 16px;
+            background: rgba(124, 138, 255, 0.08);
+            border: 1px solid var(--hud-line);
+            border-radius: 3px;
+            font-family: var(--font-mono);
+            font-size: 0.74rem; color: var(--text-secondary);
+        }
+
+        .total-badge span {
+            color: var(--accent-bright); font-weight: 700; font-size: 0.95rem;
+        }
+
+        .status-dot {
+            display: inline-block; width: 6px; height: 6px;
+            background: var(--success); border-radius: 50%;
+            box-shadow: 0 0 8px var(--success);
+            animation: dotGlow 2s infinite;
+        }
+
+        /* ============================================================
+           BOTÓN VOLVER
+           ============================================================ */
+        .back-btn {
+            display: inline-flex; align-items: center; gap: 8px;
+            margin-top: 22px;
+            padding: 10px 18px;
+            background: rgba(124, 138, 255, 0.08);
+            border: 1px solid var(--hud-line);
+            border-radius: 4px;
+            font-family: var(--font-mono);
+            color: var(--text-secondary); text-decoration: none;
+            font-size: 0.78rem; letter-spacing: 0.3px;
+            transition: all 0.3s ease;
+        }
+
+        .back-btn svg { width: 13px; height: 13px; }
+
+        .back-btn:hover {
+            background: rgba(124, 138, 255, 0.15);
+            border-color: rgba(124, 138, 255, 0.4);
+            color: #d0d8ff;
+            box-shadow: 0 5px 20px rgba(80, 100, 200, 0.2);
+            transform: translateX(-3px);
+        }
+
+        @media (max-width: 768px) {
+            .console-frame { padding: 22px 16px; }
+            .header-icon { width: 32px; height: 32px; }
+            .header-text h1 { font-size: 1.1rem; }
+            th, td { padding: 10px 12px; font-size: 0.76rem; }
+            .white-dwarf { width: 40px; height: 40px; }
+        }
+
+        ::-webkit-scrollbar { height: 6px; width: 6px; }
+        ::-webkit-scrollbar-track { background: rgba(14, 19, 46, 0.5); border-radius: 3px; }
+        ::-webkit-scrollbar-thumb { background: rgba(124, 138, 255, 0.3); border-radius: 3px; }
+        ::-webkit-scrollbar-thumb:hover { background: rgba(124, 138, 255, 0.5); }
+    </style>
+</head>
+<body>
+
+    <div class="space-bg" id="spaceBg">
+        <div class="nebula nebula-1"></div>
+        <div class="nebula nebula-2"></div>
+        <div class="white-dwarf"></div>
+    </div>
+
+    <div class="console">
+        <div class="console-frame">
+            <div class="corner corner-tl"></div>
+            <div class="corner corner-tr"></div>
+            <div class="corner corner-bl"></div>
+            <div class="corner corner-br"></div>
+
+            <div class="status-bar">
+                <div><span class="blink"></span>BITÁCORA DE MISIÓN</div>
+                <div id="clock">00:00:00 UTC</div>
+            </div>
+
+            <div class="header">
+                <svg class="header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+                    <circle cx="12" cy="12" r="3"/><ellipse cx="12" cy="12" rx="9" ry="4"/><ellipse cx="12" cy="12" rx="4" ry="9" opacity="0.5"/>
+                </svg>
+                <div class="header-text">
+                    <h1>REGISTRO DE MISIÓN</h1>
+                    <p class="subtitle">Bitácora de evaluaciones — Estación Espacial</p>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            {% if registros %}
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 9h6M7 13h10"/></svg>ID</th>
+                            <th><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="3.2"/><path d="M5.5 19.5c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"/></svg>Tripulante</th>
+                            <th><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="0.6" fill="currentColor"/></svg>Misión</th>
+                            <th><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20V10M11 20V4M18 20v-7"/></svg>Puntuación</th>
+                            <th><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l8 3.5v6c0 5-3.5 8.5-8 10.5-4.5-2-8-5.5-8-10.5v-6z"/></svg>Integridad</th>
+                            <th><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22c5.5 0 10-4.5 10-10S17.5 2 12 2 2 6.5 2 12s4.5 10 10 10z"/><path d="M2 12h4M18 12h4M12 2v4M12 18v4"/></svg>Embedding</th>
+                            <th><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/></svg>Fecha Estelar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for r in registros %}
+                        <tr>
+                            <td class="id-cell">#{{ r[0] }}</td>
+                            <td class="student-name">{{ r[1] }}</td>
+                            <td><span class="question-badge">Pregunta {{ r[2] }}</span></td>
+                            <td>
+                                {% set nota = r[3] %}
+                                {% if nota and nota != 'N/A' %}
+                                    {% set valor = nota.split('/')[0].strip() | float %}
+                                    <span class="nota-badge {{ 'nota-alta' if valor >= 7 else ('nota-media' if valor >= 5 else 'nota-baja') }}">
+                                        {{ nota }}
+                                    </span>
+                                {% else %}
+                                    <span class="nota-badge nota-baja">{{ nota }}</span>
+                                {% endif %}
+                            </td>
+                            <td>
+                                {% if r[4] == 'Ninguno' or r[4] == '✅ Ninguno' %}
+                                    <span class="plagio-ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l8 3.5v6c0 5-3.5 8.5-8 10.5-4.5-2-8-5.5-8-10.5v-6z"/></svg>Limpio</span>
+                                {% else %}
+                                    <span class="plagio-alert"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 9v4M12 17h.01M10.3 3.9L2.7 17a1.8 1.8 0 0 0 1.6 2.7h15.4a1.8 1.8 0 0 0 1.6-2.7L13.7 3.9a1.8 1.8 0 0 0-3.4 0z"/></svg>{{ r[4][:30] }}</span>
+                                {% endif %}
+                            </td>
+                            <td>
+                                {% set prov = r[6] or 'Desconocido' %}
+                                {% if prov == 'Gemini' %}
+                                    <span class="proveedor-chip chip-gemini">Gemini</span>
+                                {% elif prov == 'Groq' %}
+                                    <span class="proveedor-chip chip-groq">Groq</span>
+                                {% elif prov == 'Cohere' %}
+                                    <span class="proveedor-chip chip-cohere">Cohere</span>
+                                {% elif prov == 'NVIDIA' %}
+                                    <span class="proveedor-chip chip-nvidia">NVIDIA</span>
+                                {% elif prov == 'Vocabulario Local' %}
+                                    <span class="proveedor-chip chip-local">Local</span>
+                                {% elif prov == 'Ceros' %}
+                                    <span class="proveedor-chip chip-ceros">Ceros</span>
+                                {% else %}
+                                    <span class="proveedor-chip chip-ceros">{{ prov }}</span>
+                                {% endif %}
+                            </td>
+                            <td class="date-cell">{{ r[5] }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table-footer">
+                <div class="total-badge">
+                    <span class="status-dot"></span>
+                    Total de misiones registradas: <span>{{ registros|length }}</span>
+                </div>
+            </div>
+
+            {% else %}
+            <div class="empty-state">
+                <svg class="empty-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
+                    <circle cx="12" cy="12" r="3"/><ellipse cx="12" cy="12" rx="9" ry="4"/><ellipse cx="12" cy="12" rx="4" ry="9" opacity="0.5"/>
+                </svg>
+                <p class="empty-title">Sin registros de misión</p>
+                <p class="empty-desc">Aún no se han realizado evaluaciones en esta estación</p>
+            </div>
+            {% endif %}
+
+            <a href="/" class="back-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M19 12H5m0 0l6-6m-6 6l6 6"/></svg>
+                Volver a la Estación Principal
+            </a>
+        </div>
+    </div>
+
+    <script>
+        const spaceBg = document.getElementById('spaceBg');
+        const starCount = 120;
+
+        for (let i = 0; i < starCount; i++) {
+            const star = document.createElement('div');
+            star.classList.add('star');
+
+            const size = Math.random() * 2.2 + 0.6;
+            const x = Math.random() * 100;
+            const y = Math.random() * 100;
+            const duration = Math.random() * 3 + 2;
+            const delay = Math.random() * 4;
+            const minOpacity = Math.random() * 0.35 + 0.08;
+
+            star.style.cssText = `
+                width: ${size}px;
+                height: ${size}px;
+                left: ${x}%;
+                top: ${y}%;
+                --duration: ${duration}s;
+                --delay: ${delay}s;
+                --min-opacity: ${minOpacity};
+            `;
+
+            spaceBg.appendChild(star);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const rows = document.querySelectorAll('tbody tr');
+            rows.forEach((row, index) => {
+                row.style.opacity = '0';
+                row.style.transform = 'translateY(10px)';
+                row.style.transition = 'all 0.4s ease';
+
+                setTimeout(() => {
+                    row.style.opacity = '1';
+                    row.style.transform = 'translateY(0)';
+                }, index * 60);
+            });
+        });
+
+        function updateClock() {
+            const now = new Date();
+            const h = String(now.getUTCHours()).padStart(2, '0');
+            const m = String(now.getUTCMinutes()).padStart(2, '0');
+            const s = String(now.getUTCSeconds()).padStart(2, '0');
+            document.getElementById('clock').textContent = `${h}:${m}:${s} UTC`;
+        }
+        updateClock();
+        setInterval(updateClock, 1000);
+    </script>
+
+</body>
+</html>
